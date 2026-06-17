@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warped Pinball Vector — USB Flasher</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .log-line { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+    .step-pending { opacity: 0.45; }
+  </style>
+</head>
+<body class="min-h-screen bg-base-300">
+  <div class="container mx-auto max-w-3xl px-4 py-8">
+
+    <!-- Header -->
+    <div class="text-center mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold">Warped Pinball Vector — USB Flasher</h1>
+      <p class="text-base-content/70 mt-2">
+        Update your Vector board straight from this page over a USB cable — no downloads, no drivers.
+      </p>
+      <a href="./index.html" class="link link-primary text-sm">← Back to the firmware changelog</a>
+    </div>
+
+    <!-- Unsupported-browser banner (shown by JS) -->
+    <div id="unsupported" class="alert alert-error shadow-lg mb-6 hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+      <div>
+        <h3 class="font-bold">Your browser can’t flash over USB</h3>
+        <div id="unsupported-detail" class="text-sm"></div>
+      </div>
+    </div>
+
+    <!-- Main app (shown when supported) -->
+    <div id="app" class="hidden space-y-6">
+
+      <!-- What you'll need / permissions -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <h2 class="card-title text-lg">Before you start</h2>
+          <ul class="list-disc list-inside text-sm space-y-1 text-base-content/80">
+            <li><strong>Turn off your pinball machine.</strong> You do not need to remove the Vector board.</li>
+            <li>Connect the board to this computer with a <strong>data</strong> USB cable (some cables are charge-only).</li>
+            <li>Connect <strong>one board at a time</strong>.</li>
+            <li>When prompted, grant the browser permission to access the USB / serial device. The browser
+              asks once for the running board and once for the bootloader — this is normal and only happens
+              the first time.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <h2 class="card-title text-lg">Progress</h2>
+          <ul id="steps" class="steps steps-vertical w-full"></ul>
+
+          <div id="progress-wrap" class="mt-2 hidden">
+            <div class="flex justify-between text-xs mb-1">
+              <span id="progress-label">Flashing…</span>
+              <span id="progress-pct">0%</span>
+            </div>
+            <progress id="progress" class="progress progress-primary w-full" value="0" max="100"></progress>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <div id="detected" class="hidden">
+            <h2 class="card-title text-lg">Detected board</h2>
+            <div class="flex flex-wrap gap-2 my-2">
+              <span class="badge badge-lg" id="badge-board">—</span>
+              <span class="badge badge-lg badge-outline" id="badge-system">—</span>
+            </div>
+
+            <label class="form-control w-full max-w-sm">
+              <div class="label"><span class="label-text">Software version to install</span></div>
+              <select id="software-select" class="select select-bordered"></select>
+            </label>
+            <p id="firmware-note" class="text-sm text-base-content/70 mt-2"></p>
+          </div>
+
+          <div class="card-actions mt-4 gap-2">
+            <button id="btn-connect" class="btn btn-primary">Connect &amp; detect board</button>
+            <button id="btn-flash" class="btn btn-secondary hidden">Update my Vector</button>
+            <button id="btn-authorize" class="btn btn-warning hidden">Grant USB access to the bootloader</button>
+            <button id="btn-retry" class="btn btn-outline hidden">Start over</button>
+          </div>
+
+          <div id="status-alert" class="alert mt-4 hidden">
+            <span id="status-text"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity log -->
+      <div class="collapse collapse-arrow bg-base-100 shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-medium">Activity log</div>
+        <div class="collapse-content">
+          <div id="log" class="bg-base-300 rounded p-3 h-48 overflow-y-auto space-y-0.5"></div>
+        </div>
+      </div>
+
+      <!-- Recovery -->
+      <div class="collapse collapse-arrow bg-base-100 shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-medium">Board not detected? Manual recovery (BOOTSEL)</div>
+        <div class="collapse-content text-sm space-y-2 text-base-content/80">
+          <p>If the board can’t be reset automatically, you can put it into the bootloader by hand:</p>
+          <ol class="list-decimal list-inside space-y-1">
+            <li>Unplug the board’s USB cable.</li>
+            <li>Press and hold the <strong>BOOTSEL</strong> button on the Pico.</li>
+            <li>While holding it, plug the USB cable back in, then release the button.</li>
+            <li>Click <em>Update my Vector</em> again and choose the device when prompted.</li>
+          </ol>
+          <p>If nothing shows up at all, try a different USB cable — many cables only carry power, not data.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-xs text-base-content/50 mt-10">
+      Warped Pinball · Requires a Chromium-based desktop browser (Chrome, Edge, Brave, Opera) or Android Chrome.
+    </footer>
+  </div>
+
+  <script type="module" src="./flasher/app.js"></script>
+</body>
+</html>

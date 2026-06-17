@@ -185,3 +185,28 @@ def test_parse_release_versions_whitespace():
     )
     assert generate.parse_release_versions(body) == {"vector": "2.0"}
 
+
+def test_save_full_update_json_writes_file(monkeypatch, tmp_path):
+    payload = b'{"update_file_format":"1.0"}\nfile.py{}QkFTRTY0\n'
+
+    class MockResponse:
+        status_code = 200
+        content = payload
+
+    monkeypatch.setattr(generate.requests, "get", lambda url: MockResponse())
+    ok = generate.save_full_update_json(str(tmp_path), "http://example.com/update.json")
+    assert ok is True
+    with open(os.path.join(str(tmp_path), "update.json"), "rb") as f:
+        assert f.read() == payload
+
+
+def test_save_full_update_json_skips_on_failure(monkeypatch, tmp_path):
+    class MockResponse:
+        status_code = 404
+        content = b""
+
+    monkeypatch.setattr(generate.requests, "get", lambda url: MockResponse())
+    ok = generate.save_full_update_json(str(tmp_path), "http://example.com/missing.json")
+    assert ok is False
+    assert not os.path.exists(os.path.join(str(tmp_path), "update.json"))
+

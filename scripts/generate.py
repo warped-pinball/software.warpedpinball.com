@@ -92,6 +92,29 @@ def release_notes_to_html(text):
 
 
 
+def save_full_update_json(out_folder, url):
+    """Download a release's full update.json and store it in ``out_folder``.
+
+    The in-browser flasher needs to read the complete update file (metadata plus
+    the base64 file payloads), but GitHub release downloads send no CORS headers,
+    so the browser can't fetch them directly. We mirror only the latest
+    production build per product into the site so it is served same-origin.
+    Older copies are pruned automatically because ``docs/vector`` is wiped at the
+    start of each run. Returns ``True`` if the file was written.
+    """
+
+    response = requests.get(url)
+    if response.status_code != 200:
+        sys.stderr.write(f"⏭️ Could not mirror update.json from {url}\n")
+        return False
+
+    out_path = os.path.join(out_folder, "update.json")
+    with open(out_path, "wb") as f:
+        f.write(response.content)
+    print(f"✅ Wrote {out_path}")
+    return True
+
+
 def build_latest_release_data(owner, repo, release_entry):
     """Return a standardized latest.json payload for a single release."""
 
@@ -302,6 +325,11 @@ def main():
             with open(latest_path, "w") as f:
                 json.dump(latest_release_data, f, indent=2)
             print(f"✅ Wrote {latest_path} for {product}")
+
+            # Mirror the latest production build's full update.json so the
+            # in-browser flasher can fetch it same-origin (no CORS on GitHub
+            # release downloads). Only the latest is kept to avoid repo bloat.
+            save_full_update_json(out_folder, latest_release_data["url"])
 
     # write mini database of all update files
     if file_db:
