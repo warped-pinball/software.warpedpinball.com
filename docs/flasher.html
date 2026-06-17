@@ -81,9 +81,27 @@
               detected model. Use this when changing game series or recovering a board.
             </p>
             <p id="firmware-note" class="text-sm text-base-content/80 mt-1"></p>
-            <div class="card-actions mt-2">
-              <button id="btn-flash-fw" class="btn btn-secondary">Erase &amp; flash firmware</button>
+
+            <p class="text-sm text-base-content/70 mt-2">
+              This happens in two steps so each can be confirmed on its own:
+            </p>
+            <ol class="list-decimal list-inside text-sm text-base-content/70">
+              <li>Reset the board into its bootloader and confirm it’s detected.</li>
+              <li>Erase and write the firmware image.</li>
+            </ol>
+
+            <div id="boot-status" class="alert mt-3 hidden">
+              <span id="boot-status-text"></span>
             </div>
+
+            <div class="card-actions mt-3 gap-2">
+              <button id="btn-enter-boot" class="btn btn-secondary">1. Enter bootloader mode</button>
+              <button id="btn-flash-fw" class="btn btn-secondary" disabled>2. Erase &amp; flash firmware</button>
+            </div>
+            <p class="text-xs text-base-content/60 mt-2">
+              Already holding BOOTSEL / board stuck? You can still click “Enter bootloader mode” — it
+              will detect a board that’s already in the bootloader.
+            </p>
           </div>
         </div>
 

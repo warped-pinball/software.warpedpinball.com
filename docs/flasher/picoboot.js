@@ -43,6 +43,14 @@ export class PicobootDevice {
 
     this.interfaceNumber = found.number;
     await dev.claimInterface(this.interfaceNumber);
+    // Explicitly activate the interface's alternate setting; on some platforms
+    // the bulk endpoints aren't usable until this is done, which otherwise
+    // surfaces as a generic transfer error on the first bulk transfer.
+    try {
+      await dev.selectAlternateInterface(this.interfaceNumber, found.alt.alternateSetting);
+    } catch {
+      /* already active or unsupported; ignore */
+    }
 
     for (const ep of found.alt.endpoints) {
       if (ep.type !== "bulk") continue;
@@ -88,6 +96,38 @@ export class PicobootDevice {
       value: 0,
       index: this.interfaceNumber,
     });
+  }
+
+  // Query PICOBOOT command status over a control transfer. This is a robust way
+  // to confirm we can actually talk to the bootloader (it does not touch the
+  // bulk endpoints). Returns the parsed 16-byte status, or throws on failure.
+  async getCommandStatus() {
+    const r = await this.device.controlTransferIn(
+      {
+        requestType: "vendor",
+        recipient: "interface",
+        request: PICOBOOT.IF_CMD_STATUS,
+        value: 0,
+        index: this.interfaceNumber,
+      },
+      16,
+    );
+    if (r.status !== "ok" || !r.data || r.data.byteLength < 16) {
+      throw new Error("Bootloader did not return a valid status.");
+    }
+    return {
+      token: r.data.getUint32(0, true),
+      statusCode: r.data.getUint32(4, true),
+      cmdId: r.data.getUint8(8),
+      inProgress: r.data.getUint8(9),
+    };
+  }
+
+  // Friendly processor name for the connected bootloader, from its product id.
+  get processor() {
+    if (this.device.productId === 0x000f) return "rp2350";
+    if (this.device.productId === 0x0003) return "rp2040";
+    return null;
   }
 
   // Build a 32-byte PICOBOOT command packet.

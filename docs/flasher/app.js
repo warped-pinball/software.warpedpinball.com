@@ -36,7 +36,10 @@ const el = {
   badgeSystem: $("badge-system"),
   softwareSelect: $("software-select"),
   firmwareNote: $("firmware-note"),
+  bootStatus: $("boot-status"),
+  bootStatusText: $("boot-status-text"),
   btnConnect: $("btn-connect"),
+  btnEnterBoot: $("btn-enter-boot"),
   btnFlashFw: $("btn-flash-fw"),
   btnFlashSw: $("btn-flash-sw"),
   btnAuthorize: $("btn-authorize"),
@@ -99,11 +102,27 @@ function hideProgress() {
   el.progressWrap.classList.add("hidden");
 }
 
+function updateButtons() {
+  const haveBoard = !!state;
+  const fwAvail = haveBoard && !!state.firmwareFile;
+  el.btnConnect.disabled = busy;
+  el.btnEnterBoot.disabled = busy || !fwAvail;
+  el.btnFlashFw.disabled = busy || !fwAvail || !state.pico;
+  el.btnFlashSw.disabled = busy || !haveBoard;
+}
 function setBusy(b) {
   busy = b;
-  el.btnFlashFw.disabled = b || !state || !state.firmwareFile;
-  el.btnFlashSw.disabled = b || !state;
-  el.btnConnect.disabled = b;
+  updateButtons();
+}
+
+function setBootStatus(msg, kind = "info") {
+  if (!msg) {
+    el.bootStatus.classList.add("hidden");
+    return;
+  }
+  el.bootStatus.className = `alert mt-3 alert-${kind}`;
+  el.bootStatusText.textContent = msg;
+  el.bootStatus.classList.remove("hidden");
 }
 
 // ---- Feature detection ------------------------------------------------
@@ -276,7 +295,8 @@ async function connectAndDetect() {
     }
 
     const system = info.system || (info.processor === "rp2040" ? "sys11" : null);
-    state = { port, processor: info.processor, system };
+    state = { port, processor: info.processor, system, pico: null };
+    setBootStatus("");
 
     const boardName = PROCESSOR_BOARD_NAMES[info.processor] || "Unknown board";
     el.badgeBoard.textContent = boardName;
@@ -303,13 +323,12 @@ async function prepareTargets() {
       "so firmware flashing is unavailable for this board.";
     state.firmwareFile = null;
     state.firmwareProcessor = null;
-    el.btnFlashFw.disabled = true;
   } else {
     state.firmwareFile = sys.uf2;
     state.firmwareProcessor = sys.processor;
     el.firmwareNote.textContent = `Firmware image: ${sys.uf2} (${PROCESSOR_BOARD_NAMES[sys.processor]}).`;
-    el.btnFlashFw.disabled = false;
   }
+  updateButtons();
 
   el.softwareSelect.innerHTML = "";
   const latest = await fetchSoftwareLatest(state.system);
@@ -348,45 +367,103 @@ function pickFile(accept) {
   });
 }
 
-// ---- Operation 1: erase & flash firmware ------------------------------
+// ---- Operation 1a: enter bootloader mode & detect ---------------------
+async function runEnterBoot() {
+  if (busy || !state || !state.firmwareFile) return;
+  setBusy(true);
+  el.btnRetry.classList.add("hidden");
+  clearSteps();
+  try {
+    // Drop any previous bootloader handle.
+    if (state.pico) {
+      await state.pico.close().catch(() => {});
+      state.pico = null;
+      updateButtons();
+    }
+
+    // Trigger a reset over serial if we have a running board to talk to.
+    if (state.port) {
+      setBootStatus("Resetting the board into its bootloader…", "info");
+      log("Reopening serial to trigger the bootloader…");
+      try {
+        const board = new SerialBoard(state.port);
+        await board.open();
+        await board.enterBootloader();
+        await board.close().catch(() => {});
+        log("Reset command sent.");
+      } catch (e) {
+        log(`Could not reset over serial (${e.message}). If the board is already in BOOTSEL, continuing…`);
+      }
+    } else {
+      setBootStatus("Waiting for a board in bootloader mode…", "info");
+    }
+
+    log("Waiting for the bootloader USB device…");
+    const pico = await acquireBootloader(20000);
+    const pid = pico.device.productId;
+    const proc = pico.processor;
+    log(`Bootloader device: VID 0x${VENDOR_ID.toString(16)} PID 0x${pid.toString(16).padStart(4, "0")} (${proc || "unknown"}).`, "ok");
+
+    // Validate communication with a control transfer (no bulk endpoints), so
+    // detection is confirmed independently of the UF2 write path.
+    const status = await pico.getCommandStatus();
+    log(`PICOBOOT responding (status code ${status.statusCode}, in-progress ${status.inProgress}).`, "ok");
+
+    state.pico = pico;
+    state.bootProcessor = proc || state.processor;
+
+    if (state.firmwareProcessor && proc && state.firmwareProcessor !== proc) {
+      setBootStatus(
+        `⚠️ Board is a ${PROCESSOR_BOARD_NAMES[proc]} bootloader, but the firmware targets ` +
+          `${PROCESSOR_BOARD_NAMES[state.firmwareProcessor]}. Flashing will be refused — re-detect the board.`,
+        "warning",
+      );
+    } else {
+      setBootStatus(
+        `✅ Detected ${proc ? PROCESSOR_BOARD_NAMES[proc] + " " : ""}bootloader and PICOBOOT is responding. ` +
+          "Click “2. Erase & flash firmware”.",
+        "success",
+      );
+    }
+    updateButtons();
+  } catch (err) {
+    handleError(err, true);
+  } finally {
+    setBusy(false);
+  }
+}
+
+// ---- Operation 1b: erase & flash firmware -----------------------------
 const FW_STEPS = [
-  ["reset", "Reset to bootloader"],
   ["erase", "Erase board"],
   ["firmware", "Flash firmware"],
   ["done", "Reboot"],
 ];
 
 async function runFirmware() {
-  if (busy || !state || !state.firmwareFile) return;
+  if (busy || !state || !state.firmwareFile || !state.pico) return;
   setBusy(true);
   el.btnRetry.classList.add("hidden");
   const done = [];
   try {
     log("Downloading firmware images…");
-    renderSteps(FW_STEPS, "reset");
+    renderSteps(FW_STEPS, "erase");
     const nukeBuf = await fetchFirmwareUf2(manifest.nuke);
     const firmwareBuf = await fetchFirmwareUf2(state.firmwareFile);
 
-    // Reset into the ROM bootloader over serial.
-    setStatus("Resetting the board into its bootloader…", "info");
-    log("Reopening serial to trigger the bootloader…");
-    const board = new SerialBoard(state.port);
-    await board.open();
-    await board.enterBootloader();
-    await board.close().catch(() => {});
-    log("Reset command sent; waiting for the bootloader to appear…");
+    const proc = state.bootProcessor || state.processor;
+    let pico = state.pico;
 
-    // Erase (nuke.uf2).
-    renderSteps(FW_STEPS, "erase", done);
-    let pico = await acquireBootloader();
-    setStatus("Board is in bootloader mode. Erasing…", "info");
+    // Erase (nuke.uf2) using the already-validated bootloader handle.
+    setStatus("Erasing the board…", "info");
     showProgress("Erasing the board");
     log("Flashing nuke.uf2 to erase the board…");
-    await pico.flashUf2(nukeBuf, state.processor, setProgress);
+    await pico.flashUf2(nukeBuf, proc, setProgress);
     log("Running flash-erase…");
-    await pico.reboot(state.processor); // run nuke -> wipes flash -> back to bootloader
-    await pico.close();
-    done.push("reset", "erase");
+    await pico.reboot(proc); // run nuke -> wipes flash -> back to bootloader
+    await pico.close().catch(() => {});
+    state.pico = null;
+    done.push("erase");
 
     await sleep(2000);
     renderSteps(FW_STEPS, "firmware", done);
@@ -398,10 +475,10 @@ async function runFirmware() {
     setStatus("Flashing firmware…", "info");
     showProgress("Flashing firmware");
     log(`Flashing ${state.firmwareFile}…`);
-    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || state.processor, setProgress);
+    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || proc, setProgress);
     log("Rebooting into the new firmware…");
-    await pico.reboot(state.firmwareProcessor || state.processor);
-    await pico.close();
+    await pico.reboot(state.firmwareProcessor || proc);
+    await pico.close().catch(() => {});
     hideProgress();
     done.push("firmware");
 
@@ -416,6 +493,7 @@ async function runFirmware() {
     }
     done.push("done");
     renderSteps(FW_STEPS, null, done);
+    setBootStatus("");
     setStatus(
       "✅ Firmware flashed. You can now Update software, or unplug and power your machine back on.",
       "success",
@@ -520,6 +598,7 @@ function handleError(err, fatal = false) {
 }
 
 function resetUi() {
+  if (state && state.pico) state.pico.close().catch(() => {});
   state = null;
   el.operations.classList.add("hidden");
   el.detected.classList.add("hidden");
@@ -527,6 +606,7 @@ function resetUi() {
   el.btnRetry.classList.add("hidden");
   el.btnConnect.textContent = "Connect & detect board";
   el.statusAlert.classList.add("hidden");
+  setBootStatus("");
   hideProgress();
   clearSteps();
   setBusy(false);
@@ -543,6 +623,7 @@ async function init() {
     return;
   }
   el.btnConnect.onclick = connectAndDetect;
+  el.btnEnterBoot.onclick = runEnterBoot;
   el.btnFlashFw.onclick = runFirmware;
   el.btnFlashSw.onclick = runSoftware;
   el.btnRetry.onclick = resetUi;
