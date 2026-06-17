@@ -1,6 +1,8 @@
 // Orchestration + UI for the Warped Pinball Vector browser flasher.
-// Ties together Web Serial (board detection / software push) and WebUSB
-// PICOBOOT (erase + firmware flash).
+// Two independent operations:
+//   1. Erase & flash firmware  (WebUSB / PICOBOOT)
+//   2. Update software         (Web Serial / MicroPython raw REPL)
+// They share board detection but can be run separately.
 
 import {
   VENDOR_ID,
@@ -28,13 +30,15 @@ const el = {
   progress: $("progress"),
   progressLabel: $("progress-label"),
   progressPct: $("progress-pct"),
+  operations: $("operations"),
   detected: $("detected"),
   badgeBoard: $("badge-board"),
   badgeSystem: $("badge-system"),
   softwareSelect: $("software-select"),
   firmwareNote: $("firmware-note"),
   btnConnect: $("btn-connect"),
-  btnFlash: $("btn-flash"),
+  btnFlashFw: $("btn-flash-fw"),
+  btnFlashSw: $("btn-flash-sw"),
   btnAuthorize: $("btn-authorize"),
   btnRetry: $("btn-retry"),
   statusAlert: $("status-alert"),
@@ -42,29 +46,26 @@ const el = {
   log: $("log"),
 };
 
-const STEPS = [
-  ["connect", "Connect & detect board"],
-  ["erase", "Erase the board"],
-  ["firmware", "Flash firmware"],
-  ["software", "Install software"],
-  ["verify", "Verify & restart"],
-];
-
 let manifest = null;
-let state = null; // current flashing context
+let state = null; // detected board context
+let busy = false;
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function log(msg, kind = "") {
   const line = document.createElement("div");
-  line.className = "log-line " + (kind === "error" ? "text-error" : kind === "ok" ? "text-success" : "text-base-content/80");
-  const ts = new Date().toLocaleTimeString();
-  line.textContent = `[${ts}] ${msg}`;
+  line.className =
+    "log-line " +
+    (kind === "error" ? "text-error" : kind === "ok" ? "text-success" : "text-base-content/80");
+  line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
   el.log.appendChild(line);
   el.log.scrollTop = el.log.scrollHeight;
 }
 
-function renderSteps(current = null, done = []) {
+// Render a list of [id, label] steps with one current + already-done.
+function renderSteps(stepsArr, current = null, done = []) {
   el.steps.innerHTML = "";
-  for (const [id, label] of STEPS) {
+  for (const [id, label] of stepsArr) {
     const li = document.createElement("li");
     const isDone = done.includes(id);
     const isCurrent = id === current;
@@ -72,6 +73,9 @@ function renderSteps(current = null, done = []) {
     li.textContent = label + (isCurrent ? " …" : isDone ? " ✓" : "");
     el.steps.appendChild(li);
   }
+}
+function clearSteps() {
+  el.steps.innerHTML = "";
 }
 
 function setStatus(msg, kind = "info") {
@@ -95,7 +99,12 @@ function hideProgress() {
   el.progressWrap.classList.add("hidden");
 }
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+function setBusy(b) {
+  busy = b;
+  el.btnFlashFw.disabled = b || !state || !state.firmwareFile;
+  el.btnFlashSw.disabled = b || !state;
+  el.btnConnect.disabled = b;
+}
 
 // ---- Feature detection ------------------------------------------------
 function checkSupport() {
@@ -121,18 +130,14 @@ function checkSupport() {
   return false;
 }
 
-// ---- USB device acquisition ------------------------------------------
+// ---- WebUSB bootloader acquisition -----------------------------------
 function isBootloader(dev) {
   return dev.vendorId === VENDOR_ID && Object.values(BOOTLOADER_PIDS).includes(dev.productId);
 }
-
 async function getAuthorizedBootloader() {
   const devices = await navigator.usb.getDevices();
   return devices.find(isBootloader) || null;
 }
-
-// Wait for the board to appear as a ROM bootloader we already have permission
-// for. Resolves with the device, or null if it doesn't show up in `timeout`.
 function waitForAuthorizedBootloader(timeout) {
   return new Promise((resolve) => {
     let settled = false;
@@ -144,37 +149,29 @@ function waitForAuthorizedBootloader(timeout) {
       clearInterval(poll);
       resolve(d);
     };
-    const onConnect = (e) => {
-      if (isBootloader(e.device)) finish(e.device);
-    };
+    const onConnect = (e) => isBootloader(e.device) && finish(e.device);
     navigator.usb.addEventListener("connect", onConnect);
     const poll = setInterval(() => getAuthorizedBootloader().then((d) => d && finish(d)), 500);
     const timer = setTimeout(() => finish(null), timeout);
     getAuthorizedBootloader().then((d) => d && finish(d));
   });
 }
-
-// Acquire the bootloader device, prompting for permission only if we don't
-// already have it. Returns an open PicobootDevice.
 async function acquireBootloader(timeout = 8000) {
-  // Retry the open a couple of times: right after a reset the previous (now
-  // disconnected) device handle can briefly linger.
   for (let attempt = 0; attempt < 3; attempt++) {
     const device = await waitForAuthorizedBootloader(attempt === 0 ? timeout : 4000);
     if (!device) break;
     try {
+      await sleep(300); // let the OS finish binding the just-connected device
       const pico = new PicobootDevice(device);
       await pico.open();
       return pico;
-    } catch (e) {
+    } catch {
       await sleep(800);
     }
   }
   return acquireBootloaderManually();
 }
-
 async function acquireBootloaderManually() {
-  // First time on this origin: we need a user gesture to grant USB access.
   setStatus(
     "The board is in bootloader mode but needs USB permission. Click “Grant USB access to the bootloader”, " +
       "then choose the device whose name starts with RP (e.g. “RP2 Boot”).",
@@ -187,7 +184,7 @@ async function acquireBootloaderManually() {
         const d = await navigator.usb.requestDevice({ filters: BOOTLOADER_USB_FILTERS });
         el.btnAuthorize.classList.add("hidden");
         resolve(d);
-      } catch (err) {
+      } catch {
         reject(new Error("USB permission was not granted. Click “Start over” to try again."));
       }
     };
@@ -203,13 +200,11 @@ async function loadManifest() {
   if (!res.ok) throw new Error("Could not load the firmware manifest.");
   return res.json();
 }
-
 async function fetchFirmwareUf2(filename) {
   const res = await fetch(`${FIRMWARE_BASE}/${filename}`, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Could not download firmware image ${filename}.`);
   return res.arrayBuffer();
 }
-
 async function fetchSoftwareLatest(product) {
   try {
     const res = await fetch(SOFTWARE_LATEST_URL(product), { cache: "no-cache" });
@@ -219,22 +214,51 @@ async function fetchSoftwareLatest(product) {
   }
   return null;
 }
-
 async function fetchSoftwareUpdate(product) {
   const res = await fetch(SOFTWARE_UPDATE_URL(product), { cache: "no-cache" });
   if (!res.ok) {
     throw new Error(
-      `No software update is published for ${SYSTEM_LABELS[product] || product} yet. ` +
-        "Firmware was flashed; you can update software later over WiFi.",
+      `No software update is published for ${SYSTEM_LABELS[product] || product} yet.`,
     );
   }
   return res.text();
 }
 
-// ---- Phase 0: connect & detect ---------------------------------------
+// Open a connection to the running board, preferring no extra prompt.
+async function openRunningBoard(timeout = 15000) {
+  const candidates = [];
+  if (state && state.port) candidates.push(state.port);
+  for (const p of await navigator.serial.getPorts()) {
+    if (!candidates.includes(p)) candidates.push(p);
+  }
+  const deadline = Date.now() + timeout;
+  while (Date.now() < deadline) {
+    for (const port of candidates) {
+      const board = new SerialBoard(port);
+      try {
+        await board.open();
+        return board;
+      } catch {
+        await board.close().catch(() => {});
+      }
+    }
+    // refresh the authorized port list (board may still be re-enumerating)
+    for (const p of await navigator.serial.getPorts()) {
+      if (!candidates.includes(p)) candidates.push(p);
+    }
+    await sleep(500);
+  }
+  const port = await navigator.serial.requestPort({ filters: RUNNING_USB_FILTERS });
+  const board = new SerialBoard(port);
+  await board.open();
+  return board;
+}
+
+// ---- Connect & detect -------------------------------------------------
 async function connectAndDetect() {
-  el.btnConnect.disabled = true;
-  renderSteps("connect");
+  setBusy(true);
+  clearSteps();
+  el.statusAlert.classList.add("hidden");
   try {
     const port = await navigator.serial.requestPort({ filters: RUNNING_USB_FILTERS });
     const board = new SerialBoard(port);
@@ -261,47 +285,44 @@ async function connectAndDetect() {
     log(`Detected ${boardName}${system ? ` (${SYSTEM_LABELS[system] || system})` : ""}.`, "ok");
 
     await prepareTargets();
-    renderSteps(null, ["connect"]);
-    el.btnConnect.classList.add("hidden");
-    el.btnFlash.classList.remove("hidden");
-    setStatus("Board detected. Review the version below, then click “Update my Vector”.", "success");
+    el.operations.classList.remove("hidden");
+    el.btnConnect.textContent = "Re-detect board";
+    setStatus("Board detected. Choose what you’d like to do below.", "success");
   } catch (err) {
-    el.btnConnect.disabled = false;
     handleError(err);
+  } finally {
+    setBusy(false);
   }
 }
 
-// Resolve which firmware image and software version we'll install, and fill
-// the version selector.
 async function prepareTargets() {
   const sys = manifest.systems[state.system];
   if (!sys) {
     el.firmwareNote.textContent =
-      `No firmware image is bundled for “${SYSTEM_LABELS[state.system] || state.system}”. ` +
-      "Software will still be updated over serial.";
+      `⚠️ No firmware image is bundled for “${SYSTEM_LABELS[state.system] || state.system}” yet, ` +
+      "so firmware flashing is unavailable for this board.";
     state.firmwareFile = null;
     state.firmwareProcessor = null;
+    el.btnFlashFw.disabled = true;
   } else {
     state.firmwareFile = sys.uf2;
     state.firmwareProcessor = sys.processor;
     el.firmwareNote.textContent = `Firmware image: ${sys.uf2} (${PROCESSOR_BOARD_NAMES[sys.processor]}).`;
+    el.btnFlashFw.disabled = false;
   }
 
-  // Software version options. We host the latest production update.json
-  // same-origin; users wanting a specific older build can supply their own file.
   el.softwareSelect.innerHTML = "";
   const latest = await fetchSoftwareLatest(state.system);
   const optLatest = document.createElement("option");
   optLatest.value = "latest";
   optLatest.textContent = latest ? `Latest production — v${latest.version}` : "Latest production";
   el.softwareSelect.appendChild(optLatest);
-
   const optCustom = document.createElement("option");
   optCustom.value = "custom";
   optCustom.textContent = "Upload my own update.json…";
   el.softwareSelect.appendChild(optCustom);
 
-  state.softwareVersion = latest ? latest.version : "latest";
+  state.customSoftware = null;
   el.softwareSelect.onchange = async () => {
     if (el.softwareSelect.value === "custom") {
       const file = await pickFile(".json");
@@ -327,130 +348,145 @@ function pickFile(accept) {
   });
 }
 
-// ---- Full flash flow --------------------------------------------------
-async function runFlash() {
-  el.btnFlash.disabled = true;
+// ---- Operation 1: erase & flash firmware ------------------------------
+const FW_STEPS = [
+  ["reset", "Reset to bootloader"],
+  ["erase", "Erase board"],
+  ["firmware", "Flash firmware"],
+  ["done", "Reboot"],
+];
+
+async function runFirmware() {
+  if (busy || !state || !state.firmwareFile) return;
+  setBusy(true);
   el.btnRetry.classList.add("hidden");
-  const done = ["connect"];
-
+  const done = [];
   try {
-    // Pre-load everything we'll need so a slow network can't interrupt mid-flash.
-    let nukeBuf = null;
-    let firmwareBuf = null;
-    if (state.firmwareFile) {
-      renderSteps("erase", done);
-      log("Downloading firmware images…");
-      nukeBuf = await fetchFirmwareUf2(manifest.nuke);
-      firmwareBuf = await fetchFirmwareUf2(state.firmwareFile);
-    }
+    log("Downloading firmware images…");
+    renderSteps(FW_STEPS, "reset");
+    const nukeBuf = await fetchFirmwareUf2(manifest.nuke);
+    const firmwareBuf = await fetchFirmwareUf2(state.firmwareFile);
 
-    let softwareText = null;
-    if (state.customSoftware) {
-      softwareText = state.customSoftware;
-    } else {
-      try {
-        softwareText = await fetchSoftwareUpdate(state.system);
-      } catch (e) {
-        log(e.message, "error");
-      }
-    }
+    // Reset into the ROM bootloader over serial.
+    setStatus("Resetting the board into its bootloader…", "info");
+    log("Reopening serial to trigger the bootloader…");
+    const board = new SerialBoard(state.port);
+    await board.open();
+    await board.enterBootloader();
+    await board.close().catch(() => {});
+    log("Reset command sent; waiting for the bootloader to appear…");
 
-    // ---- Reset into the ROM bootloader ----
-    if (state.firmwareFile) {
-      setStatus("Resetting the board into its bootloader…", "info");
-      log("Reopening serial to trigger the bootloader…");
-      const board = new SerialBoard(state.port);
-      await board.open();
-      await board.enterBootloader();
-      await board.close().catch(() => {});
-      log("Reset command sent; waiting for the bootloader to appear…");
+    // Erase (nuke.uf2).
+    renderSteps(FW_STEPS, "erase", done);
+    let pico = await acquireBootloader();
+    setStatus("Board is in bootloader mode. Erasing…", "info");
+    showProgress("Erasing the board");
+    log("Flashing nuke.uf2 to erase the board…");
+    await pico.flashUf2(nukeBuf, state.processor, setProgress);
+    log("Running flash-erase…");
+    await pico.reboot(state.processor); // run nuke -> wipes flash -> back to bootloader
+    await pico.close();
+    done.push("reset", "erase");
 
-      // ---- Erase (nuke.uf2) ----
-      renderSteps("erase", done);
-      let pico = await acquireBootloader();
-      setStatus("Board is in bootloader mode. Erasing…", "info");
-      showProgress("Erasing the board");
-      log("Flashing nuke.uf2 to erase the board…");
-      await pico.flashUf2(nukeBuf, state.processor, setProgress);
-      log("Running flash-erase…");
-      await pico.reboot(state.processor); // run nuke -> wipes flash -> back to bootloader
-      await pico.close();
-      done.push("erase");
+    await sleep(2000);
+    renderSteps(FW_STEPS, "firmware", done);
+    hideProgress();
+    log("Waiting for the board to re-enter the bootloader…");
+    pico = await acquireBootloader(20000);
 
-      // nuke wipes flash and returns to the bootloader; wait for re-enumeration.
-      await sleep(2000);
-      renderSteps("firmware", done);
-      hideProgress();
-      log("Waiting for the board to re-enter the bootloader…");
-      pico = await acquireBootloader(20000);
+    // Flash firmware.
+    setStatus("Flashing firmware…", "info");
+    showProgress("Flashing firmware");
+    log(`Flashing ${state.firmwareFile}…`);
+    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || state.processor, setProgress);
+    log("Rebooting into the new firmware…");
+    await pico.reboot(state.firmwareProcessor || state.processor);
+    await pico.close();
+    hideProgress();
+    done.push("firmware");
 
-      // ---- Flash firmware ----
-      setStatus("Flashing firmware…", "info");
-      showProgress("Flashing firmware");
-      log(`Flashing ${state.firmwareFile}…`);
-      await pico.flashUf2(firmwareBuf, state.firmwareProcessor || state.processor, setProgress);
-      log("Rebooting into the new firmware…");
-      await pico.reboot(state.firmwareProcessor || state.processor);
-      await pico.close();
-      hideProgress();
-      done.push("firmware");
-    } else {
-      done.push("erase", "firmware");
-    }
-
-    // ---- Software update over serial ----
-    if (softwareText) {
-      renderSteps("software", done);
-      setStatus("Waiting for the board to restart, then installing software…", "info");
-      log("Waiting for the board’s serial port to come back…");
-      const board = await reconnectSerial();
-      const { meta, files } = parseUpdateFile(softwareText);
-      log(`Update format ${meta.update_file_format}, ${files.length} files. Comparing with the board…`);
-      showProgress("Installing software");
-      await board.writeUpdate(files, (sentN, totalN, name) => {
-        setProgress(sentN, totalN);
-        log(`Uploading (${sentN}/${totalN}): ${name}`);
-      });
-      hideProgress();
-      log("Restarting the board…");
-      await board.restart();
-      await board.close().catch(() => {});
-      done.push("software");
-    } else {
-      done.push("software");
-    }
-
-    // ---- Verify ----
-    renderSteps("verify", done);
-    log("Verifying the board came back up…");
+    // Optional silent verify.
+    renderSteps(FW_STEPS, "done", done);
     await sleep(1500);
-    const verify = await reconnectSerial(20000).catch(() => null);
+    const verify = await openRunningBoardSilent(20000);
     if (verify) {
       const info = await verify.identify().catch(() => null);
       await verify.close().catch(() => {});
-      if (info && info.processor) {
-        log(`Board is back online: ${PROCESSOR_BOARD_NAMES[info.processor]}.`, "ok");
-      }
+      if (info && info.processor) log(`Board is back online: ${PROCESSOR_BOARD_NAMES[info.processor]}.`, "ok");
     }
-    done.push("verify");
-    renderSteps(null, done);
-    setStatus("✅ Done! Your Vector board has been updated. You can unplug it and power your machine back on.", "success");
-    log("All done.", "ok");
-    el.btnRetry.classList.remove("hidden");
-    el.btnRetry.textContent = "Flash another board";
+    done.push("done");
+    renderSteps(FW_STEPS, null, done);
+    setStatus(
+      "✅ Firmware flashed. You can now Update software, or unplug and power your machine back on.",
+      "success",
+    );
+    log("Firmware flash complete.", "ok");
   } catch (err) {
     hideProgress();
     handleError(err, true);
+  } finally {
+    setBusy(false);
   }
 }
 
-// Reconnect to the running board over serial without prompting when possible
-// (Web Serial remembers previously-granted ports).
-async function reconnectSerial(timeout = 15000) {
+// ---- Operation 2: update software -------------------------------------
+const SW_STEPS = [
+  ["connect", "Connect"],
+  ["software", "Install software"],
+  ["restart", "Restart"],
+];
+
+async function runSoftware() {
+  if (busy || !state) return;
+  setBusy(true);
+  el.btnRetry.classList.add("hidden");
+  const done = [];
+  try {
+    let softwareText = state.customSoftware;
+    if (!softwareText) {
+      log("Downloading software update…");
+      softwareText = await fetchSoftwareUpdate(state.system);
+    }
+
+    renderSteps(SW_STEPS, "connect");
+    setStatus("Connecting to the board…", "info");
+    log("Opening serial connection to the running board…");
+    const board = await openRunningBoard();
+    done.push("connect");
+
+    renderSteps(SW_STEPS, "software", done);
+    const { meta, files } = parseUpdateFile(softwareText);
+    log(`Update format ${meta.update_file_format}, ${files.length} files. Comparing with the board…`);
+    setStatus("Installing software…", "info");
+    showProgress("Installing software");
+    await board.writeUpdate(files, (sentN, totalN, name) => {
+      setProgress(sentN, totalN);
+      log(`Uploading (${sentN}/${totalN}): ${name}`);
+    });
+    hideProgress();
+    done.push("software");
+
+    renderSteps(SW_STEPS, "restart", done);
+    log("Restarting the board…");
+    await board.restart();
+    await board.close().catch(() => {});
+    done.push("restart");
+    renderSteps(SW_STEPS, null, done);
+    setStatus("✅ Software updated. You can unplug the board and power your machine back on.", "success");
+    log("Software update complete.", "ok");
+  } catch (err) {
+    hideProgress();
+    handleError(err, true);
+  } finally {
+    setBusy(false);
+  }
+}
+
+// Try to reopen the running board without prompting; returns null on failure.
+async function openRunningBoardSilent(timeout) {
   const deadline = Date.now() + timeout;
   while (Date.now() < deadline) {
-    const ports = await navigator.serial.getPorts();
-    for (const port of ports) {
+    for (const port of await navigator.serial.getPorts()) {
       const board = new SerialBoard(port);
       try {
         await board.open();
@@ -461,61 +497,56 @@ async function reconnectSerial(timeout = 15000) {
     }
     await sleep(500);
   }
-  // Couldn't reopen automatically — ask the user to pick it.
-  const port = await navigator.serial.requestPort({ filters: RUNNING_USB_FILTERS });
-  const board = new SerialBoard(port);
-  await board.open();
-  return board;
+  return null;
 }
 
+// ---- Errors / reset ---------------------------------------------------
 function handleError(err, fatal = false) {
   console.error(err);
   const msg = err && err.message ? err.message : String(err);
-  // A user dismissing the chooser is not really an error.
   if (/No port selected|No device selected|cancelled|aborted/i.test(msg)) {
-    setStatus("Cancelled. Click “Connect & detect board” to try again.", "warning");
-  } else {
-    setStatus(msg, "error");
+    setStatus("Cancelled. You can try again when ready.", "warning");
+    log("Cancelled.", "");
+    return;
   }
   log(msg, "error");
   if (fatal) {
-    setStatus(
-      msg + " Your board is safe — leave it plugged in. Click “Start over” to retry.",
-      "error",
-    );
+    setStatus(msg + " Your board is safe — leave it plugged in and try again.", "error");
     el.btnRetry.classList.remove("hidden");
     el.btnRetry.textContent = "Start over";
+  } else {
+    setStatus(msg, "error");
   }
 }
 
 function resetUi() {
   state = null;
+  el.operations.classList.add("hidden");
   el.detected.classList.add("hidden");
-  el.btnFlash.classList.add("hidden");
-  el.btnFlash.disabled = false;
   el.btnAuthorize.classList.add("hidden");
   el.btnRetry.classList.add("hidden");
-  el.btnConnect.classList.remove("hidden");
-  el.btnConnect.disabled = false;
+  el.btnConnect.textContent = "Connect & detect board";
   el.statusAlert.classList.add("hidden");
   hideProgress();
-  renderSteps();
+  clearSteps();
+  setBusy(false);
 }
 
 // ---- Init -------------------------------------------------------------
 async function init() {
   if (!checkSupport()) return;
   el.app.classList.remove("hidden");
-  renderSteps();
   try {
     manifest = await loadManifest();
-  } catch (err) {
+  } catch {
     setStatus("Couldn’t load firmware data. Please refresh and try again.", "error");
     return;
   }
   el.btnConnect.onclick = connectAndDetect;
-  el.btnFlash.onclick = runFlash;
+  el.btnFlashFw.onclick = runFirmware;
+  el.btnFlashSw.onclick = runSoftware;
   el.btnRetry.onclick = resetUi;
+  setBusy(false);
 }
 
 init();

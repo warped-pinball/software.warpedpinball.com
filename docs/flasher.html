@@ -50,42 +50,76 @@
         </div>
       </div>
 
-      <!-- Steps -->
+      <!-- Step 1: connect -->
       <div class="card bg-base-100 shadow">
         <div class="card-body">
-          <h2 class="card-title text-lg">Progress</h2>
-          <ul id="steps" class="steps steps-vertical w-full"></ul>
-
-          <div id="progress-wrap" class="mt-2 hidden">
-            <div class="flex justify-between text-xs mb-1">
-              <span id="progress-label">Flashing…</span>
-              <span id="progress-pct">0%</span>
-            </div>
-            <progress id="progress" class="progress progress-primary w-full" value="0" max="100"></progress>
-          </div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <div class="card bg-base-100 shadow">
-        <div class="card-body">
+          <h2 class="card-title text-lg">1. Connect</h2>
+          <p class="text-sm text-base-content/70">
+            Plug the board in (machine powered off) and detect what it is.
+          </p>
           <div id="detected" class="hidden">
-            <h2 class="card-title text-lg">Detected board</h2>
             <div class="flex flex-wrap gap-2 my-2">
               <span class="badge badge-lg" id="badge-board">—</span>
               <span class="badge badge-lg badge-outline" id="badge-system">—</span>
             </div>
+          </div>
+          <div class="card-actions mt-2">
+            <button id="btn-connect" class="btn btn-primary">Connect &amp; detect board</button>
+          </div>
+        </div>
+      </div>
 
+      <!-- The two independent operations -->
+      <div id="operations" class="hidden space-y-6">
+
+        <!-- Firmware -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-lg">Erase &amp; flash firmware</h2>
+            <p class="text-sm text-base-content/70">
+              Wipes the board with <code>nuke.uf2</code> and installs the firmware (OS) image for the
+              detected model. Use this when changing game series or recovering a board.
+            </p>
+            <p id="firmware-note" class="text-sm text-base-content/80 mt-1"></p>
+            <div class="card-actions mt-2">
+              <button id="btn-flash-fw" class="btn btn-secondary">Erase &amp; flash firmware</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-lg">Update software</h2>
+            <p class="text-sm text-base-content/70">
+              Installs the Warped Pinball application over serial onto a running board. No erase, no
+              bootloader — use this for a normal version update.
+            </p>
             <label class="form-control w-full max-w-sm">
               <div class="label"><span class="label-text">Software version to install</span></div>
               <select id="software-select" class="select select-bordered"></select>
             </label>
-            <p id="firmware-note" class="text-sm text-base-content/70 mt-2"></p>
+            <div class="card-actions mt-3">
+              <button id="btn-flash-sw" class="btn btn-secondary">Update software</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shared progress / status / controls -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <ul id="steps" class="steps steps-vertical w-full"></ul>
+
+          <div id="progress-wrap" class="mt-2 hidden">
+            <div class="flex justify-between text-xs mb-1">
+              <span id="progress-label">Working…</span>
+              <span id="progress-pct">0%</span>
+            </div>
+            <progress id="progress" class="progress progress-primary w-full" value="0" max="100"></progress>
           </div>
 
-          <div class="card-actions mt-4 gap-2">
-            <button id="btn-connect" class="btn btn-primary">Connect &amp; detect board</button>
-            <button id="btn-flash" class="btn btn-secondary hidden">Update my Vector</button>
+          <div class="card-actions mt-2 gap-2">
             <button id="btn-authorize" class="btn btn-warning hidden">Grant USB access to the bootloader</button>
             <button id="btn-retry" class="btn btn-outline hidden">Start over</button>
           </div>

@@ -11,6 +11,7 @@ import {
 import { parseUf2, coalesceBlocks, assertUf2MatchesProcessor } from "./uf2.js";
 
 const CMD_PACKET_SIZE = 32;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export class PicobootDevice {
   /** @param {USBDevice} device */
@@ -53,6 +54,17 @@ export class PicobootDevice {
     }
 
     await this.resetInterface();
+    // Clear any stale halt left on the bulk endpoints from a previous session,
+    // which otherwise surfaces as a generic "transfer error" on the first ack.
+    try {
+      await this.device.clearHalt("in", this.epIn);
+      await this.device.clearHalt("out", this.epOut);
+    } catch {
+      /* not all platforms allow clearHalt; ignore */
+    }
+    // A just-re-enumerated bootloader can need a moment before the OS finishes
+    // binding the WinUSB/libusb driver; the first transfer otherwise errors.
+    await sleep(150);
   }
 
   async close() {
@@ -115,8 +127,9 @@ export class PicobootDevice {
       if (dataOut && dataOut.length) {
         await this.device.transferOut(this.epOut, dataOut);
       }
-      // Acknowledge an OUT/no-data command with a zero-length IN packet.
-      await this.device.transferIn(this.epIn, 1);
+      // Acknowledge an OUT/no-data command by reading the bootrom's zero-length
+      // IN packet. Request a full max-packet buffer (the reply is a ZLP).
+      await this.device.transferIn(this.epIn, 64);
     }
     return result;
   }
@@ -128,7 +141,10 @@ export class PicobootDevice {
     return new Uint8Array(buf);
   }
 
-  async exclusiveAccess(mode = PICOBOOT.EXCLUSIVE_AND_EJECT) {
+  // Use plain EXCLUSIVE (not EXCLUSIVE_AND_EJECT): ejecting the mass-storage
+  // volume mid-session can disrupt the USB connection and break the next
+  // transfer. We never use the drive path anyway.
+  async exclusiveAccess(mode = PICOBOOT.EXCLUSIVE) {
     await this._command(PICOBOOT.EXCLUSIVE_ACCESS, { args: new Uint8Array([mode]) });
   }
 
@@ -170,8 +186,23 @@ export class PicobootDevice {
 
     const segments = coalesceBlocks(blocks);
 
-    await this.exclusiveAccess();
-    await this.exitXip();
+    // Claim the flash and leave XIP. Retry once on a transient transfer error
+    // (the endpoint may still be settling right after re-enumeration).
+    try {
+      await this.exclusiveAccess();
+      await this.exitXip();
+    } catch (e) {
+      await this.resetInterface();
+      try {
+        await this.device.clearHalt("in", this.epIn);
+        await this.device.clearHalt("out", this.epOut);
+      } catch {
+        /* ignore */
+      }
+      await sleep(300);
+      await this.exclusiveAccess();
+      await this.exitXip();
+    }
 
     // Erase every 4 KB sector touched by the image, each exactly once.
     const erased = new Set();
