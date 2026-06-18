@@ -13,7 +13,7 @@ them here as new firmware is released.
 
 | File | Purpose |
 | --- | --- |
-| `nuke.uf2` | Universal flash-erase image. Written and run before every firmware flash to fully wipe the board. Accepted by both RP2040 and RP2350 bootroms. |
+| `nuke.uf2` | Legacy universal flash-erase image (a RAM program). The **browser flasher no longer uses this** — it erases the whole flash directly over PICOBOOT — but it is kept for reference / the desktop tool. |
 | `vector_system_11_and_9_v4.uf2` | System 9 / 11 OS — **Pico W (RP2040)**. |
 | `Vector_WPC_v5.uf2` | WPC OS — **Pico 2 W (RP2350)**. Also used by the EM series. |
 | `Vector_DataEast_v1.uf2` | Data East OS — **Pico 2 W (RP2350)**. |

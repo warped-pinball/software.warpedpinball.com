@@ -447,39 +447,38 @@ async function runFirmware() {
   el.btnRetry.classList.add("hidden");
   const done = [];
   try {
-    log("Downloading firmware images…");
+    log("Downloading firmware image…");
     renderSteps(FW_STEPS, "erase");
-    const nukeBuf = await fetchFirmwareUf2(manifest.nuke);
     const firmwareBuf = await fetchFirmwareUf2(state.firmwareFile);
 
     const proc = state.bootProcessor || state.processor;
-    let pico = state.pico;
+    const pico = state.pico;
 
-    // Erase (nuke.uf2) using the already-validated bootloader handle.
+    // Wipe the whole flash directly over PICOBOOT (no nuke.uf2 needed). This
+    // leaves the board in the bootloader, so we flash firmware on the same
+    // handle without a reboot/re-enumeration.
     setStatus("Erasing the board…", "info");
     showProgress("Erasing the board");
-    log("Flashing nuke.uf2 to erase the board…");
-    await pico.flashUf2(nukeBuf, proc, setProgress, (m) => log(m));
-    log("Running flash-erase…");
-    await pico.reboot(proc); // run nuke -> wipes flash -> back to bootloader
-    await pico.close().catch(() => {});
-    state.pico = null;
+    log("Erasing flash…");
+    const erased = await pico.fullErase((bytes) => {
+      el.progressLabel.textContent = `Erasing the board (${(bytes / 1048576).toFixed(1)} MB)`;
+      setProgress(bytes, 16 * 1048576);
+    });
+    log(`Erased ${(erased / 1048576).toFixed(1)} MB.`, "ok");
     done.push("erase");
 
-    await sleep(2000);
+    // Flash firmware on the same (already-erased) bootloader handle.
     renderSteps(FW_STEPS, "firmware", done);
-    hideProgress();
-    log("Waiting for the board to re-enter the bootloader…");
-    pico = await acquireBootloader(20000);
-
-    // Flash firmware.
     setStatus("Flashing firmware…", "info");
     showProgress("Flashing firmware");
     log(`Flashing ${state.firmwareFile}…`);
-    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || proc, setProgress, (m) => log(m));
+    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || proc, setProgress, (m) => log(m), {
+      skipErase: true,
+    });
     log("Rebooting into the new firmware…");
     await pico.reboot(state.firmwareProcessor || proc);
     await pico.close().catch(() => {});
+    state.pico = null;
     hideProgress();
     done.push("firmware");
 

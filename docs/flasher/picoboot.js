@@ -229,7 +229,9 @@ export class PicobootDevice {
       // Wait until our command (token) is the one reported as finished.
       if (st.inProgress === 0 && st.token === token) {
         if (st.statusCode !== 0) {
-          throw new Error(`PICOBOOT ${name}: bootloader reported status code ${st.statusCode}`);
+          const err = new Error(`PICOBOOT ${name}: bootloader reported status code ${st.statusCode}`);
+          err.statusCode = st.statusCode;
+          throw err;
         }
         return;
       }
@@ -289,12 +291,41 @@ export class PicobootDevice {
   }
 
   /**
+   * Erase the whole flash by issuing FLASH_ERASE in chunks until the bootloader
+   * reports INVALID_ADDRESS (status 4), which tells us we've run off the end of
+   * the chip. This both wipes the firmware region and the MicroPython
+   * filesystem, and auto-detects the flash size. Returns the bytes erased.
+   * @param {(erased:number)=>void} onProgress
+   * @param {number} maxBytes safety cap
+   */
+  async fullErase(onProgress = () => {}, maxBytes = 16 * 1024 * 1024) {
+    await this.exclusiveAccess();
+    await this.exitXip();
+    const CHUNK = 256 * 1024; // multiple of the 4 KB sector size
+    let erased = 0;
+    while (erased < maxBytes) {
+      try {
+        await this.flashErase(FLASH_XIP_BASE + erased, CHUNK);
+      } catch (e) {
+        if (e.statusCode === 4) break; // INVALID_ADDRESS -> past end of flash
+        throw e;
+      }
+      erased += CHUNK;
+      onProgress(erased);
+    }
+    if (erased === 0) throw new Error("Flash erase failed: no erasable flash found on the board.");
+    return erased;
+  }
+
+  /**
    * Erase + program a parsed UF2 image. Reports byte-level progress.
    * @param {ArrayBuffer|Uint8Array} uf2Buffer
    * @param {string} processor "rp2040" | "rp2350" (for family-id validation)
    * @param {(written:number, total:number)=>void} onProgress
+   * @param {(msg:string)=>void} onLog
+   * @param {{skipErase?:boolean}} opts skipErase if the flash was already wiped
    */
-  async flashUf2(uf2Buffer, processor, onProgress = () => {}, onLog = () => {}) {
+  async flashUf2(uf2Buffer, processor, onProgress = () => {}, onLog = () => {}, { skipErase = false } = {}) {
     const { blocks, families, totalBytes } = parseUf2(uf2Buffer);
     assertUf2MatchesProcessor(families, processor);
 
@@ -307,15 +338,18 @@ export class PicobootDevice {
       onLog("Bulk ack not supported by this bootloader; using control-transfer status acks.");
     }
 
-    // Erase every 4 KB sector touched by the image, each exactly once.
-    const erased = new Set();
-    for (const seg of segments) {
-      const first = Math.floor((seg.address - FLASH_XIP_BASE) / FLASH_SECTOR_SIZE);
-      const last = Math.floor((seg.address + seg.data.length - 1 - FLASH_XIP_BASE) / FLASH_SECTOR_SIZE);
-      for (let s = first; s <= last; s++) {
-        if (erased.has(s)) continue;
-        erased.add(s);
-        await this.flashErase(FLASH_XIP_BASE + s * FLASH_SECTOR_SIZE, FLASH_SECTOR_SIZE);
+    // Erase every 4 KB sector touched by the image (unless the caller already
+    // wiped the whole flash).
+    if (!skipErase) {
+      const erased = new Set();
+      for (const seg of segments) {
+        const first = Math.floor((seg.address - FLASH_XIP_BASE) / FLASH_SECTOR_SIZE);
+        const last = Math.floor((seg.address + seg.data.length - 1 - FLASH_XIP_BASE) / FLASH_SECTOR_SIZE);
+        for (let s = first; s <= last; s++) {
+          if (erased.has(s)) continue;
+          erased.add(s);
+          await this.flashErase(FLASH_XIP_BASE + s * FLASH_SECTOR_SIZE, FLASH_SECTOR_SIZE);
+        }
       }
     }
 
