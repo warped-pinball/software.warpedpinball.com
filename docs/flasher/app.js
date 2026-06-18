@@ -681,7 +681,15 @@ async function toggleMonitor() {
     }
     monitor = m;
     log("Serial monitor started.", "ok");
-    monitorAppend("--- monitor connected ---\n");
+    monitorAppend("--- monitor connected; resetting board to resume output ---\n");
+    // Detection (and any prior command) leaves the board halted in the raw
+    // REPL, so nothing is printing. Exit raw REPL and soft-reset so the board
+    // reboots and streams its normal output.
+    await m.send("\x03").catch(() => {}); // Ctrl-C: interrupt
+    await sleep(100);
+    await m.send("\x02").catch(() => {}); // Ctrl-B: leave raw REPL -> friendly
+    await sleep(100);
+    await m.send("\x04").catch(() => {}); // Ctrl-D: soft reset -> runs main.py
   } catch (err) {
     handleError(err);
   } finally {

@@ -27,6 +27,9 @@ export class SerialMonitor {
 
   async start(baudRate = 115200) {
     await this.port.open({ baudRate });
+    // Assert DTR/RTS — some USB-CDC stacks won't emit output until a terminal
+    // raises these signals.
+    await this.port.setSignals({ dataTerminalReady: true, requestToSend: true }).catch(() => {});
     this.reader = this.port.readable.getReader();
     this.writer = this.port.writable.getWriter();
     this._running = true;
