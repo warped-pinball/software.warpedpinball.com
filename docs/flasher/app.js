@@ -16,7 +16,7 @@ import {
   PROCESSOR_BOARD_NAMES,
   SYSTEM_LABELS,
 } from "./constants.js";
-import { SerialBoard, parseUpdateFile } from "./board.js";
+import { SerialBoard, SerialMonitor, parseUpdateFile } from "./board.js";
 import { PicobootDevice } from "./picoboot.js";
 
 // ---- DOM helpers ------------------------------------------------------
@@ -49,7 +49,17 @@ const el = {
   statusAlert: $("status-alert"),
   statusText: $("status-text"),
   log: $("log"),
+  btnMonitor: $("btn-monitor"),
+  btnMonitorClear: $("btn-monitor-clear"),
+  monitorAutoscroll: $("monitor-autoscroll"),
+  monitorOutput: $("monitor-output"),
+  monitorInput: $("monitor-input"),
+  btnMonitorSend: $("btn-monitor-send"),
+  btnMonitorCtrlC: $("btn-monitor-ctrlc"),
+  btnMonitorCtrlD: $("btn-monitor-ctrld"),
 };
+
+let monitor = null; // active SerialMonitor, or null
 
 let manifest = null;
 let state = null; // detected board context
@@ -108,10 +118,18 @@ function updateButtons() {
   const haveSystem = !!(state && state.system);
   const fwAvail = haveSystem && !!state.firmwareFile;
   const havePico = !!(state && state.pico);
-  el.btnConnect.disabled = busy;
-  el.btnEnterBoot.disabled = busy || !fwAvail;
-  el.btnFlashFw.disabled = busy || !fwAvail || !havePico;
-  el.btnFlashSw.disabled = busy || !haveSystem;
+  const monitoring = !!monitor;
+  el.btnConnect.disabled = busy || monitoring;
+  el.btnEnterBoot.disabled = busy || monitoring || !fwAvail;
+  el.btnFlashFw.disabled = busy || monitoring || !fwAvail || !havePico;
+  el.btnFlashSw.disabled = busy || monitoring || !haveSystem;
+  // Monitor controls.
+  el.btnMonitor.disabled = busy || !state;
+  el.btnMonitor.textContent = monitoring ? "Stop monitor" : "Start monitor";
+  el.monitorInput.disabled = !monitoring;
+  el.btnMonitorSend.disabled = !monitoring;
+  el.btnMonitorCtrlC.disabled = !monitoring;
+  el.btnMonitorCtrlD.disabled = !monitoring;
 }
 function setBusy(b) {
   busy = b;
@@ -633,6 +651,61 @@ async function openRunningBoardSilent(timeout) {
   return null;
 }
 
+// ---- Serial monitor ---------------------------------------------------
+let monitorBuffer = "";
+const MONITOR_MAX = 200000; // cap so a long session doesn't grow unbounded
+function monitorAppend(text) {
+  monitorBuffer += text;
+  if (monitorBuffer.length > MONITOR_MAX) monitorBuffer = monitorBuffer.slice(-MONITOR_MAX);
+  el.monitorOutput.textContent = monitorBuffer;
+  if (el.monitorAutoscroll.checked) el.monitorOutput.scrollTop = el.monitorOutput.scrollHeight;
+}
+
+async function toggleMonitor() {
+  if (monitor) {
+    await stopMonitor();
+    return;
+  }
+  if (!state) return;
+  setBusy(true);
+  try {
+    // Reuse the detected port; fall back to a fresh pick if it can't be opened.
+    let m = new SerialMonitor(state.port, monitorAppend);
+    try {
+      await m.start();
+    } catch {
+      const port = await navigator.serial.requestPort({ filters: RUNNING_USB_FILTERS });
+      state.port = port;
+      m = new SerialMonitor(port, monitorAppend);
+      await m.start();
+    }
+    monitor = m;
+    log("Serial monitor started.", "ok");
+    monitorAppend("--- monitor connected ---\n");
+  } catch (err) {
+    handleError(err);
+  } finally {
+    setBusy(false); // updateButtons reflects the new monitor state
+  }
+}
+
+async function stopMonitor() {
+  if (!monitor) return;
+  const m = monitor;
+  monitor = null;
+  await m.stop().catch(() => {});
+  monitorAppend("\n--- monitor disconnected ---\n");
+  log("Serial monitor stopped.");
+  updateButtons();
+}
+
+async function monitorSendCurrentInput() {
+  if (!monitor) return;
+  const text = el.monitorInput.value;
+  el.monitorInput.value = "";
+  await monitor.send(text + "\r\n").catch((e) => handleError(e));
+}
+
 // ---- Errors / reset ---------------------------------------------------
 function handleError(err, fatal = false) {
   console.error(err);
@@ -655,6 +728,7 @@ function handleError(err, fatal = false) {
 }
 
 function resetUi() {
+  if (monitor) stopMonitor();
   if (state && state.pico) state.pico.close().catch(() => {});
   state = null;
   el.operations.classList.add("hidden");
@@ -685,6 +759,21 @@ async function init() {
   el.btnFlashFw.onclick = runFirmware;
   el.btnFlashSw.onclick = runSoftware;
   el.btnRetry.onclick = resetUi;
+  // Serial monitor controls.
+  el.btnMonitor.onclick = toggleMonitor;
+  el.btnMonitorClear.onclick = () => {
+    monitorBuffer = "";
+    el.monitorOutput.textContent = "";
+  };
+  el.btnMonitorSend.onclick = monitorSendCurrentInput;
+  el.monitorInput.onkeydown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      monitorSendCurrentInput();
+    }
+  };
+  el.btnMonitorCtrlC.onclick = () => monitor && monitor.send("\x03").catch(() => {});
+  el.btnMonitorCtrlD.onclick = () => monitor && monitor.send("\x04").catch(() => {});
   setBusy(false);
 }
 

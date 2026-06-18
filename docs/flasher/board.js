@@ -8,6 +8,71 @@ const CTRL_C = "\x03"; // interrupt
 const CTRL_D = "\x04"; // execute / EOT
 const COMMAND_CHUNK_SIZE = 5000;
 
+/**
+ * A simple live serial monitor: opens the port in normal mode (no raw REPL) and
+ * streams decoded text to a callback, with optional writes back to the board.
+ * Kept separate from SerialBoard, which drives the raw-REPL command protocol.
+ */
+export class SerialMonitor {
+  /** @param {SerialPort} port @param {(text:string)=>void} onData */
+  constructor(port, onData) {
+    this.port = port;
+    this.onData = onData;
+    this.reader = null;
+    this.writer = null;
+    this._decoder = new TextDecoder();
+    this._encoder = new TextEncoder();
+    this._running = false;
+  }
+
+  async start(baudRate = 115200) {
+    await this.port.open({ baudRate });
+    this.reader = this.port.readable.getReader();
+    this.writer = this.port.writable.getWriter();
+    this._running = true;
+    this._loop();
+  }
+
+  async _loop() {
+    try {
+      while (this._running) {
+        const { value, done } = await this.reader.read();
+        if (done) break;
+        if (value && value.length) this.onData(this._decoder.decode(value, { stream: true }));
+      }
+    } catch {
+      /* reader cancelled or device removed */
+    }
+  }
+
+  async send(text) {
+    if (this.writer) await this.writer.write(this._encoder.encode(text));
+  }
+
+  async stop() {
+    this._running = false;
+    try {
+      if (this.reader) {
+        await this.reader.cancel().catch(() => {});
+        this.reader.releaseLock();
+      }
+    } catch {
+      /* ignore */
+    }
+    try {
+      if (this.writer) this.writer.releaseLock();
+    } catch {
+      /* ignore */
+    }
+    try {
+      await this.port.close();
+    } catch {
+      /* ignore */
+    }
+    this.reader = this.writer = null;
+  }
+}
+
 export class SerialBoard {
   /** @param {SerialPort} port */
   constructor(port) {

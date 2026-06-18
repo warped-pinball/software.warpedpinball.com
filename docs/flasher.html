@@ -138,6 +138,32 @@
             </div>
           </div>
         </div>
+
+        <!-- Serial monitor -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-lg">Serial monitor</h2>
+            <p class="text-sm text-base-content/70">
+              Watch the board’s serial output (<code>print()</code> statements and the REPL) live. Stop the
+              monitor before flashing or updating — only one connection to the board can be open at a time.
+            </p>
+            <div class="flex flex-wrap items-center gap-2 mt-2">
+              <button id="btn-monitor" class="btn btn-secondary btn-sm">Start monitor</button>
+              <button id="btn-monitor-clear" class="btn btn-ghost btn-sm">Clear</button>
+              <label class="label cursor-pointer gap-1 text-xs">
+                <input id="monitor-autoscroll" type="checkbox" class="checkbox checkbox-xs" checked />
+                <span class="label-text text-xs">Autoscroll</span>
+              </label>
+            </div>
+            <pre id="monitor-output" class="bg-base-300 rounded p-3 h-56 overflow-y-auto text-xs whitespace-pre-wrap mt-2"></pre>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <input id="monitor-input" type="text" placeholder="Type a command, press Enter to send…" class="input input-bordered input-sm flex-1" disabled />
+              <button id="btn-monitor-send" class="btn btn-sm" disabled>Send</button>
+              <button id="btn-monitor-ctrlc" class="btn btn-ghost btn-sm" disabled title="Interrupt the running program">Ctrl-C</button>
+              <button id="btn-monitor-ctrld" class="btn btn-ghost btn-sm" disabled title="Soft-reboot / reload">Ctrl-D</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Shared progress / status / controls -->
