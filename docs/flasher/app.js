@@ -403,6 +403,7 @@ async function runEnterBoot() {
     const pid = pico.device.productId;
     const proc = pico.processor;
     log(`Bootloader device: VID 0x${VENDOR_ID.toString(16)} PID 0x${pid.toString(16).padStart(4, "0")} (${proc || "unknown"}).`, "ok");
+    log(`USB: ${pico.describe()}.`);
 
     // Validate communication with a control transfer (no bulk endpoints), so
     // detection is confirmed independently of the UF2 write path.
@@ -458,7 +459,7 @@ async function runFirmware() {
     setStatus("Erasing the board…", "info");
     showProgress("Erasing the board");
     log("Flashing nuke.uf2 to erase the board…");
-    await pico.flashUf2(nukeBuf, proc, setProgress);
+    await pico.flashUf2(nukeBuf, proc, setProgress, (m) => log(m));
     log("Running flash-erase…");
     await pico.reboot(proc); // run nuke -> wipes flash -> back to bootloader
     await pico.close().catch(() => {});
@@ -475,7 +476,7 @@ async function runFirmware() {
     setStatus("Flashing firmware…", "info");
     showProgress("Flashing firmware");
     log(`Flashing ${state.firmwareFile}…`);
-    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || proc, setProgress);
+    await pico.flashUf2(firmwareBuf, state.firmwareProcessor || proc, setProgress, (m) => log(m));
     log("Rebooting into the new firmware…");
     await pico.reboot(state.firmwareProcessor || proc);
     await pico.close().catch(() => {});
@@ -582,18 +583,20 @@ async function openRunningBoardSilent(timeout) {
 function handleError(err, fatal = false) {
   console.error(err);
   const msg = err && err.message ? err.message : String(err);
-  if (/No port selected|No device selected|cancelled|aborted/i.test(msg)) {
-    setStatus("Cancelled. You can try again when ready.", "warning");
-    log("Cancelled.", "");
+  const full = err && err.name && !msg.startsWith(err.name) ? `${err.name}: ${msg}` : msg;
+  // Only a user dismissing a chooser is treated as a non-error.
+  if (/No port selected|No device selected/i.test(msg)) {
+    setStatus("No device was selected. You can try again when ready.", "warning");
+    log("No device selected.", "");
     return;
   }
-  log(msg, "error");
+  log(full, "error");
   if (fatal) {
-    setStatus(msg + " Your board is safe — leave it plugged in and try again.", "error");
+    setStatus(full + " — Your board is safe; leave it plugged in and try again.", "error");
     el.btnRetry.classList.remove("hidden");
     el.btnRetry.textContent = "Start over";
   } else {
-    setStatus(msg, "error");
+    setStatus(full, "error");
   }
 }
 

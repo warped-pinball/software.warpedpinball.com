@@ -21,6 +21,8 @@ export class PicobootDevice {
     this.epIn = null;
     this.epOut = null;
     this.token = 1;
+    this._ackLen = 64; // bulk IN max packet size (refined on open)
+    this._skipBulkAck = false; // set if the bulk ZLP ack proves unreliable
   }
 
   async open() {
@@ -43,18 +45,22 @@ export class PicobootDevice {
 
     this.interfaceNumber = found.number;
     await dev.claimInterface(this.interfaceNumber);
-    // Explicitly activate the interface's alternate setting; on some platforms
-    // the bulk endpoints aren't usable until this is done, which otherwise
-    // surfaces as a generic transfer error on the first bulk transfer.
-    try {
-      await dev.selectAlternateInterface(this.interfaceNumber, found.alt.alternateSetting);
-    } catch {
-      /* already active or unsupported; ignore */
+    // Only select a non-default alternate setting if the interface actually has
+    // one; calling this needlessly can reset the endpoints on some platforms.
+    if (found.alt.alternateSetting !== 0) {
+      try {
+        await dev.selectAlternateInterface(this.interfaceNumber, found.alt.alternateSetting);
+      } catch {
+        /* ignore */
+      }
     }
 
     for (const ep of found.alt.endpoints) {
       if (ep.type !== "bulk") continue;
-      if (ep.direction === "in") this.epIn = ep.endpointNumber;
+      if (ep.direction === "in") {
+        this.epIn = ep.endpointNumber;
+        if (ep.packetSize) this._ackLen = ep.packetSize;
+      }
       if (ep.direction === "out") this.epOut = ep.endpointNumber;
     }
     if (this.epIn == null || this.epOut == null) {
@@ -130,30 +136,38 @@ export class PicobootDevice {
     return null;
   }
 
-  // Build a 32-byte PICOBOOT command packet.
+  // Build a 32-byte PICOBOOT command packet. Returns {buf, token}.
   _packet(cmdId, transferLength, argsBytes) {
+    const token = this.token++ >>> 0;
     const buf = new ArrayBuffer(CMD_PACKET_SIZE);
     const view = new DataView(buf);
     view.setUint32(0, PICOBOOT.CMD_MAGIC, true);
-    view.setUint32(4, this.token++ >>> 0, true);
+    view.setUint32(4, token, true);
     view.setUint8(8, cmdId);
     view.setUint8(9, argsBytes ? argsBytes.length : 0);
     view.setUint16(10, 0, true); // reserved
     view.setUint32(12, transferLength >>> 0, true);
     if (argsBytes) new Uint8Array(buf, 16).set(argsBytes);
-    return buf;
+    return { buf, token };
   }
 
   /**
-   * Issue a PICOBOOT command. Handles the data stage and the zero-length-packet
-   * acknowledgement handshake in the opposite direction.
+   * Issue a PICOBOOT command. After the data stage, the protocol uses a
+   * zero-length-packet ack in the opposite direction. Some bootroms (notably
+   * RP2350) don't ack no-data commands the way the bulk handshake expects, so
+   * if the bulk ack errors we recover the endpoint and confirm completion over
+   * the control-transfer status channel instead.
    */
-  async _command(cmdId, { args = null, dataOut = null, readLength = 0 } = {}) {
+  async _command(cmdId, { args = null, dataOut = null, readLength = 0, name = "command" } = {}) {
     const isReadCmd = (cmdId & 0x80) !== 0;
     const transferLength = isReadCmd ? readLength : dataOut ? dataOut.length : 0;
 
-    const packet = this._packet(cmdId, transferLength, args);
-    await this.device.transferOut(this.epOut, packet);
+    const { buf: packet, token } = this._packet(cmdId, transferLength, args);
+    try {
+      await this.device.transferOut(this.epOut, packet);
+    } catch (e) {
+      throw new Error(`PICOBOOT ${name}: failed to send command on EP OUT ${this.epOut} — ${e.message}`);
+    }
 
     let result = null;
     if (isReadCmd) {
@@ -161,17 +175,67 @@ export class PicobootDevice {
         const r = await this.device.transferIn(this.epIn, readLength);
         result = r.data;
       }
-      // Acknowledge an IN-data command with a zero-length OUT packet.
-      await this.device.transferOut(this.epOut, new Uint8Array(0));
+      await this._ack("out", name, token); // IN-data command -> ack is a ZLP OUT
     } else {
       if (dataOut && dataOut.length) {
-        await this.device.transferOut(this.epOut, dataOut);
+        try {
+          await this.device.transferOut(this.epOut, dataOut);
+        } catch (e) {
+          throw new Error(
+            `PICOBOOT ${name}: failed to send ${dataOut.length} data bytes on EP OUT ${this.epOut} — ${e.message}`,
+          );
+        }
       }
-      // Acknowledge an OUT/no-data command by reading the bootrom's zero-length
-      // IN packet. Request a full max-packet buffer (the reply is a ZLP).
-      await this.device.transferIn(this.epIn, 64);
+      await this._ack("in", name, token); // OUT/no-data command -> ack is a ZLP IN
     }
     return result;
+  }
+
+  // Perform the command acknowledgement. Prefer the bulk ZLP; on failure fall
+  // back to the control-transfer status check (and remember to skip the bulk
+  // ack from then on, so we don't stall the endpoint on every command).
+  async _ack(direction, name, token) {
+    if (!this._skipBulkAck) {
+      try {
+        if (direction === "in") {
+          await this.device.transferIn(this.epIn, this._ackLen);
+        } else {
+          await this.device.transferOut(this.epOut, new Uint8Array(0));
+        }
+        return;
+      } catch (e) {
+        this._skipBulkAck = true;
+        // Clear a possible stall left on the endpoint before we continue.
+        await this.device.clearHalt(direction, direction === "in" ? this.epIn : this.epOut).catch(() => {});
+        await this._confirmViaStatus(name, token, e);
+        return;
+      }
+    }
+    await this._confirmViaStatus(name, token, null);
+  }
+
+  // Poll command status (control transfer) until our command (matched by token)
+  // finishes.
+  async _confirmViaStatus(name, token, ackErr) {
+    for (let i = 0; i < 400; i++) {
+      let st;
+      try {
+        st = await this.getCommandStatus();
+      } catch (e) {
+        throw new Error(
+          `PICOBOOT ${name}: ack failed (${ackErr ? ackErr.message : "n/a"}) and status read failed — ${e.message}`,
+        );
+      }
+      // Wait until our command (token) is the one reported as finished.
+      if (st.inProgress === 0 && st.token === token) {
+        if (st.statusCode !== 0) {
+          throw new Error(`PICOBOOT ${name}: bootloader reported status code ${st.statusCode}`);
+        }
+        return;
+      }
+      await sleep(5);
+    }
+    throw new Error(`PICOBOOT ${name}: timed out waiting for completion`);
   }
 
   _u32Args(values) {
@@ -185,21 +249,22 @@ export class PicobootDevice {
   // volume mid-session can disrupt the USB connection and break the next
   // transfer. We never use the drive path anyway.
   async exclusiveAccess(mode = PICOBOOT.EXCLUSIVE) {
-    await this._command(PICOBOOT.EXCLUSIVE_ACCESS, { args: new Uint8Array([mode]) });
+    await this._command(PICOBOOT.EXCLUSIVE_ACCESS, { args: new Uint8Array([mode]), name: "exclusive-access" });
   }
 
   async exitXip() {
-    await this._command(PICOBOOT.EXIT_XIP);
+    await this._command(PICOBOOT.EXIT_XIP, { name: "exit-xip" });
   }
 
   async flashErase(addr, size) {
-    await this._command(PICOBOOT.FLASH_ERASE, { args: this._u32Args([addr, size]) });
+    await this._command(PICOBOOT.FLASH_ERASE, { args: this._u32Args([addr, size]), name: "flash-erase" });
   }
 
   async flashWrite(addr, data) {
     await this._command(PICOBOOT.WRITE, {
       args: this._u32Args([addr, data.length]),
       dataOut: data,
+      name: "flash-write",
     });
   }
 
@@ -207,11 +272,20 @@ export class PicobootDevice {
     if (processor === "rp2350") {
       await this._command(PICOBOOT.REBOOT2, {
         args: this._u32Args([PICOBOOT.REBOOT2_FLAG_REBOOT_TYPE_NORMAL, delayMs, 0, 0]),
+        name: "reboot2",
       });
     } else {
       // RP2040 REBOOT with pc=0, sp=0 performs a normal boot from flash.
-      await this._command(PICOBOOT.REBOOT, { args: this._u32Args([0, 0, delayMs]) });
+      await this._command(PICOBOOT.REBOOT, { args: this._u32Args([0, 0, delayMs]), name: "reboot" });
     }
+  }
+
+  // Human-readable description of the claimed interface and endpoints, for logs.
+  describe() {
+    return (
+      `iface ${this.interfaceNumber}, EP IN ${this.epIn} (${this._ackLen}B), ` +
+      `EP OUT ${this.epOut}, PID 0x${this.device.productId.toString(16).padStart(4, "0")}`
+    );
   }
 
   /**
@@ -220,28 +294,17 @@ export class PicobootDevice {
    * @param {string} processor "rp2040" | "rp2350" (for family-id validation)
    * @param {(written:number, total:number)=>void} onProgress
    */
-  async flashUf2(uf2Buffer, processor, onProgress = () => {}) {
+  async flashUf2(uf2Buffer, processor, onProgress = () => {}, onLog = () => {}) {
     const { blocks, families, totalBytes } = parseUf2(uf2Buffer);
     assertUf2MatchesProcessor(families, processor);
 
     const segments = coalesceBlocks(blocks);
 
-    // Claim the flash and leave XIP. Retry once on a transient transfer error
-    // (the endpoint may still be settling right after re-enumeration).
-    try {
-      await this.exclusiveAccess();
-      await this.exitXip();
-    } catch (e) {
-      await this.resetInterface();
-      try {
-        await this.device.clearHalt("in", this.epIn);
-        await this.device.clearHalt("out", this.epOut);
-      } catch {
-        /* ignore */
-      }
-      await sleep(300);
-      await this.exclusiveAccess();
-      await this.exitXip();
+    // Claim the flash and leave XIP.
+    await this.exclusiveAccess();
+    await this.exitXip();
+    if (this._skipBulkAck) {
+      onLog("Bulk ack not supported by this bootloader; using control-transfer status acks.");
     }
 
     // Erase every 4 KB sector touched by the image, each exactly once.
