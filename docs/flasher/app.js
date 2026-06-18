@@ -34,6 +34,8 @@ const el = {
   detected: $("detected"),
   badgeBoard: $("badge-board"),
   badgeSystem: $("badge-system"),
+  manualSystem: $("manual-system"),
+  systemSelect: $("system-select"),
   softwareSelect: $("software-select"),
   firmwareNote: $("firmware-note"),
   bootStatus: $("boot-status"),
@@ -103,12 +105,13 @@ function hideProgress() {
 }
 
 function updateButtons() {
-  const haveBoard = !!state;
-  const fwAvail = haveBoard && !!state.firmwareFile;
+  const haveSystem = !!(state && state.system);
+  const fwAvail = haveSystem && !!state.firmwareFile;
+  const havePico = !!(state && state.pico);
   el.btnConnect.disabled = busy;
   el.btnEnterBoot.disabled = busy || !fwAvail;
-  el.btnFlashFw.disabled = busy || !fwAvail || !state.pico;
-  el.btnFlashSw.disabled = busy || !haveBoard;
+  el.btnFlashFw.disabled = busy || !fwAvail || !havePico;
+  el.btnFlashSw.disabled = busy || !haveSystem;
 }
 function setBusy(b) {
   busy = b;
@@ -295,19 +298,29 @@ async function connectAndDetect() {
     }
 
     const system = info.system || (info.processor === "rp2040" ? "sys11" : null);
-    state = { port, processor: info.processor, system, pico: null };
+    state = { port, processor: info.processor, system, manualSystem: false, pico: null };
     setBootStatus("");
 
     const boardName = PROCESSOR_BOARD_NAMES[info.processor] || "Unknown board";
     el.badgeBoard.textContent = boardName;
-    el.badgeSystem.textContent = SYSTEM_LABELS[system] || system || "Unknown system";
     el.detected.classList.remove("hidden");
-    log(`Detected ${boardName}${system ? ` (${SYSTEM_LABELS[system] || system})` : ""}.`, "ok");
-
-    await prepareTargets();
     el.operations.classList.remove("hidden");
     el.btnConnect.textContent = "Re-detect board";
-    setStatus("Board detected. Choose what you’d like to do below.", "success");
+
+    if (system) {
+      el.manualSystem.classList.add("hidden");
+      el.badgeSystem.textContent = SYSTEM_LABELS[system] || system;
+      log(`Detected ${boardName} (${SYSTEM_LABELS[system] || system}).`, "ok");
+      await prepareTargets();
+      setStatus("Board detected. Choose what you’d like to do below.", "success");
+    } else {
+      // Couldn't read the game series — make the user choose, with a warning.
+      el.badgeSystem.textContent = "Series unknown — select below";
+      log(`Detected ${boardName}, but could not determine the game series.`, "error");
+      showManualSystemPicker();
+      await prepareTargets(); // firmware/software stay disabled until a series is chosen
+      setStatus("Board detected, but the game series is unknown. Select it manually below.", "warning");
+    }
   } catch (err) {
     handleError(err);
   } finally {
@@ -315,7 +328,49 @@ async function connectAndDetect() {
   }
 }
 
+// Show the manual game-series picker (when detection couldn't read the series).
+// Only offers series whose firmware matches the detected processor, so a wrong
+// chip can't be selected — but a wrong series within the chip still can, hence
+// the warning shown alongside.
+function showManualSystemPicker() {
+  el.systemSelect.innerHTML = "";
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "Select game series…";
+  placeholder.disabled = true;
+  placeholder.selected = true;
+  el.systemSelect.appendChild(placeholder);
+
+  for (const key of Object.keys(manifest.systems)) {
+    if (manifest.systems[key].processor !== state.processor) continue;
+    const o = document.createElement("option");
+    o.value = key;
+    o.textContent = SYSTEM_LABELS[key] || key;
+    el.systemSelect.appendChild(o);
+  }
+
+  el.systemSelect.onchange = async () => {
+    const chosen = el.systemSelect.value;
+    if (!chosen) return;
+    state.system = chosen;
+    state.manualSystem = true;
+    el.badgeSystem.textContent = `${SYSTEM_LABELS[chosen] || chosen} (set manually)`;
+    log(`⚠️ Game series set manually to ${SYSTEM_LABELS[chosen] || chosen} — make sure this matches your machine!`, "error");
+    await prepareTargets();
+  };
+
+  el.manualSystem.classList.remove("hidden");
+}
+
 async function prepareTargets() {
+  if (!state.system) {
+    el.firmwareNote.textContent = "Select the game series above before flashing.";
+    state.firmwareFile = null;
+    state.firmwareProcessor = null;
+    el.softwareSelect.innerHTML = "";
+    updateButtons();
+    return;
+  }
   const sys = manifest.systems[state.system];
   if (!sys) {
     el.firmwareNote.textContent =
@@ -604,6 +659,7 @@ function resetUi() {
   state = null;
   el.operations.classList.add("hidden");
   el.detected.classList.add("hidden");
+  el.manualSystem.classList.add("hidden");
   el.btnAuthorize.classList.add("hidden");
   el.btnRetry.classList.add("hidden");
   el.btnConnect.textContent = "Connect & detect board";
