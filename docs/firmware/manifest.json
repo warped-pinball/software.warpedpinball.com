@@ -1,0 +1,26 @@
+{
+  "comment": "Maps each Vector game series to the firmware (OS) UF2 image it boots. Edit this file when you add or update a UF2 in this folder. 'processor' must match the silicon the UF2 targets (rp2040 = Pico W, rp2350 = Pico 2 W) and is used to refuse flashing a mismatched image. The 'nuke' entry is the universal flash-erase image used before every firmware flash.",
+  "nuke": "nuke.uf2",
+  "systems": {
+    "sys11": {
+      "label": "System 9 / 11",
+      "uf2": "vector_system_11_and_9_v4.uf2",
+      "processor": "rp2040"
+    },
+    "wpc": {
+      "label": "WPC",
+      "uf2": "Vector_WPC_v5.uf2",
+      "processor": "rp2350"
+    },
+    "em": {
+      "label": "EM",
+      "uf2": "Vector_WPC_v5.uf2",
+      "processor": "rp2350"
+    },
+    "data_east": {
+      "label": "Data East",
+      "uf2": "Vector_DataEast_v1.uf2",
+      "processor": "rp2350"
+    }
+  }
+}

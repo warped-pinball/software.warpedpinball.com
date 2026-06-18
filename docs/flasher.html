@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warped Pinball Vector — USB Flasher</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .log-line { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+    .step-pending { opacity: 0.45; }
+  </style>
+</head>
+<body class="min-h-screen bg-base-300">
+  <div class="container mx-auto max-w-3xl px-4 py-8">
+
+    <!-- Header -->
+    <div class="text-center mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold">Warped Pinball Vector — USB Flasher</h1>
+      <p class="text-base-content/70 mt-2">
+        Update your Vector board straight from this page over a USB cable — no downloads, no drivers.
+      </p>
+      <a href="./index.html" class="link link-primary text-sm">← Back to the firmware changelog</a>
+    </div>
+
+    <!-- Unsupported-browser banner (shown by JS) -->
+    <div id="unsupported" class="alert alert-error shadow-lg mb-6 hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+      <div>
+        <h3 class="font-bold">Your browser can’t flash over USB</h3>
+        <div id="unsupported-detail" class="text-sm"></div>
+      </div>
+    </div>
+
+    <!-- Main app (shown when supported) -->
+    <div id="app" class="hidden space-y-6">
+
+      <!-- What you'll need / permissions -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <h2 class="card-title text-lg">Before you start</h2>
+          <ul class="list-disc list-inside text-sm space-y-1 text-base-content/80">
+            <li><strong>Turn off your pinball machine.</strong> You do not need to remove the Vector board.</li>
+            <li>Connect the board to this computer with a <strong>data</strong> USB cable (some cables are charge-only).</li>
+            <li>Connect <strong>one board at a time</strong>.</li>
+            <li>When prompted, grant the browser permission to access the USB / serial device. The browser
+              asks once for the running board and once for the bootloader — this is normal and only happens
+              the first time.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 1: connect -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <h2 class="card-title text-lg">1. Connect</h2>
+          <p class="text-sm text-base-content/70">
+            Plug the board in (machine powered off) and detect what it is.
+          </p>
+          <div id="detected" class="hidden">
+            <div class="flex flex-wrap gap-2 my-2">
+              <span class="badge badge-lg" id="badge-board">—</span>
+              <span class="badge badge-lg badge-outline" id="badge-system">—</span>
+            </div>
+
+            <div id="manual-system" class="hidden mt-3">
+              <div class="alert alert-warning text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                <span>
+                  <strong>Couldn’t detect this board’s game series.</strong> Choose it manually below.
+                  ⚠️ Selecting the <strong>wrong series</strong> flashes firmware that drives the wrong signals
+                  and <strong>can permanently damage your pinball machine</strong>. Only continue if you are
+                  certain which series this board is for — if unsure, stop and ask for help.
+                </span>
+              </div>
+              <label class="form-control w-full max-w-sm mt-2">
+                <div class="label"><span class="label-text">Game series (set manually)</span></div>
+                <select id="system-select" class="select select-bordered select-warning"></select>
+              </label>
+            </div>
+          </div>
+          <div class="card-actions mt-2">
+            <button id="btn-connect" class="btn btn-primary">Connect &amp; detect board</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- The two independent operations -->
+      <div id="operations" class="hidden space-y-6">
+
+        <!-- Firmware -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-lg">Erase &amp; flash firmware</h2>
+            <p class="text-sm text-base-content/70">
+              Wipes the board with <code>nuke.uf2</code> and installs the firmware (OS) image for the
+              detected model. Use this when changing game series or recovering a board.
+            </p>
+            <p id="firmware-note" class="text-sm text-base-content/80 mt-1"></p>
+
+            <p class="text-sm text-base-content/70 mt-2">
+              This happens in two steps so each can be confirmed on its own:
+            </p>
+            <ol class="list-decimal list-inside text-sm text-base-content/70">
+              <li>Reset the board into its bootloader and confirm it’s detected.</li>
+              <li>Erase and write the firmware image.</li>
+            </ol>
+
+            <div id="boot-status" class="alert mt-3 hidden">
+              <span id="boot-status-text"></span>
+            </div>
+
+            <div class="card-actions mt-3 gap-2">
+              <button id="btn-enter-boot" class="btn btn-secondary">1. Enter bootloader mode</button>
+              <button id="btn-flash-fw" class="btn btn-secondary" disabled>2. Erase &amp; flash firmware</button>
+            </div>
+            <p class="text-xs text-base-content/60 mt-2">
+              Already holding BOOTSEL / board stuck? You can still click “Enter bootloader mode” — it
+              will detect a board that’s already in the bootloader.
+            </p>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-lg">Update software</h2>
+            <p class="text-sm text-base-content/70">
+              Installs the Warped Pinball application over serial onto a running board. No erase, no
+              bootloader — use this for a normal version update.
+            </p>
+            <label class="form-control w-full max-w-sm">
+              <div class="label"><span class="label-text">Software version to install</span></div>
+              <select id="software-select" class="select select-bordered"></select>
+            </label>
+            <div class="card-actions mt-3">
+              <button id="btn-flash-sw" class="btn btn-secondary">Update software</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serial monitor -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title text-lg">Serial monitor</h2>
+            <p class="text-sm text-base-content/70">
+              Watch the board’s serial output (<code>print()</code> statements and the REPL) live. Stop the
+              monitor before flashing or updating — only one connection to the board can be open at a time.
+            </p>
+            <div class="flex flex-wrap items-center gap-2 mt-2">
+              <button id="btn-monitor" class="btn btn-secondary btn-sm">Start monitor</button>
+              <button id="btn-monitor-clear" class="btn btn-ghost btn-sm">Clear</button>
+              <label class="label cursor-pointer gap-1 text-xs">
+                <input id="monitor-autoscroll" type="checkbox" class="checkbox checkbox-xs" checked />
+                <span class="label-text text-xs">Autoscroll</span>
+              </label>
+            </div>
+            <pre id="monitor-output" class="bg-base-300 rounded p-3 h-56 overflow-y-auto text-xs whitespace-pre-wrap mt-2"></pre>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <input id="monitor-input" type="text" placeholder="Type a command, press Enter to send…" class="input input-bordered input-sm flex-1" disabled />
+              <button id="btn-monitor-send" class="btn btn-sm" disabled>Send</button>
+              <button id="btn-monitor-ctrlc" class="btn btn-ghost btn-sm" disabled title="Interrupt the running program">Ctrl-C</button>
+              <button id="btn-monitor-ctrld" class="btn btn-ghost btn-sm" disabled title="Soft-reboot / reload">Ctrl-D</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shared progress / status / controls -->
+      <div class="card bg-base-100 shadow">
+        <div class="card-body">
+          <ul id="steps" class="steps steps-vertical w-full"></ul>
+
+          <div id="progress-wrap" class="mt-2 hidden">
+            <div class="flex justify-between text-xs mb-1">
+              <span id="progress-label">Working…</span>
+              <span id="progress-pct">0%</span>
+            </div>
+            <progress id="progress" class="progress progress-primary w-full" value="0" max="100"></progress>
+          </div>
+
+          <div class="card-actions mt-2 gap-2">
+            <button id="btn-authorize" class="btn btn-warning hidden">Grant USB access to the bootloader</button>
+            <button id="btn-retry" class="btn btn-outline hidden">Start over</button>
+          </div>
+
+          <div id="status-alert" class="alert mt-4 hidden">
+            <span id="status-text"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity log -->
+      <div class="collapse collapse-arrow bg-base-100 shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-medium">Activity log</div>
+        <div class="collapse-content">
+          <div id="log" class="bg-base-300 rounded p-3 h-48 overflow-y-auto space-y-0.5"></div>
+        </div>
+      </div>
+
+      <!-- Recovery -->
+      <div class="collapse collapse-arrow bg-base-100 shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-medium">Board not detected? Manual recovery (BOOTSEL)</div>
+        <div class="collapse-content text-sm space-y-2 text-base-content/80">
+          <p>If the board can’t be reset automatically, you can put it into the bootloader by hand:</p>
+          <ol class="list-decimal list-inside space-y-1">
+            <li>Unplug the board’s USB cable.</li>
+            <li>Press and hold the <strong>BOOTSEL</strong> button on the Pico.</li>
+            <li>While holding it, plug the USB cable back in, then release the button.</li>
+            <li>Click <em>Update my Vector</em> again and choose the device when prompted.</li>
+          </ol>
+          <p>If nothing shows up at all, try a different USB cable — many cables only carry power, not data.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-xs text-base-content/50 mt-10">
+      Warped Pinball · Requires a Chromium-based desktop browser (Chrome, Edge, Brave, Opera) or Android Chrome.
+    </footer>
+  </div>
+
+  <script type="module" src="./flasher/app.js"></script>
+</body>
+</html>
