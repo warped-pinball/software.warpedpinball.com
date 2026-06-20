@@ -216,6 +216,14 @@
     "type": "beta"
   },
   {
+    "version": "1.3.4-beta358",
+    "tag": "1.3.4-beta358",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.3.4-beta358/update.json",
+    "notes": "<p>PR: <br>\nBranch: <br>\nVersion: 1.3.4-beta358</p>",
+    "published_at": "2025-03-22T20:32:57+00:00",
+    "type": "beta"
+  },
+  {
     "version": "1.3.5-beta361",
     "tag": "1.3.5-beta361",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.5-beta361/update.json",
