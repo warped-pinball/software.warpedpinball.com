@@ -153,17 +153,19 @@ function checkSupport() {
   if (hasUsb && hasSerial) return true;
 
   const ua = navigator.userAgent;
+  const isMobile = /Android|iPhone|iPad|iPod/.test(ua) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   let detail =
-    "Flashing needs the WebUSB and Web Serial APIs, which are only available in " +
-    "Chromium-based browsers on desktop (Chrome, Edge, Brave, Opera) or Android Chrome.";
-  if (/iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) {
+    "Flashing needs the WebUSB and Web Serial APIs, which are only available in a " +
+    "Chromium-based desktop browser. Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
+  if (isMobile) {
     detail =
-      "iPhone and iPad can’t do this — every iOS browser is forced onto Apple’s WebKit engine, " +
-      "which has no WebUSB or Web Serial support. Please use a desktop computer running Chrome, Edge, Brave, or Opera.";
+      "Phones and tablets can’t flash over USB — the required browser APIs aren’t available on mobile. " +
+      "Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
   } else if (/Firefox/.test(ua)) {
-    detail = "Firefox does not support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera.";
+    detail = "Firefox doesn’t support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
   } else if (/Safari/.test(ua) && !/Chrome/.test(ua)) {
-    detail = "Safari does not support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera.";
+    detail = "Safari doesn’t support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
   }
   el.unsupportedDetail.textContent = detail;
   el.unsupported.classList.remove("hidden");
