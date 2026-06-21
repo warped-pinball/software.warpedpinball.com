@@ -24,7 +24,6 @@ const $ = (id) => document.getElementById(id);
 const el = {
   unsupported: $("unsupported"),
   unsupportedDetail: $("unsupported-detail"),
-  btnTryAnyway: $("btn-try-anyway"),
   app: $("app"),
   steps: $("steps"),
   progressWrap: $("progress-wrap"),
@@ -154,30 +153,19 @@ function checkSupport() {
   if (hasUsb && hasSerial) return true;
 
   const ua = navigator.userAgent;
-  const isAndroid = /Android/.test(ua);
+  const isMobile = /Android|iPhone|iPad|iPod/.test(ua) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   let detail =
-    "Flashing needs the WebUSB and Web Serial APIs, which are only available in " +
-    "Chromium-based browsers on desktop (Chrome, Edge, Brave, Opera) or Android Chrome. " +
-    "If you think this is wrong, tap “Try anyway” to continue.";
-  if (/iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) {
+    "Flashing needs the WebUSB and Web Serial APIs, which are only available in a " +
+    "Chromium-based desktop browser. Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
+  if (isMobile) {
     detail =
-      "iPhone and iPad can’t do this — every iOS browser is forced onto Apple’s WebKit engine, " +
-      "which has no WebUSB or Web Serial support. Please use a desktop computer running Chrome, Edge, Brave, or Opera.";
-  } else if (isAndroid) {
-    // Android Chrome has WebUSB but not Web Serial, so the all-or-nothing check
-    // above fails. Board auto-detect needs Web Serial, so the workflow is limited
-    // on Android, but allow proceeding in case detection is wrong on this device.
-    detail =
-      "On Android, Chrome supports WebUSB but not the Web Serial API, which the " +
-      "board auto-detect step relies on — so flashing may not fully work here, and a " +
-      "desktop computer running Chrome, Edge, Brave, or Opera is recommended. " +
-      "If you think this is wrong, tap “Try anyway” to continue.";
+      "Phones and tablets can’t flash over USB — the required browser APIs aren’t available on mobile. " +
+      "Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
   } else if (/Firefox/.test(ua)) {
-    detail = "Firefox does not support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera. " +
-      "If you think this is wrong, tap “Try anyway” to continue.";
+    detail = "Firefox doesn’t support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
   } else if (/Safari/.test(ua) && !/Chrome/.test(ua)) {
-    detail = "Safari does not support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera. " +
-      "If you think this is wrong, tap “Try anyway” to continue.";
+    detail = "Safari doesn’t support WebUSB or Web Serial. Please use Chrome, Edge, Brave, or Opera on a desktop computer.";
   }
   el.unsupportedDetail.textContent = detail;
   el.unsupported.classList.remove("hidden");
@@ -314,13 +302,6 @@ async function connectAndDetect() {
   clearSteps();
   el.statusAlert.classList.add("hidden");
   try {
-    if (!("serial" in navigator)) {
-      throw new Error(
-        "This browser doesn’t support the Web Serial API, so board auto-detect isn’t available " +
-          "(Android Chrome is a common case — it has WebUSB but not Web Serial). " +
-          "Please use a desktop computer running Chrome, Edge, Brave, or Opera to flash this board.",
-      );
-    }
     const port = await navigator.serial.requestPort({ filters: RUNNING_USB_FILTERS });
     const board = new SerialBoard(port);
     log("Opening serial connection…");
@@ -774,11 +755,8 @@ function resetUi() {
 }
 
 // ---- Init -------------------------------------------------------------
-let appStarted = false;
-async function startApp() {
-  if (appStarted) return;
-  appStarted = true;
-  el.unsupported.classList.add("hidden");
+async function init() {
+  if (!checkSupport()) return;
   el.app.classList.remove("hidden");
   try {
     manifest = await loadManifest();
@@ -807,14 +785,6 @@ async function startApp() {
   el.btnMonitorCtrlC.onclick = () => monitor && monitor.send("\x03").catch(() => {});
   el.btnMonitorCtrlD.onclick = () => monitor && monitor.send("\x04").catch(() => {});
   setBusy(false);
-}
-
-function init() {
-  // The "Try anyway" escape hatch lets users proceed if our feature detection
-  // is overly cautious (e.g. Android Chrome, which has WebUSB but no Web Serial).
-  el.btnTryAnyway.onclick = startApp;
-  if (!checkSupport()) return;
-  startApp();
 }
 
 init();
