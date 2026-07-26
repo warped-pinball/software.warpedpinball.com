@@ -886,5 +886,21 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.26-beta1714</code><br>\n<strong>Sys11</strong>: <code>1.10.6-beta1714</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.6-beta1714</code><br>\n<strong>WPC</strong>: <code>1.7.10-beta1714</code><br>\n<strong>EM</strong>: <code>1.6.4-beta1714</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1714</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1714</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1714</code></p>\n",
     "published_at": "2026-06-29T21:27:23+00:00",
     "type": "beta"
+  },
+  {
+    "version": "1.0.12-beta1731",
+    "tag": "1.11.28-beta1731",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1731/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1731</code><br>\n<strong>Sys11</strong>: <code>1.10.6-beta1731</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.6-beta1731</code><br>\n<strong>WPC</strong>: <code>1.7.12-beta1731</code><br>\n<strong>EM</strong>: <code>1.6.5-beta1731</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1731</code><br>\n<strong>DataEast</strong>: <code>1.0.12-beta1731</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1731</code></p>\n",
+    "published_at": "2026-07-25T23:29:12+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.13-beta1732",
+    "tag": "1.11.28-beta1732",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1732/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1732</code><br>\n<strong>Sys11</strong>: <code>1.10.6-beta1732</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.6-beta1732</code><br>\n<strong>WPC</strong>: <code>1.7.12-beta1732</code><br>\n<strong>EM</strong>: <code>1.6.5-beta1732</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1732</code><br>\n<strong>DataEast</strong>: <code>1.0.13-beta1732</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1732</code></p>\n",
+    "published_at": "2026-07-25T23:29:52+00:00",
+    "type": "beta"
   }
 ]
