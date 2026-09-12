@@ -79,39 +79,84 @@ def filter_release_note_versions(text, target_product):
         return ""
 
     allowed_products = {"vector", normalize_product_name(target_product)}
-    versions_header_pattern = (
-        r"(?:"
-        r"^[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?\s*$\r?\n"
-        r"|^[ ]{0,3}(?:[*_`]+)?Versions(?:[*_`]+)?\s*$\r?\n"
-        r"^[ ]{0,3}(?:-{3,}|={3,})\s*$\r?\n"
-        r")"
+    lines = text.splitlines(keepends=True)
+    footer_pattern = re.compile(
+        r"^\s*<!--\s*END VERSIONS SECTION\s*-->\s*$", re.IGNORECASE
     )
+    atx_versions_pattern = re.compile(
+        r"^[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?\s*$", re.IGNORECASE
+    )
+    setext_versions_pattern = re.compile(
+        r"^[ ]{0,3}(?:[*_`]+)?Versions(?:[*_`]+)?\s*$", re.IGNORECASE
+    )
+    setext_underline_pattern = re.compile(r"^[ ]{0,3}(?:-{3,}|={3,})\s*$")
+    atx_heading_pattern = re.compile(r"^[ ]{0,3}#{1,6}(?:\s+|$)")
 
-    def replace_versions_section(match):
-        header = match.group("header")
-        body = match.group("body")
-        footer = match.group("footer")
-        filtered_lines = []
+    def line_text(index):
+        return lines[index].rstrip("\r\n")
 
-        for line in body.splitlines(keepends=True):
-            version_match = re.match(r"(\*\*([^*]+)\*\*\s*:\s*`[^`]+`)", line.strip())
+    def heading_span(index):
+        current_line = line_text(index)
+        if atx_heading_pattern.match(current_line):
+            return 1
+        if (
+            index + 1 < len(lines)
+            and current_line.strip()
+            and setext_underline_pattern.match(line_text(index + 1))
+        ):
+            return 2
+        return 0
+
+    def versions_heading_span(index):
+        current_line = line_text(index)
+        if atx_versions_pattern.match(current_line):
+            return 1
+        if (
+            index + 1 < len(lines)
+            and setext_versions_pattern.match(current_line)
+            and setext_underline_pattern.match(line_text(index + 1))
+        ):
+            return 2
+        return 0
+
+    for index in range(len(lines)):
+        header_span = versions_heading_span(index)
+        if not header_span:
+            continue
+
+        footer_index = None
+        next_index = index + header_span
+        while next_index < len(lines):
+            if footer_pattern.match(line_text(next_index)):
+                footer_index = next_index
+                break
+            if heading_span(next_index):
+                break
+            next_index += 1
+
+        if footer_index is None:
+            continue
+
+        filtered_body = []
+        for line in lines[index + header_span : footer_index]:
+            version_match = re.match(
+                r"\s*\*\*([^*]+)\*\*\s*:\s*`[^`]+`\s*$", line.rstrip("\r\n")
+            )
             if not version_match:
-                filtered_lines.append(line)
+                filtered_body.append(line)
                 continue
 
-            product = normalize_product_name(version_match.group(2))
+            product = normalize_product_name(version_match.group(1))
             if product in allowed_products:
-                filtered_lines.append(line)
+                filtered_body.append(line)
 
-        return f"{header}{''.join(filtered_lines)}{footer}"
+        return "".join(
+            lines[: index + header_span]
+            + filtered_body
+            + lines[footer_index:]
+        )
 
-    return re.sub(
-        rf"(?P<header>{versions_header_pattern})(?P<body>.*?)(?P<footer><!--\s*END VERSIONS SECTION\s*-->)",
-        replace_versions_section,
-        text,
-        flags=re.DOTALL | re.IGNORECASE | re.MULTILINE,
-        count=1,
-    )
+    return text
 
 
 def release_notes_to_html(text):
