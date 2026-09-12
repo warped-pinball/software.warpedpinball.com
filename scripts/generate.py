@@ -110,6 +110,7 @@ def filter_release_note_versions(text, target_product):
         replace_versions_section,
         text,
         flags=re.DOTALL | re.IGNORECASE | re.MULTILINE,
+        count=1,
     )
 
 
