@@ -189,7 +189,7 @@ directory of JSON on this site:
 | Whitestar | `update_whitestar.json` | `/vector/whitestar/` |
 | Classic | `update_classic.json` | `/vector/classic/` |
 
-Each directory publishes the same five files:
+Each product directory publishes these five files:
 
 ```
 https://software.warpedpinball.com/vector/<product>/latest.json   most recent production release
