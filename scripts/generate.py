@@ -140,7 +140,7 @@ def filter_release_note_versions(text, target_product):
         filtered_body = []
         for line in lines[index + header_span : footer_index]:
             version_match = re.match(
-                r"\s*\*\*([^*]+)\*\*\s*:\s*`[^`]+`\s*$", line.rstrip("\r\n")
+                r"[ ]{0,3}\*\*([^*]+)\*\*\s*:\s*`[^`]+`\s*$", line.rstrip("\r\n")
             )
             if not version_match:
                 filtered_body.append(line)

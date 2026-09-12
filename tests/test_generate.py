@@ -183,6 +183,24 @@ def test_filter_release_note_versions_supports_formatted_heading():
     assert "**EM**: `0.0.1-dev83`" not in filtered
 
 
+def test_filter_release_note_versions_supports_indented_version_rows():
+    body = (
+        "Some notes\n"
+        "## Versions\n"
+        "   **Vector**: `1.3.11-dev83`\n"
+        "   **WPC**: `0.0.0-dev83`\n"
+        "   **EM**: `0.0.1-dev83`\n"
+        "<!-- END VERSIONS SECTION -->\n"
+        "More text"
+    )
+
+    filtered = generate.filter_release_note_versions(body, "wpc")
+
+    assert "   **Vector**: `1.3.11-dev83`" in filtered
+    assert "   **WPC**: `0.0.0-dev83`" in filtered
+    assert "   **EM**: `0.0.1-dev83`" not in filtered
+
+
 def test_filter_release_note_versions_supports_setext_heading():
     body = (
         "Some notes\n"
