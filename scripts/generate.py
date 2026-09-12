@@ -79,6 +79,13 @@ def filter_release_note_versions(text, target_product):
         return ""
 
     allowed_products = {"vector", normalize_product_name(target_product)}
+    versions_header_pattern = (
+        r"(?:"
+        r"^[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?\s*$\r?\n"
+        r"|^[ ]{0,3}(?:[*_`]+)?Versions(?:[*_`]+)?\s*$\r?\n"
+        r"^[ ]{0,3}(?:-{3,}|={3,})\s*$\r?\n"
+        r")"
+    )
 
     def replace_versions_section(match):
         header = match.group("header")
@@ -99,10 +106,10 @@ def filter_release_note_versions(text, target_product):
         return f"{header}{''.join(filtered_lines)}{footer}"
 
     return re.sub(
-        r"(?P<header>[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?\s*\r?\n)(?P<body>.*?)(?P<footer><!--\s*END VERSIONS SECTION\s*-->)",
+        rf"(?P<header>{versions_header_pattern})(?P<body>.*?)(?P<footer><!--\s*END VERSIONS SECTION\s*-->)",
         replace_versions_section,
         text,
-        flags=re.DOTALL | re.IGNORECASE,
+        flags=re.DOTALL | re.IGNORECASE | re.MULTILINE,
     )
 
 
