@@ -129,6 +129,24 @@ def test_filter_release_note_versions_keeps_only_vector_and_target():
     assert "More text" in filtered
 
 
+def test_filter_release_note_versions_supports_crlf():
+    body = (
+        "Some notes\r\n"
+        "## Versions\r\n"
+        "**Vector**: `1.3.11-dev83`\r\n"
+        "**WPC**: `0.0.0-dev83`\r\n"
+        "**EM**: `0.0.1-dev83`\r\n"
+        "<!-- END VERSIONS SECTION -->\r\n"
+        "More text"
+    )
+
+    filtered = generate.filter_release_note_versions(body, "wpc")
+
+    assert "**Vector**: `1.3.11-dev83`" in filtered
+    assert "**WPC**: `0.0.0-dev83`" in filtered
+    assert "**EM**: `0.0.1-dev83`" not in filtered
+
+
 def test_release_notes_to_html_uses_filtered_versions_section():
     md = (
         "## Versions\n"
