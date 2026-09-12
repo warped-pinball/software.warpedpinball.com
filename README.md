@@ -187,7 +187,7 @@ directory of JSON on this site:
 | EM | `update_em.json` | `/vector/em/` |
 | Data East | `update_data_east.json` | `/vector/data_east/` |
 | Whitestar | `update_whitestar.json` | `/vector/whitestar/` |
-| Classic | `update_classic.json` | `/vector/classic/` |
+| Classics | `update_classic.json` | `/vector/classic/` |
 
 Each product directory publishes these five files:
 
