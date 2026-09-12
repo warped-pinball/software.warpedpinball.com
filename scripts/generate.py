@@ -84,7 +84,8 @@ def filter_release_note_versions(text, target_product):
         r"^\s*<!--\s*END VERSIONS SECTION\s*-->\s*$", re.IGNORECASE
     )
     atx_versions_pattern = re.compile(
-        r"^[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?\s*$", re.IGNORECASE
+        r"^[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?(?:\s+#+)?\s*$",
+        re.IGNORECASE,
     )
     setext_versions_pattern = re.compile(
         r"^[ ]{0,3}(?:[*_`]+)?Versions(?:[*_`]+)?\s*$", re.IGNORECASE
@@ -140,7 +141,8 @@ def filter_release_note_versions(text, target_product):
         filtered_body = []
         for line in lines[index + header_span : footer_index]:
             version_match = re.match(
-                r"[ ]{0,3}\*\*([^*]+)\*\*\s*:\s*`[^`]+`\s*$", line.rstrip("\r\n")
+                r"[ ]{0,3}\*\*([^*]+)\*\*\s*:\s*`[^`]+`[ \t]*$",
+                line.rstrip("\r\n"),
             )
             if not version_match:
                 filtered_body.append(line)
