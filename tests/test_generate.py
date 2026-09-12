@@ -108,6 +108,45 @@ def test_parse_release_versions_whitespace():
     assert generate.parse_release_versions(body) == {"vector": "2.0"}
 
 
+def test_filter_release_note_versions_keeps_only_vector_and_target():
+    body = (
+        "Some notes\n"
+        "## Versions\n"
+        "**Vector**: `1.3.11-dev83`\n"
+        "**Sys11**: `1.0.0-dev83`\n"
+        "**WPC**: `0.0.0-dev83`\n"
+        "**EM**: `0.0.1-dev83`\n"
+        "<!-- END VERSIONS SECTION -->\n"
+        "More text"
+    )
+
+    filtered = generate.filter_release_note_versions(body, "sys11")
+
+    assert "**Vector**: `1.3.11-dev83`" in filtered
+    assert "**Sys11**: `1.0.0-dev83`" in filtered
+    assert "**WPC**: `0.0.0-dev83`" not in filtered
+    assert "**EM**: `0.0.1-dev83`" not in filtered
+    assert "More text" in filtered
+
+
+def test_release_notes_to_html_uses_filtered_versions_section():
+    md = (
+        "## Versions\n"
+        "**Vector**: `1.3.11-dev83`\n"
+        "**WPC**: `0.0.0-dev83`\n"
+        "**EM**: `0.0.1-dev83`\n"
+        "<!-- END VERSIONS SECTION -->"
+    )
+
+    html = generate.release_notes_to_html(
+        generate.filter_release_note_versions(md, "wpc")
+    )
+
+    assert "Vector" in html
+    assert "WPC" in html
+    assert "EM" not in html
+
+
 def test_release_notes_to_html_sanitizes_and_strips_images():
     md = "Hello! ![img](http://example.com/a.png) <script>alert('x')</script>"
     html = generate.release_notes_to_html(md)
@@ -184,4 +223,3 @@ def test_parse_release_versions_whitespace():
         "<!-- END VERSIONS SECTION -->\r\n"
     )
     assert generate.parse_release_versions(body) == {"vector": "2.0"}
-

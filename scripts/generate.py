@@ -73,6 +73,38 @@ def parse_release_versions(text):
     return versions
 
 
+def filter_release_note_versions(text, target_product):
+    """Keep only the common and target-product versions in release notes."""
+    if not text:
+        return ""
+
+    allowed_products = {"vector", normalize_product_name(target_product)}
+
+    def replace_versions_section(match):
+        header = match.group("header")
+        body = match.group("body")
+        footer = match.group("footer")
+        filtered_lines = []
+
+        for line in body.splitlines(keepends=True):
+            version_match = re.match(r"(\*\*([^*]+)\*\*\s*:\s*`[^`]+`)", line.strip())
+            if not version_match:
+                filtered_lines.append(line)
+                continue
+
+            product = normalize_product_name(version_match.group(2))
+            if product in allowed_products:
+                filtered_lines.append(line)
+
+        return f"{header}{''.join(filtered_lines)}{footer}"
+
+    return re.sub(
+        r"(?P<header>##\s*Versions\s*\n)(?P<body>.*?)(?P<footer><!--\s*END VERSIONS SECTION\s*-->)",
+        replace_versions_section,
+        text,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
 
 def release_notes_to_html(text):
     """Convert Markdown release notes to sanitized HTML without images."""
@@ -252,7 +284,9 @@ def main():
                 "version": product_version,
                 "tag": tag,
                 "url": asset.browser_download_url,
-                "notes": release_notes_to_html(release.body),
+                "notes": release_notes_to_html(
+                    filter_release_note_versions(release.body, product)
+                ),
                 "published_at": release.published_at.isoformat(),
                 "type": release_type,
             }
