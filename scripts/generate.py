@@ -99,7 +99,7 @@ def filter_release_note_versions(text, target_product):
         return f"{header}{''.join(filtered_lines)}{footer}"
 
     return re.sub(
-        r"(?P<header>##\s*Versions\s*\r?\n)(?P<body>.*?)(?P<footer><!--\s*END VERSIONS SECTION\s*-->)",
+        r"(?P<header>[ ]{0,3}##\s*Versions\s*\r?\n)(?P<body>.*?)(?P<footer><!--\s*END VERSIONS SECTION\s*-->)",
         replace_versions_section,
         text,
         flags=re.DOTALL | re.IGNORECASE,

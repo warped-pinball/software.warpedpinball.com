@@ -147,12 +147,48 @@ def test_filter_release_note_versions_supports_crlf():
     assert "**EM**: `0.0.1-dev83`" not in filtered
 
 
+def test_filter_release_note_versions_supports_indented_heading():
+    body = (
+        "Some notes\n"
+        "   ## Versions\n"
+        "**Vector**: `1.3.11-dev83`\n"
+        "**WPC**: `0.0.0-dev83`\n"
+        "**EM**: `0.0.1-dev83`\n"
+        "<!-- END VERSIONS SECTION -->\n"
+        "More text"
+    )
+
+    filtered = generate.filter_release_note_versions(body, "wpc")
+
+    assert "**Vector**: `1.3.11-dev83`" in filtered
+    assert "**WPC**: `0.0.0-dev83`" in filtered
+    assert "**EM**: `0.0.1-dev83`" not in filtered
+
+
 def test_release_notes_to_html_uses_filtered_versions_section():
     md = (
         "## Versions\n"
         "**Vector**: `1.3.11-dev83`\n"
         "**WPC**: `0.0.0-dev83`\n"
         "**EM**: `0.0.1-dev83`\n"
+        "<!-- END VERSIONS SECTION -->"
+    )
+
+    html = generate.release_notes_to_html(
+        generate.filter_release_note_versions(md, "wpc")
+    )
+
+    assert "Vector" in html
+    assert "WPC" in html
+    assert "EM" not in html
+
+
+def test_release_notes_to_html_uses_filtered_versions_section_with_crlf():
+    md = (
+        "## Versions\r\n"
+        "**Vector**: `1.3.11-dev83`\r\n"
+        "**WPC**: `0.0.0-dev83`\r\n"
+        "**EM**: `0.0.1-dev83`\r\n"
         "<!-- END VERSIONS SECTION -->"
     )
 
