@@ -4613,6 +4613,13 @@
     "sha256": "ae52bacb7d4f0ac8cbd104889395d8357498edaf2f70601975b7aacbfee25dd7"
   },
   {
+    "product": "sys11",
+    "version": "1.8.1",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3/update.json",
+    "sha256": "5963fbed4d8376637d4ec8544aefb2fbb9b4102a736e1c1a04de728a268b0ace"
+  },
+  {
     "product": "wpc",
     "version": "1.5.3",
     "type": "production",
