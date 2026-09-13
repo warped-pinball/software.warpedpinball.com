@@ -85,7 +85,7 @@ def filter_release_note_versions(text, target_product):
         r"^\s*<!--\s*END VERSIONS SECTION\s*-->\s*$", re.IGNORECASE
     )
     atx_versions_pattern = re.compile(
-        r"^[ ]{0,3}##\s*(?:[*_`]+)?Versions(?:[*_`]+)?(?:\s+#+)?\s*$",
+        r"^[ ]{0,3}#{1,6}\s*(?:[*_`]+)?Versions(?:[*_`]+)?(?:\s+#+)?\s*$",
         re.IGNORECASE,
     )
     setext_versions_pattern = re.compile(
