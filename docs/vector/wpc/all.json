@@ -2070,5 +2070,13 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5</code><br>\n<strong>Sys11</strong>: <code>1.10.7</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.7</code><br>\n<strong>WPC</strong>: <code>1.7.15</code><br>\n<strong>EM</strong>: <code>1.6.5</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1</code><br>\n<strong>DataEast</strong>: <code>1.0.15</code><br>\n<strong>Classic</strong>: <code>0.1.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Manuals (all) updates with extra screen shots by @paulmullin in https://github.com/warped-pinball/vector/pull/372</li>\n<li>Data East scores off by factor of 10 by @paulmullin in https://github.com/warped-pinball/vector/pull/375</li>\n<li>WPC Ball in play config corrections by @paulmullin in https://github.com/warped-pinball/vector/pull/374</li>\n<li>Stream memory snapshots to one client IP instead of network broadcast by @mullinmax in https://github.com/warped-pinball/vector/pull/369</li>\n<li>Config name corrections by @paulmullin in https://github.com/warped-pinball/vector/pull/380</li>\n<li>wifi fault to log by @paulmullin in https://github.com/warped-pinball/vector/pull/378</li>\n<li>Led off at exit by @paulmullin in https://github.com/warped-pinball/vector/pull/381</li>\n<li>Fault LED driver update by @paulmullin in https://github.com/warped-pinball/vector/pull/383</li>\n<li>Send Origin messages to one registered listener, signed, instead of broadcasting by @mullinmax in https://github.com/warped-pinball/vector/pull/377</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.28...1.12.5</p>",
     "published_at": "2026-09-07T21:06:08+00:00",
     "type": "production"
+  },
+  {
+    "version": "1.7.15-beta1877",
+    "tag": "1.12.5-beta1877",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1877/update_wpc.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1877</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.7-beta1877</code><br>\n<strong>WPC</strong>: <code>1.7.15-beta1877</code><br>\n<strong>EM</strong>: <code>1.6.5-beta1877</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1877</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1877</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1877</code></p>\n",
+    "published_at": "2026-09-08T01:24:47+00:00",
+    "type": "beta"
   }
 ]

@@ -1046,5 +1046,13 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.4-beta1863</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1863</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.7-beta1863</code><br>\n<strong>WPC</strong>: <code>1.7.15-beta1863</code><br>\n<strong>EM</strong>: <code>1.6.5-beta1863</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1863</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1863</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1863</code></p>\n",
     "published_at": "2026-09-01T02:36:44+00:00",
     "type": "beta"
+  },
+  {
+    "version": "0.5.1-beta1877",
+    "tag": "1.12.5-beta1877",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1877/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1877</code><br>\n<strong>Sys11 (Tiny)</strong>: <code>1.10.7-beta1877</code><br>\n<strong>WPC</strong>: <code>1.7.15-beta1877</code><br>\n<strong>EM</strong>: <code>1.6.5-beta1877</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1877</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1877</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1877</code></p>\n",
+    "published_at": "2026-09-08T01:24:47+00:00",
+    "type": "beta"
   }
 ]

@@ -177,7 +177,7 @@ at all. So a clean tag is what makes a release production.
 
 ## Published endpoints
 
-There are five products. Each has its own release asset in `vector` and its own
+There are six products. Each has its own release asset in `vector` and its own
 directory of JSON on this site:
 
 | Product | Release asset in `vector` | Endpoint directory |
@@ -187,8 +187,9 @@ directory of JSON on this site:
 | EM | `update_em.json` | `/vector/em/` |
 | Data East | `update_data_east.json` | `/vector/data_east/` |
 | Whitestar | `update_whitestar.json` | `/vector/whitestar/` |
+| Classics | `update_classic.json` | `/vector/classic/` |
 
-Each directory publishes the same five files:
+Each product directory publishes these five files:
 
 ```
 https://software.warpedpinball.com/vector/<product>/latest.json   most recent production release
