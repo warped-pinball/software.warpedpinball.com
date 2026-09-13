@@ -53,26 +53,120 @@ def normalize_product_name(name):
     return re.sub(r"[^a-z0-9]+", "", name.lower())
 
 
+def find_versions_section_bounds(text):
+    """Return ``(heading_index, heading_span, footer_index)`` for the versions section."""
+    if not text:
+        return None
+
+    lines = text.splitlines(keepends=True)
+    footer_pattern = re.compile(
+        r"^\s*<!--\s*END VERSIONS SECTION\s*-->\s*$", re.IGNORECASE
+    )
+    atx_versions_pattern = re.compile(
+        r"^[ ]{0,3}#{1,6}\s*(?:[*_`]+)?Versions(?:[*_`]+)?(?:\s+#+)?\s*$",
+        re.IGNORECASE,
+    )
+    setext_versions_pattern = re.compile(
+        r"^[ ]{0,3}(?:[*_`]+)?Versions(?:[*_`]+)?\s*$", re.IGNORECASE
+    )
+    setext_underline_pattern = re.compile(r"^[ ]{0,3}(?:-{3,}|={3,})\s*$")
+    atx_heading_pattern = re.compile(r"^[ ]{0,3}#{1,6}(?:\s+|$)")
+
+    def line_text(index):
+        return lines[index].rstrip("\r\n")
+
+    def heading_span(index):
+        current_line = line_text(index)
+        if atx_heading_pattern.match(current_line):
+            return 1
+        if (
+            index + 1 < len(lines)
+            and current_line.strip()
+            and setext_underline_pattern.match(line_text(index + 1))
+        ):
+            return 2
+        return 0
+
+    def versions_heading_span(index):
+        current_line = line_text(index)
+        if atx_versions_pattern.match(current_line):
+            return 1
+        if (
+            index + 1 < len(lines)
+            and setext_versions_pattern.match(current_line)
+            and setext_underline_pattern.match(line_text(index + 1))
+        ):
+            return 2
+        return 0
+
+    for index in range(len(lines)):
+        header_span = versions_heading_span(index)
+        if not header_span:
+            continue
+
+        footer_index = None
+        next_index = index + header_span
+        while next_index < len(lines):
+            if footer_pattern.match(line_text(next_index)):
+                footer_index = next_index
+                break
+            if heading_span(next_index):
+                break
+            next_index += 1
+
+        if footer_index is not None:
+            return index, header_span, footer_index
+
+    return None
+
+
 def parse_release_versions(text):
     """Return a mapping of normalized product name to version from a release body."""
-    if not text:
+    bounds = find_versions_section_bounds(text)
+    if bounds is None:
         return {}
 
-    block_match = re.search(
-        r"##\s*Versions\s*(.*?)<!--\s*END VERSIONS SECTION\s*-->",
-        text,
-        re.DOTALL | re.IGNORECASE,
-    )
-    if not block_match:
-        return {}
-
-    section = block_match.group(1)
+    start_index, header_span, footer_index = bounds
+    lines = text.splitlines(keepends=True)
+    section = "".join(lines[start_index + header_span : footer_index])
     versions = {}
     for m in re.finditer(r"\*\*([^*]+)\*\*\s*:\s*`([^`]+)`", section):
         product = normalize_product_name(m.group(1))
         versions[product] = m.group(2).strip()
     return versions
 
+
+def filter_release_note_versions(text, target_product):
+    """Keep only the common and target-product versions in release notes."""
+    if not text:
+        return ""
+
+    allowed_products = {"vector", normalize_product_name(target_product)}
+    lines = text.splitlines(keepends=True)
+    bounds = find_versions_section_bounds(text)
+    if bounds is None:
+        return text
+
+    index, header_span, footer_index = bounds
+    filtered_body = []
+    for line in lines[index + header_span : footer_index]:
+        version_match = re.match(
+            r"[ ]{0,3}\*\*([^*]+)\*\*\s*:\s*`[^`]+`[ \t]*$",
+            line.rstrip("\r\n"),
+        )
+        if not version_match:
+            filtered_body.append(line)
+            continue
+
+        product = normalize_product_name(version_match.group(1))
+        if product in allowed_products:
+            filtered_body.append(line)
+
+    return "".join(
+        lines[: index + header_span]
+        + filtered_body
+        + lines[footer_index:]
+    )
 
 
 def release_notes_to_html(text):
@@ -253,7 +347,9 @@ def main():
                 "version": product_version,
                 "tag": tag,
                 "url": asset.browser_download_url,
-                "notes": release_notes_to_html(release.body),
+                "notes": release_notes_to_html(
+                    filter_release_note_versions(release.body, product)
+                ),
                 "published_at": release.published_at.isoformat(),
                 "type": release_type,
             }
