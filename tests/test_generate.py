@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from datetime import datetime, timezone
 
 sys.path.insert(
     0,
@@ -109,6 +110,81 @@ def test_parse_release_versions_whitespace():
         "<!-- END VERSIONS SECTION -->\r\n"
     )
     assert generate.parse_release_versions(body) == {"vector": "2.0"}
+
+
+def test_main_uses_versions_parser_for_formatted_and_setext_headings(monkeypatch, tmp_path):
+    class MockAsset:
+        def __init__(self):
+            self.name = "update_wpc.json"
+            self.browser_download_url = "https://example.com/update_wpc.json"
+            self.download_count = 3
+
+    class MockRelease:
+        def __init__(self, body):
+            self.tag_name = "wpc-9.9.9"
+            self.body = body
+            self.created_at = datetime(2026, 1, 1, tzinfo=timezone.utc)
+            self.published_at = datetime(2026, 1, 1, tzinfo=timezone.utc)
+
+        def get_assets(self):
+            return [MockAsset()]
+
+    class MockRepository:
+        def __init__(self, body):
+            self._body = body
+
+        def get_releases(self):
+            return [MockRelease(self._body)]
+
+    bodies = [
+        (
+            "## **Versions**\n"
+            "**Vector**: `1.3.11`\n"
+            "**WPC**: `0.0.0-beta-7`\n"
+            "<!-- END VERSIONS SECTION -->\n"
+        ),
+        (
+            "Versions\n"
+            "--------\n"
+            "**Vector**: `1.3.11`\n"
+            "**WPC**: `0.0.0-beta-8`\n"
+            "<!-- END VERSIONS SECTION -->\n"
+        ),
+    ]
+
+    monkeypatch.setenv("GITHUB_TOKEN", "token")
+    monkeypatch.setattr(generate, "fetch_update_json", lambda _: {"ok": True})
+
+    for body in bodies:
+        monkeypatch.setattr(
+            generate,
+            "Github",
+            lambda token, release_body=body: type(
+                "MockGithub",
+                (),
+                {"get_repo": lambda self, _: MockRepository(release_body)},
+            )(),
+        )
+        monkeypatch.setattr(
+            sys,
+            "argv",
+            [
+                "generate.py",
+                "--owner",
+                "warped-pinball",
+                "--repo",
+                "vector",
+                "--out-dir",
+                str(tmp_path),
+            ],
+        )
+        generate.main()
+
+        beta_path = tmp_path / "vector" / "wpc" / "beta.json"
+        with beta_path.open() as beta_file:
+            beta_releases = json.load(beta_file)
+        assert len(beta_releases) == 1
+        assert beta_releases[0]["version"].startswith("0.0.0-beta-")
 
 
 def test_filter_release_note_versions_keeps_only_vector_and_target():

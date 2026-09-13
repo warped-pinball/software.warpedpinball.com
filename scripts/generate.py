@@ -53,33 +53,11 @@ def normalize_product_name(name):
     return re.sub(r"[^a-z0-9]+", "", name.lower())
 
 
-def parse_release_versions(text):
-    """Return a mapping of normalized product name to version from a release body."""
+def find_versions_section_bounds(text):
+    """Return ``(heading_index, heading_span, footer_index)`` for the versions section."""
     if not text:
-        return {}
+        return None
 
-    block_match = re.search(
-        r"##\s*Versions\s*(.*?)<!--\s*END VERSIONS SECTION\s*-->",
-        text,
-        re.DOTALL | re.IGNORECASE,
-    )
-    if not block_match:
-        return {}
-
-    section = block_match.group(1)
-    versions = {}
-    for m in re.finditer(r"\*\*([^*]+)\*\*\s*:\s*`([^`]+)`", section):
-        product = normalize_product_name(m.group(1))
-        versions[product] = m.group(2).strip()
-    return versions
-
-
-def filter_release_note_versions(text, target_product):
-    """Keep only the common and target-product versions in release notes."""
-    if not text:
-        return ""
-
-    allowed_products = {"vector", normalize_product_name(target_product)}
     lines = text.splitlines(keepends=True)
     footer_pattern = re.compile(
         r"^\s*<!--\s*END VERSIONS SECTION\s*-->\s*$", re.IGNORECASE
@@ -136,30 +114,59 @@ def filter_release_note_versions(text, target_product):
                 break
             next_index += 1
 
-        if footer_index is None:
+        if footer_index is not None:
+            return index, header_span, footer_index
+
+    return None
+
+
+def parse_release_versions(text):
+    """Return a mapping of normalized product name to version from a release body."""
+    bounds = find_versions_section_bounds(text)
+    if bounds is None:
+        return {}
+
+    start_index, header_span, footer_index = bounds
+    lines = text.splitlines(keepends=True)
+    section = "".join(lines[start_index + header_span : footer_index])
+    versions = {}
+    for m in re.finditer(r"\*\*([^*]+)\*\*\s*:\s*`([^`]+)`", section):
+        product = normalize_product_name(m.group(1))
+        versions[product] = m.group(2).strip()
+    return versions
+
+
+def filter_release_note_versions(text, target_product):
+    """Keep only the common and target-product versions in release notes."""
+    if not text:
+        return ""
+
+    allowed_products = {"vector", normalize_product_name(target_product)}
+    lines = text.splitlines(keepends=True)
+    bounds = find_versions_section_bounds(text)
+    if bounds is None:
+        return text
+
+    index, header_span, footer_index = bounds
+    filtered_body = []
+    for line in lines[index + header_span : footer_index]:
+        version_match = re.match(
+            r"[ ]{0,3}\*\*([^*]+)\*\*\s*:\s*`[^`]+`[ \t]*$",
+            line.rstrip("\r\n"),
+        )
+        if not version_match:
+            filtered_body.append(line)
             continue
 
-        filtered_body = []
-        for line in lines[index + header_span : footer_index]:
-            version_match = re.match(
-                r"[ ]{0,3}\*\*([^*]+)\*\*\s*:\s*`[^`]+`[ \t]*$",
-                line.rstrip("\r\n"),
-            )
-            if not version_match:
-                filtered_body.append(line)
-                continue
+        product = normalize_product_name(version_match.group(1))
+        if product in allowed_products:
+            filtered_body.append(line)
 
-            product = normalize_product_name(version_match.group(1))
-            if product in allowed_products:
-                filtered_body.append(line)
-
-        return "".join(
-            lines[: index + header_span]
-            + filtered_body
-            + lines[footer_index:]
-        )
-
-    return text
+    return "".join(
+        lines[: index + header_span]
+        + filtered_body
+        + lines[footer_index:]
+    )
 
 
 def release_notes_to_html(text):
