@@ -17,6 +17,7 @@ def test_product_assets_known_products():
         "em": "update_em.json",
         "data_east": "update_data_east.json",
         "whitestar": "update_whitestar.json",
+        "classic": "update_classic.json",
     }
 
 
@@ -66,6 +67,7 @@ def test_parse_release_versions():
         "**EM**: `0.0.1-dev83`\n"
         "**Data East**: `0.0.1-dev83`\n"
         "**Whitestar**: `0.0.1-dev83`\n"
+        "**Classic**: `0.0.2-dev83`\n"
         "<!-- END VERSIONS SECTION -->\nMore text"
     )
     versions = generate.parse_release_versions(body)
@@ -76,6 +78,7 @@ def test_parse_release_versions():
         "em": "0.0.1-dev83",
         "dataeast": "0.0.1-dev83",
         "whitestar": "0.0.1-dev83",
+        "classic": "0.0.2-dev83",
     }
 
 

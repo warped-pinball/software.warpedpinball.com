@@ -18,6 +18,7 @@ PRODUCT_ASSETS = {
     "em": "update_em.json",
     "data_east": "update_data_east.json",
     "whitestar": "update_whitestar.json",
+    "classic": "update_classic.json",
 }
 
 
