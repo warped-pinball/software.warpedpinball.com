@@ -1702,5 +1702,85 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1877</code></p>\n",
     "published_at": "2026-09-08T01:24:47+00:00",
     "type": "beta"
+  },
+  {
+    "version": "1.10.7-beta1889",
+    "tag": "1.12.5-beta1889",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1889/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1889</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1889</code></p>\n",
+    "published_at": "2026-09-13T17:24:32+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.7-beta1892",
+    "tag": "1.12.5-beta1892",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1892/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1892</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1892</code></p>\n",
+    "published_at": "2026-09-13T19:05:55+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.7-beta1894",
+    "tag": "1.12.5-beta1894",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1894/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1894</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1894</code></p>\n",
+    "published_at": "2026-09-14T00:09:04+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.7-beta1916",
+    "tag": "1.12.6-beta1916",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.6-beta1916/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.6-beta1916</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1916</code></p>\n",
+    "published_at": "2026-09-20T02:16:29+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.7-beta1944",
+    "tag": "1.12.7-beta1944",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.7-beta1944/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.7-beta1944</code><br>\n<strong>Sys11</strong>: <code>1.10.7-beta1944</code></p>\n",
+    "published_at": "2026-09-24T00:21:17+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.8-beta1952",
+    "tag": "1.12.8-beta1952",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.8-beta1952/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.8-beta1952</code><br>\n<strong>Sys11</strong>: <code>1.10.8-beta1952</code></p>\n",
+    "published_at": "2026-09-24T00:29:44+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.9-beta1961",
+    "tag": "1.12.9-beta1961",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.9-beta1961/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.9-beta1961</code><br>\n<strong>Sys11</strong>: <code>1.10.9-beta1961</code></p>\n",
+    "published_at": "2026-09-26T00:39:12+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.9-beta1977",
+    "tag": "1.12.11-beta1977",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.11-beta1977/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.11-beta1977</code><br>\n<strong>Sys11</strong>: <code>1.10.9-beta1977</code></p>\n",
+    "published_at": "2026-10-04T13:44:18+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.9-beta1984",
+    "tag": "1.12.12-beta1984",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.12-beta1984/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.12-beta1984</code><br>\n<strong>Sys11</strong>: <code>1.10.9-beta1984</code></p>\n",
+    "published_at": "2026-10-05T00:43:26+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.10.10-beta1995",
+    "tag": "1.12.13-beta1995",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.13-beta1995/update.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.13-beta1995</code><br>\n<strong>Sys11</strong>: <code>1.10.10-beta1995</code></p>\n",
+    "published_at": "2026-10-07T23:33:41+00:00",
+    "type": "beta"
   }
 ]

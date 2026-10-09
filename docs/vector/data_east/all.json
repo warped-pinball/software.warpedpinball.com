@@ -1078,5 +1078,93 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1877</code></p>\n",
     "published_at": "2026-09-08T01:24:47+00:00",
     "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1889",
+    "tag": "1.12.5-beta1889",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1889/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1889</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1889</code></p>\n",
+    "published_at": "2026-09-13T17:24:32+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1892",
+    "tag": "1.12.5-beta1892",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1892/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1892</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1892</code></p>\n",
+    "published_at": "2026-09-13T19:05:55+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1894",
+    "tag": "1.12.5-beta1894",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1894/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1894</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1894</code></p>\n",
+    "published_at": "2026-09-14T00:09:04+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1916",
+    "tag": "1.12.6-beta1916",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.6-beta1916/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.6-beta1916</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1916</code></p>\n",
+    "published_at": "2026-09-20T02:16:29+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1944",
+    "tag": "1.12.7-beta1944",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.7-beta1944/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.7-beta1944</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1944</code></p>\n",
+    "published_at": "2026-09-24T00:21:17+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1952",
+    "tag": "1.12.8-beta1952",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.8-beta1952/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.8-beta1952</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1952</code></p>\n",
+    "published_at": "2026-09-24T00:29:44+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1961",
+    "tag": "1.12.9-beta1961",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.9-beta1961/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.9-beta1961</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1961</code></p>\n",
+    "published_at": "2026-09-26T00:39:12+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1977",
+    "tag": "1.12.11-beta1977",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.11-beta1977/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.11-beta1977</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1977</code></p>\n",
+    "published_at": "2026-10-04T13:44:18+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.15-beta1984",
+    "tag": "1.12.12-beta1984",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.12-beta1984/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.12-beta1984</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1984</code></p>\n",
+    "published_at": "2026-10-05T00:43:26+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.16-beta1995",
+    "tag": "1.12.13-beta1995",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.13-beta1995/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.13-beta1995</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta1995</code></p>\n",
+    "published_at": "2026-10-07T23:33:41+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.16",
+    "tag": "1.12.15",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.15/update_data_east.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.15</code><br>\n<strong>DataEast</strong>: <code>1.0.16</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Classics by @paulmullin in https://github.com/warped-pinball/vector/pull/388</li>\n<li>Updated information on the vector about page by @paulmullin in https://github.com/warped-pinball/vector/pull/392</li>\n<li>Added support for 4-player EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/391</li>\n<li>Player up reporting for EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/402</li>\n<li>added more configs for classics by @paulmullin in https://github.com/warped-pinball/vector/pull/404</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>F14 Switch Matrix fix by @paulmullin in https://github.com/warped-pinball/vector/pull/399</li>\n<li>system 11 game end dither clean up by @paulmullin in https://github.com/warped-pinball/vector/pull/398</li>\n<li>Admin page load harden by @paulmullin in https://github.com/warped-pinball/vector/pull/403</li>\n<li>classics ip display fix by @paulmullin in https://github.com/warped-pinball/vector/pull/406</li>\n</ul>\n<h2>Docs</h2>\n<ul>\n<li>classics board documentation by @paulmullin in https://github.com/warped-pinball/vector/pull/389</li>\n<li>images for rottendog system11 installation instructions by @paulmullin in https://github.com/warped-pinball/vector/pull/387</li>\n</ul>\n<h2>Development:</h2>\n<ul>\n<li>HIL: stop the post-flash reset race, bound every mpremote step, un-deprecate the runner by @mullinmax in https://github.com/warped-pinball/vector/pull/390</li>\n<li>Enable classic boards in HIL bench target resolution by @mullinmax with @Copilot in https://github.com/warped-pinball/vector/pull/393</li>\n</ul>",
+    "published_at": "2026-10-09T21:50:37+00:00",
+    "type": "production"
   }
 ]
