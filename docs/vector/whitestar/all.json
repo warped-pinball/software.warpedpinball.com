@@ -1142,5 +1142,53 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.15</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Classics by @paulmullin in https://github.com/warped-pinball/vector/pull/388</li>\n<li>Updated information on the vector about page by @paulmullin in https://github.com/warped-pinball/vector/pull/392</li>\n<li>Added support for 4-player EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/391</li>\n<li>Player up reporting for EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/402</li>\n<li>added more configs for classics by @paulmullin in https://github.com/warped-pinball/vector/pull/404</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>F14 Switch Matrix fix by @paulmullin in https://github.com/warped-pinball/vector/pull/399</li>\n<li>system 11 game end dither clean up by @paulmullin in https://github.com/warped-pinball/vector/pull/398</li>\n<li>Admin page load harden by @paulmullin in https://github.com/warped-pinball/vector/pull/403</li>\n<li>classics ip display fix by @paulmullin in https://github.com/warped-pinball/vector/pull/406</li>\n</ul>\n<h2>Docs</h2>\n<ul>\n<li>classics board documentation by @paulmullin in https://github.com/warped-pinball/vector/pull/389</li>\n<li>images for rottendog system11 installation instructions by @paulmullin in https://github.com/warped-pinball/vector/pull/387</li>\n</ul>\n<h2>Development:</h2>\n<ul>\n<li>HIL: stop the post-flash reset race, bound every mpremote step, un-deprecate the runner by @mullinmax in https://github.com/warped-pinball/vector/pull/390</li>\n<li>Enable classic boards in HIL bench target resolution by @mullinmax with @Copilot in https://github.com/warped-pinball/vector/pull/393</li>\n</ul>",
     "published_at": "2026-10-09T21:50:37+00:00",
     "type": "production"
+  },
+  {
+    "version": "0.5.2-beta2009",
+    "tag": "1.12.16-beta2009",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2009/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2009</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2009</code></p>\n",
+    "published_at": "2026-10-10T16:51:43+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "0.5.2-beta2008",
+    "tag": "1.12.16-beta2008",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2008/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2008</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2008</code></p>\n",
+    "published_at": "2026-10-10T16:50:50+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "0.5.2-beta2018",
+    "tag": "1.12.16-beta2018",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2018/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2018</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2018</code></p>\n",
+    "published_at": "2026-10-12T16:45:59+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "0.5.2-beta2021",
+    "tag": "1.12.16-beta2021",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2021/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2021</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2021</code></p>\n",
+    "published_at": "2026-10-12T17:13:21+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "0.5.2-beta2032",
+    "tag": "1.12.17-beta2032",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.17-beta2032/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.17-beta2032</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2032</code></p>\n",
+    "published_at": "2026-10-19T22:33:09+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "0.5.2-beta2040",
+    "tag": "1.12.18-beta2040",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.18-beta2040/update_whitestar.json",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2040</code></p>\n",
+    "published_at": "2026-10-22T17:05:44+00:00",
+    "type": "beta"
   }
 ]
