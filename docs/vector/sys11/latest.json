@@ -1,6 +1,7 @@
 {
   "version": "1.10.11",
   "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20/update.json",
+  "sha256": "16d43312ec16a68708c2ec2caf7a58f7739679ffa29e2462b57fe62b9f00e007",
   "release_page": "https://github.com/warped-pinball/vector/releases/tag/1.12.20",
   "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20</code><br>\n<strong>Sys11</strong>: <code>1.10.11</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added 77 new configs for classics of  by @paulmullin in https://github.com/warped-pinball/vector/pull/419</li>\n</ul>\n<h2>Bug fixes:</h2>\n<ul>\n<li>Fix World Cup Soccer LX-2 game-active address (158 to 141) by @edgiardina in https://github.com/warped-pinball/vector/pull/417</li>\n<li>Fixed spelling of Sorcerer by @mullinmax in https://github.com/warped-pinball/vector/pull/420</li>\n</ul>\n<h2>Documentation:</h2>\n<ul>\n<li>Doc updates (Classic and Origin) by @paulmullin in https://github.com/warped-pinball/vector/pull/411</li>\n<li>Docs update 2, picture and link by @paulmullin in https://github.com/warped-pinball/vector/pull/412</li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li>@edgiardina made their first contribution in https://github.com/warped-pinball/vector/pull/417</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.12.13...1.12.20</p>",
   "published_at": "2026-10-25T14:47:14+00:00"

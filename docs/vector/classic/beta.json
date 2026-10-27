@@ -3,6 +3,7 @@
     "version": "0.1.0-beta1680",
     "tag": "1.11.23-beta1680",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.23-beta1680/update_classic.json",
+    "sha256": "9235d154dc25983c856080a56408207c91724e817f05a0aaaa0026bf82a1fea2",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.23-beta1680</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1680</code></p>\n",
     "published_at": "2026-06-11T01:53:30+00:00",
     "type": "beta"
@@ -11,6 +12,7 @@
     "version": "0.1.0-beta1689",
     "tag": "1.11.24-beta1689",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.24-beta1689/update_classic.json",
+    "sha256": "ab06478e9d7882362e60c6873bb490adabf50addd556482e369a2fdb0c7ee2ab",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.24-beta1689</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1689</code></p>\n",
     "published_at": "2026-06-12T17:43:59+00:00",
     "type": "beta"
@@ -19,6 +21,7 @@
     "version": "0.1.0-beta1700",
     "tag": "1.11.24-beta1700",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.24-beta1700/update_classic.json",
+    "sha256": "f74679d35493d8b1ca6a44923823304bff2545207e60d23c6fd89214a07057f9",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.24-beta1700</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1700</code></p>\n",
     "published_at": "2026-06-13T02:54:16+00:00",
     "type": "beta"
@@ -27,6 +30,7 @@
     "version": "0.1.0-beta1715",
     "tag": "1.11.27-beta1715",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.27-beta1715/update_classic.json",
+    "sha256": "81568bed2e3905bd3c73d39e57e82a00bd1708fbf7069f95420d481a5d81bb96",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.27-beta1715</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1715</code></p>\n",
     "published_at": "2026-06-29T21:27:40+00:00",
     "type": "beta"
@@ -35,6 +39,7 @@
     "version": "0.1.0-beta1714",
     "tag": "1.11.26-beta1714",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.26-beta1714/update_classic.json",
+    "sha256": "d5f5aeaf58c49638dadad1a7ad778af50647b0c63248a773e6c868a8bae65a40",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.26-beta1714</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1714</code></p>\n",
     "published_at": "2026-06-29T21:27:23+00:00",
     "type": "beta"
@@ -43,6 +48,7 @@
     "version": "0.1.0-beta1731",
     "tag": "1.11.28-beta1731",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1731/update_classic.json",
+    "sha256": "fbe32f5962ccab71cb496d275950f4da701e265668a78c864ee954e98b97c251",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1731</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1731</code></p>\n",
     "published_at": "2026-07-25T23:29:12+00:00",
     "type": "beta"
@@ -51,6 +57,7 @@
     "version": "0.1.0-beta1732",
     "tag": "1.11.28-beta1732",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1732/update_classic.json",
+    "sha256": "8114455659418f7593d0f722edfc0006eab1dbb38a961ebbb60b9f38462ae2df",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1732</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1732</code></p>\n",
     "published_at": "2026-07-25T23:29:52+00:00",
     "type": "beta"
@@ -59,6 +66,7 @@
     "version": "0.1.0-beta1744",
     "tag": "1.11.28-beta1744",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1744/update_classic.json",
+    "sha256": "f953d8b564738b691209c12dc062651c4caabc7f749261148549025ee1dee6c0",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1744</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1744</code></p>\n",
     "published_at": "2026-07-27T19:03:12+00:00",
     "type": "beta"
@@ -67,6 +75,7 @@
     "version": "0.1.0-beta1745",
     "tag": "1.11.28-beta1745",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1745/update_classic.json",
+    "sha256": "9cec0474b9fadf48cddfcb97ba0d83c2a894ce6f0fc99a5ab7fd849b0260eb7f",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1745</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1745</code></p>\n",
     "published_at": "2026-07-31T18:59:33+00:00",
     "type": "beta"
@@ -75,6 +84,7 @@
     "version": "0.1.0-beta1746",
     "tag": "1.11.28-beta1746",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1746/update_classic.json",
+    "sha256": "c20d94e4eb3422736b3a52ddcf743f904e15bdfbe40bc9e5fe8126f35cd7bb45",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1746</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1746</code></p>\n",
     "published_at": "2026-07-31T21:33:08+00:00",
     "type": "beta"
@@ -83,6 +93,7 @@
     "version": "0.1.0-beta1781",
     "tag": "1.11.29-beta1781",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.29-beta1781/update_classic.json",
+    "sha256": "654b9667f18f4b7fde6a3c8dff801d9fe100fa16e4949f168d65d6529a61ad13",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.29-beta1781</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1781</code></p>\n",
     "published_at": "2026-08-20T17:03:11+00:00",
     "type": "beta"
@@ -91,6 +102,7 @@
     "version": "0.1.0-beta1813",
     "tag": "1.12.1-beta1813",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1813/update_classic.json",
+    "sha256": "59d7948286aa3546acde6aa57a8bdb88cc0594975751ed94d51540c76ce32543",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1813</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1813</code></p>\n",
     "published_at": "2026-08-29T02:37:11+00:00",
     "type": "beta"
@@ -99,6 +111,7 @@
     "version": "0.1.0-beta1840",
     "tag": "1.12.1-beta1840",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1840/update_classic.json",
+    "sha256": "af8975fafd146d1edcd33eb60fc6f6c8c9d928c62916272a776c2ce5c172521b",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1840</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1840</code></p>\n",
     "published_at": "2026-08-31T01:19:23+00:00",
     "type": "beta"
@@ -107,6 +120,7 @@
     "version": "0.1.0-beta1848",
     "tag": "1.12.1-beta1848",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1848/update_classic.json",
+    "sha256": "00649b8363ac2f009f5086ec1cf40185aab23bdd7d0f00fccf5a0f1d09ca74ba",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1848</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1848</code></p>\n",
     "published_at": "2026-08-31T15:07:51+00:00",
     "type": "beta"
@@ -115,6 +129,7 @@
     "version": "0.1.0-beta1851",
     "tag": "1.12.1-beta1851",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1851/update_classic.json",
+    "sha256": "c3a2651d6a1355a2ed33d3f45ca70e1443cc406c4bd0e1a78c20e2b35a3dacc0",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1851</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1851</code></p>\n",
     "published_at": "2026-08-31T16:07:20+00:00",
     "type": "beta"
@@ -123,6 +138,7 @@
     "version": "0.1.0-beta1853",
     "tag": "1.12.2-beta1853",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.2-beta1853/update_classic.json",
+    "sha256": "22f6af1e8a3a5914e841b7b638e1f73e6da4df6e1932d039c0a6614fbe3e6db7",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.2-beta1853</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1853</code></p>\n",
     "published_at": "2026-08-31T19:15:03+00:00",
     "type": "beta"
@@ -131,6 +147,7 @@
     "version": "0.1.0-beta1860",
     "tag": "1.12.3-beta1860",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.3-beta1860/update_classic.json",
+    "sha256": "adc507ba68e8056faea050fbe9af43713ac498315eaeed5cb7bbc54fabf1fb35",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.3-beta1860</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1860</code></p>\n",
     "published_at": "2026-08-31T21:10:10+00:00",
     "type": "beta"
@@ -139,6 +156,7 @@
     "version": "0.1.0-beta1863",
     "tag": "1.12.4-beta1863",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.4-beta1863/update_classic.json",
+    "sha256": "7efc9b3ab50d882c1e18554074e4f4172b0e3457f0e349e9801563c4f5a11c94",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.4-beta1863</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1863</code></p>\n",
     "published_at": "2026-09-01T02:36:44+00:00",
     "type": "beta"
@@ -147,6 +165,7 @@
     "version": "0.1.0-beta1877",
     "tag": "1.12.5-beta1877",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1877/update_classic.json",
+    "sha256": "41bf0f6a2c3ccad00c19e491b0c957c446d9c065c3fee4a0fa969ba7672b963b",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1877</code></p>\n",
     "published_at": "2026-09-08T01:24:47+00:00",
     "type": "beta"
@@ -155,6 +174,7 @@
     "version": "0.1.0-beta1889",
     "tag": "1.12.5-beta1889",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1889/update_classic.json",
+    "sha256": "6b5b41a4560f990810ce293877936eaebd5685d75647dd46b03afe79087b8744",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1889</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1889</code></p>\n",
     "published_at": "2026-09-13T17:24:32+00:00",
     "type": "beta"
@@ -163,6 +183,7 @@
     "version": "0.1.0-beta1892",
     "tag": "1.12.5-beta1892",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1892/update_classic.json",
+    "sha256": "2528c38981351c98cd2b7e8fcd3bfac3ce4cedc4e12398c94970bda038520e38",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1892</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1892</code></p>\n",
     "published_at": "2026-09-13T19:05:55+00:00",
     "type": "beta"
@@ -171,6 +192,7 @@
     "version": "0.1.0-beta1894",
     "tag": "1.12.5-beta1894",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1894/update_classic.json",
+    "sha256": "7c46668e18ab4061bb5c86d5eea5f5b50754adf9bdcdee4793ad27329f5b5999",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1894</code><br>\n<strong>Classic</strong>: <code>0.1.0-beta1894</code></p>\n",
     "published_at": "2026-09-14T00:09:04+00:00",
     "type": "beta"
@@ -179,6 +201,7 @@
     "version": "0.1.1-beta1916",
     "tag": "1.12.6-beta1916",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.6-beta1916/update_classic.json",
+    "sha256": "3d29a71023135d1f73907861cde437cf4458772e2f084c54bdcf8034cc3b98a1",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.6-beta1916</code><br>\n<strong>Classic</strong>: <code>0.1.1-beta1916</code></p>\n",
     "published_at": "2026-09-20T02:16:29+00:00",
     "type": "beta"
@@ -187,6 +210,7 @@
     "version": "0.1.1-beta1944",
     "tag": "1.12.7-beta1944",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.7-beta1944/update_classic.json",
+    "sha256": "85fe263abb6e974a2894dd4e706c0f28d76dd7b498d9cecd4d151620b5cdc933",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.7-beta1944</code><br>\n<strong>Classic</strong>: <code>0.1.1-beta1944</code></p>\n",
     "published_at": "2026-09-24T00:21:17+00:00",
     "type": "beta"
@@ -195,6 +219,7 @@
     "version": "0.1.1-beta1952",
     "tag": "1.12.8-beta1952",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.8-beta1952/update_classic.json",
+    "sha256": "2149991ac36178276b97535d7091067a0e76df2c13c892424d2aa889dec285c1",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.8-beta1952</code><br>\n<strong>Classic</strong>: <code>0.1.1-beta1952</code></p>\n",
     "published_at": "2026-09-24T00:29:44+00:00",
     "type": "beta"
@@ -203,6 +228,7 @@
     "version": "0.1.1-beta1961",
     "tag": "1.12.9-beta1961",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.9-beta1961/update_classic.json",
+    "sha256": "ab9cc2908712bf44b7930dba6008d19605aeb082ebe344deee73f6fb8669fbbe",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.9-beta1961</code><br>\n<strong>Classic</strong>: <code>0.1.1-beta1961</code></p>\n",
     "published_at": "2026-09-26T00:39:12+00:00",
     "type": "beta"
@@ -211,6 +237,7 @@
     "version": "0.1.1-beta1977",
     "tag": "1.12.11-beta1977",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.11-beta1977/update_classic.json",
+    "sha256": "e7a841f36a788fbb9bd892114b8b743ecd0b0970720c7ae7da6945850abee49d",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.11-beta1977</code><br>\n<strong>Classic</strong>: <code>0.1.1-beta1977</code></p>\n",
     "published_at": "2026-10-04T13:44:18+00:00",
     "type": "beta"
@@ -219,6 +246,7 @@
     "version": "0.1.1-beta1984",
     "tag": "1.12.12-beta1984",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.12-beta1984/update_classic.json",
+    "sha256": "ad954f616bdc0086e6b7e84c48fa41df58f03df07a523bc29babfebfbcd8d1d9",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.12-beta1984</code><br>\n<strong>Classic</strong>: <code>0.1.1-beta1984</code></p>\n",
     "published_at": "2026-10-05T00:43:26+00:00",
     "type": "beta"
@@ -227,6 +255,7 @@
     "version": "0.1.2-beta1995",
     "tag": "1.12.13-beta1995",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.13-beta1995/update_classic.json",
+    "sha256": "ee02fe84b017935932d889f3cf85835a4aaf294846b752b8cd4434c39d3c259f",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.13-beta1995</code><br>\n<strong>Classic</strong>: <code>0.1.2-beta1995</code></p>\n",
     "published_at": "2026-10-07T23:33:41+00:00",
     "type": "beta"
@@ -235,6 +264,7 @@
     "version": "0.1.5-beta2009",
     "tag": "1.12.16-beta2009",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2009/update_classic.json",
+    "sha256": "1aa24add8457f95f03b6666a70f09778d7fc88396908010b3f4995f1a7857ed8",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2009</code><br>\n<strong>Classic</strong>: <code>0.1.5-beta2009</code></p>\n",
     "published_at": "2026-10-10T16:51:43+00:00",
     "type": "beta"
@@ -243,6 +273,7 @@
     "version": "0.1.5-beta2008",
     "tag": "1.12.16-beta2008",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2008/update_classic.json",
+    "sha256": "a32df836024f19fb0af22bcc16cf303d89284d710c7c6077abe7e18efbaa3e34",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2008</code><br>\n<strong>Classic</strong>: <code>0.1.5-beta2008</code></p>\n",
     "published_at": "2026-10-10T16:50:50+00:00",
     "type": "beta"
@@ -251,6 +282,7 @@
     "version": "0.1.5-beta2018",
     "tag": "1.12.16-beta2018",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2018/update_classic.json",
+    "sha256": "bb0a7968b530c3373649d668601ec95b76884c75964a1974a16108f4e035ae3b",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2018</code><br>\n<strong>Classic</strong>: <code>0.1.5-beta2018</code></p>\n",
     "published_at": "2026-10-12T16:45:59+00:00",
     "type": "beta"
@@ -259,6 +291,7 @@
     "version": "0.1.5-beta2021",
     "tag": "1.12.16-beta2021",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2021/update_classic.json",
+    "sha256": "98c9c0cf2cf96c6252f15d0bc0a77d4708869d33fd3c26e50a9d17a9490c104f",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2021</code><br>\n<strong>Classic</strong>: <code>0.1.5-beta2021</code></p>\n",
     "published_at": "2026-10-12T17:13:21+00:00",
     "type": "beta"
@@ -267,6 +300,7 @@
     "version": "0.1.5-beta2032",
     "tag": "1.12.17-beta2032",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.17-beta2032/update_classic.json",
+    "sha256": "a49cda66294759f9b858671cd73edb58394ea4498bf719ed63ee0c824fc7fdd7",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.17-beta2032</code><br>\n<strong>Classic</strong>: <code>0.1.5-beta2032</code></p>\n",
     "published_at": "2026-10-19T22:33:09+00:00",
     "type": "beta"
@@ -275,6 +309,7 @@
     "version": "0.1.5-beta2040",
     "tag": "1.12.18-beta2040",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.18-beta2040/update_classic.json",
+    "sha256": "c83200c904b1764bcd51f5810b26018dd7a7425204ba57a24576004b12050fa8",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>Classic</strong>: <code>0.1.5-beta2040</code></p>\n",
     "published_at": "2026-10-22T17:05:44+00:00",
     "type": "beta"
