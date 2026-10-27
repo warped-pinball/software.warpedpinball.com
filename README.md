@@ -141,8 +141,9 @@ what you expect:
 - `docs/vector/<product>/prod.json` gained the new entry, and not `beta.json` or
   `dev.json`, which would mean the version string picked up a suffix.
 - The release notes rendered into the `notes` field read the way you intended.
-- Each new entry carries a `sha256`, the checksum from the end of its update
-  file.
+- Each new entry carries a `sha256` and a `signature`, copied from the end of
+  its update file. A production entry whose `signature` is `NOT_ENCRYPTED` was
+  built unsigned, and boards will refuse it.
 - Nothing unrelated changed. A normal sync only adds releases, so anything else
   in the diff means someone ran a full rebuild.
 
@@ -207,14 +208,17 @@ https://software.warpedpinball.com/vector/<product>/all.json      everything, co
 Two site-wide files sit alongside them:
 
 ```
-https://software.warpedpinball.com/builds.json           every update file, with its sha256
+https://software.warpedpinball.com/builds.json           every update file, with its sha256 and signature
 https://software.warpedpinball.com/download_counts.json  download counts per asset
 ```
 
-Every release entry, `latest.json` and `builds.json` carry `sha256`: the
-checksum written into the last line of the update file itself
-(`{"sha256": ..., "signature": ...}`), which is what a board checks before it
-applies the update. It is not the digest GitHub shows for the release asset.
+Every release entry, `latest.json` and `builds.json` carry `sha256` and
+`signature`, copied from the last line of the update file itself
+(`{"sha256": ..., "signature": ...}`). The signature is the release key's RSA
+signature of that sha256. A board checks the signature against its built-in
+public key, then checks the file it downloads hashes to that sha256, and refuses
+the update if either fails. The sha256 is not the digest GitHub shows for the
+release asset.
 `builds.json` also has `metadata_sha256`, a hash of only the file's first line,
 which the generator uses to spot a production build identical to the previous
 one.

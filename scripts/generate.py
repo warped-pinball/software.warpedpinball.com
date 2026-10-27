@@ -23,12 +23,13 @@ PRODUCT_ASSETS = {
 
 
 def parse_update_file(content):
-    """Return ``(metadata, sha256)`` from the raw bytes of an update file.
+    """Return ``(metadata, sha256, signature)`` from the raw bytes of an update file.
 
     An update file is a JSON metadata line, then one line per file, then a
     final ``{"sha256": ..., "signature": ...}`` line. That sha256 covers
-    everything above it and is what boards check before applying an update.
-    ``sha256`` is ``None`` when the file has no such line.
+    everything above it, and the signature is the release key's RSA signature
+    of it. Boards check both before applying an update. ``sha256`` and
+    ``signature`` are ``None`` when the file has no such line.
     """
 
     # splitlines handles both ``\n`` and ``\r\n`` newlines
@@ -36,19 +37,21 @@ def parse_update_file(content):
 
     body, _, last_line = content.rstrip(b"\r\n").rpartition(b"\n")
     try:
-        sha256 = json.loads(last_line).get("sha256")
+        checksum = json.loads(last_line)
+        sha256 = checksum.get("sha256")
+        signature = checksum.get("signature")
     except (ValueError, AttributeError):
-        return metadata, None
+        return metadata, None, None
 
     if sha256 and hashlib.sha256(body).hexdigest() != sha256:
         print(
             "⚠️ Update file checksum does not match its contents", file=sys.stderr
         )
-    return metadata, sha256
+    return metadata, sha256, signature
 
 
 def fetch_update_file(url):
-    """Download an update file and return ``(metadata, sha256)``, or ``None``."""
+    """Download an update file and return ``(metadata, sha256, signature)``, or ``None``."""
 
     response = requests.get(url)
     if response.status_code != 200:
@@ -210,16 +213,20 @@ def build_latest_release_data(owner, repo, release_entry):
         "version": release_entry["version"],
         "url": release_entry["url"],
         "sha256": release_entry.get("sha256"),
+        "signature": release_entry.get("signature"),
         "release_page": f"https://github.com/{owner}/{repo}/releases/tag/{release_entry['tag']}",
         "notes": release_entry["notes"],
         "published_at": release_entry["published_at"],
     }
 
 
-def build_file_entry(product, version, release_type, url, sha256, metadata_sha256):
+def build_file_entry(
+    product, version, release_type, url, sha256, signature, metadata_sha256
+):
     """Return metadata for builds.json without download counts.
 
-    ``sha256`` is the checksum embedded at the end of the update file.
+    ``sha256`` and ``signature`` are the checksum and its RSA signature
+    embedded at the end of the update file.
     ``metadata_sha256`` hashes only its first (metadata) line, and is how a
     production build identical to the previous one is recognised.
     """
@@ -230,6 +237,7 @@ def build_file_entry(product, version, release_type, url, sha256, metadata_sha25
         "type": release_type,
         "url": url,
         "sha256": sha256,
+        "signature": signature,
         "metadata_sha256": metadata_sha256,
     }
 
@@ -249,7 +257,7 @@ def build_download_record(product, version, release_type, url, count):
 # Every field builds.json carries. An existing builds.json missing any of them
 # was written by an older generator, so an incremental sync would leave its
 # entries without the new field; the generator rebuilds from scratch instead.
-FILE_ENTRY_FIELDS = set(build_file_entry(*[None] * 6))
+FILE_ENTRY_FIELDS = set(build_file_entry(*[None] * 7))
 
 
 def tag_from_asset_url(url):
@@ -360,7 +368,7 @@ def process_release(release, state):
         if update_file is None:
             print(f"⏭️ Skipping {tag} {asset_name}: failed to fetch", file=sys.stderr)
             continue
-        update_data, sha256 = update_file
+        update_data, sha256, signature = update_file
         print(f"📦 {tag} {asset_name}")
 
         normalized_product = normalize_product_name(product)
@@ -380,6 +388,7 @@ def process_release(release, state):
                 release_type,
                 asset.browser_download_url,
                 sha256,
+                signature,
                 update_hash,
             )
         )
@@ -410,6 +419,7 @@ def process_release(release, state):
             "tag": tag,
             "url": asset.browser_download_url,
             "sha256": sha256,
+            "signature": signature,
             "notes": release_notes_to_html(
                 filter_release_note_versions(release.body, product)
             ),
