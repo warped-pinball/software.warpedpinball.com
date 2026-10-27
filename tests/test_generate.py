@@ -1,3 +1,4 @@
+import hashlib
 import json
 import os
 import sys
@@ -30,32 +31,49 @@ def test_calculate_json_hash_deterministic():
     assert hash1 == hash2
 
 
-def test_fetch_update_json_success(monkeypatch):
-    json_line = json.dumps({"version": "1.0"})
+def make_update_file(metadata, files=(b"file-one", b"file-two"), newline=b"\n"):
+    body = newline.join([json.dumps(metadata).encode(), *files])
+    sha256 = hashlib.sha256(body).hexdigest()
+    signature = json.dumps({"sha256": sha256, "signature": "sig"}).encode()
+    return body + newline + signature + newline, sha256
+
+
+def test_parse_update_file_reads_metadata_and_trailing_checksum():
+    content, sha256 = make_update_file({"version": "1.0"})
+    assert generate.parse_update_file(content) == ({"version": "1.0"}, sha256)
+
+
+def test_parse_update_file_without_checksum_line():
+    content = json.dumps({"version": "1.0"}).encode() + b"\nBINARYDATA"
+    assert generate.parse_update_file(content) == ({"version": "1.0"}, None)
+
+
+def test_parse_update_file_reports_mismatched_checksum(capsys):
+    content, sha256 = make_update_file({"version": "1.0"})
+    tampered = content.replace(b"file-one", b"file-0ne")
+    assert generate.parse_update_file(tampered) == ({"version": "1.0"}, sha256)
+    assert "does not match" in capsys.readouterr().err
+
+
+def test_fetch_update_file_success(monkeypatch):
+    content, sha256 = make_update_file({"version": "1.0"})
 
     class MockResponse:
         status_code = 200
-        text = json_line + "\nBINARYDATA"
 
-    def mock_get(url):
-        return MockResponse()
-
-    monkeypatch.setattr(generate.requests, "get", mock_get)
-    result = generate.fetch_update_json("http://example.com/update.json")
-    assert result == {"version": "1.0"}
+    MockResponse.content = content
+    monkeypatch.setattr(generate.requests, "get", lambda url: MockResponse())
+    result = generate.fetch_update_file("http://example.com/update.json")
+    assert result == ({"version": "1.0"}, sha256)
 
 
-def test_fetch_update_json_failure(monkeypatch):
+def test_fetch_update_file_failure(monkeypatch):
     class MockResponse:
         status_code = 404
-        text = ""
+        content = b""
 
-    def mock_get(url):
-        return MockResponse()
-
-    monkeypatch.setattr(generate.requests, "get", mock_get)
-    result = generate.fetch_update_json("http://example.com/missing.json")
-    assert result is None
+    monkeypatch.setattr(generate.requests, "get", lambda url: MockResponse())
+    assert generate.fetch_update_file("http://example.com/missing.json") is None
 
 
 def test_parse_release_versions():
@@ -153,9 +171,12 @@ def test_main_uses_versions_parser_for_formatted_and_setext_headings(monkeypatch
     ]
 
     monkeypatch.setenv("GITHUB_TOKEN", "token")
-    monkeypatch.setattr(generate, "fetch_update_json", lambda _: {"ok": True})
+    monkeypatch.setattr(
+        generate, "fetch_update_file", lambda _: ({"ok": True}, "abc")
+    )
 
-    for body in bodies:
+    for index, body in enumerate(bodies):
+        out_dir = tmp_path / str(index)
         monkeypatch.setattr(
             generate,
             "Github",
@@ -175,12 +196,12 @@ def test_main_uses_versions_parser_for_formatted_and_setext_headings(monkeypatch
                 "--repo",
                 "vector",
                 "--out-dir",
-                str(tmp_path),
+                str(out_dir),
             ],
         )
         generate.main()
 
-        beta_path = tmp_path / "vector" / "wpc" / "beta.json"
+        beta_path = out_dir / "vector" / "wpc" / "beta.json"
         with beta_path.open() as beta_file:
             beta_releases = json.load(beta_file)
         assert len(beta_releases) == 1
@@ -425,6 +446,7 @@ def test_build_file_entry_and_download_record():
         "prod",
         "https://example.com/update.json",
         "deadbeef",
+        "cafef00d",
     )
 
     download_entry = generate.build_download_record(
@@ -438,6 +460,7 @@ def test_build_file_entry_and_download_record():
     assert "download_count" not in file_entry
     assert download_entry["download_count"] == 42
     assert file_entry["sha256"] == "deadbeef"
+    assert file_entry["metadata_sha256"] == "cafef00d"
 
 
 def test_calculate_json_hash_unique():
@@ -446,15 +469,10 @@ def test_calculate_json_hash_unique():
     assert generate.calculate_json_hash(first) != generate.calculate_json_hash(second)
 
 
-def test_fetch_update_json_crlf(monkeypatch):
-    json_line = json.dumps({"foo": "bar"})
-
-    class MockResponse:
-        status_code = 200
-        text = json_line + "\r\nEXTRA"
-
-    monkeypatch.setattr(generate.requests, "get", lambda url: MockResponse())
-    assert generate.fetch_update_json("http://example.com/update.json") == {"foo": "bar"}
+def test_parse_update_file_crlf():
+    content, _ = make_update_file({"foo": "bar"}, newline=b"\r\n")
+    metadata, _ = generate.parse_update_file(content)
+    assert metadata == {"foo": "bar"}
 
 
 def test_parse_release_versions_whitespace():
@@ -465,3 +483,138 @@ def test_parse_release_versions_whitespace():
         "<!-- END VERSIONS SECTION -->\r\n"
     )
     assert generate.parse_release_versions(body) == {"vector": "2.0"}
+
+
+class FakeAsset:
+    def __init__(self, tag, name="update.json", download_count=1):
+        self.name = name
+        self.browser_download_url = (
+            f"https://github.com/warped-pinball/vector/releases/download/{tag}/{name}"
+        )
+        self.download_count = download_count
+
+
+class FakeRelease:
+    def __init__(self, tag, day):
+        self.tag_name = tag
+        self.body = f"Notes for {tag}"
+        self.created_at = datetime(2026, 1, day, tzinfo=timezone.utc)
+        self.published_at = self.created_at
+
+    def get_assets(self):
+        return [FakeAsset(self.tag_name)]
+
+
+def run_generator(monkeypatch, out_dir, releases, *extra_args):
+    """Run main() against ``releases`` and return the URLs it downloaded."""
+
+    fetched = []
+
+    def fake_fetch(url):
+        fetched.append(url)
+        tag = generate.tag_from_asset_url(url)
+        return {"version": tag}, f"sha-{tag}"
+
+    # GitHub lists releases newest first
+    newest_first = sorted(releases, key=lambda r: r.created_at, reverse=True)
+    repository = type("Repo", (), {"get_releases": lambda self: newest_first})()
+    monkeypatch.setenv("GITHUB_TOKEN", "token")
+    monkeypatch.setattr(generate, "fetch_update_file", fake_fetch)
+    monkeypatch.setattr(
+        generate,
+        "Github",
+        lambda token: type("Gh", (), {"get_repo": lambda self, _: repository})(),
+    )
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        ["generate.py", "--owner", "warped-pinball", "--repo", "vector"]
+        + ["--out-dir", str(out_dir), *extra_args],
+    )
+    generate.main()
+    return [generate.tag_from_asset_url(url) for url in fetched]
+
+
+def read_outputs(out_dir):
+    return {
+        str(path.relative_to(out_dir)): json.loads(path.read_text())
+        for path in sorted(out_dir.rglob("*.json"))
+    }
+
+
+def test_sync_only_fetches_releases_newer_than_the_site(monkeypatch, tmp_path):
+    first = [FakeRelease("1.0.0", 1), FakeRelease("1.1.0-beta2", 2)]
+    later = first + [FakeRelease("1.2.0-dev3", 3), FakeRelease("1.2.0", 4)]
+
+    assert run_generator(monkeypatch, tmp_path / "site", first) == [
+        "1.0.0",
+        "1.1.0-beta2",
+    ]
+    assert run_generator(monkeypatch, tmp_path / "site", later) == [
+        "1.2.0-dev3",
+        "1.2.0",
+    ]
+    assert run_generator(monkeypatch, tmp_path / "site", later) == []
+
+    run_generator(monkeypatch, tmp_path / "scratch", later)
+    assert read_outputs(tmp_path / "site") == read_outputs(tmp_path / "scratch")
+
+    latest = read_outputs(tmp_path / "site")["vector/sys11/latest.json"]
+    assert latest["version"] == "1.2.0"
+    assert latest["sha256"] == "sha-1.2.0"
+
+
+def test_full_flag_refetches_every_release(monkeypatch, tmp_path):
+    releases = [FakeRelease("1.0.0", 1), FakeRelease("1.1.0", 2)]
+    run_generator(monkeypatch, tmp_path, releases)
+    assert run_generator(monkeypatch, tmp_path, releases, "--full") == [
+        "1.0.0",
+        "1.1.0",
+    ]
+
+
+def test_full_rebuild_drops_deleted_releases(monkeypatch, tmp_path):
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.0.0", 1)])
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.1.0", 2)], "--full")
+    builds = read_outputs(tmp_path)["builds.json"]
+    assert [entry["version"] for entry in builds] == ["1.1.0"]
+
+
+def test_builds_json_from_older_generator_triggers_full_rebuild(
+    monkeypatch, tmp_path
+):
+    releases = [FakeRelease("1.0.0", 1), FakeRelease("1.1.0", 2)]
+    run_generator(monkeypatch, tmp_path, releases)
+
+    builds_path = tmp_path / "builds.json"
+    builds = json.loads(builds_path.read_text())
+    for entry in builds:
+        del entry["metadata_sha256"]
+    builds_path.write_text(json.dumps(builds))
+
+    assert run_generator(monkeypatch, tmp_path, releases) == ["1.0.0", "1.1.0"]
+
+
+def test_incremental_sync_skips_production_build_identical_to_previous(
+    monkeypatch, tmp_path
+):
+    releases = [FakeRelease("1.0.0", 1)]
+    run_generator(monkeypatch, tmp_path, releases)
+
+    # same metadata line as 1.0.0, so the same build republished
+    def fake_fetch(url):
+        return {"version": "1.0.0"}, "sha-same"
+
+    repeat = FakeRelease("1.0.1", 2)
+    repository = type("Repo", (), {"get_releases": lambda self: [repeat]})()
+    monkeypatch.setattr(generate, "fetch_update_file", fake_fetch)
+    monkeypatch.setattr(
+        generate,
+        "Github",
+        lambda token: type("Gh", (), {"get_repo": lambda self, _: repository})(),
+    )
+    generate.main()
+
+    outputs = read_outputs(tmp_path)
+    assert [r["version"] for r in outputs["vector/sys11/prod.json"]] == ["1.0.0"]
+    assert len(outputs["builds.json"]) == 2

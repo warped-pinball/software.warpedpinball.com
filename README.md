@@ -109,10 +109,14 @@ sits above the run list. Click the **Run workflow** dropdown button at its right
 end, set **Branch to run the sync on** to your new branch, and click the green
 **Run workflow** button in the dropdown.
 
-The workflow runs `scripts/generate.py` against `warped-pinball/vector`, rewrites
-everything under `docs/vector/` plus `docs/builds.json` and
+The workflow runs `scripts/generate.py` against `warped-pinball/vector`, adds the
+new releases to everything under `docs/vector/` plus `docs/builds.json` and
 `docs/download_counts.json`, and commits the result straight to your branch.
 Refresh the page to see the run appear, and wait for it to go green.
+
+Leave **Rebuild every release from scratch** unticked for a normal release. See
+[Incremental syncs and full rebuilds](#incremental-syncs-and-full-rebuilds) for
+when to tick it.
 
 ### 4. Open a PR
 
@@ -137,9 +141,10 @@ what you expect:
 - `docs/vector/<product>/prod.json` gained the new entry, and not `beta.json` or
   `dev.json`, which would mean the version string picked up a suffix.
 - The release notes rendered into the `notes` field read the way you intended.
-- Nothing unrelated disappeared. The generator wipes and rebuilds `docs/vector/`
-  from scratch, so a deleted or unpublished release in `vector` shows up here as
-  a removal.
+- Each new entry carries a `sha256`, the checksum from the end of its update
+  file.
+- Nothing unrelated changed. A normal sync only adds releases, so anything else
+  in the diff means someone ran a full rebuild.
 
 Once the checks at the bottom of the **Conversation** tab are green and the diff
 looks right, click **Merge pull request**, then **Confirm merge**.
@@ -206,6 +211,35 @@ https://software.warpedpinball.com/builds.json           every update file, with
 https://software.warpedpinball.com/download_counts.json  download counts per asset
 ```
 
+Every release entry, `latest.json` and `builds.json` carry `sha256`: the
+checksum written into the last line of the update file itself
+(`{"sha256": ..., "signature": ...}`), which is what a board checks before it
+applies the update. It is not the digest GitHub shows for the release asset.
+`builds.json` also has `metadata_sha256`, a hash of only the file's first line,
+which the generator uses to spot a production build identical to the previous
+one.
+
+## Incremental syncs and full rebuilds
+
+Getting each checksum means downloading every update file, so a sync does not
+redo releases it already has. It walks `vector`'s releases from newest to oldest
+and stops at the first one already in `builds.json`, so it only downloads what
+is new since the last sync.
+
+The flip side is that a normal sync never looks at older releases again. Run a
+full rebuild (tick **Rebuild every release from scratch** on the workflow, or
+pass `--full` locally) when:
+
+- the generator gained a new field and older entries need it too;
+- the notes of an already published release were edited;
+- a release was deleted or unpublished in `vector` and should disappear here;
+- you want the download counts of older releases refreshed.
+
+A full rebuild wipes `docs/vector/`, `builds.json` and `download_counts.json` and
+regenerates them from every release, which takes a while. If the existing
+`builds.json` is missing a field the generator now writes, a normal sync does a
+full rebuild by itself.
+
 ## Troubleshooting
 
 **The new version landed in `beta.json` instead of `prod.json`.**
@@ -214,6 +248,11 @@ by a push to `main` rather than by the published release. Check the
 [Build and Deploy runs](https://github.com/warped-pinball/vector/actions/workflows/build_release.yml)
 to confirm a run was triggered by the release itself and attached fresh assets,
 then re-run the sync.
+
+**A release is missing even though the sync ran.**
+A normal sync stops at the newest release it already has, so an older release
+that failed to download, or was published after a newer one, is never retried.
+Run a full rebuild.
 
 **`latest.json` did not change.**
 The generator skips a production build whose update file is byte-identical to the
@@ -250,7 +289,8 @@ GITHUB_TOKEN=<token> python3 scripts/generate.py \
   --owner warped-pinball --repo vector --out-dir docs
 ```
 
-The script rewrites `docs/` in place, so run it on a scratch branch.
+The script updates `docs/` in place, so run it on a scratch branch. Add `--full`
+to rebuild every release from scratch.
 
 ## Tests
 
