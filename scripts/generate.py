@@ -209,10 +209,10 @@ def release_notes_to_html(text):
 
 
 
-# Environment variable holding the PEM private key that signs latest.json.
-# Its public half is compiled into Vector, which refuses an update whose
-# release record this key did not sign.
-SIGNING_KEY_ENV = "RELEASE_SIGNING_PRIVATE_KEY"
+# Environment variable holding the PEM private key that signs latest.json:
+# the same Warped Pinball key that signs vector's update files, so boards
+# check both with the one public key they already carry.
+SIGNING_KEY_ENV = "WARPED_PINBALL_PRIVATE_KEY"
 
 
 def load_signing_key():
