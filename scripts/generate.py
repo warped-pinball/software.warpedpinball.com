@@ -10,6 +10,9 @@ from github import Github
 import re
 import markdown
 import bleach
+import base64
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import padding
 
 
 PRODUCT_ASSETS = {
@@ -204,6 +207,37 @@ def release_notes_to_html(text):
         strip=True,
     )
 
+
+
+# Environment variable holding the PEM private key that signs latest.json.
+# Its public half is compiled into Vector, which refuses an update whose
+# release record this key did not sign.
+SIGNING_KEY_ENV = "RELEASE_SIGNING_PRIVATE_KEY"
+
+
+def load_signing_key():
+    """Return the release signing key from the environment, or ``None``."""
+
+    pem = os.getenv(SIGNING_KEY_ENV)
+    if not pem:
+        return None
+    return serialization.load_pem_private_key(pem.encode(), password=None)
+
+
+def sign_release(release_data, product, signing_key):
+    """Return the ``signed`` block for latest.json.
+
+    ``payload`` is the release record as a JSON string, so a board verifies
+    exactly these bytes and then reads the fields out of it: there is no
+    second serialisation that has to match. ``product`` is inside it so a
+    board can't be handed another product's release.
+    """
+
+    payload = json.dumps(
+        {"product": product, **release_data}, sort_keys=True, separators=(",", ":")
+    )
+    signature = signing_key.sign(payload.encode(), padding.PKCS1v15(), hashes.SHA256())
+    return {"payload": payload, "signature": base64.b64encode(signature).decode()}
 
 
 def build_latest_release_data(owner, repo, release_entry):
@@ -431,7 +465,7 @@ def process_release(release, state):
         groups[release_group(release_type)].append(release_entry)
 
 
-def write_outputs(state, out_dir, owner, repo):
+def write_outputs(state, out_dir, owner, repo, signing_key=None):
     # Write out the JSON files for each product
     for product, groups in state["releases_by_product"].items():
         if groups["all"]:
@@ -466,6 +500,12 @@ def write_outputs(state, out_dir, owner, repo):
             latest_release_data = build_latest_release_data(
                 owner, repo, latest_release
             )
+            # The plain fields stay for boards from before signed releases;
+            # newer boards only trust what is inside ``signed``
+            if signing_key is not None:
+                latest_release_data["signed"] = sign_release(
+                    latest_release_data, product, signing_key
+                )
 
             # Latest release metadata in the same folder
             # https://software.warpedpinball.com/vector/<product>/latest.json
@@ -534,6 +574,14 @@ def main():
         sys.stderr.write("ERROR: GITHUB_TOKEN not set\n")
         sys.exit(1)
 
+    signing_key = load_signing_key()
+    if signing_key is None:
+        print(
+            f"⚠️ {SIGNING_KEY_ENV} not set; latest.json is unsigned and "
+            "current boards will refuse it",
+            file=sys.stderr,
+        )
+
     state = None if args.full else load_existing_state(args.out_dir)
     if state is None:
         # Remove any previously generated release data so deleted releases
@@ -552,7 +600,7 @@ def main():
     for release in new_releases:
         process_release(release, state)
 
-    write_outputs(state, args.out_dir, args.owner, args.repo)
+    write_outputs(state, args.out_dir, args.owner, args.repo, signing_key)
     print("✅ Generated release data for all products.")
 
 

@@ -1,3 +1,4 @@
+import base64
 import hashlib
 import json
 import os
@@ -625,3 +626,38 @@ def test_incremental_sync_skips_production_build_identical_to_previous(
     outputs = read_outputs(tmp_path)
     assert [r["version"] for r in outputs["vector/sys11/prod.json"]] == ["1.0.0"]
     assert len(outputs["builds.json"]) == 2
+
+
+def test_latest_json_is_signed_when_a_key_is_set(monkeypatch, tmp_path):
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import padding, rsa
+
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    pem = key.private_bytes(
+        serialization.Encoding.PEM,
+        serialization.PrivateFormat.PKCS8,
+        serialization.NoEncryption(),
+    ).decode()
+    monkeypatch.setenv(generate.SIGNING_KEY_ENV, pem)
+
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.0.0", 1)])
+    latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
+
+    signed = latest["signed"]
+    key.public_key().verify(
+        base64.b64decode(signed["signature"]),
+        signed["payload"].encode(),
+        padding.PKCS1v15(),
+        hashes.SHA256(),
+    )
+    payload = json.loads(signed["payload"])
+    assert payload["product"] == "sys11"
+    assert {k: v for k, v in latest.items() if k != "signed"} == {
+        k: v for k, v in payload.items() if k != "product"
+    }
+
+
+def test_latest_json_is_unsigned_without_a_key(monkeypatch, tmp_path):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.0.0", 1)])
+    assert "signed" not in read_outputs(tmp_path)["vector/sys11/latest.json"]

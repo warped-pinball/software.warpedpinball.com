@@ -214,11 +214,24 @@ https://software.warpedpinball.com/download_counts.json  download counts per ass
 
 Every release entry, `latest.json` and `builds.json` carry `sha256` and
 `signature`, copied from the last line of the update file itself
-(`{"sha256": ..., "signature": ...}`). The signature is the release key's RSA
-signature of that sha256. A board checks the signature against its built-in
-public key, then checks the file it downloads hashes to that sha256, and refuses
-the update if either fails. The sha256 is not the digest GitHub shows for the
-release asset.
+(`{"sha256": ..., "signature": ...}`). That signature is vector's release key
+signing the sha256. The sha256 is not the digest GitHub shows for the release
+asset.
+
+`latest.json` is also signed as a whole with this site's own key. Its
+`signed.payload` is the release record (every field above plus `product`) as a
+JSON string, and `signed.signature` is the RSA (PKCS#1 v1.5, SHA-256)
+signature of that string. A current board verifies `signed` with the public key
+built into vector and reads everything from the payload. It then checks the file
+it downloads hashes to the payload's sha256 and carries vector's signature, and
+refuses the update if any check fails. The plain fields are kept for boards from
+before signed releases.
+
+The private key is the `RELEASE_SIGNING_PRIVATE_KEY` Actions secret. Without it
+the sync still runs but writes no `signed` block, and current boards will refuse
+to update. To make a key pair, run `python scripts/make_signing_key.py`. Store
+the private key it prints as that secret, and put the public numbers in
+`_release_public_key()` in vector's `src/common/update.py`.
 `builds.json` also has `metadata_sha256`, a hash of only the file's first line,
 which the generator uses to spot a production build identical to the previous
 one.
