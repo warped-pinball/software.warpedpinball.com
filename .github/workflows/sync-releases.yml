@@ -26,6 +26,7 @@ jobs:
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      WARPED_PINBALL_PRIVATE_KEY: ${{ secrets.WARPED_PINBALL_PRIVATE_KEY }}
 
     steps:
       - name: Check out site repo

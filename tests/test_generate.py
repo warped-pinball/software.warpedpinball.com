@@ -1,3 +1,4 @@
+import base64
 import hashlib
 import json
 import os
@@ -40,18 +41,22 @@ def make_update_file(metadata, files=(b"file-one", b"file-two"), newline=b"\n"):
 
 def test_parse_update_file_reads_metadata_and_trailing_checksum():
     content, sha256 = make_update_file({"version": "1.0"})
-    assert generate.parse_update_file(content) == ({"version": "1.0"}, sha256)
+    assert generate.parse_update_file(content) == ({"version": "1.0"}, sha256, "sig")
 
 
 def test_parse_update_file_without_checksum_line():
     content = json.dumps({"version": "1.0"}).encode() + b"\nBINARYDATA"
-    assert generate.parse_update_file(content) == ({"version": "1.0"}, None)
+    assert generate.parse_update_file(content) == ({"version": "1.0"}, None, None)
 
 
 def test_parse_update_file_reports_mismatched_checksum(capsys):
     content, sha256 = make_update_file({"version": "1.0"})
     tampered = content.replace(b"file-one", b"file-0ne")
-    assert generate.parse_update_file(tampered) == ({"version": "1.0"}, sha256)
+    assert generate.parse_update_file(tampered) == (
+        {"version": "1.0"},
+        sha256,
+        "sig",
+    )
     assert "does not match" in capsys.readouterr().err
 
 
@@ -64,7 +69,7 @@ def test_fetch_update_file_success(monkeypatch):
     MockResponse.content = content
     monkeypatch.setattr(generate.requests, "get", lambda url: MockResponse())
     result = generate.fetch_update_file("http://example.com/update.json")
-    assert result == ({"version": "1.0"}, sha256)
+    assert result == ({"version": "1.0"}, sha256, "sig")
 
 
 def test_fetch_update_file_failure(monkeypatch):
@@ -172,7 +177,7 @@ def test_main_uses_versions_parser_for_formatted_and_setext_headings(monkeypatch
 
     monkeypatch.setenv("GITHUB_TOKEN", "token")
     monkeypatch.setattr(
-        generate, "fetch_update_file", lambda _: ({"ok": True}, "abc")
+        generate, "fetch_update_file", lambda _: ({"ok": True}, "abc", "sig")
     )
 
     for index, body in enumerate(bodies):
@@ -439,27 +444,20 @@ def test_build_latest_release_data_uses_tag():
     assert result["version"] == entry["version"]
 
 
-def test_build_file_entry_and_download_record():
+def test_build_file_entry():
     file_entry = generate.build_file_entry(
         "sys11",
         "1.0.0",
         "prod",
         "https://example.com/update.json",
         "deadbeef",
+        "c2ln",
         "cafef00d",
     )
 
-    download_entry = generate.build_download_record(
-        "sys11",
-        "1.0.0",
-        "prod",
-        "https://example.com/update.json",
-        42,
-    )
-
     assert "download_count" not in file_entry
-    assert download_entry["download_count"] == 42
     assert file_entry["sha256"] == "deadbeef"
+    assert file_entry["signature"] == "c2ln"
     assert file_entry["metadata_sha256"] == "cafef00d"
 
 
@@ -471,7 +469,7 @@ def test_calculate_json_hash_unique():
 
 def test_parse_update_file_crlf():
     content, _ = make_update_file({"foo": "bar"}, newline=b"\r\n")
-    metadata, _ = generate.parse_update_file(content)
+    metadata, _, _ = generate.parse_update_file(content)
     assert metadata == {"foo": "bar"}
 
 
@@ -513,7 +511,7 @@ def run_generator(monkeypatch, out_dir, releases, *extra_args):
     def fake_fetch(url):
         fetched.append(url)
         tag = generate.tag_from_asset_url(url)
-        return {"version": tag}, f"sha-{tag}"
+        return {"version": tag}, f"sha-{tag}", f"sig-{tag}"
 
     # GitHub lists releases newest first
     newest_first = sorted(releases, key=lambda r: r.created_at, reverse=True)
@@ -562,6 +560,7 @@ def test_sync_only_fetches_releases_newer_than_the_site(monkeypatch, tmp_path):
     latest = read_outputs(tmp_path / "site")["vector/sys11/latest.json"]
     assert latest["version"] == "1.2.0"
     assert latest["sha256"] == "sha-1.2.0"
+    assert latest["signature"] == "sig-1.2.0"
 
 
 def test_full_flag_refetches_every_release(monkeypatch, tmp_path):
@@ -603,7 +602,7 @@ def test_incremental_sync_skips_production_build_identical_to_previous(
 
     # same metadata line as 1.0.0, so the same build republished
     def fake_fetch(url):
-        return {"version": "1.0.0"}, "sha-same"
+        return {"version": "1.0.0"}, "sha-same", "sig-same"
 
     repeat = FakeRelease("1.0.1", 2)
     repository = type("Repo", (), {"get_releases": lambda self: [repeat]})()
@@ -618,3 +617,38 @@ def test_incremental_sync_skips_production_build_identical_to_previous(
     outputs = read_outputs(tmp_path)
     assert [r["version"] for r in outputs["vector/sys11/prod.json"]] == ["1.0.0"]
     assert len(outputs["builds.json"]) == 2
+
+
+def test_latest_json_is_signed_when_a_key_is_set(monkeypatch, tmp_path):
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import padding, rsa
+
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    pem = key.private_bytes(
+        serialization.Encoding.PEM,
+        serialization.PrivateFormat.PKCS8,
+        serialization.NoEncryption(),
+    ).decode()
+    monkeypatch.setenv(generate.SIGNING_KEY_ENV, pem)
+
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.0.0", 1)])
+    latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
+
+    signed = latest["signed"]
+    key.public_key().verify(
+        base64.b64decode(signed["signature"]),
+        signed["payload"].encode(),
+        padding.PKCS1v15(),
+        hashes.SHA256(),
+    )
+    payload = json.loads(signed["payload"])
+    assert payload["product"] == "sys11"
+    assert {k: v for k, v in latest.items() if k != "signed"} == {
+        k: v for k, v in payload.items() if k != "product"
+    }
+
+
+def test_latest_json_is_unsigned_without_a_key(monkeypatch, tmp_path):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.0.0", 1)])
+    assert "signed" not in read_outputs(tmp_path)["vector/sys11/latest.json"]

@@ -110,8 +110,7 @@ end, set **Branch to run the sync on** to your new branch, and click the green
 **Run workflow** button in the dropdown.
 
 The workflow runs `scripts/generate.py` against `warped-pinball/vector`, adds the
-new releases to everything under `docs/vector/` plus `docs/builds.json` and
-`docs/download_counts.json`, and commits the result straight to your branch.
+new releases to everything under `docs/vector/` plus `docs/builds.json`, and commits the result straight to your branch.
 Refresh the page to see the run appear, and wait for it to go green.
 
 Leave **Rebuild every release from scratch** unticked for a normal release. See
@@ -141,8 +140,9 @@ what you expect:
 - `docs/vector/<product>/prod.json` gained the new entry, and not `beta.json` or
   `dev.json`, which would mean the version string picked up a suffix.
 - The release notes rendered into the `notes` field read the way you intended.
-- Each new entry carries a `sha256`, the checksum from the end of its update
-  file.
+- Each new entry carries a `sha256` and a `signature`, copied from the end of
+  its update file. A production entry whose `signature` is `NOT_ENCRYPTED` was
+  built unsigned, and boards will refuse it.
 - Nothing unrelated changed. A normal sync only adds releases, so anything else
   in the diff means someone ran a full rebuild.
 
@@ -204,17 +204,31 @@ https://software.warpedpinball.com/vector/<product>/dev.json      all dev releas
 https://software.warpedpinball.com/vector/<product>/all.json      everything, combined
 ```
 
-Two site-wide files sit alongside them:
+One site-wide file sits alongside them:
 
 ```
-https://software.warpedpinball.com/builds.json           every update file, with its sha256
-https://software.warpedpinball.com/download_counts.json  download counts per asset
+https://software.warpedpinball.com/builds.json  every update file, with its sha256 and signature
 ```
 
-Every release entry, `latest.json` and `builds.json` carry `sha256`: the
-checksum written into the last line of the update file itself
-(`{"sha256": ..., "signature": ...}`), which is what a board checks before it
-applies the update. It is not the digest GitHub shows for the release asset.
+Every release entry, `latest.json` and `builds.json` carry `sha256` and
+`signature`, copied from the last line of the update file itself
+(`{"sha256": ..., "signature": ...}`). That signature is vector's release key
+signing the sha256. The sha256 is not the digest GitHub shows for the release
+asset.
+
+`latest.json` is also signed as a whole, with the same Warped Pinball key. Its
+`signed.payload` is the release record (every field above plus `product`) as a
+JSON string, and `signed.signature` is the RSA (PKCS#1 v1.5, SHA-256)
+signature of that string. A current board verifies `signed` with the public key
+built into vector, the same one it checks update files with, and reads
+everything from the payload. It then checks the file
+it downloads hashes to the payload's sha256 and carries vector's signature, and
+refuses the update if any check fails. The plain fields are kept for boards from
+before signed releases.
+
+The key is the `WARPED_PINBALL_PRIVATE_KEY` organization secret, which this
+repository needs access to. Without it the sync still runs but writes no
+`signed` block, and current boards will refuse to update.
 `builds.json` also has `metadata_sha256`, a hash of only the file's first line,
 which the generator uses to spot a production build identical to the previous
 one.
@@ -232,10 +246,9 @@ pass `--full` locally) when:
 
 - the generator gained a new field and older entries need it too;
 - the notes of an already published release were edited;
-- a release was deleted or unpublished in `vector` and should disappear here;
-- you want the download counts of older releases refreshed.
+- a release was deleted or unpublished in `vector` and should disappear here.
 
-A full rebuild wipes `docs/vector/`, `builds.json` and `download_counts.json` and
+A full rebuild wipes `docs/vector/` and `builds.json` and
 regenerates them from every release, which takes a while. If the existing
 `builds.json` is missing a field the generator now writes, a normal sync does a
 full rebuild by itself.

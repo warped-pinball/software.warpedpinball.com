@@ -10,6 +10,9 @@ from github import Github
 import re
 import markdown
 import bleach
+import base64
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import padding
 
 
 PRODUCT_ASSETS = {
@@ -23,12 +26,13 @@ PRODUCT_ASSETS = {
 
 
 def parse_update_file(content):
-    """Return ``(metadata, sha256)`` from the raw bytes of an update file.
+    """Return ``(metadata, sha256, signature)`` from the raw bytes of an update file.
 
     An update file is a JSON metadata line, then one line per file, then a
     final ``{"sha256": ..., "signature": ...}`` line. That sha256 covers
-    everything above it and is what boards check before applying an update.
-    ``sha256`` is ``None`` when the file has no such line.
+    everything above it, and the signature is the release key's RSA signature
+    of it. Boards check both before applying an update. ``sha256`` and
+    ``signature`` are ``None`` when the file has no such line.
     """
 
     # splitlines handles both ``\n`` and ``\r\n`` newlines
@@ -36,19 +40,21 @@ def parse_update_file(content):
 
     body, _, last_line = content.rstrip(b"\r\n").rpartition(b"\n")
     try:
-        sha256 = json.loads(last_line).get("sha256")
+        checksum = json.loads(last_line)
+        sha256 = checksum.get("sha256")
+        signature = checksum.get("signature")
     except (ValueError, AttributeError):
-        return metadata, None
+        return metadata, None, None
 
     if sha256 and hashlib.sha256(body).hexdigest() != sha256:
         print(
             "⚠️ Update file checksum does not match its contents", file=sys.stderr
         )
-    return metadata, sha256
+    return metadata, sha256, signature
 
 
 def fetch_update_file(url):
-    """Download an update file and return ``(metadata, sha256)``, or ``None``."""
+    """Download an update file and return ``(metadata, sha256, signature)``, or ``None``."""
 
     response = requests.get(url)
     if response.status_code != 200:
@@ -203,6 +209,37 @@ def release_notes_to_html(text):
 
 
 
+# Environment variable holding the PEM private key that signs latest.json:
+# the same Warped Pinball key that signs vector's update files, so boards
+# check both with the one public key they already carry.
+SIGNING_KEY_ENV = "WARPED_PINBALL_PRIVATE_KEY"
+
+
+def load_signing_key():
+    """Return the release signing key from the environment, or ``None``."""
+
+    pem = os.getenv(SIGNING_KEY_ENV)
+    if not pem:
+        return None
+    return serialization.load_pem_private_key(pem.encode(), password=None)
+
+
+def sign_release(release_data, product, signing_key):
+    """Return the ``signed`` block for latest.json.
+
+    ``payload`` is the release record as a JSON string, so a board verifies
+    exactly these bytes and then reads the fields out of it: there is no
+    second serialisation that has to match. ``product`` is inside it so a
+    board can't be handed another product's release.
+    """
+
+    payload = json.dumps(
+        {"product": product, **release_data}, sort_keys=True, separators=(",", ":")
+    )
+    signature = signing_key.sign(payload.encode(), padding.PKCS1v15(), hashes.SHA256())
+    return {"payload": payload, "signature": base64.b64encode(signature).decode()}
+
+
 def build_latest_release_data(owner, repo, release_entry):
     """Return a standardized latest.json payload for a single release."""
 
@@ -210,16 +247,20 @@ def build_latest_release_data(owner, repo, release_entry):
         "version": release_entry["version"],
         "url": release_entry["url"],
         "sha256": release_entry.get("sha256"),
+        "signature": release_entry.get("signature"),
         "release_page": f"https://github.com/{owner}/{repo}/releases/tag/{release_entry['tag']}",
         "notes": release_entry["notes"],
         "published_at": release_entry["published_at"],
     }
 
 
-def build_file_entry(product, version, release_type, url, sha256, metadata_sha256):
+def build_file_entry(
+    product, version, release_type, url, sha256, signature, metadata_sha256
+):
     """Return metadata for builds.json without download counts.
 
-    ``sha256`` is the checksum embedded at the end of the update file.
+    ``sha256`` and ``signature`` are the checksum and its RSA signature
+    embedded at the end of the update file.
     ``metadata_sha256`` hashes only its first (metadata) line, and is how a
     production build identical to the previous one is recognised.
     """
@@ -230,26 +271,15 @@ def build_file_entry(product, version, release_type, url, sha256, metadata_sha25
         "type": release_type,
         "url": url,
         "sha256": sha256,
+        "signature": signature,
         "metadata_sha256": metadata_sha256,
-    }
-
-
-def build_download_record(product, version, release_type, url, count):
-    """Return a record used to track download counts separately."""
-
-    return {
-        "product": product,
-        "version": version,
-        "type": release_type,
-        "url": url,
-        "download_count": count,
     }
 
 
 # Every field builds.json carries. An existing builds.json missing any of them
 # was written by an older generator, so an incremental sync would leave its
 # entries without the new field; the generator rebuilds from scratch instead.
-FILE_ENTRY_FIELDS = set(build_file_entry(*[None] * 6))
+FILE_ENTRY_FIELDS = set(build_file_entry(*[None] * 7))
 
 
 def tag_from_asset_url(url):
@@ -267,7 +297,6 @@ def empty_state():
         # last production metadata hash per product, to skip identical builds
         "previous_update_hashes": {product: None for product in PRODUCT_ASSETS},
         "file_db": [],  # metadata for all update files (without download counts)
-        "download_records": [],  # download counts for each asset
     }
 
 
@@ -295,9 +324,6 @@ def load_existing_state(out_dir):
 
     state = empty_state()
     state["file_db"] = file_db
-    state["download_records"] = load_json(
-        os.path.join(out_dir, "download_counts.json"), []
-    )
 
     for product, groups in state["releases_by_product"].items():
         all_path = os.path.join(out_dir, "vector", product, "all.json")
@@ -360,7 +386,7 @@ def process_release(release, state):
         if update_file is None:
             print(f"⏭️ Skipping {tag} {asset_name}: failed to fetch", file=sys.stderr)
             continue
-        update_data, sha256 = update_file
+        update_data, sha256, signature = update_file
         print(f"📦 {tag} {asset_name}")
 
         normalized_product = normalize_product_name(product)
@@ -380,17 +406,8 @@ def process_release(release, state):
                 release_type,
                 asset.browser_download_url,
                 sha256,
+                signature,
                 update_hash,
-            )
-        )
-
-        state["download_records"].append(
-            build_download_record(
-                product,
-                product_version,
-                release_type,
-                asset.browser_download_url,
-                asset.download_count,
             )
         )
 
@@ -410,6 +427,7 @@ def process_release(release, state):
             "tag": tag,
             "url": asset.browser_download_url,
             "sha256": sha256,
+            "signature": signature,
             "notes": release_notes_to_html(
                 filter_release_note_versions(release.body, product)
             ),
@@ -421,7 +439,7 @@ def process_release(release, state):
         groups[release_group(release_type)].append(release_entry)
 
 
-def write_outputs(state, out_dir, owner, repo):
+def write_outputs(state, out_dir, owner, repo, signing_key=None):
     # Write out the JSON files for each product
     for product, groups in state["releases_by_product"].items():
         if groups["all"]:
@@ -456,6 +474,12 @@ def write_outputs(state, out_dir, owner, repo):
             latest_release_data = build_latest_release_data(
                 owner, repo, latest_release
             )
+            # The plain fields stay for boards from before signed releases;
+            # newer boards only trust what is inside ``signed``
+            if signing_key is not None:
+                latest_release_data["signed"] = sign_release(
+                    latest_release_data, product, signing_key
+                )
 
             # Latest release metadata in the same folder
             # https://software.warpedpinball.com/vector/<product>/latest.json
@@ -471,12 +495,6 @@ def write_outputs(state, out_dir, owner, repo):
             json.dump(state["file_db"], f, indent=2)
         print(f"✅ Wrote {build_db_path}")
 
-    if state["download_records"]:
-        counts_path = os.path.join(out_dir, "download_counts.json")
-        with open(counts_path, "w") as f:
-            json.dump(state["download_records"], f, indent=2)
-        print(f"✅ Wrote {counts_path}")
-
 
 def remove_generated_files(out_dir):
     """Delete everything the generator writes, leaving index.html and the icons."""
@@ -484,10 +502,9 @@ def remove_generated_files(out_dir):
     out_vector_dir = os.path.join(out_dir, "vector")
     if os.path.exists(out_vector_dir):
         shutil.rmtree(out_vector_dir)
-    for name in ("builds.json", "download_counts.json"):
-        path = os.path.join(out_dir, name)
-        if os.path.exists(path):
-            os.remove(path)
+    path = os.path.join(out_dir, "builds.json")
+    if os.path.exists(path):
+        os.remove(path)
 
 
 def main():
@@ -524,6 +541,14 @@ def main():
         sys.stderr.write("ERROR: GITHUB_TOKEN not set\n")
         sys.exit(1)
 
+    signing_key = load_signing_key()
+    if signing_key is None:
+        print(
+            f"⚠️ {SIGNING_KEY_ENV} not set; latest.json is unsigned and "
+            "current boards will refuse it",
+            file=sys.stderr,
+        )
+
     state = None if args.full else load_existing_state(args.out_dir)
     if state is None:
         # Remove any previously generated release data so deleted releases
@@ -542,7 +567,7 @@ def main():
     for release in new_releases:
         process_release(release, state)
 
-    write_outputs(state, args.out_dir, args.owner, args.repo)
+    write_outputs(state, args.out_dir, args.owner, args.repo, signing_key)
     print("✅ Generated release data for all products.")
 
 
