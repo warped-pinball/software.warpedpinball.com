@@ -276,18 +276,6 @@ def build_file_entry(
     }
 
 
-def build_download_record(product, version, release_type, url, count):
-    """Return a record used to track download counts separately."""
-
-    return {
-        "product": product,
-        "version": version,
-        "type": release_type,
-        "url": url,
-        "download_count": count,
-    }
-
-
 # Every field builds.json carries. An existing builds.json missing any of them
 # was written by an older generator, so an incremental sync would leave its
 # entries without the new field; the generator rebuilds from scratch instead.
@@ -309,7 +297,6 @@ def empty_state():
         # last production metadata hash per product, to skip identical builds
         "previous_update_hashes": {product: None for product in PRODUCT_ASSETS},
         "file_db": [],  # metadata for all update files (without download counts)
-        "download_records": [],  # download counts for each asset
     }
 
 
@@ -337,9 +324,6 @@ def load_existing_state(out_dir):
 
     state = empty_state()
     state["file_db"] = file_db
-    state["download_records"] = load_json(
-        os.path.join(out_dir, "download_counts.json"), []
-    )
 
     for product, groups in state["releases_by_product"].items():
         all_path = os.path.join(out_dir, "vector", product, "all.json")
@@ -427,16 +411,6 @@ def process_release(release, state):
             )
         )
 
-        state["download_records"].append(
-            build_download_record(
-                product,
-                product_version,
-                release_type,
-                asset.browser_download_url,
-                asset.download_count,
-            )
-        )
-
         # Only skip if this is a production build identical to previous production
         previous_update_hashes = state["previous_update_hashes"]
         if (
@@ -521,12 +495,6 @@ def write_outputs(state, out_dir, owner, repo, signing_key=None):
             json.dump(state["file_db"], f, indent=2)
         print(f"✅ Wrote {build_db_path}")
 
-    if state["download_records"]:
-        counts_path = os.path.join(out_dir, "download_counts.json")
-        with open(counts_path, "w") as f:
-            json.dump(state["download_records"], f, indent=2)
-        print(f"✅ Wrote {counts_path}")
-
 
 def remove_generated_files(out_dir):
     """Delete everything the generator writes, leaving index.html and the icons."""
@@ -534,10 +502,9 @@ def remove_generated_files(out_dir):
     out_vector_dir = os.path.join(out_dir, "vector")
     if os.path.exists(out_vector_dir):
         shutil.rmtree(out_vector_dir)
-    for name in ("builds.json", "download_counts.json"):
-        path = os.path.join(out_dir, name)
-        if os.path.exists(path):
-            os.remove(path)
+    path = os.path.join(out_dir, "builds.json")
+    if os.path.exists(path):
+        os.remove(path)
 
 
 def main():

@@ -444,7 +444,7 @@ def test_build_latest_release_data_uses_tag():
     assert result["version"] == entry["version"]
 
 
-def test_build_file_entry_and_download_record():
+def test_build_file_entry():
     file_entry = generate.build_file_entry(
         "sys11",
         "1.0.0",
@@ -455,16 +455,7 @@ def test_build_file_entry_and_download_record():
         "cafef00d",
     )
 
-    download_entry = generate.build_download_record(
-        "sys11",
-        "1.0.0",
-        "prod",
-        "https://example.com/update.json",
-        42,
-    )
-
     assert "download_count" not in file_entry
-    assert download_entry["download_count"] == 42
     assert file_entry["sha256"] == "deadbeef"
     assert file_entry["signature"] == "c2ln"
     assert file_entry["metadata_sha256"] == "cafef00d"

@@ -110,8 +110,7 @@ end, set **Branch to run the sync on** to your new branch, and click the green
 **Run workflow** button in the dropdown.
 
 The workflow runs `scripts/generate.py` against `warped-pinball/vector`, adds the
-new releases to everything under `docs/vector/` plus `docs/builds.json` and
-`docs/download_counts.json`, and commits the result straight to your branch.
+new releases to everything under `docs/vector/` plus `docs/builds.json`, and commits the result straight to your branch.
 Refresh the page to see the run appear, and wait for it to go green.
 
 Leave **Rebuild every release from scratch** unticked for a normal release. See
@@ -205,11 +204,10 @@ https://software.warpedpinball.com/vector/<product>/dev.json      all dev releas
 https://software.warpedpinball.com/vector/<product>/all.json      everything, combined
 ```
 
-Two site-wide files sit alongside them:
+One site-wide file sits alongside them:
 
 ```
-https://software.warpedpinball.com/builds.json           every update file, with its sha256 and signature
-https://software.warpedpinball.com/download_counts.json  download counts per asset
+https://software.warpedpinball.com/builds.json  every update file, with its sha256 and signature
 ```
 
 Every release entry, `latest.json` and `builds.json` carry `sha256` and
@@ -248,10 +246,9 @@ pass `--full` locally) when:
 
 - the generator gained a new field and older entries need it too;
 - the notes of an already published release were edited;
-- a release was deleted or unpublished in `vector` and should disappear here;
-- you want the download counts of older releases refreshed.
+- a release was deleted or unpublished in `vector` and should disappear here.
 
-A full rebuild wipes `docs/vector/`, `builds.json` and `download_counts.json` and
+A full rebuild wipes `docs/vector/` and `builds.json` and
 regenerates them from every release, which takes a while. If the existing
 `builds.json` is missing a field the generator now writes, a normal sync does a
 full rebuild by itself.
