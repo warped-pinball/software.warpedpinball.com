@@ -3,6 +3,8 @@
     "version": "0.0.0-beta896",
     "tag": "1.6.1-beta896",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.6.1-beta896/update_whitestar.json",
+    "sha256": "072739a4a78d3094b4155a07c520eb2cf98cafac9c9487533da144f2dc6b9b0c",
+    "signature": "EnCWjSxE3+I8vfVn/061KTm/2w/cFJZdlP40jr8tNHT5c/kvtKUKS+fupXj4loHybKdtLU91TT1D73UAmYCHamzWcI5qFWwyfNcjr/UQJ3ERAmHIpGg7EkuebSF+d5L3WDb9oeqGl0PHf6FlhM21RdEoD9iUcVK6LJk7Wqe8sWtiI0QSS17ox2Ns6Gwra/f4YLYNZ20u3uAK7HXtWUGMJDgTxZo++MrsForYU7i6EWABFuGWYX1QZXikPRC1uTobkhhZwfuM5BYLoRiaJRwVfo0s7LzqZ86Ra4nhAq7Pk3yXM6X2Smws97nCL5brJb6TF5z1huPBBn56B0eJ4+eYnA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.6.1-beta896</code><br>\n<strong>WhiteStar</strong>: <code>0.0.0-beta896</code></p>\n",
     "published_at": "2025-11-16T01:25:18+00:00",
     "type": "beta"
@@ -11,6 +13,8 @@
     "version": "0.0.0-beta899",
     "tag": "1.6.1-beta899",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.6.1-beta899/update_whitestar.json",
+    "sha256": "03e02c61670c0e6f579a9f7a8499e606981bd243650acce4a9a0db42dfeecb95",
+    "signature": "L1PLYqJsR8IKeJDb3qnLA/oxzVCAxZRky1SbE40EzcOUX9VRBO50QJkHw3g207l+UVJV+TEpEVWfO6jSItneDzNmvpysGqbqEPi0UPexUkqmvQ5oUd28+QwajG8Husjb4dMSHhZfKyDA6+AKi1VDBxiAq+y8mI/GoptH0aOZyr73/YB0zBm0E8u/+E742ARq2I4pkePgRd5iRjYjuiXHO8UX2np3PicCdVFz2Eo+YkiHZoNcqaDTpiXVY9IZb1dSo6ruzbRFaEHi9qE6cl1FG3Y/VOc3Pn3+rUmY1OI+1WV3Pwnx0GM5AbzXKkRrXSr8iIgRwhhhI+eAw5tMyORBcg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.6.1-beta899</code><br>\n<strong>WhiteStar</strong>: <code>0.0.0-beta899</code></p>\n",
     "published_at": "2025-11-16T02:29:07+00:00",
     "type": "beta"
@@ -19,6 +23,8 @@
     "version": "0.1.0",
     "tag": "1.7.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0/update_whitestar.json",
+    "sha256": "d8258836af81f7fc6efc35d3320edb01ace36abc0004d3ea927ee0b43bbef90f",
+    "signature": "eCf9ZfquyaV3KeN0R6x3tW/4HBGHgbF6JD9vw89z+6vT1xuQSqIeRt/2SP277gMvQ5ItcJPonY16murfV+5rOSJWETATcQ6CopwdBttQH5QbUPus8F3EnPjZKFiBIaqG316QI8SEloUV0960KaifZuJrfHQqxJECNl4FmYD0EiVRMeMN9HYGmMd3oKLDsQaxJscma3ReCLfM6dcrUA4VGWpilR6JuGWZrZfCj/hMsXy31odZUgnlyhLd5JL+LKp7tbTyUvXS5cdqMdvok7bCFMK5r8fy8dXuzdsk35pNo4WoEhYInZmkd08puoGBL1ttIQT1yvInpl5U6rFYZyL5ng==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0</code><br>\n<strong>WhiteStar</strong>: <code>0.1.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added Terminator 2 L84 Rom by @paulmullin in https://github.com/warped-pinball/vector/pull/174</li>\n<li>Added stubs for whitestar and data_east :eyes: by @mullinmax in https://github.com/warped-pinball/vector/pull/162</li>\n<li>\n<p>New update build logic and better compatibility checking by @mullinmax in https://github.com/warped-pinball/vector/pull/162</p>\n</li>\n<li>\n<p>1.7.0 by @mullinmax in https://github.com/warped-pinball/vector/pull/178</p>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.6.1...1.7.0</p>",
     "published_at": "2025-11-16T02:48:32+00:00",
     "type": "production"
@@ -27,6 +33,8 @@
     "version": "0.1.0-beta904",
     "tag": "1.7.0-beta904",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta904/update_whitestar.json",
+    "sha256": "d3fc4bc160a57182a2d2f7779db604ce0b94b7a9e33b34efc7326ddfcd03062e",
+    "signature": "QQ4Il1zh9oKwDdSOElgUdK9QnJyDMF/eyP570+r8ISXBNRFc9lhRRqAnHLJfp4CQGkmOWnamuToCI+YCBDgd7zmJiB2Op2MbHtuh4bYmXtyvrjUfOHcTuQQQosdS0aTLT08ZtvSvp6dQOtTesXA01jVZGsYxoHeD+zxKr4g9b7SGA5g51eEROVfhwFaqn9EB9Zc4H2cayuvprAXr3hEazNr97SUJ8A4RIeq6OijZCItZ7QAq5bIEt+UIBFhiR+evR/ghfQB3dpR64ivAZBw/ZA5E4xMCdQatEr6TzpmZejegWu1FKmDjgVXIpttE/g0MB4FNhZfaTsKkiUXnPSk6xg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta904</code><br>\n<strong>WhiteStar</strong>: <code>0.1.0-beta904</code></p>\n",
     "published_at": "2025-11-16T02:36:21+00:00",
     "type": "beta"
@@ -35,6 +43,8 @@
     "version": "0.1.0-beta909",
     "tag": "1.7.0-beta909",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta909/update_whitestar.json",
+    "sha256": "f6ae35ab2a691605c3fc649a5847e72a74563e8351e5c1fdb2609baa4063ace0",
+    "signature": "q6yjX7/nc3a2x4vIbQ7LINlwmiZoc3vx6cxVFiGDmee52Isa4D3tgT1M8pL168ZM+GwP9Lb3WLKsZqTe1Mvpd+TKjwZTt4Ng//Bx88D7biFUxOKD+SliZtzDa0J6Upf5wQC/EkVJ2Yv88Yksq7ZUe/0XQl7ykM4et24nWq80LCjnSSa9Ek9ZvsgZe7IxFYPL9MbeX0XRWFwoOPBdxPceAxeXa62nlaI5IWFwfOJ3Vf2xZLxnXlHW/DyItMc/GwC0mFEQz59da0OdnonZWYMo/yxAXuvMOZyMkc6MpElOWdl4f84XE2yc9W/M9XU+C2oJxdbrKaUI9EaE5EZ/OeXqPw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta909</code><br>\n<strong>WhiteStar</strong>: <code>0.1.0-beta909</code></p>\n",
     "published_at": "2025-11-16T17:49:59+00:00",
     "type": "beta"
@@ -43,6 +53,8 @@
     "version": "0.1.0-beta910",
     "tag": "1.7.0-beta910",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta910/update_whitestar.json",
+    "sha256": "417ff80cce214c6538db413d5d3e29be10345e70741c1302da12ff0f90371ceb",
+    "signature": "Flkrd11Q7CdqNhktX+TkgcVajHho8LQ0a2uStKN5V1XFM8RMUGbanpoRdxRYBFs589GnN+aXtWqWJG9iSFNGasaFZRCw0upHqRCZm8k0UCeUnzrtTtQyTqZINxgGlsP+XAH9iU9Nw8DtQP/Gwl/uDnzPLm+PZgNgCn6Tly5YjaW+ojKhO2YulT9JSLYN6uS/UIUgBmr49ywnvi3+iP22xQXM+DlW67aqjhwfmuEtCVUuwr64QBN3/djIer90PN650b99A2WrNQ2AFLLx9QixwMcf2R7IGqYyuwT8iq4ObIfTmvBm32jvdVRgM2sIc9rIfucTZCbv8amQoO54HUz8mQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta910</code><br>\n<strong>WhiteStar</strong>: <code>0.1.0-beta910</code></p>\n",
     "published_at": "2025-11-16T18:04:33+00:00",
     "type": "beta"
@@ -51,6 +63,8 @@
     "version": "0.1.0-beta944",
     "tag": "1.7.0-beta944",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta944/update_whitestar.json",
+    "sha256": "9d30f71414406adf02cfcef42156fc90fff75c2b37bd4d4ce7140d068c62699e",
+    "signature": "iSLku8UD+NwR0HsZDRAb0eKnALJdcPWPjnJTfTv7PmMMg5fJpow+2inh8FAyR1G9AZFStv+N+IM844g9EJp/B5jnTLohvp7tZH3pZd90tjr6I1yGW2viKMfSHdDjRtX1hc1s9uXuEgENc6w5fflpM4iyxzZULw9Jn6RGnHrovevDxZCuIpbtdQ2aH/Q9NawtOnxg+XOZUKnKoWWOJg2/81RWeLhHWNm5UbFt3aH8cOTwMPNHI3BuCvE+5YArpEPErI+MuZPO2SlTHw1smbt2whA//wvSJQ0RnCHqY7aihogcTXs2y4p9AVKhPHdn3dTCyMLLT3tIlnuANsL0yczEUA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta944</code><br>\n<strong>WhiteStar</strong>: <code>0.1.0-beta944</code></p>\n",
     "published_at": "2025-11-20T00:12:01+00:00",
     "type": "beta"
@@ -59,6 +73,8 @@
     "version": "0.1.0-beta946",
     "tag": "1.7.0-beta946",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta946/update_whitestar.json",
+    "sha256": "0d0226dce0f5598ac9e0a5908f580def02e5d5ee847b367bc481547bd3c7ccf5",
+    "signature": "P7aOOW9LT8GR5SzsjFR+bw75nrbr/ROsf1Mc7NC5BRq10F3rGt10XCCRvCQp9hBmzG8PpmeGEYxTPZwzVeu2/fVcwc+OihIlrJo88IafN7KxJfyRolFKAiwAU5M+jEAMEfVkbJvtE9D7wW+ty3l/JN3ylJO68rX/+w0yMqoXTPsEgGqUk3qIM/Ugckf9QiIX52iKGSv6uGrXfhNoiAMbFzNBEqr48IJz6jC1bjv2JrbvdfzpFKI20ZWJJvTGbJkFRgudI06Qoiokxv0v/XPMTmQjeToUidzSMo1sDw7BKhdFLHkBT74BrestlSE1cCVgySTukWaUN+mb1r+kP1q/Ng==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta946</code><br>\n<strong>WhiteStar</strong>: <code>0.1.0-beta946</code></p>\n",
     "published_at": "2025-11-20T00:17:29+00:00",
     "type": "beta"
@@ -67,6 +83,8 @@
     "version": "0.2.0",
     "tag": "1.8.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0/update_whitestar.json",
+    "sha256": "b1a5bfcc66852fc60d58a94a6babb2e6a059ccc78d9f54c341125fa98ce779c2",
+    "signature": "pBHCv3DZV0sAKXkYl0Fc8TE3gug+JbbZe1jIEMRWV8iPdd3MgNhUgkTcpunWe/O9RGFkpJdnixOOvny/1QzYzgXA/4gmWYV93hMjlNRUnSFH8HriK5H4Oqwgsf2z/BCIFMC7qdg6JcVNLk47iTtqLfDVdoWEHUYpwaUXANXd1PxTdMHxpnUBoXIfnziK7Lv4S5jkdkF2WdbFtpcTHFUpixmq1dwJFRXYfwsaJ5tvNC+iviq91Rk6RNdpqXpHvbvBLuDnyCjlt/bxOrFYohzSemjLpMYOao8R0Y03Z29BycoONmDSfH+EEFF3SMm9yLHemtOrR0ZBkJIa+bgUE4zJhg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>new rom: Adams Family L2 by @paulmullin in https://github.com/warped-pinball/vector/pull/181</li>\n<li>new rom: Johnny Mnmeonic by @paulmullin in https://github.com/warped-pinball/vector/pull/187</li>\n<li>Enabled web API via USB port by @mullinmax in https://github.com/warped-pinball/vector/pull/186</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.7.0...1.8.0</p>",
     "published_at": "2025-11-20T00:33:47+00:00",
     "type": "production"
@@ -75,6 +93,8 @@
     "version": "0.2.0-beta950",
     "tag": "1.8.0-beta950",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0-beta950/update_whitestar.json",
+    "sha256": "bceb5f95a774573251c0ef8b59bb243f5ca52b4c706fea88d17ed9f864af04e7",
+    "signature": "Xi6tKOBcvvSZteJqbNXx6WxcVMRsJkdOMICPkU0466A26AIR3yahIOoQVzVGIgSiouBIAY790T1ZErNTExfsSj4xlVUYzd/QZ5S8CMsRQ5dX01RazZEUCGir7I2u8AKLAlTd28k93j0De4MRZfx2HTAiLDWC2CEnyhFp7wJyCPipAT/Qar23EI/Napshi++7YLis2WsfvHhc1z6c8RG/MFCvh5rLAVFwgrEQuDNzFjm2aaer4SjUFRcYuc2ACZ+r2VHN89Y8147q2sAYy9LDRK1ph2Bqucko/3EwQrK+Aq/cmfV6t4R51DXHhOtLcnspIYdooFZxghyYSHF0qB9JwA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0-beta950</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta950</code></p>\n",
     "published_at": "2025-11-20T00:30:31+00:00",
     "type": "beta"
@@ -83,6 +103,8 @@
     "version": "0.2.0-beta953",
     "tag": "1.8.0-beta953",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0-beta953/update_whitestar.json",
+    "sha256": "3c0ca544f8a76983dc837047045ee01b1375f4d6b7fca605f3ceaa96689f2536",
+    "signature": "oVrbBTWB+bCU41L4SAdVwA6SEDH0IpKomcTprxSIX/zPQHbMj7RpLtMTUJydJv0ogKLdyUzr8trfbrGgNw1/8Wfzp+IBiIoEVrBWsgdYN4OexSJz9973VH7MJHJRwH7Q6HzZOQmFgeVy85DdTfKeMAwVe5vvCy6Apy2mP3Qy2Z041EFvPz1BkdQYA794HcCH6pxmIHVsy4bj7ft0ifsmFHSlkytYxZ5qf9k4w/muobuyWA2BKRbit0Kg6ZFYgi2sKFihHRiAh5/2xabCdaxm82WtThggL9lLnlVfYalMQ36bpJmG5kBdjxTNWk/ZbonuqcqUCOJdZUmCVBJ+HCnQ7w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0-beta953</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta953</code></p>\n",
     "published_at": "2025-11-20T00:45:10+00:00",
     "type": "beta"
@@ -91,6 +113,8 @@
     "version": "0.2.0-beta958",
     "tag": "1.8.0-beta958",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0-beta958/update_whitestar.json",
+    "sha256": "e3a82603003ad3441190d45564e71c4c440123569379345396b56dc804f5ba52",
+    "signature": "hd2VjLJogXSUKJXt+wKDvsLag1xAq/mphNFHob0Ezq37fGHNY9UageYjrq4FXLQYfoNtsUevVdqofFmp6EgGMs9FfrqQwhKqsypR/aOzRE0jvVbCYIvxE8em2fIXDmc/UqjwNloJWqu2uzaSfyMOhK9ADzh+cuG3tAUrmSpPBHdsMUh4DG7JfNu5N+56VCdzuV7ivlgIwXrMHzeX1+WyQwbVLkhLad3LztBCUZBnZ97xuTVZScUzQqvQ3P2T3DmylQxV79OL43ZBTKYfCeodhioLC6B2Rc44ptOytOwwTmLDyG//8gZKwtKQuX9R+RbdNi8cena7DDXKhxvNMRSP7w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0-beta958</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta958</code></p>\n",
     "published_at": "2025-11-21T17:11:54+00:00",
     "type": "beta"
@@ -99,6 +123,8 @@
     "version": "0.2.0-beta960",
     "tag": "1.8.1-beta960",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta960/update_whitestar.json",
+    "sha256": "b579fb5371d8d070e0990f6fd37b71b0b4b1c489b87ffe3af8cddd070cbac927",
+    "signature": "dLbejJQZcTzOzqa/fqfodEnFxEhqzy4X3Dh3Ks18aYiMFLdZ4gIC1wxZxDDjTgT0NVycO7QymjMjfwV3RRzsvyQ9rGKhKueankIa6xc+c68NSGmoG1/ST9SUgASAJrj9UWwBKdzAe60Yg2FvSKXvkW9u+1ET0scGk5KwBJx0EHHA7PdE4v7od2xqFLpdPxqZipOB5L2jJRwvIoU5v94KJaFWCv7P9CnEKWQLqPAyfZ18ao2Ff138V97U3dGFIerp5ATXARLOJaMT9gwT9azNxe55DuYobM1EBt5fQpUDxohI+HAowVmuvEZENTQihaR7U8XqSlTNRpsD/SWxBzrKnQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta960</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta960</code></p>\n",
     "published_at": "2025-11-21T17:13:11+00:00",
     "type": "beta"
@@ -107,6 +133,8 @@
     "version": "0.2.0-beta966",
     "tag": "1.8.1-beta966",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta966/update_whitestar.json",
+    "sha256": "a4399b3f4ada78dcb6498dd76c713d46df03a47d78c66309c65cd45af6e916a4",
+    "signature": "gcSY+4Nr1p34Ffy/XDoKGGxyd5h2f3265ARLIMketXVrokg2YJUyfLKSpWIbRGKhd4sycYbneksZ/Fwr4NyavITTIUi2G3JjGmD9Z0UzGCAlwZ4NDvbK2D8fmFY9STxFf1WalkrXiwSPEz5M370zT5axvh8KZRBxCXn3+opSEGS/vaIkDcYNFfEmjp/+l6oPc5aKRpYeJkvH2cPTF4byalKw5ItTVxI5Hw4fOVN3P/6yk5TVKIhyvB7XSpA/6uL5Wemu/Ja2ThJz1O+Rg9TPqCOa6kLNrh0iTtnmTJG2EQIjT28oZor5HbjKxSmQd6i5/XT2JRMZ+yp0c9OFjt+t4A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta966</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta966</code></p>\n",
     "published_at": "2025-11-22T16:47:44+00:00",
     "type": "beta"
@@ -115,6 +143,8 @@
     "version": "0.2.0-beta974",
     "tag": "1.8.1-beta974",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta974/update_whitestar.json",
+    "sha256": "672b0b8801dbdca26dcbc59fcfb795f25803bff7512f090a267b13614dd43236",
+    "signature": "ymenYyau8HIuF+eTGngpOZxg1vJ/kR+MTkbuELiaYDI164vpQA8ykgsYolwZ/bxwWjdgRw0xARDizL4Jq40rppxL5PaGqqj7WWx3Z8wdDi/qj8usSHI1G+felezCCzzkA4sBMf0AnLgE9aRXcn9t+W43HCvbtfIEDI4lbLI6sgHNLgHPVbx0SXOgQNZHMdOMTq5ZFpmP/RzjDrMrydiZvvITr1cFHzhtvVSsYapAK59JWMQ4Fy9BIQVDss02JuuW0zdYMepUk81ZsMzzxg2uNTk++nB+aaaEkMp/7gV99LkJqg3TnG8qZ6B8kZobWbEera0G1VBf/hBZcyoIIYhYxQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta974</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta974</code></p>\n",
     "published_at": "2025-11-22T17:15:43+00:00",
     "type": "beta"
@@ -123,6 +153,8 @@
     "version": "0.2.0-beta979",
     "tag": "1.8.1-beta979",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta979/update_whitestar.json",
+    "sha256": "01656299b187ab981012086a98ac54c66affea7a0c938d57c92a4206029dbc65",
+    "signature": "asLZQ6ZFNIlBLpwUhszWIG0t2PJJM6SrwcXHpgzsh0PQTps0Dj3It+agc9CxpKxp5lnTbPj1IqlS0O8I4oh7jg/3ErwAB9ZD2LEMax+0Sz1EbEaCSi2Tsp1q8S2ah133c01k6Tg3oYzpKtn0PkNurhHiuy7ZcCsaBVTzpMZDF92sDN3oJYoan+J0ntdwAK2Y5gYHDqDVp49jJPlDmX41JvzL2OPSp1dAXiMclnYKni/WHywIDqkoFKpTyxtJrjFpbEDZEjhqnhbPAIDm/QnaRuhfC4KzAIlgs2r37h77UQwkMRV3Gwa5mJfhOnsSVULR5FjWzV7ckx4d6AAMnfTdYg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta979</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta979</code></p>\n",
     "published_at": "2025-11-22T18:56:49+00:00",
     "type": "beta"
@@ -131,6 +163,8 @@
     "version": "0.2.0-beta988",
     "tag": "1.8.1-beta988",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta988/update_whitestar.json",
+    "sha256": "8462b7fceef3b709d5add69aab29d7cd9af0dfe11106bac5bf2f3459e8644528",
+    "signature": "wEowvFIiPNBMdJnoa77eTz0b51HqjxKQ3+gzIHt0SMyf/O1v5UZ4VNBEsvROsP26hAsTtCZvzFncBxz1+gSyiAjp8AvPvcEFUqRMAMKnJD/fdK4JOZ8hmlztOEjXOR6+jIY+SlaUAWBkriNI4pDH8JzuBzfi7lkRk9+rVh9SncmDL8TJwO76/eiJheIMXN9xvq9JUHTcpxcENDAFVlZTVlICpk7f5Xp2e3TUwrZ6ctXvLOY/0E+ydEty0sjWZ3UZQMhtBvR6ANCJLch4gJLBkiKJohtdiUiVupkVGMKfzOwPxQzdzcwzHx7eCFYtVqkbqmdPm7cGTjbBLWa4IICzdA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta988</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta988</code></p>\n",
     "published_at": "2025-11-23T01:47:47+00:00",
     "type": "beta"
@@ -139,6 +173,8 @@
     "version": "0.2.0-beta991",
     "tag": "1.8.1-beta991",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta991/update_whitestar.json",
+    "sha256": "ca61eeda8ced67245ba10db2d565510d64e69779f1ade820cd22d945d4615b9b",
+    "signature": "k5DOXzEr4q5eiQoVqJUA0rgQhrOQvW7xqGpYj7JWD5h9jUtvKveJrpilok+W25HEdX70m+b5h7VoSPnwyTmLCyQuo9vJfDxawqZwDZzhzqAjkLfKaGSTLDGyi+7xt6nUhqKy6f1cBCkMU2PeA08knIzMbohzAF5ZAjAXG+R/lM2RjgsWq5A5jYmXeEXVzOVLi9fHJk2leDrX4Iq921pqhSeKCX8Uggq9RGyzXtdfD64ImwZh3ou5wL9wnnAXO2ZKF064c71ZSQLeuw5lbKZafEC+u/sZbLgx21ahEGSSzCPA+bOcLIuBBgIJm14R/g+5oVvZFpT8KQOY01x9koZ3og==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta991</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta991</code></p>\n",
     "published_at": "2025-11-23T17:53:13+00:00",
     "type": "beta"
@@ -147,6 +183,8 @@
     "version": "0.2.0-beta990",
     "tag": "1.8.1-beta990",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta990/update_whitestar.json",
+    "sha256": "f3d55e39bc5e8ba168a56c0fbcb1983e85bb7563cf67c3291782c8bd32b4c778",
+    "signature": "hifdfJB1O0BH0e5PLFTHZZkSx2/2jMemdpAk/BL/j5vCJ54z7vCaZVzS224gw+F9HhzI09PkgA7UhbmLv5G0Lx6xmm3+rrthBgjufXhXSnReshcaNd1f5PkVshAWlH4/bErPdn+puHCWig7ODvmhOYY2hBqJ3x6cPlRbl06TfBCOXP/RA/wdCgy6vxcVUnzvxDnED1Eti0l7EXsltONSodAJFwy4GL4VBs3xaUNS65QeHEerA+LufM6s0puHw891WnPZN58nZWROu3Xes6Eq/cT43syPT0oU+goj8T0oP+MvEN6wZHtLo8cfSfZIK1uqcxHx44YtMnC6dMhpf9PpOw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta990</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta990</code></p>\n",
     "published_at": "2025-11-23T17:52:47+00:00",
     "type": "beta"
@@ -155,6 +193,8 @@
     "version": "0.2.0-beta1004",
     "tag": "1.8.1-beta1004",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta1004/update_whitestar.json",
+    "sha256": "1b2f0670b970ece2fa49b061a54c9afc317ad548ec858ccb0a095ed8ff644950",
+    "signature": "FU8U13ukDVvb3joDVwo4D3lXReLkvbxrulneSuGVo0YqNqx+JWgC/mAY2c9tP+DUayUEnuFuqc0I8QhTquJBtxGOp7PolFN36oKbFRZkMA0xDYNrHD/F7+J98Y5A5xbt2wVz7f6KaszUYD5mq7le7kGgQTi/c8PsxEIInzM9em0ydc+AUJF0CEb3RU5ikFLUrhlPe4SE26Nm+w3l0bhSK+hfXgb4Kk8ldtuS6EukdaI149K1VgbwsRFNCkDOyQWiJsnr6rQTJ+uzJG4+sH1K/DlAATHKbukvsGZsD+S8EQQnsjhrGJ3yMAdqcx2Fzh9j/AoUxLHQJBbOVPmAc9DXLA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta1004</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta1004</code></p>\n",
     "published_at": "2025-11-24T03:58:03+00:00",
     "type": "beta"
@@ -163,6 +203,8 @@
     "version": "0.2.0-beta1003",
     "tag": "1.8.1-beta1003",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta1003/update_whitestar.json",
+    "sha256": "675cf3f882cf508899a2b06bdeb13b85d5801a5f4ede1ebf812f74f9fe972fbf",
+    "signature": "rMTSCTGrlLkU2Kyse0RxaZDXtFMv6XjSw37wJEKh/f6HfKrZYNIUIMX4FRVnyzvN1zdJGe521PWbZewob5y14HfJqFCbX7h00eVGdxT6nlbplrmZlISJopbtuCRPs2HNf+qgNEajq6YSG/KxCRA04lofdyFGMRka4ktAM7yiRVjb6Rr4DP7avZfHyYixPRHIPp+Ssl4+vVu674Vupt35C/YaC6SQAV39Ydxw39dHuPqqOij/fGjztHyQOtp3MF93gcy6+VKnXmS9hc020wYGfUvPXIRwx0y7dMpr8v7u9U1dbUtNTcRhmp47yhRND6ZawwpGUtUuhKZbZxU/kgl8YA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta1003</code><br>\n<strong>WhiteStar</strong>: <code>0.2.0-beta1003</code></p>\n",
     "published_at": "2025-11-24T03:57:45+00:00",
     "type": "beta"
@@ -171,6 +213,8 @@
     "version": "0.3.0",
     "tag": "1.9.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0/update_whitestar.json",
+    "sha256": "48a0d569f7d6e88873cad8e635633fa5154320879b62afc02e2ff9599b721368",
+    "signature": "Z46rHlGARHTbyKqAZDeDkf34phTj7RqIPaScsMO+ph30qZUyEs+DsSFZAVtityCF7bv9kVaz16t+/2+/4i18CctITBxGeKQ0hzFICI9+bpVIcBlfFIT8jY3grTdsUF24VoQbKo7kh9XyvK1xyWVmcpZIRFF3pAqWAYE6mGXzIcQLBd2c4cRO9VZBQUXXskbVGQg6iRM+jAupuX1iMjJgHVZGYMc7Wa3pbkV4gu4WRZ+7HwFFqzMjOzyeEvJWd5TanS5Y+29CKgD8ODjMUHGQm1ZZ2VxUDbrDRl+Xt1OCJlVYB3SsDNfX4OfZpc6+HLmntSYkgYEED8PNO86OlLV5Hw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Improved Setup UI for ios devices by @JakeSiegers in https://github.com/warped-pinball/vector/pull/185</li>\n<li>Delete scores / Import Scores by @JakeSiegers in https://github.com/warped-pinball/vector/pull/151</li>\n<li>Improved storage read and write speeds by @paulmullin in https://github.com/warped-pinball/vector/pull/199</li>\n</ul>\n<h2>Bug Fixes</h2>\n<ul>\n<li>Star Trek checksum correction by @paulmullin in https://github.com/warped-pinball/vector/pull/198</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.8.1...1.9.0</p>",
     "published_at": "2025-11-25T23:17:39+00:00",
     "type": "production"
@@ -179,6 +223,8 @@
     "version": "0.3.0-beta1006",
     "tag": "1.9.0-beta1006",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1006/update_whitestar.json",
+    "sha256": "f2339e06602d55384ae425312462323c4dc6a7841f0c6b5266a18851b9d1cb7c",
+    "signature": "S7PEKHvLVm3AFrDV7xK6qA54tqQ6bkgw5yozqkRnFz4kQ23CdGyiJYOizZMBDt2M6SWAujlHi0ZzSXhXoknlbXik6n165/L/N23ZuP7bEP05qfR5YIjhb3SRbd0Dq8+bTusht4Kz8GqQ3rciw2b+6Rdz3bbamO7FBNtIbib3ZNDME3L7kKqBJOghLHBwxBKykV4HP1lR5gG9SCm6F3G6L9olsmRKgj2d9SxE4rPjOKl7OutGPeHyz18GIOt9IJ/CXBGJgAXXhstpy9ze/kAN5H3rT4JP2GlPtlIntroFeJHMg18ZQ5y6p7FwBMpBqLEqtjG+uPnR9hs8CH+wayAIzg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1006</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1006</code></p>\n",
     "published_at": "2025-11-25T17:59:02+00:00",
     "type": "beta"
@@ -187,6 +233,8 @@
     "version": "0.3.0-beta1010",
     "tag": "1.9.0-beta1010",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1010/update_whitestar.json",
+    "sha256": "13a192b397103f387d2dbafb9df9cda02b9049c9e5d256f43ecd4f56d42679f7",
+    "signature": "bqLa6pOmwAg5hlYBwNO+Q+CAXPaeuDQc35EkJ9uwtgwbiCbuyVEpskVXp4qxMoQ8WXu3NW2+zw3WFft3ytvrU1DxFWC4AUznQcKZkavUH3aVi7cG5hqGTmbKRvRXjUAjMqP0gUx/mwu3r2lLRFnnDTcFeoyNxDe2zBwAv5USK3K9WjSHvNr7+nE6d9rDJACauGKaP2k9E0ddnXNCBcWFpMp4R3SFFTtcuNjhGP1xTbvYpEH9zOklZu78ArH9tKFr/Qm8ofoSSOAvdgGuTknRzqJ9iZgkYG2PM4Oe66TiO74/GjznmSuMHZFWUYQJrrT0c6LfSB0fVxX3wvs9Fd3c5w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1010</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1010</code></p>\n",
     "published_at": "2025-11-26T02:18:39+00:00",
     "type": "beta"
@@ -195,6 +243,8 @@
     "version": "0.3.0-beta1009",
     "tag": "1.9.0-beta1009",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1009/update_whitestar.json",
+    "sha256": "f03a5ae74ec6a4b7fffa97dcd8cd7726c9dbd6d958ea5ff8ba232f03c0f2b737",
+    "signature": "WHK6hYi5KhlXUZotrG0kBPjE3by/zzqx7YJbfMt9JQy28PwN/yEfdbE01ZJpJgwpu25YyDmho2YhjGp+umkVemDWKyJEaeAFH3PmaNzAq0K7wA1u6vNqhZ+bXoHoSqMvenBCOlWtXf/5qzJ5qmMdDULlaX23w5GpXbzAH5FGcYTugSvlqC47S/oC8V19JOZ87vk85n1CE0+9Fi7JE0PUKk1HC6W+qafM9ssWPA/q0pVtzWzZbrz5uGDZO2Wbqx4X1efxxBMnBAPKb7dSW3NVB/Xu34NzJPjN4w3jdyOgL84xCYFSF2TBrcg+HQyA1F0eago1WCACojtuLtrg9CEc/Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1009</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1009</code></p>\n",
     "published_at": "2025-11-26T02:18:14+00:00",
     "type": "beta"
@@ -203,6 +253,8 @@
     "version": "0.3.0-beta1016",
     "tag": "1.9.0-beta1016",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1016/update_whitestar.json",
+    "sha256": "f928c2f73ab55e900d5bb61b330249fd24c61c09d6893a80815475e82357df4d",
+    "signature": "DuvVA1GNg9Ktdz9ols53yjiHdvfe2FJkBQl9hZDQ+iPkEO34IYSOgVljRLZKzQezwnVHpPMdurO27DrDB+5XFbB6X9qTDMWGXVtmYgvBx9Mnd+uJjhpv8NBvWDpSMUSVcAtKhgyvdEBuAOlu64wSiSUBnllH+SuHBAUYK9p7n7lkzgLZFzWwQD3Swq+AkwIQ+m0lBTKlb2CMchSekvM6HQ8fLPpaAM2iyd/NdJX1ep3wCQKQS5QKNPLPljgYRHJ01A0+hF4zrXRKfXfzhefZKd4PihwGeW1aTfduxQo7W/oCvYFrMjO8ezSMwd+kyWduwH9YAc5ZYK4xmFlG2+UmBg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1016</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1016</code></p>\n",
     "published_at": "2025-12-01T17:27:59+00:00",
     "type": "beta"
@@ -211,6 +263,8 @@
     "version": "0.3.0-beta1018",
     "tag": "1.9.1-beta1018",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.1-beta1018/update_whitestar.json",
+    "sha256": "fe989783cf0e3ddeb57b610871c06c2f764836a470fec04685e2118e4942cae2",
+    "signature": "qETygVbOmhcc2pX+yaKjXnWl0wNAXIVdBaz/O/ir8TTOjHgqFhLQXbI8+A/Cg7XSuVpKyGvIEMAwnZwRsQx1PVq2WIoSZorkReRh5Klw1A8jHQ8h0rOPxKumNy/fjnjdLjEis8pXZ+d17wXvWltlVT99QoIL7k16zfmPteW5jhHpy8De4FKhRAb13U1wncAUUnEKa1s96dXVahvC0LwwH+fBJiDsOKTjpLiujLPaie6tqIuL0wEtL+6b7Qp+2Bps78m522KdpkixvfqLCH0BXvuLNkLgM7EzH4ypvBY+kQSnklN7d+RTu0/syPceBVO5LgCLnlVBKKmMq+5r68W6kQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.1-beta1018</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1018</code></p>\n",
     "published_at": "2025-12-01T17:31:31+00:00",
     "type": "beta"
@@ -219,6 +273,8 @@
     "version": "0.3.0-beta1030",
     "tag": "1.9.2-beta1030",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1030/update_whitestar.json",
+    "sha256": "210e3a27c922945a83fa91e2288cb5fde4e6a1424cbe742bda9175723901ac01",
+    "signature": "WqCciEoVZie2W4nfjFzIFwCMYU/794UffOqRPQCOCq00efQZbYWgr68MwBvHIqMaoHwLgwauRRVErBGc9kQ5GtPhPH8zaQiCd/5uAJ6jFiwadjwDJyZWVTXJlgY4fI0NPQkeXw8MGBR1CE6rvrSH21F7iHOTQN1bfIAwRMpIPm5e9+WfhgLIC0HrBnKZvOGpD1dJXxJL4W89YELjMcAX/KUF5QuyWnHqJu46rQ4RSpONoXXVqK743xv3zaP5Y3eCX4zr0mLh8L7sUHUQqGfj/nsz8XSN1FcWkrlyCcyCgyTvDh9UsT1faQGfLVDh9GiKU+uVYAWuoJPB1y8dBSekjw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1030</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1030</code></p>\n",
     "published_at": "2025-12-02T23:39:47+00:00",
     "type": "beta"
@@ -227,6 +283,8 @@
     "version": "0.3.0-beta1032",
     "tag": "1.9.2-beta1032",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1032/update_whitestar.json",
+    "sha256": "d9df9f5fe78ada05378538b00a6c18aca7670c5d685f06bc412cb2a0b5c4f20e",
+    "signature": "fJFoux54KikFgubmIzk8ZCpCP7FmICpIdn8RcPrI8fGWScy65Lxg3GjDcCq/2De8TaymxQuVy/B3GHgGXOZWziCiJPKltcF9jleqehMu87xMDEgUwWMeVuONXR+xHXrwwnuNkXjkdcAMc6vbtklSQO6nZt3XIme7FybZQUaPKLIpiyqjEPoAHCVtvi+e3+YLDrovgJ7jR2aZF1IxH1BVCTm0hUBU9UyDKQedRV7o6R8IQz9vCwGndV+LD/GViZbaifFcNqr1FACrcK9N9pYO9F5e06XGRrEFXNGtdIkaEu3EG9OUMZefPVaV6cCB4WpT508FpzZonIbmGyAVAVQMYQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1032</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1032</code></p>\n",
     "published_at": "2025-12-02T23:41:50+00:00",
     "type": "beta"
@@ -235,6 +293,8 @@
     "version": "0.3.0-beta1034",
     "tag": "1.9.2-beta1034",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1034/update_whitestar.json",
+    "sha256": "982ecba60b0732ac543fd01fbb4bc0cad5c2d552c17d51fad69f823f72b0d2b4",
+    "signature": "bcrloEDosTfDdt+nk+RrzshsonE8OE3prWB1VAgae2ssd9OSoRU8FbFebJcciqk2hXcJUCK5QYbTq+KT4aBseUW0X+YjioEC3tSSW/MpvSw4Pq2pZ2z73SH5SC6WXgXvkrPPDLb99U91leEutIPOFQ5k8AlXbN1f/jtSZb6MFc/G+njbWI+7FYSEGQzQcCruCMLL5j/STuzbkPGtH0ob7n63A2VbN7xZUKQZQW0XAz5+Z1U3dZpgHFyC0cmvjsVQ0SWb147i59u5dUmZB3HpwYmT1QLgTcivsS98NPlVGfe/VHhmrkbhJvhYYYhZ+jGWgNxMqQtYnfu3rzESeR4KDw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1034</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1034</code></p>\n",
     "published_at": "2025-12-02T23:46:10+00:00",
     "type": "beta"
@@ -243,6 +303,8 @@
     "version": "0.3.0-beta1051",
     "tag": "1.9.2-beta1051",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1051/update_whitestar.json",
+    "sha256": "3c19f7008b5b54da1671268dbe81f4daa3bf9a9c0387b047004c36181d76e004",
+    "signature": "JIgT1Yn0LbNXAw5JlSBZVCsUPy0pVTqaeFVj/4mRYNsBxsVSHFPzd1pYmR+GAvFlbluTTswCsNXDeIwRL2rOx1KtiYPFYAn7EX3St6wvP4cHt+xaISA/FSixa9rlt0GpOoLQ1gliono0ruehO86dAhOPnh+X/PBtgODp/IDyUAulrsTzoEFJJ9IoCMeYlUGy1tB1oedNMSKJkefWLymKYP1bHWgbhvuZUJCOUVDZgNygiONushWDsujRL/TLwBOhE/4FJ6ALKcuff1sDV4g98vl55494iQvbA9XwbxkGKYO8jc/yo3fBaCmJ89000pOk5IYVvIP/RLLn9n9ggxNOpg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1051</code><br>\n<strong>WhiteStar</strong>: <code>0.3.0-beta1051</code></p>\n",
     "published_at": "2025-12-16T01:36:02+00:00",
     "type": "beta"
@@ -251,6 +313,8 @@
     "version": "0.3.1",
     "tag": "1.9.3",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3/update_whitestar.json",
+    "sha256": "ec8c8d1e6653823142a53cac20ff0588b36e099782f823a97dbb16d46f0b94fb",
+    "signature": "mWGBJ/8Qgb8pePRqqXALgzErnLeyX5Xc8KmXCONyS5xRGVZ5HdBM/vt1Bt5Kh+3Mmiv3a5q7ElteiawcS2iFi69izjWzKB7/s/mAypbYyklrfccoyCJWtJs9YEJP2vpPFa04jOM3sYrTVMCkdm4jbBnYPiMhj10tZ++/JCTNKitkipKadEl32Am48gZ/lAWL2dd++JFbsVrvxjus4FiMGnDO5KH+4O/0zSPv3q10CGqOSPbZ1I8tEmHQg4nOQJQ9CvPOUJYgJvFwynQNGN0ldS5HQNZqFcRb0kTZ5fmRM6G76BO+qiuv9iJLD2fTJu+gXcu0SKithUc7gdnzf27uMg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>About page corrections by @mullinmax in https://github.com/warped-pinball/vector/pull/214</li>\n<li>New Riverboat Gambler ROM support &amp; adjusted config by @paulmullin in https://github.com/warped-pinball/vector/pull/213</li>\n<li>Adjusted some sys11 configs by @paulmullin in https://github.com/warped-pinball/vector/pull/211</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.2...1.9.3</p>",
     "published_at": "2025-12-16T01:43:19+00:00",
     "type": "production"
@@ -259,6 +323,8 @@
     "version": "0.3.1-beta1055",
     "tag": "1.9.3-beta1055",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3-beta1055/update_whitestar.json",
+    "sha256": "9a0f4038c2d8581a8743e8e7c6183b2dd3da694f3e43802cf156e9445c9d186f",
+    "signature": "kfjJDD/ICGlafrRj6TSvOuglmFR3C6XH4qurn9lKpp+zRwKc5ephmw0XSQRII3CqFHRzZuy/d8252BFio3pSsFfMvQSuPGWO6cjiBmEWb0EQNGsBTUUhglYT7xQk2Qhmz796lsfLiQ8s5QV7tVQXMosDrMYiWoSbtQOSteYLkkJorUSjoBYPTYMDkfJP6uill6gTBolEQ9vBiImx6gzk1yO9e1wrO4H/ZQdtDf+yhIFYL9Zrlzq1J5bw+pr87WMCJHmw/cGWUw5RW4v2QicTrHwaQ1S76vI3ndNGJhF8odC5wej5GWz5xE+er0smQix58jXn+1WNKjG7c4l8bfeBNg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3-beta1055</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1055</code></p>\n",
     "published_at": "2025-12-16T01:41:18+00:00",
     "type": "beta"
@@ -267,6 +333,8 @@
     "version": "0.3.1-beta1054",
     "tag": "1.9.3-beta1054",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3-beta1054/update_whitestar.json",
+    "sha256": "eff3a5b87ea9df6de2e139c8d047fa3f9c42e31c555cbfd8b001121c700984e9",
+    "signature": "wQHz3mEWzwFVy2HzVfhwmvVhDj40LUlWmMiQ4Qae3hyQWfwRj03ZO/26P/zt6DKCYz6Q0MON2KPG5M7ke6/cX79gN09qwPxvQ6T14nnRFaTEVNwXSEaxITZd1f0GPnvXWGC/26rc8SQMVYQd5/1zMt2P8dsDulYde6Txlc8y2mMMPChfmnBRPJnewuvwANdahcf837CAxMwxx5TawRUIyf0wiQu3B+8ksmrIh3I6/8zpVRq9Gcq/pqkISZlDQVzbIP+7KESzIbEo/12oyoQtb1GQUUC0juE+2CHd8bmmdboehPUdum8F5w0mANfPimtbRT25h484mYk/Fh6Nbcr5/Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3-beta1054</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1054</code></p>\n",
     "published_at": "2025-12-16T01:41:06+00:00",
     "type": "beta"
@@ -275,6 +343,8 @@
     "version": "0.3.1-beta1053",
     "tag": "1.9.3-beta1053",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3-beta1053/update_whitestar.json",
+    "sha256": "58b993d1839e140b4e4252e75d5623cfea52a302c486f016b586e5139077ceed",
+    "signature": "SzL3y4Gj5uBz9LhXu2Sn34A8eFdISswlS/RjpZmO8YtnO9SJ4RbTgtjaL4wq0TOOHmZWPK060jfV3h8eRVsEUnXUmuoFmCRXkZdFBqfTJaaUQ8J1LDsu0447kjzEIbHKX0dCvvUqpW/T78MfpJwfZA6J+aUatgqni7II9N8alnPkNBZ7HtXczh1yH9ESTX1zUWNEt1fRFGVqCc14NO9lT/f7wJkd8NJ9ReNM8bShtsWYZQtOOu0r2euItDqejMUUTq167JpdnjPJKORGd95VjX0Iq6O2wBwGrPcvGwXmrmyBGGfO5i34loa53DnRrAoZc91QdHSwtUwmYiQk6gl7FQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3-beta1053</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1053</code></p>\n",
     "published_at": "2025-12-16T01:40:57+00:00",
     "type": "beta"
@@ -283,6 +353,8 @@
     "version": "0.3.1-beta1064",
     "tag": "1.9.4-beta1064",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1064/update_whitestar.json",
+    "sha256": "73b37d59d0dd05acce6d79baf135f584bba18332e170882e760b12fd57039de7",
+    "signature": "M4JBQ+e8fj97eq2rIPgGbd+DTFCDy10j0Ha5OEuEYYjLfw9gKauWuqHEvjfKycpgzYDdd1zUcAI84/MLeR3ZFux4pQVMgkQdh8nGYgi1PkMKeWp24zuwUZcltJLCxugzxAnwFRyais5mY/MXv7ES+++1R9+1ULWWTFVpd01V0R4QVr+BXSjd1XbOm55TinrILwmdClS1Sj7+br0BzbRI1Gu+WlBj1AXqieo9k2bjZ4Bx3IzXXYTbvjRu7UJ7WiDwqUpeQtYjU1duqam5eRDzARpFDe2+ATMW7NoSKO50Dy8RI1eeRgDa5hTZchz/P+94eFScNMhG8f9L1bqYwfdvAA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1064</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1064</code></p>\n",
     "published_at": "2025-12-16T23:12:27+00:00",
     "type": "beta"
@@ -291,6 +363,8 @@
     "version": "0.3.1-beta1074",
     "tag": "1.9.4-beta1074",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1074/update_whitestar.json",
+    "sha256": "45ac8ddd5ca1f094b3dac1ff6bc5d8ad0cfed92a8b065042bddad6c1072ca1b3",
+    "signature": "MWobu22f9Q08aIwKNeqqHuKaprP7gx7aHEm6bgEZh8NW0ppO9cgVik5hyNMIOgy9BaezitAtbsjoKI8LneFRujUS+gi+G/4hZQlJUrHXijpd5obEQxGi/I58wnDlkz4KsBJywRizI/Cn07Msu3BsltnkVKzTPeT2XdGysmGwryfeTTNMK49GDT0V7C4noDkEQ15iga0NeOW/QjJEuAymKuxUTokCQxair6BN2d0j16h70YjyoQLPriflcWXWvAw3A3INBrqLDD3vcwFc171HWT2BbWGKZGAJ5/hmLPMxNWp5Ml4OizzhfGJmBy41uJuyzlTPKi75Z+xh4AK5TkY5Yg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1074</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1074</code></p>\n",
     "published_at": "2025-12-28T17:18:32+00:00",
     "type": "beta"
@@ -299,6 +373,8 @@
     "version": "0.3.1-beta1095",
     "tag": "1.9.4-beta1095",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1095/update_whitestar.json",
+    "sha256": "2b19243cc118b3326e4fbb1987082ca5d2690b6954f0fa75ec58f9995d67fc13",
+    "signature": "xOyBxFlQy+KUS4+ZLbvE5LPwGCqdAroK5pB1OILUX+5ZntpnjdmBIVHYqnEo+87yWnwma9pLZI9mcvpTIY1fzmt4Oi4gbsZVoyb5LhI/F72lS+YtHkZiIm1at/gunKRe2Fm+ewBEPGYSVALsbvjX1m3SEbXH2MmWkd1PZw6yLrkeGLbE1Hpq6k0tKhdm8kiYxCzubF/k8fXmiTCP1RLT7zll07yjAM5RwZx6/AX/ySuU5OJddW++vjgNrvKwq/G556x6lg27d2Pr2jC7G1wvLMgynCd6KubnWIhZ0BygSCGx8x6BMQDcwKdnDDd405vw7ebosUcnyRCwbGPxHW0yTA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1095</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1095</code></p>\n",
     "published_at": "2025-12-30T17:12:06+00:00",
     "type": "beta"
@@ -307,6 +383,8 @@
     "version": "0.3.1-beta1094",
     "tag": "1.9.4-beta1094",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1094/update_whitestar.json",
+    "sha256": "7c6f9e5fed7aaa9903d3a6f67ff25844704819e018b33848685bd251bb5b7021",
+    "signature": "G7Al/YW02w6X+fqVnOfrR2vRXKBa1F36bo0+wk32bilUyU/KRNlhHpMa82dhVPe0pldv2DdP4eAGDerHs0+oJtHb1FAeqWlvGGoLR4POjvzApq8uAUL61/u3JhnFE5xW/vwLtFAu0d/A/QRx6EtnJLoDgxpDddVJIGqyqVK1unA0FDrYU6evRnoRL7oe/YomuxWxe8mwJqQ9DIhLh/eRSHrx0T4+N5mBB9gebf4n7Xt1E8GGUBUpNxjmxwRnSaUR32UPouWic3MJFJ0hnOFTpDxQRMzPvXPZSNpBSDrvK8fRzlYoXRGNFlXxRJma+2ccgdZvnFX8ZvfzoH9rhZdYUA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1094</code><br>\n<strong>WhiteStar</strong>: <code>0.3.1-beta1094</code></p>\n",
     "published_at": "2025-12-30T17:11:35+00:00",
     "type": "beta"
@@ -315,6 +393,8 @@
     "version": "0.4.0",
     "tag": "1.10.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0/update_whitestar.json",
+    "sha256": "ed055f252dd2815b92aa0db51aa5327d3cb9694360de5e3ed2df944901126b32",
+    "signature": "fFZsgJ5qesOzvag+O6oik8zeM7LR8bWINlY+0kBHJJqmc+JKxfAwhf0FgJSjpC8dFblGEiy356HvphsE2uZ4fT92x+1jE+qUpRo8yu4aQAuOJ2Fzh16enNgPb9Pm7ovj1pTf9D9B9ah+BemLq0JAx7Qyy+U8lJsu2OfFWYaqQgrtSKO6jmQptcmwYASkbjByGyr5C+gMU8o5eQe4OqGFGjrYPAVfLb9+hmMjP7bCIUlq2Qbwgfpc150scD+XgFdqmqNeAiUyEbXRNjEnRV1uzlzfFEFSBAKkWY19BGUIUU9Zp2mgJHkOJhteewPS4sm/P8RiP4zWR4gC3ykQR1ZCSw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Demo Man Home ROM H6 by @paulmullin in https://github.com/warped-pinball/vector/pull/219</li>\n<li>Adjusted PlayerUp in configs by @paulmullin in https://github.com/warped-pinball/vector/pull/218</li>\n<li>Added additional guard rails on logger by @paulmullin in https://github.com/warped-pinball/vector/pull/216</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.4...1.10.0</p>",
     "published_at": "2025-12-30T17:54:49+00:00",
     "type": "production"
@@ -323,6 +403,8 @@
     "version": "0.4.0-beta1097",
     "tag": "1.10.0-beta1097",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1097/update_whitestar.json",
+    "sha256": "b500c1ebf9e9c4af49b2fbe2ca612a7dc8a297e9a5a4f5c69d74845c54063840",
+    "signature": "BoRdhY+TDaNOcXMOhjyc5iGyJtiRouaBrBoKnb+QIl9qFGbQ/f4YmO9VWPbzkfrI53y68SFakbB4xEPS16az2cbpNZ1dHcR53ECFh4sF0fnT1I2YfTVR4mVkJNt8VO6NzR3/exkpOdvYBH8ThDZZlmu0Gd/Ykp7C32epZ25EDXIrkKZEL6QZpUW64VwPIKi3JslBbUA9d1LLjPoAXQ3puPXoMTlazh35Cvlz80gRlLmh3za9/jYP9FjO70yjkBTibpHCV9mkMDfaGxKJhuqMGjilK6tekpFDXqC1GxZ0NKfzKhjVjt3a2ciedjUKZ/ZiyvJhPdG7NrTRmDPxR+u4xA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1097</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1097</code></p>\n",
     "published_at": "2025-12-30T17:50:33+00:00",
     "type": "beta"
@@ -331,6 +413,8 @@
     "version": "0.4.0-beta1136",
     "tag": "1.10.0-beta1136",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1136/update_whitestar.json",
+    "sha256": "9b508eb11e3a04436c0693e437ef18346da0148ad7c6ab834dbb1316cf04d0b2",
+    "signature": "qEqiYaePY6h8LjcHkhF7j6bxuTjVVv+Nhw9+hkWK0FMLQ8PQYhUIKC5rXAX6oVHlvIsbaudl6//th8chI5oG93t+KRANKmhuAEPjJSSMCjyRKq1glzWN5uZrFC90HLEN7bUGyvXt6qbDeRGn2/89QjQes/Ic0ZHFq01YhX0co69DTPJaksBDKKanIitqYeII+LaHnIiSCjPkxbkJuTabApsDFQ04hQdU72OAUmAEGHV1lxjJgnU3Vs8IHZooutt9K5c9cjsXThwEv2Wc8komv/cEHsFMFLDqMlpFv748VW9mmlxU1xbSbWCqHX02LDkZ/5OAPeuwTsX9hQX8FGUSJw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1136</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1136</code></p>\n",
     "published_at": "2026-01-03T02:22:16+00:00",
     "type": "beta"
@@ -339,6 +423,8 @@
     "version": "0.4.0-beta1135",
     "tag": "1.10.0-beta1135",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1135/update_whitestar.json",
+    "sha256": "22c4f66add63188712e98245f4c4b60b120e19d968e7c88bf87765aac5ff4e23",
+    "signature": "J/8xBObBTnEohgDzYzytHgsI45JenjIt1ByS+diCET4b0bpe2HHFETZRyyuonTq07rfFsh6WkY9IM158bKN8ZZKL2h7tzxjyC9dEJrPO1CLL9ukuZ8R+WiYrdNM2xxKL/oTddBo0lQktisLk6d3UKWs1XO0RWH18w+l7KyrwrQtJEwUKoffxkEodGzLlWkiTWQkCCXfWojAyPN9YAC7/k7DUafv22w3stRDhtGEzuFqus+SxpEDoDOGg79rMftmOiO/GKPAg1JLwND+8w2Uo5ttC0/DeoRomLu6OIV+3h7kXKfmZiU0PobjRFLp6OrXjFRUfM1flokTG+GbAHjzBGg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1135</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1135</code></p>\n",
     "published_at": "2026-01-03T02:21:45+00:00",
     "type": "beta"
@@ -347,6 +433,8 @@
     "version": "0.4.0-beta1158",
     "tag": "1.10.0-beta1158",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1158/update_whitestar.json",
+    "sha256": "3f1ed6e61627e7454986fd2de012722998fa69a2920581633fa843f373516f2f",
+    "signature": "eBWIrSleH4IutkKYkrFxJ4q0rkawsyfFfKkMtZ5pUEMDXtK8g4Z0oRRxCot13nShZz9Wo5anWhMVD8EM7vdS3cokTw7mKwdvMUfaovCTcsYliMSzYwgKHBCe8cN2tE2//iNjNzOhPKF9QSzDrFrpFLsxHbRDhoc5Frbyp75yUAS/gs1jBBsOD+poxbWSBl18L4tWYNae/0A3FWFNVCcMjElNCKWlXJw5XdWniA7iqUnW+pkcmKbttegwgKlAOA8jjjIbp+ajB11VoVXEZ+4CVda9xYpqt6sh0tD+Z2IiAdDT7ipe344gGy1xSLG8yRXKzZhdqFdN4Y88zROKd5MboA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1158</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1158</code></p>\n",
     "published_at": "2026-01-06T01:54:32+00:00",
     "type": "beta"
@@ -355,6 +443,8 @@
     "version": "0.4.0-beta1160",
     "tag": "1.10.0-beta1160",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1160/update_whitestar.json",
+    "sha256": "0f02b103e09b6abfcbd52df77bf9f3b11f53967a1e9ded82cb97dece174268c8",
+    "signature": "NYvDk1KHDOdjU0PPW0f0U4ZoFcZqoE/GQNpYTl+6rXzUVUIty2nQy+W5L/gPUPOo7deODOusb+IMCDnOLFJIKbgy5LrgBE021WXMWD4ibgC5/zBDON9SFuj3DjU2PehVpH9NuTKBpYHZxITZM5tf0dvFIbvG4RWuyzVVQRSW2+bAWINAVOoIKuAMwnVGBewNdQY+u5Wn3qkT0PGHH3AQ/HWx1s7VKXNt+AOguxm178QNw23b3CHwNhx/mCMMa+98rYhxrINMAb9hUZdrPhHarSgITrLd3NKdsK9bdQJWRHrak5m/vR+CVUYdG3lnqVqV5l/SDp7tM6BwxCissBDkjA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1160</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1160</code></p>\n",
     "published_at": "2026-01-06T02:32:51+00:00",
     "type": "beta"
@@ -363,6 +453,8 @@
     "version": "0.4.0-beta1162",
     "tag": "1.10.0-beta1162",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1162/update_whitestar.json",
+    "sha256": "28953b329bc3945e93d669d6318457cbb48b6cc46b7fd01602ec8ed44f34facb",
+    "signature": "loh387I1nl9Nt54M9fhUkTtf8qQVD8vVt8nqtJDAdtUedqZxnqogA4WeD7y8te+YuKzG9NwdaYV1W3v0iMElLTiUHhgQVejoTQ63RCfqXXDFm6sLQwgZem3EmwR6RHfUwhGZlcJ4o4pHyzy6msKlk/Gc62lcCVSAJtwfSxRUZCwrUn8kG8mcGvl9brJOqOitC7yisKG9c030cUF9NEX2lG+nqQBDyu930ySsypvnchJc21RPS7GvdIE9M8fcrHznkoqI7hgM+5SO7bRHI9wV7slTkGdBqFo8D0OZIzBj5TLATtMTkZ4i4rKiUrzPQNqUtroqe9Y6aheZ+1YcGi2kww==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1162</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1162</code></p>\n",
     "published_at": "2026-01-06T02:41:05+00:00",
     "type": "beta"
@@ -371,6 +463,8 @@
     "version": "0.4.0-beta1169",
     "tag": "1.10.0-beta1169",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1169/update_whitestar.json",
+    "sha256": "e8c958093566fde412f146bdff240d5312151eab65199b0fdd1f8f0efa69dc37",
+    "signature": "f/8DsXy7lArVQBAhwFRAGsWqSLW2Z2TaEIKLFScNco1AqqXXKSdmN7DhyIdJhqArk3sNyczGyS3EGV3u/Gi/FpslRiAJLNS8dT00z/Xqb1YfFOBFy+vDb5ONK7aNFdsHrVgPx50fpYTktt6SW9X+gM9B938C2BUT6RmwAeo8HAkgSpjfNSXsH7xGob8jxTm0WSgS046hPPeRxiwM1+tO6u8vsgM8ftXwFrCIi8i8Ut+1/AC/5APg7148CuBGRtvBuTKrf1uEtoq8W5me7MJOf6Ny2D321/DbszSw8NSLQiAccw+NZvfSvFeUb42OKYUzgtgI6LYwhJ00mtQBWGZoFA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1169</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1169</code></p>\n",
     "published_at": "2026-01-06T03:48:09+00:00",
     "type": "beta"
@@ -379,6 +473,8 @@
     "version": "0.4.0-beta1172",
     "tag": "1.10.0-beta1172",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1172/update_whitestar.json",
+    "sha256": "f78839dd245be8ab8dc9ee5a3cb75767150adb8e05cd1d71750da19d7120aa6b",
+    "signature": "A3Ww3L8orzL0wqJMryhb9a/ECszJy2fbG0xyxctnMOwzdgjhfX8CXJS4KW8To3FXwEtl1B/da0458DbOimHoBs0HemRFHGjB/DiiycxPjQEPkyu7m8xacMUhSlcY444/VuUNEp1jUQyl9v4QrQBXFcTyR+FsuFHTnfCMiFCUWVmJZZfUidSU5ohG3LLibHxf2GbY4nNw2ej8vK0wZ16NFxr/rwGgIanR3H8xqgDv0axmFhmR6opIYvSPx5dGErCMSHZrcGZ8pxhSWOYvMeInvEjKActFb1v40d9Po67mX8DruI77rvj1qfjQeVFJ+pzPIhXZxLXQbTC21VTZ3Pzjqw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1172</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1172</code></p>\n",
     "published_at": "2026-01-06T04:02:02+00:00",
     "type": "beta"
@@ -387,6 +483,8 @@
     "version": "0.4.0-beta1179",
     "tag": "1.10.0-beta1179",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1179/update_whitestar.json",
+    "sha256": "65d22851c45c2455acd1fb76b6f08abcb64037502354910abd239dab1c7c314b",
+    "signature": "VkLt28fk1OCNUywp6FcVl1lu+bZtlX4cmbQBpq0AaHjF3SZJ58LaZvA9eWQzsvqGNMsBDYyouEpz3LYfmRHsZZdlODLyL1z5mgotui/9R/jXx5aS6NYBXAvBaj+gKiWcEkTpnpEeLWaGMt3I/Nb1W1cfhyqO45oh6CEZgJzi04Ii5uh8Db2PA6a3f2ld5oNJ5AG8nEAS5kadMsmkD80kAZ22fvc2yP9EBLrFmCsY5KxqSaqFkjv40L79mSyZJQThXw2BYokMjyQlOEi/MAmHv/+5gVnt7H2WVdATDb9VqtFZcl9TFUAG/FbzhdPDtNquwOb6+InCylNHbT+VqrJGEQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1179</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1179</code></p>\n",
     "published_at": "2026-01-07T01:08:50+00:00",
     "type": "beta"
@@ -395,6 +493,8 @@
     "version": "0.4.0-beta1181",
     "tag": "1.10.0-beta1181",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1181/update_whitestar.json",
+    "sha256": "7a69cc08611be310d58eac65cd19eb4a372fe5cebe51c069212b4f9bf36bd36c",
+    "signature": "rORyfn9CLmX39CKaN2Q+9B2CceYLFgVJ0T2T3Zdrmtxv086Whm0zguHZt8JMC64evl4B66ax52Sl3++GJkadgxDA+A8fS6Ldk9zX60pE+063FPPxo2SaybfKXpcXqDA3s2fKEJKmIwWrtPIm4KVmIqTXWENgr8IXc9v/ON6QLMx70oVWtjkG5DY8Z3NSb5ljUVCbQiq8TFn8nB0BWRjmrelzrQ+Hj663Pih2S6CxmdSRBvU0snyYL7R5ZHIGvl2xK90KgzM49nEuIrxjbJTksWBHHlNBDPEYCqOpIOzcBmMX0SKxpLRLJcFzbtmtCaDjXM23G3rz6RH1ekuQw0OTuQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1181</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1181</code></p>\n",
     "published_at": "2026-01-07T01:41:30+00:00",
     "type": "beta"
@@ -403,6 +503,8 @@
     "version": "0.4.0-beta1183",
     "tag": "1.10.0-beta1183",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1183/update_whitestar.json",
+    "sha256": "b9751e889c6b9c8908d88f726166db6e02d5c865f07f40dec4b03a287f3c7c63",
+    "signature": "EqvQrXLeaMPiTA6f30objPSa1lTqiQwxNshjSGdLY2/hXOsHQM2brtuk6pgnuQkvQ9vjQAy3RkkS4yjXUGWp5f498BG8j3mZK6lijNf5L8VQl1CYUG0khIJutRNVE5IFg3/LRTcESXsca2RySf7AA3uEZrfj8tLcFUvdaw8YkLv7U6Y1pL+E3fdxj4F5QJFyrfN6DM6DBlkbuA/w2FWx3fbjQy+hqpXvM+GcG3TfpHfotiiWbc8qQCvjqLBS67QzM+Dmop3ldkbWu0qndqgzJlSlOzA3ZQIJKitjZhjKkFK/eymi7K9pZlH+JVnEl0Bs02IsqTMsm52dgbGPT/AGLA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1183</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1183</code></p>\n",
     "published_at": "2026-01-07T01:44:40+00:00",
     "type": "beta"
@@ -411,6 +513,8 @@
     "version": "0.4.0-beta1204",
     "tag": "1.10.0-beta1204",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1204/update_whitestar.json",
+    "sha256": "f658f3e713a3cb1efa34b7201e58e1c3553efd9d7b608c831cc8636506efc035",
+    "signature": "jxqzw0jgemhRyr+ZZuIrGheFwQ9xQxvA9Az1Brd0rDfDQ4YI9iREZoxHbS6CwW0EespCy5R0Umnf9D0Zwg4sqAiEwVS/izYQkhj0GrpLlpDJGX16K5wFDBrfi09T4iNoaFsDBopwfm/iBuB4A9CbVyUJYrkyTv83mQOYo1UTGWfxG7Ld+IOV7+LRmEc3tcir+jS96st4o4LcMrhNXbw3CSSbVM/E/g1P9SNrkU1Ch+W42jKwJlEeKj1UrcBuX+gzsSGscm5WEcdHaEwMiB8gem5o29Jkec7GonLD2iCD5jEGdABBENaBZdghx32/vX/wSWm738jA4TJpY3dTH+U/sA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1204</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1204</code></p>\n",
     "published_at": "2026-01-08T01:06:48+00:00",
     "type": "beta"
@@ -419,6 +523,8 @@
     "version": "0.4.0-beta1212",
     "tag": "1.10.0-beta1212",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1212/update_whitestar.json",
+    "sha256": "ac68c9efb663420f2c594e5c5c08427b1e047b75c798616bf0bbda79b14cfcb4",
+    "signature": "Wb3Xa7y/tONiNBng3gUJE3LPVOB0VzKn38ajIAttqVlugfqdqr7ZUl+T5SeFoWavuYMNzQsGU7LDKMjr2/6dewJFPCeKVsRsj+lqg8cn12XRRwB4uE7y+U4+wnnbXvMqWaZ8qe/u7ZWZ5eA3RD0OEF8+AkYrEHS5faXKzvdxD9+t0u7FONYgcxCtrAUvIbWfm5cNqWpdZgGTVGKfqwF3y+mxDRVZvwDqf9RlWF9T6M+xkFGp2oVChRrlWfAlg2sJJ1Zat/6GGyXcn+m/0WEMv4GZBKhvyRV7CrNtSMzoByxO2CV+eQtmn09PL5mfAcmsP+K6t9N9v6vwjDQqWQiwLw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1212</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1212</code></p>\n",
     "published_at": "2026-01-09T00:49:50+00:00",
     "type": "beta"
@@ -427,6 +533,8 @@
     "version": "0.4.0-beta1247",
     "tag": "1.10.0-beta1247",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1247/update_whitestar.json",
+    "sha256": "7c4ad0cb4a66cf0869472ff928adb84c3b1fca3f191e82e22057630558870a3c",
+    "signature": "MfdckzGTj9nEeuN0WxamTk1/R5l7Lf5xRYPsXAdIb6ilxXctAvg5ZAvBJvaXopsb3lLkaaE6iuqetZWH+PvB3x9Vftolu6/+xaC77NR1lxhGc86WRShThBiFLJ7DUa3BtjhsMb5OB9W/TTLDUJdRxy7bhy7HRSL9FvhjrEc9Nde1BBhBJSGL761xmZzqqHCtDCqN0JZqSMKIMrlHmkMrcxfLaoBoVD8ghq1UZpuEvJZ/yjl+OWz9mVVipAjouHDTo2WXfRs81LkdJXmE2e4+nF8n53NJvFIRT5F1db/0o/XNy1S7zeVuPL4T5oT6Lv4yOZYx4rgWeFwoGu59sS+imQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1247</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1247</code></p>\n",
     "published_at": "2026-01-10T22:49:25+00:00",
     "type": "beta"
@@ -435,6 +543,8 @@
     "version": "0.4.0-beta1252",
     "tag": "1.10.0-beta1252",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1252/update_whitestar.json",
+    "sha256": "8692abe991153ebab50d031155f019d518697a788ecdeeb3e0c5035a20ccefb4",
+    "signature": "CR+sG7McfIikfgaQscX/KyQCSCbc6chsVtJJjcHX+5I6cRphPKT7icjn8r2VwRAVWdpjMQvYOqNkLfixgo4h+W6waqb8NXmXBjMNPKiCIe0ul3xTOVHPyG69P8zIxyrq9lpgaGpiY0YGL0ynHDjAxDTbqYB/YbOEwgcCSrPWi4JKh9od7/9BfTdPZiI9cBrbujISMV5aV5yVQGJESHAKCsaplXVRFVAyupIhqu6yf1LB+7djPu4DYUd8M7eXQ50d6IvwbHMW6MOYsqQx3UD13CP4OhDfTIbvJxr/4R7kmIjFG0xCyRRQZN6BW4Pn5mil4K7Zl2EXJGByPTQ0FzCLhQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1252</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1252</code></p>\n",
     "published_at": "2026-01-10T23:12:48+00:00",
     "type": "beta"
@@ -443,6 +553,8 @@
     "version": "0.4.0-beta1257",
     "tag": "1.10.0-beta1257",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1257/update_whitestar.json",
+    "sha256": "6d95363f1b6b0d4bd36fd263c4de6771bd8a7e2bddf0b57a1cb63354fadd9553",
+    "signature": "wjMm5UtORbi3bjV1j2aujTCqznewhHYcfva4UwyXybo14ZsyTlymWMCv90pkQEVxKE7zi9zzNcg+i+h3klHocFBv+owTSaNSlAAFW5Bki6QOlA5wopNyZSlIHVoBHLaFvN7sezq3zLwuV7uyAfKLi05LFlRO+wlbDlpq7dR03vfDPZ+rlGqNYynILzuD91xPgYU04gseBisvkprRJlzE9n86XnsSjKZZZlxmbzdNgj8ChM078X9j0qJKez276+65gzV4y06BWg78/OtK1ckKhQB0UbEbdOSVjVoHd2tXOa0Aeuvwso31XW6HlYatLOtLV8ZtDVQk4vAsnMImvDZ4aQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1257</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1257</code></p>\n",
     "published_at": "2026-01-11T16:48:48+00:00",
     "type": "beta"
@@ -451,6 +563,8 @@
     "version": "0.4.0-beta1262",
     "tag": "1.10.0-beta1262",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1262/update_whitestar.json",
+    "sha256": "fbf5ebfb72f1cb4a83af7b9d94126489d2c5fb36fdc7ad55e08f1e7453923718",
+    "signature": "sDKRJZb5Rt8VMXBVMHjIrZFi3+DHKKIN12+bcLY4WvScjzaYtxUGE87c03zMk9ru86Krgyw4tATRWFX3bR3ppRf4xYweMiBzOI8iJ4JbCb/rvWiFx+icB8qss4XfKwb3AxhrKUAC7UxfXZMy3AKOOMFFyMZN+Ht9MhbxsgxlTmKgQRRNGgJn36kUv4jZz18fp966VJWDi0G51ukbhYQaj0SZT92ilui1OUmVSJiCUhWyrGbpI5NR6cW88UDlSfUO4ivqnlPd5Gf5LUc1BbuRRfqz+jMYv5cpOzvZ/96eahNqQChEMN/IjLwnd6C32U80GCFC44jncs7vvXrVGf3R0w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1262</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1262</code></p>\n",
     "published_at": "2026-01-11T20:06:20+00:00",
     "type": "beta"
@@ -459,6 +573,8 @@
     "version": "0.4.0-beta1264",
     "tag": "1.10.0-beta1264",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1264/update_whitestar.json",
+    "sha256": "254e15ca2c7fc8a0cc843e6b9d4b69ae6bb105f348bd71dd37f2df4e9d271c5a",
+    "signature": "sA3XfYjUqTsycnjM3grNtSOVsDEjmJmcRA3WRNDeQ1+QRfX2eQUUNdMI0+YSwF1dtG3NAES9pHfC6VZmTZnl/VUMuE6qGIFdZdJi3avJGsNVB7o2m8+WfPPNZ3tNEyLxWo2SRMRE9ygjIr8uDYQ1UPQFoWxo7EmHv2wac+I8O3BKictcX43bU/nK8WjRpk7BiIMxjN1nt9UrcvWcKxg4rCdS/r03zbK2wuVFsgBmDt9XPd4bkxjWn1G5rYTw2UOtrCP+cGiU3qrGXNBYN5fLTriLcnrApnj4Y3orxn80gIcDDvNzg2lqA/SWK714oSduxIzF37HVbW9lQZgGVVPCyg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1264</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1264</code></p>\n",
     "published_at": "2026-01-11T20:36:26+00:00",
     "type": "beta"
@@ -467,6 +583,8 @@
     "version": "0.4.0-beta1266",
     "tag": "1.10.0-beta1266",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1266/update_whitestar.json",
+    "sha256": "394b5de3b696c0fa9f059bd23b21777ad7527964e15c48584d74ce16a7cae6fd",
+    "signature": "gXsVGofVc6fyoWj8eEaKf59Y3sMICjOyjbZFbk4hsqVyMRMyatEf0pmnvwjoHZhOR71av/QRUkbYerQMllAesFm7po7uGeyRmRNQl/gaEjli8E7417e13arCgU8HGgKvo3QX4caKpaELcMyZxp6nG2Hdfjd35RAbW8f133AHTYivdnKVd5NqWF2jrfTLrarhmbjOQCVgKg6LRR3Lu5fz7z7EpL0m1q9dYx1ZOnG2OV+fheSPVNlRpCiZeYhDochroNayLlA30Seo4meNUSpX7iKUmdE1QQi8GAx9KR1MnaiibYCIM5s7N3O4W70qbGxMXQplicYYz6vLFxtMKq63RA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1266</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1266</code></p>\n",
     "published_at": "2026-01-11T21:06:07+00:00",
     "type": "beta"
@@ -475,6 +593,8 @@
     "version": "0.4.0-beta1270",
     "tag": "1.10.0-beta1270",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1270/update_whitestar.json",
+    "sha256": "eaa6a23e26f08c267603f6c72134455d767659da213500e4cdd7cfe3b5be4068",
+    "signature": "VHfGa7BtfRngWk7eRaESvZYmyWX3q4S0XbJk3n4VmWTocSo67je2wYn+HXp9zL1z/mGyExcLgtC9Nd+rFIhkO/c8UcHcW8J32VU7fVeisbzZiT991HxpJO+s6msQmP9MpzMNNHavpMJ8vESF41DHGW/Ea23T1wHPwN8YAJ7Q5gms3IcolvR9e7Ti9P9zdV/8wOwCfZLD9xjuhF8xVnQDo6rRBD224Zq8rZ7w6U5N7jZXTCg8yGnzGC9ErFtnto9BWM4NTKFlFNLuynl63MrenJLs7QiUEJUz/2LLvPbcuzSc1u2qAYpL0pNXLBx/of5yMyB6l0tLxNiccIxHDW3NkA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1270</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1270</code></p>\n",
     "published_at": "2026-01-11T21:15:24+00:00",
     "type": "beta"
@@ -483,6 +603,8 @@
     "version": "0.4.0-beta1279",
     "tag": "1.10.0-beta1279",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1279/update_whitestar.json",
+    "sha256": "ee41a3d08b4d745ee2191a781b951f7be785bf20a79ce4674708e21025bb443d",
+    "signature": "Ir+YgKqb9BnYQdcUaZDSWIhi3ekldoXqcJaMVOn4w0onzB9CAYqCwtQ7J/t5pMWGuHbYUoSpMNzTxGf/Z9QXF0e0fN3CUwIHSOAoht9rGxmRmqQ7JlxAQJUEJHqoSdk1NvEZr0ECFbkk7hgPYA/elqGW2pgC1UbenCNF5xyVGO+cy5xcFX5tXZ0U1iaH9G6B6xGTEzUFIyLrqMYGA/XxH5M352Ajc0cVKvNSCqk91qWy/1iy+VZ46jQ49HEjV1kqnm5m9Eu5CRoFJtLsuAVrTIn8KhmXvSGG3eMptrytb86srC31auEYuSG2vg9r1clmr8sNIymG8PGkiqZNOWk7Tw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1279</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1279</code></p>\n",
     "published_at": "2026-01-16T16:32:41+00:00",
     "type": "beta"
@@ -491,6 +613,8 @@
     "version": "0.4.0-beta1293",
     "tag": "1.10.0-beta1293",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1293/update_whitestar.json",
+    "sha256": "bba2d697fe8f69db2b6271cc111cb4712b54dd6413b50189703be34ec248f581",
+    "signature": "QPzLegIfoB0gQ8Tespp3eQNp4x8IZAuBaJYOV4fMuBjw7A18colUMwYcjPn8z9ulAyCALEr6rG5H24fnkSHUm6Xgfpi/5roojRsL226IFGd+CKbFN3OhZQkJLFwT9YMiD0TcTAxIrNCgrxH49pwCaVvcVMGKWRS628baQUJUlF5WS26+r8BD46jlzxpKZyOVp25xuClzNgUBASzjEMsK8OdOh7ZkIwDRczxxX3nBN6Gh8e/F4Ixoq0bsdeZIc4QEZlYYEJYhs/3PXJDuf9W2OP5inC3dcYZeaqGm2hWisu+97RsV5HMFgT+QSODeDpiInNK2j6TpBwGkWdURVU2lRQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1293</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1293</code></p>\n",
     "published_at": "2026-01-18T22:15:04+00:00",
     "type": "beta"
@@ -499,6 +623,8 @@
     "version": "0.4.0-beta1297",
     "tag": "1.10.0-beta1297",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1297/update_whitestar.json",
+    "sha256": "a2b11ba75d8c3d579edc473cbdb8242b4b5b112398e8e170e3b2bba7eed5ac62",
+    "signature": "sDsb0Y48kop2prSthVxCfxNGDA6RYA2Up0b+XXm+gc/oXvvzMxxR5Odv/GUaHVLTjuTFgod4BupugHviFe6bgqYscW0jN2H7+Arm+NDesAihh5vhUtLJXAJ3rj5KBsBxI5QBgMemaNsXDxzyOay0KB3iSNbPhf024Xusiw94R5bA4jBlkSX/P0UK93M9uN3Y6c68eIP3WeX39iXAol8KPY8eBjUi+/KxVHboJV4GcLSmjAGpHDUMs6Vf57UldyqQO0YRCMVE+Ii7imTDWY6rRxfNYhPY4r3VA+gvi28s9CjdQ5+rwDejA7NyojwJC+bpgsb2WN8+F7dBMgY9vEJGeA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1297</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1297</code></p>\n",
     "published_at": "2026-01-18T22:59:41+00:00",
     "type": "beta"
@@ -507,6 +633,8 @@
     "version": "0.4.0-beta1306",
     "tag": "1.10.0-beta1306",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1306/update_whitestar.json",
+    "sha256": "556e18545cfd1d870be6556609c52bfdccaa100473bcbab6c8b57d79b17fa0fe",
+    "signature": "hO5WngOd4BKpyAg6rs8cpUZnqHpEyE906jBnHmAUKzv3L7uTs8ck/ZLzFAOC8fqF3FykIsy/XVDW0CBRdypNcgK9C5w2R2BCe2fUWZEg1/XmCjQhQb/vtyVqcXkisOHh/H52+uekSyKlaD+1fx6s6EOA5bfnCxX95oz5wlU5JbGAh/4OBnYq5OAFSJP3cPsQ3qMz/+aOEayEcmh6m0rl1fZYALJvGy0agSPyc5bNJBEfNI3STvtBXRqyxy/cSS0+8EuJc2c5/wZBz3hYh4P/mnXpMwg/q9nWjUeF8OdGNGP9HN+OcuNJVeUG0WeY6rSISs7+r4jxV8HNt9HjVkVURw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1306</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1306</code></p>\n",
     "published_at": "2026-01-20T02:49:52+00:00",
     "type": "beta"
@@ -515,6 +643,8 @@
     "version": "0.4.0-beta1309",
     "tag": "1.10.0-beta1309",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1309/update_whitestar.json",
+    "sha256": "eb6786e5a9272492c66b646436ea134a0adb4754b32a7c86b6bf8cca1749e19e",
+    "signature": "s+av5pzyJp39nHkJES3iMFokypS7MJnbGU5ll14y17szKV2BxE8x7NBd/4HXShvmoDI4opJyRexiFoeOqScOki1aIAiy4F7CT690JzjNz37o6ehFRBXuxuDG3zaszuz7bj/lRka17dZUPaanwIHSnif0Za1ynReQqfDWJiaDKmUsDGDPZGwLGidjlrsg1SG4I3c5ShetPpErBCk+qjeXehxaIL/wgnq1vENSYwBl30vTQYJvSDMlrRqaD6dgnbzHwpXBkkUTsI95HddwQOVOY5abeaLDkmCMYoG6Rdth0VXMx+2AVJWiC2ZUF/xkJzVl3vrCL6mKjFtQbnlWV/+KYQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1309</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1309</code></p>\n",
     "published_at": "2026-01-20T02:55:49+00:00",
     "type": "beta"
@@ -523,6 +653,8 @@
     "version": "0.4.0-beta1308",
     "tag": "1.10.0-beta1308",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1308/update_whitestar.json",
+    "sha256": "25dae39fb8d243788b909f56fc733550131dfc158a1e70e0fe00990e7b335b02",
+    "signature": "yhTyXm6djysD3h8GP7Oy5AnWKMv2GlXr0Glb5/wmZ2ltwc/2JQyUSNf9BQ/R9Q9BDOq05/9ldwQxPrl+3BMtykCNt/r5QDWStTRRpuvaD94gSgSs367Q0VnV5eIjdfoZy+IRAOC+5r9BMhKEehrcQfr4RYAMSl9uXDEsRQzdZYJdVjO2rtMcCiAF2QfMQYzTusHqw68onX+r4DnHvGaPbgzhG4zzwiAENITflIlYl6uj2O0d2CDESl0PU3rTtu7RTD+CWRiO6IoWVLT1Jr8aFV28mRKINpd/QYpmiYgAqNtIxU6MkiGJ4/jwqZ/H7lQSP7fMp6+ZtPkwazMgFZOksQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1308</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1308</code></p>\n",
     "published_at": "2026-01-20T02:55:11+00:00",
     "type": "beta"
@@ -531,6 +663,8 @@
     "version": "0.4.0-beta1311",
     "tag": "1.10.0-beta1311",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1311/update_whitestar.json",
+    "sha256": "c19b337eae487e2149a444d51966730ca1a6a0c36efce3a5074616d13c04dcae",
+    "signature": "vqMCr8SSNN4s4VhDxtFWtWK73vJIS2ej8SdpbxuVzRptSN758LKRm1VMr5w8ccM1U0HzTjyITYMXuqA5AYJRjxh/Du3HL7xP9BnxNgVN6NtNZ8SX2kNR/rNddGZk2keT7P521lisVlHM+IwgSstDRESsm9e4XeaUwlGsDB9iZh00YH9TglvZbl9vs/r9OKcqIqOgNBkHuaP06CXW+Mz5UEcIYMHbc2puIN+HNP1eC/OmyM7xmoIztZwCY9TObJGJp0RqbERnav+nZeKY6dL6cD4Diof9yta4RbbaCKOQ4j4QSxrOgCCRNozXN00Hry/huW6pSb/15y5n8r0cYAfBKA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1311</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1311</code></p>\n",
     "published_at": "2026-01-20T03:01:21+00:00",
     "type": "beta"
@@ -539,6 +673,8 @@
     "version": "0.4.0-beta1342",
     "tag": "1.10.0-beta1342",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1342/update_whitestar.json",
+    "sha256": "55194309dacb5f0571db53a73227740df3ceefb8790e7152510dd2d979ec708b",
+    "signature": "ZOZBvfHH6YwKOcU2T3gkVlPTbzQwbfVxXpPIs/0hli1PZwR00yuuooKY5NMqCHNZroKR2/sgsb76dv4C5tvqv3HRonrVWFNMRzEfxHnUzIeb8NZFHasw50qq4j8Czq5U2ukzpvgMfsk3y63v1IpBODlzuoK/e3Ctfz+ok6o/0NczcL1L3k9CTUNgvHVFjq44S4ILsF8lHTa7+CyvqppxpQm8j5WAH3O6Y9kB9tR9BOryQ8gVHHFNp1gl/uqlptElBxUFWIWAg8YZMVXFJbshAx0zlyHakIzyAQ8uIrN5OGWC4z4NjKuCYUgxHt9Nv4HS7WUTbJgtmMXZQbbz7GDoUA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1342</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1342</code></p>\n",
     "published_at": "2026-02-01T04:35:05+00:00",
     "type": "beta"
@@ -547,6 +683,8 @@
     "version": "0.4.0-beta1362",
     "tag": "1.10.0-beta1362",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1362/update_whitestar.json",
+    "sha256": "ff49ecd14d4fe54110d9149ec05ba8816700e8da66d2bfd2839f802fa5ef2e2b",
+    "signature": "klKjPcoWPdqvL/8+njwctDh6+07v+oX0CNAGtMkyIX2GDwSGNitneNs4tBAxvXOQ9kKg1gUANHySZzRrd6wcF/OllsceT1JXUcmrg8qt/SM2SGOO1taRKNE6TMLhXaxiTmwQOeqJf8C7Qxp/UC/9Yoxuzf+yJc0W0TSOXhfFnt/Q9OF/2ZqhxeYsM6CgxK2c2DAgex02QIyvRKlQgDTfHqj37vgvE20/vNcCyyFpnLwL26q2bLzmhrLsbco6MbVy8ODT63oYJ/LD5kvMa+/LA8p22zQjRHjX68MJGpf/MkVETXdC8M80T7K9Qipt76+jPTRduZ66eBH5odD747iGQA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1362</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1362</code></p>\n",
     "published_at": "2026-02-12T13:08:36+00:00",
     "type": "beta"
@@ -555,6 +693,8 @@
     "version": "0.4.0-beta1380",
     "tag": "1.10.0-beta1380",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1380/update_whitestar.json",
+    "sha256": "157d3406ac7a6e0be9bbc2d64fc4da0eb0aee1a3ae23030e7fec32d6ba39150c",
+    "signature": "fsgMe6AXER5dgcAkWSeB1XC3Qo/iAI0BdUj9BjFOfsF1BpHClbK4xtxHVAz81C0lKtmYWOi+lUJ+XTehER/Y2sM2ksSTd98mor7RHb1KPWklUUxCHK8uW/kJoq+sNZHiHOtUiEiZVMRu1cwNH4G9KQHaYm/6rjKV9jcjbgK2EIpSf5979OdHFbC6eUEup8pY5A2kDTuzP1t761VYbULQspPW5T8+b7jcnKwFuKVdyQpAd2O7Po4sxjUXaivaTt933DAM0nj1c3VO9uqIOObYyz+b3aYEOv3foSxzwwxJCERkA9gi7+bdIWqMIo8F988/gUEzUg4WwjhJK2ppcoMO9g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1380</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1380</code></p>\n",
     "published_at": "2026-02-15T23:52:28+00:00",
     "type": "beta"
@@ -563,6 +703,8 @@
     "version": "0.4.0-beta1381",
     "tag": "1.10.0-beta1381",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1381/update_whitestar.json",
+    "sha256": "f686920720e6429ebb5702e1c9d5306efc20e870fe6abad308429829ddee3adf",
+    "signature": "PPHe6YeyhElYs7R/CFrDSNlSzrfb981io1ImeeCpaOJm1Ev6WAk+gH3mQh0skW7r5s+pWQCN6UaFYWeH8w53SJXhUCK+z1k43wnAau2S3nRwC67svcWlr2YrdZlbSE0V3/EDlxL+uQz1DeQp46C221qIyRldNOGssX03ft051OwmFm6vCmzpZJpWNVo1QGi3LI3m7QLWUYSbe5L8settfT/gemfgqG/740qSLeaTzEqX8R8fS+GcuJXs6IT+ksWkBOGehpD5iIdNvgqrGd25lYu24FxUyC8aEhjjnwVRb9B+wDlDioK5knKN06LY9zt+Acjmn+bFHWWseUloT1E/Kg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1381</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1381</code></p>\n",
     "published_at": "2026-02-16T01:13:07+00:00",
     "type": "beta"
@@ -571,6 +713,8 @@
     "version": "0.4.0-beta1387",
     "tag": "1.10.0-beta1387",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1387/update_whitestar.json",
+    "sha256": "c34fa9455bfe09630749090471c5edf75a41d67f90f014d32c1b9780e7994f18",
+    "signature": "MoIkzZZwV7kfZSmNSuVLDjYN1kjQE70+LPxQOswQdR8hFBxqDA6oxx0b75jeydwZDTH5MciXnfWdLknjDnOU9ZXmNo2+rmGIc+guOkLDn0uAETTuNqCAPHUrvRsU7rZakCjKsH60p+EexD5dRKlV/c00CQrNoLUerWAu9kBfPvWFUpqOyKiwWzJWJcMXtmq2Wd84h4QQl9GYySXrDmMxDB4FyMHm2gtXCc+sin8dTp/jRuDuPGIcp5zyIWRSzDX20zhH1CYOPxK+uEFZq72ayhdasBBeeNGDsT+bpI1MHW3sTQO2bQHx2VlOQdlqKUOwneilGLbtbv1VXOr465fjbw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1387</code><br>\n<strong>WhiteStar</strong>: <code>0.4.0-beta1387</code></p>\n",
     "published_at": "2026-02-17T00:44:36+00:00",
     "type": "beta"
@@ -579,6 +723,8 @@
     "version": "0.5.0-beta1397",
     "tag": "1.11.0-beta1397",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1397/update_whitestar.json",
+    "sha256": "460ad2fe0711d3ae8d679d434254b81b52c3493af1cd759bd1da1e80cc4a344c",
+    "signature": "KZSpYOBwTA2rY+n5a5vY0E54wRjvRcmD5J74r/Ywfj0ibXZ5hsSIGpaN6hMGNoNy5q23jvjZrK05u+WWIeJxlyJyEG9DuyWZDPTSnrft17wRBTDnbhNp4vm5gyvIhTanFwjbMYz+zhqQ03IVASpIeyOZVDuvQXk4iyuxcTxx4K1GN/B/lVZA8awiuPjitP+/SwouOsJag9qht5GvxeqhZM7XJING4haEciAXHlXLJMP6aRbOVDcpqJeoYMi5flYIBhIa+Ai0OUMZps6W2XNrtUo65ASEXs2d74kL22xsnace7WlCK+Zg5y6m+zx8nWd/zstShfeuN28fERGEZTs06Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1397</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1397</code></p>\n",
     "published_at": "2026-02-18T00:17:12+00:00",
     "type": "beta"
@@ -587,6 +733,8 @@
     "version": "0.5.0-beta1403",
     "tag": "1.11.0-beta1403",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1403/update_whitestar.json",
+    "sha256": "dbcea35978d1a8b4840194639702da7cc5d8b2f945e142b8d8b884d83af330dd",
+    "signature": "o97+IocJuSI3oz2HQN15XrpTbCQ9bdI06UAD/Ne39XvwXIytcIcMoX6WPTBRbErTMX3NtKxvaZ1Lk2aYsBPATDiJbzilooOryEd57zQAxyj5DCdoqLp1QQpwmUs7SxkyvykIX9q84dLauQ0VjsUdIrOHG/Z3ypImK+XnNy6e91H44l8YRaliFYFp3x0ajLFxAXRWvyW0DgWOUMKfELnxiq0uVvCAtfry9hxxHYdSfWFflLWsNz49lbBXWnydbCIeTlmkiR+1szphqFGdurGbOpjlbTXFgh5FTpV+PJKjkiHds0cVzJPyijQV3ixnq952a4vahAifBO+nBi9LIPB0lw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1403</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1403</code></p>\n",
     "published_at": "2026-02-18T22:44:27+00:00",
     "type": "beta"
@@ -595,6 +743,8 @@
     "version": "0.5.0-beta1405",
     "tag": "1.11.0-beta1405",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1405/update_whitestar.json",
+    "sha256": "16642a0d530553705d84239b3d163951ff96fba34eeb14dfe7c65906ec7ebaad",
+    "signature": "fORpvsQQ/WXjSnqK/sLmLMccRMMetKNqbhsCRk05ZmVAJA0SERKwHsxTRYSx8S2Mz79DWRWyxMWL0V/0zkZ2cvYFvwWkf1tpqT2kkhcHKgKKR2GCIP3X9jC/CFAuvscnSDm2eQkdN4759aoltPsrjeoFqW8gS8HZcQfAYbMRvTrEzJE5eE2pqjrylTbLIjtdZti/vSuGbYj6gSXH5XUUhcWih9+Y3u5YDPOQNNDfkU/UJoupB3HsOizeJqHJU9IDoFfubIEVxwea8rftyGOzk2Z9CH7wwBvNv2Bvod7fY3I3ZKrgXDP51eXBLMfe83WMvOD8+WTCtfNLXQsWFdt/SQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1405</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1405</code></p>\n",
     "published_at": "2026-02-18T22:45:43+00:00",
     "type": "beta"
@@ -603,6 +753,8 @@
     "version": "0.5.0",
     "tag": "1.11.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0/update_whitestar.json",
+    "sha256": "6fa81c2efe3fe4c0e4c2898afa3b1d906c211bac473bf9ecf7e3c3f92d3d8a2f",
+    "signature": "ZKhNy4/+hBpDaPFG3MRFGzTbdNt2g67u6tV5tE78ztvmgsjbQPCCXckcyBp5IVOr5Dd/vjih2d1IxCLIaFa+cMzDYd16vHfX+HABazVwBP/BK9y3XAur1ZpbrcbdE5NxCmMKDUvQ4s2mp231ps22h/alwNVIBBEKKQ4+8MB13MO6iplJ/N8/k/nteyDBnJeMKRJ0pLWeRqufuTiUW3RAOS5rjWLNjuAfNwlwxa6IuRaPP0MGgwgfXLboEsINg49dnDaIPv5Fb+V4IXWmM8falWowerQ81dD7MeYGgFbVz+c4mJxDHat8qiIoRdMq3QXLudM/un/EE30Ef1sA5OuvLA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0</code></p>\n\n\n<h2>What's Changed</h2>\n<h4>New features</h4>\n<ul>\n<li>Switch Diagnostics see out video about them here: https://www.youtube.com/watch?v=FLIX7n9jNf4</li>\n<li>Wi\u2011Fi signal strength shows up in admin page by @mullinmax in https://github.com/warped-pinball/vector/pull/271</li>\n<li>Special play formats by @paulmullin in https://github.com/warped-pinball/vector/pull/276</li>\n<li>Onboard led driver (for WS2812) by @paulmullin in https://github.com/warped-pinball/vector/pull/232</li>\n</ul>\n<h4>Data East support:</h4>\n<p><a href=\"https://warped-pinball.square.site/product/vector-for-data-east/UVTORN3KL75ORNK2JWEKGGH5?cp=true&amp;sa=false&amp;sbp=false&amp;q=false&amp;category_id=BUHGWE2M4555MYLVC2ABLCQX\">The first Data East Boards are now available for purchase!</a></p>\n<ul>\n<li>Add Data East Game support by @paulmullin in https://github.com/warped-pinball/vector/pull/212</li>\n<li>Config file cleanup for Data East games by @paulmullin in https://github.com/warped-pinball/vector/pull/287</li>\n<li>Onboard Rgb led support for data east by @paulmullin in https://github.com/warped-pinball/vector/pull/265</li>\n</ul>\n<h4>Documentation</h4>\n<ul>\n<li>Added new documentation site with reworked manuals and details https://docs.warpedpinball.com/</li>\n<li>Enable dark mode in documentation site by @mullinmax in https://github.com/warped-pinball/vector/pull/250</li>\n<li>Add automatic API docs generation for backend routes by @mullinmax in https://github.com/warped-pinball/vector/pull/227</li>\n<li>Add Data east manual by @paulmullin in https://github.com/warped-pinball/vector/pull/282</li>\n</ul>\n<h4>Bug fixes and Tweaks</h4>\n<ul>\n<li>WPC Initials Capture by @paulmullin in https://github.com/warped-pinball/vector/pull/286</li>\n<li>Move game-end hold handling to web UI by @mullinmax in https://github.com/warped-pinball/vector/pull/251</li>\n<li>saved 10Kb of storage with hand-cleaned logo by @mullinmax in https://github.com/warped-pinball/vector/pull/226</li>\n<li>Fix race condition in scores page initialization by @Copilot in https://github.com/warped-pinball/vector/pull/280</li>\n<li>Rename tournament column \"Rank\" to \"Order\" by @Copilot in https://github.com/warped-pinball/vector/pull/292</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.10.0...1.11.0</p>",
     "published_at": "2026-02-18T22:49:12+00:00",
     "type": "production"
@@ -611,6 +763,8 @@
     "version": "0.5.0-beta1407",
     "tag": "1.11.0-beta1407",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1407/update_whitestar.json",
+    "sha256": "878782403c4ac1f93b9d1893c4bd5ccb09d06b80691fa87027552edcc39520a5",
+    "signature": "lpULMjM2tDkRZH7ki3iL0sKBZ6Rl7BnOwlQ61EwnBhNDLxRXghEmjdFr1/FHoBolfv3Y/6J4koqkAnBQJPggtl+JDu20EHV1Xkt6XBzh3laYtsy2TStvO+um+pXcZclnUqw0dDS/IqGTsv8Af5xbpQmP9yJF//ZyD3Yk3colgu2uSUVYIFeQgEHvcRhNeo1P84hIR+GYRSFYXjHV7e/139lOnJGNSt2a8XZeKavrISWYcziAOx7JtmnYliFAkZWsNw3rHV+WpNk7Mbcwt4gTTIOj9cTFMN6KMltkMU42+kYUx2vWO2NKgKRjfFKD0lkUio3m+XT+1hKFVBl9cFbLVw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1407</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1407</code></p>\n",
     "published_at": "2026-02-18T22:48:28+00:00",
     "type": "beta"
@@ -619,6 +773,8 @@
     "version": "0.5.0-beta1415",
     "tag": "1.11.0-beta1415",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1415/update_whitestar.json",
+    "sha256": "4e9367384cf631c125f4ae651f71103fd30f8e909850b7880b3d0083b7d7a932",
+    "signature": "kURkZIQLP9Rdjp49lgzWOZkJV64GOGJjr1hozYq/54MuLnICZloKQ0su98YJk+lqD9CmfoKtbdI7IC9wFsmycSgsN3+y+4aR2yOvf8cWARdiXYT0kTctqnBdV2ax5EAWkU0kOFFt+z2TENRMl3l+eA1umsCQ9M8LeZ0aZ3ZhRm9mTGoRgubuYw8wuN5TGKD82Ohh3s324Lhjpe0mY+NebjZsFK+onNgNGbKjrWR3B4EAKJhPXwxqWHA0oNkEwVMEP9vjHRbwxZ+JYaFmdwraNz8C+xD8/LhWKlI6YZeBnvqIbgxCSMc05zJSKm7wdKyeCuDJkMR3GFpHtWaw6XqV2w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1415</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1415</code></p>\n",
     "published_at": "2026-02-19T02:49:01+00:00",
     "type": "beta"
@@ -627,6 +783,8 @@
     "version": "0.5.0-beta1417",
     "tag": "1.11.0-beta1417",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1417/update_whitestar.json",
+    "sha256": "09d3d4e46da81e144f23d0ee2119b6c3ac579bded46d9c608cdda3f14d71c2d1",
+    "signature": "y11BYS/vJv1gGODL+cYDLEvSJ/3bl6btArjwGc3JmSbwfeC0LUecsCWnA/VWK8fnZrDb2GVjhJTx5cJIpCQaxodhtTc+jZj5DYqSLiB55gUWeO/CVvG00/KW7OLxSe78fZuYnirwNBqvtTEtd7kJjgtzRGlwnHsbIueW48XxqWEltWJkqndyOuaLKGjkq+MAXYenAaLDVELKF7GZsq8eRPYdos6qdQOlRA1TOsoA25BJwx8SBb2WMBVgJssIjdrONeKWy40zfKUu8b3lsMwZyUngJatBcppOdCo+QmyyZRYnBxTKCvFT2rHfzIeOOSTYFF5XAuPxBO/2PrE1pWy69Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1417</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1417</code></p>\n",
     "published_at": "2026-02-19T02:50:04+00:00",
     "type": "beta"
@@ -635,6 +793,8 @@
     "version": "0.5.0-beta1422",
     "tag": "1.11.0-beta1422",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1422/update_whitestar.json",
+    "sha256": "e4f69bde12db75e7385854de63c82eff7932b255000bf30c47efd83ff4bb3849",
+    "signature": "QMCLHth3yQhPggMRPbDMj4Vb68qXHHAlQv/JEM3ei1OIcFfTABuGp/N15Q5kVy1qCJCBkOPjA8hCMB5+k1G6SCZ1/VZTeFWGNBNZ6H137NGHt/5yoZBgRkIMoRqqQ3aCXqlPutix7CpmJeDWplqqO1LJ1XaHrg4gPgYPhWO1GzuRxORN9Jot/mGs4X0slH7G/ucPRdIz7io0Ks51Ibv1uoylsgvCmPl6+sH/iO1vC1x8RVwSc7cewjbe+dRnDOyuTSfnG/vNhTYuxpHIQb7BQ4/6pFw3BXRAQnEHqHNYQoHNp7KeSIwwXH8Nsl8rESZUamMvAXBjWFIiZ3Wxcfbx4g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1422</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1422</code></p>\n",
     "published_at": "2026-02-19T17:23:10+00:00",
     "type": "beta"
@@ -643,6 +803,8 @@
     "version": "0.5.0-beta1424",
     "tag": "1.11.0-beta1424",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1424/update_whitestar.json",
+    "sha256": "07d7523baf2dca4a009f9fcfcee2f9db23813dc8f770dacb538b1a83672f8911",
+    "signature": "pDmQ7T9FDbWKl5TgK6Wly9FfJe4+QqujEDYSEtfa2++qqgRJf7RUfRF/7nh4aI4FIfzpHJSMI3v5UTSZPT4YXQMBhgNrBIv/gaGZJ8lxdi/QDcSt/K9ci/EhnGMBLYCTtSHxwHSMYlOzlduIVy34WHbNDbSzs/MhCzqc0EVqex/GXxadDzGnqvn/3W1JNxaKM98TU2biqSxk/BrY8P70v8U6FnLF5A4HYiJItUIs48CAzTQ3OwoU6/0A9+DQ3t8697JOXw0j8BKtsvB2ArwT2Py7Hf/tWNXm6Owx1ByHbJNb4j3nGkLKhW5664qQwoybGgcvzyhu/CMlS1sMXTtfBg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1424</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1424</code></p>\n",
     "published_at": "2026-02-19T21:47:16+00:00",
     "type": "beta"
@@ -651,6 +813,8 @@
     "version": "0.5.0-beta1433",
     "tag": "1.11.0-beta1433",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1433/update_whitestar.json",
+    "sha256": "0d35d462b91cb41f4a4e368d03d299b2267e37e50ba919da230b14cd9642cbbf",
+    "signature": "e8CViPJqgQEvyrwTPn1zjUWe4cg+jy6BPhbyRNMFwh6AN+CpWpRV0npgTUQMw076M2ozLZoqm7FFXqsC5qm99PeZ/OwgaIvG4iwMF4cMCuEgAW/e3DkR/ljalhx0WNBGhr5lf48C+lgDjwQQ9aR939kGDiBovD5xsYlgRcda8zoVlpgbjh8CVPnDuwbUqqgqyCDLe3EkSttkuAFoZdmCNV9Kc8hH881wWlwIKMJ6A2IYMjwqDv+vhiX/J+klO6QhQ1Yg92W4Kr60164ZyiTckFMf5q93FsJdvZ377e00FWMvUmiaEK3SOXVZFE6exnk9N5ZnU4xRSBJ9FfHKFFjoDg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1433</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1433</code></p>\n",
     "published_at": "2026-02-20T03:47:16+00:00",
     "type": "beta"
@@ -659,6 +823,8 @@
     "version": "0.5.0-beta1439",
     "tag": "1.11.0-beta1439",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1439/update_whitestar.json",
+    "sha256": "ab4d7d7ae3aa361a77c1fbf21810eae6074083c9327ee0b280b16051a8279a2c",
+    "signature": "nLbUi2nPc7MlcsojmxNQ/Y0QAJXNdc0NWAVKpp7PeY1jCLWLD9rEXkGmVDBa6ZVZdWGJ4FjT3jFojhHRuOKEH5KIaLTBwmnaeRfLOGOIiJJ0h86DD9gjC3F8jrtmqNMdkSy541SY2PBaUEzMRLZFCRcKfF8R7PkyT+ieAL7r+gfUKlmdxfphHrDx7OSeWZ39U8uqzmbxKXO7UrvBX8axOWsXWEL7nkvXEsC3d0kn3uFVoidk7LWQALxi+w4Y1qLRgqwQjSUBWAeowIRRVDMKxiJgDZHo5e4qEDxd1r7/OMabJq61GEfRWCE69AU7XYvMp22OsQwmitKosez44AEoOw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1439</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1439</code></p>\n",
     "published_at": "2026-02-21T16:12:43+00:00",
     "type": "beta"
@@ -667,6 +833,8 @@
     "version": "0.5.0-beta1473",
     "tag": "1.11.1-beta1473",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.1-beta1473/update_whitestar.json",
+    "sha256": "cc51a567c676ced7f647e522b99cfdc28a61151476cb5dc34e9edca4400edbd6",
+    "signature": "iLE7q2P8SuMnxGw8q3GtIaKtZ+Iw0btmu9zjZ+5MZbRvmQ+26F1sV27oin1LkquQKZZ5OTeJ/8eptZJrk9+skMAeHDZ7rXyFMmvgdgU9nDXjnUhZexoIGXjCK0HyX5AdgtAkqJfFTMxLRzTtpmqasaM0eFM5e4ZccFAFdcZlHMI7hYVU9UxZcIUOXkRWQdRM+57bi9rw0uDFmZY9yC3BZSa8SwqGTjI+bf4XVS2117ePQNB9XwRW6ooFv9Kee30AshJ81JY985SQAZzF3eRBQB5PQlJ+4U/EKbb1rxIlWp/1+gPyZno14CPPCZrvhYXZI312lf2ppTnTgwR4yTuYJA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.1-beta1473</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1473</code></p>\n",
     "published_at": "2026-02-25T00:58:47+00:00",
     "type": "beta"
@@ -675,6 +843,8 @@
     "version": "0.5.0-beta1478",
     "tag": "1.11.3-beta1478",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.3-beta1478/update_whitestar.json",
+    "sha256": "8febf7db12ee33e6c457e374baf5cd745fda643d590d1b35c079d4af7645c4df",
+    "signature": "u3MJLA1L1ntJ3hlqQhXNJxVxhLelyAW18IqTtaNa+VD02L6jNg1WGNLDguZ8HJQGAqN0gHepbfG+uo3wTpul+0nSNFdxt8uMe12j4ijlJXFQ/YRYWf3AgZnw62Rv1eLt9RYsQnwrfs5D/FzMesWZaBuwI2OAWF3kUZsACK2FE8anKCflq22U/UAvjpeLn2SisgHKIkTUOjjfCTEx5NQUobcNjBbdkTIcsoC/dthjzUF/36+ymtvGh6f3v+qC4MDEW3EJaImONxdbpSQuhOuEzq9WIMPtVntRTXvuk4hHE6xLppkpDg6Ktlrg3YXszpJFY/UAsLe8jxihlxRjLNoNdg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.3-beta1478</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1478</code></p>\n",
     "published_at": "2026-02-27T17:34:15+00:00",
     "type": "beta"
@@ -683,6 +853,8 @@
     "version": "0.5.0-beta1485",
     "tag": "1.11.4-beta1485",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.4-beta1485/update_whitestar.json",
+    "sha256": "bdcce542f4476f5845f2f94c86e953456b888b7cf3642fa1e5454631222aaec1",
+    "signature": "b2k2oR7oksYHApux0J+ZAibtvP7RYZB0/V9n/EBPweWuw1ke48y2zTp52skFEsBT5fngPirLWtK48HOvQP7uz/m4cHUCDuSy9g3jFJTUaC1A2RVy+Fjrn9LWJkyfNB0Cj4pigPIAffIsi8e2EH5JJrQ6PutYmY/XV8y5e5qzs3o0ictdtHZD7HgbJLm/tJGvq4ej34Q7CnVhxLMv/vA2I+MXOvdhnETnGsjbZrZqRrsRV+Z2CDOfCr/ui3SXK/9JN8zztoy0jygfzQL45yUQtFSDNuAHd7YN9+vymucZR/ura8lnBHQpfxyaOVQzrnnQREkqy6omL4+HXfyn/5TuDA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.4-beta1485</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1485</code></p>\n",
     "published_at": "2026-03-02T21:52:48+00:00",
     "type": "beta"
@@ -691,6 +863,8 @@
     "version": "0.5.0-beta1500",
     "tag": "1.11.4-beta1500",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.4-beta1500/update_whitestar.json",
+    "sha256": "af69dbfdddedbbf6179f5094cbcd8619a56c38d510787d227f873a3852e9c4ed",
+    "signature": "udaSO9JOzzsjPcP1wB06ehbx6JKEmAfFVWSnwnF7n/ZoTdvWtt5xFdvMP3HNjmry1NPKyds3rdPYSBq2aVbVqt9Mmhdd2SsaDn5M76bKnTdcARFsMzw/z4ifOuKmzUTek2GO8WJQFl0ZKB8C2k0e3mqfOi4EvMBwuG7UTki9Iln5mZ6ZAN4r3fKJ0ACQz+ZGE9f9/FmTwz8q776Z76/0cdwwz0IrDdg7z7nDIGihZDyAXwcvtTUtlujiaoAJbltDkKLAB4LxUoivzpZZ7p3QgXCHmG8W0X3LGQf8CtK4bYu7BlcbGG9yM4mryZ26L9q2nFe+KqlREe9aJ45tuZR/4A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.4-beta1500</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1500</code></p>\n",
     "published_at": "2026-03-03T01:23:52+00:00",
     "type": "beta"
@@ -699,6 +873,8 @@
     "version": "0.5.0-beta1513",
     "tag": "1.11.5-beta1513",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.5-beta1513/update_whitestar.json",
+    "sha256": "f829e6edbfae34bcb4249b7f202de9a5889e9e605aab680cede1a16ccccfc0cb",
+    "signature": "cBwjjUc61Go+Pu6sIn25APcEsQkJWQ/IhZFrHsO5+ifIUJemBHoBDvF/TZCPU7qiq79w7/T5Kb1O7WC1cBhSI6VhVKnIsS5y3X0HbBFpUfKbicVyx9D6gbqG8bD7GM+8Pa/lPIkeH9j2p7Q+jQEOez1JVq6bKlIWpjOuWg9UdF2lqTh//ka30fswLTG0dev8kSln+UVwjXYo7i6VdYgeAdSbEZkFAIYa1n0rqtwxf4D0AulBbQgxjV13G0ixF4WNprNzl9ogcPx4DgrxSxtkVDdrQ7H+QI7A2Q8UEQwKZN3+v3Gf6Z4iSeHcrNP8lKKY14+YM6Y8u5wp4By+ydqeQQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.5-beta1513</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1513</code></p>\n",
     "published_at": "2026-03-03T02:44:50+00:00",
     "type": "beta"
@@ -707,6 +883,8 @@
     "version": "0.5.0-beta1514",
     "tag": "1.11.5-beta1514",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.5-beta1514/update_whitestar.json",
+    "sha256": "5f6a6cbf60d7358dea35734d5974f3cc5dcdd684717ddda14cf5ca74c4335d63",
+    "signature": "o/VF7EyhV+FalTNwFacS65dBRnJvx8x6lVI46w7VMFhe6xCTPQW2/n4x7Hu4JE9p5CkyyR9IybuuY2+V25I5gCWaV/fzl93Vh9eOK5umetgA68jcA5LU7oKjIVZ/PS0ykX9yD17Ya2l9PDAto0s7buCQRjX3NgQcHtegdLkCXDQzXOVI+vZaX48nTfXS/hEohkraEU+ehKFOFSfNed9+GFal4WtPygJ5u86vl31kkZ2x1nP8Gkrqx7sBbo/1ztzsV6D8n2jZ++UmMJkltHWNXqQfDPo2b4DYYzDhyUSjq5lEFt2HrXfqo1uVjYK1lDc3eas4u2IzCICzCzrGVuJTtA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.5-beta1514</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1514</code></p>\n",
     "published_at": "2026-03-03T02:54:25+00:00",
     "type": "beta"
@@ -715,6 +893,8 @@
     "version": "0.5.0-beta1517",
     "tag": "1.11.6-beta1517",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1517/update_whitestar.json",
+    "sha256": "cf78f2b9aad924ad806c2f5fc085d42f35eced0d90fb20e62577faaa61501c2a",
+    "signature": "aBuQVOjOwl+V8kdxp9P721OXuLL5Rb1XVBXv91YUsOOL4WDHdSTucOUPT5d7+UxGOb9SvLHNhnqwTYgf8Hq0JBOgpwgwq8rD4LB3DMc0ZlZhL1AT6dgO5xnCMUr1MusR9PRknUyzkNUpUWmUMwxMQNhk72kGVvpFcAqgKmCDuR9UlLCyMAk4bOtQm7D3fG3gOsxjTPvQxOJlTu3Yng3flBrQ3J3A2DeOBGRbUV3HTbryISk39hxCx5kCyYs11OjJoRDQ9jxz+Z85y+TehbLc+XuWkX02Y3qhb+q405Lb5r6LnRp/MulMFQjtpn6diYu7K2l8G1pyeybVJ8X4cigg3A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1517</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1517</code></p>\n",
     "published_at": "2026-03-03T02:55:28+00:00",
     "type": "beta"
@@ -723,6 +903,8 @@
     "version": "0.5.0-beta1516",
     "tag": "1.11.6-beta1516",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1516/update_whitestar.json",
+    "sha256": "909d22b541374fc67c3c8ffdf240dbd0abd0aa24850264dee22b043b2d33026e",
+    "signature": "wiGWveDsrji7AdN+37TG7xg5pnW+QAYmL9nYp4cvCb8z2rxUybe9AsGcYiHvAgFsWOlbfvXZwTSRlXYhBWnvo8FpK7QI1M81uQqSZqRvWcflUxX7QqOwf2EgEvaaaCdk9UiR81NxUxNpbmgUehJvZw4WKyEBgdYVlfAQHTHPPnAY2zroxdDDtl0sAUKv5Ai8LFWKCd1RTC2xqUIO6IZd5TKKtZdcDKvKlF9DxqE/gRV1dk06E613XdEM40GQCl5m1uu3Mx8bMBXpuolfz4IgDQ0IyCsjxlG6TeJKnJ1rOemAtgEzmaP0xYQJNrLjuksaE4mKjEhNxZsH47/1n8HwJA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1516</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1516</code></p>\n",
     "published_at": "2026-03-03T02:55:10+00:00",
     "type": "beta"
@@ -731,6 +913,8 @@
     "version": "0.5.0-beta1528",
     "tag": "1.11.6-beta1528",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1528/update_whitestar.json",
+    "sha256": "7f8cf3a4db39fc3daafa3e3f64df9c036fc5b15354eb2dbe1e5770a8c7ef559f",
+    "signature": "PdiFpjiUjWxHTdFdEV940i6soFPyA7OpxKUu9a+1KcMYGoWkScMV2s3Gy3YQ3UNpao99gYhGoETqxPzzwnXkAPrrc6ZMFTaJbTWtbVFatrzagwhg+cBIYtoiIupikeEBjYvcLw3vNjoOozGYssMphWJ0MJd4zDy5wCsnbZve6ZWheFjyHcD1ColRCBkXFT7Rvl6frd4ubc4iWilIRl72EQvblpSPjV4wJjffunXqgxK1mRaoM8XIpXfzuVzMRBtryX1zoHDyvjuvR4BmlcwlVfEJxrUQ6+fSLgQ8RX/MMe0y+126VQhmIB0hcEbZyGsGvVuViKrOT/FEU11NBLj3/w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1528</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1528</code></p>\n",
     "published_at": "2026-03-04T00:53:03+00:00",
     "type": "beta"
@@ -739,6 +923,8 @@
     "version": "0.5.0-beta1537",
     "tag": "1.11.6-beta1537",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1537/update_whitestar.json",
+    "sha256": "b18004f5fff606f74b5deb571cc93ff0886b98edfed42a6dc321707b52f5fede",
+    "signature": "OgdlsKCgUb+QS4l9rozHXtRvYMtp9v4Xnr8qtEsshay8QESD6LP7eDbBa9z0OYcdqSdRjw9tadyU6Lq8zyyFwSJ1gFdS1Q2NS9mCpNRHS0H5MzQUL1n++vHsaLflV/Dn/mhJGyHsQvAkcZejo0lIE9AjwppMOAgRuhWDgPU/c1ERslSj0H/1DVT3qaiU3AztHHj2nSXhsdM3U4zvLYICoUJlEMauxBBWd/orySNPck1auk5GO+o83i8e1a0msjDQU5DzeLic5UmpJz9e5gLHuoyeFEc4M7iaPbtqYi1BmYId30i6y/O8aFVTSJDNQ59GLmqY4PdbN6LsQiSF03MWzw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1537</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1537</code></p>\n",
     "published_at": "2026-03-06T12:49:32+00:00",
     "type": "beta"
@@ -747,6 +933,8 @@
     "version": "0.5.0-beta1548",
     "tag": "1.11.8-beta1548",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.8-beta1548/update_whitestar.json",
+    "sha256": "0bf0df583915e6296eda8cf10ab5b7b631399cb3c0d0d2f303087e57616f5ed4",
+    "signature": "cRJyZtyr97Q6sNOxfk4mFq7nmiF3RE+AIG3du/uqUYh+P9fl9EfaTGlKFBB/n+AuwPgchV0aphGfjH5815+MwrFE5OV9RWIdfrpfHi+s4nLxMKS59lz0KhPrbvU6l2hX5DR4TejrFREnbiB00UENywdINOSDrQN+4AYu4E7A/K0ivw+9uJg37JJOKRH6IUCC+YRyB6nw1i0uf2JOhl89H4k6jI15RJUJLWPnbsoGR4WV8KKUICQ8nHnD9qiB85blnW1RN+gSyKMLc/C0ebnpbeHMyqy6+fGMAov11klqj0xZat4Jkvpu8prkXgQ3sl6b0IMIfTUvySjWdYCJDQS+ew==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.8-beta1548</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1548</code></p>\n",
     "published_at": "2026-03-07T15:54:47+00:00",
     "type": "beta"
@@ -755,6 +943,8 @@
     "version": "0.5.0-beta1553",
     "tag": "1.11.9-beta1553",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.9-beta1553/update_whitestar.json",
+    "sha256": "4699e32081ee8ee75815e4570bf3e9f8db0cc8833bf77f9af22a7ec7dea87bd3",
+    "signature": "JCJMnfW/W6TNPDSv2fNfV/AF+zAqtECikRX9iElzJCJmzmV0u0KigtZkW94QMDyrim8viDJOrEeDpM/WH+HOFN3E6mScgRNRLb6oKSWl6DjnogSCe9xsdFUQ0F/r7VDSNmq0E243tbgJysHcXsbhnrMPwYlXsHobirBuKz2gFEclryAo2Sb7iZKrDxLrRAStNPpbYzDpBFHwYkttgrCR1+jxm9eBWgW4Vn3dZbTLIv+EMPSKUYONeX55TA+1qVdCf4/G5F6O0EGtc26Xqoud8tvKW/PV1kscD1TsgguEUs/ZWQFZLVCE6LcknJ5QNw2YeD4YFB8p4o8JOigWgYhKTw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.9-beta1553</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1553</code></p>\n",
     "published_at": "2026-03-08T20:00:30+00:00",
     "type": "beta"
@@ -763,6 +953,8 @@
     "version": "0.5.0-beta1560",
     "tag": "1.11.10-beta1560",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.10-beta1560/update_whitestar.json",
+    "sha256": "c583aad2f9d23517476fe3e04dc1be55eaa1e0004e2431f30efc412890acbfe2",
+    "signature": "bDvkSP15CUTxBx+1157Ad2Ks2Cs0pUHXBgKfaoncKxM6mE7/ZURKFEzA1KjWPDywaNT/Oug+MnpGAJxGYM57eCRvXR/9MHxF0o1j/Vy6dxncfG1SXSmqmTibKMQaJPC4WkyQm60+Jsg8wMWFTKx7ep91EIPymOezba3bqMTCzu3L4nEr6VuDkeftx09pekTNcozxRA8Y9tl8/zje0+YiS9is887Z6/whUF5J7nv9StqKG9nCKSVnBS2UBS3UxE0d5C9nnhI4oVRVbVKPYCQ+1uIf+B4GymFMZe0N+8YU4GnjdUXvNXq1UTdq1cTuChPrCkUEo6Ki0t26F9aeSwUeTw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.10-beta1560</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1560</code></p>\n",
     "published_at": "2026-03-09T21:41:46+00:00",
     "type": "beta"
@@ -771,6 +963,8 @@
     "version": "0.5.0-beta1568",
     "tag": "1.11.10-beta1568",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.10-beta1568/update_whitestar.json",
+    "sha256": "d209c94b7f373440afc433c717afe716c0796161649e569f96c5648c2b2364dd",
+    "signature": "GzYQMZzjgRxx/ak/tQ15FyZ5ZgKhPkGrgfYkxg7O4BQV74rhZbc+pyWUorVzn78wMdppD1FkK5LqhX/ptmS7o+oJz+8224OlvNm8M5eIfCmMWvIjD07HEFwp5rUPx0TpdTz32U5JLkuMMI/hvytlyXj19g6Y5mPJFLI2XgceQA2VLA1AukF6bMWga9dPhPMGzmyGVRDj17wP2fRW5xrhWNFDTj9A65uYCdf3/PKPLrB69H7XOYeMIXttt5Y57+Wa+fR9KCdibCL3mS0py9dEyLuWV6xPqRJWnNIHooLewIXQW4VmB5EXZdWd9/rY08ufIVRyuX+mGSrX9qT1ZQSsWA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.10-beta1568</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1568</code></p>\n",
     "published_at": "2026-03-11T21:26:42+00:00",
     "type": "beta"
@@ -779,6 +973,8 @@
     "version": "0.5.0-beta1607",
     "tag": "1.11.13-beta1607",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.13-beta1607/update_whitestar.json",
+    "sha256": "8f45473f827357263b289c8c6a934268c5816c4b8fe8bc1453098a4314a80321",
+    "signature": "hL1bJvtJ0n7VXlDWC1kmaGTSX8Ilb85XJY43zTGzhu5CIwuIaLszIs7jtyQHCS9JDaUHSZz6XoxQuK6yC5PjSuG8EsAND1Z+zY/EUewEnZ8k4DuteVS7n5KfXebVffEdmuMT6bFIL3A6hTF5ClKN22pWoWyfWgPgohrd/vy9MjHFjqdas91/9btUiffpWcBUFztOJ8eqv7CKG75h5MsELCxheHqSsTQUKk5oldrCDiT/FYzPGbYodyY6X+YyIkf2qVh+9v8dENhp+oYR88/jlFVrURaEQuyPaXWqAiE8w+CZHVrQ5NKe6ybfEmczAcXHgW5wFpLoUxnRWbrQSJPd3w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.13-beta1607</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1607</code></p>\n",
     "published_at": "2026-04-11T00:20:37+00:00",
     "type": "beta"
@@ -787,6 +983,8 @@
     "version": "0.5.0-beta1610",
     "tag": "1.11.14-beta1610",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.14-beta1610/update_whitestar.json",
+    "sha256": "29097c096c9e246f48d91a374ba8d9da8e520f03651ac252472fc6b762563d71",
+    "signature": "dlv1qDaJdiSUL0Mp9poQEzE5rcoDSBS6mRQVy9qiVqnvDCgBu+G3gNK5Tr3X4FCdL5eiV7tfpt4E7fmOfwQQOphY3VuXa9y6O41fEkVjUdje9gyb7w9axsxjsogt1OqxN162pCLRXXJl2H8mT79dILyCWRDBJiQ8ciNo7B/7F0+pEch9FVVBnwhxIdR+JW1v0efd87vBrsQFFuWTND7pMv6b7zTwdaKUPsytoA06mXKZbLwK0qDfPr2c0zHDOuTtmUmziYHvNUy+d7ZSstmZ8v+el0+kObDv+rwINATzcEsFFtDnbSjgiQv16RjQrlhwhBcJ9s9e/Shjs78sdrOaEg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.14-beta1610</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1610</code></p>\n",
     "published_at": "2026-04-12T21:21:50+00:00",
     "type": "beta"
@@ -795,6 +993,8 @@
     "version": "0.5.0-beta1629",
     "tag": "1.11.15-beta1629",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.15-beta1629/update_whitestar.json",
+    "sha256": "3e4390fbf6acea968fa945e139bf60536b7df518f28a1767f4c4bd28a4a72854",
+    "signature": "AOMEwf4vgLshbQBtWR8orEYRNP6DQdmWSqRh1SwU9hSKxa/Ubrmm1APR566y/ItT2LtUsj4qedkKR48jmsR7CxDvqROLOrgcLuCPSGVQmHDAdIDssqG3EFQq/rJt2NQIpwjZDcaWajFSNeOeWf0ZceVqytGZ3jGLPkkxbHJ/0XUhbSXi6Ofl9K3JFMpSc9XekqBiAAU9BjXicaRsOSkv0zH2YdErP+MOlhNDwr72Yq/Ay3lp6HjjeVybQFsD/1El3eZb1BOaxYp+ouuEMGhXc3Uu2L7hDn92b8NbcYQvqLSjOu0tBUlaB4JE0dhhW/D0udsll9CNlF/e2WqQdCgZGg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.15-beta1629</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1629</code></p>\n",
     "published_at": "2026-04-28T10:04:53+00:00",
     "type": "beta"
@@ -803,6 +1003,8 @@
     "version": "0.5.0-beta1632",
     "tag": "1.11.15-beta1632",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.15-beta1632/update_whitestar.json",
+    "sha256": "9bd04dafd64d211e46d48fde05fecb5376e8203e83da16c008af7512911e59e4",
+    "signature": "BrCSl3kL44rpYa7XyFj3d6LhbH6bwvPf467kVOEjNth1jNJU+P07z0yW+EPC1pBtGt/0RDNEBTlDV+G2NcmWym/U19Glv5WdErCsguiGLg2iCrhi71Tv3+7Ag7WHsPCIGOVNRXUnMNMMrfjcW8yTAhRO3WGmcq83Cb7PqT9JkHKSA1GyIbMDQa51Tm83dBt22MoAtsF33cOpzJuRmbFHaPR2sDCwapWt3KnXeMysVsAZ4myChM7izd0TqzEcYbtKorTdLam0xVOMGTtbML/fkGc3j2WooqcJjmCuttQ98l4TWI3TVCBtBZYopjdnGdRcl8g77bmXXg0qXEG9248Reg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.15-beta1632</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1632</code></p>\n",
     "published_at": "2026-04-29T00:41:43+00:00",
     "type": "beta"
@@ -811,6 +1013,8 @@
     "version": "0.5.0-beta1638",
     "tag": "1.11.17-beta1638",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.17-beta1638/update_whitestar.json",
+    "sha256": "087408d812b856cb5707fc0f5401623f9a296fa45b353b0a0a0737ae7aef806c",
+    "signature": "j3mNEo2jJes9CeZWjQB6DhMO+TwZusQBZi1M5qzfBKQx4c5rWkoasnG6Y1iWkIGwmGOoy2gNC24/ZlwoabcZQgSfcmIX6q3HZFvxbPkfU8jWxuw/jyU+qhWCGpaGpXhVDQxIQTEeCEeGlal/8Jf9vYNG0ml9krYYg7YpntHi2w0qXUhMki5GLc1tb7uKDty7Esh98xtK/QMzjn9IfpTVDRPycIbasdQU4ZyEID5ZyZDBL3VGaxw8HPsSxXzzosrXuGJf3x4rjI1l6PbvdG57VHBC+ydEL/55iExwq0oHIPhzTcaHRYtgMVPz4MAEaGm9VV+x2neYSo0Rp9/fgD0pNg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.17-beta1638</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1638</code></p>\n",
     "published_at": "2026-05-05T12:47:02+00:00",
     "type": "beta"
@@ -819,6 +1023,8 @@
     "version": "0.5.0-beta1641",
     "tag": "1.11.19-beta1641",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.19-beta1641/update_whitestar.json",
+    "sha256": "a45c683e1fcbd111e87e762d213f2b53358f0e9d2ab955044bc69f65e42ffad8",
+    "signature": "hc6HSxui3hXZ2z3Ap6Ba/daAW3oFF1n7WiAJ3wa/7RwQFOykL8yz67NxOQHgDE4cfng8Q5ExujX0JiKbMTgjrt8k1zrYF6Xfvad7RgHfLTKaJMco1xhuBo6SJ/o87BS3VYcP9Po+nv4+GB+6ix/6e3+ZJaMwk/hZzmUCYB9Jti92W986YjcGOuPlRtyGMYVjNUeYD6mYaogDlNEiMcUYn/cvl+aoWW1iPjTSIhvWlPtukLdTfNDAO0Xc7S2Y0+VrI1TUivvWGPr+z01ALlbf+Yn1ypopGEUi3ZS5+N+nHcjRP9D/r4jahk62wRm6yIuiQSyuxZXkKWhFV5iMdHVrZg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.19-beta1641</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1641</code></p>\n",
     "published_at": "2026-05-08T12:42:40+00:00",
     "type": "beta"
@@ -827,6 +1033,8 @@
     "version": "0.5.0-beta1642",
     "tag": "1.11.19-beta1642",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.19-beta1642/update_whitestar.json",
+    "sha256": "8681d822a46958381e2d1af357435855bf1cfd1d37161c7dff216209f486ee68",
+    "signature": "vKVXP18++/PJrCRmm4Ur2+Y5ucPJ1BHnTwBQBi/dpdTcr8Yazk8HcXev7TIjjbm24MC1O4+d7K+5xfYf+zBoOhFEo83Panke4bleYCMLIvrJ3/XhdhSgiVBQx3avd4yJOviLr9jJbt/n4VgfKMxBtcs4k9Uj/anWGJAtp19+Bdha9NyauJJPRirNZs4bGQ9QOhv16tyYr7a2tbawMGC6FXDIMs8NifEEHOvIJ4OUAZVx7jnKiFXSY0554l7m5OLLkQuoG6MqAzn5hJZ2jdNAW8vYCoHYszwKSqoTtplIUwBVkYI3hwKwJjF+V5AX0c4bvxNFvjD7tt3ueieFpEKf4Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.19-beta1642</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1642</code></p>\n",
     "published_at": "2026-05-08T12:45:04+00:00",
     "type": "beta"
@@ -835,6 +1043,8 @@
     "version": "0.5.0-beta1644",
     "tag": "1.11.19-beta1644",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.19-beta1644/update_whitestar.json",
+    "sha256": "26d6a0080db9e13cf2110891be8a8b0fb64df85b4ae9ff68e7501018c2238354",
+    "signature": "c6+yO8Tx5yJtv5xeLoe6cqzzCFq7vS7Coc+pcSgSr+WxIlj8Db3CuUJ8+Wmf1CoRid7mhK6UWS2CLrof1mh3fYd7+Zuhg9QAOQtffc+O/D2jH6eQoTO5kKj6SzALF9VwUnYdfyKN/mhvOjxwGbATaFUMJnRAYTQSXWrhrBbrCrlhVEF2fzgGm3p2DVptnEStUzG6qq6bfovU2kput4pu6G2gVHP90iIdbg6oyAgGu/FPeqL30WXY7t90F+qmkauDvUeDJz5Cd3qVK46Sy6WexpEydyzo4d6vau8dXhUgDwD0IQpJTFt10m/aHzYKJytw1R7YzQFGkuxKjTx/bMTRBg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.19-beta1644</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1644</code></p>\n",
     "published_at": "2026-05-08T13:31:42+00:00",
     "type": "beta"
@@ -843,6 +1053,8 @@
     "version": "0.5.0-beta1646",
     "tag": "1.11.20-beta1646",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.20-beta1646/update_whitestar.json",
+    "sha256": "98632d77f4847cd0dd081f5935583595c9f7d1e4ecf97fa71a5e37f0c8b8517a",
+    "signature": "QvkaIn6UhUdRgP3loh86Onw8WT8XCgdemTs1lXkoohxAhEqtqrLWX2vU47hD58tXR27ShdJ5Dlz9U1lm5J+XHCG1YHK9hQQe1NPYRec5bjBmKU9truXnNd+7ueJHNskKPVGC3wYLD4u9Prn/UKyQXZi8/S2/958d97y65cML+/HuMstFxpSpDULR6d0Hgg/wr1e/AKLmra3WtQsQmy1ZSEaP8qfIJc6kjuf5H776+XRSpoBD4KvpidCtUZLgSMI3OGu5jKQCWqWVE/tkYcJC+hKqxyGDfhpucY70pKqzgvs8d57sPQzKLSwOccPc6lHFuMY22olhpMZpiXR5Obdbhw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.20-beta1646</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1646</code></p>\n",
     "published_at": "2026-05-09T23:05:51+00:00",
     "type": "beta"
@@ -851,6 +1063,8 @@
     "version": "0.5.0-beta1649",
     "tag": "1.11.21-beta1649",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1649/update_whitestar.json",
+    "sha256": "f10858d82d6aafb700935a60cc5debda26d22f8cd28d9c0f94fb387f0aa8a849",
+    "signature": "Ic4krKz6kByqOOuoZI+vBor9ZEn8t5WGhylTZUL6k/X7nUqij7PXQAznu5nH8Wy0lhQIKMmC82ZQsXqYNVkaHF9tRr8HFVlrqwUlPOUUcU9yftsevgAlaz7GQI3IWBEfK6aF3YEiyhSnsHhKJQiN8bV7gM2dRO0xvx0AoX/oMLxLvHJW9FWWlVo01OUDQO/n1lIOk31zF6SCfzrvP4tfcAu8lkuw091fKNUG+kUOdNKW55jjzjP6D0xErI08yKWzyVf/e3X3DjQTiV7wtrWBLndQkTiKA5kUZHvx0gjiTEpBZVxaBSwrWHBuYC15BE7m11ndDwf/5A5Xm3H2gO62Zw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1649</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1649</code></p>\n",
     "published_at": "2026-05-10T15:01:55+00:00",
     "type": "beta"
@@ -859,6 +1073,8 @@
     "version": "0.5.0-beta1653",
     "tag": "1.11.21-beta1653",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1653/update_whitestar.json",
+    "sha256": "f775179f1f5d9bee07ae1e76b7161269190bbb424e3ea1eb91f67d076922cbd3",
+    "signature": "x2zQQQqjCuraX7p3rAPXNWN0IYxPdDJqNupLObQ3x+zBj4Q+G6TmuiuVeMEU1XbPghIZ/OMsGZRk3EjArkRmZ5bEduUXkc6KA6IPB3HZDfZfwXTgnZ1gN+DVXzrVAcBB1VoZSU70CQ+mRLPRiiwDmyhA2JF10ddeEztAYtUOoEl0kgCKwyVCHXqfKUqHbm9r1i9kHhjlworwOWDOzflIzwVsUAXGE99vm7ADXFa3zPYX2OnjOkE1AXuD+tzGwV5ExsIaFSIimpqntSZNVAlh/+A4wooOdc21/WMPYlWG2msL7I+d8brAXTz3M9gXOwYBbBqhzdqDS+bUcVGdu/My5g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1653</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1653</code></p>\n",
     "published_at": "2026-05-17T16:32:01+00:00",
     "type": "beta"
@@ -867,6 +1083,8 @@
     "version": "0.5.0-beta1659",
     "tag": "1.11.21-beta1659",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1659/update_whitestar.json",
+    "sha256": "ec6a8c5ba6498374f219d8336e240f57fd54f58c1dc9dcc6ef9a1bd14654a777",
+    "signature": "MYXPWrKRlsOvS+HANLi5bJvA/ZdzKs+bh41Q1ZWZfRxb8/hw402vXa2WG+bpayC+pYsTP83BpcKfno2N1FVWkYkM/7DbaRnw+1kXTJsfYXQP+ngwzkv13TDOYzkg1pw/qs5eFjO3dyaPp5gipOe90V6ecRVTKrFGoqYnnqwyY0czukuYA7JcaqlIzPF9PHncHryTvW9/taVwTnQENaAzD7fxMes1m54kuqEUGQxlSFnwmv0y47VWUgpJcRDrWFe4JknDFSxd/Vxlih+2TWtCwzA2pV1SzPMaLcu2NjjqXGKaT0db3AJl01pv0rzJ89MHgFgchkZYwmvQmEtyTGZ+cQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1659</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1659</code></p>\n",
     "published_at": "2026-05-17T17:56:12+00:00",
     "type": "beta"
@@ -875,6 +1093,8 @@
     "version": "0.5.0-beta1664",
     "tag": "1.11.21-beta1664",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1664/update_whitestar.json",
+    "sha256": "b4505608c3c45161f75e7d5cb12f73f367bf35e4a828f485367327267e9439aa",
+    "signature": "Cej2K4HP6GZ3u3oiXtEBZfLOZNir+7NJpJVtqmWSQKwaXURj2wOmt3gnFX48shNneO8/GV74IuuK0LqgsU2F9wSYqbcfFmcPtngH6qfJpjAT21W/BhV/ksrMLcRMMNqYclrIeMk8zl0ie0nqljWAvQ1HbhbaPkyS/OtUcUhHuBrAb6JcUDxiY3yDjool4Ia4PpNFJhzwKYxPD17H2oRVs4xAZxSxninBk+SycXMMMREN+xIwN4aoE4ziMf+Z6XC4lVCWtj5IzOQHXTf60WtpmAeJALm1qvx5dVGFNj+EcrDazMh2qyzz2qiP9hAd4QyA68j/ZwgtHG7TeB6qNcVWAg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1664</code><br>\n<strong>WhiteStar</strong>: <code>0.5.0-beta1664</code></p>\n",
     "published_at": "2026-05-17T18:16:22+00:00",
     "type": "beta"
@@ -883,6 +1103,8 @@
     "version": "0.5.1-beta1668",
     "tag": "1.11.22-beta1668",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.22-beta1668/update_whitestar.json",
+    "sha256": "ea9088ef15fe6472add4686953613beedcb4d01dbf0ddad2d8dc0e61a97d3672",
+    "signature": "X87XbVhcspGqseuQnkOsipgYXbvrHqPSLaYPcZ9URDGW8b/fu/oBlu8L29P/g+R+WaFcbSSufysTd2I94qIlW+KTe0B1cubjGHHgfsmB5izEKSIxaDVoTPm6smOxWKUnqwfDXty1IAlp+ZIBP038hg5b4uN5BvNwR9az0z1bQ7lhJ9575IDx+CJc08TQP/n6uUcpbsXRtjHkOnDdpavXHaeSOUq9w5LitjsCjnoE1cNhaK7I2uvIocxMEff5cO2rG98fh2vTgphAsDdPfsj6uoFwZk5q1N27nZr4d6Th/ge9Jj5kDzReNrcMUUHI3tGUMb9iQi73C4k1wpN5ZLsxXg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.22-beta1668</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1668</code></p>\n",
     "published_at": "2026-05-19T02:25:44+00:00",
     "type": "beta"
@@ -891,6 +1113,8 @@
     "version": "0.5.1-beta1675",
     "tag": "1.11.22-beta1675",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.22-beta1675/update_whitestar.json",
+    "sha256": "b5a2e0c1ffa6084dc81586405ce5e094bd04416f1dbe23a240205800ea039860",
+    "signature": "ULWkGV2/BRSdKXF8c9Oqn42KJOiXh7KTpGHo0E+/7/3RlOODx1JyJb4sHSB11hBNUO+uzaAIjuYb63xZG7yytOfkYotYYnalTIuWtZf2AeZ2Fo6AyAsQQSvIhKdwwxZRxEEJ77M1+wyDd2nX0Rws45CoZgUglueTSYxRSmltlKeocjSDC/WaxIsidLfCiOD6RUQBDIReWdnANt9IWFjmMBjP+8Al6g1eo05txBI6oagx7Gvb+9aEikmn2ebVjMrQ51+H3dAeu7AWbYkdyej+bcswOcbYdLsGlJk/U1vipCpIpBpgcVMog9XDiFZSrzqEcJicZtbSUpePyjclx3iGWQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.22-beta1675</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1675</code></p>\n",
     "published_at": "2026-06-11T01:35:27+00:00",
     "type": "beta"
@@ -899,6 +1123,8 @@
     "version": "0.5.1-beta1680",
     "tag": "1.11.23-beta1680",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.23-beta1680/update_whitestar.json",
+    "sha256": "8c262b8012f86109f0444b77bbb345f2adc8fc65a2dd4389ef0d2c7827aacc5e",
+    "signature": "endq6KlG7AxZ0aBgbW4ZldG2OP5q8JHBE3yNCUGguoxzXFtVfAI0tyO0Ukxc89OWUC4ov0dfW5WA3DAvLLAKtEJ0zOiC59aWvzeeovAk1pkrKJbXFhe2h4SW/dUWAoSG57waAeGj+VY8GuMJbFSfPHFQvvOBY0eezu9ENgJbCqB9CzwLdYOoXNdeKbCjkrH2ioUw5W6FrKdLAANQe/UOAmRdAwOAonl0KbFxR5N7aIW3t32a9ggZIzg0d3Wjx56HbK6nq6af1lGD8ZrqJG2KO5VrlgYncVzE5y0XxwDYXjeUi8veERh6TKf/P/S8/BM54Q/BdJZAvKwGxEeOSVVDJQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.23-beta1680</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1680</code></p>\n",
     "published_at": "2026-06-11T01:53:30+00:00",
     "type": "beta"
@@ -907,6 +1133,8 @@
     "version": "0.5.1-beta1689",
     "tag": "1.11.24-beta1689",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.24-beta1689/update_whitestar.json",
+    "sha256": "3ce6a2b60879be8c5c8cece574d06744a4d85fff42fd75845b7cc28b9632acc2",
+    "signature": "Kj5+HOt4bltxVntREI9iLSLz/PjOW81Uh/M6u6X+vFx+T/iT1sZUmPWkRrtTkpQsxG5VzyfXlRH4yRrm05UcxSaVksj0/YjqkGnxe0t48RN9cyXm9YbJwE3E90YrNaDsgqeblEmcUh9FFiktlVeQzvzSkugpMSLusZzBaSrnP15l0c+5kvs6hWuCKYwAXxMe7g5Uo0dQWQa5DfRxWz15qXppyhzoWzwpx7isT7R2agL/UhAbujRYVwEGPB4wkKqjxhwZGDtB3K1iI9/FPKQCWIZkb4VB3iumhamJeN99W/jk2ha9SJeNsT6fvouWeXMPV3vH1ZWDN5NPsg1P5OI8Ug==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.24-beta1689</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1689</code></p>\n",
     "published_at": "2026-06-12T17:43:59+00:00",
     "type": "beta"
@@ -915,6 +1143,8 @@
     "version": "0.5.1-beta1700",
     "tag": "1.11.24-beta1700",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.24-beta1700/update_whitestar.json",
+    "sha256": "2bb6518492f5b62ed328d56656b8b0c1484c44600a43932a1b07abb9fa418c7c",
+    "signature": "ua/7bPqp0kwmceI+wXq3NoVcJkbt+fRWLsUK2D2o7tpVpDzFxKd7pUfXaoYrtcI78RT6ZoVMjKV/tsTs/k48tEkv8bqPMbkrj27N0V8iQA1U4DOzYcK+NxklL518/6YMJ4FhVOPr7li7qCqXOFVfBbtQuLhBrgdLAvElC0Utb4X/pwiSEXXtwwvzbkMksY+ZUVXbHapWaSZe5RjljdosIQH1wNjWgffvOUjSzSdzsWrhesywILg4wIkF+xp2WOxgiL6YxzyrcMMh3vzb+cOBKKRtcrYmebKWbC2h9EFyc2zPkFQAz749+uYrz2SL5s5wT6Ixi/l5zTBX4qHuoz0ksQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.24-beta1700</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1700</code></p>\n",
     "published_at": "2026-06-13T02:54:16+00:00",
     "type": "beta"
@@ -923,6 +1153,8 @@
     "version": "0.5.1",
     "tag": "1.11.27",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.27/update_whitestar.json",
+    "sha256": "23705e1080e33c2956e1b473d182bec1c4b1629af540f23d4890a487d24e0b85",
+    "signature": "Ej8d/5EU9I40LbwUnKnelxIl06vCHNaqpd1Apj+2/N7pmSV+kzkCk8my9PeEbEWx/dujOYtRrhBnZNLUnpdRKKNU6xco622jFPDIeduvn/R9OLB3JlDUUP+lcwkCIugGpAcaIsos8t6s1UvHGOOb7eYJtMbFNlqYHVi+c81kiFb0g+NDQFa9/BLlNTPYT3e/W4hv0l+uU2kHyc6uDw01bK7GT/rZfszeGAcXvf113HmUQXbj3i0TVjg+n+HsD7kgcHuL1PAz812BzaYiSf4aT+bN2y9piuuk43ZGOL7nYVTw6IRZoYbDRs1kC+N70H4do67PATNzbY3e2Bffeke46A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.27</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1</code></p>\n\n\n<h2>What's Changed</h2>\n<h3>New Features</h3>\n<ul>\n<li>Switch Percents UI  by @JakeSiegers in https://github.com/warped-pinball/vector/pull/330<blockquote>\n<p>easily see the health of every switch in the web UI at a glance, no more clicking around to find the bad switch</p>\n</blockquote>\n</li>\n<li>Wpc configs add by @paulmullin in https://github.com/warped-pinball/vector/pull/335<blockquote>\n<p>We've added even more configs for less common ROMs. Check your machine's compatibility here: <a href=\"https://warpedpinball.com/compatibility.html\">https://warpedpinball.com/compatibility.html</a></p>\n</blockquote>\n</li>\n<li>Add memory mapper support by @mullinmax in https://github.com/warped-pinball/vector/pull/327<blockquote>\n<p>We've built a memory mapping tool to help mod-makers, tinkerers and nerds like us see what's happening in your pinball machine <em>in real time</em>. Use this to locate values you want to read or write to via the API. Check it out here: <a href=\"https://github.com/warped-pinball/memory-mapper\">https://github.com/warped-pinball/memory-mapper</a></p>\n</blockquote>\n</li>\n</ul>\n<h3>Documentation</h3>\n<ul>\n<li>Special features by @paulmullin in https://github.com/warped-pinball/vector/pull/346</li>\n<li>Regenerate special features csv by @paulmullin in https://github.com/warped-pinball/vector/pull/348</li>\n<li>Config updates for web site list by @paulmullin in https://github.com/warped-pinball/vector/pull/339</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Disable wifi power-save mode to fix dropped packets and unreachable web UI by @kneissl in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>This should improve the reliability of the web interface</p>\n</blockquote>\n</li>\n<li>Bride of Pinbot Calibration Issue - RamFill by @paulmullin in https://github.com/warped-pinball/vector/pull/341</li>\n<li>Improvements to CSS style loading consistency by @paulmullin in https://github.com/warped-pinball/vector/pull/364</li>\n<li>Print() override to non-blocking by @paulmullin in https://github.com/warped-pinball/vector/pull/367</li>\n</ul>\n<h3>Developer QOL</h3>\n<ul>\n<li>Support fork prs by @paulmullin in https://github.com/warped-pinball/vector/pull/352</li>\n<li>Add interactive target and port selection to sync.py by @mullinmax in https://github.com/warped-pinball/vector/pull/333</li>\n<li>Add --test-data flag to sync.py by @JakeSiegers in https://github.com/warped-pinball/vector/pull/358</li>\n</ul>\n<h3>New Contributors</h3>\n<ul>\n<li>@kneissl made their first contribution in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>Thank you! and welcome to the project! </p>\n</blockquote>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.10...1.11.27</p>",
     "published_at": "2026-07-14T21:21:18+00:00",
     "type": "production"
@@ -931,6 +1163,8 @@
     "version": "0.5.1-beta1715",
     "tag": "1.11.27-beta1715",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.27-beta1715/update_whitestar.json",
+    "sha256": "8181e0bfca9481b183da4e5196a1dfef7e744aa1b7e2411db05a87ed11423be6",
+    "signature": "Z1ipjcdvwb/S7cXdS0uz/pCcWVCNHMhky5fG8wZjtlaZ5xFBXKWUZl5lts1qWppeM1PD2qoLotNUkZNSX4wyfAinp454U6xiIhM8OF/SW6SgWr75C8TgRMMDUNnBh9o5sKxe2kG+qg+oN1U7eopEXJggBuvvmAMupJ+LTgQ+Fabn4He2zmB5VUXwogwEHyGfEFuiNp9TDz2twTIjLb+ILgpzy2NSs9TK3YZj7xPbY1mbEA9R/KdYPdQfNllrKEAytTjSwJbSkDGZ8zy1bwgPYE/d9wN28sMQURlfMnMj+law99nQtaE53dVMreZX/MvlkhOVMFPwOaQkd38w6fnkDQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.27-beta1715</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1715</code></p>\n",
     "published_at": "2026-06-29T21:27:40+00:00",
     "type": "beta"
@@ -939,6 +1173,8 @@
     "version": "0.5.1-beta1714",
     "tag": "1.11.26-beta1714",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.26-beta1714/update_whitestar.json",
+    "sha256": "6df185be13bca84c5b3807151eb0de6c4407587ac510d066bb1a976df180cd57",
+    "signature": "elcmv+VSnSJ6RCedXSdLmHYl8oNvyLtwig02U3uasQNHhw2yfR0aNDGlujrhKfIIWxqLIq83UihBZ1/KRMnhiWHJThFOrNULdYhBITBjPDD7LSDsuNmIgghILuqW8Jtk1SlbyJh/kvpgQfUm5FczwTvdjJrl3mKGr+8TvOVu7NxxcnjxsUhoMDHdpQ/jaBgUp48fDFB/3dNXlpfNsjTbH3y4RtT2/t/lrSpEW+uUGtaFkHI6dt28A60dNHe81c5xaSe31yCdio8dlpPCCEW2C6K7XjbqmNMbuEz5jUi6gJs2YLC3+EPDLCoqGQhkcEBQIAxbK/H88dM8zOIDHdX4UA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.26-beta1714</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1714</code></p>\n",
     "published_at": "2026-06-29T21:27:23+00:00",
     "type": "beta"
@@ -947,6 +1183,8 @@
     "version": "0.5.1-beta1731",
     "tag": "1.11.28-beta1731",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1731/update_whitestar.json",
+    "sha256": "91c5f5b53fc1df37c43e04293ad17b1faa6c387d7b1b5cb87609c9590f744b10",
+    "signature": "l+OmYSX+VL9qDI4b9AMj0GkKyqk0YANvzpY+jaKsU6pZwvx3wCqCrLlC5W4744bBQP98BwtMje52Pl4Sj6TCg29pIhjQHoU8jKwsuSetSy8e4r5b0GCeZpLoB49hBNVAcKI0JZg/nF1sjTtbeHlxr0W7XEJ7EDzE34YCflj3rDsLeT1T0Qu21uQPTfS4pnP5EIV7+Unw64pCx9mcCafbkYLP/bviJXpP173vZohfmVLw5o7giYBtOOj0GnP8Tsle3YwsdQzKVeRmsZOYHAeJodYISV9UBx8HZPUtCp0X8IeeY3UJ53drxCkl+6GuRcungqGQPnSTV6BGTGCxpq9FwQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1731</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1731</code></p>\n",
     "published_at": "2026-07-25T23:29:12+00:00",
     "type": "beta"
@@ -955,6 +1193,8 @@
     "version": "0.5.1-beta1732",
     "tag": "1.11.28-beta1732",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1732/update_whitestar.json",
+    "sha256": "9dc5c90cf74a661f1a418065a887e65edee48cf7cf82838a3d9612305e64baeb",
+    "signature": "ZYReAi47x8vMYrYsd7IDq79VWxCKvHcYJXF2ChTJVx5CAjGp3GXpmMtEk2RJxN5GHf51cdszFVezX+Yuqnp/zZ03BJPYj3AkS2xOLuxKd+w9MPug0jNuNhsj54PFxTxJhnv/pQvDpvkWlN7ACb92sUjMIVh+jT8wvubG80PfZqnbpDjrK2ciea7TgD9Kx9btu/ADIZGktPWjLyLjDRl5SOolKu04ogzftljsdtBRzHzTpp7Y07c4ttjYplE7np8hRaMfNP8e2rE8K9cBBwRm14f4fWgePk0qEXha1Z9PfK5wBOOuiVNfE7qcNvjOqsbqQth099SNkz/YWO0OtvVivw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1732</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1732</code></p>\n",
     "published_at": "2026-07-25T23:29:52+00:00",
     "type": "beta"
@@ -963,6 +1203,8 @@
     "version": "0.5.1-beta1744",
     "tag": "1.11.28-beta1744",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1744/update_whitestar.json",
+    "sha256": "3e01eeeaad280bc0e7f3f686728c07931d3da21ae97e5919c428bff56db38311",
+    "signature": "JN/rja+s8IN+skrnuLeFlEGzeLS1BV278v85TrA1u1c5fuKqI/dEl5bRCmI3zgJ2AF+5o8es5nSN0gx+Wq32RnXXaGJdf1W7cA4eoYHn+gvsdqc0aU2b/ZgV8iekvYwfjoUq4TfspYWzR3BSa2aI2o/T0fAa/p/Zz1E+mKat4Q4NJ/vfsGHYemWUVJzzDm0183+49XAEMCIXhZIs5zi+2KSrpyQIjMCpZjGei500kufw2oKOVfm12GSQMWKqv3lrtULGLHcqB/jj6HkzNKTAGyZwvlw5UtJfUq+0D0bmMRK4BW1YZDpG7NS72BXJfhI3v33G7OXPkS3fqM52WH/7Wg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1744</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1744</code></p>\n",
     "published_at": "2026-07-27T19:03:12+00:00",
     "type": "beta"
@@ -971,6 +1213,8 @@
     "version": "0.5.1-beta1745",
     "tag": "1.11.28-beta1745",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1745/update_whitestar.json",
+    "sha256": "985431798b9e65e3765e2afe38cce3d718dc1ac5f5ecaf8498d85c576e2d21c4",
+    "signature": "LVkZGBYqJZsCTRp5mFAMRMJxHEceGDSQfOXioYVYEnip46y+kQ13SGdVjCtCI5+DDGqXnZIBFcUP+a9vFP3XaJ5CqFVrE7bWaWXe/6FTzOa6d/iBQGXC2PxiBLFgwKtWQUeEXHz7igJHaF78jN51YMQHzWJxuHk+b9cXM0C/1qwGS+wPyh9Ey2JWNuZ/opluKWwWWpG4gXEfkFGT8cacbmbsPKEqFyONttMtwNEQQRxZ5wkTNmabOT2sxI7KbQJHrL86kX9qzd2vjpww3om/970WOA+TAt8atvoQCbtC0KWOaXc6Q3uX0y5Fjt81EEzaXnThWIVd7Fit/Q8JlU4V4Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1745</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1745</code></p>\n",
     "published_at": "2026-07-31T18:59:33+00:00",
     "type": "beta"
@@ -979,6 +1223,8 @@
     "version": "0.5.1-beta1746",
     "tag": "1.11.28-beta1746",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1746/update_whitestar.json",
+    "sha256": "d7bfdb39568c7d9154209d890cd27c4705412d6ffe908259e5b095eb5a236151",
+    "signature": "n24VDaD5ROELIZ0yS809t+DH5BurWm57NU4dONHhJHZW8o6zKJ2qq7OP4w9Ar71fPpV/Skm8Q0ctTfwwmSb+4UZky1GES63cHLuRQpvDPt7tjKE46Er4nsAw7JscrkuCu9YQzvAdjvXhydSPL7YrRTSmuWs5BD1qMWHRyplrPk83UJzJ1VnTo8SP8X8JZYhcdOKMciLaFwyMbtkDWUQJJ/bCC7vz+6WUI5LDdcTIbGtS9F6TsVMd8A10+YzHq4kpRA3k7raIVH1U9L5OCabPna/yPrW4RHepN3icwrTt61f9qSV+kfAzOY1iSg/Hw0RVsUUWJXEm1SU5zmpvmgWx4A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1746</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1746</code></p>\n",
     "published_at": "2026-07-31T21:33:08+00:00",
     "type": "beta"
@@ -987,6 +1233,8 @@
     "version": "0.5.1-beta1781",
     "tag": "1.11.29-beta1781",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.29-beta1781/update_whitestar.json",
+    "sha256": "e81910b9016d74357e47daf51db398d4aa0febbfa6c2e24203147c8e51958d4c",
+    "signature": "yTGdYyVu6bwrtVqsIKZD/lyFMe9o5pzyoIfD99L61YlloAoR5OT7urmZtUHY/trE0iXxL7Kyqct12Me1UsOIyX5mp16vOIeaPUk4jFMcfbX6Hj0CBfd81vS7a0CqhG3FKuWzJttuq9won69anXncfXxK+LTVHSiv3BRfjUNYpeOTVxiQFA0l2kmUD1AtKVyhzufCRWig2VLmk+szjCfoPOT1QeyT1ZLWVQ1T+9b4KFVXFKzvYXgvAtIFVKmV2u9JByI3XGxhhDixJL1lMyjg0G3bCASopN3tcE/60PenEkZwDlopjenHd8aemTwvq0e3eFLiWozKQzxJM70HXElHmg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.29-beta1781</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1781</code></p>\n",
     "published_at": "2026-08-20T17:03:11+00:00",
     "type": "beta"
@@ -995,6 +1243,8 @@
     "version": "0.5.1-beta1813",
     "tag": "1.12.1-beta1813",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1813/update_whitestar.json",
+    "sha256": "cead48fbad0635a30b57ad5eb54b79156352743b94d158bd7d700305190b6b98",
+    "signature": "TGqE3AdNX+GoEnANK7qa8tgI2IYi2wZDu5JGqDgxYkcA+tCNTCG82Uri1a82Kj/pUfe4WQJVAYlUPboKCRqzRuZva3F5ZUM3iqmihqB6vBLOiWCUJ3uaJ1kr1dBNfFfl+TYQx/RTeI6P8/WI9kAD/bcWIZe1DUmlIC0RAq7OzYDRo5DuL1AE1+hYwV5S2ANQChpLQiBllFAf42ACqKJc/uZ/YF8ScMnqCueEAmksD9BkVTNDHBpf9spdtcv6j4y6qBhSdAZye6iphE/B8JPto/UesHaJLqpyH51U523R/wzE4094Zecr7XKrbJQXz9gx2e2RFk5Ju0a/QfntiS+7HQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1813</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1813</code></p>\n",
     "published_at": "2026-08-29T02:37:11+00:00",
     "type": "beta"
@@ -1003,6 +1253,8 @@
     "version": "0.5.1-beta1840",
     "tag": "1.12.1-beta1840",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1840/update_whitestar.json",
+    "sha256": "f9434f5c3e62b46d5ef93366e32d4687a49a5f8dd4893424e683593d5ebec77c",
+    "signature": "GxaqRpslMxBUtq+Yxi6wQyrGoxmG8kkRrCNrQoOjpByvZ2VLHNfN7CDt7WgOl9k7W99OVl2uKecNmFv6a5yxJrrIJNhKp4futG5D7MAH7a/BbdM3D2+Xqn6SmkAWLOk5aeg1tZw4SWlm3et6oYo5bba1VCOuo9P3ViedbvNwnYaos0rkdnjS544IkwFlMC3wGVWtjmwpQEMmIPi4yGccDp5rN5LTOQ8GiWion5mIeOZuXkPKb8kUFjkv2d/VvTYMI1ZeHhAg5Mh0N+Y5BxyoZXSQb0z4XCzjYcrjCX7UqZ6FwmJZ3LHwN9dsKqHhaY2mTh/5AyYecZYWcFA13oV9dQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1840</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1840</code></p>\n",
     "published_at": "2026-08-31T01:19:23+00:00",
     "type": "beta"
@@ -1011,6 +1263,8 @@
     "version": "0.5.1-beta1848",
     "tag": "1.12.1-beta1848",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1848/update_whitestar.json",
+    "sha256": "41e3a76a23fad70579242552d2e7e731a0d7973036140bfd16675351e9b3b69b",
+    "signature": "l04Tg26qTLb3gerXCMlVo46n7UxjFUB9Lr2fUgREoYs9brE5jL6OVoHsqWn/fUZ6bQYpu4K2PUns/dHIHwe5DN8BJ7epB3HyT4px2sUZmwC73gtvvFpMYbtO96VENGCc+2vw8o+Pvmywuwb50LW5ANimU20aSpe1MLKU4k1Kr3poFpTJAUVX85D9oRAha0XBYmUJplW3Az3dkmtHruxBsZMfHF33ln9/akzWafTAInuF5QNTnIzCmw5BEl7QFkFl65rC6FmsoaomCfjpp4pYoGwt5FE+zo+FqiQ9greJl9pJP6t15AskbynvvHUUPDJ0iDxRU+h1VeGmLkI++0mJlg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1848</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1848</code></p>\n",
     "published_at": "2026-08-31T15:07:51+00:00",
     "type": "beta"
@@ -1019,6 +1273,8 @@
     "version": "0.5.1-beta1851",
     "tag": "1.12.1-beta1851",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1851/update_whitestar.json",
+    "sha256": "08bf192740bf53026e1ffff54d26ef9e0e0e24966136946f05aef855acc1db75",
+    "signature": "TuSgDZOgIt1zP7QbV88mFWO0kuX6UQ79vyUJ7xgGZ02U74wQBG6HWZF6DpQJ2HtmIgtj9gTOo66gSs/WPwxaXzygnqkFskm/++dUhkIJDvJrPVBR/QWsSdcqiutOznzK4VOFIwN+xOJOJnjhgVWaPYgRtqLi1B2Z31eL8+b3mWWwj1z9MycB0KvVO2Dc2Ra3czrAdzovCz6nUe4HqNBI2D436WSq1le/qdrplGiMDNYMnQ+1pkPpLuCpAlIuHo0+yOeSg1GNNtA8bvN387XIDkSAQtFVEJE/ve3pEPzYGx9slptn7DEPsJVtVW1zQzYpP9LXy4JGr6cIZqRghEsLfw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1851</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1851</code></p>\n",
     "published_at": "2026-08-31T16:07:20+00:00",
     "type": "beta"
@@ -1027,6 +1283,8 @@
     "version": "0.5.1-beta1853",
     "tag": "1.12.2-beta1853",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.2-beta1853/update_whitestar.json",
+    "sha256": "55614a47bc3bd827a80daab44e00e76d66d17bb008aed591ffca6cc4d9eac3c7",
+    "signature": "NwNAjmFi9h1AvljxneAcyyqyEZ93Z40WwnFbgMxdLkWiur3Z+yS1RtvWWtg0MIxySoUNVvlGgzy4He8x+UUAUbR8u6kXHgaVK912LIRXmKEDP0N8dqxrYxlVaGGHsoMCrGu7iULahA1Iui6TpNrFPsLb5BBwuUaLh99qRQEpAFXCkSWmMYKqOzppkbVmQVFOYkNmFBT1bD+YIouik7VbKtYiv9m1+XYflWkAH41d4cNLbq34PI4XgkxFTcSTitx4604cJ7xd9BtHD755U0zXhY35TEXvFu2yVPKMCWOsD4WkKjggFuFYzj8nY26gzcshsZCcNK2Nm8mtDjLryAvuUg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.2-beta1853</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1853</code></p>\n",
     "published_at": "2026-08-31T19:15:03+00:00",
     "type": "beta"
@@ -1035,6 +1293,8 @@
     "version": "0.5.1-beta1860",
     "tag": "1.12.3-beta1860",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.3-beta1860/update_whitestar.json",
+    "sha256": "9deae8f741c5126451eed4f61e0d4b0a877424e634c2abdb7316358febe42d4d",
+    "signature": "rTp68WF48T8tJ/5vac48MJSKpMCPKx7D3591Th3fSi5ZNGnSumxAXfMu/xUqpusAo7cnKFDDdGAZOvAOZYabySUbT2e5ehX164wIgrfoms3o7NW5uO+uNqfM1UMBpvEqzHOQCNMzMsx5zfbsf+EbQ0u16SvMqPHNQLBdG23YYrbUpurJkMFeJw0FEHSddKgvRspWaqJqdVKpoiTyTdZIOx1Fz5OnDxvpqLbN9ntByDAFwZxbKPmEhKxG3MdayrvmX++YLM7EXsum6Np8nDKHzzF7rU5uEgEEVLqHs5UTpQU/NCHVxSGKV1F0u3z1RveynPmf3Mnt0xTci4UCMDuMhw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.3-beta1860</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1860</code></p>\n",
     "published_at": "2026-08-31T21:10:10+00:00",
     "type": "beta"
@@ -1043,6 +1303,8 @@
     "version": "0.5.1-beta1863",
     "tag": "1.12.4-beta1863",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.4-beta1863/update_whitestar.json",
+    "sha256": "8e8aa8c766bc2f760f32b19d3a9492764c22d245d09b8a3c4b276ca1d37792db",
+    "signature": "kLA2Dl92jvshfpscbGiAPtrdcyz6BnH1d3HkrcN7nGnbCjmQ8M66ZlxF91lmo1ief2K1//kdbHoNA44v0J7V48bZI+u541VBCcVf42nHq01duBCbFkhG2uX7IZ7k2LT+4x9BLx2zfvsll4QKQWSLb/imFVSEtK+L4e1qW+1wf7NuO5oM4Lqq8opvil1DsZ5cowMOfYzNr6/9LYwiVUSVW1eia60S+jfCZT/aXZcPcuMTslgdrNvH5Wwe9mukxOQi0txMKARu0ACKobJdoVUdy/6FjJxPV4dHBA5qtuU5MZfhiXK8klyELx5+WZZNY48Bzncm+3WxrzbWw+8i3ACaFA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.4-beta1863</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1863</code></p>\n",
     "published_at": "2026-09-01T02:36:44+00:00",
     "type": "beta"
@@ -1051,6 +1313,8 @@
     "version": "0.5.1-beta1877",
     "tag": "1.12.5-beta1877",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1877/update_whitestar.json",
+    "sha256": "41b9f47dd55667dbc5664efec594eed1b9af004a6175593d38333bb2298031d5",
+    "signature": "W5N6Yf2scqmOtP4krwG4XqNKlyPWgWVFs/4rcwBmQRqEcrAK6+TiEXYHio3eKRmkk21eEM7QEIjWZk0x/1e65QwbH2OviVsu7eBIBmreRhmVb/oM2qQvBWWhYWDKLO2DFc5wiqP7bTTX5w8Nyx0aXHv67yzhEI4aLtee8KQsGv2mQMQLnAVrMdE5TSU+2gZj+UEjp9+lxP1vIT1jnR6u7QPSUdQK8xwkkySA1w/Dg5EnQBv0q1VVTKzomsRP1NxqPOZrNYPQqPB+c76TvLbXORKJkE0mwKJFZMwWdfPd4sORuMrZ+slDJY+tPq5f6cVELFbh0NAeSJ6Xi6942aI08Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1877</code></p>\n",
     "published_at": "2026-09-08T01:24:47+00:00",
     "type": "beta"
@@ -1059,6 +1323,8 @@
     "version": "0.5.1-beta1889",
     "tag": "1.12.5-beta1889",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1889/update_whitestar.json",
+    "sha256": "340d7cd8ecdc0198a53d683d7de588ba57c43b4fe5078450471b719e286282ad",
+    "signature": "xtJff6gZJHV0U9Z3JfTDrfIl+iPWUkOpVtEVQ8m9HW20v7I1vnZN4Hik38VXIt8Q0okneDydaABjy1wDhw8Qpf3EEUThiV3dX2S/QdhN4cIJCfvDsalWMjXfbFGfYTJ/lH/+/K+h4LsV0o77EHo5Tkr4WQDIHEWKTgZR6RN5R3IFITyjrU+lIG/kdQdy3EjNo3xmbz0eJiHawJR/EPpQcgbsxrEdd247frSSPN07fco8PQmDpNuFZnRzwGMgtJ8dUjD37qf+4riESa6VfWoaVnt/Up2qXB6APhKdOpBmznuy5vvkU0g1xUTadXuiJjj3f9BFeqMQxpWmN6HDyTdJjg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1889</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1889</code></p>\n",
     "published_at": "2026-09-13T17:24:32+00:00",
     "type": "beta"
@@ -1067,6 +1333,8 @@
     "version": "0.5.1-beta1892",
     "tag": "1.12.5-beta1892",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1892/update_whitestar.json",
+    "sha256": "c8f7c5354b8c35ae21257d68054d3fe0dbc20fc51d4208011e5c2faf5c1e4567",
+    "signature": "h4Or9KdEtzot3tS8UiMgZmSyuFS6uRaBsa0MqfZF5kaG+zzNSIDZW8Mi1j64VencQWaM4rDLUy+te/bz0TlxgjTtxSFUx/EIkscAfCglumicozqWfs9U6HMB+NKYcoDQ2FfvCojXEzbivokORvk85JIKvf7w1rLJ8aVcwOssYQC2NFeybE36pHYP1L6MX2WwRbP9j9E/Z1SL9IYhrdTzb0Ch4aB/RNtGJfDd83MK/JeBo+6DfaFMYwb+MtiFkTMJpT2IrTfPdUFN4pjqVAJplL5D5OUFAC/Gl3r1Vcda13zRqDGxflUqDzc4j1JoPJt6ZVvixNS2qhpZN1B0Zxq4cg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1892</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1892</code></p>\n",
     "published_at": "2026-09-13T19:05:55+00:00",
     "type": "beta"
@@ -1075,6 +1343,8 @@
     "version": "0.5.1-beta1894",
     "tag": "1.12.5-beta1894",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1894/update_whitestar.json",
+    "sha256": "313fef82a5f475d56420f2ba2158046e70b1d42a7cac386e263e42749f021729",
+    "signature": "KpKDjdoFoYaUa5RnFom/ETBaZd8tx2LuU2mpaJ5UxKdd6TrOd7xHwBzjvz1rq9SgqS+b7hkaWwWrNlge9JOfHJ/L1n5JyXqxN3+p7Hh+9oAzht5lXvgILn//U5zwpo11L0Xe9W+UAzBAENNEsR3DmGovH50/ZHouRdQzRN7dPR6+UwWbfrmn+QoLkygVnrcUuMN4UxcM0FJDGWmwfxdwL1gU2aZSnC3g3uImZKI29nMu67HgfhoMz2vLa+1nXt310on5LBrGguL7bg00U3b13ICT3ZXjIr1y/BnMQEBXmKuOKGKLulP+h+uPksHlwhzc2vH93OfMj0vlLv3/KxZeUg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1894</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1894</code></p>\n",
     "published_at": "2026-09-14T00:09:04+00:00",
     "type": "beta"
@@ -1083,6 +1353,8 @@
     "version": "0.5.1-beta1916",
     "tag": "1.12.6-beta1916",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.6-beta1916/update_whitestar.json",
+    "sha256": "5d97b29c58baf4acf88be55531206c2aff8a6ade42d2c39f47b9f034fc7440a4",
+    "signature": "xdYo0UxaDVcWXGFE/Ljl7wn+NN/bStWy098ukTvvQhnZfHghCNHi/ORoaGSyAaYXA0zq0UCRSvKTAMRIu+n3rt7B4P6CyyDyh3msOyDx2qDmEWCxsax/OIdZdql0sAn1zm+7+PCrthWeMWd9TLF1IBrInY25xKT4olCIgd/ZE7bLj1ALtUGZQIdaTkGnWogRHuMkCgPrtt1P0L9fYe0cXuhRyhFy9/WWdfAOshAqHUwhqHaCo0WScMS6FHVsSiE+Rm72C5SuaIRXzXnRIM8+VYbAMzvp5RyHjvLq0nNuSuL9FAyQ3uhUDkR+4kicTwV+Qcp0OaQs7wpe2y0V9gBT6A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.6-beta1916</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1916</code></p>\n",
     "published_at": "2026-09-20T02:16:29+00:00",
     "type": "beta"
@@ -1091,6 +1363,8 @@
     "version": "0.5.1-beta1944",
     "tag": "1.12.7-beta1944",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.7-beta1944/update_whitestar.json",
+    "sha256": "1f2afca54231149c2661ad5b4f1bb18126ca3a624fd521687e253e89b6fc8d89",
+    "signature": "IBtuONstEAGNkqpTpHbPmEXQhl+xvLWJtFYCeHEg3QcBBq8LfcZJkulGwh6JEpLHn2E1+gvz2Xnu0T8JGRgN6fSGHTXuZXpjTm7MNYIeF0883BNGiKwDpgPLQeqDyJbiPFXTL2qRlqu3RFnhJDn8bBcqaMxbAE0I8eFtbL6tpKlbWCG6psJk6cyUBudvW5pQMsmF73LIJVpraF8Qs7zqgxXzEP6cpqpHl/Kcj385bQVBzBvO/WOPK1QOHmsTCq9CkJlJRKZsm3G4IEzWIKprkXrl8tuaP33p363kJV2bZDeNQ7OlU8057h9BQIefLrONSH+Fy3JybJ4IevEp0VZyzQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.7-beta1944</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1944</code></p>\n",
     "published_at": "2026-09-24T00:21:17+00:00",
     "type": "beta"
@@ -1099,6 +1373,8 @@
     "version": "0.5.1-beta1952",
     "tag": "1.12.8-beta1952",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.8-beta1952/update_whitestar.json",
+    "sha256": "26225cb8b5e8c1f1904163b04055d8a72a1b44ae3bef3835f44076c137cedbff",
+    "signature": "ruKuqh3kb2u1+fpcNbhLAdxMHfSpZwctk6NKOxl7hZUUmt5muJU+PXu1pKyUW6MZimSnS+S7iB890waCg/v7KWcU1sILpDJot85NoCFjipytOMGyS6k6E8+NCllkaIeECMDafgSNPgJzgIxrd5sc4UY89XiOBhK+bBIdN0PulSk6zZLkOpSRLMV5pyP/DM8qN7TCxJmuC/QbpYWxyJKG+ubltzvbV96iYn5y292n1QjWxivYzho2BRKgoxejZRnmja4BHwDE63FVp5AQoSS66OSPj4mqp1NbCXZlMPTr9PghH4W1zWpU97g++4SSpBkokyXosIiwcXINyqVXDQR1nQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.8-beta1952</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1952</code></p>\n",
     "published_at": "2026-09-24T00:29:44+00:00",
     "type": "beta"
@@ -1107,6 +1383,8 @@
     "version": "0.5.1-beta1961",
     "tag": "1.12.9-beta1961",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.9-beta1961/update_whitestar.json",
+    "sha256": "93661215d016fece6aa6cb733ca17a67ead4224d1164811ec927a30ee57a31d8",
+    "signature": "NOKY+15sc1VMtfW0jKAP4oDWSFuNz5MJ5icHxOJjtV+Edrz53diWex0IOtilJRKmfoYHWLyCFG9FyTgZV9SGYlSWR1zlwv+gaTTkj08uLbDgIr2TKgcD9H1RvD8l3TR0FcCli6ns/eGre/NtgIl7SIW+OhYsr9q63lfNuJqxtioTEdXX7FAomJRg+8i4Ejp7t4ld6Cu6AiR+oMD+qMwVOYdFq3j5cqFpweHsYWLCM+LTfPVm0N5dzvM90cf5zk9x5sLX51k+JtQzpHleH6WSwglmWCjQtcdLZ6ri2N6SeyTUbfg4aRWIUfpm0mw22oKEpU4466jEV2VYzoyEdpg9IA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.9-beta1961</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1961</code></p>\n",
     "published_at": "2026-09-26T00:39:12+00:00",
     "type": "beta"
@@ -1115,6 +1393,8 @@
     "version": "0.5.1-beta1977",
     "tag": "1.12.11-beta1977",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.11-beta1977/update_whitestar.json",
+    "sha256": "12002e3e590ab5267ba277a7d5f4527b33e20da20b6fe69d4560ee63b5b35603",
+    "signature": "cpB5IjdqjmxPT2TF19muq8+36XVAR1eKMHqSrgAb2YlcL+fRrunoSQ8us/IfPUdaM/hCUCrcx/P+0q+pg7vaOlG+CXfSsI86L3gc4TOruVSbT54U8uVgq9XYZeggCyp5/6YFCaX6YEPmr1CXiNAxxHaF2mI9KP2IkTRikRm8Fkg/WF0R9yzN5UW/HfTgbWN6w/lz9qhlCLQ9xLqk+VnXeaIgplTLHv39R0Cz83cRrATi4ZviTI0tIk3moETxG9pj27vKSIhZSSTp8Hh2rfb4cGWyFBK4mjVxp3HMMOfc4r1rk5ldRwkbVtuMNqssWO7N/MlWV1YTC81awNWqtaygJA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.11-beta1977</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1977</code></p>\n",
     "published_at": "2026-10-04T13:44:18+00:00",
     "type": "beta"
@@ -1123,6 +1403,8 @@
     "version": "0.5.1-beta1984",
     "tag": "1.12.12-beta1984",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.12-beta1984/update_whitestar.json",
+    "sha256": "a01f644bb6cdb1efe5a87090f5b54ba091a3dd2ea719cf3ab5716aad5aff615d",
+    "signature": "SQw8YrwBUfgheaU/EnW1OudmJRuVqv/KLB/S2JcGw83e86onCBWu4uSvZe8sutlTDOiHXnwMXCDz3PR2rSWXn393wZLeAPwRCJO/MGFvlwHvyWhMyy16XOqKDmKrY7BDqK6g6Mwm8h03gzIji28x66gpiEJmctC2TWvijm8ySOf64Cn291UoxAVw0Ej2/uLq/1oADQgdusenb80j/DoZbhaJSPL8j+xOOqR+T3xWJ9Fq74VGJ6q6wYnyh+rAEftOivBnawFBExpnzIa073FO+eRfsCy0a3ZJZwDTQyxXMyxWm7NswAlsWSRF7DtJeW7TWFE9E/UeM0Uh82imjykaFA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.12-beta1984</code><br>\n<strong>WhiteStar</strong>: <code>0.5.1-beta1984</code></p>\n",
     "published_at": "2026-10-05T00:43:26+00:00",
     "type": "beta"
@@ -1131,6 +1413,8 @@
     "version": "0.5.2-beta1995",
     "tag": "1.12.13-beta1995",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.13-beta1995/update_whitestar.json",
+    "sha256": "757c9d78c7af6eba9fd0b909e7d04c47321c8c5eb7615341cde9510d3bad038e",
+    "signature": "ol4XDxjYUBDY3o3RTfkfofhUBDdE2rTTbz1t48Uzkkf67TDk/D5OK1P33XJLrFzYKbqqN3lSlHzh8cNw3UCGmX7mq5ZzPnEe3Ebmw4CyVLvsm1+2CM7WnuN6zFo/kFIZLGh5oK/7HWaCS9MFJhgYvqcMWNXF7NrscDdWyhD0p5t/3qt61Qi+kv7M/NbhNUFrLI62WSOU88ncmCBJKT6uqNuLD6BCX0+9rs5UeHIl43QqSFB9ONzN4e+7b3+6I23pPDQza5X8N3tgTPBoo9QFb6VGoraAlgMljz65cDUaO4VKj14AjvovWF8DWSbtLWR9ze+s3xW1r+Q2wDp/HYicrA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.13-beta1995</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta1995</code></p>\n",
     "published_at": "2026-10-07T23:33:41+00:00",
     "type": "beta"
@@ -1139,6 +1423,8 @@
     "version": "0.5.2",
     "tag": "1.12.15",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.15/update_whitestar.json",
+    "sha256": "1886f99eb5d6dc18088e97a93f6b1bb932c252a24f17e693fe097d23bc58dac4",
+    "signature": "D+cqpiclU3s9qeaSOZUT7LSTXxxPo7oVyQBr2M3CI6U8LM82umKlKm0jgOnnloDLXyO4lmdN04xVmaxU3f+ojhl/flGqhEpClqD1FPyiUleZtSd+Kk4fwSMh1/Sz8hVZPyQDqXHyH/yvTwaVJe/8elvjlteHntr4QtbqXSDo3KEUgFSa9Qg8Y3DZ2RjAqZeTIxbhmOLonDZjFD9FUnm9ECE24DzNzSZ2DDycycmvfCgp3r6BoVPLbbhaUX8fdRTCmZKDog265mpLeXHCATexvHVF3yRePsgn86Ue07UbTNY9sp2wiUZib9wpr856auUyz9B1moHQmJXXIM4K/3WupQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.15</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Classics by @paulmullin in https://github.com/warped-pinball/vector/pull/388</li>\n<li>Updated information on the vector about page by @paulmullin in https://github.com/warped-pinball/vector/pull/392</li>\n<li>Added support for 4-player EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/391</li>\n<li>Player up reporting for EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/402</li>\n<li>added more configs for classics by @paulmullin in https://github.com/warped-pinball/vector/pull/404</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>F14 Switch Matrix fix by @paulmullin in https://github.com/warped-pinball/vector/pull/399</li>\n<li>system 11 game end dither clean up by @paulmullin in https://github.com/warped-pinball/vector/pull/398</li>\n<li>Admin page load harden by @paulmullin in https://github.com/warped-pinball/vector/pull/403</li>\n<li>classics ip display fix by @paulmullin in https://github.com/warped-pinball/vector/pull/406</li>\n</ul>\n<h2>Docs</h2>\n<ul>\n<li>classics board documentation by @paulmullin in https://github.com/warped-pinball/vector/pull/389</li>\n<li>images for rottendog system11 installation instructions by @paulmullin in https://github.com/warped-pinball/vector/pull/387</li>\n</ul>\n<h2>Development:</h2>\n<ul>\n<li>HIL: stop the post-flash reset race, bound every mpremote step, un-deprecate the runner by @mullinmax in https://github.com/warped-pinball/vector/pull/390</li>\n<li>Enable classic boards in HIL bench target resolution by @mullinmax with @Copilot in https://github.com/warped-pinball/vector/pull/393</li>\n</ul>",
     "published_at": "2026-10-09T21:50:37+00:00",
     "type": "production"
@@ -1147,6 +1433,8 @@
     "version": "0.5.2-beta2009",
     "tag": "1.12.16-beta2009",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2009/update_whitestar.json",
+    "sha256": "1e0aaf4da2aa4eef9fa9f993aabdea4c5b96bebc94e6ccde8eb50c40d11acbe0",
+    "signature": "o1Gyz2Z/AO76h6P3or27yrI7OJDHxitJb1z9Lc5twBMwZoZ8Rj6T/pZhzpxJ8wOgzvt6THOn9dXZIVwqdTDkGJjUEfYSkzCHd9k1sFgJYrHsZjfY0kXjpGE2/ddOEMMvlB0LEcOkc03E1pjzSzBfKZ8yfO+Kf/Ci0tJOPgmowEvRvcFZq0khYZ1ux5AEChZwTT201yUpLCqc4stcUbnyjLDXKK7YCpCkm6gy4H7wIhvtuPpngBtIWbdJfdGFRXnWGYpwr2Z+C/9Xo4PlNQTNM/+tyPbuMEZEa/RdJ6OafmC7BFHbjjMukbn40VexgE8Kbii+SID2OGkMNzYRoAQsVg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2009</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2009</code></p>\n",
     "published_at": "2026-10-10T16:51:43+00:00",
     "type": "beta"
@@ -1155,6 +1443,8 @@
     "version": "0.5.2-beta2008",
     "tag": "1.12.16-beta2008",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2008/update_whitestar.json",
+    "sha256": "11c9a773102be1aba762b4042613bba9f4a0b674dea8358fa9d62943e3dc3574",
+    "signature": "xtOqgEMIta38vg4mkCPCaAXQ74FCWu/8mZTRNb2NoAUfJdo5wIRXa+KNMAmuIHTZmEwaYQgifNOgMHaS2lBNab7iynRmr+PHCLvD6D9Tlx+qggfIRVgkLkgGSLs1MapwqsE8y3ShYGN0gxYuWs40x1fkLlMkqALjB3Py+9+V6VGtFb/Hu0W1iDLliaJZphHEAZ4WIPAL5V0ts/tQRbmju4Se8CHNrCq0wn9sawG+1UiQbdufQrPgJWN2dtJjeQMeCbjO9YEhFsznJwQ5co/Xedf8JTvlfW0s9S8gkITaF9jyy7Hgku36weXSzBANYhlLl9+1J7ccV/rJfM+R+FeMcg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2008</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2008</code></p>\n",
     "published_at": "2026-10-10T16:50:50+00:00",
     "type": "beta"
@@ -1163,6 +1453,8 @@
     "version": "0.5.2-beta2018",
     "tag": "1.12.16-beta2018",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2018/update_whitestar.json",
+    "sha256": "83f54277d0eb095e78617b702802845a4039981372f8b8fbde7a0d3b39cc4288",
+    "signature": "GTCWOCwc1E/NCQfFWd+cKmlqn8QpjAsFSLEd+d3iHker2nBvhQkaiaH7guUX/hV0oQ/GzHQ8ukAN0zZX9w/Uy4xDo+Dm3zvxx53ca83J1Oj4wWs1swo8Y9watkceJkiQz75k9E4fERSHdWYC3YlYhYfZpjNxQAX6SRB+EyJpLmlRCLsc/g8Fe7xORJjPR9tDLFSCA9LgVYYoozft3AEaHkV8Om9TaCX+3kGvP5Wy9f/EvCzO4Z5IfSPhO8SZEFXIxykZJW8QhHsRf+2/gjwvyw8Cbc2zQ9caQWXHJhSOzCofGHzNR4UDPHPwdefLPIr5gCJQ5KpLKZvBMpnLbdvL5w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2018</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2018</code></p>\n",
     "published_at": "2026-10-12T16:45:59+00:00",
     "type": "beta"
@@ -1171,6 +1463,8 @@
     "version": "0.5.2-beta2021",
     "tag": "1.12.16-beta2021",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2021/update_whitestar.json",
+    "sha256": "42a9c09ff6924d0f01e834bc3480928a3cdc7bd42f4289d011d655f5d4580516",
+    "signature": "M34oaYs4pIqhFvl+gq9E2lI4MlMmo6ZSkrBAteUPTL2fOkjioCel/MFlRfcUgpdGB/mTqvIqRBUMTrOjT0FeU6TxwHMkkH9pStsIkjBYvkmQbM48CvmnG5e5jfQbjwtCioV/89DmP95Mpi+EPPs2JFMu/Nv1YhJISSIgh1ZxG9DCVYsuEJzxTrcTmA+JH6T+LQdt6wx6I1BY6igUhMAk7zaAn4jXlnDVRmyG1EPj56uFHPMJPj7BVC+LbXKYc7FOAlfjGBAPmGUxLxPUwdAllucYJkRdaUucjEgi+D5LYcQMwm5Ph1H/fU+8EmfFzzcngcOyHIVXe5wzPuQKpKqalA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2021</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2021</code></p>\n",
     "published_at": "2026-10-12T17:13:21+00:00",
     "type": "beta"
@@ -1179,6 +1473,8 @@
     "version": "0.5.2-beta2032",
     "tag": "1.12.17-beta2032",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.17-beta2032/update_whitestar.json",
+    "sha256": "ed2c413260c40c950307c578ee1983debf6d235a7a28ebbc944bfe1b1268cfc8",
+    "signature": "QyvgnzNUAaAQpnNKewFNiSOLZ/Cck7HiAv6em3Y5tghaPWGJmCT4wj36kfQ2CHekwzI3oTtBpsX1schMnn6zi+rc4mdGI6M9L8IpRRFhZ1/Q9z+LGLxVS1z5BlksWAha0ZuYDdsZ84OVwUIGrI1+6yMJLKDJKbA0bBznYB8fWQU2R/AjJyGMv7LPiOBG/w9gckqoOZIi5Mjei9fnDtbi8d2Gb84BSkqrVWCptUa/wJIhW2oiG6qtxlszAwa36T0Uz8pmCG2vLHdQ80h3OHVjOJFbjU5Z6j2smmzb5jsBHcm3vbD3dId6LOy5WrgwUxADFUbqvQ5V7759ENRsZL1oNA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.17-beta2032</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2032</code></p>\n",
     "published_at": "2026-10-19T22:33:09+00:00",
     "type": "beta"
@@ -1187,6 +1483,8 @@
     "version": "0.5.2-beta2040",
     "tag": "1.12.18-beta2040",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.18-beta2040/update_whitestar.json",
+    "sha256": "1ed14fa9b1ee03ae47e83e95404dbd592bc50928ae8f1941b3935d700d677c48",
+    "signature": "bAzUx5CcZJqk8rncfaNucfBCnZTLB8ATrRzZWNhbCyxfDE7DXfMElltKtFqq/naLfPdFJWKtMhr4bHPmHAav729aAJai4hrrijo2EqOrdWa3+Bqak4+4L1FsgGJvupZFJE1EhJOwPSa2D5l10aj6Sy3WmIYzRc+UjVgxXcIQAjzT5ZolvPBJpwWU1zy3ai7UAJDSP+WBpYXeDpUI/Sc2TFfkHmPz1xO8lC9mrZvWc2DEKPUDU1ptDPc8r9uyn7cIByFhavoyUx977jbOH9l8bjy3cEUwXxCs8EZVe3JwpTTO9T4Kgfk2pNu+C4Q1DJzum6YMrSdYbMTs8pOuXubDxg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>WhiteStar</strong>: <code>0.5.2-beta2040</code></p>\n",
     "published_at": "2026-10-22T17:05:44+00:00",
     "type": "beta"

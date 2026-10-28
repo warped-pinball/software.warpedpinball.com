@@ -3,6 +3,8 @@
     "version": "0.0.0-beta896",
     "tag": "1.6.1-beta896",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.6.1-beta896/update_data_east.json",
+    "sha256": "3b92251187925669d23f23c42c78aa2bb681a69751e7fe01809b88e1c61918ae",
+    "signature": "qIS+5JaYYtY98z3MCR2G8+/JXb2y0Sdfkuk+tXzWy727tbU81NgWlAtXl8JvzHEajwgtnyfb3WCi7KDYJF1Dbpf+LDjlNOcEDcPDygIIRvmEs5/LLI9g92pIdi80VOrgy7dakVlZUyiaLzX5jT50eYqYkynG/6/HwwpPkZE9Pdwyj6ik8Sv46a9K96iL0aRQ1JQ079kc7YAVnuJZ0/NFYPQDSqQe26TPJwCTGqCK4aLCEpon8T1zT2uF4eNgsIRhQ6zp4lSsO75qJjb7U2yVAsvEnDCj4WhHw4mOtLqijp2Sd0xXEm4e40Cedcj4469YZ2o3Zw8qXnyg1+jJeY+Bmg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.6.1-beta896</code><br>\n<strong>DataEast</strong>: <code>0.0.0-beta896</code></p>\n",
     "published_at": "2025-11-16T01:25:18+00:00",
     "type": "beta"
@@ -11,6 +13,8 @@
     "version": "0.0.0-beta899",
     "tag": "1.6.1-beta899",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.6.1-beta899/update_data_east.json",
+    "sha256": "00b7677f4e2cf2dde58d7b247d0f7f549162f7a6c11f449f6b947d31e0a342b0",
+    "signature": "ondgcIW2x/wTzb8RtCNd3Nl3f64lk11yK9/VxHVXmcUX8RrJHQddQ6CKZ7JenLGx9njoRfFSPxCbmJfLEz0UtU7nISJoSceqPKLOmt+efedGXbqLcpSOUozWrO7x0JLLxTNRckHm+rRzPJWuB91GASKy1cXlyJ6XNP6w0VskYoZxFaB/trOuYp0THD1OTIWtDKy8lfSkpZdYcQlDR0shSxoVH9+P570NO5n55IOJoJWhEKOcsa/mZrANCKvIvt80HGdEpA7dpGu3PuNz+M00qhIf2YSFAx+YCZKRA+Q1Tfcv4qMk/jQMBOhJL0TcH5NXFOpLdy4Nu4JqvRElk89wvg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.6.1-beta899</code><br>\n<strong>DataEast</strong>: <code>0.0.0-beta899</code></p>\n",
     "published_at": "2025-11-16T02:29:07+00:00",
     "type": "beta"
@@ -19,6 +23,8 @@
     "version": "0.1.0",
     "tag": "1.7.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0/update_data_east.json",
+    "sha256": "d927f6ed5b2121050ae3c438f243eb1a41bf4f0a9241b1cc02d864658dcd0fd0",
+    "signature": "h4EkMhK8gTAy3UyyB8TPsSH3uOZKEjNC9MkTBWwIAil7m8dGZ8yG+Rm5YJNlaYtuEZ5SAJBK1AxJoPxA5HSttRCOqNuhzR5HfSs6wMTn6y891m15HxiKzEklQFc5ZxVNNY8Jh4qai+IzgM8jqewU6mNK/Kc2gLSquW+i1ICaYHCLSuAl7wMJt8/BcYSLWfO2PKyONAPRw4cHbMOOTzcKObkJlvckQ6iW8G3KgRqJh+PgJlIvJplvPEeQODNCRU2bhpU/ssus3CaSn7JKfs0zVo6mA4PK1Mz9Z85ERZPXEaRoZGTV6q80UeD6C7Fz3vauSnAGD7a3lVvwsUX11Ye4fw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0</code><br>\n<strong>DataEast</strong>: <code>0.1.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added Terminator 2 L84 Rom by @paulmullin in https://github.com/warped-pinball/vector/pull/174</li>\n<li>Added stubs for whitestar and data_east :eyes: by @mullinmax in https://github.com/warped-pinball/vector/pull/162</li>\n<li>\n<p>New update build logic and better compatibility checking by @mullinmax in https://github.com/warped-pinball/vector/pull/162</p>\n</li>\n<li>\n<p>1.7.0 by @mullinmax in https://github.com/warped-pinball/vector/pull/178</p>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.6.1...1.7.0</p>",
     "published_at": "2025-11-16T02:48:32+00:00",
     "type": "production"
@@ -27,6 +33,8 @@
     "version": "0.1.0-beta904",
     "tag": "1.7.0-beta904",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta904/update_data_east.json",
+    "sha256": "9948278be29c353d9d751b2cc4c6d210c34af9ce2182b3486c57af71fcf6b2e2",
+    "signature": "TyzLUYnd4Rw1vi7BJpNS1mJHUbxZO5nhv3NRXjwWmjD7hXJzZtCQfP1BkMxMstG7TflkVNSEIdnzSPfMz9qsj1mszVsRIESklp+lDr2lYfBw7k5kWiR5AHatKaGoFJ/bQujliUpazLTlklUo2+3UQo45qSPhigtr8BGNXliq26UR46sWHon/SqX4do13B4fQHL5xeTp/FMFLLo36CfntDdDxgtzbm0sh61dXW2zVJti4KzS5bbha0lupgYmt7WZwwefbBTU3alORLhRRkCg82tJO56fE2acG8JiA0/oxgyy2Xrw//aJUCVhTuMI3iRBspgD7E0pNtSThEeWPXFSi9Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta904</code><br>\n<strong>DataEast</strong>: <code>0.1.0-beta904</code></p>\n",
     "published_at": "2025-11-16T02:36:21+00:00",
     "type": "beta"
@@ -35,6 +43,8 @@
     "version": "0.1.0-beta909",
     "tag": "1.7.0-beta909",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta909/update_data_east.json",
+    "sha256": "724330167d90a33f0efc7befaaec3904fdb78f7a881c24994f2e451607c074da",
+    "signature": "IF7W+i0OH1DKUduNvCWnzoz/xxgJV4uOSWXJZsxcogYdg39GkVs25lJgD5GjLfM7A4p5YlIPl6uuA2YquQz6E/HoKgrjSyo64amFkoVGCElbdoi26GxvKbne6UYQoygKuC5SIcgvw4klLnFQTjCuTgQFy+8Rk2GX8qeKPRYTOMhyR2DiYPuHpXWTw6TehQPT8l34dZhs5YbToC+rippRJ2ObwGAKEZbsFiO9AlhcEk62gBJ9FMBN/+vYIVtQ2Xzz3LupVR+4cP1KyvDItCgekLcwDQ7XkVaLm9XrBgLjeip3Rb63RuHN9XHEH0dfrJYkKbJXo8KmmJDir29eMmohXA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta909</code><br>\n<strong>DataEast</strong>: <code>0.1.0-beta909</code></p>\n",
     "published_at": "2025-11-16T17:49:59+00:00",
     "type": "beta"
@@ -43,6 +53,8 @@
     "version": "0.1.0-beta910",
     "tag": "1.7.0-beta910",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta910/update_data_east.json",
+    "sha256": "459b1b02a7d2377f40a27d1e15c28f5303e8a62f7cd295694e0ec7392d8197e5",
+    "signature": "aH9KHfvgmP8Oc7hYtdRJRrwQuQtW6cXaqOJFFYwTdLYXsvIl0VbvG+K2eQcgcXCWAmq/cHfgb/I5CR/r25e6eMfJAQ69GNF+KiPFgbAmc1bRUrn3QPZpdgndTLap1mjnz0j95hfPMQ3Daklj+05PiYWB17WbSzNFoUjICbfjB/wMDc4f6MPfQ/RpxsMY1xFWB1R3BUtF1Gggw6hJQ2/4/xvqmhFkhwtE3QA/96KNeyF1tXQ9XZayOkPL3a6oMUZe7mQ78Zf70MKZVlQFI1OnVjOUK76Irq9Z7G8edmDzjZsGSuVOY41d10nmeQTgKZw3N8JdRUhXQtPfdQulaBCoeg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta910</code><br>\n<strong>DataEast</strong>: <code>0.1.0-beta910</code></p>\n",
     "published_at": "2025-11-16T18:04:33+00:00",
     "type": "beta"
@@ -51,6 +63,8 @@
     "version": "0.1.0-beta944",
     "tag": "1.7.0-beta944",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta944/update_data_east.json",
+    "sha256": "cfa2881f977ac7396e297e812d5330464d08a52a7b4053196e4fc979a0a460cf",
+    "signature": "mQDPfy2kduTVkMMzndc7YGtIJeoBXRi+pIq/lWPuFkoB/SLImUlXgCmHhOmVIMcRZDfiXGffU52VAyYYBr2ffE0rh794Q9Cx5HMBMYMOKVzB1JlPMkW6CkwvIoQOht1eybaQabYGbx3w9XhmNeaHwA3DWLpEeoVH6/57pMiFzURABLagPfRC83PjuoQxA0dwOsBGs3nVUGehQaZAsmTg+Ld/YhMbfi+W/Sw6iFp50GCaLh9EzH5SWHaBLDOsNyrZ6JqFgFoywHeuqMzpilA/5G1y96TliTMzF802/9x/+EnbFtDKrZJdT0A3gyVjrX9OUJhOKHWw0UHdP2zbsg/xdg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta944</code><br>\n<strong>DataEast</strong>: <code>0.1.0-beta944</code></p>\n",
     "published_at": "2025-11-20T00:12:01+00:00",
     "type": "beta"
@@ -59,6 +73,8 @@
     "version": "0.1.0-beta946",
     "tag": "1.7.0-beta946",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0-beta946/update_data_east.json",
+    "sha256": "70e004f6780bc2d0ee7e92842df2e43cf3908ee14f3f026142ac8cc5d8b401ac",
+    "signature": "T5nYf54w8q+VVppjz7rUI5Nt2uFno99lXtK+KuWSWy3NKafSV7vQf0G6avK3yd9AN5kDyr80Q4Sb73vOpaprHI3+gy+TrSib96cXhDWiKt1PvUK1f3NgioLS7O/VadX0fPy2g3cgbWeXVHVEunaDPGUquI5X4jiDPloXFKWdD/ZxvCNNXvrKYq3CCovmRdgwV3HsH15vZ0A3k80nw27YGYini860d4nxL91hOElbme8MCPqWTsiute4LqcnFg/i3FzG/aAEkPeppOfe59KCiW7ab1SlZx7OvTco2vx0u/6MAD0S1Lp4nGhUH+BcPnUZWI2NP6QmwM01Yer6Lqlcw9A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0-beta946</code><br>\n<strong>DataEast</strong>: <code>0.1.0-beta946</code></p>\n",
     "published_at": "2025-11-20T00:17:29+00:00",
     "type": "beta"
@@ -67,6 +83,8 @@
     "version": "0.2.0",
     "tag": "1.8.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0/update_data_east.json",
+    "sha256": "61cdbe929e86cea559cb5e8900a2fc3e56be12bf26a975497694d10b2ef4bb65",
+    "signature": "pi+rbWE8Ssf+a3fg1LE/dqoJSfJormB0NCsIihxsognxYkdnsE/e0DCV1m1OaZDwgjjYt3ah072BBH53ct6TRGj9htlKjbLVxJsC+T8oQTxDj9+A7P9/7pq/wM37XTL8K96IYqNSRnzTJgzeXuAXxJG+ZESCxFuFhL1xzrmfUxQXh/1SYl+9GUv8LfuVaMOutHzRjlz6hUihT/Fka9Q1fwlasIfP39nxdD+kDtivduwaEVgTg1LoUR95UXBtptimlSF3Vqu1T9Y2K+fg5nHxRz9IICDKcOX6uqUEEajCeVllqvj0ue6QTpCPFd+fveAin0oar8++D1NSh9eF/jWmMA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0</code><br>\n<strong>DataEast</strong>: <code>0.2.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>new rom: Adams Family L2 by @paulmullin in https://github.com/warped-pinball/vector/pull/181</li>\n<li>new rom: Johnny Mnmeonic by @paulmullin in https://github.com/warped-pinball/vector/pull/187</li>\n<li>Enabled web API via USB port by @mullinmax in https://github.com/warped-pinball/vector/pull/186</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.7.0...1.8.0</p>",
     "published_at": "2025-11-20T00:33:47+00:00",
     "type": "production"
@@ -75,6 +93,8 @@
     "version": "0.2.0-beta950",
     "tag": "1.8.0-beta950",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0-beta950/update_data_east.json",
+    "sha256": "f37c8767bfb21105b8f9cf9b40705a3a158934c18c1c745facf5b347c7cf09a1",
+    "signature": "SkJ2n30owFaU85wgkkq8ZS/xwZoCOiAv3MRtim0H0hOXCARhrldX+mwNbLZ+hYScHoNRm8uhHVf72YlgcaqXTggdlODFiWmMhKDpKGWywLvu78WW63gFa+YM0xji7Pwtr18mZySE+GRTMkkSyHYt2oh9qQMrM8rojAyQ27xdP6wJARPEWNvcc8674tEEr3PY2q4jZzZcH47uCSqxTb6XwbXIhLqo93nYupIVK8RmBGTChkSAeQhNETD8E1wgoL/GSdJQqe03izfE1HnpxHuaBRAFwX2jENvQNQaExCP1rnbnZ86mGeEDtxUYkqdArZJieqIs8BdhVFPliiCJ/Mwxhw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0-beta950</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta950</code></p>\n",
     "published_at": "2025-11-20T00:30:31+00:00",
     "type": "beta"
@@ -83,6 +103,8 @@
     "version": "0.2.0-beta953",
     "tag": "1.8.0-beta953",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0-beta953/update_data_east.json",
+    "sha256": "1b14867eaa5121b5e0b840009bec019be53f8594beb70956ae687b7a5f7a3986",
+    "signature": "LKNJXdNN8AvZhve7ULioaQ4oOWppnaimD8k1VH/1EOemVnnupChD5VPzAkA6P8OhvRz15GMHfW8mFGyF3dWB99aNTAZ0LOYZIXnzhfqen3S2R8PtiYSe8OJPGu8O51Xc9Ggcu/kM4iiYoWgVjPeJk2zIWM4fpG0oPe7KBsjMU+AwKOMX4qqV4I7ua2SvCGAq9qk6NovPTkcDnA3rSINED5n81waj+80lGaL8AiFgXqeXo1iF8IRtPazMmjLdMXWmBXIuuDylbv0YN3KyjccZcquoWPDmH/CrVOEAz9V1kY0nS9Yc0pzR6CzdPOkVJHPRgHiS0mta+Vf1vWJWHbZtxQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0-beta953</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta953</code></p>\n",
     "published_at": "2025-11-20T00:45:10+00:00",
     "type": "beta"
@@ -91,6 +113,8 @@
     "version": "0.2.0-beta958",
     "tag": "1.8.0-beta958",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.0-beta958/update_data_east.json",
+    "sha256": "e2f5da560681b26dd0749701d8ee66ef75d80ddb1e50dd164157edc7322c36a9",
+    "signature": "aX853HQBWbWvt8GarjKHUSZl2V3Wym+h5t612mv/IlwQBnmb2/KBZWFuj3+iCv3x2EaWwZ1kFqO6ssnhcpb5ekLIII9xEKOEKdKbvs2eIUHwy/fokqS1mRyXkCpzuQgi6vXvGOP7iw3dKsLJpsqBB7nuAHJ9E1GuF0CgHbPQGL7g71dbSqAKSYTNp4hcbjCCMmOcfmP9R+QEmQbV9wjOCM+WH1UT+zpbP83gGJEZQyTmGzuADXIUVL34giTLkA7Jt1LmSrZ3/K/mHaMD/hVqCZwTv8Po20hPbPhwuf0KeHejNt5o0QxihcK0Y/XeVk2MfxJg5TkN97JZHMMA1pxLOQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.0-beta958</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta958</code></p>\n",
     "published_at": "2025-11-21T17:11:54+00:00",
     "type": "beta"
@@ -99,6 +123,8 @@
     "version": "0.2.0-beta960",
     "tag": "1.8.1-beta960",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta960/update_data_east.json",
+    "sha256": "4b4aa6983cc60934e7b1e3c04578a65edd06c30efdcc9f8edb65ba0c7f439158",
+    "signature": "SN3t5rP/H59PYx1i5MNCmCYrsk7DrPTXphOafjTYhDcAN4H3BV9uYPUp2bv6RuSEMNVbbUl1kDLqRANsJdtCriAz1X/nE76QXfYkLrG6esK5SD6IXQKCdjKKXRsGTfmOW6SoOnlfqxmWH5cEP1IQW7dxp7/xdnEmVTckx37RYH/OOJ7jWRpiTssh6HW97AYGhmYA767xiyphby+luJO09tiOthGrkLZviuzvkSfcieqx/gkEeo7IFyyqGjlNdxk+Df0TsD79/MGt2O6zIHyBU9BbYOkXFp4H7pW+CaqkCIpaDNfRB/rLN/gwjatZlAmSxlJM1db0f0lHt9rxigT59Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta960</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta960</code></p>\n",
     "published_at": "2025-11-21T17:13:11+00:00",
     "type": "beta"
@@ -107,6 +133,8 @@
     "version": "0.2.0-beta966",
     "tag": "1.8.1-beta966",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta966/update_data_east.json",
+    "sha256": "a28181bb0735287f087d9763963b6157e8d8cdc44d7dcb6d56dbd46516e04509",
+    "signature": "CPmc0f4PIV9efpgYmqTCnTuypRknTEY0j8UI0KryAZUKk01OjdauUOL4Y6AhoLBo9bcZ+HPTuH764PUXK34gt7f6qCA6tfT3s6Zr+jZuBr1x/yCdN2t1zB/4V4QK0emvTbINJt/lHc6RE3RHzwpvi0BBrmtxez94Eibk+d5MMLnCfLubHDWTSbFspZGyOkYro4OhURodfAPW1eufySX+mFTK7VPcqT81fC+v6nnzbkBmms/w0uxOg4XJmhjM6RBbNupTz1ILfH+VmG/tiLGgCLnRQfGcniOVmM9cIdNKM3rJRAdbF7Mb7WqqNqC02a7/KZC3MHLwdVDY2GYFy0/fFw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta966</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta966</code></p>\n",
     "published_at": "2025-11-22T16:47:44+00:00",
     "type": "beta"
@@ -115,6 +143,8 @@
     "version": "0.2.0-beta974",
     "tag": "1.8.1-beta974",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta974/update_data_east.json",
+    "sha256": "c424a8d213375c783988cefe5e3e9fb986a25fb36053f3e7d4b9a8d71f8c2e89",
+    "signature": "p7kfbnME57AyU/M+3jGnYXfmNbghHPiky89EpwNJwHOM6PMeijFWQ3eXkfrjcMCO46hU3XjArfLEvnc7/TInQqfQkyV75IP+tBQgwDlXoIlWeMZHAfXO357gCNgwYFhKKnV/KxKKVJL6AIeswVbyMpVd9BaOVOrfMjp7Fwvk1/08bh64ahC8LOCZeMIXVR4hZtwSa7pHrb4yGhKwBfw8zUG1d2W9HIUghvgxdNeg1n8ZarTWCVm+BJHd/+7CHFwfD3sn1bnp2b96SaZKtaJBvrNzlZQcM/AbXrHGnLV7VctElJhhdTA651Pn1XgKfOQBTgnEJkIMA+wafNpAK//Hkw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta974</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta974</code></p>\n",
     "published_at": "2025-11-22T17:15:43+00:00",
     "type": "beta"
@@ -123,6 +153,8 @@
     "version": "0.2.0-beta979",
     "tag": "1.8.1-beta979",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta979/update_data_east.json",
+    "sha256": "778a29e3cff533184b0a5f71504abe6a258aaf915c03c7b7b0b7da6c6348d4e7",
+    "signature": "yw8vahSIwPdRcubtR/QeGV88RPeC7GqC9gMITOJmU0vZT19bViR/TAyBQb4skXBU4DGEOalGZHvWIvXD5DguoshHnWCHM9+vsDDH6cIYYrO5vOW+0IC19yN6y8pZRiq91KoZFjSctU8xD60tOuBooThkgyFUCljpRnOJjM5QmJWIBxDTl3JuHSueCDZDZJdqnOQesDepk7vcxZ8gFtidzWRtpGGwJ7U64bKn9WKvtixvZFRkDfjesx7or6lcLTkYA31KcHxY/rNtiQpN00PyLdUGA1yE0JrjbgTMoVE0cnlAZAZS7Wg0f0XOng8wkAFFu3d3PNjICQQDmgPQ/uY2Bg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta979</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta979</code></p>\n",
     "published_at": "2025-11-22T18:56:49+00:00",
     "type": "beta"
@@ -131,6 +163,8 @@
     "version": "0.2.0-beta988",
     "tag": "1.8.1-beta988",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta988/update_data_east.json",
+    "sha256": "1d599a577015a934c390476b35704b7cd373c0a879b0786837e2e58b35d56b9f",
+    "signature": "yAFWYwCk64wx3TRBbrPVMCYF2I6nywXT0fad2B8t44+63oX0BMnImgMS4UBlhnLsdetHRABmtzBnAoYlxHZPQPEZqPs8C3G/zjF1zDO51rqfoXSB8q3UtB3Bst30UPXAgfdjuJuuyT1dWKWuJDfnZ0mBWItEPJKdKSNYw5h48F0xgkMSlAviMWV4ornQ0Nq93aqcSw4LwisHOnsF4s8/g7wFvcDQx/PGh4G+JLpF9weANn0Hbk4eq8mT01YSl9BN0xel6uZR5d5GLGKm3P0UbO879ULp18hPiImAHtOJkGTjt7d26tl4xcIigNJ+LrAqz5kk9ivLUN5EujEMhINblw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta988</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta988</code></p>\n",
     "published_at": "2025-11-23T01:47:47+00:00",
     "type": "beta"
@@ -139,6 +173,8 @@
     "version": "0.2.0-beta991",
     "tag": "1.8.1-beta991",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta991/update_data_east.json",
+    "sha256": "ed61f78f9fe29222e3e83d3f2fdaca01bbd49f4151e3e774d806589e298238a7",
+    "signature": "J1f4mPRZiX/zHUd9Wchj7RXs2GqkdA8qXaqsGLKVkgzxlyXZPl7Y9aLJOvZxCN1EjT/hHEmgEjxhuYTHQMiNWEzQMGs9h/wxDZVWn8rSICEVX+nALWOZAvwmZ6uMUI67pIxLkCJTwlsWr+NcntnsMA08Qk4+tuaExcu6KTWYhqyPIb3wBacaPnStQvtr5SxfyWgJC/Ek0SvnGnmwHZHIorCXpwbiC7ozNAJeWcrk5mzL2/h/X6d142wlvotdAhPdXRcSOcgD3kizR7PS0TWXS2kW3NhxA8iiPJYjptuW5RG+Xq+ZvcuanBM6GGHxv8BJJYfjHJ9DnPruy1gKliO2DA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta991</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta991</code></p>\n",
     "published_at": "2025-11-23T17:53:13+00:00",
     "type": "beta"
@@ -147,6 +183,8 @@
     "version": "0.2.0-beta990",
     "tag": "1.8.1-beta990",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta990/update_data_east.json",
+    "sha256": "cd20e800a09becbca97a1439832bc52f2d2ddc25c9b6641b466fc77c964e1608",
+    "signature": "j5xeYwqN8refrrHYrFAwsWI8ZBMr2XvKAw+aIXoR4rsiVzjuUzfYMql9ONklGL03F3FXM6rCQhhb+Yv19Dh5qVKqcFkZgHkU55kJ0mCRz4kF5HQ7n7RewHxkHiKMIimyEoAC6CgYNdhidY1HvqayWnfI8sSVNyNzQKWBm3EOlc1+H1oezyvnlup8PyZKQ3qTkZcZBdzFlA/3m7F0LAw8zLCXmEUMnEYa6yHUEDnkmC3WZJO8X3/y9+p/s4GxVi3a+w1axqDTzs3d98P7Y3VZnFiU5YG0ClBK69EHSHTP6SWARYyR2+9ohYdZJ9DXRJV58vMcG9jWSP76o/zCxwrRSw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta990</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta990</code></p>\n",
     "published_at": "2025-11-23T17:52:47+00:00",
     "type": "beta"
@@ -155,6 +193,8 @@
     "version": "0.2.0-beta1004",
     "tag": "1.8.1-beta1004",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta1004/update_data_east.json",
+    "sha256": "4647cd2ec37142baad8081fec4df20c185ecd9f5129acd19258822e1a9fa9f46",
+    "signature": "mvJntB7kNZSp7ErHJsCq/ck8yj2lZOopTRwp65kBIDDM6B+vP813WbCUEwrGeJFrMXo5ETW7bk3ClAAyKnZ77uXwXttRPKImjJ1PDRwdSNWqUjzhTTYDHnIB3LpRMrYz0++vt1u774pQvuxSlCPhWMnLqTU8EUKZ6FF20k2dv9Yn3jr2qNtvkofvHwMj2w5Ibmnf1qYX4tT61aYuN+LpHd1NM4ihTvhk/FRpacRC2XjmRTNArJUOWeHqd805AjGTnqoFWWZ0RMGUAd30OB+gfr0mxsPWw2D01ArvIMZ9HDyeJqFGVUVJfle5t62lo/MRi7jnj60Gq+u+8VoNESCHZw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta1004</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta1004</code></p>\n",
     "published_at": "2025-11-24T03:58:03+00:00",
     "type": "beta"
@@ -163,6 +203,8 @@
     "version": "0.2.0-beta1003",
     "tag": "1.8.1-beta1003",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.8.1-beta1003/update_data_east.json",
+    "sha256": "7857bcef5c054124d919879cab9357a3e9ae56b2c135e7b78d89a27fbb86cd09",
+    "signature": "UGiX3Zych7sTQE51tJ3gHgcp5zntzfyPJ5Jekg/6OD1mZYTZ9QlnulRdUWG9W+KIVlF9hYaWxS/6ZAb/0cCpu83TTwr65wE3qxktuTK3Br9/F4HyeYg3Pi88QV77dcyy2LWcpLBQV58GPG2iJdAUWjutQ0oKAWC/vkJTiB4xvQ1PvIoRX31+tLz4soPNJFdMJsdWxf9cedMoTvirZ2LehkHnKjb7i6EwmDaeEsPODTSmRIrv+ieW1s5mJnwx0pyOsXs4mjROG+ZEyNmDQogzhqgMCs3q5HAdy8B3eQGVnMg6DrRwbuzId9kZgXOl+1w7W2iBmXmqwxtjg5xvJNDvFg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.8.1-beta1003</code><br>\n<strong>DataEast</strong>: <code>0.2.0-beta1003</code></p>\n",
     "published_at": "2025-11-24T03:57:45+00:00",
     "type": "beta"
@@ -171,6 +213,8 @@
     "version": "0.3.0",
     "tag": "1.9.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0/update_data_east.json",
+    "sha256": "5bde368e0d46c80c2664006bbb42f2ec7b55a94b7ed6a51fc512d919a48c84f9",
+    "signature": "i6LWCEBPlk1GEtIni+fkz/sU9YPQzfQhZLa1362hyYdHmLQqolz3eH9Fo7OdqpzQ6lcp6EcV1FerGLVfOyMnla7KW/8qNhAxga2Z023iCRGZ29h/bew1GcbWTny6H0RybcP7xMsUmoC8QclT7nhem+jThzhWi9b8lmfGeledgc9dYuTH4kgqrtjdQ+NSNoSQiCpfUXwmn/GyYD1r0dhi3CLNQOI7Anm2ssStaOFT4lmTdho3i5hk9at1fifHv07QwBPXSbSCLDqHI9+h3e74RNDjJSU0kNt3X+DEUQU9Rh5IjTH6t5xKhIJrYvEQfgG8e7OZK4s8GezYqRZj3gcDvA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0</code><br>\n<strong>DataEast</strong>: <code>0.3.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Improved Setup UI for ios devices by @JakeSiegers in https://github.com/warped-pinball/vector/pull/185</li>\n<li>Delete scores / Import Scores by @JakeSiegers in https://github.com/warped-pinball/vector/pull/151</li>\n<li>Improved storage read and write speeds by @paulmullin in https://github.com/warped-pinball/vector/pull/199</li>\n</ul>\n<h2>Bug Fixes</h2>\n<ul>\n<li>Star Trek checksum correction by @paulmullin in https://github.com/warped-pinball/vector/pull/198</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.8.1...1.9.0</p>",
     "published_at": "2025-11-25T23:17:39+00:00",
     "type": "production"
@@ -179,6 +223,8 @@
     "version": "0.3.0-beta1006",
     "tag": "1.9.0-beta1006",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1006/update_data_east.json",
+    "sha256": "81eace53650e74a550743d47fc8fa3175b48ddc280482486186b8c65a46c8945",
+    "signature": "TfTrlUdFBsqdXI9kV+3BhjfmCGXHRDARtM4mhcD0x1yBy/Kwhb8lopwcddJC28DE3gtBEUJUSu6u+zRO1o2PG+8v5SGmLaghL/7Qh5XI+jtiDh3pmjp9ebOQLG84C0fnBJLzmlx9IfX6gNDrndkMMOdhwJ/niMFTJAtu9FzRsFLeVCyQmNmXV7z5Pv2N/GEX8ARZ/sFtRm+AGTGFoGKUhyaws4Caojlkda3CGpvEgYUNtNcyciWCaz2kmDaOA+hup46+nQS88sEr4CyPv/S6PMvrQBIHyd2954vram2TU18eeJZJB3U5Z1nmv9SxqTt4Lgav9aGww8sOSrwjNlryNg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1006</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1006</code></p>\n",
     "published_at": "2025-11-25T17:59:02+00:00",
     "type": "beta"
@@ -187,6 +233,8 @@
     "version": "0.3.0-beta1010",
     "tag": "1.9.0-beta1010",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1010/update_data_east.json",
+    "sha256": "841e226721e58efd121cac55fffbbe8b7d50dd35bcf3eae4ebee7fca9c67f9ca",
+    "signature": "vm4VGydXORRnyHdAisCSq+DT8gfQ3dbIMULZStrd3WUWKgJMOqcGgHTw9IRsf/oZiMsya8u8lY7el7roxorxq1EqutSLLWqJrkg4omfSvPLFvXF5QY6jYY1oGIF7phq+lAEzR3Zo8AGXEGorvviA1lwi0T8uGZmry3ptm8N6h3KuRf67E5rk3JEIkdpyOb/reZIK+INGg2K/WYa9W7gS1VIgCMXNR1fl1SJH7lz12Mwq/4JhECjrZ9x+UBome5NaoY4vTWfSGOC1wPy/sLtrkADnGSIDTSuUHo5+KksXS25tuyTDeJGgYqyhQ2XIu9hKu7mwSzThRGJ0/N4FhlfB3w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1010</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1010</code></p>\n",
     "published_at": "2025-11-26T02:18:39+00:00",
     "type": "beta"
@@ -195,6 +243,8 @@
     "version": "0.3.0-beta1009",
     "tag": "1.9.0-beta1009",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1009/update_data_east.json",
+    "sha256": "bbad066191823a5c9fce44194bd1278094da295940bb1b9bc6ab3341b3c60f3d",
+    "signature": "H+0iGr2xV/Tx1Zi61KPj/hqflDQSHokuXdFpb6+AyuqLABI0PvPQ8hcGgAKwG7uqD8NnRfmhXLgyXYNZoLjhjJnMOkaHVpcHP9tke7p2yxIX4yxU9S+kW+PcxRmOCr/AC16zKxiEoJbO/oNNxAOotwp3EJTZeTHXtaD3N3Zb4D6Iv0DLDA2WXvyh0OZ6skERzSkRJuz79L3ve7GTfn8ueq8PsMt5cRiPxv+yTkJmErWEFcXGgdicUFgHL79grD8umsWv2uvj9QPD5tWyf3Gc1HlbnW+tsfphDHV0BGdlN6LxWNJc08SFUvEVqlJl7y3vrcs/H/K56A3MAl6QfFDQGQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1009</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1009</code></p>\n",
     "published_at": "2025-11-26T02:18:14+00:00",
     "type": "beta"
@@ -203,6 +253,8 @@
     "version": "0.3.0-beta1016",
     "tag": "1.9.0-beta1016",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0-beta1016/update_data_east.json",
+    "sha256": "f8f8e17b5e4a9bd6883e7c727791d83704dc882bade6f454ada78c9061cd13a8",
+    "signature": "ps2aT92e5r4nGZob+rrnr9CNrbcwcsppwglh+NBoKa8U625282bfriopGovSzkwb8gmhvXl51boarly6qU5DRxrgZSkPrOngatYn6U7WOIN+PrTAw1GCcGSt0DEcYZd6CclC8/RmJJUvIGmx0kaetrWbb1yJ/tEBGvVsueShHNbChPOrQyDUcC8YmWtfwA9/xvvk5adshRC/wleRdJEUl7Zl/bewLbShvPZZX6TgNOE5GUQ9DyH8zFgtMtrOc6j8IFjzc8rkDP0+2b5jPMFUUrUIAEYW0zfraREslQh2QkoqDerbcOY11wEA5XZUnbHTrT0iAI7SQhOTnxmo6P6eAg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0-beta1016</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1016</code></p>\n",
     "published_at": "2025-12-01T17:27:59+00:00",
     "type": "beta"
@@ -211,6 +263,8 @@
     "version": "0.3.0-beta1018",
     "tag": "1.9.1-beta1018",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.1-beta1018/update_data_east.json",
+    "sha256": "262abd074864f8ecd6c9beb959d9d1dbe295ff5d1dc2861566191f8c31abf2b1",
+    "signature": "SX9cVdQ/KJkMIjCkOXgU4AFoNbXdtS35QoQvrSajaV407ykQoXKsZBdStmDlDRFYrU4vv/rJ8cHv/fmkXAfX4dioRG1OU5FnXVlfqD7aiw/ACsycbuqWco99BKkWvZK0hoDP3G7I0p2GHBPOu49/kQBPXjPjI755hBcP4abNrdnvRJrvU5n21NqwjS7gc0ZJTsmBWh5SRiGaDdJ85Q3Fqdz9QqzIETulXbH/N6haXjJazNFOnuYybNck9As2PgeMcAFmjWIy3WKQNxbb2iTfY0bpX6DQWg3ULb69VyYNdfjn6RSWgwBavSiaLT40OvEzdVPxFEhXPeqYAnNXre/dRA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.1-beta1018</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1018</code></p>\n",
     "published_at": "2025-12-01T17:31:31+00:00",
     "type": "beta"
@@ -219,6 +273,8 @@
     "version": "0.3.0-beta1030",
     "tag": "1.9.2-beta1030",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1030/update_data_east.json",
+    "sha256": "427d2388f6098362c29d7a50e940d96b5b6bc7d02eb4bd93b2201c3141338e55",
+    "signature": "j4fwEDhHWO8RXP5QPiShjpyBwpOJyh6R14A1ZPV8bGGMETgUxy13q7yNBXkXKZIqDJjSJ4ESPh5cNGtGtx98QoSLieiFWNi6A7UVEa3lvFunMHD+u6XIyEzYngwujCcJpvgVwUSB4TdGLxHmPBHEnn9V6os/ZTEbNcHazrVcyQsd7wVatBAROo+I/cN5l7/QqOqoWhLHspIh7wBUJtOSQ/xt41HhYYDEobAwGJD3013HFSp0MirmdWswf5EY8fG9CPD7G3CnvaS7k2smU5bUGATrfU1ZkYdLsZOcKjLmMmZNaLAu5JhEss81eWDx6ikQPncvcKqpVwJcD0cKAu0Pbg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1030</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1030</code></p>\n",
     "published_at": "2025-12-02T23:39:47+00:00",
     "type": "beta"
@@ -227,6 +283,8 @@
     "version": "0.3.0-beta1032",
     "tag": "1.9.2-beta1032",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1032/update_data_east.json",
+    "sha256": "fadb03638cf88d49260b6318392928866d5cce67bf3f5af966b335f2ca5eff38",
+    "signature": "L1J4tLAVyORQpbc04+FbTPKcVSerfKLofTro4cLkyYVK1ucCMLIYjjJoevVBh9vTqyTXgSB1QNSFTjlBFgRdOlwzmG9SD5QJxATdNoaWqjbQBt7F9ZjzuepMG/IA5MLiQFjU9hgiHloYKSkkZsdEvmpIJsZIp3xlwgjff7heQg+PtBhht1TurTCFHW0HRlg4h5GJvkbi9X/PlR2I69cWxTHJM9rWP39JhO82W40ZNa9xmhGuZUlA574+8J6pLClT7tR75CjnGyVSp4cLOq2atrrF/wpNz3U9w9RvJlipFfP+t2OqIepeyKS3FEKgQIrcQXKXxcebYG0MAsLxUg6cew==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1032</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1032</code></p>\n",
     "published_at": "2025-12-02T23:41:50+00:00",
     "type": "beta"
@@ -235,6 +293,8 @@
     "version": "0.3.0-beta1034",
     "tag": "1.9.2-beta1034",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1034/update_data_east.json",
+    "sha256": "80fe0bae2b00e008c0b2698e8cea5a1d80e6b5a88a7e3d4ae8f2083eef086136",
+    "signature": "JSrgeMYenGSE+fi2xSpZp5Sj1jFfeCnSE6ccounx77FJ/GMgjlfy8ws7aV7SbSOGCTRrRQZcBs43ztcH1eAAfcaX8BhplRI1RCMysmVmT9bHceB2Noelr0YLooVvCoaAVevyRG/XCamaVp5SYHnUjdyxshscX3Ba64MvY+6iVrxCYP8lOrTbJEjY/zm4pr0myt16vUya7C3h4+0G3TL6zn98LVOh69cDdZP7bMSRHLG8uWVTalrb4WDGZ6cGJs3DOOZosSCSIDLwu3qt9s7JRAWDvRAZsbWZiYEpbv35JbKpBpIKi7V6mSFo3/Pupu6NjN9sHyVVY3EElRG11RWxYQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1034</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1034</code></p>\n",
     "published_at": "2025-12-02T23:46:10+00:00",
     "type": "beta"
@@ -243,6 +303,8 @@
     "version": "0.3.0-beta1051",
     "tag": "1.9.2-beta1051",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.2-beta1051/update_data_east.json",
+    "sha256": "ceb814ebf7539643fe3433bd181c13a6336d93e4e3ab44ae5a386249acbcdd59",
+    "signature": "IPBqBOt+NFU9/cGilO1ZU2d7IMtkkyC6qQy+CdwO/tsslBFCkD8IrQ2TGZxw7fa2a63XBZjPIyBBX2joCsgZMcQK9mk36Pn+FFa/L+idPvxyVtXlDSJkuTBcnpy7MLrzb9g6xXNTmwqRYHJIFLkI+dARQVTv+cPdWr45P9RHdUXbiItyCNjleiBKsCkBbAlCDwNLbMi2W1hfglDfrIR/imYVI/gde3JFJLf5PjM2ne/DuSQFMhEyOyiDqRbX7tnnz7jkPA1iXXOROe0vQa7Nn2D2r/O8dP1DSLB1qaxeUa61wWioqLIkhPQskvFGEnBVXxgpKLJ7CYi/YZYunvV1WA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.2-beta1051</code><br>\n<strong>DataEast</strong>: <code>0.3.0-beta1051</code></p>\n",
     "published_at": "2025-12-16T01:36:02+00:00",
     "type": "beta"
@@ -251,6 +313,8 @@
     "version": "0.3.1",
     "tag": "1.9.3",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3/update_data_east.json",
+    "sha256": "4ba8088dadc1f07e88879cb52474bd4eeb8b481e21262f92a735bdc018abe9e8",
+    "signature": "rR8FlpZkeiXicwXfSpyP0NPfY7XYu8MMwzKNn6gz46cQ9CffLQ15aaaf+W7rZYLCEs1nOLhrV2d89gRztRBf9xoHeNxYkVXMruevBh8FsUuAXhvTvvOeZ/BPPv0dsHyB95f2soo3/ri4CqC9+Kbh4KBixVAXBWLlZR8Dp/lOnVH1PN4tP1QqTq4FQTH31RVq+Yv/ixToCc9GUME+YopZNSxdC293+4qJnMp5ZmnI/PtPNYdDi1jWAszmHRx2QuTjcugWknEoYggvanetETqNnssHEJFt/i67WFap0PHRXgyit/Sqg9Omv04EgVNVUjHwqnTVqMP2DrFjWJg/DiKcRw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3</code><br>\n<strong>DataEast</strong>: <code>0.3.1</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>About page corrections by @mullinmax in https://github.com/warped-pinball/vector/pull/214</li>\n<li>New Riverboat Gambler ROM support &amp; adjusted config by @paulmullin in https://github.com/warped-pinball/vector/pull/213</li>\n<li>Adjusted some sys11 configs by @paulmullin in https://github.com/warped-pinball/vector/pull/211</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.2...1.9.3</p>",
     "published_at": "2025-12-16T01:43:19+00:00",
     "type": "production"
@@ -259,6 +323,8 @@
     "version": "0.3.1-beta1055",
     "tag": "1.9.3-beta1055",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3-beta1055/update_data_east.json",
+    "sha256": "f29c18ab584e105fda9d3e9094b2279ee215be43e080d9d3c8ec474006827629",
+    "signature": "hgRH005z/LFTy8b6iz1jA6LoBXvApMIxqsVUGxOZuNpBhqeoSpAzypzZLjJicIxsWb94ijniQSDp8RvL5nd6y165ZPaH0ExDN+IVOCLop/jUC0R5HP7I94pI5UCh9ak9CAKqpsxtajUrxoA7rGnCvlwTxN4Q7GFU+qJgZprqO/GxTqv/iykujsvlpIEPUHI7R2oJGRzG5b3eW6+ykBpF6dVkYeCa0vY+1jHBwA4j2Asm+/db1QFKLLG7iaA3dUZDGTven0QjCFGc8ATm+otdD5xlI8nmxLKl7ZujTGbpyNMry8XR24PKLrC3STBmbML0zhU6PV1URXljFMkcCdeWpA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3-beta1055</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1055</code></p>\n",
     "published_at": "2025-12-16T01:41:18+00:00",
     "type": "beta"
@@ -267,6 +333,8 @@
     "version": "0.3.1-beta1054",
     "tag": "1.9.3-beta1054",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3-beta1054/update_data_east.json",
+    "sha256": "d504e882577645b1d977f628c74f8e919473dbf5155b8ff6b6691f13da1c836a",
+    "signature": "dj2b9wXjuBqMHVOPX4mE3ZXGapcbw8/j9NKe1bhn2p4rBDu8mL2oV6COPuAocZaukHMtHd+6B9A522VKCC8DsUK8F9+14HhI+uv6RCgOnE4vmlzjf8CezeFnZjnF61luNCEXDpJMjgi07DQ1O8J0HNjakJR9VLMe2uCInZUJ3rUCiT4ZN/U3AxYSJRExI3u1WHYItcYZ1SxHwcvciPTZTi/cgqwhEwWGgIN5/BZMDBs+FEagLsLhzUKPJ2Fcrd9qkTtB8MAUKovUl/rzEqtsl5SYxI0TwoSXjQvHdOu9pg1MiUDX9YO5OF3tF9xnet9X1eLz2/JVo8J2O3GvSSbAEQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3-beta1054</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1054</code></p>\n",
     "published_at": "2025-12-16T01:41:06+00:00",
     "type": "beta"
@@ -275,6 +343,8 @@
     "version": "0.3.1-beta1053",
     "tag": "1.9.3-beta1053",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3-beta1053/update_data_east.json",
+    "sha256": "b3ea4dda98bacc903bcf582768cc889aa8d66f560fdad8d9f2aa2ad5c02e15f3",
+    "signature": "AhYyz2bhgUetyjpLzugL59igWQMa2o9b9Gkka9agT7mvFovNTxUmbl/dtWoVVL8LN6MxcfiQKM9zE6TBMfuzIACRQpeaIv/AjanKmRaGBLMuRO1ANIOsco2mXaAR9NPUbd9K7hU5a7SU4odcExCH7GcIOEk/tb7vgap0hnkMcaAzGopYVP6fv5uR7oGI293UJ1zFRGSB3hy/MKsJ19eTDRrTzrwL3QSNPad2u6taicgS4INgRq1HgIYcSVfDCnf2QdIjeb13NWIE9tlqe7DWkKs55nQpJFBHZOBe2gwmtYR3vyMbtFUghnDow/e6Mfg6HHSe87NYSpFdYpiym8pJ5A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3-beta1053</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1053</code></p>\n",
     "published_at": "2025-12-16T01:40:57+00:00",
     "type": "beta"
@@ -283,6 +353,8 @@
     "version": "0.3.1-beta1064",
     "tag": "1.9.4-beta1064",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1064/update_data_east.json",
+    "sha256": "f812492997269f6d9979f5f6ab427f665d94cef1b771b0ea2441b763e3d54f31",
+    "signature": "XYdPgniLl73RZZRdAFB0TQT9tr/jCGmw6BYQHVdJAq21RvpC/hwKytkqDMBJmk5RqD6N1PU9nZof8s0SzDd0KKOffqelFgn0qZmCYQQIw/Jucx5yQnf4mRHRV3Dk8rSJf6OqRu9ywRz4D2dI7W8N2TQ7va878IPGVMgIOv9nZ/1XHLNsrJMJ7bdPyBdq6AVlUfRzZtfXstukxcDHsl6Huv1/8ZSZoS48Yu4dRo9abloMp0KcdyoTr9jQIIEON75VP4Ogk8jH1MuEX8zfER9Jw09B1cRp+W28Eafx4TvTOseA3Zw2j9YuyYSPe3YosH1dBAuqP9mlFefE4YkyCciwsw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1064</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1064</code></p>\n",
     "published_at": "2025-12-16T23:12:27+00:00",
     "type": "beta"
@@ -291,6 +363,8 @@
     "version": "0.3.1-beta1074",
     "tag": "1.9.4-beta1074",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1074/update_data_east.json",
+    "sha256": "1c2c0643aa571e91baa18bafa42edd400b5daf34e7f63f8d54560e72eaf05e7c",
+    "signature": "Oxl8FpPeg505S3XGw24cwdgi0pkVtT8+pLJ90DTPh7xFVtl8l7sIb8z3Ruqtb6PfwJfDgJzmEymP7Zp9qBubz3JbtvXrVBHM8aUfgMu+vobz4PvH5Aebc/CMtcC/Z02TYqd9OD4HjNkrpcyrMqmT5O4yi+mkHQfRQ0qJd2DzgYjw76cVBG/eDQbTjk3iko3cLzuXmJTuID1De6s62fgZY4UfHeTldTsXINzH8Grhtp4HiI5TrFTIvt5efEKgNWXhotLJedzeU+qVZ2WunGnZR7MhkLt6rt5fg7IvU3B5QnArZIPwn+rnlkL2LMUBk8r/UPcm/B0BPTl9YCFMqvFpsw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1074</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1074</code></p>\n",
     "published_at": "2025-12-28T17:18:32+00:00",
     "type": "beta"
@@ -299,6 +373,8 @@
     "version": "0.3.1-beta1095",
     "tag": "1.9.4-beta1095",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1095/update_data_east.json",
+    "sha256": "ba2a465d21999c7353fe872653ec81f863d5efb416d871aca98120caa8e3c439",
+    "signature": "e4dTZ0KkWEVFu9bIjPcsHBlI/fzW1hUgyaGa81ESD7uZ/SNbPZ4w9uYbblyUgzZ3QxQfr90gRN2O7q5rx9npbPjH5x/E//J/adWK9qCUZur/U1fobQB/cVFN3ECPaZwcKE78/MmoQOgU87lPOEkGL58Lz2lNxylW/De0cDI+8X4rRwXFnjlaGrPd2JZDHgzvglYVSqPblDg5pSVJMQHBDw6v3xv5ZyvOihLa19p4D21nVKPXRUbadjxRjzG8rZZzdP9+R9LR5Umib7I5h/eXIpdp94BSJfdpbV02HN9MnAg3EnHt1wwQDgC5Z15Uig6svSq9CnPimrgpew/OR9xbTg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1095</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1095</code></p>\n",
     "published_at": "2025-12-30T17:12:06+00:00",
     "type": "beta"
@@ -307,6 +383,8 @@
     "version": "0.3.1-beta1094",
     "tag": "1.9.4-beta1094",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4-beta1094/update_data_east.json",
+    "sha256": "feaa34c7fba649c9193f9897d96b8cfe5762cda63574354f6ca46d4f48e41145",
+    "signature": "vDF4XYHxmYZxDI9HMfN63Z80hckm2sC4BWdNVSJmGmYCzAybmFii7sFO2ykUER9CiEspER9F40nfzTkKIGsW5Er8xvdJf/3MpoaiiyQpGiV8O0k3QDt8BrGwRQd7GFv69LSh/ZlZstv20LItZpUzOCiEt0YpGrGgLyTf1lyYL+w5Y/DbgqOW9cuROePtD6uLk6r74hefMknaY5a0BjR+zODUbBnaiMkUJ77KvV+YRlBxi13QLPvBEL2lxsz6uyp09i63l372n1GThvMG16RVqo8ffIJkOm+asyWorhm7n2MXTxX7Mps4aKzNyOnw7m71vm7cie39weEQjRUfMVgCZA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4-beta1094</code><br>\n<strong>DataEast</strong>: <code>0.3.1-beta1094</code></p>\n",
     "published_at": "2025-12-30T17:11:35+00:00",
     "type": "beta"
@@ -315,6 +393,8 @@
     "version": "0.4.0",
     "tag": "1.10.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0/update_data_east.json",
+    "sha256": "640fb204dd62c2b9405d1ec6b2836f8e141882ba2140d5ca8d954388006a0b49",
+    "signature": "kyFO38MZ0jwzHfmcC0SNzycDGjZCDGjLcPXKU2lxHJTVpWbwXAZvejgLlhMCcn+yXtxVOwWKck60QJAHe4gEc63+kBEoSpd5c/5gIw9De4tPnaXR7Scg4wTwYV6RBiQfzHsrx9lE3iEWSMqls/JnsfZSG8ZVlCzlG27psFpiOtilFbx7QlEBkrECSQcI7zxOXF0aDdwUlGZYeTuEhPHAWvg6uW3Q0mywTl7CwmYsJcwSaxpJYNzdbKriP5fkxn6zDHL46j3v4MTPfSfd6tBG9TIII4Tkcr0SlL46GRpLcSr6txIvoOGn/jL/zF2HB87OlgnWSuXXrewX4sx39PYlWA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0</code><br>\n<strong>DataEast</strong>: <code>0.4.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Demo Man Home ROM H6 by @paulmullin in https://github.com/warped-pinball/vector/pull/219</li>\n<li>Adjusted PlayerUp in configs by @paulmullin in https://github.com/warped-pinball/vector/pull/218</li>\n<li>Added additional guard rails on logger by @paulmullin in https://github.com/warped-pinball/vector/pull/216</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.4...1.10.0</p>",
     "published_at": "2025-12-30T17:54:49+00:00",
     "type": "production"
@@ -323,6 +403,8 @@
     "version": "0.4.0-beta1097",
     "tag": "1.10.0-beta1097",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1097/update_data_east.json",
+    "sha256": "e43432ff81ac97894fbbf1d2e0a11c4673aa48340e2b54ad1ef0a081d762c191",
+    "signature": "FHsCIGZdPyVD2mYp8P6VAhEBkVelFYp5dXfXDWM59VIpp4HtDO0dm4ft0OU5pyFEAKGykh6KgRZGJs9LgLwqhVs7d/b7n+OHDjyqgxTvsSbe/rqnsXUmcR2UcjhVBGeWnbEIcfK1HPzapVDp7IDliTQYFHMkUzmj1dR+7ChL9BhcdoOJd0xuSQB0ZoH9mssu8HAvQddPHxfVPOTJV1mMlwqCYNZGK3eNAHVST45Jid2YsregrMyKMHHk1kdmlAVD8JQ+a1cS4Qv9Etboy2U8rQ7mjFMY5LM7T9cVvT4HdEWWds9hvmQzHywwTwMWfrc2niJHHz4IJTytrKuep38C2Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1097</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1097</code></p>\n",
     "published_at": "2025-12-30T17:50:33+00:00",
     "type": "beta"
@@ -331,6 +413,8 @@
     "version": "0.4.0-beta1136",
     "tag": "1.10.0-beta1136",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1136/update_data_east.json",
+    "sha256": "ace7229514730ad3f58cfe7731e3d72604f5978e82dc81c874f6cd33ae111ff5",
+    "signature": "IW1Q/2Dy/DksXCLOuTr4UGTa9QJSIBXizBn0Kqe9ArVuEhFdBxzqh+JOY9jy5zld2Tl7PyVWQfW/AFwc8uapLDc4FC7xBs4S5TpfwtSpvxLQCF8OGrfPT3GjA2PSElOc3lyW8zuwonM9bygaLbuQnOWNwHqrsQWaQGmafKfDxr8N2jrbA76FM4bFRI55aBIG+wSVckoewNFtPjxs4XjXl35wXNAvWf+kcqsYX2yPIKzAX1Uqd8luzGRQxaaHk8yCo4Ptd7zG8qJZ/DKEYtU2u8LzhAGj2FbXh1d3ZourEWj5qEdClZqIfeb+JxBahJvaorzLuICQ1BcsH0Otqi6gMw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1136</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1136</code></p>\n",
     "published_at": "2026-01-03T02:22:16+00:00",
     "type": "beta"
@@ -339,6 +423,8 @@
     "version": "0.4.0-beta1135",
     "tag": "1.10.0-beta1135",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1135/update_data_east.json",
+    "sha256": "fb551dbe6fe2ddea3c6c5c00bf09fc19bbd6b6309436cfcb2ba81ec8c2633552",
+    "signature": "S6EUgYRYQDU62EKrDhAgZcQ9MuC72vs/RLO8EPEj2+GqpEc5FFYz5J3BU+5C35Lbxy7OTi5JXwgAXdto19q2KgB8hmlgl5VE3cZHL+tMIJwkkSdFYi/8Ol3yYM4qE+6rdhasBy5GX/DvTGlN7rjbsPPPpbPBk4Z/6fMliKzhdTfscuI0jTpC00GmWMcSwePbCgBAmnlWafwYCk4Jvi2PcrVJc9EUoZt2VemqrZVsQEvrMlW0pPQedp4Ivf0U3i8Ar1+0uuITDmr0Ahu3dUk1H73LkGBFnIVwV8HpppS+cs6ma+jwSJxQHbFP6e63pQrfYCUl+EFl/uUnrAXm4X/VoQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1135</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1135</code></p>\n",
     "published_at": "2026-01-03T02:21:45+00:00",
     "type": "beta"
@@ -347,6 +433,8 @@
     "version": "0.4.0-beta1158",
     "tag": "1.10.0-beta1158",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1158/update_data_east.json",
+    "sha256": "3fd99002f48cec1b2c0bffe157c7f1d53f21341bec1ab6e9b2307790dae7f9ec",
+    "signature": "PauYE4aFaDvKNzDOLc7VyzVeccLM3casg349xTuAUkohr6ZhVTRF4MTQCTDnigJJcFn+qT/7MAqGXuMSNAtPJGOWyCbJ8psxLTKDtI9vfx64y3oOBmVnwnntli+UpNVjqXaLGT0XxC28jYJO/Ne+KRPg6zyaT6NfKWuZseFuFPCXj1U+zCFbfm/yHK4yf99VGcol8zp0fs9YL5QNLhSc6tF10q4glAyvBd9015Q3tKVpjpWFrCFob5zacIuK5zspeVDWk4U1K9xJ71JAyOHM77bCFs49lx0cby1DHErx3dJMBd+mSoZWYxJtSLImW9BkMLlSh4qucfil3XiZKf6adQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1158</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1158</code></p>\n",
     "published_at": "2026-01-06T01:54:32+00:00",
     "type": "beta"
@@ -355,6 +443,8 @@
     "version": "0.4.0-beta1160",
     "tag": "1.10.0-beta1160",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1160/update_data_east.json",
+    "sha256": "7e32f37efebf21af15f9f88f971ad7c8c33e823570b34c626f186daa96cc8a27",
+    "signature": "psWOy4x7NER4mozk9ZIkJgrxYcvkDyThMV1faqbKBeJCgfQGSu2XQeItM/nKcGaRNpyuNK3zoOSoLmnml/x2Zz2QxWJCSAks6vq6NBcOLo9uNEHj+Ku8BXVuqVkG2Zh11MVOhl4AWfyQODFHLYKWURY45nPYMbrRdg+3ZOjLL4NyyB3rC64YAZfw4Fpo6h7BseUgSLJd65nXU7VJj6ca/w540584Nk1DOM7rPzxcY2/jyIYpS6vn5l2jWv1n3PloLyeGrfFrU8/3DAFVKSXufinXwHR4X91m4/rDiHTqnymyGAHQU/DdkkOlMkuFmBjnLYIOTZWHE8/WK9JUnUTY4g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1160</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1160</code></p>\n",
     "published_at": "2026-01-06T02:32:51+00:00",
     "type": "beta"
@@ -363,6 +453,8 @@
     "version": "0.4.0-beta1162",
     "tag": "1.10.0-beta1162",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1162/update_data_east.json",
+    "sha256": "4ec9aef7254f5e75a90f65659378401327f0742821dcc1087f872bef615eac64",
+    "signature": "wmRafRG++Arv2nzCnkaNDKKPWicn7V6jl+LUPE25ZMN6RwrCVIySVh2l38eBi72NS3stADdu7RKjGZyT3adaFIUIvHF179HkDMR/eFq07WYElO32FC5j9oQqVwaUP7RkxkgAnfM0Vj2o696Di5c/hNv6CvJRknqrOwP3v30GvH4Zmj2msA4X7tMiQeUQHmqVzxXDWrFuNgqoO4HwdpVggOkjxv+By59In1qYHNe6YjaurLBrRwyRzXK8PqJWqnSv3p02ecXitOvFJnkqjRM7GofVADWcnjIpMI9iKQWVBfqFJ3KFUtWgQW8o4w1Cp49IK8M+Wu880w1tFePCrdv5Hw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1162</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1162</code></p>\n",
     "published_at": "2026-01-06T02:41:05+00:00",
     "type": "beta"
@@ -371,6 +463,8 @@
     "version": "0.4.0-beta1169",
     "tag": "1.10.0-beta1169",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1169/update_data_east.json",
+    "sha256": "fa6a0acb4f9b6723c3a26a538563a4660027d3f317c0d8cddfa4c8d27147d292",
+    "signature": "Wi8LMZKgefoDfl7REAFVU3uIqRU5OOUSdhQ080ezsseMPvI6NJfR/Thn85VWUKYp2CTVwt1M2HnlbJzwc6CrttA6tj1MQOXB+42wiYEU5POJJB/r287HBfZoN5XORLh1lUlfwiwRBPWa6CXkAP6gewFBxLZ9DS0yrx+6aW2vUDHeHY6ZMiZXtw3xKiNUODAi+hCDF3D1JJyWLDQqYe4qjeHSyp0IuS3Qu/zKgEjyN0yUHGcarmA9eNSoVk8y84fdJwwywo0aCFklZMXrf4l2n1NrcUVeekvaBgORLVI9+2twCqs+6uaUujdooGPPdSKSPkAXVm/Wui23Qe6jF2+pTA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1169</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1169</code></p>\n",
     "published_at": "2026-01-06T03:48:09+00:00",
     "type": "beta"
@@ -379,6 +473,8 @@
     "version": "0.4.0-beta1172",
     "tag": "1.10.0-beta1172",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1172/update_data_east.json",
+    "sha256": "13492692205146b0e03cd4cfc77bb6be5a78879926b4aa5d8e8aa86cf0896c28",
+    "signature": "UEhsQLYxyehd7ct0khMQ+HvpLaIz7FxZFtycAY8ccKy+8F4wfNGmi2y4vdIbdYWC6vOWAXyEMrW1F3OfaGSNaDO2TKU9yQUtZ/J4eO1zB/m8y1KMefImIwjh4PX9trk5WdN/wknLgL3mxf8ocYe6J7xMXfB9FcbbaD31qmmho2Z5rdmpQHzOZodJCi5H0C57hT2TTGyDUwi19IA6PmTYF4jYIAvR8/EeYx3f1LUbfChV+GVbqrGbQisHIIsqMmGjAr1X/M7hIZYIXv+ZEQIJwDdFvG5Wu/gU1YAtvZRMyljJnjfKSzW43xYym4v4RX8leSWf81XdEjUTgIAbPVViGA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1172</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1172</code></p>\n",
     "published_at": "2026-01-06T04:02:02+00:00",
     "type": "beta"
@@ -387,6 +483,8 @@
     "version": "0.4.0-beta1179",
     "tag": "1.10.0-beta1179",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1179/update_data_east.json",
+    "sha256": "e1931b83718d457dc57ff524b842bd18e94744f5e04f6f3da0b05f9d10cd3141",
+    "signature": "SLDs8QYHgiyilc9IqHpJ9oSgvYVhXGgrWG/RPwgBc9Mihs41KAPvkpB+jOZUE00N+uu3RMbwMEKD+p0vKhNZRInYI2a3iBMLWPp7EENEv7Ljcki+U67QzmyGudpH5M4qv6Mr0EL2wlf1f4zIkxoYV45I2zHH78D1CqFe+DHu2FUZRy4/BuuZfX8vrat4mY/jL2vtf6aYkU8MRfBWqoK4VrAOBO8xVpmg0s9l7AYWCN+5B/DcehGGxbBkC2y62iAs3oQZBBNkh9SUZK0oZgKUnAIvRm/IYP39kD8tWoh0c4nU/0KaOi+9AHD85GB7os8iJ53hWRtZ3vFMuOZTGsgYUA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1179</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1179</code></p>\n",
     "published_at": "2026-01-07T01:08:50+00:00",
     "type": "beta"
@@ -395,6 +493,8 @@
     "version": "0.4.0-beta1181",
     "tag": "1.10.0-beta1181",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1181/update_data_east.json",
+    "sha256": "09c09cef14c01904e238092e5b4b12d76fe37cedd9c7f0e666bbec736f3bb355",
+    "signature": "fDXEWCZFOBUgepHZZHT8mn6WKQpS0hmI9xAMsysCF4VKU67tWuFHPlEN34lDUBUTPaTUBQ90+3JsuwaiLBG+XDBHHy1KHywxfqefTeTA2VpLeJiThi8HO9xEgZ8iyJp7QxC3SEgjCkJkOUVKgJ5IAOcrPmMtiUN843hblmcxeGkhAFNi/+tQOyIo0eIG6kwWpz752PQLV+4xEN8tY7AlEA2jpYohQXjrBzxwXGU/E3RWYEttoHyy4vj2ZwBBDsvKwxe7BdaxmhTXfgjdOwUd8UkR39ECuoJtXBIUqix0f5d7wpUp/qN0BCvW+9mkMh6B5fhSGjWrNgMQ+KCl/21vcQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1181</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1181</code></p>\n",
     "published_at": "2026-01-07T01:41:30+00:00",
     "type": "beta"
@@ -403,6 +503,8 @@
     "version": "0.4.0-beta1183",
     "tag": "1.10.0-beta1183",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1183/update_data_east.json",
+    "sha256": "3345aa2348386782875a97d571bcac399531ff3c0180e49d48cbc49f7e9f143a",
+    "signature": "JDgryCctWCOJ5s2AxldC3nAe6ArCOvcrE1rBFLHufvblImDvg23XagDvPQw1qAX58sMaA1zk6Wp/5bNal86D7aj9KgZGcr7nZBVDIN/puUdZQTykXQAdbM2s4cZuAhIj8YlJoGSoTacX8mvGYPKXLle0/7z+TXKvGNHjMZqB3t17/0j7/F4FMEc22f1fM+uQCo+IBD04NeZjrdY5rWRKU1vCcO1yQuLV9ETjZ+6f0wVcbfspmDJ4n772sgl9uf7F8YWawJ3ElODO/Bqv8V9+poxihftOr8wri3QfIye6wRi+qEudK0baAQRArxqlAZy6X9aseVsdLsNOmLgoHLRFHg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1183</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1183</code></p>\n",
     "published_at": "2026-01-07T01:44:40+00:00",
     "type": "beta"
@@ -411,6 +513,8 @@
     "version": "0.4.0-beta1204",
     "tag": "1.10.0-beta1204",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1204/update_data_east.json",
+    "sha256": "fa7884cfaaa14385b17f3eb1ef7db70a67ff06cb076980e19f750865ef9daccf",
+    "signature": "GmKmgPjUnksuixzfy1MPUmfbPQChjnklgPxx5vAD1AP3F1rXj8jMCdzPlh9VhzYTCDhHX0SU+/cN+h3YatEwR/yHNd90Hx54DQXuCOEgjHZQ8ui16X3ZSDHJrRH/y7+byPIz1OuuxfeRAZRktSQtTWOYn4Sd5eO4lK1xFmFhlPczHdp0EIsKSusCaMoonFxMiwCgn0ISmCuym6XVu3BCBM2ukYduf6g/gJ9tAklvT5vyga+7JlkRsVKH2FvYPjlqc8ngB4zaFrvx31II3xQpoZO8jcrb31/JsLE3OHCtz3Dh6alc/JDiBwXqVsFEXRzdF+CdOoLZ+yXtlfzWcdi9/A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1204</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1204</code></p>\n",
     "published_at": "2026-01-08T01:06:48+00:00",
     "type": "beta"
@@ -419,6 +523,8 @@
     "version": "0.4.0-beta1212",
     "tag": "1.10.0-beta1212",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1212/update_data_east.json",
+    "sha256": "235baa5457235843c68dfa9eb84c7eb23bc8357c62427b94a9332cc769accfed",
+    "signature": "PmxxQCH0ElDNz4FBMiwv5dz6A0U/GKWXOi/wDZJHBOTdXs2nwFWJD7vGWwB6JxznYlz12+ilz/OJZFro51ik0dfb57xstbJwGHC728bu33hhyPVOukqt9Gl1ddhjoU2qYqCuFGZkmjBgNuzkLiTM+OYYpU9mE1tfZXLkXvGZ6NueC5NzAOJn/sC7rBPvZb7fmhqUGJmt5llIQZeGaQNWJveUYHAtjIu/19oKdA9kHKZtb3+oDLp14TDT2aRCVuLMg1Mc6KZfPex3iwwUrW2s3Zrp4OUkFi6sMLRjWFSKPR/le0o9bivGmZeMiJdbrdOtvNQu5nxRsLZd66dO4dbytg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1212</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1212</code></p>\n",
     "published_at": "2026-01-09T00:49:50+00:00",
     "type": "beta"
@@ -427,6 +533,8 @@
     "version": "0.4.0-beta1247",
     "tag": "1.10.0-beta1247",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1247/update_data_east.json",
+    "sha256": "1fb2ec45af91c0ad64c9f2e9b36e198ed4c0416b7382bb92dfed046bc4752bc3",
+    "signature": "sOwpo4YMIo+5oeTmxpJnoiyRDALXKwzi2/SPFlGOEx/iVc/WSfnUJYTRAq2X+FvkJRGaC7xxEyWV3aa02FzJeVRRdAaQovaGqPYusqdvJ8RajFXHG3VpOsbRGdQiJAk+XOQnD5dc4FhNiYvWNu5naCDlFTLGubaUu0aZ1h8/5lnqy++PVwN/vy+z2JV+Te0PtP0QJwwuRvqi0HRXI7rg9UUF5Ft+OSBesW7ol0ESRxwCnXfakQ6w9+xvQd9B/vdS1g7au/hMfVRrOATMktnH+WrX1WIFzwf2fbqR/BnhgHZsGdO/eG4n2of/ZG3j0jbeAGFX+Fr59ZdQaaqKragycw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1247</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1247</code></p>\n",
     "published_at": "2026-01-10T22:49:25+00:00",
     "type": "beta"
@@ -435,6 +543,8 @@
     "version": "0.4.0-beta1252",
     "tag": "1.10.0-beta1252",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1252/update_data_east.json",
+    "sha256": "d5b835362079d44e9420be00551023e1d549ab5659b3f45e4fe0682d5a5c6a54",
+    "signature": "rZl+k97AQPO2b2phS9SxEKcHSgGyBbd0IVfxneerZ0ilHbqsSWVGLj0rK6SgnYYX8kkRDdGOldDPFirDqziliEE97Wqj/nY2OMiN0vV3ivTotTrEVvFA9M+vQauOpodTEcnPi8KlrBtqq8s4zlDkvMP2CmIbR+C6Sy5g2v3n5jomwm8H/xZCNWbKoUJz5slmjvomEQBCJjrSTLKiGR6Ihri1aFQj7Ame2vVv2cOn8kYnyY0u48b0ugteWcKPUWbZA/QqgzJQHOrb8LP5gojqpxOFDbApwWEXD8YFAE7Mk/eLNsqA+NXNohtOo/ECOlj6C6P4AHBvY0F48d7sZvtJQA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1252</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1252</code></p>\n",
     "published_at": "2026-01-10T23:12:48+00:00",
     "type": "beta"
@@ -443,6 +553,8 @@
     "version": "0.4.0-beta1257",
     "tag": "1.10.0-beta1257",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1257/update_data_east.json",
+    "sha256": "b16d2ac48e52c21dc53586789ef87f3cb07994f7746cd397b00e0328d15d147c",
+    "signature": "m6v8ZkK/7cCR0DYU7LG33gUQlEdL0yd2vIy55H5DLjzNvyIVTJ26sHKKj7zt2dOQfjM5Ms2QwP4L9v5siGGUZLLUjCWZ4pAar23ppbhkPOiL95qwkxnb2X+6fF7jrsIW7iK4ofzXZZcgvx7Ydt4XY2e6PZhevrEJC85s0xS9S+Jnn7oHlM98VhD6xZYsB5tGWSJ0KyswQYvobq5uo8/C0uRrpTl7ZizItFmjDoEHeV6qutch8j4NrPSswmf0r4oj0JBr12mRw14fAHa645mcfi/MwA1hjEG0kcBZhxohDzaFDC2FwYr/gxBH74C0FJ3HaiZj2aHoqEblDjbu7Y4GbA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1257</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1257</code></p>\n",
     "published_at": "2026-01-11T16:48:48+00:00",
     "type": "beta"
@@ -451,6 +563,8 @@
     "version": "0.4.0-beta1262",
     "tag": "1.10.0-beta1262",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1262/update_data_east.json",
+    "sha256": "4ed989443ac2e32ea7878538efbed9944b68a9fc56c222f585aa36fc46f53b6d",
+    "signature": "dGFTFGaMc+b6YpzBiss0HdMEEYqaxdk1uRiM26b68f4AAwEWsX6CBGauvkeOtY5F3SFBgR0EOwmgAQT/r6gqaE2bTKKOeozkoxXiUxskaSDJpqBs2JUG3rB2YS5aQcHEL9jjJuoTLlU/TZQ1YcSAfWyHHNAkT4dycBA2Y1c4ps1NIG/d0rJVP2CVz3SYP2oX8pfWadOkS5b05MlDOreYh4FWiZHYZzgOxbMtzgUs6v62JhSKS+SFph30li4utEO9N/As8xN24o3YFm4Yn1I7m62vdIJov/dO/PlwQwIEM6a7AgmuP1wffQlRoSbTXM0SK8jL/EHgsFHS4krl7RXidw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1262</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1262</code></p>\n",
     "published_at": "2026-01-11T20:06:20+00:00",
     "type": "beta"
@@ -459,6 +573,8 @@
     "version": "0.4.0-beta1264",
     "tag": "1.10.0-beta1264",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1264/update_data_east.json",
+    "sha256": "91d3a60294340eb0bf8fd7bb7267c4ab900bc96641b205263a0ffa3ebb2fe8b6",
+    "signature": "TNd+oLR4cqb37quzg9g2E5LBDCfYg1atcmvwB7raR+a+Msh6qiXA4vbdGI9eSEgf8lFAuGqJSw9GORLy+3hEDc1htXCjYcLk8hnDhtCtpSa449WMzznjsNXrgZgCVbGdyUnz7IA4V38bslGICPGIZjx8O0HdCdI9vk5yVNCJfgVw29O2+HPGZZzQhn8urQolmGolYiybiVuvOHWXRI3oKo2jaAZefjRdOEfU0N9SkzidIoFmoWSHNTEstx+8+a95pZVaepggbQJVHj8QnQCl5dDrEUMG3LdQWCtb09abNg4kBnXO+Oxdp1t5TjhY4EHsLA2tpyQaSZUTWzJGn4+UBA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1264</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1264</code></p>\n",
     "published_at": "2026-01-11T20:36:26+00:00",
     "type": "beta"
@@ -467,6 +583,8 @@
     "version": "0.4.0-beta1266",
     "tag": "1.10.0-beta1266",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1266/update_data_east.json",
+    "sha256": "4d087676c2ae271bd7e51132d67ed5dab6021ee28e57d11d6e757220a79db15e",
+    "signature": "WBylA5rkAbFxoGi1jWUADzXQw4MtjgjyRiFw6JZ0RTjF+5WWXNevjXzZ4vIyiYLfoPcIAdWBSjT9jy8IdHuHBihGAXs/hoXlb5hCcaROnrPI3AQHFjWgdW7Wm7niR1nW/hRrag3c/P7X5i4zy65IC4Qv1DXwSzfUPnMJPf99eYrmmEtVT0dGMZ/y9DScpC8tOLxNXTu8U4nhnmJqeYNDYjJYbRCR3vJAu55DS3La1ocDsotoTtL+YG2MWOkWMGxGJrA5Wx7X6AHt2fMkx4MZoyTnQGcKZwmZDRMc77l6AVVd+43zNiBOomL8mHfL8bcOD4FRb/5lQK2TzKh3yagiHA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1266</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1266</code></p>\n",
     "published_at": "2026-01-11T21:06:07+00:00",
     "type": "beta"
@@ -475,6 +593,8 @@
     "version": "0.4.0-beta1270",
     "tag": "1.10.0-beta1270",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1270/update_data_east.json",
+    "sha256": "12799eaf3918d0876cb8c8418c37730e2973536d37280e2a73314853bbeed0a7",
+    "signature": "arI8xn3zJ7poYDdag8m1qsaHEXGlBnaJ6C2gDlUaEWyhJSgO6rCax5ho15h7oO96Aak6JWP5NZ3ULDlb3MyepV+TOdeNMdabTm5cmFjarbpMN3xCU4OoMo/8DTsn2d0bKDPUtwLXqaF0/f5+TFhbkcatQM3gj5Dx5577sU5qBtg4v5gweHZum2bQ+eGzkjGCgXiwV7fVskEtHbJ6/uCUuzB4XpGe134eCrNXH6BxIAOWQ0BZQ047BHWMwxq3F6scF44KMZWIh/4XPJGV+UAnMAyTgwzFro5Yf+f3R93dHtkbxKvMdOYCiFn1XZNOldoob5NOgrgS4otlOcr/XORjAQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1270</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1270</code></p>\n",
     "published_at": "2026-01-11T21:15:24+00:00",
     "type": "beta"
@@ -483,6 +603,8 @@
     "version": "0.4.0-beta1279",
     "tag": "1.10.0-beta1279",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1279/update_data_east.json",
+    "sha256": "a07f6995abf507aa17287f372177dcb8f9631682b1243814a25c4413b15feb73",
+    "signature": "BwmGs68nLwPlPr6Y/nLS4CZ3z/TTXZnM3w5HcBNX5wx/z8TdcyQa8PluoR88zWZ7T9+VU7W3P33jkgTzYR74LWhiy+OENZ0G60J0RuHDWmWVQfjbE4Fp5368ol9w3M1g4h6ZEYcuMCm3PWvICjCRXeLmQLJlAqTSkuM+6DPz9LOfJut+WU1QMGW3m66uWNN1dJmveQzdbnpkHb7YA3cU+SKbxgGqMkgXKnV+HLYwhMaIwRAKYRbJ4/jP+oGOIoMmXY8e1ZISz0q984m/xFOgTPuNFm94WL8NjprwpQPt9S7cVUTa20U+GpeSqhj5d2OAxZneWaLpD5ArBiop+E6U5g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1279</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1279</code></p>\n",
     "published_at": "2026-01-16T16:32:41+00:00",
     "type": "beta"
@@ -491,6 +613,8 @@
     "version": "0.4.0-beta1293",
     "tag": "1.10.0-beta1293",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1293/update_data_east.json",
+    "sha256": "c6adaff2ef38770e372f0271bcad0b2ce904bb63918479346ea40b9a87c0f4af",
+    "signature": "oz9Jv2QotjRTAVg3t1iqOJLPbym+4ZHwu8XWLD6/TJ6wmxmCSP358gp7CS5onWAmlo/ohHeClsI+OdQubOsXes2SKOYJ/6AgDeqBZQ+GwXwIuhbnDszr2Nm/XzPjQRq5aOUoL6VoWqbhdk+PSIsorFjMeLof/6AOQwNg2x9frxk5pVSa+FP54BB0WPZUr+Hykx7Il0ZlFbQqs6PXENEirqZFrZcQIfw2eaImk2BgalbVT5esrSzybVfaGaY/gQUrtgdK/7fepHgC65LyYYcKJmsvg8kpoVAXFy0TAhZU4KT94V4JteRxqTLIlK7KA1saEM8pR5tHnC1YwWYoqa/+nw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1293</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1293</code></p>\n",
     "published_at": "2026-01-18T22:15:04+00:00",
     "type": "beta"
@@ -499,6 +623,8 @@
     "version": "0.4.0-beta1297",
     "tag": "1.10.0-beta1297",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1297/update_data_east.json",
+    "sha256": "1cc43e35f0a58278f1045a2f1f1cfbe9fca73b96bdc2c7cc896c368b8aa35f7b",
+    "signature": "Py6E6mBI6itXGmeS/o6KJqWSp9X0rsklO6ijeBtig4Hy34hlAdPNu7tzIRGgBB3r4mEvaklIK9SDcXbIjXpHaOvqWun0CzLL4RSXMPTUu03n/YVTQSgMfj70mQHMfA7El+RBNtksvXPoLroUi/yWKVT5giYjv9Od+tthxxFpo/1B6OwjC7rIdR6rCDaSENw7vcSHywz5ieUaP4a5ph7oZXd/Qcxvhg33ZNucp+kas3AwV4llTF9Jtci2bO1p27JAwR8nst8oBOHPg8/2/kPNwBzxxI5FK1D686kKauhr1f3qqQeLBERiIIomQUrQ7DePbF3JOsK4BymyOY+KnYe9ug==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1297</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1297</code></p>\n",
     "published_at": "2026-01-18T22:59:41+00:00",
     "type": "beta"
@@ -507,6 +633,8 @@
     "version": "0.4.0-beta1306",
     "tag": "1.10.0-beta1306",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1306/update_data_east.json",
+    "sha256": "3b65f181300d28c60f1814906b6035d41ddff8aa9f96d89262cd3d6151055c84",
+    "signature": "tpmPK/7LcdL29MVv6r+N2igzjCjrYR/ubYauN8hyLPXB0jRcxMDloqlpYO211C79SyRwv0K9xP9vqsDnWJxl045arpZ71CfejMa3zOmGY76qyJ0kzPeyo1Y8GemWs9hL7ydGR5NKDxg2TBGuhnyZHXlyEG8+LJ1wTxs250meQPFfsYXSzfQX+Oe0sYE/tYW1FXf8MXLVCCkTGHUp8Xd4P9RugjqFJEtmHWE6gCF4AxQLrMxVf462Q8pgqACpVExjcvbYuURlOaBSKHuXQFSbS3WajJr0oOGrZZZU9HIPSegFKbt58ThOTz5pcWzaPMnr8gX1nvyw41fellGfiqiHSg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1306</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1306</code></p>\n",
     "published_at": "2026-01-20T02:49:52+00:00",
     "type": "beta"
@@ -515,6 +643,8 @@
     "version": "0.4.0-beta1309",
     "tag": "1.10.0-beta1309",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1309/update_data_east.json",
+    "sha256": "5d0ea0630f8c05bdf960aaf6a278799aa6e4b5a127b51347823132f415404fc8",
+    "signature": "lfm7K8G2EHLm/azHzQs7n8zk2TKBc0Hr8CGe8/Aq0bcs8bmspYDFEYXzdnQsIcrT3qM6OPYuLk4Z59zNoJSW2Zn23KwDxMP66lmjV9j45uFlSl71HGjVv0gEivqTGBwQzH70hcv5mvTL4Al+2zYWjJnqjc/fLUDdrWxNJKOLNncIV2k5W9UdTgl441LDd9p5jQS2ps7U46usKBPbEp/Ifq6FbrLzFstgf9iVQvuFiXi2yMzqFWACy5sx7Rf6fByHLWKdRgRNpwlYri4Ih92C8QyZ5um1MR8loBK+KoZDw5a6OiLH3+h3nNKlayftb2GEzQ4GgKm/6fH7SWyr7BssUg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1309</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1309</code></p>\n",
     "published_at": "2026-01-20T02:55:49+00:00",
     "type": "beta"
@@ -523,6 +653,8 @@
     "version": "0.4.0-beta1308",
     "tag": "1.10.0-beta1308",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1308/update_data_east.json",
+    "sha256": "fedd75355aea202f5d5e57f3e28793aa7effde41de20c370714868ed8af41ae7",
+    "signature": "BFCMuCNXvpEQ93mzdFhiFk6FpBbAlNugP1QxGhXkR3Hgd1GH7G8QPovPsQQKQLHyJJ3AF3XwJqi4seKG7+3LH1nneV9+yyO6ft3CcpoI3zI0JXjET6TdGWlhZHylZdoFwpVFv3kJ2tbllc2PlWAVdohHfOYhqvs9ztbuxkg0/REpnDldmDhSLkrtqiHovHDzae/gLeZLLiB4fM2nXVj55cdDF4CZGbiu42VL9pvXl7DPUHDn4HhBxE7cfayuCVXNHLU0pClUhkHFS5oToZh1YfJkXWkwSZH/eKO0fRrZzpJdt8/YS6T5AAuS+NWISMGHZUuN1ZvFahnW+8WA9oBtAg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1308</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1308</code></p>\n",
     "published_at": "2026-01-20T02:55:11+00:00",
     "type": "beta"
@@ -531,6 +663,8 @@
     "version": "0.4.0-beta1311",
     "tag": "1.10.0-beta1311",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1311/update_data_east.json",
+    "sha256": "16a6e6c7a4399980982a0dd0b1cc66ebef6adf6d8c0e48e0ad62c56887da486b",
+    "signature": "d6M2p78pCwwoInp573H6tjUS6Z+wQKfEd+jVa/HgiKVBLaiqxKAxbNFGa8p2jcW6gvmhQIQ2blSdYsHij63KoWHVf4QXdMf5Wpe7lSKiUZ/Km7jJFQEY1PI+HveX8glQYxSoANIRChjwyNevCgo54TINkSUybxigy1jxDLlbn26SA4mU1aCCafjouUuIbT9Vm+qbCKzb7YOkQVO4iHmWp5TEGtP/kQBjpbtmind/mjRQrAZ3Zqlhc/9M0OFAqzHsTekZeCms8xiSvCndtAc7HE39N6arxLBrdnRZQ2CRhiFcd2uYJh3ApUZoJT0zw9vl3XQ7gWfAg3rygVJsuGaImg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1311</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1311</code></p>\n",
     "published_at": "2026-01-20T03:01:21+00:00",
     "type": "beta"
@@ -539,6 +673,8 @@
     "version": "0.4.0-beta1342",
     "tag": "1.10.0-beta1342",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1342/update_data_east.json",
+    "sha256": "13736cb9116b09d492c20461fcafb71de86aa81ba75bcfbdc68bb5a2d3e41d2b",
+    "signature": "w0UiR1Y2DGeuEjcSsbeQHoZyvbSn1LNONQx/ue2CH67FqdSnVccbWpvstl6cvdQiiz5Fwggrz3n5YLBec1qG5fSHvzsypLyPJVRXeyp0BXj6dx5vYXQBy9wELYGV/VrD1QiIt+3mK2sGK38Xd78SSnJQISq1I50l7c4a0GhZriTKImio9gA7BcUbOTEYqWmVkzoyGDEhfFoDBHymRxJitwWj3VuStnYj9h+4GQgQ7cGZI9r0Xf3rzkjsKZg2H3ptHZRmqu8b5jcihZAiL9OpvHmkBxq9DrzP/aj6Jw3q4V3esyYjd8qMsvLFY2jfxW9MsndLsQ3eGfZtWRAL0kSYtA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1342</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1342</code></p>\n",
     "published_at": "2026-02-01T04:35:05+00:00",
     "type": "beta"
@@ -547,6 +683,8 @@
     "version": "0.4.0-beta1362",
     "tag": "1.10.0-beta1362",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1362/update_data_east.json",
+    "sha256": "b1b6fdf1c71678694197113bec0603c42141d965f1dda4411daf7423f32efda2",
+    "signature": "miM5HQfPfhTcYe2mmkTgF8XKGeEjl82vr4fOtE+yIOTaWEHI59OZILYleRcdpc+ajArVvMFq/fqNW/ltsW/JBCP/9jr+h67U4UomfhFPtATT2TxcBvPXEn2xlE1H+nnjEei7cVU6ebhTJtTjG2Ag3dJDZzctFctPysWvyDgPzd8EtEsVaXlJq9W5GwBytHu7OdKUW325TI8FbHA7D/O1pOIta0rt6wfin9uSpcodNUdk9lcqCnum/39HFK0Rl0fQmJVBHD7GjNTJKghezeAFk9bN/OmlkK/DKv8yZin+vGyFBef4lK8nPPKaeM2HcjjRvT93t3MVRtImTZI6G8F8MQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1362</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1362</code></p>\n",
     "published_at": "2026-02-12T13:08:36+00:00",
     "type": "beta"
@@ -555,6 +693,8 @@
     "version": "0.4.0-beta1380",
     "tag": "1.10.0-beta1380",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1380/update_data_east.json",
+    "sha256": "e9e7e0ebe589ba76bf2531671cf59743fe50c9f7daa5fbac21be6927d637efd1",
+    "signature": "r2Dpqh01I8ZsWhcVZ3wPF4COPgrTMurtLT9WuFAWHVx52b+qZp9HtpRLyOmCQvhxulvqjlPhlQR1I9acyPUUHK46xq9jvOmYPfkndndiiDjik1uqIOcBsfA6uKlPmxu50I7gWFdU9T8GLXeEriPQgkj2MAJJcbrVAsjqxAZSjHnL2kza2vFjCNqQbrqT7iHwU4zNVX6hGyC9h3jFP7WBpQ+zbAg2LrCsrzlsXJBAN0r9pEB95WiGKeszvMZMQ0fvhH2szYePWIOALNj2PpjCorAuTwVl9Xa0e7aBff8jhfvih1a4hd/MXgvkv96shFkRYWdVkSMzxLxEwB08MaHCkg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1380</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1380</code></p>\n",
     "published_at": "2026-02-15T23:52:28+00:00",
     "type": "beta"
@@ -563,6 +703,8 @@
     "version": "0.4.0-beta1381",
     "tag": "1.10.0-beta1381",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1381/update_data_east.json",
+    "sha256": "250a5f747072aaa32d6e000fd5c571a7891cb221c06af79e7504597e08a0b602",
+    "signature": "pi+pSA58wF5qr3eAiL1wOIKnvcZ12/t2VP8COpdpUp55Y9GGMjWYMo1gcytI+sj1D1shW05tDocbQ1v7T4XTFvMFEofWCDIGUsyje5WoUf1XAD0DLfJ6qcbpbOdHvh55kfW1V40gPqCdb7VtW9FrXLHX4VmyWNg8e1L3rpdy0ynBVH1lyC0Z1Rzb18Hs0APCQM5xLaGY+5TJSpWzH69hTxeZGRK9O6Qcg8IbfpLilJ0q3wv4o/4bHOc0SRnKR1k2jHZ4hW7b+jgXwQ+W/QfL/cZ4/dH6BP+H33ATDwYroCN2ouzqNxPc8A8lHKCQwA3rTkxem955OcMINJu66uhsVQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1381</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1381</code></p>\n",
     "published_at": "2026-02-16T01:13:07+00:00",
     "type": "beta"
@@ -571,6 +713,8 @@
     "version": "0.4.0-beta1387",
     "tag": "1.10.0-beta1387",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0-beta1387/update_data_east.json",
+    "sha256": "97824bc551bd7214f93abc7f79d82ecde3baa5b7c83d000002ea32e8a342bb5b",
+    "signature": "T1nenOmBmV9OBWaSCT9puUpV5yz8ReAB2r9HyVpCSLoQeY5UFFRZTMAcON1MtU3WrkQzr6p9rnXZ2Pcts+XKWjuJuKK6rmu0ssnT8BzbNUv4tl+P+57VM/GpF7+cFhNJVHy59uAM7p/1DIJJ41iQ5SnbjBBHrtLv4j82GLrxumd3jmLjBH64bNROLHr6cvsLnwQ+0IYmwE70MTPDLnXPpZHQwkAhmqTjBIqCPXqKBzti1aj7bGhAKgp4JQP4+2UqGGr2SDJGUH8dSUmQTxbYuLV6z6ZcinzGtEk5imLXV4/TyWyEKW3OPmS/7OG1M2RIcHgRRmamoUFEiCFfd7C+XA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0-beta1387</code><br>\n<strong>DataEast</strong>: <code>0.4.0-beta1387</code></p>\n",
     "published_at": "2026-02-17T00:44:36+00:00",
     "type": "beta"
@@ -579,6 +723,8 @@
     "version": "1.0.0-beta1397",
     "tag": "1.11.0-beta1397",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1397/update_data_east.json",
+    "sha256": "c4bfa06fb007aee30874f2587c08b41a49cd3b19d58c97e921b322ce3ec74687",
+    "signature": "O7wQv62cEhB2uC09Y/W9Ty5FSSHz+YFFBvW+tzY5FtWjv5Y5iSEFVGB/G+yaAysHkHYjmbKz22FNrb1p4LT6SzZbOVajmZ8RDhmKAHZg5PgKlQmomQxzNy3/PDq2uwdGV+SyWS2VZOpBsMbPodVv+UxHjyLUblu4fsNccYlATVYhk5ReZd3jYaq/DsGyTDZfbVJntjY2ZYoIsaZBQu3lPP+TQAE8FpVDPybBw6SNyBpBthB4NuR15fTLzyk5TCF2U6ioR+3Mzk9CMxO9na92+OD6ipzIZIYNFRXGgGNoIigckE7zEBCrDKSviOkclof4y0hO2I6nro8q85/1gGBdlw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1397</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1397</code></p>\n",
     "published_at": "2026-02-18T00:17:12+00:00",
     "type": "beta"
@@ -587,6 +733,8 @@
     "version": "1.0.0-beta1403",
     "tag": "1.11.0-beta1403",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1403/update_data_east.json",
+    "sha256": "68b2cc3995ab410566e9d89e2f06c5d3b3049884e4224d5ad48c89e893981004",
+    "signature": "SyDfkzQYENAz5+/fbLhO3U/KuaxvaqBpFmnxS8UQYkdsVMLVjAyE3zunFjEPrN1KojLj1qOaSFNOWgDmRDzHhD+Pqun95Eh7pT0jbGO2P1P4HVOtjYz+XwdwsIrlStCNViZuzbl9zBGkK/38+V7HwLvlbqWVE+m63d8fRmKycNxVKlla7laQVNv4VXYAPxdBi9o+PZbn3RZ5H9dG+VR9it5tpFyCXEhCMgPDWjPrBZjJy4pZtb4iiv/5tW3Vo6uBWUZN+3pDtWG1rtrpwcpuJAO+ZLowyNNbaHGqF6xjwnU6D702xsYhYNN62UAPV481TmPBzOHtdNy21KkRp00rFw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1403</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1403</code></p>\n",
     "published_at": "2026-02-18T22:44:27+00:00",
     "type": "beta"
@@ -595,6 +743,8 @@
     "version": "1.0.0-beta1405",
     "tag": "1.11.0-beta1405",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1405/update_data_east.json",
+    "sha256": "a0d54c1c24267410ed18ebcf0bebbfe5d52362104cac7008df4e4505f370c8d4",
+    "signature": "tmNWntT1kgiWQB9KX82Suu60hXltMfXV6pQ0AQ1ZUwTEKuRSxf99PV8ECgdvVyDtyIdo0yA1E0wYGQ7TRvphmM1xi/C3PqxscOisGMoLwrEzvQq3t0BLLY8+4grsOV3MTOjsSQqK77mHPkzwdGEHD+mJwhL9Kir3dbVk7MYf5j6WQ/osYbuncLgXd+/qxFYBq0jz+QCgYEtdUxxBKQxXh34hPAWiidHlk5FBEffJmNDUTDxIdOCPmAMVIgvJ6VZfRngEh4r46nrBPMeOLgmytUw19VfNmW9+VdkLWy6EMYx/fBUfdcyRzjz4rq2+sS9QiBf7ADXBRNNBaAKQdlHNFA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1405</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1405</code></p>\n",
     "published_at": "2026-02-18T22:45:43+00:00",
     "type": "beta"
@@ -603,6 +753,8 @@
     "version": "1.0.0",
     "tag": "1.11.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0/update_data_east.json",
+    "sha256": "2c47fa4df72c9692f7e39e340df7dec605e76e4dd1f4b84ad7040f4a97ec591e",
+    "signature": "P1Jxv63nAPlLFbjdA/b7TdqW2Jtm9ZKvwpFDb3Esin86oSBBYkYydRpBE4wWrXXTKek1yIPpMxx7fmTGSNPUq3p0wp1w8AlYdAba/qjTqDkd6fFMLfsfw1Bxao8lxvv5g9BlUvktHbF9x4xKzUpqe/h0wm6e6iIPWD2ck5DUQ0jOTti5hJu+6YpHWZIoxwCD+WvGhG/pQ4VpVDLpHnQGn9oUmEb/6HuPzotVtud2TuaNKF+5njbNyh8uD1vPUGcGogpNdmyha4vXTCBLsUDfYLq9zH0KJUYzt/yBWmufDZ81ISlY13sM3xPczvKNoDLdq2Ff4dOWS1Sk0z4bLt8+EQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0</code><br>\n<strong>DataEast</strong>: <code>1.0.0</code></p>\n\n\n<h2>What's Changed</h2>\n<h4>New features</h4>\n<ul>\n<li>Switch Diagnostics see out video about them here: https://www.youtube.com/watch?v=FLIX7n9jNf4</li>\n<li>Wi\u2011Fi signal strength shows up in admin page by @mullinmax in https://github.com/warped-pinball/vector/pull/271</li>\n<li>Special play formats by @paulmullin in https://github.com/warped-pinball/vector/pull/276</li>\n<li>Onboard led driver (for WS2812) by @paulmullin in https://github.com/warped-pinball/vector/pull/232</li>\n</ul>\n<h4>Data East support:</h4>\n<p><a href=\"https://warped-pinball.square.site/product/vector-for-data-east/UVTORN3KL75ORNK2JWEKGGH5?cp=true&amp;sa=false&amp;sbp=false&amp;q=false&amp;category_id=BUHGWE2M4555MYLVC2ABLCQX\">The first Data East Boards are now available for purchase!</a></p>\n<ul>\n<li>Add Data East Game support by @paulmullin in https://github.com/warped-pinball/vector/pull/212</li>\n<li>Config file cleanup for Data East games by @paulmullin in https://github.com/warped-pinball/vector/pull/287</li>\n<li>Onboard Rgb led support for data east by @paulmullin in https://github.com/warped-pinball/vector/pull/265</li>\n</ul>\n<h4>Documentation</h4>\n<ul>\n<li>Added new documentation site with reworked manuals and details https://docs.warpedpinball.com/</li>\n<li>Enable dark mode in documentation site by @mullinmax in https://github.com/warped-pinball/vector/pull/250</li>\n<li>Add automatic API docs generation for backend routes by @mullinmax in https://github.com/warped-pinball/vector/pull/227</li>\n<li>Add Data east manual by @paulmullin in https://github.com/warped-pinball/vector/pull/282</li>\n</ul>\n<h4>Bug fixes and Tweaks</h4>\n<ul>\n<li>WPC Initials Capture by @paulmullin in https://github.com/warped-pinball/vector/pull/286</li>\n<li>Move game-end hold handling to web UI by @mullinmax in https://github.com/warped-pinball/vector/pull/251</li>\n<li>saved 10Kb of storage with hand-cleaned logo by @mullinmax in https://github.com/warped-pinball/vector/pull/226</li>\n<li>Fix race condition in scores page initialization by @Copilot in https://github.com/warped-pinball/vector/pull/280</li>\n<li>Rename tournament column \"Rank\" to \"Order\" by @Copilot in https://github.com/warped-pinball/vector/pull/292</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.10.0...1.11.0</p>",
     "published_at": "2026-02-18T22:49:12+00:00",
     "type": "production"
@@ -611,6 +763,8 @@
     "version": "1.0.0-beta1407",
     "tag": "1.11.0-beta1407",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1407/update_data_east.json",
+    "sha256": "92c17ae6a8715a8f68c2aa03a60e0a11f6b04c2812c6735359dfe23bc004f3a7",
+    "signature": "P+eHMFyMwW88PfFtat5eXZF0X6mYeYzb9Q10hz3FBNO+kixnlGO/8aSMgQFTWALclvcxgMqkQUnjECm0tSAhDJf6opt/fLaJA5baNvgNPI8tJV0FNkxTkyJmo35Yu2CcnhOH2Lf/PB6HZccGyD8lZbSNESwtKbQHvS4qAS1iS5/Lw5Oe9bCB7kSAK9LcvclmPmhLyUUOZ0tRWkzifZJOB51ss+XS2phbctC6e4Da4ZWJR+MN+MN83n6PIWhdD7kWxXPb2MKCfYBn6lZRE1tGxNia9007IU0EcL7EuY0VwUUcjgnEQ+PDjEijaBmmpTj+T44WKP+O7DsCxfGyz/1HSQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1407</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1407</code></p>\n",
     "published_at": "2026-02-18T22:48:28+00:00",
     "type": "beta"
@@ -619,6 +773,8 @@
     "version": "1.0.0-beta1415",
     "tag": "1.11.0-beta1415",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1415/update_data_east.json",
+    "sha256": "ef0a22b5a0cb4dab2a5b235e560f8a7dffe74612b6678758a16475105ce025c7",
+    "signature": "yhK3R9+jSB2DRSt/2yV5DivNrV9qkcE6JKBCQFSUcpXEiZr+DKKZS/yvSbkvVYuIg3AHu2BywJ/kl/wp6dEy7wyHqjz9sM2KZT9nsH+wXUs2ufkSEIGHDrkvH1knfKJfWAX9gRz0A6e2oNOvmTyC5azdx4DThwCd6/XTEdNOTDEeO7bo6zCjV3dBggmCYdNMTLGMxhI1bRczSf4fxpYrauk7u50S+KsHmbpQYoKt7deJmErQafiUWd7Z+3gY7Ys5U9KOBPYB851H994irt8QgYSgEJQhmk4jWXvM1iLxgcsvScNN0wAGujdOhiXZsQmLvJzFiCWaMMngFazo/+q6ZA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1415</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1415</code></p>\n",
     "published_at": "2026-02-19T02:49:01+00:00",
     "type": "beta"
@@ -627,6 +783,8 @@
     "version": "1.0.0-beta1417",
     "tag": "1.11.0-beta1417",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1417/update_data_east.json",
+    "sha256": "532531c52ce8f21d958b28f4a421566acdff1097aa6cfd08f415506138f56a4f",
+    "signature": "gmQwsSJfCSm3bbLTtOk1enLqdwljFhC/vS3DDp6wTTR4Mx8ybh78rSxbiWdZoLzCOf/y/C/dPwRVvpV5huoEWQ4IAf2D0OkRNUcmJxI3PEboutaGxcnThi+MsEaSPakn8SBm6AuHNTRtqeyiprNtOU4lM5MAN++QlRFj3PkHSc9Udon1gqtfEED0MVxebmFZuH+UDegUa6Db1tlh1KMX0k1NVom265GjvFdtI5ExEkmnLSA92AOqE2jpSGrhZ2B9vYH3heMjI/vCoRUgzRQy5SYXZfaTdeymR5zGXo5zlqgl5ZHHY4nkHYPUN/yiWqWDNt4nMFptUpaTYYXSqFHivA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1417</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1417</code></p>\n",
     "published_at": "2026-02-19T02:50:04+00:00",
     "type": "beta"
@@ -635,6 +793,8 @@
     "version": "1.0.0-beta1422",
     "tag": "1.11.0-beta1422",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1422/update_data_east.json",
+    "sha256": "83b019b1c7ea3055f78943b293c1f1c67204fbb1b59bb99bc149c9ad51346f28",
+    "signature": "cQAXmLM4y43cXf67QP84jbOKk7tdRwWl9WnfX+htrqMOtWjC1xjz1pGBc3nUMAzlaWdAob3RCl+P6FkGKA+6pUCIXMlStnJJt7Xit5J1xR9jFPJeirKLS3IUOgKDHaicFWF8g9/5BnkTZGXNh7IZ743Q2AC4qG3vX60YfD2OMvMid++27PdSeb/8+mbFb1zr6MfOF8rjI82NSngiESyw24gBFXRWqQHSfJmFu0NSwiVuLog0eE3VDTM7fcPlkUplxBqr7W9yCzBWv/1MZ9I/8t007FrdZP183tFrriuDjU3DeK3pKymY8rbeR6M/NF4qzapR9Q7fYMnuOf5e1IbrNA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1422</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1422</code></p>\n",
     "published_at": "2026-02-19T17:23:10+00:00",
     "type": "beta"
@@ -643,6 +803,8 @@
     "version": "1.0.0-beta1424",
     "tag": "1.11.0-beta1424",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1424/update_data_east.json",
+    "sha256": "fadd1a891ea166835c2363c6c1e6bd4da9c073a2742f3c8bc9ff622a2c968ab6",
+    "signature": "Vs4dvsM1xAfspKr/NFc7bf4eZmShOvdmCQ/Tpb8ZHfyM5ylGEtv0hT+n7h9tU1qQcDGLQ+kRDbdKgMSqqWU9oGUqwsc/haFE6Vf9HJOWeeMCXG9ZiIuVVghIpDl5VkSfP4TvLASThNrN50Xx1MBEpgMibg/R2PRrlEWJqETEyxRYoKyjAGIos/7x6y9o7fCye8Y730OM5K4WZDeTiKtaaJfSMlYtkh7+iOkiPKixvDmqtWMSrOiTZBgfqcM+v3Xx2Gad1CM2Rd7KPQzacOnmY4eOWLzJdZ+vzCmeyeWSk4dxK0BxjeNvLw2kOy1y0xz+c2z/IIQmvJNf6/pKoWbe8Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1424</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1424</code></p>\n",
     "published_at": "2026-02-19T21:47:16+00:00",
     "type": "beta"
@@ -651,6 +813,8 @@
     "version": "1.0.0-beta1433",
     "tag": "1.11.0-beta1433",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1433/update_data_east.json",
+    "sha256": "b98e274e195141001bc91ac39667c8f84d0e4e89db63d8c366fb6645f5910c81",
+    "signature": "SV12eSlZtom0cBXP/5Url2Cqjkp69tcDxWxxc2yg1dtXgG9wDLMKNMduKJeArInshUUu5v3+UMy2uBKfpVAk62dHM4snXM0royAhXXmaCZ2/1o4n3OoxP/zD3UJI8aZ+fvL2jXkoZy4rQMwakQgxtiJf1TXk9jj9CkNGHhFSI9hgQnaLmqGGaHKf927DwJYqML8Fe5TpqLpdNMhKDMuDxT/rS+sGZjo/zc/Q7eI10+i4211xkkOUcPrMer4H4mh8FsTzOKaP3uoyyZE5hV/nh5VwvlhqhW1kmsdji2RNaT0nsgp4Zz9pKxG+Mv5VKI/LPVXze3rPa7QbN6jpH7WfNQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1433</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1433</code></p>\n",
     "published_at": "2026-02-20T03:47:16+00:00",
     "type": "beta"
@@ -659,6 +823,8 @@
     "version": "1.0.0-beta1439",
     "tag": "1.11.0-beta1439",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0-beta1439/update_data_east.json",
+    "sha256": "69202edf4cd05a5d24ccfc4f9c359df6845a3ebcaabcddadfa282027ce048642",
+    "signature": "Y+nRIbObSdUhVmlenYduRU7pygNsfEWRNROT8d6yQQdIPrlvu25hPBFaEQkyeSCooelEJIsMfa5nxCCAQVdMyBWVLLsaiEhjuqnWuCgv102urN/l50sv0F0p0AeXLSf5Mwxa44qvYkXLGp/rorx3TQ/oahVPecZMwGdfVLWoKgVQz37mMCu9VzBETccVcT0BbvBnftE8Yf/DiCKLG2LwAgw6A0FE+wn5t54sqaD+g1gLLi0vy35Ctg8ISAlEoyjcSIuzWOh2ax8AOqU+kurSzXqthU9PXSBWPUbF+eqq3y+Jz/sPiNvKijBBL1BNu+6D3lLCipmnUvVV8Tjg871mCQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0-beta1439</code><br>\n<strong>DataEast</strong>: <code>1.0.0-beta1439</code></p>\n",
     "published_at": "2026-02-21T16:12:43+00:00",
     "type": "beta"
@@ -667,6 +833,8 @@
     "version": "1.0.1-beta1473",
     "tag": "1.11.1-beta1473",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.1-beta1473/update_data_east.json",
+    "sha256": "f8bb4bd2bcd8ffb20cc4a0e87f1d54190dc2a4a45d38de35ea28a86c059c657a",
+    "signature": "ge737Z1IQVvvzOMZu0pwDNWyUzKodXwI4UhNNbf83mEOi4QCjgfQX7zbJsep70+P8bOBe7AkiuqxQFQXwahD6m3PwIcAmvUzh8IAYE9Jf4wRLAQgO0te236goC0aP7ma0CE3lkjgKLkZ1mTpPLDL73ay4fAyglJh9OXIthya2LRfD+1Tb6Cyry/9Y/Xi5n0r1EIaGehtMzn08tbAzPRsQO90HUW4hb0Er9z4sZOq0iDgyrilJThVCsmRqj4knuIHsdus/JcCMBVjaHZnQmHoCEK4RUILbq1jRogJBF/++vc+7LHuY/335YSiyaidJF02mK5EnRzMMVCDEgNx45k2Fg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.1-beta1473</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1473</code></p>\n",
     "published_at": "2026-02-25T00:58:47+00:00",
     "type": "beta"
@@ -675,6 +843,8 @@
     "version": "1.0.1-beta1478",
     "tag": "1.11.3-beta1478",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.3-beta1478/update_data_east.json",
+    "sha256": "72272a642c01f228c2e38e46bb2f484fb4c73bdd9fa110747dc085903857765c",
+    "signature": "BCpd1Ut54bDsT/Fp8mbALLctMlK4OzYyRig9Meer/TZwR0aVAaGV5Odl8+99Y6ZFz1TbA+SuD2xEEiM3aSeNcEhnTchz3j/SjLqT4Q/92cp+GwC3lz5BHD2uv3aGBko3rG6qfXm4BBKIt0lMadELlqr1ngquWHemBKI3JKFttksXrmFsmFib9qUYpZnLsT1wIkbGJOwPh0o8YR3s4AYAy7CTyUkQoj+LQN6Tsk0roUMfbIoKvp3REzrLpNr6Xjwuf57uDbOAwxGaw0LzJOGTOMeOpVKAMHCAJCX2WKSsaGBRO5Yoh5ra6NJA60qxXLQtyY38djU16H02DmaXI9cP/g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.3-beta1478</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1478</code></p>\n",
     "published_at": "2026-02-27T17:34:15+00:00",
     "type": "beta"
@@ -683,6 +853,8 @@
     "version": "1.0.1-beta1485",
     "tag": "1.11.4-beta1485",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.4-beta1485/update_data_east.json",
+    "sha256": "c8bd96d3a43aa5c9b6eca7c9c2d4530224f1bc220848a36f05ad8538aede6924",
+    "signature": "kcnGbL8e7GLA9WyIAcyJYDTPjBFB+Z4WNSHoUyVPAwbFhrW7EtTfCh2PKkjFJGZBVle/E1uoNQl7+DTerh1jXQ/C2zKOPXRUQwftvHUcmMywlCUpnN7eL6/5QVWtsyOFAsXOPNmin6IHtfuLQVOEsfDzQf/ijcmNPRQBIc826swbr49uSemT7NIaMwLK0FQ28qbUpLiga760jaET5hACUTjKwKlaMvi62nbPGg3jcMNuOgV9YVwyncW0PLC3PRQK57mE2sfLe+45eSF4dHTYMOoE3oXRGvBM+xizijrbRm7dS+1HQTuoHKoTE0r+AOqj6LYf2dImMXDFewrtMzbR8w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.4-beta1485</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1485</code></p>\n",
     "published_at": "2026-03-02T21:52:48+00:00",
     "type": "beta"
@@ -691,6 +863,8 @@
     "version": "1.0.1-beta1500",
     "tag": "1.11.4-beta1500",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.4-beta1500/update_data_east.json",
+    "sha256": "35183a53053be32d7e9c86be7bb835b4f1347a5c7f811c5fc0d51a11294ca15b",
+    "signature": "HOVseltsV6QKIMyHGKWCjyMZCswkBx5FJjZGLwtyAgABJIXMQNhG9ll//7eHU9cNCdPIHdYfesrBTYpJTvCsfJcuXPrOLxwIEpGaM5SRIFhW9zD3DQcuGF0uPPdT9F8/1PsyNoSWhguJDoCj3qecshEQdbtODYzhDmD57GBgip86c9mb8kMUp6XrtFzRVAjH/67hNlSf0xKGSk/gAAX9jqBbOZI101qob+OoUeZsBI6M3lr9sQQtkrWvQkDUEJatIihPOxAsgmx1eCuL5/y/OWvn9cqRcsU4Pj6tZLAKSBi7JFNh8jH5k3YAWxOhpVH2JR+Jq3ff499gNjvFESpb9A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.4-beta1500</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1500</code></p>\n",
     "published_at": "2026-03-03T01:23:52+00:00",
     "type": "beta"
@@ -699,6 +873,8 @@
     "version": "1.0.1-beta1513",
     "tag": "1.11.5-beta1513",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.5-beta1513/update_data_east.json",
+    "sha256": "9ca1fb4bd9b19019c41bc61698828863df7a5d69e468fbfc65be2e4edd7c8a08",
+    "signature": "QccFt5IQk6g7J1dRzwRaZ0PvGrj5/pDX6cUBqyngyxpWnXwL/GMOQ3eYWRUJAWNqzXdVK0jWfd1sOiChFAuXnTmP5I5Andoojd816lfibpTs5uCJycpW6oO/GYhCQo0KGARNiQ5kXbLDmQyvtD+/QS7RN81ithvCSJKmKA9B0+hevRMo9xWketyTfANLjuQfLGIu2elJCGNNQz946AHqC7dJyJBbUYrWqDe5Lz8m1DN8Eb3VemTbkpwjPqKzknu+50ZzYTMvGsekzSXDiYQITigx/aBKtprT/iBmRz2WxgIPDkzg4TtMT1E072PvkDK5AR581Gd3JyYyJp45xUB/QQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.5-beta1513</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1513</code></p>\n",
     "published_at": "2026-03-03T02:44:50+00:00",
     "type": "beta"
@@ -707,6 +883,8 @@
     "version": "1.0.1-beta1514",
     "tag": "1.11.5-beta1514",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.5-beta1514/update_data_east.json",
+    "sha256": "5fd91334b70e0ec21cec2c9eb95ff51de04e76f70fe43678d5d0a4b11b017e99",
+    "signature": "uu4D8BvFBQ451BfoPyf30CAIzAgZ/OwTWg6rDrYWLSp1lKirPWSBxUT/RyB42V6bE1+JIpa2xwhtD4wL7ftdEcDLwObTKDzchRX7Ux3AfS43l8IO/MJM1otLHydxtLpz4JWaTh81cd5DECInYshgBYUUaNQJvPY586SxX5U0lhyQLl9YMOxPdptSZpj5g6xaKVozvzcesqA6z7fvo0qGimDX4eAmdJeMx9uGpIQkrtrv5DC2o/n/RZe9cytqjab34SKuo0FeMOmcLi1lvV9/xlNJABoXfTRprEcAkLM2IQrho5DNNbZFvjfuiCh+Cfh4KJBMgUlekofRk/8U1rnNJA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.5-beta1514</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1514</code></p>\n",
     "published_at": "2026-03-03T02:54:25+00:00",
     "type": "beta"
@@ -715,6 +893,8 @@
     "version": "1.0.1-beta1517",
     "tag": "1.11.6-beta1517",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1517/update_data_east.json",
+    "sha256": "62aee87469549c4d5a19217243e870c3fc86cf94388fb80aafc5ec2cb7314d03",
+    "signature": "fkq0bnDZT/0LVlb/3+5CWOZD4jpJnis59uBqsYi6+vH4/3x2+2ykwzfdXRyac5LTbWnin47Aj3vzsEZuUt0Lzj4b9lWlnys5vLueWDtRTzPNCmjZBJ1MvT0V0t9VSgqU2wvfaqGvdlosZ31PDT4bZcJQggsoEc/w9UpjgwMqGVyIW/jB4PslqwMtA1SWqY5prnGHErnAvY+3E5Jg/j8Hi2+i7TQ/zWcFYu6N4V/2HH5xY6yxkohq5QyASyUlpjA3M8GqgkKJgWacYD1CNGt/vyVIGTUKStZEajZEBbXNYKYm/T1kBC7TOymrqTknFdFYq+L2caED2auAmdOWVV4cTw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1517</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1517</code></p>\n",
     "published_at": "2026-03-03T02:55:28+00:00",
     "type": "beta"
@@ -723,6 +903,8 @@
     "version": "1.0.1-beta1516",
     "tag": "1.11.6-beta1516",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1516/update_data_east.json",
+    "sha256": "4a1c8b3917e4c3b4e74c1766db57c514a9e38e0eb380ddde337e964cdbb2a401",
+    "signature": "ZcVHOnfNK4CA32lAupJgGamTdxkTwIesSo3vq0U8mxVgdR15IraRKHPNRRD+d+VhnzOlcmpWbWry2IPj+m3p3rjBqauNHtHqRuff9rRtBffsvD7uPnnyrAfLD+Vs7c7xfAXQglTa9cWbjP/Ze09tNLffs8KlaW0lpsyHXfkWDBm0F67R2jTrl/O1Oo4RxkEI6384YfqAoaL6Rw5Dec3vESDJONYFaHzBryrQmWjQqPWL3hNUK1ysiEB2BT8XG8dX6yoeXRB9k9i/pyVhcobuKRjYVdcnmjGKtUPMXGVL9rqnvbKChuE+WWvARbDYo1wFj3kwGj+/Li98Kk9oWAAydA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1516</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1516</code></p>\n",
     "published_at": "2026-03-03T02:55:10+00:00",
     "type": "beta"
@@ -731,6 +913,8 @@
     "version": "1.0.1-beta1528",
     "tag": "1.11.6-beta1528",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1528/update_data_east.json",
+    "sha256": "95b2fc777db8607b95e420fde3162570d2ad0371fbc252dd72f7e97009898f60",
+    "signature": "qzejRvujIYgxxCi3yQDHKLlZtu/itOZBtMvfwi7q1aXZ4H9X3WyGlUplFuXuAp/0NDQeVpC6aI/0F1ylRsW1dsIqL8Cs7nMFss379Yoxi62hiOxKJTr8LJwgymFcL5QiKZPSGIZhKOZZ5u/XsMfm8ZmivOELb+mk0YW1m53CsQrppdzZLAPzQ/7JUb0bt+f76XVvVp12KD1FCWmN8nLQu1luASxtAqlFOQ/hU+/eY9eJGPJWotppKnRNE0qds/oigjESZ+bpZwNpnbgy2ylSguLEkbICZg7XO/cCgKUujZIuA3imJBqkTbHUnr30QzjaaSPvZw7aZ91MW4ZJgG72pQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1528</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1528</code></p>\n",
     "published_at": "2026-03-04T00:53:03+00:00",
     "type": "beta"
@@ -739,6 +923,8 @@
     "version": "1.0.1-beta1537",
     "tag": "1.11.6-beta1537",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.6-beta1537/update_data_east.json",
+    "sha256": "015f2e38a57c5d9f5e00e2f31a4c1f8d46c0c1d145e6d86260d0b1e748c6a2d9",
+    "signature": "b5sxKPbp+sBklaDjcmHRpKxu3UvoZl9OoBx0hujTfKj+MqlR3CIsrSZeYzfQeANfdjL858JwPsRvVK7G9UhuQjXwkgL6/wvxiSDVdap+GysogruYZcUM5RGe7yRo0Glv8vX30gQNvMrxXOn4WELCMbEl1uHdw+v2bxryunr8ZuuWylGxh/xzFThq2W2UYiHWRG9PVjXBL3p+cAYa0ULqxLo5vEHI49yi5JoAGt7LH6D7W3LNjsljUdXgTGBqNYH20zS7cw88bY0chL230ykZiJBwrMoakNcCgWIXq1Qcyz+lDI61E7nnjrSpyBXugR/oPyCsYI6tAXwCX3Bo3GMG8w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.6-beta1537</code><br>\n<strong>DataEast</strong>: <code>1.0.1-beta1537</code></p>\n",
     "published_at": "2026-03-06T12:49:32+00:00",
     "type": "beta"
@@ -747,6 +933,8 @@
     "version": "1.0.2-beta1548",
     "tag": "1.11.8-beta1548",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.8-beta1548/update_data_east.json",
+    "sha256": "71b603ac5b2ee85067504d19496820bf167a305948a1e8bd902bb02313be1107",
+    "signature": "HlMcyL3X9LNMOByL50bQ4KJiF6Xw0GWDFyAlmexEeBDtpwAqO9Wvntx4Xsx9D75ozLW6w6ufPLCrrBprYqPYKgXrcXg8ZcUQO1ld52FdK74B/MygmokN4BcPAeXp1pZB3HO3XBdTDU/0QjTtvn8BbikD+/0Eb8IHPCb5AtQhHgxhUVMRrHnuM4Vak3hrfgY68bAPZRkBAp+9pNtWodeoYNju88fxNv4QwYfJONAxAL/qIqFnQKtKQSVsNVn687mgtZwcABNVHU6h3uzakOP/ZHKz60KRJmM9fy+fMIxpirPIeSoTtGQ1RoqqnyRX4TKTG5EwX2oadI0kzOuN9ncVbQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.8-beta1548</code><br>\n<strong>DataEast</strong>: <code>1.0.2-beta1548</code></p>\n",
     "published_at": "2026-03-07T15:54:47+00:00",
     "type": "beta"
@@ -755,6 +943,8 @@
     "version": "1.0.3-beta1553",
     "tag": "1.11.9-beta1553",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.9-beta1553/update_data_east.json",
+    "sha256": "8b8aa6afc8cb576adf18416079c47d8b52b29079904299b02bc3f2d8adc27ddc",
+    "signature": "ObC+5y5iFR+NbDQFDj5jI4qsqGgHQ0kKZCo0G5CCJa/zDKHbUNltz7C2WpkQ5NlQb0bhzZgQbu4K+YPpDw2qb3xxuuDLt1wUCc/V1hPiO0pcVLK0cE719bS7zoabIIYcT+KaYrteqfKNUuBM0eJYz6Q41VAwewknfsWWEJkoiTlrqMaW8h0V+CNxO/up5LHlJZ3SgsMPUr+GCh9u7RMMbVJtpQ8Tg3o+F8n/FSXcinUldcQIW8vZysn0maxRV4TQi1dhLp54u0Cogr6HN3zi/SaUyKyNrnoRqBsO7O5M9Cr0noPc9K5nHorcZ2ICWqTq5kd0SqYr6x5n9UCqqrYGxw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.9-beta1553</code><br>\n<strong>DataEast</strong>: <code>1.0.3-beta1553</code></p>\n",
     "published_at": "2026-03-08T20:00:30+00:00",
     "type": "beta"
@@ -763,6 +953,8 @@
     "version": "1.0.4-beta1560",
     "tag": "1.11.10-beta1560",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.10-beta1560/update_data_east.json",
+    "sha256": "955ea9b852672a7370d351fd0de9c20eef4b0d3eea50b846e414a6ca55c00d41",
+    "signature": "Y9SL0xKBkau1R+pr8bs2crwr2robso50cAx+rto8ujspqPHO/YcM7vcwYmlF9xzdjJ68CeeMJlNq1rPBkVA8tgfhspxVvyOdm6Zqrzqt7m4buG2nKFPNqdbAMG81Dyw7E2KDsyNl86+tZftycG/53ypHM7XW16ahy9Ct6fUUguuixP6+1mDUmCli/U3De5lvivoFpzY+qS7K0SiQp+TfCxl8z1KaEtwNEsmMsEadWQLGPIu4RBP3uVYziAwCzJC7n9zDJiZ548wuGXP3CqatMgF9YfuS+pUHHlwwoR6qwkhcQyGERL6YcrMij++moovtODD8Dm0d4F8Pf3CBYrRVRA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.10-beta1560</code><br>\n<strong>DataEast</strong>: <code>1.0.4-beta1560</code></p>\n",
     "published_at": "2026-03-09T21:41:46+00:00",
     "type": "beta"
@@ -771,6 +963,8 @@
     "version": "1.0.4",
     "tag": "1.11.10",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.10/update_data_east.json",
+    "sha256": "77b933c9a8fff229ba16e446a91819d873d8835eb333e659b1e242b4106b2744",
+    "signature": "t/iSeMG+8JQfo9WcOQPwwZaWroAA0ZOAmpCKpQun8ODwrtSc1wQmtCaWT0gtkEWzr1JYGvNB8NTIxVpzTpa83JtV17zZbBVtaIhNzFE+6lwRAfq9Cezji3tWoeCRPrg1+hyq+je2CxC0lC/WzrbgP6WAzTSIQv1fYqnEmNc+Hj4/9VnZRTO96D7JmdS1qILEhHItRTb8xlmEWfcYkm9SO5Tr7hKS0z/+jrfdpUjFyzjtjgTni50j7mPyFumZNqAL8Q4vwfZAtZEcYpIC9gvBM2/3+poSuApKSLjE/gMb3MuolOOCO76PHpOTIqwDzL4HomtZH2/QN6ONpnEW17c3Vg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.10</code><br>\n<strong>DataEast</strong>: <code>1.0.4</code></p>\n\n\n<p>This release focuses on reliability, performance improvements, and expanded game support. Several internal improvements were also made to make configuration updates safer and easier to maintain.</p>\n<h2>Improvements</h2>\n<ul>\n<li>Reduced update memory usage. <a href=\"https://github.com/warped-pinball/vector/pull/307\">#307</a></li>\n<li>Improved flash storage efficiency. <a href=\"https://github.com/warped-pinball/vector/pull/312\">#312</a></li>\n<li>Config bundles are now distributed as deflate-compressed .z files to reduce download and storage size. <a href=\"https://github.com/warped-pinball/vector/pull/310\">#310</a></li>\n<li>Cleanup and improvements to origin support. <a href=\"https://github.com/warped-pinball/vector/pull/301\">#301</a></li>\n</ul>\n<h2>Game Support &amp; Configuration Updates</h2>\n<ul>\n<li>Added configuration for Fish Tales (L5 ROM). <a href=\"https://github.com/warped-pinball/vector/pull/299\">#299</a></li>\n<li>Adjustments support for several Data East and Williams System 11 games. <a href=\"https://github.com/warped-pinball/vector/pull/298\">#298</a></li>\n<li>Added System 11 frame mapping support. <a href=\"https://github.com/warped-pinball/vector/pull/313\">#313</a></li>\n<li>Added OneBall format and fixes for initials collection. <a href=\"https://github.com/warped-pinball/vector/pull/306\">#306</a></li>\n<li>Improved ID to name conversion for score format selection. <a href=\"https://github.com/warped-pinball/vector/pull/305\">#305</a></li>\n</ul>\n<h2>Documentation &amp; User Resources</h2>\n<ul>\n<li>Updated README badges and documentation links. <a href=\"https://github.com/warped-pinball/vector/pull/297\">#297</a></li>\n<li>Added documentation reference for the API over USB feature. <a href=\"https://github.com/warped-pinball/vector/pull/297\">#297</a></li>\n<li>Updated <a href=\"https://www.youtube.com/@warpedpinball\">Warped Pinball YouTube link</a> on the About page. <a href=\"https://github.com/warped-pinball/vector/pull/294\">#294</a></li>\n<li>Added updated phone screen capture images to the docs. <a href=\"https://github.com/warped-pinball/vector/pull/320\">#320</a></li>\n</ul>\n<h2>Build &amp; Developer Tooling</h2>\n<ul>\n<li>Modularized and documented the game feature CSV exporter. <a href=\"https://github.com/warped-pinball/vector/pull/289\">#289</a></li>\n<li>Automated regeneration of special feature CSV data. <a href=\"https://github.com/warped-pinball/vector/pull/296\">#296</a></li>\n<li>CI validation for JSON configuration files. <a href=\"https://github.com/warped-pinball/vector/pull/281\">#281</a></li>\n<li>Added PR guard for required version bumps. <a href=\"https://github.com/warped-pinball/vector/pull/295\">#295</a></li>\n<li>Automatic patch version bumps in CI workflows. <a href=\"https://github.com/warped-pinball/vector/pull/300\">#300</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.8...1.11.10</p>",
     "published_at": "2026-03-11T21:56:13+00:00",
     "type": "production"
@@ -779,6 +973,8 @@
     "version": "1.0.4-beta1568",
     "tag": "1.11.10-beta1568",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.10-beta1568/update_data_east.json",
+    "sha256": "a290e3bbf859cb49e4833920d6570dfada6abd0697260c2cb78e010f4a115dea",
+    "signature": "zBHBFY5w0N0v74egtmMbOoBpTPdQQYWCI8cKNSIaZzmhgcZ75f7OZtTTKvHcqDEM7Nf/Ajk6QVyPcZZc1j0JNtl3sivlKCRPjFadcZraMJFVzyg2WwR0/Zw2biLdP3RrmL8fUPyzaEzsMkXMWqkUylkWjPirUyh2zujVRsPAk5YpMvJ0vlfzJxb4zdHJrD+Kv7cAt/by4qYkJ8zlyjlbNOSFed2DYwz3mJPR69xWnkKDsiX5y4xAb2xPzFzMNyri8S6R7OKhBkyuLTsC6MUnP7lOe30E7HoW2NT2iCE2UKcrFBL71ITXyc4FaKi5bXcB7qfRJknazW++UM/PFjhwmg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.10-beta1568</code><br>\n<strong>DataEast</strong>: <code>1.0.4-beta1568</code></p>\n",
     "published_at": "2026-03-11T21:26:42+00:00",
     "type": "beta"
@@ -787,6 +983,8 @@
     "version": "1.0.7-beta1607",
     "tag": "1.11.13-beta1607",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.13-beta1607/update_data_east.json",
+    "sha256": "e592b6d958cba82ed868a6317b3e276899ee0bb332c3748a5497151a3f4eb14a",
+    "signature": "yJzsyCAdqyh9M9ZJOWX9wGwZLOoYmt1BGuj7xb8nLA2ovezL73AkkEvkdJ6WIbPEUjowF5WzZSahbKXCGRNKUpx5Jsnc5zEFKBq0v5mM+8NTw35zGR1pVB8/NzEHiARE5daNMOGP2LX9etnhZzzq8ROu/doogjArVEj6TzNF1OkiYnjP4/HeTJZBg3W0eDn8vrKUA58p1wi7ahI9++gAoVwfKtVu7Sh9JaUnQ2lymJP2SczQ+HdWSvuXDNCODVkBC/W247AGJxAM8PRkbgSPXDtHnx0ZL5X0LkTaHpSKxZkKu34tpiPtCRc3Jt7Mcd1BbMb9b/6lBKpzqdD1zhbblw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.13-beta1607</code><br>\n<strong>DataEast</strong>: <code>1.0.7-beta1607</code></p>\n",
     "published_at": "2026-04-11T00:20:37+00:00",
     "type": "beta"
@@ -795,6 +993,8 @@
     "version": "1.0.7-beta1610",
     "tag": "1.11.14-beta1610",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.14-beta1610/update_data_east.json",
+    "sha256": "62cb20a34460fa2dd2d6455471a2a47a3cd384f3d39f62d5f991d7ebfca3bd2b",
+    "signature": "MWPqkGyMl/P3sdN5FcICjgS12/jDNXICZolENCsoq0H1ICdA9dDDQ1YdFTDcawgUm1NgN9a1MKSZ1s9EY7iZdNLxnz9zzGcaUkE7LegEFXcHsl0dieW1kZV20jdnqC7R7pb0UOsAGpE7i7GTr/bSkPs6XKx75veoLzPTIlPX+nxdM4taPXEY+uPWHj1j2OmGVOcAZmaHW1gsTIIqabqVQAYjRl1a7m7ZPRU+rnHCRK/uSHEPWo0QTxjJPj8+wyeE5SWwZewcyuJ6UxcFIkd/+4kfM0wC06ouo1YB1XwyXf0MR5FHT8Ry6zm/eUeI2VdhIaBWy/74bxqplLZjqh+OTw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.14-beta1610</code><br>\n<strong>DataEast</strong>: <code>1.0.7-beta1610</code></p>\n",
     "published_at": "2026-04-12T21:21:50+00:00",
     "type": "beta"
@@ -803,6 +1003,8 @@
     "version": "1.0.8-beta1629",
     "tag": "1.11.15-beta1629",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.15-beta1629/update_data_east.json",
+    "sha256": "6efb57c8938c3e4b06336ef01e02ef5d103ef56e52ef284737efeb7f380feede",
+    "signature": "SAY4oMM4DTaNExSRTQDCkrn6DsEu2hNHghlnQ4l4FX8H582MATUYh38OVFD7NqyZWDpPfF4pOAKPrSSMezYE55s/fiwDR+K++X4+UracbZtm9QlI7u4BvHGvDPSj9bj6z+S42Aj+Y4bAysmj0rXWongxg15iYGDDtHGvY2EyBSJZNZNcl3MjtHgUEK9fC3dhqjgCDxHcY9CTQ2ej/XwSYwWkHPbFO8/6GTNNpR8Sui2pj/1SEmcqoW9QXBgEPTMt4tYKpmeB+v1Nf7PchCAAnGlirt7uXlw+wEbEpY+88qOr3ak+GTBGCtWlfvccfTgFdIqmMiWHFdHaJ/2HWXQtqQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.15-beta1629</code><br>\n<strong>DataEast</strong>: <code>1.0.8-beta1629</code></p>\n",
     "published_at": "2026-04-28T10:04:53+00:00",
     "type": "beta"
@@ -811,6 +1013,8 @@
     "version": "1.0.8-beta1632",
     "tag": "1.11.15-beta1632",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.15-beta1632/update_data_east.json",
+    "sha256": "e5105d998bfaabcb4b96c42bb9a2efd6a459f37245559bf93ca2a3dc82cd5cb3",
+    "signature": "tyDdWWoFVpP1moDtbtqCqgWqIUWuh/aeOgMuzRf83aMP0se7+wx/13C+A3ahCib4tLqq+qN1k4a/3uaSWCoVMV649wLSXyKUgyMtQ9CDp9YAYX0vlMbxQGvjAd30p1UkdiT7u8QLRRZsjR0vhpw97l3MvFZODjkvuqeIhN2ZWz9c6e1Z/31araj1cI+Xxubo8rM7C38muxcSX+JkNyedbgnwT1kKYv3dUT8r5pg7scSWvpWh8NlQlE84iTC3aW3NkyrZ84tZQpQhWc7e5Ci9BiwPQO0dPmSacZSfykAqINbcvPzMD1/JTJTLgSBf0eSA9Jze+MloAgQgt0rFe+2iYQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.15-beta1632</code><br>\n<strong>DataEast</strong>: <code>1.0.8-beta1632</code></p>\n",
     "published_at": "2026-04-29T00:41:43+00:00",
     "type": "beta"
@@ -819,6 +1023,8 @@
     "version": "1.0.9-beta1638",
     "tag": "1.11.17-beta1638",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.17-beta1638/update_data_east.json",
+    "sha256": "9ce53c069bab391d7762128e2f3662d86108a80606ec43fcb4153fcaaba6da66",
+    "signature": "T1Rdsww0oJnNiE4TtN56SvtTdw97kMEAjfW6FPgrxheMBNG3gyCZ3Ghi7J66yzuYo2ZTD9RPgZZmTJso55hKF816qX9kzxl+NWU5D0MFpyd1qQQfnnuGWKyeSHrld0jhqSBpLGsdT1s3WJEMP89Lj6knUzPSQ7Oq28C+5JSlWXf02YKsSz8Rf3EiIBXeB70oqV0WgjUx7ADh/bVqUj3mYA3DoX20/jD30s/OAECnsJrPNs9bMwbFBQbMMFhalZ5O9WMizBZAkN7eDQInKzKGMYfderRKw7dL5ip2x+z+HI7BhsGR/859HyXUOpKhPgAu0OqmtPHJkpZbBiFLhI6Faw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.17-beta1638</code><br>\n<strong>DataEast</strong>: <code>1.0.9-beta1638</code></p>\n",
     "published_at": "2026-05-05T12:47:02+00:00",
     "type": "beta"
@@ -827,6 +1033,8 @@
     "version": "1.0.9-beta1641",
     "tag": "1.11.19-beta1641",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.19-beta1641/update_data_east.json",
+    "sha256": "e1458702eee79a8363f4f313131874d8d8e53690b300e8bbd27e60083e767d9a",
+    "signature": "urRBtyYK0jFpV69S0sS40l51RishOP+BSxewyj05eVloFWH4jOiES1N5Z7JDetMOQmAgYFzHDYYBlL8HhBbZc4vHA+btJxk4q8DgwQ9sVeOiQZzj0Q+CckaODIZQpGUVqPOmQoewevfcie5bVHtrlB9Ad9NIDIVhsFePs0FgwpdxrjzaqyC1qU9BsKAlNrTTtXwUJxhQjH9mfRbuKM5kQz40sGg3NK89XTsJ+wcglw/qKKQvh9ajQ36pTeIvX1xi+zPibdf+MNVctkAxVgIj7QIbOi7jn69ZmB+3o831b1AV8tXKzwiENX+nz4UifAdyFxp87/mUsXxWVkRANBZqlg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.19-beta1641</code><br>\n<strong>DataEast</strong>: <code>1.0.9-beta1641</code></p>\n",
     "published_at": "2026-05-08T12:42:40+00:00",
     "type": "beta"
@@ -835,6 +1043,8 @@
     "version": "1.0.9-beta1642",
     "tag": "1.11.19-beta1642",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.19-beta1642/update_data_east.json",
+    "sha256": "0a376d7f8eab830b4c95d4d9be5ed2824ec0fa97963076843e56a7d56ac7fa39",
+    "signature": "jK3UKoHvak6iOn22QOdsJaUXKIqAkMtDqKC7kQwnfytscM9PphY6jD3alnukg9gk4Aoro7SMjhT2WjaXklyvx1wxxg2iLK8rmbaEwYafajgBesTwYGBi96yn0TC/lMN+2fcG1X7Xl5+Roc2kRZtk29IIvEkHbCLPZj5dGcgf+ivX60D2wMcYyJQ+2m86OY76zGFBPSx8uX0Xm0ePHZozm8ILwhkjOJbyTwZHIOLANT96sTH3nfAkY01cU7htrMIVywf+YQN59bX7eSwwyisFHflE4/eQNa9j1J0Db0ai0EGANnIoZSdtApx/RXNwlfCJJl+GcBAcJtaA6QSKk9cC6Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.19-beta1642</code><br>\n<strong>DataEast</strong>: <code>1.0.9-beta1642</code></p>\n",
     "published_at": "2026-05-08T12:45:04+00:00",
     "type": "beta"
@@ -843,6 +1053,8 @@
     "version": "1.0.9-beta1644",
     "tag": "1.11.19-beta1644",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.19-beta1644/update_data_east.json",
+    "sha256": "3c9bfaddbd82ba80ce1c62a937bb235d34ad68e00202ac3ad8f2f88963520e41",
+    "signature": "X3kttVNcyoFsjU5Xq9rhQz4VCG0lxeGEVhO9daG88tU7NI7L2x3dtwImMIgUsvsZU46bFeeI1HuLlIuj5HpsGNr8ztFx6tRuBgRYsZu4k3tpScmfCnfNGWVny6R6t3Hesu00M6jQBrKr0wplMRYPDz3ZCTHjlytfwEnuT6lY3VPSVAmd/3Uk73C8heuBxO5PylnHXsryTXIGy73JHh1T3nOyJYp3T3UedGcFoql5UVw62qOJFM4ft0t5wl17JvWbAEl422Wic0ZITTte/dfPWisArLiEGvjnjMeTnTvGjVEubCPx7tHbzqljCAju0nFEXN99y7sIzCbKysvs2I0Y1w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.19-beta1644</code><br>\n<strong>DataEast</strong>: <code>1.0.9-beta1644</code></p>\n",
     "published_at": "2026-05-08T13:31:42+00:00",
     "type": "beta"
@@ -851,6 +1063,8 @@
     "version": "1.0.9-beta1646",
     "tag": "1.11.20-beta1646",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.20-beta1646/update_data_east.json",
+    "sha256": "3895a4854cb8f31a4b9c7091f3f16ce90b01fcf7756753902d2b72f8720789e7",
+    "signature": "yMq8LnMz4R60Pt68wpM7Qm8X1/B/7lQPHfIb7ZVzA/pPtV1CK3vePpF5/1kCq6dslikVl5ZSXTYRzZmMv/YusDsOSkUqUc4AXYFlEPV4zhFDdAw0flOIiU8UdB51rpjfp+Xhlh7HXAAik7LlBf3PvOQJ4aYodaAGrGO/pyiPC5xXAHbtmhhqLYGYq4hLy2JTuqK2JYkBoJILkd8MTRfbm26GLMDHZ7fmySAFq94+bEn7HnpYYTS0WGDi0TBcfE70qpElZ5DbnHvGxu0SD8cePVj8cgS7r1MXS9atxLOle+i4PFHEhe4EW5l/nODD60cHdTfwFlohz4E14+qnbFS6ug==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.20-beta1646</code><br>\n<strong>DataEast</strong>: <code>1.0.9-beta1646</code></p>\n",
     "published_at": "2026-05-09T23:05:51+00:00",
     "type": "beta"
@@ -859,6 +1073,8 @@
     "version": "1.0.10-beta1649",
     "tag": "1.11.21-beta1649",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1649/update_data_east.json",
+    "sha256": "294035f3e299189ffac13821f9123c5601a45d463c911c72dee1755a2d6ec669",
+    "signature": "R6dJcbNVxynoZhxdylm2glPGCQu22R3s7tpluOyPIQyXyXQHlcBEXsAasUNXkb6woGd5bip5TXtMvxSf+r5P7PjPvE6loQpa/jnz2ZMhz9VCT/6F4GFv5YOLFmuNTXXpFM3tvCHOskU+ZqE/tusJgyPquN9B6Gb5DutAw+7xIPt4PuXwR1VcUWfos9gQl7v9v/ilYWolkAS0Mv6b6DF4V1uUrmwQ96ioyPLcJtT2AfFJO6cwnF8J5YDQCReCfbAQEgezX+GOkVf73zeJlHSHWKNH24AfUr851eHAynXuLRXDaENopUDQc/iaczshit6W9Rll/Uj5Hfj1AssPu5qPdA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1649</code><br>\n<strong>DataEast</strong>: <code>1.0.10-beta1649</code></p>\n",
     "published_at": "2026-05-10T15:01:55+00:00",
     "type": "beta"
@@ -867,6 +1083,8 @@
     "version": "1.0.10-beta1653",
     "tag": "1.11.21-beta1653",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1653/update_data_east.json",
+    "sha256": "3d949328e4cdab3b879f1bdb4685a7db074ba320ae18349523105e07f7aa53e8",
+    "signature": "Ey3mNVfaQi/Ljzr/RilmKOWRQ4KXrmEVxGc0eESYPzEescyXPkzFXbQwh3jZPX4DvDUfpUtSm8jls3aUfOnQyU9o9qHAcWQ1OIlWxI9ebfOpYFdWMC9v3CM/16rxkSkqQYpDH3vTUISF13/hI0R4CZ8hly7YzsHYW65plseJUamLdvAQUoudJESpI4GTQ9feiQEF1AnaJJJEGtogh3gqwtrAv3pt586Rye52wWWY2T9zhjvxd2mnovAwe0EErLxdmDWKA7czQo1L7kK5FZynn8O100D3z75byX5pqif4X6xghW+aO8mAEgnV4d7SO5zWHWQU+wdQXop8Lmk6XWn7bQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1653</code><br>\n<strong>DataEast</strong>: <code>1.0.10-beta1653</code></p>\n",
     "published_at": "2026-05-17T16:32:01+00:00",
     "type": "beta"
@@ -875,6 +1093,8 @@
     "version": "1.0.10-beta1659",
     "tag": "1.11.21-beta1659",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1659/update_data_east.json",
+    "sha256": "d76353d8a629bd72c5b326c1ff188fbbf7309ca7ed59abda9469c639f4b7045a",
+    "signature": "leEa4gOwN6dalDYA0zzJLvxEpynhpCYX99UNr6ttmvyYv6/M5j7hOLOzvTXf9NOu70SLMCPrQ/QWnQaSAp/2hhu7iiTIKGhYsIjF5ur8Wet9Q1gbChYY8wxvazeePK4fkc/Ft5VH7S4tK0sTM6hvNDKnfNWurLGzfUiSv1sUGsrRh2rZgMnrWg53YMKinoKpbAJOr/fezxVghVR0ZMo17JASUBkD7vEOw4Qj43qoIOXz2eYBHw6Z3BOvknVtOY1ZIqFZPGY8b4uCYFPYVMbGaSVhLbHTCzi0Jv777ZnDas5mvH7uyVq69fKlxDlHe1HTNLyPn2PqyMaqJVgQSrLFbA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1659</code><br>\n<strong>DataEast</strong>: <code>1.0.10-beta1659</code></p>\n",
     "published_at": "2026-05-17T17:56:12+00:00",
     "type": "beta"
@@ -883,6 +1103,8 @@
     "version": "1.0.10-beta1664",
     "tag": "1.11.21-beta1664",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.21-beta1664/update_data_east.json",
+    "sha256": "978743a8b792b690c2fcee218f29a2590f0301064927fc1e66088350445f124d",
+    "signature": "G4TZcYXOduKsfK1BpHiTQJukORn8I+RigWXMdUYDvT3fMECpoHx3X6zHHjq+Y+BGVyfoXSAeLl2DNBB2axYfl8apfEl5DT7Lp9DmpLNXAvmh9Qp48O/VWD90MOiv+lRF0ni99QHqHR39Rvc1jZWfSvD0knd3+FFaDZqm4oDfqBYVBrU4gd4TOPxrCATL+J6S7Br0tVfhgkfEQ8mb+XnAw1N8IWhzIEyzSE/Z4UuH4kkJ/tsti2OpZas4ZuDAjDkdN/N31MPDUcLMVTGloSQxOCMedtB5qGBbjt4jMLwW4pt72F1ZKYi6mCj8fMcjVb7h1gonEfEqC6segbSLxSBotw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.21-beta1664</code><br>\n<strong>DataEast</strong>: <code>1.0.10-beta1664</code></p>\n",
     "published_at": "2026-05-17T18:16:22+00:00",
     "type": "beta"
@@ -891,6 +1113,8 @@
     "version": "1.0.11-beta1668",
     "tag": "1.11.22-beta1668",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.22-beta1668/update_data_east.json",
+    "sha256": "d4cc3a4e7d2cc6eac14b4b92bd77fcb2a8179bd47c1ea78f697b56c7345508be",
+    "signature": "AzNoxKo8Gf7vH8O1omKgLSNkfqRqf0Oz80kc6hM3q9egMB63TplDWr9q2yOMJXW/FZA9sjGnK4C4FcrmqBGZVnzsXK/IDHHmsLKKRYIAMKvYm2u+8rJvWp5Jg3tCx/XBXZBe4yc9tfSaIQAJ1EI7aHxaN9JmoisHoaQ1JoAMO/f4W9TRy4MXDFEJkabIE/N2kmRUZeQprlT6kNLUMbDNThPRT2OYZVjSC80QcD2IKCJ95ASu5FTh0nXFvmP2t2wyIajM7fRuxSH70jx7WwThBkxEgdm0EkeC8qwi6UI7mYjgmBqrFfRJ/AyehTAAScb5Dq4qrYW6lGYqgU5MfDk/Yg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.22-beta1668</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1668</code></p>\n",
     "published_at": "2026-05-19T02:25:44+00:00",
     "type": "beta"
@@ -899,6 +1123,8 @@
     "version": "1.0.11-beta1675",
     "tag": "1.11.22-beta1675",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.22-beta1675/update_data_east.json",
+    "sha256": "38b98fdbf581aa2b6771060f6dcde33504563c313696aaa13f1ae287afb1d01d",
+    "signature": "ugaYOULV6T5Y/j+WZbG16uIZW93sgvvSIv+No+Vqi1rBGaWAjVRkm7sEwLvJO3UvX1kY0Z8CUaPjdcTHabESnksghGes6LWE3VrZCmUzrtcalyJ4lGZV8Z489AlVEF950kwzBJn7Mjj7CW4BmtH5bv0bfcKXibVxOyVRLHbyB5+YCkyxewnmI+NJK2fmDs2lwDj1wLSVGgpBTYPbTHjCs4D3wjipoAMlGyAmPMvCvssJoL4fIr1sWr/BqyyQJe+LvRGrxpXjBOpvQjxbFgqGv3adjsecd7bi7Y02wZSZxgkA9giw+4pKYyMSMFsTna/erfFIN/krU8dCgzKDVk1SaQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.22-beta1675</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1675</code></p>\n",
     "published_at": "2026-06-11T01:35:27+00:00",
     "type": "beta"
@@ -907,6 +1133,8 @@
     "version": "1.0.11-beta1680",
     "tag": "1.11.23-beta1680",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.23-beta1680/update_data_east.json",
+    "sha256": "f173eb131767f9d95372c351d0272fb85479e31213925cc7a632b025539d25cb",
+    "signature": "Ko5hShPXoXkwlW37Byhh0FrG3lKFfNybiE41QVWMVxMgcjScWZt7Y0jO9Ot9yqTs14U6Roku/dbHuBelo15aKja1bMKZMW6tl3SO/NdRvp7fK4/SkHTINcVNJwqeFSYAFzUf83/HZbcKiGf8876t+dUicRN4quk0PMN/luYVMGWdfk191Cts/t+0hS2Piptnms8Q1IKfw64lhpTpPTjKUgAoVvkcZvSHsxWZXnRH4Cl+QBSW+51+FnNxTGNfl4X3ifq9n+DBj/GVNKQoc4eUhSmgeaAz0SNH7v1meCcfdS+NSVe7xA++6YYLI4c0Taz+XOe6uIiBJD1FFAdZndbOTw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.23-beta1680</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1680</code></p>\n",
     "published_at": "2026-06-11T01:53:30+00:00",
     "type": "beta"
@@ -915,6 +1143,8 @@
     "version": "1.0.11-beta1689",
     "tag": "1.11.24-beta1689",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.24-beta1689/update_data_east.json",
+    "sha256": "5a0366be7ea4fecb19f4ca16733d87d482f7fd52448107fa02cbe8c38166daaa",
+    "signature": "ayuN3S2KW4NiWv8Hd1fKJC4ALjaoVAoenge12tYUdni2knruzXTSCx2t9PO535dRcQujrD6Iux2jYxHwseiikgCBnJEJN9oBqI5B/gZHr44q7AuzpYfZQFp91AMBqzbMsJreMbqPKHFP6tzU/H5JP9ou4I1zidlnlWjfA9Cl467hZDtyP0omi4jhL+qXVHBUc9whAr2lTcYIg14ewtbSPiv+EEbrXU/XM1wsWzYp+V7Lm93ZP5A0y7MvzkKI4PO9+PCMOoG7CmbJF/GVaeaRtffxqv3ZmC7QflAvIM2Scs2b2VNLfKzdrT2PJZvd9HxqFyetupdiPbnbXX+2ta+LGQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.24-beta1689</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1689</code></p>\n",
     "published_at": "2026-06-12T17:43:59+00:00",
     "type": "beta"
@@ -923,6 +1153,8 @@
     "version": "1.0.11-beta1700",
     "tag": "1.11.24-beta1700",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.24-beta1700/update_data_east.json",
+    "sha256": "90bbd9416587e99bac428c8ebea966b5108d97e06af4f7b012828595709a7000",
+    "signature": "DQjSToM50uAw8ed+amGMUgzybrXX2j93dSzfoW1w1JO3Viez5wg3pp5tAiYzuJX6aSb5icuKnCm93p8k+JhO9BvghnJl1uX/uAtqcP8oT9rA0oDKNqW/8yU9KEogRxxRSUFeq+KNM/eSxYX/MVGxsqHuWEmYswrE+bKWY8dosHFj0BMKLA1BP/e3RUsTdcq4M/5sgI101vuabsNfE6hE2VztXg8XBog2nCFVh2ZezxBU246S++iv+Y4Q0ilnvH4/1guSVn7yzNrmvrrmKWuvJBzpbK4i8l29WvmflE/vUsux6lJKOElW5s6t660XmjarXPS5mjEcef2zYE/A6e6yBQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.24-beta1700</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1700</code></p>\n",
     "published_at": "2026-06-13T02:54:16+00:00",
     "type": "beta"
@@ -931,6 +1163,8 @@
     "version": "1.0.12",
     "tag": "1.11.27",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.27/update_data_east.json",
+    "sha256": "061c0bc37068dc11e3c51382097b8c414c7e8fd6a4548e92a947e53b067970b4",
+    "signature": "VRtCLSqx8eBGYH8/TFJ5dfyg9XWbRVYDzcInF2MspCQ6+agcD5pIpiSIZ3Gzyh935KvTyjW0OBRr7CCKHVh7l0rIzCPPqbDyNGU2WGMf+f4U5WY3aBDpxkoNNF1fWcs/m4bcoXbH32KA5Ofz0CBi4CnNw6PxgQRGFlPhZd7VhQbUM8Bp+Bq9iyXFD/aay18y2n68eXUoCTMrfqAnvZT5ZIaxho01R1I31+RBwrnPzCrTXfyJC5TYKMx0gI3zPhO7EfsXirsPSdkPkvOLexepGjFrVXb6rsc4jq+BpS6O2O4ozQAPO0N95rSJp6RA4mxYScmUWpphj5s2qzWH2rakEw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.27</code><br>\n<strong>DataEast</strong>: <code>1.0.12</code></p>\n\n\n<h2>What's Changed</h2>\n<h3>New Features</h3>\n<ul>\n<li>Switch Percents UI  by @JakeSiegers in https://github.com/warped-pinball/vector/pull/330<blockquote>\n<p>easily see the health of every switch in the web UI at a glance, no more clicking around to find the bad switch</p>\n</blockquote>\n</li>\n<li>Wpc configs add by @paulmullin in https://github.com/warped-pinball/vector/pull/335<blockquote>\n<p>We've added even more configs for less common ROMs. Check your machine's compatibility here: <a href=\"https://warpedpinball.com/compatibility.html\">https://warpedpinball.com/compatibility.html</a></p>\n</blockquote>\n</li>\n<li>Add memory mapper support by @mullinmax in https://github.com/warped-pinball/vector/pull/327<blockquote>\n<p>We've built a memory mapping tool to help mod-makers, tinkerers and nerds like us see what's happening in your pinball machine <em>in real time</em>. Use this to locate values you want to read or write to via the API. Check it out here: <a href=\"https://github.com/warped-pinball/memory-mapper\">https://github.com/warped-pinball/memory-mapper</a></p>\n</blockquote>\n</li>\n</ul>\n<h3>Documentation</h3>\n<ul>\n<li>Special features by @paulmullin in https://github.com/warped-pinball/vector/pull/346</li>\n<li>Regenerate special features csv by @paulmullin in https://github.com/warped-pinball/vector/pull/348</li>\n<li>Config updates for web site list by @paulmullin in https://github.com/warped-pinball/vector/pull/339</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Disable wifi power-save mode to fix dropped packets and unreachable web UI by @kneissl in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>This should improve the reliability of the web interface</p>\n</blockquote>\n</li>\n<li>Bride of Pinbot Calibration Issue - RamFill by @paulmullin in https://github.com/warped-pinball/vector/pull/341</li>\n<li>Improvements to CSS style loading consistency by @paulmullin in https://github.com/warped-pinball/vector/pull/364</li>\n<li>Print() override to non-blocking by @paulmullin in https://github.com/warped-pinball/vector/pull/367</li>\n</ul>\n<h3>Developer QOL</h3>\n<ul>\n<li>Support fork prs by @paulmullin in https://github.com/warped-pinball/vector/pull/352</li>\n<li>Add interactive target and port selection to sync.py by @mullinmax in https://github.com/warped-pinball/vector/pull/333</li>\n<li>Add --test-data flag to sync.py by @JakeSiegers in https://github.com/warped-pinball/vector/pull/358</li>\n</ul>\n<h3>New Contributors</h3>\n<ul>\n<li>@kneissl made their first contribution in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>Thank you! and welcome to the project! </p>\n</blockquote>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.10...1.11.27</p>",
     "published_at": "2026-07-14T21:21:18+00:00",
     "type": "production"
@@ -939,6 +1173,8 @@
     "version": "1.0.12-beta1715",
     "tag": "1.11.27-beta1715",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.27-beta1715/update_data_east.json",
+    "sha256": "e61efb9a0d2b598d715c577010fa8fdfe72ebcdfca3b8f2a48274bddbe5928cf",
+    "signature": "kvxEnzHzhYBJrr05GE0FE4vG3mHgzyqb/kQi+inJeP0lsx7KF6c/inmqiMqGyC1jOQqGoLa1WipmQGD0oc6Bne9f6S8NTcbBsoZmxsO/sBIjUPvN0u84mEn0r6RGalRNFoZguPy7OKEEi/XBc6j58xpqC+8kEYa/5zSpFyGz2lZCxFwbRvOt4pvFy869iMDUxtGVe45fp924T1PSRgFnvxx5cHTTRn5nYft0Ws7ZN+zu4wMNTG5gMv923SJCtkTk+fE/ZOJODPc64OrTVNOm49VcAKUxcluBfWF/7G3t4L4cXMzGSXBn/0nBzQ5NBsCmZHMPKT5KkOXNNAOkVjw/rQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.27-beta1715</code><br>\n<strong>DataEast</strong>: <code>1.0.12-beta1715</code></p>\n",
     "published_at": "2026-06-29T21:27:40+00:00",
     "type": "beta"
@@ -947,6 +1183,8 @@
     "version": "1.0.11-beta1714",
     "tag": "1.11.26-beta1714",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.26-beta1714/update_data_east.json",
+    "sha256": "df446b1b3a35d372b510f5558f024595ab841ac7164d447163be9962a1dbd620",
+    "signature": "Fj5xHPavPRQjXSxE//WSvkvF84PKgArivzB6Gt4W8Of02GGmdScDFsetUGZWRIynQd+Nu0OXYbbZUVxgPbtFInHbWSWfw4RvDe3q2rC4dRPj6ZLj0mWWSA7e2MAP9uYg68UO7vCCn/MEEFzDOuUJIlnlLK85SQXIjEqQWkszOvw+2rSyQGPUDuUuUYxdCLdA1V2dSpFgNXZLlBUF5d/PA18cPq9eXjdzPRB08nVHfsA+6mMGif0ERTqdHntdV80BiwJmOuAKxhmCwrO/sAwYiPE/UqtEV1dvm3c4oaqSbdZu9wKuGeDOG4VbRALBl9wXD+Kwa2G8G2OzZEtby540mQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.26-beta1714</code><br>\n<strong>DataEast</strong>: <code>1.0.11-beta1714</code></p>\n",
     "published_at": "2026-06-29T21:27:23+00:00",
     "type": "beta"
@@ -955,6 +1193,8 @@
     "version": "1.0.12-beta1731",
     "tag": "1.11.28-beta1731",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1731/update_data_east.json",
+    "sha256": "399a225a7fecec10465010cdd35847cd61155074b68e04a8895f151db028a1b7",
+    "signature": "lc4FqryJnwlrjqHU1GD7B1cG69TWtNAB3jGek33L4/q3SW3LxWwjaVhLqbamWalCNt4aejPlQK9F0jagdv3zqx1fggGrTt8Md0nlGodliYJYoAePfVhDYmf0+knm7MHIMEMl0Q+WgBeZX0K96AokkD3turybvSuHeR7aJ87GRa+59KESj8sCXmj+akxBeIAXKTW1Qb5B7mheHdnfGjEwNqwkEOG/CW1hY6HA+vJQJMfn8HiATF0CKiMTtqQ9GpPGJ1+Bii7QdO8rKBA5Lk6CvP/fKQU15BpaWorfggx3Uxfewevg1WkdY/EL91a6Cu8X0acKZIEVe1EJFNB5sjWghg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1731</code><br>\n<strong>DataEast</strong>: <code>1.0.12-beta1731</code></p>\n",
     "published_at": "2026-07-25T23:29:12+00:00",
     "type": "beta"
@@ -963,6 +1203,8 @@
     "version": "1.0.13",
     "tag": "1.11.28",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28/update_data_east.json",
+    "sha256": "a2958c31a7886edb941aeefeca54b512b7d22743e03bfb85e062bc57dd7153ac",
+    "signature": "boOhb+pWQcgWCR1HBEp/qcy5RkUtGGiGpjJttiqTdsdwCDtv6pSMrdx8L3nuE4kliyadMtH286KnRXV0WnzpouAM/INBKcaj2b8EFBBNyizX5hT7ifBfeV6/WzniVeyibry/skEChAjMRyK0L1tJpEkOk50YpEuVJEwdSIUJt2A94yPBK3pxoxgI2KAxO/bdZxdmUuJKz/R3X7chWh46pvA9BOEgLGw4yqwImnSYB+1jsK8s9mRRkQSqbADXcNb8XP23XpUQ7YEehO5XqN8/M30MzLnzcup3I7oE0yLBhkznQ04UosRvUMKMktWC2isephVbwjoSLbsJ2fjhrGCIMA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28</code><br>\n<strong>DataEast</strong>: <code>1.0.13</code></p>\n\n\n<h3>New Features</h3>\n<ul>\n<li>Switch Percents UI  by @JakeSiegers in https://github.com/warped-pinball/vector/pull/330<blockquote>\n<p>easily see the health of every switch in the web UI at a glance, no more clicking around to find the bad switch</p>\n</blockquote>\n</li>\n<li>Wpc configs add by @paulmullin in https://github.com/warped-pinball/vector/pull/335<blockquote>\n<p>We've added even more configs for less common ROMs. Check your machine's compatibility here: <a href=\"https://warpedpinball.com/compatibility.html\">https://warpedpinball.com/compatibility.html</a></p>\n</blockquote>\n</li>\n<li>Add memory mapper support by @mullinmax in https://github.com/warped-pinball/vector/pull/327<blockquote>\n<p>We've built a memory mapping tool to help mod-makers, tinkerers and nerds like us see what's happening in your pinball machine <em>in real time</em>. Use this to locate values you want to read or write to via the API. Check it out here: <a href=\"https://github.com/warped-pinball/memory-mapper\">https://github.com/warped-pinball/memory-mapper</a></p>\n</blockquote>\n</li>\n</ul>\n<h3>Documentation</h3>\n<ul>\n<li>Special features by @paulmullin in https://github.com/warped-pinball/vector/pull/346</li>\n<li>Regenerate special features csv by @paulmullin in https://github.com/warped-pinball/vector/pull/348</li>\n<li>Config updates for web site list by @paulmullin in https://github.com/warped-pinball/vector/pull/339</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Disable wifi power-save mode to fix dropped packets and unreachable web UI by @kneissl in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>This should improve the reliability of the web interface</p>\n</blockquote>\n</li>\n<li>Bride of Pinbot Calibration Issue - RamFill by @paulmullin in https://github.com/warped-pinball/vector/pull/341</li>\n<li>Improvements to CSS style loading consistency by @paulmullin in https://github.com/warped-pinball/vector/pull/364</li>\n<li>Print() override to non-blocking by @paulmullin in https://github.com/warped-pinball/vector/pull/367</li>\n<li>BOP L8 and L5 by @paulmullin in https://github.com/warped-pinball/vector/pull/371</li>\n<li>Data East - 6 digit scores fix and other config fixes by @paulmullin in https://github.com/warped-pinball/vector/pull/370</li>\n</ul>\n<h3>Developer QOL</h3>\n<ul>\n<li>Support fork prs by @paulmullin in https://github.com/warped-pinball/vector/pull/352</li>\n<li>Add interactive target and port selection to sync.py by @mullinmax in https://github.com/warped-pinball/vector/pull/333</li>\n<li>Add --test-data flag to sync.py by @JakeSiegers in https://github.com/warped-pinball/vector/pull/358</li>\n</ul>\n<h3>New Contributors</h3>\n<ul>\n<li>@kneissl made their first contribution in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>Thank you! and welcome to the project! </p>\n</blockquote>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.10...1.11.28</p>",
     "published_at": "2026-07-26T03:28:09+00:00",
     "type": "production"
@@ -971,6 +1213,8 @@
     "version": "1.0.13-beta1732",
     "tag": "1.11.28-beta1732",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1732/update_data_east.json",
+    "sha256": "adcc4c2f71096a35b409120c87372748bcd54c5cc25baad3f4c34debaa712df0",
+    "signature": "ttN/nDZcjUKn+Ftbbo7JgDIXoigHheH4nX46pyHdmc6uPEX9rCrO/tWZ36kTxaTWWQEZkVIFM01exZIDZBjdCBlDcjCREwaQqj/MluMQExN+cebk8r3KoDlwWq7dfK1krAVeQS3jk/7YTA8l+yUWJOEay3t3ZZII/0VBje3W/tbrzoFAkrDEndfJcP0U73WvPQZBXVpzhHzoiPmaUy6xA4o7GRc4m8zSXyfj4Ocg3cnG0ugjvweATQIifeNF81hDdDmpGZtPZTQdxW/r5dTXmGGqklb8fQRl3kmf3wKTpbv6MKnxqhZ2VB5pZHl1RwlvJ8VYISX1PQnfqg6bpeimng==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1732</code><br>\n<strong>DataEast</strong>: <code>1.0.13-beta1732</code></p>\n",
     "published_at": "2026-07-25T23:29:52+00:00",
     "type": "beta"
@@ -979,6 +1223,8 @@
     "version": "1.0.13-beta1744",
     "tag": "1.11.28-beta1744",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1744/update_data_east.json",
+    "sha256": "0db1a7d197c6a7ca3523f7f966497bb4cac6eb3673b018214166ea0b0ff1ba98",
+    "signature": "VJa3KuEuGRTrDmZ+qzp1XFoAdMIQyKEMTfs6oyfquJDkkTAxAr07FlaR1BgTUqhCTos8TsBDsJObyhFyT8pu3GvL4WuimArzvs4Oi4cM2zR6x+rIjBynKtAZXTDCJlwds1H9a07AF695jtVttiGwbakofbwhwT4o34uWGjltEIKtPCGdc4RL2Mpsx0ah3LGr7m0jKDUCy+3eV0QDmfvxYNMZ9FotD83ivhECd3xqYqM8a9K2uXbFdqn/w88hKt3rNLZolAoFwM9/35Z8d6r3F6TV5IM2+BpzYIdxZK9XVAuH9VKaLJ64rtrUxUc8o3EjTL9LOJ7ZKqLjnKZmoBegAg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1744</code><br>\n<strong>DataEast</strong>: <code>1.0.13-beta1744</code></p>\n",
     "published_at": "2026-07-27T19:03:12+00:00",
     "type": "beta"
@@ -987,6 +1233,8 @@
     "version": "1.0.13-beta1745",
     "tag": "1.11.28-beta1745",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1745/update_data_east.json",
+    "sha256": "34460ba02837c0f94aa53c75d156a78c97d61becb25b343c081287b355f7a839",
+    "signature": "Wiv5siJAOu3O/YGjk1o5oOsS4RNmAnLpaPWfDl/by3GzuoYNibvjyhrDdcHmwatWZOAZ8S2HeLLlpVzHLOv7W01kuKoJ7TGZYnQiQ3J7AsrM5GwP7lAEUC2/qptHLCj/hEOi4/2T3Sbr0XiOd37bcGID7C6Nz9mRwXKBlD7N9Ul7o+UT/Lsw0YCmY3WeUjjl+GkquSuLMhxx25RWqaqJlvzf5Ah4BN7fa3irBOmawmPu1U4PbACXJDwQkb1pkFCCE0yCj9TN/myKBSCZR6bzWcmBPd0djrb3Vx8I27hN1al9L7WByKYa9+hS7jR/RJ94h9IrLGZbpup61Ahs8z0puA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1745</code><br>\n<strong>DataEast</strong>: <code>1.0.13-beta1745</code></p>\n",
     "published_at": "2026-07-31T18:59:33+00:00",
     "type": "beta"
@@ -995,6 +1243,8 @@
     "version": "1.0.13-beta1746",
     "tag": "1.11.28-beta1746",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.28-beta1746/update_data_east.json",
+    "sha256": "e69cedc7f4cf9612765119ceaaa0b82d2497ef5362dc29f663b389f6ac874f5a",
+    "signature": "yZ3CxqS7D7uL60r4U1nG90o0uhaUxiwkr7t7JFEuPKdyle4bc2hA38SFHr+xwx3otsJw5DvXqQ2IWeUSenuKqLMZjImA/mbEs6S4ZOFpRlqOmSO3quAjh9uT9Yvf9sFnzDEGkO2Y8sQSwJN+3OlZQoauvhboJOURqGwEnZAvB3t70sOtMQRAnF60nihuDg9mVemHtKa+xCtjjUKgRB0Q69c5I/H670FJzyM0S3n6n9LGKmmcuuxdHIVPE7laT9HUZ06EiOC7zF7S8H0Ql9/2MteEmb6iHO6NhemBhu78O6EMwQTBdQ5M9et80p4SExpWNcFYssmcbhpYpiyTqagN3Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.28-beta1746</code><br>\n<strong>DataEast</strong>: <code>1.0.13-beta1746</code></p>\n",
     "published_at": "2026-07-31T21:33:08+00:00",
     "type": "beta"
@@ -1003,6 +1253,8 @@
     "version": "1.0.14-beta1781",
     "tag": "1.11.29-beta1781",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.29-beta1781/update_data_east.json",
+    "sha256": "4f5479bb09b283c8ded6172f03fa72f7300a31f9a5199fc1f21bfd0051380d4b",
+    "signature": "vKwcu/ue6SGIVT2lWUud81J59SoO/Hw0ieDcZiXln+wB6ghMUWEftEsA/KC1VmJjkelqxyk9TKK3DPAzpdn1mpAeDIL04DjXRIPzxwJ+brLm8+ymt6QYaAQhNxF7W8Bk/2At+NlxZBPm3oejoRWfd4DBDKE78ZJYP4VhVQECu65DSfOv3WFtjcj70n4esniJQIK/UMpF5PG683Z1m7k82nFu/P0kR0QuZlen6+pCmhzO3FvNweAPxVqQOY1SdMa9MI+ehzxI+Wb3wYqWqqo58uVs4X+Ouz8yargUH9liG9AvrjDTOAJmmb+lYvkkhVjQUUJab411GnZ7m2+fMyAbfg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.29-beta1781</code><br>\n<strong>DataEast</strong>: <code>1.0.14-beta1781</code></p>\n",
     "published_at": "2026-08-20T17:03:11+00:00",
     "type": "beta"
@@ -1011,6 +1263,8 @@
     "version": "1.0.14-beta1813",
     "tag": "1.12.1-beta1813",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1813/update_data_east.json",
+    "sha256": "2856d5bd765127021ec2d1511ca05db540095a048a46bfdcd730ea33cf632050",
+    "signature": "SEUThFraugg4r/JC5PPQCzWfAksLW+lkNx9pbipKO6TfEU2nb7rDxeBgPLSXTzWX6NDaoN1sYR98cQanEvFTjzYK7WI7Z+CGmh8ynIxDWOfjv0oEAzPnPdRgsGkp19qpPzAv/h5ZGFRkOwFDUg++Tlf6r/NkYc7YA8fWjwo3yrjEY4NTVn2r0GAsRkp/AQyRNHNy6UIyrXFCpAW3B2EW6VX3HRT5QWRuQVlAzhlBK/JkWguKYJ9l3Yq+AxPfzCMYuG8vIKOf6l/IqcJUYUS2ONkG70lK2lGh/pwJkkJ7wk4gT73lhStrgHt82cKk16+EuPXL5FtmTTSenOzi1qHVow==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1813</code><br>\n<strong>DataEast</strong>: <code>1.0.14-beta1813</code></p>\n",
     "published_at": "2026-08-29T02:37:11+00:00",
     "type": "beta"
@@ -1019,6 +1273,8 @@
     "version": "1.0.14-beta1840",
     "tag": "1.12.1-beta1840",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1840/update_data_east.json",
+    "sha256": "f4f8aaa54f3d9dbb5d3bc29f8b02bda938817a8264df00b6fec1dbfc39c619e0",
+    "signature": "hICjUFE1bZucp10F1Ox3+X+AvOB0mYprFIXjWhC4kfDeqnsp36QolhLuL2l+FeU5qgrlSKLEJ85v++nkpvd3/rzgy60UrejHkgEAeI0ClMnYrHB0cgU6uORDD6xMvOwajF5T/9jEVpqP4axXiuDZLmM2FjQvHVIETj3dxbXw6H0aE6Kbdrmf90FQuUrP8n+8BoNZQndHg1hNUoL3aLw0yHEKe+bZtZzAuBOv83MtQemqLMU/MvlG+4HvR8WaVqYc1uT2ppyZH7UKp++a1mzzDkD3uD+FHss+lE6Uqphw6fwPxdSrYKzgnI0VPLIvCvSZGI8srQrFfxqASNCXxI3lVQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1840</code><br>\n<strong>DataEast</strong>: <code>1.0.14-beta1840</code></p>\n",
     "published_at": "2026-08-31T01:19:23+00:00",
     "type": "beta"
@@ -1027,6 +1283,8 @@
     "version": "1.0.14-beta1848",
     "tag": "1.12.1-beta1848",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1848/update_data_east.json",
+    "sha256": "d5b49ba75cb7b1e9f30b71c59cdb6a421d19a43e1e24ef6b29d15e9c93b43822",
+    "signature": "sIuOnUNtxpiRXRBxrhut0QmkPxQ0V5RuF44gpQDBXojzbTbhV4/58EG3z3EgSUkdUh1r0FRc4m26JU2v4WO5cFI8g8bSE5sCdCmM3EKZj9XEuAwA+0WfK8VPOTP3xdmv8OwzBSriS/9leY23ZQ5NrYCVlXH1EtODYWntBdDsFh11NVE8LNXacI1RdlotZo5eoIVONRhat9kMGUe8R4VEVczapJbTkYfU1Dh7yktfmi9Gmit7Z868AcrWdDfGzuQJ2UPgJWgw+7n65khogi5ZhAnUnJLt6yPDmzZq0LH3tUBAJN7Utm6D2eFaHQqcJ9m/5PyWYvMoP5s7gQ0B6QUFAQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1848</code><br>\n<strong>DataEast</strong>: <code>1.0.14-beta1848</code></p>\n",
     "published_at": "2026-08-31T15:07:51+00:00",
     "type": "beta"
@@ -1035,6 +1293,8 @@
     "version": "1.0.14-beta1851",
     "tag": "1.12.1-beta1851",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.1-beta1851/update_data_east.json",
+    "sha256": "3aa7df0fce8afc576e7c94d83bf59d529f710931610840b2244e5b0149fc4dfa",
+    "signature": "Abu4JjT39VsFDc9zqFzbcW7BM1nRe3HZ4FSVpSuFFz9qb8KhjcbNoXyi2aN8eF+QzRABezJwBVZdtMh0t7nIngenl5InTSwk+NHMDmxdRMNCIQPSWFzSI3OS+jicKYXZoblvsyHkFggEPFfcun5qPXWvfjByoiAuls3DVMD7M999C1cOC12Yuo3LtI7d0WIz3ecmIXbUg9T/BhUILbcZ1DMFmZCCEf1DrFQslv9hXBG8KQ0Mdnjot702mzw2mp2E9HKT6ECGcGGWVxHcZcdR3lleN7GLmJk7WHcmuNAKCPPXDXNC6rbpopDrWyaKwmOTUGr2G0Kw00L+b9ClT8OuJw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.1-beta1851</code><br>\n<strong>DataEast</strong>: <code>1.0.14-beta1851</code></p>\n",
     "published_at": "2026-08-31T16:07:20+00:00",
     "type": "beta"
@@ -1043,6 +1303,8 @@
     "version": "1.0.14-beta1853",
     "tag": "1.12.2-beta1853",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.2-beta1853/update_data_east.json",
+    "sha256": "491c13b56d7a5b20182a875a3f011c970ba4fbeb3bc9d817b7598770d713f743",
+    "signature": "mD3a4jcss9ny0cofn3JRYGJuVb7bGYdjIREk8aQz/yyU5xP1o21hWc8XsGx/+Ag7OLGVRLDakCFjSAuitqFm/sXVE1K0fVzEe14uJLSr6il+OmU/QLK6Tvg9PEomGrMws+STmC4PRCFnouvXhUtJNHvgIgZKB44bp1rSgqR0eBS5cKWiuw3xLMV7RgrLI7jkyixVUmzQXEG8OIxiIJpRV+/uVyTL7UiLN7PUZiW2tg6T20j6yWgi5Eb3EeSckfpQO8c7ZoA6cQw3OSwqEtpGyigv/yMRPu8IIqdYVwjdueCOMPGaiI7JjdReezQKPE4a6o+7zLoIbb6wRMMjb5Awyw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.2-beta1853</code><br>\n<strong>DataEast</strong>: <code>1.0.14-beta1853</code></p>\n",
     "published_at": "2026-08-31T19:15:03+00:00",
     "type": "beta"
@@ -1051,6 +1313,8 @@
     "version": "1.0.15-beta1860",
     "tag": "1.12.3-beta1860",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.3-beta1860/update_data_east.json",
+    "sha256": "b1895154357205a635f919042b8c42660ee395aca014146d5dfa7ccef1572b27",
+    "signature": "qwk6tjC5mXHSkgMr7WTbfh2ArV/Ffu8UYa/Ytm4WZEiWuncc372RiGSHFxzqnkeGvjI7A/dvNHF+zzOK360lGw0662hJlYoQsP/7Igg8OzCO1K5x/ZR+tUy3ZHxL0r/SRiufN7SuAAPnY7v7LDu2WKYwQYBqVD3Qj11//+MfKRzC7HvuQOamnmyEVDE6Rm1p4IbFjjxkDBsVwpstJ0KKumQAxUyeEKpj0RHCfjCOCIZ2S4R/pBmCmhpFO2mGEmzc/svoexkQnZtBt1SkqJtMD9aoxArWHozSxL5XQU5Bajbw1XkwL/ZP2bHPmHVOPGgwhu+S7XbDF+rAKlh7OlP7LA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.3-beta1860</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1860</code></p>\n",
     "published_at": "2026-08-31T21:10:10+00:00",
     "type": "beta"
@@ -1059,6 +1323,8 @@
     "version": "1.0.15-beta1863",
     "tag": "1.12.4-beta1863",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.4-beta1863/update_data_east.json",
+    "sha256": "a83f1a279088f68f247883c15204eb2dd297fcce3658b3e0b6b0d86f4802db94",
+    "signature": "uvTkksKnry2npzgWo8wlF1TVmdjjtLfGfj4fIUShX4BAehQdSwMeJgmA62tQNOFyVp7M35bkjfjCA23J5e+quTM3Lqt9OJEQIR0u4P56/h1tgVg4eOIHyZI7sv79+nfukqAPzWCuskRkA+ElC2YIuZtKGjXePnCuTS5AZK3JjSPWDGzAjGUQx9+Ml/5uWG/wwZvoCD5ER2vsFTnW8mNesocPovKR9LOBxoSZalJluq5LeWxRbg347CkuTz0+obctPpCwJAgEZbAKiN++qNZpsnRj/JQ0g+G5kpdeaf3Oxx19/VC7mjAl5OSvd1SwfmsKQ9QjuV8jop8k1+rv/wqnqQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.4-beta1863</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1863</code></p>\n",
     "published_at": "2026-09-01T02:36:44+00:00",
     "type": "beta"
@@ -1067,6 +1333,8 @@
     "version": "1.0.15",
     "tag": "1.12.5",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5/update_data_east.json",
+    "sha256": "26e22df2ec559598e8017f4f247e22c6ef1543a0d4e064577e77957a0e9ac91d",
+    "signature": "dwdGtKXO9+0UCVLYDuGXcjJ55Wb1HmRc0YKfqb+CXsecfdX6QttFqeqs+wOZiLntWaij1J8mxSOBCk/sO3YHhupHguVpB18YkGhBa4VEEJiPI7hDbtuCXzxRsfdx2W4qrBr424c7w1GgeA8QTrVadTff2Y65QbtdqSMLuhbkuAXw2z18YEd88A8zPpd+J/mNUi+15Z5n/mGQYkqSbof3cOg/wACSZIhnXzjXGkAoo0yK9rTUFPw+FR9FvSx+ziRIzAabU7Fq+tIa1D/3Eg8tF9XbUDwlQC50LfGurswGm0VoEztsczq/HPCd5SVxIplnsm6mGLmKTwOYQvp+u9mKNg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5</code><br>\n<strong>DataEast</strong>: <code>1.0.15</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Manuals (all) updates with extra screen shots by @paulmullin in https://github.com/warped-pinball/vector/pull/372</li>\n<li>Data East scores off by factor of 10 by @paulmullin in https://github.com/warped-pinball/vector/pull/375</li>\n<li>WPC Ball in play config corrections by @paulmullin in https://github.com/warped-pinball/vector/pull/374</li>\n<li>Stream memory snapshots to one client IP instead of network broadcast by @mullinmax in https://github.com/warped-pinball/vector/pull/369</li>\n<li>Config name corrections by @paulmullin in https://github.com/warped-pinball/vector/pull/380</li>\n<li>wifi fault to log by @paulmullin in https://github.com/warped-pinball/vector/pull/378</li>\n<li>Led off at exit by @paulmullin in https://github.com/warped-pinball/vector/pull/381</li>\n<li>Fault LED driver update by @paulmullin in https://github.com/warped-pinball/vector/pull/383</li>\n<li>Send Origin messages to one registered listener, signed, instead of broadcasting by @mullinmax in https://github.com/warped-pinball/vector/pull/377</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.28...1.12.5</p>",
     "published_at": "2026-09-07T21:06:08+00:00",
     "type": "production"
@@ -1075,6 +1343,8 @@
     "version": "1.0.15-beta1877",
     "tag": "1.12.5-beta1877",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1877/update_data_east.json",
+    "sha256": "72b198fd27cbe333390ac3ffee1ff758ffc6678183b2728ee3f64994f0f9ff0c",
+    "signature": "j86lBnw81V46EgUEbbucReYR+sMZ/phuR3op6rs7Ve4g4zJ9YIlavfLJ36B8AnovZw5ZkdvB0mWBUYlAGEYWBYOjtOmHp4DYE4JieY5ZZXARxDn3uXScmWaA1qEgJ3hILgwxbAxZEce47W9cfTd+OtkzpoqU4j/kvRgy3BiORvFu58SvvXi5TpqejG/+Xgx90GDk9qk0b2U6nU9AUONhbKiOUIAGmiEsr48UTr1J8z4xm/XgV8sDfvgl/Yo98ufO9euzolZWuI00da8wuXHGyFS011XuCiLNmc0+ZcWmLzNyN59nBYGgeDJGQsg/2vtxqI5ycl+kNe6C6xhNLv11xA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1877</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1877</code></p>\n",
     "published_at": "2026-09-08T01:24:47+00:00",
     "type": "beta"
@@ -1083,6 +1353,8 @@
     "version": "1.0.15-beta1889",
     "tag": "1.12.5-beta1889",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1889/update_data_east.json",
+    "sha256": "5e4e2008c3c9f393d507cd481994f9253b2950e3bd31f9ae90bdebc4d0e93ce3",
+    "signature": "ZUsm04PvqbfKkAWOx60PFVOF9kyDb1TP+8bvUAgZK9ItidyeNlOKpwQ5braOkIfCHoP15aTO4yNPL7CTCdoKGz1fWI4ZkEyfg3zidajEV6mwii6i4rcdQAPNL5+4AV6fiYx3dF1dWiMzkIlb9X2bLm7X67tluUEZIv8Wyup8G+soTPMZOXHhvILnPbgtnCrJ2Zj+Xq2doMptK+PnhXpGTZTuYOp49iZuBqnSryWTLW43DvbPk15bY/B4AJHa3DFj60WX6SkIvoTn1XU5+6T64OUCmGsNYX77aPBBGtcR5mEWrjYsbQpIg/e8xUHa99Mp3YiKkW9mkbfHkBpEwBUOsg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1889</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1889</code></p>\n",
     "published_at": "2026-09-13T17:24:32+00:00",
     "type": "beta"
@@ -1091,6 +1363,8 @@
     "version": "1.0.15-beta1892",
     "tag": "1.12.5-beta1892",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1892/update_data_east.json",
+    "sha256": "0d0d382533a9971d6b4837814f723fbe91641f1ff948ea96f4b4e09f8c2fed2a",
+    "signature": "O4+C6yRGAhu+DwIvkGn3spQEQRh90/RBlMlhXBl3fwBEtG8negWGI8R+uOcf91QedLj1AFagrWi7H83EuJT3M9yN/UzY67XyFkWZGXSixA9mSAdkj3Xb1COXuG0WEH7zZ3yhHhLQehzw1ElgMkPjmv7r/kO/NxyQkeeA4u08FG5F56UiaEfQmivxDSON0AiBSk+IPSU9yu6LgQ4xNZ4gO8y9aOwCuRcswmM8mmXY0LO2m+DJWmGS5LD1+pP4gylkmJbyrWx7xnoOIiLQYBrcTR0R4P2s0mCDMgEidgizxBms4+6fSrNebFr3HY+DNJe6YfTmbvXv6igFsTgJlTTPQw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1892</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1892</code></p>\n",
     "published_at": "2026-09-13T19:05:55+00:00",
     "type": "beta"
@@ -1099,6 +1373,8 @@
     "version": "1.0.15-beta1894",
     "tag": "1.12.5-beta1894",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5-beta1894/update_data_east.json",
+    "sha256": "8024cb21ebf76641e753129f48c7ca60d3d7cbb953eff2a0a7f343a145a0dd61",
+    "signature": "gYnzR9WjW3QFnfXRUtui9AGGijpoay+DbY72UMlvy2RrFUxWRIdOMyy3vJALF4G6wooc9K6ktUByUJWmmftPqrh2b+007XJomh25Z5Ehl8W28aA9OYOiQPT39T1XVWtrYZPyJp59BwkmdrWSc8+UcDHrC1ffebcPha6Hmezy9s5NEUFiQzOfZKEGEP4ytIZn6+/82clHWpXb3rtBzD2DF5YOZiKtTJDGCwOi/0U45q+wQsodh5WgnkFyccgJ0xIGE9Ah3yWNs/iAdpcdz+nNu3tJ8FND+FWwV+MdJHpiauwhyPwaJKwkztigYC+K+yVfUKxYDGdUaL2n0BHmTDXT3Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5-beta1894</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1894</code></p>\n",
     "published_at": "2026-09-14T00:09:04+00:00",
     "type": "beta"
@@ -1107,6 +1383,8 @@
     "version": "1.0.15-beta1916",
     "tag": "1.12.6-beta1916",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.6-beta1916/update_data_east.json",
+    "sha256": "8fe7786c300e7e600e2fa4211cfb87112f551a0429b6b5d514e06cfdc5c562b6",
+    "signature": "JWvElXReyhSqQyfJS8CmOd2ylRgFjiM4bWTc7NYeB2ErXk/2SdKnFyN2hfkFx7JtsnvQQJZs3AdRT+OZAhziCOIYViHz4ZFnRii1d4vDSv5e8wZgxeDCdCVMKCw5qrYM+kYi5LZSIr6JtGq9q7RCs/zzVGAgw9/RkyIkn5CR7jvR3xdmBrEr7jWi7ir7sflTUy0pOeQ81ArXTC6O4Tky9tudOWe9BupW6bqgYLjYuYEW1ADbYEyyFOdnAU9dLusecKg4gQTRdsNTiWDWQ+2BG5w/T7Q4pC0HGz+PHyU6Bt78QgamV8Xc+1Chm93YJCKTuemtNYVKcG6CeWiRFVUcxQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.6-beta1916</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1916</code></p>\n",
     "published_at": "2026-09-20T02:16:29+00:00",
     "type": "beta"
@@ -1115,6 +1393,8 @@
     "version": "1.0.15-beta1944",
     "tag": "1.12.7-beta1944",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.7-beta1944/update_data_east.json",
+    "sha256": "dab7483e79b13b957167171ee302b29a704b96d3bf61146070a270b81e4ccc18",
+    "signature": "ZtgSTBmDi8G5tije1jEzhU1Tfc/Rjuf7vnME8h6EWUmCqMU4pn3ndkBecEvEV5pYnINf8OfCqW2PsFBORxz126waFV6qAPAgrWJsRoSkecUs1Ya8BsMr9Ls4rMmHnsP764saqcYegSOVJ/2Yhm4Y5jh4cjiFmHGgCKM4Mm6QF3yApYcs4aCRSBfMlsJPbVpn5BnELa90cdIzS1nbI5aMIUIm72LwP73RUNAnlrw5KkoQ5IsDijp1QI5heyBizKTRTgW3i2wKuI4WbClJW0PtWa3GDtqGAUn6GXvoQsyUurrYI4B7FSfEAl2Mb2yt7DptV4AEhf9m5YQmbIA6H6nHzQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.7-beta1944</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1944</code></p>\n",
     "published_at": "2026-09-24T00:21:17+00:00",
     "type": "beta"
@@ -1123,6 +1403,8 @@
     "version": "1.0.15-beta1952",
     "tag": "1.12.8-beta1952",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.8-beta1952/update_data_east.json",
+    "sha256": "762a3660d851defb026e86c8478ae1b92e3101577641d31e8e04d4d519ffb4e8",
+    "signature": "GefzpP3sEDqGZntnMVGXST9i/YpLrG32NIJArVf8ZOzKF8SsciRa1CU7ctBO9svzMttdAaLNYrSKuJnmPXVsi8iql7LZFO20XrtDCh2Ql0RedFPwkwmkezkeZdzolxHs2KdyM5JhwgSoFfV56lehvQR14pP6kwv/ZciJGAng27OSeYmFcsoqhQOl+YoenLXnIBsKQIKR2IajF6bHjsQEC+6ENuG5iKSXViH4sXASpWRC4os2X4yumyFcB3U1+l8ckgOK96yOMhac3FetLDhPNHta++4T3bybEI/TJw+uOOJl4x1OaYIVxcRR099e/dMSlcQGHTnMEihmMdQyf085Gg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.8-beta1952</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1952</code></p>\n",
     "published_at": "2026-09-24T00:29:44+00:00",
     "type": "beta"
@@ -1131,6 +1413,8 @@
     "version": "1.0.15-beta1961",
     "tag": "1.12.9-beta1961",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.9-beta1961/update_data_east.json",
+    "sha256": "a4324cf923be9219b6e6881a9157b914533beb2de20613b416a80ca8d29fa4e1",
+    "signature": "lpzj13KEDK5CA4mS78L8q6in0breEwtpxeETXthg9WkjUiz5mwkfsAggwuBnkNWl+lADO/6Ho4cc/Yp4yUZNWCS4xOtcKyKqS9//faW72G5jO5sLyMOtZ4pcmdMk0GbrcOyNdugYrhhr/ReWek+/oCEBiqqvbm1rOl2FVOpo3hzKuhyxP4L6u3+D8V61poepPdSKTn4F7gnsIyCHPwJQA58Wl9R5TLY6rbXeshn/ThJ/vh2+bGgYOOYB5c5RpQdh6onwiadv67vW4eZ2OxpuLXrYuvEC/2tbrGx2H/mj76oEpdlquS/dzkep3Fq3cVN3NpHWd89cYZBwV0lJIq5eLQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.9-beta1961</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1961</code></p>\n",
     "published_at": "2026-09-26T00:39:12+00:00",
     "type": "beta"
@@ -1139,6 +1423,8 @@
     "version": "1.0.15-beta1977",
     "tag": "1.12.11-beta1977",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.11-beta1977/update_data_east.json",
+    "sha256": "76281d28d9529c1a2ba164ca7c3d71501638e803b9e122a5912f5b3e40076de4",
+    "signature": "bpJk3wubWXIutqsB+aPdodNj2iajxaJKlt0V+/8nOhJ1L4f2L/IBKDv/8bPtUHJtxPn9E+YqeriFea4qI+u9TvmKLo86aC8yhIDbgMUHakc6XxJ4RfIJEj+fCXIjhu3G191gdPkFDLRMp7ZHEINwpkXtF3YHf6Y1EVwYl7/lTqoU0BkguQoFk3XYbRxagHNWjdfgK0SvnrXMxHULpOAttkwp/RGHvONGqCdqGhxweAgi5FW/2bj9zxezdNsOnu+IveQ07jOvbBh3Ar6e38pL9IEl+Tj6aYio8MTM/JyMcmhcSIuem+5cj3wY5jC9Mnr6VPmjihgPszqiECNUdkzCcA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.11-beta1977</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1977</code></p>\n",
     "published_at": "2026-10-04T13:44:18+00:00",
     "type": "beta"
@@ -1147,6 +1433,8 @@
     "version": "1.0.15-beta1984",
     "tag": "1.12.12-beta1984",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.12-beta1984/update_data_east.json",
+    "sha256": "68086d1d087cb1a19ffca755308d85b7509128b23ff560f066f719a898c13901",
+    "signature": "HEEOP/ZM6TKkl6l/cQ3N/BAagP0Jbnd0O4uh/v2F8FWtCynF6bKq+aozVqFTbKQ6olKPyuA0abzYyHgul+IIAvFzDQb5DHjgRvbg3kHEk1nsgR1BQ6Uu8qR4vyQRddIMIZLlIGhZ0akicyqCQm9tG8nSg5/wT0YiLEG3uWNbcCFIkDVapuU0kOlE/IQ/Hug8/6ZMDsprfc9JwpF/6G49GwvCqkZ71buDF6eRf+IU40fg+OBKHouNPV35Ue8FFzFsIU4vgbX4JrwDjHQxMsE+/U/4Rtf4zWAfF2E11XmBLe5pebbk7eSeOoI2I9UkxlTN71kKEUD+RlouyJaNeSwIkg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.12-beta1984</code><br>\n<strong>DataEast</strong>: <code>1.0.15-beta1984</code></p>\n",
     "published_at": "2026-10-05T00:43:26+00:00",
     "type": "beta"
@@ -1155,6 +1443,8 @@
     "version": "1.0.16-beta1995",
     "tag": "1.12.13-beta1995",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.13-beta1995/update_data_east.json",
+    "sha256": "71b687c1840da7a9a95527be289d3d710fc05a28049b54f923a7674f7ecdc5f7",
+    "signature": "iMi4wYrYbVPr17N7T6+rSpmb3tT7z1jOcRzcE5vIn9NtyyQbcL+mUy8YBzwPxIW3Ki2kgUf783xWdif1eO3LwdVv4DSY0p/YWioLqcBuhrhrJL9qmQBaVDLlgIN5GSKsRZpJ2DhKd6Voi7gFcUepgvjFG6b4G4ApDiDAF99skW+xebxoUwZf2c2RjbanZOK0MGneVRWPAhhUSFMSxzcAYlWnm6U0cKSJnARvLpgdDkr9mMZZ4zH7qFFniim8YMVmRREmReKj6YsJzIxtQJzcT+kZinM4UpY6vz2rnHw7qoG5G5i34rG9apo2LNOEDhCAIE0Z1lx24yqGTs1ZGUEnLQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.13-beta1995</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta1995</code></p>\n",
     "published_at": "2026-10-07T23:33:41+00:00",
     "type": "beta"
@@ -1163,6 +1453,8 @@
     "version": "1.0.16",
     "tag": "1.12.15",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.15/update_data_east.json",
+    "sha256": "c383cce55450b94c4e72615a5aed47f7afb75501fdc3b772d613ae758e30ec07",
+    "signature": "ggC3tj4zUJe6rA2nJY6ptbhGM2knpDWNBVhuCURjEuVZQO31iEPG1Mhfqnj4Pm4Ct/YAsM1Gkfe7IryWaqSqomH6kCv1myrVOAR6jreIIV7xGgiWBkjfwBBuomLeBUw7/Kx8/6Kc3v8HtMpqWFqTni0jdety2xErCbUBS8vd95LPH9r/IKmOddFl3bbEPj2MYbGv7qVxI3+oCZNFKXADqU83IBLcDFuc5OY6ETmjqF4wVDOSJR3wLfSRsCcHBkAV+ON5b3iwnXvmp9xoJyme1UJd3oGPe7oVwksLUOCHo96Y7aRdiOghrjXLrzrQsqABJYDi6mxrbC5/MWPqpxc0aQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.15</code><br>\n<strong>DataEast</strong>: <code>1.0.16</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Classics by @paulmullin in https://github.com/warped-pinball/vector/pull/388</li>\n<li>Updated information on the vector about page by @paulmullin in https://github.com/warped-pinball/vector/pull/392</li>\n<li>Added support for 4-player EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/391</li>\n<li>Player up reporting for EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/402</li>\n<li>added more configs for classics by @paulmullin in https://github.com/warped-pinball/vector/pull/404</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>F14 Switch Matrix fix by @paulmullin in https://github.com/warped-pinball/vector/pull/399</li>\n<li>system 11 game end dither clean up by @paulmullin in https://github.com/warped-pinball/vector/pull/398</li>\n<li>Admin page load harden by @paulmullin in https://github.com/warped-pinball/vector/pull/403</li>\n<li>classics ip display fix by @paulmullin in https://github.com/warped-pinball/vector/pull/406</li>\n</ul>\n<h2>Docs</h2>\n<ul>\n<li>classics board documentation by @paulmullin in https://github.com/warped-pinball/vector/pull/389</li>\n<li>images for rottendog system11 installation instructions by @paulmullin in https://github.com/warped-pinball/vector/pull/387</li>\n</ul>\n<h2>Development:</h2>\n<ul>\n<li>HIL: stop the post-flash reset race, bound every mpremote step, un-deprecate the runner by @mullinmax in https://github.com/warped-pinball/vector/pull/390</li>\n<li>Enable classic boards in HIL bench target resolution by @mullinmax with @Copilot in https://github.com/warped-pinball/vector/pull/393</li>\n</ul>",
     "published_at": "2026-10-09T21:50:37+00:00",
     "type": "production"
@@ -1171,6 +1463,8 @@
     "version": "1.0.16-beta2009",
     "tag": "1.12.16-beta2009",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2009/update_data_east.json",
+    "sha256": "43c9b6f2e4ffe33d6b77abf7e03ad3b8d7124151f8c4b84f1c03e919ef4bd243",
+    "signature": "RazaTXOVvz83pIG9FrvF83bsujQbuxIjb8XVtC8Ry4PAzmSASmpRMmyKibC4ycU4B77sbc61bTaUO+wlMrro/DcZsVB0wvtIgLNM23kezrTV6yenAvXY5cABP5Drgicibx/e262liE8viF65R/OpLQ1faZC0cVZSHf5rVwBYId2TS3F8b1nj0N29qLhI6qk/BljGAlOEfFwapM08d8pRPGQ1OmoITEGvKS+6BcsZwM3OqpXf2EVf6lYmTa4B6pEiJTbZqAsC9ebCneqNYN6eju046j13WLzqft598ZlFqzN7qol95YvMeHktoDRWw23x9XOSsgvCAwPDWvFy+wQaOg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2009</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2009</code></p>\n",
     "published_at": "2026-10-10T16:51:43+00:00",
     "type": "beta"
@@ -1179,6 +1473,8 @@
     "version": "1.0.16-beta2008",
     "tag": "1.12.16-beta2008",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2008/update_data_east.json",
+    "sha256": "f7c36090592b7b46da9b2535e58f01cf79cc1a368fb796ebf962991a5b9f2142",
+    "signature": "IlrWDqScFiYxWzWiwET+dqUdYtXfqAEDi6UeKyPgx44BQ0o+iKUog3LIV/3urvDlug5rO6V99wuYQySJKNQ4HabIFlqcHVDF02UTHze3GYHKwYwrmPyL5fYMP3E/cYMuoTA8E0k5DM89rNBPVfm41TfKjI1awZOlin9M8tdlTH9D53B70y5DpQdswrQahH9pJRcOtVZRljMvT7XLzwCtA9S6NzaUlMB6BvjFSrrIwWPm5I3gP7Rkdl+DyrOZdoCzEpwpqytb2FHjeWzim5qhczDcMeUw+yEZJ67TcxVKWUIhkkXDrrVZXSQlKoQ64b7r2mK06bjEOkve01E1uKEK/w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2008</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2008</code></p>\n",
     "published_at": "2026-10-10T16:50:50+00:00",
     "type": "beta"
@@ -1187,6 +1483,8 @@
     "version": "1.0.16-beta2018",
     "tag": "1.12.16-beta2018",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2018/update_data_east.json",
+    "sha256": "4156a5af6161184fcef11c5516dd3b7d1f2d6d335354d1cd595a90ba88336e46",
+    "signature": "SOf99EIlQzDDY62IzATby6OCpyvmYT1y1ngYfI4b29VJiYp4EcGFt7Ov0o13nj0FsuHG1vDr+pv+cCCRUTyHrXUDEacw9ilIjYpPcCx061+2+KZ7XOh1b1Bv0GpTojHlcQlROpbvcg/iaGGWGKZgJEF0wJQpNcDUJ+HZSdHvz9DiQzswpgmQyqRjDsnEMHw0J4bc+dF/Zx8EZuCkP4KIms0wJHK/C22mtOYy2kVbB9/gqS6Ky0RTcsjb5xkQQTYcMMnAl6AyD4tbR/MCWaPZXLW2913i66s3EPCvu7Mtj3sV+T6iF9qRYRlwTU3DHrWDPaOS5IqvtT/lvVG3kSom6A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2018</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2018</code></p>\n",
     "published_at": "2026-10-12T16:45:59+00:00",
     "type": "beta"
@@ -1195,6 +1493,8 @@
     "version": "1.0.16-beta2021",
     "tag": "1.12.16-beta2021",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.16-beta2021/update_data_east.json",
+    "sha256": "d8fa26d6db16381e4eb8f31a76ed372bd21656fbe3e37a8e86be16a283b97658",
+    "signature": "lneakjGSpBbw7hm7bKzQE8SqXA6Wu8lbukwblxAUEnXuhlS/ch7CNtyuGC2GtHcRtEV3981HP0s49gL4KnpcJaue7hPrM9uzXI+yJya5RGUq2y1K2xWsg/Z5+ueVTxvTFS+z3Mw/20V4m7sAoGSBBafFpxIoXzqP3g2ZRq6hzpnClnUU18Y1YnCf26h2odNEg9Ada+POUsAOKdawOgAgMyY1xkxgmS/i7rke1iPOXbFayrIYV+pX5wfILgIxe2kMS7sWFeTqqUp0Y0mq/oS858alcO6a1QVmWk10SWmee1DWyPIppat3qam6x0qxhcNVRW9cQGJdGsOxP2M43/nNrg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.16-beta2021</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2021</code></p>\n",
     "published_at": "2026-10-12T17:13:21+00:00",
     "type": "beta"
@@ -1203,6 +1503,8 @@
     "version": "1.0.16-beta2032",
     "tag": "1.12.17-beta2032",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.17-beta2032/update_data_east.json",
+    "sha256": "ba78b652c881119acce50d4037a7d6568c7b49027fb25ba746d9c9e9601de8d9",
+    "signature": "wt0UYmoKQ5o2Uq7uffnB6LTYdBEzTbRq0OSnxbRjKxmt2sv8BzQU2FXb0d3nn64Rc7/fPiwzec3cGKxfJHnX/dlZAbxwBie+f7aeHIwPnSuMTQ3es2RSkwjypEPzcqjyoot4yBnnrJgIenxH9q+zcbQ+a9fUb5UfrkkH2AqMDhBosnzF7SUjwb4qGDwdza59Ta8q3y3V8jCESQBatBcODUcgPXWUhTCfqBA34TzTohKtIKrdln2ibGi3ZS9AVF9JBQuRxO6glPX6fGuUfQhNirLyad9zfR86qcEfb4bKkVBs2grv+acAehUqCyhnoWPu5j0Ek9Yh/E2t/neETX1TgA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.17-beta2032</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2032</code></p>\n",
     "published_at": "2026-10-19T22:33:09+00:00",
     "type": "beta"
@@ -1211,6 +1513,8 @@
     "version": "1.0.16-beta2040",
     "tag": "1.12.18-beta2040",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.18-beta2040/update_data_east.json",
+    "sha256": "d9714fee7b44eba1da08c4d8a02fbe274af45724d4caa87caacfe1f5bc2942aa",
+    "signature": "X1GKxRENkloOFQx1W5KNtyI/wCtV6ODtDCvAyI8ulfk5JV/Htdm4ZYTq3JMsWvf7vV3d0wsqKuG8hxOYm/0zr6djk5OAlmPUwTegCgIFg3ptP+eiMapfJ+plvgi/vOWNLM5yNYoPgeE67ZbO4P9+111EdFwHWZ7GxQDFJ12MlMZ7AtWWuLLHcd3+uhONR3gEhsg/dFf9l4eBI+kVxcZucR4b+Tu22qcM4B3IeDgE7O0PHx91QTN/Uxo028wJ1sqBI4br7KzDZvcPzFWuoRTZIPJmfoQ8gRdlRKlxvwJhgq0n4jxwHFnUQSURMOivPVKlVdP1jODpmJQa3x0TBBP1JQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2040</code></p>\n",
     "published_at": "2026-10-22T17:05:44+00:00",
     "type": "beta"

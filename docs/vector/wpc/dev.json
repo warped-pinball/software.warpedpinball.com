@@ -3,6 +3,8 @@
     "version": "0.0.1-dev83",
     "tag": "1.3.11-dev83",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev83/update_wpc.json",
+    "sha256": "c362b9d78749b910dc55342e77cf3a7b040e7ec4593f9604297b4db94f206f69",
+    "signature": "MWdpiyjIV41/Up8Y3Y2iQx6nhVdwWO+uBvRS+zDo2ijUqJp/xAJbeK30E92nvROoMX5Xa4Xl17kk2P/kP8zIPu0kTzpNwdSstQ/GRI30LA59aIk9Had1tFvFa11LpZm5G3yp0QNCUFjX7SjHN9mYu0oM4JKihvJZ8pCYghA21Uo1EkqzTEHKo50rr3hfujY273BHV2VmuO30tyzl53WMosn8Ew6t5Ys6xWFAIKpycxece67DKQsv9jQcREMo+BeOzQiClHLp4yC8uDOTGVdeKHiFsGlayX2ds5qd2XvJQrOh4sOiNrinBGgFI92HKZrM8J2X5RxgNXxJN/s/XPZavQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev83</code><br>\n<strong>WPC</strong>: <code>0.0.1-dev83</code></p>\n",
     "published_at": "2025-06-24T01:11:06+00:00",
     "type": "dev"
@@ -11,6 +13,8 @@
     "version": "1.3.10-dev83",
     "tag": "1.3.10-dev83",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.10-dev83/update_wpc.json",
+    "sha256": "78d03b82b0fffaccb6ac9c6c66717abc97af359892c2a80e57c5b2030eed2e0f",
+    "signature": "lwrtvRKmfkN+vG22pqiEsxj2ipKTTl0ucrbcDijxF4Xw6wldHsXu7Z4g3KbLf3vLjm0lhCcyyeS4Gx0lqAZxE2+PMiqk7+fKWr1GhXO1r7yrJaql1SfXQoLfZnpAVvVGylTB8wr+xg757+DSdNn4L0+OKx/Hui2Q5hEKgYw1PF0Hvem0WgPuLEsVsHf5DS10QE8c45Zsq/a/v8sEMQ2P0JlhfKwXqlaj6aE+WRFGLrAI7o0KkO4xoGgcL6mNXp2tWOf3t2Y6M6Y/E3QfOS/xLg1lQI+l+m7Cq4B9Bu3Z2n/JYa9aGLKbgPr213xdhxV9GjJJ5na1HWig3egxGBN6mA==",
     "notes": "<p>Version: 1.3.10-dev83<br>\nTrigger: pull_request</p>",
     "published_at": "2025-06-19T02:25:50+00:00",
     "type": "dev"
@@ -19,6 +23,8 @@
     "version": "0.0.1-dev89",
     "tag": "1.3.11-dev89",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev89/update_wpc.json",
+    "sha256": "7515f3d0ae96fd8c08a8bce4a04c5a1b64f4868b04833f1285e8b193b3673ca9",
+    "signature": "N9dQcjMYIg1ioDOmu1gj6gW8RnEpOfqIm3P8LAYDO5+8N1uThvb/n1JkmOQXEih1QrA3WQI4Mn/6qlTvdM24SmnCGbRGcM/4bEt89RXJgih9bOJim/Lxpz1Hqr5nfr0v4QZVJMdwZym4R9Q1lrUToSDLSziytnzKBB9XZf3pl4CwwCFOfd+oWSk3bP6sOTiSKcu0UTZrPcJSKXSdls5gjY8fmzPpGzlPLaMeU1VKgRxO5GXN7vFuKFUc8qiSbyjfA6sioknlNpLiJt/o+RFScWZGzpe43Dr0gV87W8uXy4f1jaNo2tufo3UYqxBEq2SDVEYub6pVNWB2ybsU84taWA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev89</code><br>\n<strong>WPC</strong>: <code>0.0.1-dev89</code></p>\n",
     "published_at": "2025-07-05T15:30:41+00:00",
     "type": "dev"
@@ -27,6 +33,8 @@
     "version": "0.0.1-dev91",
     "tag": "1.3.11-dev91",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev91/update_wpc.json",
+    "sha256": "0163d84af72e23a52bebe7a030f1f87c39fc7e9963c8d19190d2ff67c62d7fc1",
+    "signature": "Su81ZbWi/t0WxHprhZ/hZKY6QlNcTvmTfFjLe/q4AYGJSYq06tvVYFIQM3qzK2LLA31hGOA4SQgXclqoK2L95wFBfR/uOjhHBMwcQoEjN1BpDOYVbe9Dvnm09LeyVrnjhL/X3hXno5v/3/0hPkBeXtjUk5ZVGvXTAEnyuBv0LPb50p/O9X5kt2mR2Cb+3e5EkcULbe5uquXq/LcM8IsIx/fPUo0VCNS933L3mligjQhYuhGWnhOOgcLFAR9IELbA1lsd37lAYj5PiLEhUr8vjnxBnOYLW6nyd88HuRrOxobbVs4VKX8zcdkEx4igdbtrXuaiv9/YmxPZ35lX1LsZsQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev91</code><br>\n<strong>WPC</strong>: <code>0.0.1-dev91</code></p>\n",
     "published_at": "2025-07-08T19:03:49+00:00",
     "type": "dev"
@@ -35,6 +43,8 @@
     "version": "0.0.1-dev90",
     "tag": "1.3.11-dev90",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev90/update_wpc.json",
+    "sha256": "baa4df7fcbd2d01d6abaffed1c99fe3886ed99ec51914fb86dae859e931585d1",
+    "signature": "QqCyNQwUSTHhs4+46hK/N17TFJIW8Q23ANoB4MMQGO26mz+sYomZqEVbrMLAakInHVhxsBfNpLRKDGzjzsMLX5R8/s5ZuSI5ePgH2WtHSKkoJvNpT1rkhc8Be7wi+xrDo89serbu+0FUX+zoMBahGlO8LHKqpnseAqfz0mx8nwB1f68n3qT/s0i6aU3Yi8jsQ9TsUF7i2TWYYVSfCyY8VzC/nWCLCYHD1LLfcp3fkW2KEj44DAw/6zzpv8cqoZCtQ2iPGDddBUNPcKeYI7CsBOUO2YaGrxpvu9sGBjta6hkxk729S1FhOGoPXS/aWeFGRH9xq6drTcbzjmscMuETPA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev90</code><br>\n<strong>WPC</strong>: <code>0.0.1-dev90</code></p>\n",
     "published_at": "2025-07-08T18:50:19+00:00",
     "type": "dev"
@@ -43,6 +53,8 @@
     "version": "0.0.2-dev92",
     "tag": "1.3.11-dev92",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev92/update_wpc.json",
+    "sha256": "09d9faf0478325570eb642e4c94ae49d1f61164acebed158c9aa6ede5a34b54e",
+    "signature": "r0DuwHyMEObrbNpKyjs6hyAF4e/ndafVgaQd4P+yW94ZMFC2Y7pT/BRqROnYk9OxXiZxmBwY3UD8B1K0FEpAwg9eYz9ER9pQtIrbIOQsk+lK8L+oWHI1/DbJRAoQaV0LNv5zos2DeMuNQwA+65BqKCHIpheh47X0NEOF0iS9hDVtixsR/zDJMxlwebcJ6JeKSQm1bJDv2MiDe5eKLvrDW2VRZGr4U5R3OO7SM02z9vGBMJIj9g/QvXLLHpUYkREt0JwXb1ZfxMrhBrTJVOBu/f3w0e24z+llK0RnIuAySOhqXTI1GjDHhe+EDojA2f7BFBdqO4U0NdTPK8kHWpWwLQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev92</code><br>\n<strong>WPC</strong>: <code>0.0.2-dev92</code></p>\n",
     "published_at": "2025-07-12T22:23:49+00:00",
     "type": "dev"
@@ -51,6 +63,8 @@
     "version": "0.0.3-dev93",
     "tag": "1.3.12-dev93",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev93/update_wpc.json",
+    "sha256": "08f799319ded4124a39dcceb4fb763c30f0a56feb2fd8902d570b3f62c2be981",
+    "signature": "jT+aeyljdEMijOSDD4roTEMjYXdq8SAN8JxhBbNhFvGSgZDkzx1p4pRS6naQ2E6onkEoqvoU6x6gmXoFLBvin7S9i0AruBsRNfGvvZTUMzA0Zdu2xECBF2yt82r0+nEVEHg9NwqBKKFGcHXjoiLrT8f9PMcCombBGWYfmRrkE/fthK+AowGJl9Lhg5hQig0H9sd109mzWmvoriyGC/wm7HdUZXtE/wPtMjAkuHJjYcaofzSthZDBa/DAUf1wYSUcYW9SYAjQ8fKhSo76iT8LgODDtwHmVu5sdKskCAb4nKv56Rn2neo0iL4b7Vv5D/dbg8NYUzDu4WWD0J0KVEHWqw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev93</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev93</code></p>\n",
     "published_at": "2025-07-22T01:56:25+00:00",
     "type": "dev"
@@ -59,6 +73,8 @@
     "version": "0.0.2-dev96",
     "tag": "1.3.11-dev96",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev96/update_wpc.json",
+    "sha256": "d25df021ecf543fc6b5f46905e1e8b8738835c056e6628cf592fa69de799ad05",
+    "signature": "DKcnyA3RJC4sUqV6T8dPWkgVgWLOEXO97hGgxGIuO2ZpOx0+CtyuRYoMG7DQF35qIWc5z6GKsUVSFX8rfANcq9htVUK/t0PYFNr6xr6zx/VlOhE3xp9MgFa36BX2O5QFCz2ida25UaeLF6nEQkswMZMHSX24yhK6PZBVDwL7CttZ/FX+kdQtQxWRz2H4zrv7kDlqPAJd0+KYrknCPrdTPfT7pV5V+J7Zp+AH5y9ECH+gzrm/j+2jvbiptp/OjD8YH1MSbyhkZGadB9KJgtC2sm7UmWcPkEiIgrzzMIouIhLaZMNl+17hwIh+Um+J72sVqMlyJAGYTVjNSFUQG7bpWg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev96</code><br>\n<strong>WPC</strong>: <code>0.0.2-dev96</code></p>\n",
     "published_at": "2025-07-25T03:12:55+00:00",
     "type": "dev"
@@ -67,6 +83,8 @@
     "version": "0.0.2-dev95",
     "tag": "1.3.11-dev95",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev95/update_wpc.json",
+    "sha256": "243cca9546f5abfd49ed925533eb8fbc84c3ed1cfcd9eca25170a042c9456f08",
+    "signature": "ASq804G6YnvrfaQfIUetHIgMB44vELHsFkPpQhPA62wskeGhlqgSEWr8ZvXxeE368EMyjRy6OCOHUDApay+vZGM3Ie4IlYZJqIKxnWuivkMhVy+7nKGUiPzsP4jZlubQ6OD2NBsb+hnkqajVIoM83QpDYC2HAakjI3Zq+zOEHA3V5eice7oMMwsxgSUKgNaqwcZePz3FiILUi1HliLa0e0+08MOx3gBPDcTAey3siWUVAI5Q1TkgwqnUZzbaBNWfW1zyBLbnARBqOArCPlJWVMyTLVbR6pkmdxeZKDLx0DoFI09KoW8zYNXIBGpUkIRLkpOmJd8hWjGhoqyuNid9lQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev95</code><br>\n<strong>WPC</strong>: <code>0.0.2-dev95</code></p>\n",
     "published_at": "2025-07-22T13:36:02+00:00",
     "type": "dev"
@@ -75,6 +93,8 @@
     "version": "0.0.2-dev94",
     "tag": "1.3.11-dev94",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev94/update_wpc.json",
+    "sha256": "3b0add4d80d7a4c1a5f1ad11317760a747ca9cc698d6ee434cf5c5a969f02ade",
+    "signature": "cscGouLmmYvhz5wVoMJrzuI2XDVby78jzPGFQX16/lqUn+/TgXCCHvGJwsl3QRBcRZp+qbf6jz0fAt96dtp6oteH0zbQgC/njToabgMDtLrv4sdhQfNXmrLSXusm4gMa7BWVLCRJROd9q8VSc1aMinePHwPCOyjH1WPKxrcW5rFGLGJI6OysosSBtRxoyWYfvu5wDVPV+4YgQ2qgNsibVMd0o3RgwJkwSi9Jvb/H5idvJs9GnhYx0lAUEGkfFXw5LIE7MmgUQE7J3iaITj1eqIaixZWh9TC+9d+h9GO7usuWv7kCOedJc1vK/hDV7K5fczxc6TpHMe8dGKRutMrfvA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev94</code><br>\n<strong>WPC</strong>: <code>0.0.2-dev94</code></p>\n",
     "published_at": "2025-07-22T13:20:11+00:00",
     "type": "dev"
@@ -83,6 +103,8 @@
     "version": "0.0.2-dev93",
     "tag": "1.3.11-dev93",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev93/update_wpc.json",
+    "sha256": "15edc37a242f00cb50efd8a25722f1105ebf2ef58992d9b9f494c9a4bde99050",
+    "signature": "ZCRnCNhyaM5YfloTXwtszFRMaf66i9f7BYF2AUJriQq1CYstFqVIlSrl2WKpC0dNJdE5Tyi6FVX3/NKNfqqlIV1szrniS7rNEjIEYG32XfoojzpgjJqvLxIWm9CcSar29VMra0etV5DyTjJxfyoIt2Y3146qsZIQHBsF6exC4qEz+aVk+qjCqIbPgde2vg0QSQ1KUxQVH158UVQzwQP9n3/p5tBLPMSLhqKIIKe144FD4tQf3J9hMReAhI4AdY44McL+AUeFq8JWNt+KscP6MXTGtQOJMdQL4oD3YcxrU8aaWcODaE0atMwY9TQd+0bfHIGtlcSfja3aeJs26IO/ZA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev93</code><br>\n<strong>WPC</strong>: <code>0.0.2-dev93</code></p>\n",
     "published_at": "2025-07-22T00:40:35+00:00",
     "type": "dev"
@@ -91,6 +113,8 @@
     "version": "0.0.3-dev99",
     "tag": "1.3.12-dev99",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev99/update_wpc.json",
+    "sha256": "02457a7088affe740f8dadd3aa2e0970e788db5b23d71fe5d13a60cecf3f87b1",
+    "signature": "U+IGawCQhpvrPggcFJlTtdS6gJjdTZOZ5g/kwkRTKOodTzzh6T4Zv90ZeeWrJnOMtMt68koQ4f/jIdiBaykM3ZcVqw3+zn6saG0cpRJfkRgDG+6Csr24Kz6Viki7/gRvp+DfcnHthjJb7DhzqBiQ2a6i5kPPj+6GzwryMnLr/BTTSliZ8kfdpG3f6VK3q1FxVMj/pmjhQwWR/5ZcYtSS4kKfnKyTxVx79KHYxCQ/J9ufq8DdlPmt+c4AixBX7AixHrw6vcNvBC00hegTdESwNjSfmIXjgUehOrRnb0lA8nX0HDovDbBnTwgn1jT1TALrrgCFWQzgs69pbCXkocLOsw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev99</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev99</code></p>\n",
     "published_at": "2025-07-30T22:02:23+00:00",
     "type": "dev"
@@ -99,6 +123,8 @@
     "version": "0.0.3-dev98",
     "tag": "1.3.12-dev98",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev98/update_wpc.json",
+    "sha256": "3b51fd5f2799f8d39a66c6bf1c30711558a6cde68a5ee73e5eda62cccfea6f32",
+    "signature": "MRUrgkXoNxbp5RUTSuR/A9PycZD1UvMW6zDazw8VjplExqrLWcB6Y9GqLpje5olitP5sKukB4UunpubeULejnY3p11MWRXgFhkHbcLmz/zf0VzvXY5c8o7Wrg74QVL0VMQ91lSCD1nLwyVVz6uZprz0uPavmePderK8l1BwfUXWu5SOWq7AmirBeokHrx2qsajvwABrf+zGahdCBcXap1MBtva2zpp8bIaFs8PqUoUrtV8crLahSkyhe3zOQy441GnhcuOpxwaEMQSZOAXp5JARuk2lq8wtLz4XcznOCuAPjlK44HcfQgkBHYowLPj//ULXsEMdAM3Lq5A17FxvdmQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev98</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev98</code></p>\n",
     "published_at": "2025-07-30T12:57:34+00:00",
     "type": "dev"
@@ -107,6 +133,8 @@
     "version": "0.0.3-dev97",
     "tag": "1.3.12-dev97",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev97/update_wpc.json",
+    "sha256": "c213ec5cb60aa4f8bfbf6893ec1b8931ba0d20cfc8fd0dbe626d3b04e17c19cf",
+    "signature": "Lm8pIbGI/YjHzPyPOtUK6g4szKioFZWq3LAwgwy2F9Z07QCUoVk9RG7dYLNqKJwn2nnpIKQLbJKyimc+cgTaR1bpahz/KBmo/pi7Ob/gZmZZ1X9hsp9E9Cs1w7YHyPbY+F5U0UxNsbBITwEJAMjbslCSZtidV1MB3/9TQ6B61INYOt1QECY0+MXQm3RC6UJY1x0zBt9YAhNL/WStoKELjWZZri1viSjH11mE9x/BAJ4NIEUEB322nEwXKsChT9eb+dmACvUaIm6MJEzyDjV+TZyIdCE9wS1EJY6rKRUp1QGSRdpxCdwD/zLNmAY35P7cPxjzOJPIJgcvuimkIFbvgg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev97</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev97</code></p>\n",
     "published_at": "2025-07-30T12:43:13+00:00",
     "type": "dev"
@@ -115,6 +143,8 @@
     "version": "0.0.3-dev104",
     "tag": "1.3.12-dev104",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev104/update_wpc.json",
+    "sha256": "3ee9cbcceabca950fa00ef64acfa95d9c7b42512333972ac6a1c84829ebd24b3",
+    "signature": "d+PxjeZ4EIjja0FPb3N3A69yoVeNbwdf8UwBlu+oGzIiOwGTg8RNKCQ6cZAvO50EXtdIAR/Uc9s3jsx/yFqvqvYVXdGADuT8RAnQGfjxoV1Sj42g9vViqC0wjDfTdmCwTKYjTLFfbVyxUsA6vidjd9XqtkOPQ+k/wan6zw1QBkbTbFvYZwH6POspepKqDIrWuOeC4GzD0wWZNks1pSV4iCDg2DcW2ypxnzsHTAg0ybbVpDfgLcr7SAkP+byVSiMPNmwM6a/9loZ8AnVvOTiq1ha6MF4o/3B8QsP1CwKcHZ6TDKnQnYx3rftjW6rm9YwwNZuL4n6B3HfCv8uQE8E9SQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev104</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev104</code></p>\n",
     "published_at": "2025-07-31T13:32:37+00:00",
     "type": "dev"
@@ -123,6 +153,8 @@
     "version": "0.0.3-dev102",
     "tag": "1.3.12-dev102",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev102/update_wpc.json",
+    "sha256": "f9a49ca5a8184bc035bf76f2d50aa736c5a22279497877a78309bd26fd824348",
+    "signature": "Bel1SeBK1InEnGLBWMjmwNDvssfb3caI8UxxkXotTg1z+/pU05DKPjHsS7soq6vOXoP68cw4w9dW9aG7sWt7nflt6CFx1Grq/Cr60bRal+gwDAeyYC1Ge7yd1FZh1AN2gPRfr6EmKofi5Qk7Kw7gejp61J6Ey0quE9WD5bU4VEku/6VkZSScmCCJPDEm/IMCdixUL/cCScYE/2eGGEGCA1qF9vEFYGcrKV0Yhq5k1p2gYtj9zgfe/yZXk8QjjLFgwdyeRaPobhv5zXX6j1M9/BUDRMBYnRadi5QxW4r0PBHiZXLeaVtM9Mtw2CuCm26YPQ9EG8WsR/fVCbSAlXYU8Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev102</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev102</code></p>\n",
     "published_at": "2025-07-31T02:11:01+00:00",
     "type": "dev"
@@ -131,6 +163,8 @@
     "version": "0.0.3-dev101",
     "tag": "1.3.12-dev101",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev101/update_wpc.json",
+    "sha256": "b5218efa2e7060fdef79e07d9a602cf8b4a980c38e10fb4e93b0c3db15b6d1b1",
+    "signature": "OKwCpnukZ/VwfTkVxrF0uygXEWZWrTyvblLMqdyH17LPKQevrZp6eH9hh/1t4NJOf6jJHMewU0AgV0eaATeR6go3BxuLiPi7BnvgSyhT43a69RPzlYT/3MmO7FbchR+1TZnC9YXe/Q69ZDhO9Xp5PBv738aT75jr1NEPk0mqRFTCqpm+dB8iJxIrm9OzE2m4fDOt0FSP21rrO7kc2/TuvcUA/gGnOSRTOrnj9MATfifKo0w1qwqgMSfAv1bzFubk4zGv7zedCiXj3eZ9B/kE+g0sLANCEwTstksB1Gk858prYqOEmQ0jc0fYWutFIbF7leTZ1tIF3Ao/mqkGfKqNgw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev101</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev101</code></p>\n",
     "published_at": "2025-07-31T02:00:39+00:00",
     "type": "dev"
@@ -139,6 +173,8 @@
     "version": "0.0.3-dev100",
     "tag": "1.3.12-dev100",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev100/update_wpc.json",
+    "sha256": "abd1d66201778f695e4fb7e33a6981901f8326c0a710a367f0bc27e0eca8e7ad",
+    "signature": "DQo7rmcypBP+qKrsgjYRva6wE9geka8LwpgpmVJzfrls36vpJWob/3hectSpZ9rpR/q50xEjBfQVjZz+r5nu5zvvPFynJoOhKveXBl6+KBwHtAAk7WBaDib74cFMcCsl7BWBo9bg9nCEEt8/oZf8/KK5KCn9xPMENGp4rpYKLP7Is7+FcuwZxh8YHFI8Q0nWMti4oGNB55BZQFEgAmiG7zf1s9k6C5Kk4Hy/wjsJpmhYvHOmJIlTk22WoKc0+0wV1tJhhgbb6UOxq8B4j5VTm81SvDjn1xyBEC5ESqK/J9/RLhvXJzeKlYgtMioeQRbA/KYqQIzVFWvSZMhvUdPVWQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev100</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev100</code></p>\n",
     "published_at": "2025-07-31T01:18:47+00:00",
     "type": "dev"
@@ -147,6 +183,8 @@
     "version": "0.0.1-dev103",
     "tag": "1.3.11-dev103",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.11-dev103/update_wpc.json",
+    "sha256": "c14162d1044deaeae773e41f9502c3704121b9d4608f17461f076cab0b588ed5",
+    "signature": "iIoF5Uqjw1V0Lq9WN48/GbBH1Yc4IZ44NWb+11BCqdG3oKkGbub4qdaHAWuGhQTKQ0PQR05qoj11r3xKZ4udoAetCimG0HMX1vAj6sMgw6xXDNe0JeHYS72qRLDiGi3NjZRHct1rRfwWeClAh9TiQr3gL7xeCojJ5oI3PA1pGpOptN4HmwSPj1qyD5MoZXOffXn0PepNQoMxNp3c2wldOrGcxlv5RMJKCEY0GBHM0aR3nLBxV4XXeBW9c+ZswQ1IC9xM8CWU3WGfoJJB1UrjzcyfJQvT0gJl5QZ4HJFYr/ygbZc9JOez+Ywg5xtGedZQZvDJxl6r7VP+8kZx5qBpeQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.11-dev103</code><br>\n<strong>WPC</strong>: <code>0.0.1-dev103</code></p>\n",
     "published_at": "2025-07-31T02:41:58+00:00",
     "type": "dev"
@@ -155,6 +193,8 @@
     "version": "0.0.3-dev108",
     "tag": "1.3.12-dev108",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev108/update_wpc.json",
+    "sha256": "caa12e16bf5b5ef52b39a9eeb8c8401df00b0697d66ef29b7e55942020513369",
+    "signature": "vznzRT+KfTh+mkwIye1XUnmt8ZjMGC5Uzmncs6XAmw7dZ7d46W2A0Z9Xg95zhFfS0M2sKQLCPN7FsTjlt1Hu9IO4gjsaNUYggY1kXb2Jxjq0jL072UMTzqOwj5ixVO1bPp2RnFFaJTXDE53PSoT8DrhdNBxGmYVgf+36KNgtrwPNo1fhfFSvYYWkI+K980J872+t8IbEwFpmj8wW6YRtZ75wuOzJk0Muw/DStmMBMPAG9JnaO37zZp3GQfIAmjuEOOFs3O15qxc3EBSNjdvCneKYgEmIAKxL20FHXf+NbhzhznlFteB7ApBDUwjeKITvukAqLVMUcrox58AQc39W5g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev108</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev108</code></p>\n",
     "published_at": "2025-08-08T23:05:46+00:00",
     "type": "dev"
@@ -163,6 +203,8 @@
     "version": "0.0.3-dev107",
     "tag": "1.3.12-dev107",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev107/update_wpc.json",
+    "sha256": "b5c3d2d619de8ec2600a1f7c4506a905c85e50557e8952440440d1c2e69947a8",
+    "signature": "OeRkrPFOQ3VjWVikqjGPXIs0y9kxPgdCcpCjlNLL6JgCCbZhSyMqWI5UNV1BapfxQ4ofsFegVdWTICm52O+fDNHpNSsaLZSqaM9wtCCiejlNldDqD3VDQcQwZfLMiHODVKEJyIBesUlDDZKVQxpCFcIuzep9Ldhc5E1sYNQSqJhuJs8n4xPgDMR/UxSgND78qDH1TM0ERG3EDveAwWkP5xOH3Db5x5RpVcF59J0SIv0YnIQYRrp1ZUvnJ8JPkxqMP/lwEkH6CG8zNka4wV42Cq74NhV/W4slP0AvT56kQR1J3qLMq/Ph5fm/Zzp8G/RZTQlI2f87wcnfaT1Xhx9JsQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev107</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev107</code></p>\n",
     "published_at": "2025-08-08T19:04:21+00:00",
     "type": "dev"
@@ -171,6 +213,8 @@
     "version": "0.0.3-dev106",
     "tag": "1.3.12-dev106",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev106/update_wpc.json",
+    "sha256": "2f4465d0d558145f36c23a97a0eb291b51081df3180cda8c76d34e77cf4d63b7",
+    "signature": "iawc+xgs30zHfB+cCRU1I/PpgmkOUvhB6TSLpC3aOPkgxRCnyMACqKO86o5TU4GkkfZ/W3nX9fiVUPYSEZJzpB2KzbohWNOJ/kD7+ueQ5g8X8STWHkUBGmHuticFibsNxQ54HID9EmQW3XX9uwDr8e78Izm/cVXp+abxvld5dYeYHyBkuvlJ7xwT9FhbSV29z8hpEPTyS1qRVLtpjKoD/qQc5x3rFO5S47THRyZu7gnKKjbMeEi5HC7vCykDrZiWgT3tTz0YIRNHHDa3Z6uss8JQOvVSKKY/Kn5L/fi2B/o1v95c+JltK4TiKWVsrouqlzR0Qq29KGbAABN4GrisOA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev106</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev106</code></p>\n",
     "published_at": "2025-08-08T15:31:28+00:00",
     "type": "dev"
@@ -179,6 +223,8 @@
     "version": "0.0.3-dev105",
     "tag": "1.3.12-dev105",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev105/update_wpc.json",
+    "sha256": "872e4bdf18151d297e96ac5334f3235e558ca2d4ffa6ee7c0cc1c4aa49149953",
+    "signature": "OVZhPOHYmlWuUwj68q6nVC1GsA1ipzP4WW86f1PidPW+C1faSxgN70hShDOinqpW8/lBIwRwoEc1NY6ma1lRDG9qkTwr+kVMnyeVBwXt9covYy5dRltWj0vn7I7u2cz2AubEHLFkQg+ZawBQqiFwfwL9NS+DXwhM1bUSYxCYvhwYIYDgF0lC5APFNp0mnAtW3azPoTTvXjZvJgl1SFgCt5MjeUm+WfBNBDlyUvpRtds04VvR/IixCWD2Fz0UsgOZwrtHE2YND7xuW7yGJRdGgYnoioETMs//tikK0/5k6JHKZ+inXKU691FozjqptXLSskHtxxTZbsDrfrQKvT1yCQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev105</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev105</code></p>\n",
     "published_at": "2025-08-05T16:34:55+00:00",
     "type": "dev"
@@ -187,6 +233,8 @@
     "version": "0.0.3-dev113",
     "tag": "1.3.12-dev113",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev113/update_wpc.json",
+    "sha256": "3f63c3209228848726385e9c36c3496c47b3947819b2d11ac16aa3b953675840",
+    "signature": "ZMQV+o3D/6qxItz7dAyIs0bEVr554+CDNwlMX16jHhfg/m9j+/VNjkStGzVwVdcu4x2pYxQDdZyqJ4XS5ktfD7JNBRV8qRD5dzySk1xDrntxIOW4keZFM1DpjMjG+gIzo1iQkuo/B8P+aG5rQE2PHaYmfoj7Hr45HMV3C8dfpnZTW3cNEs5vETLwl3mlh5+qtPml4Btv5Oc/e+h5MhMT7+A9K5sAyVvfWeWQcs5+TfiZ7sZYYnHPMmmmcT0cW7OjfRIKSYhVyZkbxG4VOp1KCNGimPJ8gos5dt6y3mQOuKPchcmXUnaTFii3U41hjI0wSkmkuKbRslKdL5u6yoSWNw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev113</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev113</code></p>\n",
     "published_at": "2025-08-10T22:29:51+00:00",
     "type": "dev"
@@ -195,6 +243,8 @@
     "version": "0.0.3-dev112",
     "tag": "1.3.12-dev112",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev112/update_wpc.json",
+    "sha256": "2026a97ff78615ba4719a87cb941244ef9d4612feb329bb5b9b47573ef00b0ff",
+    "signature": "KTWZVBUonMHm7PQwi8V9vnoGFw1EsW9PdJeEiqyXsmw0aNp0FecPGoIAtnlYfcQeZuOQgIar/H8LRJRq5USQ/S9dDhdVwaQKXXZfNg8X0tiUQF3EboqGtrXOTfFQS+GshR17cJN5nHgb5U5oMYmYLTXsrWg5c3llcjs10PoREwk2lPx+XghiTEmo6yFxZefAfx9DKSMmybXMQ91uefDML/Z9F/DKqDeXN9amTxRtfG0IiciFG/jMrtkaYv1EwV6twGp6WfZ9D04nABGM5E7JDk3QDCe1xo6/jjxS9B3M2JuazjsRAo9sziyf/r8lyqd4Bkl0CSksH2AldApZiyw+SA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev112</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev112</code></p>\n",
     "published_at": "2025-08-10T21:51:02+00:00",
     "type": "dev"
@@ -203,6 +253,8 @@
     "version": "0.0.3-dev111",
     "tag": "1.3.12-dev111",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev111/update_wpc.json",
+    "sha256": "58fe513f7a9dc46a25225906b43973d09333c26c9023b095a0dbfa593ef79133",
+    "signature": "acH+p7f4oylGxm8/w9oiNyfyMp6qeNf/8DP3CQB8bTTnlpSImi1QxlGXgLzLWiIoipo5K3wgl+S4vCDP9ohRH/UGr26k6t7MpCv/NWi6qe+QButKshYAV7ILfj6hjfJDzwwhLEfbbZN2Tcn6YQ8+h2D5Ta7hgGmP7pXDY4LFH5hDXsFttIi7f4ZCLZcG9OaweA5LZye+gRdL3LM2ddoNF1MwU0tbs4U21LvUTQzLI+Pbrg2pVs9sNeMFR/n6lrLV11Ofzw+OHFNe6zw7VC/QwN6bafon+lK6T2A1UVnwO1AECqUW8bCUcys5pL0UYAygNV/Sremdq7fvUGxX8jCILw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev111</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev111</code></p>\n",
     "published_at": "2025-08-10T21:46:18+00:00",
     "type": "dev"
@@ -211,6 +263,8 @@
     "version": "0.0.3-dev110",
     "tag": "1.3.12-dev110",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev110/update_wpc.json",
+    "sha256": "66b16972a0d903c436e1ca1963f28596807956376f1b0c57bda4ebeabd977dde",
+    "signature": "kcrt8QtmbDtuNOqCZFb9MmnMVI14iTbHK7dYxrbFFlGgY5qW/2w1dvOfaZOsc+7SKMilZo65Kf7HJg9fMN2Q2RkHrJBfuKypJOxbHeRSetZvPiMXrheXfKPE4lsZan42eiCYyO2/4/jbvsoUfywH98WpDERUYZLWLikb6uiTUfFPw5R6hB9KD/zRvMaVGpads8tU8Cll89esy6xC5Thcaevgli/OInPzJorrDHX8m3x8/+h7K1bXvcc4KP8A+a5C+ufhWohZlJyc7h2Of43CNs3J69qCgRl3rTc9XrDG2rqVyYDzZSjZPZbm0iKkwdt2Vr4/4MhXlQqQ7CcPlOyGNA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev110</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev110</code></p>\n",
     "published_at": "2025-08-10T03:52:44+00:00",
     "type": "dev"
@@ -219,6 +273,8 @@
     "version": "0.0.3-dev109",
     "tag": "1.3.12-dev109",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev109/update_wpc.json",
+    "sha256": "63044bde358319e44c42e274d0d7550a0932548d0dfd70d037844104635fccd7",
+    "signature": "HVn33TdyiIFJdKMeRhl0wecWPQDvUrWCInE7nTapL6OWj7S/OJrL9dmz8LUHBKT5Cn+J69Shb27aK/vU5xaYPKPNvEGUvTXXIsJwux18Qf1F8n3dhSYVArulklDUJsXMbmENiDmFJaJJPphoNvjrLDfnOIEasrUGoxfKgFTUq0Zmh32DaJR33lSkbCbfvX07cHc3M8sc3FR/RMr20zQHIt7FI3Xp56kEQ+mohwsRPDxW+R4c6DVM8UtK91qabkmDx4tyIs1Tn5Z4rG49Auokaj/h3UMJJLo1X5Dmv/1/v9RxTQ68uXx8nEgg3yWJ5/OTWojHWy0XtY0uv8vzTs9VUw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev109</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev109</code></p>\n",
     "published_at": "2025-08-09T20:48:53+00:00",
     "type": "dev"
@@ -227,6 +283,8 @@
     "version": "0.0.3-dev115",
     "tag": "1.3.12-dev115",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev115/update_wpc.json",
+    "sha256": "a3460eae853a3f78dc850e635547af6687dde6d6b7721d87e8dd97a867e96e7d",
+    "signature": "BjgqwEXvBhPo/xkZPZTyF8d6uMwQlk/JGvu+ksVBYiR1CWKtTjxCi34eNp63hlv0YwyrGGgwKp47jLCNKwsBqJPuyF9OwUODxAQqzBFddHD7BuZzClGtJ/NR4KeKIOAb2jUA8BunoJzr11Utx/uLt078pNRTc05RvQ60SGNUcP7f4eVQ4xExk0IctocBEdEio0uLiammRAt1hdv+ji2IjGefVi1kozaYAOlONAkHVzQnduAaoSyWUWtQTccpjPPTBG8IQPQOIc5TX6giyAMTU2Iv6Uax5G0ryQlIiUVUKdl0zlrRFTwJfu3BGtMzG3dlYcqKc2aYQ+kEuokk7VEr7w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev115</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev115</code></p>\n",
     "published_at": "2025-08-19T00:06:43+00:00",
     "type": "dev"
@@ -235,6 +293,8 @@
     "version": "0.0.3-dev114",
     "tag": "1.3.12-dev114",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev114/update_wpc.json",
+    "sha256": "2475307a4cd15c50cbb3f50aca33a59c4ccb0aa193d1bf95aa718c23b59d9b34",
+    "signature": "wCFGMi+PRNIP1d4VbmxiNSW9WMKWLyGs1jayLTespOcrBQhHYw8j6rz0csl20U3Zrah6b1dLXYcBHNvVXKXMABacK0/FD2LFiWkGqaM8P4SAg5olxdlQbggxERHxMnImXJwy2hkgeqg25a/GPXi2Eg0aYQ8TWAjOvlezZ+igOPUktLUSUtLVBh/MfvVAf2xGjm5kjK+3aqIRSYsqcRpacz47SH5pRSfkqAAJ6qD8nmxTl9Y2XnTCC0bkWO1LldQkfEbpPeNxxI1/pX9jkFNCUK9XnmWDeOMIgcFCnzAfS5C4mcBN/OQZE51VKYqS+tTquIzLx2izaG1e2HW6kJResw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev114</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev114</code></p>\n",
     "published_at": "2025-08-15T01:52:05+00:00",
     "type": "dev"
@@ -243,6 +303,8 @@
     "version": "0.0.3-dev116",
     "tag": "1.3.12-dev116",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev116/update_wpc.json",
+    "sha256": "79cf24f893c7d92046a307f33e0c1223f2a0e36f9e2e910a73d118508ad64fc5",
+    "signature": "rMJ1/QOLI6dcGk1k7YeEeL5m4TgBw0HhzSSF2MRE8RQb6STdbYUAR4z37/OwNdUdt0BxfrVyYmBLlfHw0daINS9SBissGCd9P/5G58Foqwi39V6bCfGg7lGW4LOP1gyV6U/mrrDTU0u1LVlr2H3MppvcQwz5v2GKmZqCqZMwYIJkCkQ4N/5Yy0wal6+hiqT8G6CcVcINMffkuyCjBi9WSTc7BZwUU8oRfn5x7Q/3nfFNnTh/V6U3syOitYVLToh0dbPRcieTAeNfuzYJYrW9/RlHJWJ83uELMKyc14/pyNVOaSgr4cDpTOa21iZ5Vwlmf3NLpK9ek//gR9iX1aWyCQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev116</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev116</code></p>\n",
     "published_at": "2025-08-19T01:35:50+00:00",
     "type": "dev"
@@ -251,6 +313,8 @@
     "version": "0.0.3-dev122",
     "tag": "1.3.12-dev122",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev122/update_wpc.json",
+    "sha256": "a31784acab4ea811bf44fbfd9ab2824eb52a6476c49e9d8abbf432532dd3cc72",
+    "signature": "J77KmXmoh8hEyU3/pEYaZj95MMcDMt2gposi8qt5GD30EV2S10PpzdAV0k0YSeTvDvsleymIlIJuGmaVQNqTDymvrI1xHbSAWXeYFvSUY3eFYf7sOSFawQiKcvRoSZLN1QXL7J31/+hX1USo8n10lOLq28Vg/g1R3WVuIPozebq6BmEfvwkK1UhrcJ9OTHo+WrkeivKbr0JlJmGE7EtwLKqSFmw+RK9NGNNyC+V4AxewxAf1p/aKw/DwVzPabfv+3lvCf/1yFOrUVvhwqODT1E1SSpEb6Kh03Jt+gmt87tGv+uEnSbv1YoDo6Qsna6E3yFXexYa6ddyt/Za4U9C6Cw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev122</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev122</code></p>\n",
     "published_at": "2025-08-19T03:11:10+00:00",
     "type": "dev"
@@ -259,6 +323,8 @@
     "version": "0.0.3-dev119",
     "tag": "1.3.12-dev119",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev119/update_wpc.json",
+    "sha256": "146e2bb38f7a27711b92b914cf57b761cc4b1d6733c6628e16050c8305fb721e",
+    "signature": "QEvNMUbyWg0BZ2HUdLTvGzBkKxjwkaFN3v9rVVaD3CCw5tmYR16SvZnSQELgI74TzAf6tQfEwjHvidFfHAtcVRX6WY8JCDxZknvXJKNNHTNLCbHysFEwKAf7C50ZnEhI/DfekN7DqY4s4J8aUSyM4hSGYvrwrKeOprNm5vyQxKNdK7HAVFjyl4LaOwMetotmCaNdp7lHb6pHUAt+qguxqYfjMe+8LR5GU0e0zSDL8zlZ3eXP4twEKOxKGzIB7pq4x+8SACpOGXghxDsfgjbQy+RjyIrXb64usBttVtchuf8mRaZ9dQWBAgYuaLCN1YZ1qXJq+NYKCfQLSkc6i/20zw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev119</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev119</code></p>\n",
     "published_at": "2025-08-19T02:45:14+00:00",
     "type": "dev"
@@ -267,6 +333,8 @@
     "version": "0.0.3-dev118",
     "tag": "1.3.12-dev118",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev118/update_wpc.json",
+    "sha256": "135df65ef898f1644f8fdfee724b20fe4c3b57d286d0a85035f8ac197e9555bf",
+    "signature": "vvTtlxxRAkuyb+uVYgBiWOiTR28pgVi2YugL8h9wfFH6Kac/7seSd0kWih6aBbCn5KiJyyVYSeUkbg3n/zu1ky+64cKoJCTD3pdezMPthIxaRqyn1vwCR5y+br9ZYo0iDj+mzO6Mi6hqmqmmVuQ0+XPLTLwiTYvwbB4AUqcY8w98SqbT0vqL7TKzb4EqDiqfy5z3PxE6I/fRpH6nh5ZfVVU6/ezIKeEoPOpdMdT5atkOuXabXvVtC71ghbEm6tcCsWS8DZD3YesjcmOCf8EvT6MagN+fXwR+3bld3bAvOa0YicC9LpCQ2UDrZlscLpwfFgAaNs1wXz23kQZkTq2yuA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev118</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev118</code></p>\n",
     "published_at": "2025-08-19T02:08:23+00:00",
     "type": "dev"
@@ -275,6 +343,8 @@
     "version": "0.0.3-dev117",
     "tag": "1.3.12-dev117",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev117/update_wpc.json",
+    "sha256": "b5bd534d206fcf31fcc8b9ca560cd7aba4c2d5f207acc75ea66763019e3a0e54",
+    "signature": "PKUawk/rQTrRP2WKgIOHnVg00Ui/gT9rEowNSJgT93V0ycDp9zu8zP7Ok38IfA5+9CGx5PCOPBy4t2t0CzSp1k/3zz6s2VQael0Gf/j4QUFmv0yKF3lQEM7CkYbwEj5biI5LKDCBufO2f3AQH0BF1XqAKDt3ESiWizhXmDhbL64+kftCQSqBICV0xT+bqERy4BnctEcJnB72IKvi/92dcs1Ia/f2m7J5zLIsA9r/ARZr00KtHudaJfImMKKqZomfn/nI+47A1CCKucTzZzwvqnoie5sBycZNZpdy/aSGPFFoN3pcJqQSJE+HMT3/oVN9AbP1oMt7fXgahxJeKFH58Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev117</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev117</code></p>\n",
     "published_at": "2025-08-19T02:08:19+00:00",
     "type": "dev"
@@ -283,6 +353,8 @@
     "version": "1.0.0-dev124",
     "tag": "1.4.1-dev124",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev124/update_wpc.json",
+    "sha256": "e0c6ded7bc846f3a8d3aa63bd817870f3567954cc27e230f545728426974c1ff",
+    "signature": "u4whok8x5eCnl+Rxl94cJCTTNgBhvnbR2EKolsMVh54qHc9uB4Q8H31DhlPNDBARZ4q/dRWW0dg1ZJ5ZIuskus2+g4HXWXCRAsHQVu84rsUNLgpL+lLh+Y3jQbRZuMTEzW0U+CrShI9jHdXQZgcNjqFOLdYCxA9l462rxvSYpd7sEEZ8/k/UW6eSn1jFPZXOgpH5+wlWm1xT4/HNpg4XIHb/1hbFuqL/S8RluzDP5MVfT2MJ1OsbVIr97vUnTkK8T4DQUiKlJby2SwzvvTW93RU0aTbNfkpvcfaECY3587QQ7K9Ck5VlZn9DGjWaZCMqh18beIMKclDSZjr8QGXfjQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev124</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev124</code></p>\n",
     "published_at": "2025-08-23T23:29:52+00:00",
     "type": "dev"
@@ -291,6 +363,8 @@
     "version": "0.0.3-dev123",
     "tag": "1.3.12-dev123",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.12-dev123/update_wpc.json",
+    "sha256": "d49fd5608b1ea71f231564b0b1e4bf9ef0a23231732c300641c84d5bcbf5ac5c",
+    "signature": "cB7C5IwHAklOiRjoTv1DUpMiJNK3NMRUM8xns2UQDABj1xb6JiJNamP8uYwmtb61CtcVLcGKQKsJ09jyGPSy41BixBditlqfbaD49MSGT8QZZ0dDDAoDSaBD+FtGEyYjl7PG5fJKHWfKQZIVzVJTl9NH46mYLAsJyr4wyi2nhq2YH+CR5OWb4VN4Vaq8fHn32nukVmOGIkg2cU6tnvAb8wyrol2BxdgyHpRddqQaIChXC3+ghU78nYJPLvdcBgzC5ug7FA6SbLx94IXNcYBWYiCM6inw7dImc1jOcVwnOJ90F8A20BXh8eDwDJSO8U7BumYik2N2eip3nigYHI6hPg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.3.12-dev123</code><br>\n<strong>WPC</strong>: <code>0.0.3-dev123</code></p>\n",
     "published_at": "2025-08-23T20:15:41+00:00",
     "type": "dev"
@@ -299,6 +373,8 @@
     "version": "1.0.0-dev125",
     "tag": "1.4.1-dev125",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev125/update_wpc.json",
+    "sha256": "be3aa6bae14e2eff9825eab1c6ce75f8ff1acd3cd90b45362dbab11780bb5942",
+    "signature": "ijrvpDYpcWhoqI4PdXxyinajmqQnS2Eb3v5cTidts0diYQ1ki7d9eqqV08VSZvuTICBIfgf/RFLBG2shhlMCnlX04/tHYosVh6Ooe5Ugd15AMDrFpSDPACj5NbMS/yNc6t3eiHNVGDaVfqsCGRSW/0eKn+S9tiC8H0jiPeofs49zVDWNWd9Z9xmmRIZBZFwrh081YZFRx9XyQ8mQH7PjZIOGcPKa8tJVnuiITC5LCVOdCzxGuppLqXAV1BpNQyd3T+6aUW11ccoFTstpXYyD8KVvIoHuK6pimsR1hUE/k2iUHB7zCHR3LJ/hCn9Y8tGDyUvJuD1EDi2Op79NZr5Ehw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev125</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev125</code></p>\n",
     "published_at": "2025-08-31T00:04:21+00:00",
     "type": "dev"
@@ -307,6 +383,8 @@
     "version": "1.0.0-dev131",
     "tag": "1.4.1-dev131",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev131/update_wpc.json",
+    "sha256": "d79a1e00019c8fb57c133ec93fdbd620b3c60de74af10ded9e4b4dad5d806802",
+    "signature": "P4EaE1nnOMZGAmIpk9wVxPWPo5nZ6J5vnwL5Zbyyrt7OM1jA4eTJbNTr6jThg1nPgGqWHaZRqh08VN2qfGCfuTaPrXyVhHDnHW4Lumx0/p0PwDn6B8tL53nULXwrp7RvAfWm0W2rzczLJycatzn1tgdIJfP5LrAoWSQwQ3GiFQFVhcciVmL2cvxhHEc1yC8DXtsFH+TdHvm/PWulRmFL9mTctjkKt3yBB38d4fux2KKTz0QcFwMYm0bO61VHZqGTk3JkD1jIuYao3ScnbJnjrmqyzJ1kGTnTltD195c4fIh/j33FMRFRUPVTRxgTtaXtyYfZjDf7c7fWpqOuZsJmvQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev131</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev131</code></p>\n",
     "published_at": "2025-09-27T21:34:06+00:00",
     "type": "dev"
@@ -315,6 +393,8 @@
     "version": "1.0.0-dev130",
     "tag": "1.4.1-dev130",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev130/update_wpc.json",
+    "sha256": "6ee24fe37bc581f65b386511690641813dfae5ff880bd6f1a370b0a835dfeb98",
+    "signature": "LRDSzEyETOiAh9Q5isa4Tv+28rNTtc6KGdO98ozU3eKEcNjPqKSPaAf0IOnHn0vAYTHgBMt2bwIbjtmpj8oEYzXgSPGIX3YxBeMu3QtXxoJahpR26jOmgx7PJkFHvKXdFgJafj/658vbaioK8tnJZTVOchtppWHfjVn8LQDt8OPmJLostf/VRBuCZO7k2h6wKTSyVnc+Dxl1P9WUf5BEe3uU8oBF8hVfGXdEgRR3zhPuX1YKMo155ZQl2eyexBbnsX9DEochGL9ci817Zya9x1ZbJ+FpB99nxl9O14gh6KnlJwUueaMbJcCcJJgfXB1+psVvrydgHL9UH5FlceyH4Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev130</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev130</code></p>\n",
     "published_at": "2025-09-27T20:41:21+00:00",
     "type": "dev"
@@ -323,6 +403,8 @@
     "version": "1.0.0-dev129",
     "tag": "1.4.1-dev129",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev129/update_wpc.json",
+    "sha256": "56743659556301f02bd5f3ea37f0bb1816f2947bba6f5819f3745fae62fd30bf",
+    "signature": "RjxU/FV30nrtscc043zKYlsXwmhq8FlfKWSD6I9hUI+JdmwbipAbF0S6uBRKy4Hbh8T+mQG1NategN+B1l6C+IJCWrGuAnx8pwrNet1W6C0eMZhm88siZ5En8Laoa/UuV26/e9FjJCTH4vqcvm+OBeZe4Pml+oQsjpdFxFUGVp0DHDAYzhf4oy5Eli3emHoO4i4elGCYhfyurIag/WR0OTGD8vSD/zQwL88Q9CknT2mqwEqbrVgJv4oqoHlQRBSaVBl4r0gchLTp7MJa5LcToEucP+0PN+imLPURqzhdQeKrK2/9bW6fnoh3EHY9VRQbowgYWnL+cf77jueudfsgeQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev129</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev129</code></p>\n",
     "published_at": "2025-09-16T16:14:15+00:00",
     "type": "dev"
@@ -331,6 +413,8 @@
     "version": "1.0.0-dev128",
     "tag": "1.4.1-dev128",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev128/update_wpc.json",
+    "sha256": "1eb77f241d90d4c7413d93ec0a8a2006cfc4dc5136eb549a64c618a60bc96234",
+    "signature": "HpaN9wvwL51ROgY+tV1rE9+Ib3IyeE2pjtLLF29V0hsj/yfNIr5bei+rxjFrrarvPFB3wZgIETV/7i+yJyJvfeJlaGKy7Hq7En0hpd8dbV47meIc43Zf6pDFEx1Xz1Ty/VozimAK9HLhWuy1nbm6hFjfQ1jLFx6KTZFEE0ZMZeZZhqMQaI1zYGcB9Z66tjsIRKcK4Cvugnx3RSWi/ZNrF6YihOVtlBE+PN3Ylg+Hx3T6hZajAiT0U4mlevYyRqyO9Htb3seG4eoZe9Wk7o6VDiq20Ltk8B4NZODgplIuzUEURTCHQi9RKNlpbZm7wXIAqzbwDdnx2y8MN2YvwYyyFw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev128</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev128</code></p>\n",
     "published_at": "2025-09-08T01:10:32+00:00",
     "type": "dev"
@@ -339,6 +423,8 @@
     "version": "1.0.0-dev127",
     "tag": "1.4.1-dev127",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev127/update_wpc.json",
+    "sha256": "9b6b2f918ec62c422c0d94d5e659dfc4bca4c132a5f45aa68a2e3ffd95bae78d",
+    "signature": "K/gmTivl8yupFLBxQziCwzv9WO9boVY5V/bkuW8y4sDUdy9PVOO9ObZ/k5C84rIPZayCdzz3fiYBgwBb5t2gPR+E6Ns3ha4wmcVkJduDFuNCs497GQOtsOzgCALMwfQOhnUM5WqanixCvib+rImRZTLY7R4YPN6Yfz+UcWTRs4yESzql3tikODxapWvealaxgrHIp4Lyza/DzTdNkIt7Ys52sNVtCX57Yyj3LEGthtmaGguDgvCYd1q10hVb+t9oA2LMsiQyBCb8qTvrE7F1tv67zunQrOr2/w+3RVFyf3ArBIVR6dmYVbMjF1XKTtpOjB+JDUwR7mPctvinz7U78A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev127</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev127</code></p>\n",
     "published_at": "2025-09-07T22:01:39+00:00",
     "type": "dev"
@@ -347,6 +433,8 @@
     "version": "1.0.0-dev126",
     "tag": "1.4.1-dev126",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev126/update_wpc.json",
+    "sha256": "1dcb4f651bdbdbc4a705f34447e91ee6397723e746929ad7698a7c83cd8fbcb6",
+    "signature": "d/gLWR1le2TyEU4WOzTtVZaC/F7aiTn+RXJKuhB6WWiaVj8KIJ8ipKCZXZfq6tz1Qnr/UwYuFRNrV0n8mzxSENwqteUP+KWAlueUxKFcPrSQMEQrXQWbGuIpUd3i00tjBa6miHeH1ZaSMztAkNXY6yGu9W/b1gYqaq6JnvXHhtGJq/xpgrnBwvc3E4nuQ/DihrK6BeeKrivJJjD6qoxKk8sUzpSzkq6BHKHL2DVFo+4jahP+a7J56n6SyQwmorROHH50akAVtwIwF45vP2RKRjRn2brrlrPNrRfV+tfS3qANr7fp0KpFV5TqAcmDuIHL7m4P+mpOnkIsNw3tvQMU/A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev126</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev126</code></p>\n",
     "published_at": "2025-09-07T18:10:39+00:00",
     "type": "dev"
@@ -355,6 +443,8 @@
     "version": "1.0.0-dev137",
     "tag": "1.4.1-dev137",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev137/update_wpc.json",
+    "sha256": "de86fc5128ea13b44d11837f0c6a16ad69ad2c9692cff64f30baa2329a075f41",
+    "signature": "pL37edbKw4+oEncoLsdMQukKcnwYc3mPgoqxUQ8qqkAZvs3/zupP9TNfiKuzHZdDN6gi66tVtsYYEF7INBkZiEkFoY55mr7a+B2T5Hg3RWn7QNE7m+tSRsbO7P3jqJ9iSEu8S9C+ebug3b5RtFqwIKIxQ21xGKg5rJPTu1wqc4I3uV2GIuUfFZ7v8AO4FERntYmv2f56e82mvARVCASE1bSg5CnQqBdYW/qU38+OXDCQrNznjAsDsDqVX+9GlCB45H8Ss5RjmeQH3CH2fGO/v9qvay48RJAEObBZnVKerIghtyyno9nje+8ks44mdkPj42lS7EuQ5d085nqNFqLIzA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev137</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev137</code></p>\n",
     "published_at": "2025-10-12T14:29:50+00:00",
     "type": "dev"
@@ -363,6 +453,8 @@
     "version": "1.0.0-dev136",
     "tag": "1.4.1-dev136",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev136/update_wpc.json",
+    "sha256": "073a88f0dba586aceba14d9d513fb7ff7603a91df2c51db42b666057c45cff6b",
+    "signature": "oI43VKSwJ6eucDB6iXvx1FqoVy6ayNXkHGHaIzUTNbrOrUe3CQqhbkv+VeAKCFXkbgwZMZ88UjXfsZRrEhjW4u6sabf0Cd9eNEq9UsRDWidOC9NuzsImqOx6H2A2nYBDVpp3oBWhGZxLHrZQ+L2I6QOz/eWlcaOFQN0fYVHllhmD4EeHwu1+Y0Cl7VoRfARttuCqSwcVdyp6p25V+tTRs9fYxNyDuCXdRz7xkQYjV/7KMCNl6o/XLH9yDcEqyYn9OSzY4ABARWGsHsyHTB1UtTIhMDJsEnP4ZNXsr3RpP0YlJ9mFEq+GJDNUYb0Y0SXZA4S3fEa1z2lHl7pM0mFq/g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev136</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev136</code></p>\n",
     "published_at": "2025-10-12T03:40:47+00:00",
     "type": "dev"
@@ -371,6 +463,8 @@
     "version": "1.0.0-dev135",
     "tag": "1.4.1-dev135",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev135/update_wpc.json",
+    "sha256": "bde01fc9ec984c9c8d450588766ba22e43eeec5a71ad1107f79e48ee1641e034",
+    "signature": "dYdPfPXDS6VkbdSy3Qq+eBnACnppW0aAate+pVB3N1lif48al18Tm34zz2N2mNdcUqbE/3RV85sD/9D+The30W298TCaQNxPXEa851coCp8iKnQiAcm/cOJqMG8UNIcTQ2mo+0ZsTcPX0qP1H68Pnir0bHqK/e/xrjytJFXVtlp1ISRkM89qV8QPoc3VN4y+MqoVsyUcD6fSBsOpHyIHTUjjL0m7HCYOP56YkNLPXdXiBbqzEVi1sZlVnzqJRPfqEGRdeQ89ZByQ26RXsSUd5OXcu3VDJGfKxPKAh2/sBlAvOMUWbBf11l/8O6zrg2vIt5kZ1c8C/btvTgQJMEDbzg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev135</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev135</code></p>\n",
     "published_at": "2025-10-10T01:57:03+00:00",
     "type": "dev"
@@ -379,6 +473,8 @@
     "version": "1.0.0-dev134",
     "tag": "1.4.1-dev134",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev134/update_wpc.json",
+    "sha256": "4cdda9b5596f1e91081acfd525e736c3abfad2b775b610e7b0884b873c6c16e0",
+    "signature": "vNiJ2Y1lLss0zwaSmX4fvFrxXm+SHEo5P1WU6DKcmGflogivvUVKSGcWFr54YxlXnypuPF+sU0FCfXpeRVojUGBZP1hRMVjcS25JRi8C/X5W+1FCPQkyXviJFwuEYR6AmznSgp0NmXxGoazqvW1Xy4ThOBq4rHvYVJOlkPscJe60WJzTYZkYJYQRZcXi23nYPxkHpiXKWgdStkbsSMWOK5SqjwHdX8t4qfc4+S6oJtxd8eKTfHHveOzvndlxJQAL3LOJuXXENv6j7Ya+s0OETlTwkJm3NjxUAGXneWUpEv2QW3mOAUeCmAgCiKBjOCG33qOzwnuIXKZHQxeXos0wzQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev134</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev134</code></p>\n",
     "published_at": "2025-10-03T02:22:12+00:00",
     "type": "dev"
@@ -387,6 +483,8 @@
     "version": "1.0.0-dev133",
     "tag": "1.4.1-dev133",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev133/update_wpc.json",
+    "sha256": "a8f241b6e62e599a1a08f0777b3b4b0d84a90d5c2da08543ac12318ced42b542",
+    "signature": "NdzFkp/MpyBCPtryFkH16x7UUmuah/S+6uO402FkfNaFFt4ztqr81wCVNCJBQmf26H2cQcBzs96IODCyAm4g2P9xVOJgBi13HQHYmg5WBWpsqc02vDacJ8XrTPC3cHQuD/rebUzwsHyzkFshlCZuHpYVBGYTPOXnKJ/RrX6zGPXCwicjnHQwbsXnvE4vaT7nCioTfxGrPUopqDXo4v9tMsQnMW0GW70/7wo5/wNH5y3oxZfD/jBGhbwpBoeSolOcLNz1pfMW/2DBKn7wtg8P+gBDwwmpIbj0TI6qX67UUmVJleMTJ93SZ1Nk0NeRRPHKpFp4cWcWVvvv7ymKCj1hdQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev133</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev133</code></p>\n",
     "published_at": "2025-09-28T23:10:17+00:00",
     "type": "dev"
@@ -395,6 +493,8 @@
     "version": "1.0.0-dev132",
     "tag": "1.4.1-dev132",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev132/update_wpc.json",
+    "sha256": "a3a393104e0764e7ab894a3cd4da94252de0ea912e095efb9a88629bac0c81be",
+    "signature": "xPPU2e5JR1IAyitraSWaCAJ8JescVlRxTaPQYGCXhiv1SHfSByentQeHz9Cj5Xt8gEfWS1teySLg3F7FJONla1A1EcHq0mO11w7plTAD3rG7ZKRdjrwn0j5/Wq6NGJoXdZkXuABv2MPHCKu3U7eq0Fp5/aKG0nPQ451/xI+8SsEDiB0UCGGBruaCJD2jdHigp2ZBTXNAwLUOso6CrypqLCsw0D02tjEByE7ENV452tN20Dlsa9Nxx+larQMRLij2B2G27mh0+53jsNaBhB8gjk+ksGlcx8dnY6ocdufVZ1GNPCDFEjNjoMuegPDW7u+Xk38/D3e16SettjaYJEukMg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev132</code><br>\n<strong>WPC</strong>: <code>1.0.0-dev132</code></p>\n",
     "published_at": "2025-09-28T00:42:01+00:00",
     "type": "dev"
@@ -403,6 +503,8 @@
     "version": "1.1.0-dev138",
     "tag": "1.4.1-dev138",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1-dev138/update_wpc.json",
+    "sha256": "23fce18385cc2c473e2b1d8484532b8a3386cd0513737dd7f3d2ac34bc5f3cb9",
+    "signature": "ihGi6LQR5wjS9W9Bh2Wjf4jcigb3q8HAe8QtRpAfDbVOli7hzIjOzn+oY58L+LKTla6z65Vz11Ooka1KCkYG9F+JmZ1Edq1kV6diRAdb+kHWCRy7T9eSawGp1X2cb81VYBAxr1aKnrmjlIcXWK8NkooWMG1eMi9DgaNChvgFSpUj7C/N/wkRUnZNfgjhS/gX8mQGdvQJIPspK9DYMoD4+1gttXvRgkdPkcpsx8uWeMD8mfza3CmEhtWQcX6Lw+lDtdKGh8TalcrotXiVDAwm4qsVzdapgJkbtMzq64dcn0S5HxzYRSTAtrLnzWzROhszjOE9LH7+7+s/eLufgFnshA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1-dev138</code><br>\n<strong>WPC</strong>: <code>1.1.0-dev138</code></p>\n",
     "published_at": "2025-10-13T01:44:51+00:00",
     "type": "dev"
@@ -411,6 +513,8 @@
     "version": "1.1.0-dev140",
     "tag": "1.5.0-dev140",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.0-dev140/update_wpc.json",
+    "sha256": "037dd0e635f29b03f091a65803d6f0af408777a8e6d56869d8bc0fb6714d36f3",
+    "signature": "wnf2SZ97SUXXYXZmVNPMW0HPs9lx3ilexXVe0g6memKbE1nFGKfQWOlLkBo2GBfn+4zAK9ZoovvstyReDeK3yPJqjqjYa6nxBkza4Fk1AtDi7iAqBGLnr0CIufUR2HBGE2pu5Vj85YsX09jeffKYPZIfuidcX/kGgQ5Zb7we8fnGKa1EXJj+g84sbFiO9uYUZcRs7Bp/twJSQwCuco6/HFfgjvde9Vw6qhB/N1FY4Z6oKNAIIK30CbSfwpjWcPZpMtymanUrONcJ0rwcPLilbwJpTts8Paws4A0P7mZeYoMTqAWD4CHhKaoSCNJoTQ6IoSl1wIhUfLE3J/W0iicp5g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.0-dev140</code><br>\n<strong>WPC</strong>: <code>1.1.0-dev140</code></p>\n",
     "published_at": "2025-10-14T16:52:10+00:00",
     "type": "dev"
@@ -419,6 +523,8 @@
     "version": "1.1.0-dev139",
     "tag": "1.5.0-dev139",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.0-dev139/update_wpc.json",
+    "sha256": "2a4014a6f037532583f4024f0633c8fa709cfb4ff7d29d0adcbe13f9c5a010d8",
+    "signature": "OtjPG0xULf6whbA27my0l1oEU+OkrInhBuxvQdsyjjfYlSPvCT3r27nm7ijHoK/N/VQs4r5pLhhKWUgSYFrDn5ph7ViZqPRzs8N2EWGhL8FTrezVmHxiV771DCbjIg4YIzfjPcn7qskhXVRpMOZx3ERf0Cv6c4NFPFFE7uspn9Q0/fD7yIrlfBQg/1TNBn1NhuS46MgewiUM1gNKynVOZbsAd4wbOVLq3Sx1xVJG5mlvGFCsHmOlCllvE2oKx/Gs1hq4nBy6kMBAsNv5sHdnfukxUBcd+jpEoQ5XetdkKgxmQkolY0Stwe/p8dUKElN1v7RHUOUTe/jR4k3A7NosBQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.0-dev139</code><br>\n<strong>WPC</strong>: <code>1.1.0-dev139</code></p>\n",
     "published_at": "2025-10-14T01:52:57+00:00",
     "type": "dev"
@@ -427,6 +533,8 @@
     "version": "1.1.1-dev141",
     "tag": "1.5.0-dev141",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.0-dev141/update_wpc.json",
+    "sha256": "e57f201f9e71e350e9c2efb7d4e4650d820288e50f11ea0e96294d2b652fa67b",
+    "signature": "TIw+LQld9pVOOoaFB9+9OBc6kehyNSD183TKe3J+ZJXmeNcc7uXXbteVqZlFMoHLMw7MLWLljMhUTpuzETxAUxQ/BVFtjPoOUK46hHtPYgYee10BaCUCtntSl3LU2/JRkEBw8Px+rDXnRTTeRxY01c6SXUycwxwoA1bgMF2KXZkBJvNVs1X2GVw4iQTP+6V9MdHR7VfMN7a7ejR5efD0xHj4vaXKVB8XsE1Gio/MudqLjKwARTXAmQ4xKQxKwhCNcpA+M5sPlzALlzaYtTyKiv94OS5I969ek7CILED8M7lnhqVsUxKDYYZYDGEZJQP8Hzd9HnTC7oAhbqdR3Jts4Q==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.0-dev141</code><br>\n<strong>WPC</strong>: <code>1.1.1-dev141</code></p>\n",
     "published_at": "2025-10-21T02:28:24+00:00",
     "type": "dev"
@@ -435,6 +543,8 @@
     "version": "1.1.2-dev143",
     "tag": "1.5.2-dev143",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.2-dev143/update_wpc.json",
+    "sha256": "9e8ed187f739fab910c7b9a8a5ca26b7e2ee0b3b829592a2a8aa38ce44ff70eb",
+    "signature": "YZjlOuqRr8r2VqB3xmQlzKWH6H+9qbNfNHzjJQ6uA5IpuOh+H4XEmMMsXXPdFALwEH4sbOjhNoozitsHsHIbcDe6fMA+WLaSASafxPu35u0hPtd4bnJ0bGqelKmErpolzbFRKgsNrI8VUBuSW06U0XGZThgEP0owKTygNjYDcHOE/5Fu2zmiIrqfD4vnHAvlyvOYQLmk4k9TzNxmr6Dw9m20rzTtRWZYcHq3WwFy133ChB8zOO2BBitI5A/grbC2jB8qqVRN5na7DCPxTFn5lFpmqz/0IyqaKAbZB51OKnNPZxN1HM+0GvHn34OAu6iLmhxNog3nEz5p/T39crwegg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.2-dev143</code><br>\n<strong>WPC</strong>: <code>1.1.2-dev143</code></p>\n",
     "published_at": "2025-10-21T21:57:31+00:00",
     "type": "dev"
@@ -443,6 +553,8 @@
     "version": "1.1.1-dev142",
     "tag": "1.5.2-dev142",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.2-dev142/update_wpc.json",
+    "sha256": "dd5975b0e1c600af782b21b778af075ff8e34657e63efa000118d8d0db61b8d5",
+    "signature": "rS4Hx3JKfIYHrhLDRuRUyiZ7Uvc8PrQoDtFbn1VJDEUuCaJdffGRKg2gxdLPsNF1qXV6cvxlGAxseC9RQwJew7pgAAcW1rFy/CFtOFm63Ofgon2MNeGzSA5rKamEWir3E5ur+8OW0hV+i67/PgKX64XxUArgSt45gK/Zx4LBN4ZtgQ77beNk1tFF7OjyKTVwutlagdvQsdgYfj+rO0m+XeON+uDQRGwwSXJZ3vaqRLiZBfdoHawONOjaY5luxTOHNA/WfYQrGga8/lx1SHpb0eh6AtjrFgLLt6tWcmVqkkIatxAeOEDbo8HjyWEp1rFN9Isp5iK9xEcFYn/InU+KIg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.2-dev142</code><br>\n<strong>WPC</strong>: <code>1.1.1-dev142</code></p>\n",
     "published_at": "2025-10-21T17:25:52+00:00",
     "type": "dev"
@@ -451,6 +563,8 @@
     "version": "1.1.3-dev145",
     "tag": "1.5.3-dev145",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.3-dev145/update_wpc.json",
+    "sha256": "147685faa40b5f0b369a1874337536253e19a2ac3370191ed57764a88bdb6659",
+    "signature": "DSg8eaMNd9kRbHQR+z3e2OQ3Hy1hVMnKbTYFpYL31vWTiIv038RxcALatObtea6unQpjUX0eaQA4FkfNTxR30EAsiqO6zPZuxQvNUH1Z8LjVbR6DJWMpY1SstNM/6uuCaO+bIciNWE9sItxreiPBWuyVEZaI+CPvDm/3RKjAiJDsfBwquy5syzWWOb89iSKTBcHRIdtLeoKOKA1zGuvcQof6HQYIR692rCKYhHpR8+jBzHHhR8BweV+cm0u4AAD/x3oH4fMp+9tZlnmJ7kwiunJfl4XbXcXYJjbQW8Lx6/AkyQDtJ7PL0VdEEfWAxGtI3O9iDPVJnMw3TzQgmUbd6w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.3-dev145</code><br>\n<strong>WPC</strong>: <code>1.1.3-dev145</code></p>\n",
     "published_at": "2025-10-25T15:45:37+00:00",
     "type": "dev"
@@ -459,6 +573,8 @@
     "version": "1.1.2-dev144",
     "tag": "1.5.3-dev144",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.3-dev144/update_wpc.json",
+    "sha256": "e93a0b88180722413febfab41f5af6a342f8b5691e76e2615c193ae139cf8dcc",
+    "signature": "Sgy/KtcLvP6xSGmiJpDlX1XPGLypOac+gV/k5MtxSBOBLPvFsqqvJgPCsUEeqGvsdKQ2u+YnykNV7Jn74sFpInRJbosPq+bYfWFTc9351dL40+ECVVoQm8HTJpgyqJvh2AgYKNfnYFySe7TiOlCjo5KVEepy9Xa+8YUz2/z057Cnj72GnugVFnwORI58LsK6oZWLVlbiOftALTh4D56PH0eXyfwetLNGjwQ8DuI63JiOmhL4lJ4j46OaVa7LzSpHNfrd/DwKfSbdDbk/8eOsGYcRjW4PpuAP3ykGUysK1gvXRLnnA/aY2Pdg2zbHpeEkYUZ96JN+P4JJEjYJcMOLUg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.3-dev144</code><br>\n<strong>WPC</strong>: <code>1.1.2-dev144</code></p>\n",
     "published_at": "2025-10-21T23:56:28+00:00",
     "type": "dev"
@@ -467,6 +583,8 @@
     "version": "1.1.4-dev146",
     "tag": "1.5.4-dev146",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.4-dev146/update_wpc.json",
+    "sha256": "a7b46da0198efda9e8dc49a918ec070e2e8f3683a8fae4a29bcd519eaea30c6c",
+    "signature": "yP8kHI2ALf66YjDMirxJheDzq52ChAJyrIXuJeeWoUiF//78ALtJbafCTorEO79rOwpPuFwx3KMtlnwVwXs73B3wgkC5sHbiB+P9+UElRqWjUXyIFFhu9XSOWuMFARAAFogPGSrpLPZWg/6rnGavRK45JcbSaBL8N5DqVUbSPiC3JLK46x+rqDPAf28z99c9AM1dWtRoUjJWIOby1SKF+2dyZFH7VDIR2fvAd2k+6mY9mO/oPSS5GMNQI5Ef7OiNDdq1Ca2lTmD6W3Ix25NPkkQrCujzN9YSr0qtlfnX2yT2O7bcYAzozDT2IhxyKbfDEn/yHERy4q8JtRf291VHuw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.4-dev146</code><br>\n<strong>WPC</strong>: <code>1.1.4-dev146</code></p>\n",
     "published_at": "2025-10-26T12:39:27+00:00",
     "type": "dev"
@@ -475,6 +593,8 @@
     "version": "1.1.5-dev147",
     "tag": "1.5.6-dev147",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.6-dev147/update_wpc.json",
+    "sha256": "810be1148ac3f7d64818014b98d88bfe2d224f4135ff6bc3ab9b65851cade924",
+    "signature": "d1Qw9nx4Eh3spXgmxviQ4Ku5wyvxIhgQdmpo9f5OhlREsWGsjy3SP9Tn82zgza0XXETeTJfh2sfTvhWQcnfkHY3Gzltl1M1Tqpx7+KCQ5sS2RJyJA+sWa/S7zYldSKZ8Mxbw1Mq4rXqxsUbcvAuS0AQtfnAgayC0IaAGftQBZTEJMx0szAWPqq4811q0AQcO6yBD1UL8GtC3GUzfhg3wvwMFq+7m7qZUAqiNOjChbx7fgbaZEqxC9ORh3jAT+TW/mgwhNEcFnBkRg7PvWxvljvnXb8DIds7R2pOWsCjJ5PcKMGDdy2CnsoXp0fsjgg/YOguDaCRcqWoKGKskXRG3yw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.6-dev147</code><br>\n<strong>WPC</strong>: <code>1.1.5-dev147</code></p>\n",
     "published_at": "2025-10-28T00:15:11+00:00",
     "type": "dev"
@@ -483,6 +603,8 @@
     "version": "1.1.5-dev147",
     "tag": "1.5.5-dev147",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.5-dev147/update_wpc.json",
+    "sha256": "dd8a72a4d42f250fc76bda83764a136dd527fe96f2f2e951e12e5defe912f994",
+    "signature": "EBJU9ox1y1/wdhMy07HAnKVH1mLLDEsy8wugEpGG9jysCkdz8MQX+nWbaVPLqf/LouxkEoK8sxR0N1nifKQJcZ3nOPWXzFtTyCo7kMlMUyCgZzK1xn2Kvnh6cQeT79DaC1YJ558NC81TLsLh93pWIGtHP6pvySJuagVv666JftTCpQ7HDdzFe/E2YYG/Jn8M71GVQTX0y6m0Lw9DAJIvqPuVfrXhs0cAtrK8LQavMDE1GUXRGsE/3Vz8pw0RLdcgn2earE2BObyOA3Nyq2Lr1Gxsj8ONznBB8C7d3wTxffBsb1Fl5B3v5oqkyaOu7zDuouPgsvA45fkzJU2XhPWj9g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.5-dev147</code><br>\n<strong>WPC</strong>: <code>1.1.5-dev147</code></p>\n",
     "published_at": "2025-10-27T23:53:33+00:00",
     "type": "dev"
@@ -491,6 +613,8 @@
     "version": "1.1.6-dev148",
     "tag": "1.5.7-dev148",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.7-dev148/update_wpc.json",
+    "sha256": "980cd96be29608b2c3baab69fa570d55f3a3c1755035f34357c6f8ff04fbbf54",
+    "signature": "mq7e7eHM4q/HVutF93UunUftMyuCj5s9fpP8AlY+M8GpeiKtJ7Py3Ik5eWgZ2I+8DrX6kwikFjto7OR9L/VVMdhKUNtQ8WIzHfW8RSNcSAE11Uqkh985gEDqP9P53YHKfyzWt8mIfcTD1rShclN4D5bNbiEHB8U3oghys7wd5b7ixmld+Djw6Ml9Fb0IoyHcPiyWNuC8IvnLrd/TneMD+y2UJAKF5iNuSaG0AqqqaQ83ac/OgJoVvDGRNuZ7ehaKOs3kgAxBpe7tG0ZAK3FE25/QxqtX3vrohHP0zgpwfc0EbFzdoujjHxrrops/LxniZNEsfLDZrVCKYhi2Z4qADA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.7-dev148</code><br>\n<strong>WPC</strong>: <code>1.1.6-dev148</code></p>\n",
     "published_at": "2025-10-31T00:40:02+00:00",
     "type": "dev"
@@ -499,6 +623,8 @@
     "version": "1.1.5-dev149",
     "tag": "1.5.6-dev149",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.6-dev149/update_wpc.json",
+    "sha256": "bb4f7eb01ab689d8f473cde1a0ec6d16f4f42a8f070f2468d4ba48a94d0a58eb",
+    "signature": "oQ3AKZ5jQGTsOjyuLDC7oqginBQJzplMtPn6lvuIasBzaSfFTq2GB/P0+I69m07net1E8EkEHFDd8XlZt7a1SXB7VSsePSLPfJfFGU2kqlx8sfrR1ZytNad0+rqzZbBCUnGMaxuyA0C2BN444rREQpRAIb7R32QbswQwtJTlUN1XivDDUs73E823JC88vZKNJ8UZirvcomU/4eKcM3+S2XuS8wKqy4cGfxD0nOYkq+kybBhgssXrv4rmJCn+QU2aEFYub/nLJX+GszYSy5/ZlCep8xjf83ejz92ExKGs1xuqtLr4PvMQBW/kFg0N0A12AAQfTDugQpJJSxaOpjZqMA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.6-dev149</code><br>\n<strong>WPC</strong>: <code>1.1.5-dev149</code></p>\n",
     "published_at": "2025-10-29T17:37:49+00:00",
     "type": "dev"
@@ -507,6 +633,8 @@
     "version": "1.1.5-dev148",
     "tag": "1.5.6-dev148",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.6-dev148/update_wpc.json",
+    "sha256": "e68250da5d3ac6d5f5428cb5e3bf068b2a60fdcb23976d327852f20a805aaa87",
+    "signature": "OapMTTLCahf4TjQVJr9EfG+6GG8eyEGjpelyWgjEKUtxkB3OVOn87jPHSdA89/SSk2RPGaj0DpVugn/kZMt9NG047IGtoA4Rz1Rw0OD4fEY4I53JqMF8aCLtJXRPrG2h6Iu6HL+kMiFsZdCBJg4tVpfziV3XVozO+/Kw4B2xA0X/h/HbXJBc5+wtieJTbpbC+83cLE+NXANvDLhbUsXCiTeubnFDENXb63FyeUNXQn4cSanCKvHbQjDPbFW4vpcaiETjJfjR9V7u/hbzTv76kJY43Jhlmjm8wlFebdpK1tdCskJxhb3/hOxYekCJ5+UWENIiMCa1kZ9ml7MJmnq3YA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.6-dev148</code><br>\n<strong>WPC</strong>: <code>1.1.5-dev148</code></p>\n",
     "published_at": "2025-10-29T02:11:02+00:00",
     "type": "dev"
@@ -515,6 +643,8 @@
     "version": "1.1.6-dev153",
     "tag": "1.5.7-dev153",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.7-dev153/update_wpc.json",
+    "sha256": "3f2ceeaf521ba43f729b0804491e8d6a826dc3dc03e727428643432d90c25446",
+    "signature": "mUDHCiYqgnHvfxb/lKYYu3iMRqzOAVOcgRqmECE5C0LTgO/UEUzh7TwRzVM6GY9XxHy9Z5c5VXvfBDHmxGxKMmZ4NmI9BKvZ4UVgLrv0aWMMaQzE3OJ1XkWlR2WCRclXfdnr32cKXYm0kPzY0n4p9n8G0dVxV/orp6Yd82mr6Z+iHAN3vJ3X1NvFP6GwGzUXONT9/Lu7w8sUvTHiKnsK+FVkV8ggAj1aXS6Nm/vPjxUJUdlwu/nH0V2hWcY/n7R/XEOasdBZ4rTO+3GxWSeTYrMz8jy24Hz4MfTQLrEoQD7g9feIsAJoc1aCZk6sg4HJ6IJnuDIa/5cRKmQ1eCVzbw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.7-dev153</code><br>\n<strong>WPC</strong>: <code>1.1.6-dev153</code></p>\n",
     "published_at": "2025-11-05T01:53:49+00:00",
     "type": "dev"

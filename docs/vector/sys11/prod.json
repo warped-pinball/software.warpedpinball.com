@@ -3,6 +3,8 @@
     "version": "0.3.0",
     "tag": "0.3.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/0.3.0/update.json",
+    "sha256": "9f4fe004edb6e11f0fac9035e66f3c2c58aeaa55998fee7ad1143e1b950de1d1",
+    "signature": "dYqZg5H93t05pNJDNTV0j0phyebWd+QbM6Qfug4MyKxQZmFdNTKP0WdisEThDEGCUIFnbx/ulbswNOc6YhSsvjH1vkl3/L5J2/YySPtNF33k3TSKkOzZ+RUSBTjL1ITMTkwdK4n0Ix1q1GpJFeFYP58sRPgsWenu6P+ZAxlJtPPfKRV6eV8X0ZSL5k2UzqYL0zHV4w5kDQzATRnHl7kpUFl/T4ulmeL08lQ86cqZ9br2N2sYqA5rrADz93TuTBpFv/4tY4S0vSSFTOyhzzC0808u4a0gFZ90idfHcW8LTdUbkJqmjxHpnvNkk6OdT1PqabCr2qxTKbGFuilvnvi5/g==",
     "notes": "<ol>\n<li>Added New web interface with dark mode</li>\n<li>Improved update functionality, no more messing with files</li>\n<li>Improved Security</li>\n<li>Minor bug Fixes</li>\n</ol>",
     "published_at": "2025-01-12T02:51:54+00:00",
     "type": "production"
@@ -11,6 +13,8 @@
     "version": "0.4.4",
     "tag": "0.4.4",
     "url": "https://github.com/warped-pinball/vector/releases/download/0.4.4/update.json",
+    "sha256": "e42682f79e220bc418abc3b1ffe4d7b96b981d58f8af7536f477924590296451",
+    "signature": "B9HTyAShz01qcsISuS571cJsItJbpQw94Njy/j7VERfTj6yH9877LXTAcyJs3Uy/YVp4SP8eaZNkYHm9XVsxIlWyO4IGPrNU6FRFBwm53CvPULpC1Om33VuiJHTtNDqcVOJj7vaYWisOLlvKehzj9yoeEjvBeMqQ0lQy/jqMpMPRa5irACY7326OBKn0uHFIxlUXITWnwmFGHrza7NZMjdgFFVLW4ZLeJtO+6jG9H1xfxPr9068wzVHi/L8xsZFVAjSF8CDi22yRvOiKBO4hWQ9OAriK/rLTJijWL+aiKwuBI3R3r7OVQXTU+Cg9OpT68jOSMwVrEgCSqnsAaIYd2w==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Added Adjustment Profiles by @mullinmax in https://github.com/warped-pinball/vector/pull/22</li>\n<li>Save your adjustments as a profile and switch between your profiles easily</li>\n<li>Network discovery by @mullinmax in https://github.com/warped-pinball/vector/pull/25</li>\n<li>When on the same WiFi network vector boards will identify and add links to each other on their webpages (just click the game name)</li>\n<li>Factory reset by @paulmullin in https://github.com/warped-pinball/vector/pull/34</li>\n<li>Factory reset now supports clearing all the new features added in this release</li>\n</ul>\n<h2>Bug Fixes</h2>\n<ul>\n<li>Main 0 4 0 testing by @paulmullin in https://github.com/warped-pinball/vector/pull/32</li>\n<li>fixing cancel call back logic by @mullinmax in https://github.com/warped-pinball/vector/pull/28</li>\n<li>Builder tweaks by @mullinmax in https://github.com/warped-pinball/vector/pull/23</li>\n<li>turn off some of schedule when in AP mode by @mullinmax in https://github.com/warped-pinball/vector/pull/30</li>\n<li>correct authentication by @mullinmax in https://github.com/warped-pinball/vector/pull/31</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/0.3.0...0.4.4</p>",
     "published_at": "2025-02-06T23:04:19+00:00",
     "type": "production"
@@ -19,6 +23,8 @@
     "version": "1.0.0",
     "tag": "1.0.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.0.0/update.json",
+    "sha256": "d045b322450d87418660ba7b96c4295619fae614adc808450fb7467f4a016773",
+    "signature": "FVAC/nNi61ORgyC8GNRuGtQx07Zp4kBbk7XfLf6vdmnY5W59rofVU7zb2dgg/VLFzpR3WveGCrN6YuendYgIZDjIyGZ0AmLowAiGHWxy/8iBLdbFuwOVqgTQ8VsfYPBRCdPCruwPGGvVh24QaowkU9FR4yB750HEdCwUVqdykX2CIVG11jgvOOck59lVqn/fvQCe/ThP0XTk2A0BxUNgx9Ye4XoRtwSBoF/BjbpsqhgpVlvbfB/ilcz7hZHe+nY9hbzu2tp7tSZa/zKAIjuVRp44BJ3IGpF+NnKLOizMrbsDvAN+sdWHZxq0sVBRjRYP6WaRcEc66wbVOZ3pPDy+YA==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>New responsive scoreboard</li>\n<li>Added System 9 support</li>\n<li>Added score claim to allow users to enter initials after playing their game, especially for system 9 with no native support for initials</li>\n<li>Improved forward compatibility</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/0.4.4...1.0.0</p>",
     "published_at": "2025-02-23T20:00:09+00:00",
     "type": "production"
@@ -27,6 +33,8 @@
     "version": "1.1.0",
     "tag": "1.1.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.1.0/update.json",
+    "sha256": "3d42583b5768c27498fbe96fadf90b64763459b9ef2c29f541a1dee02f2d97c6",
+    "signature": "O6GZHxV2trwT3oNAsEPQnZkubFlv4fFnDnI0RhTOks5AII5PyF/9dyokMzYtBB5XBtBDtqfh8eW9T2rboDVotA+BLo3HzJVeIHTcHXajouopkjI9fDlCfIAYVttAf4pVzX9F4mgtT89YPn4tjFXzFrkmbBEUvI3WrQ3MHeQj7MD2VfXLGJjJNVJD1ZgdTNFO9VepMsgQcr1g7cOTCMTnPtHZuFsyiQ9dyutRC4wzGShuX2wNxd4FixaTMD5cKZS+rMDGz6/TEhDz9Ew+iV987bDEcaGLWU4ZrSbf5Ws+mqLeovrVFQDSIR/57kj94HnB+4pmjTjfShFFkJhCz/7JtA==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Added more robust ability to reconnect to WiFi on signal loss @mullinmax in https://github.com/warped-pinball/vector/pull/45</li>\n<li>Restructured code to free up Memory @mullinmax in https://github.com/warped-pinball/vector/pull/43</li>\n<li>Moved some files to firmware to save memory @paulmullin in https://github.com/warped-pinball/vector/pull/46</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.0.0...1.1.0</p>",
     "published_at": "2025-03-01T01:43:01+00:00",
     "type": "production"
@@ -35,6 +43,8 @@
     "version": "1.2.0",
     "tag": "1.2.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.2.0/update.json",
+    "sha256": "e0fb8236db221dcb5122d9bdd82d60f188b0d4e9fc0c473b0bf5ba555ae45730",
+    "signature": "XsN/dA3Fb5CFy1wbAGV5fEe7H5jr7PGQsr/CzMuHqgGFWGTzvio1nspdWBoqRag3aY6gV7DkvWWdFITu45FP1Qii0hoN+2hH2WHtyZHdTLdvIYhm+9dLPAc8U5cMfu4OLZ7w1cMugNlSq9GZST1evJdN4Kyzw6whkbDv89PR7GLMn3CaZ9f2juRRRzDTVSCZQqit69yCr+2B/4nKhQDwxDdZBG9A0Iaghr/PPJjFoXZH86rUUgi+pCmuzricLtuOAfE+9VaBQQvjFF59z4yNoPw0uQXpIQEFHyA0NaRRGWN8OfZw8tZq5f0upNZmIKt6IqGtmR8MzDWAe7454FyPyw==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Live game scores by @mullinmax in https://github.com/warped-pinball/vector/pull/47</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.1.0...1.2.0</p>",
     "published_at": "2025-03-02T02:11:58+00:00",
     "type": "production"
@@ -43,6 +53,8 @@
     "version": "1.3.1",
     "tag": "1.3.1",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.1/update.json",
+    "sha256": "9977fddf5db90f1e4778f728bcc315d69603c83e06983e4c93623d8d9cee520f",
+    "signature": "VBrMq06mpSzRs3ysIic2pxpqt93nn0Ho62f6BRuOQnzDnDrz09mGhRPpSW9wOJ3C2ErdUvC8IPgMH/1qo3mV1l/ljyt6TX/VYx+tI9YaeDIfC1D/31vRCjTFJlHgYin/9cGX8zg3IjR01hEvBn7FA6hHZRYpESxoppQvo3+ZS74GpGxhEl4H4NHiimxFgGAR3+2c1puL0yEp0hqTOhXWI3kTjUgXiE09OEzbNtczd6ZvmVFMZ6qjHhbUg1qozaSwO9qpznJ/G92jcgDU7/Ouvdqn3HJ8nslPaB2b9fxdHI58KnonNdxYhtufBsTO6ZPqKxh5MetM8uAUIXfWx3mwxg==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>More memory efficient web server @mullinmax in https://github.com/warped-pinball/vector/pull/48</li>\n<li>Added toggle to disable claiming scores via the web UI @mullinmax in https://github.com/warped-pinball/vector/pull/50</li>\n<li>Added toggle to disable displaying IP on game @mullinmax in https://github.com/warped-pinball/vector/pull/51</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Various bug fixes and tweaks by @paulmullin in https://github.com/warped-pinball/vector/pull/55</li>\n<li>More robust discovery service by @mullinmax in https://github.com/warped-pinball/vector/pull/49</li>\n<li>linted all JS code and added linter by @mullinmax in https://github.com/warped-pinball/vector/pull/52</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.2.0...1.3.1</p>",
     "published_at": "2025-03-08T01:35:21+00:00",
     "type": "production"
@@ -51,6 +63,8 @@
     "version": "1.3.2",
     "tag": "1.3.2",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.2/update.json",
+    "sha256": "f217a0abb384f6d75385e68bd0a47e8886fa854883434f569a384ecd21179b42",
+    "signature": "KOTXFRDaO98014xbyhfrRkj7/JguYarMnuBOJwQ7eRvouAJAWnI8XUgQobXywN2NnszS1GVesngzv/QNeU4aC/6GEjFuDAFrbAN853X1GI8AVj85NTlxl2uAPks8OU4KrNeLhPUWizD72vk0z23pLepbGWB5H2VBCEVuKah/tlHpu3SSEcQCunord7fH+Y4BS2jcYc6pjxACqSkcmbcfREefMqcyrjvPgdLsN6lZXatxWKf6G7mkyR9XQFViMTFbPorzxlKRDqU8Hh6GKWgz7S/7PVTmI3FMxJMOXmwYCup4ffiNiQVDcHRdGKT+WiBEZNCNKIIeclOwCkRmsek0fw==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Enabled score claim for tournament mode @paulmullin in https://github.com/warped-pinball/vector/pull/60</li>\n</ul>\n<h2>Bug fixes</h2>\n<ul>\n<li>Live scores visible on light mode by @mullinmax in https://github.com/warped-pinball/vector/pull/61</li>\n<li>sort tournament scores by chronological order @mullinmax in https://github.com/warped-pinball/vector/pull/59</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.1...1.3.2</p>",
     "published_at": "2025-03-09T17:35:32+00:00",
     "type": "production"
@@ -59,6 +73,8 @@
     "version": "1.3.3",
     "tag": "1.3.3",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.3/update.json",
+    "sha256": "3908e4ee3016478158cc5f0a30165cad89b7ac71abb7dcee649eec26f37a4393",
+    "signature": "AoKrLgALKv1oIO6I3bZoP8zb3W2p8OeTBsPm4Xal1U7/ZT5cGxhhaQCf8h3F8HlzQ7s8fG9lOl9VYOk0AM09VeHKGgSdB5clm1QjVY/dpdBVSFQQoDMQpch+a414GiUGiB5SDDPa8AdfhAXiTXXQMZaWv8Ef0Hcm87Yaggp5lcSkXkqdMViFgPO31pC4+XSY78F0RLL3XWXQXdANkFPoZdpjk7k2hF8k9lfi9pQlr91f/qsEJ5KKEgIIkYBJxPc34iNlq+6ooO5ox4HYKIAobZGrx7ElcJamGKmP0oyLQu6nCdjQnKIreZF9MZSTkUZevHUO8+NvAJDGwD7CjKBH2A==",
     "notes": "<h2>What's Changed</h2>\n<h2>Bug Fixes</h2>\n<ul>\n<li>fix 1 and 2 letter initials by @paulmullin in https://github.com/warped-pinball/vector/pull/62</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.2...1.3.3</p>",
     "published_at": "2025-03-09T21:52:22+00:00",
     "type": "production"
@@ -67,6 +83,8 @@
     "version": "1.3.4",
     "tag": "1.3.4",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.4/update.json",
+    "sha256": "a94b3573dabba9a51e273cbdc9658c43987c243983830da37dc1a70a4079e3c7",
+    "signature": "OxX20iyMLconaHoZ9ga0Nyxmog1Co76wuo5tDPSnrQEjmHWpTyjSgOVz7n41Ne9KELzO6c6ZoVncQ1GvxQzi5Rk2ZctMWEf6ZogHc2D4hUIvQQ2JuNYkhQvCiZGDyVTW617Qp5QjAsCYJgJ/xyPI++JeF/f1/J4UIHDb+ZbEFqVtETyoKQAe2buAOjsWRbvBrUEzbKoLOzAUKCVXJTvuYhX0CUMVfW+1iG+xTiyrTqU7u+/Dzj4o2q7CMyr4KoV2ZSWkZad0SGs9rSAZ9OfbovvPVMxvt1nMQZyhEImQmeqzzzGUI6FBBxu2EXWlLdPlb96xe9vu+lD6QOQk42WLww==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Log adjustments and bug fixes by @paulmullin in https://github.com/warped-pinball/vector/pull/64</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.3...1.3.4</p>",
     "published_at": "2025-03-12T02:37:09+00:00",
     "type": "production"
@@ -75,6 +93,8 @@
     "version": "1.3.5",
     "tag": "1.3.5",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.5/update.json",
+    "sha256": "535b2af0ae2b489de54e25cd6c4f86142f98788df2907700becb8503ca0167d5",
+    "signature": "xT9vewgwBNsrYNVV0JTBh6b36Zg7PQt6+rf3gom0nrECbTZhH95DiNIkjxp0gSUgPxI9GLeC4FYQv+L2VM7cYnBg21H1D1+vvwZ6UQIxfJpEEWMLvEkUTr501I+zXX5AlIlb6snF1lXyl7BpcYQ+okv701blAYsGDLRGp5T6mNugPpwCA3yDLt/YAR93ZIOjmk6sJ0bF4zUCEN/D52n5mk59M2UPP2+d4Cb+m4wWKElIgVEDBMJce1Tzavt3JhjUvffVOcyXZv7+EInIHXhX/g5d+CaqRkvvbHq0LbILsTkD5nHAGvMC7KuW7SyOWHdKxiuBxhoo+fspw025LHKu6A==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Improved readme by @mullinmax in https://github.com/warped-pinball/vector/pull/66</li>\n<li>Enabled Ball in play for Diner by @paulmullin in https://github.com/warped-pinball/vector/pull/67</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.4...1.3.5</p>",
     "published_at": "2025-03-23T20:52:20+00:00",
     "type": "production"
@@ -83,6 +103,8 @@
     "version": "1.3.7",
     "tag": "1.3.7",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.7/update.json",
+    "sha256": "52d6e5b0d8fe8efa68e2dadb20d900d4ae779c050a8b2775f5611890cbd9a9b3",
+    "signature": "AUqUBFMHByvQbhdGDIePNLE90KzxYAOrrghPx9XIO7kIrOmTlS4OrXSV1gTqTQJ0RXR+IAFFm9HWNQlS+2zm3Ecv+kUBhAKTq/+l3qy4ExDmiSCtmq/wCEfVETGqiKjDGN1XQKO4ctmMokpPK+1t115w5RfWAXllWa8cFs8Lmq5GOtQ56dOjWwyaD3l6vLf+5PdSWhVeN6j1uDYUcVaQEm1XQn2v6UOPlWNAiaRtdAVjY4DmobYf300eIs4SbUaozUqe9i3P53kxUrSDSK9s2y7dpnG9Ham/WzXNIgXPNMOlZ5x033jF4yUEBJYVug4Sw78TzUCRNq02Ubb43EmJxw==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Added manual port by @JakeSiegers in https://github.com/warped-pinball/vector/pull/71</li>\n</ul>\n<h2>Bug fixes</h2>\n<ul>\n<li>Clear Existing scores from live scores between games by @mullinmax in https://github.com/warped-pinball/vector/pull/68</li>\n<li>space station config fix by @paulmullin in https://github.com/warped-pinball/vector/pull/73</li>\n</ul>\n<h2>Documentation</h2>\n<ul>\n<li>Add contributors to Readme by @mullinmax in https://github.com/warped-pinball/vector/pull/72</li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li>@JakeSiegers made their first contribution in https://github.com/warped-pinball/vector/pull/71</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.5...1.3.7</p>",
     "published_at": "2025-04-01T01:06:38+00:00",
     "type": "production"
@@ -91,6 +113,8 @@
     "version": "1.3.8",
     "tag": "1.3.8",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.8/update.json",
+    "sha256": "48eee9e03cc0cd92dba22faebf1f28ac90a7cdb65445e303192136893ce52349",
+    "signature": "WODb8sNEhkN6RxMeJT5a1F9uNr7hMJoo6m0vK8bEfC/H7CU3GSzbpbrgNeeJ1rsMILjRmEXXY/1DpFH5EUIDPIBnqgZQGDDN22mv1oqPwtZuMQDIre3NOM5j84Y2sZb5gkCwGsL1HZ5HAau3PLG5HPbGBdI0Fjl1G21zg0k6BF8PC+QKD/lGTOkON4GDooBGUkIOcaLzXqaFy+M8VMiYhZ9OAf5fdBVDzqfcR62UI3aqgPz6BmyrV9wE8SxyQhBMocMlgnnrlOX4NewK53Ks1dLtlLp3lVxdM4Z4ZcaO2jJTRJQanio3b9IpuIjHPE7QmLU0BzxLAjMtCBtVEce79A==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Sys9 score fix by @paulmullin in https://github.com/warped-pinball/vector/pull/74</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.7...1.3.8</p>",
     "published_at": "2025-04-11T18:53:28+00:00",
     "type": "production"
@@ -99,6 +123,8 @@
     "version": "1.3.9",
     "tag": "1.3.9",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.9/update.json",
+    "sha256": "38c8c70fe71ce849c558078549a1f89b03a76f8ecab77ac037cc18725d3a694e",
+    "signature": "dqdm3YG07ZpiQxfTyjczxGKt10LSv0tU+15IKHPBl1xANXHxK3z8J/gs3Sqe8akq8mpOqHukG7JVqr3ErYkzQhg8IMpKf2J5DYUVx3BnvqHInjh0TbOqFVxjhPJv/eJPfrLgKeqXHv5s8uUsqKIz+xePY/IaN7mlCHzr7tK/5nbKLZdgf87rgHrUeXEkkdAqj9BEl4WocPCudtlFknjk8/SigWkHSgRUWBazQq9oVpeT6tFqMp4pCVgH/32gwN0hPDWUnZUCj2BLzKahc9rbfDaG08p+IDoyo5D58Jf6BN1Shmas3arYQi/acvCb8mlRDQGYV1OCT7go6R3MnqJtKw==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>Improved handling booting with no WiFi signal by @mullinmax in https://github.com/warped-pinball/vector/pull/78</li>\n<li>Added config for Sorcerer_L2 by @paulmullin in https://github.com/warped-pinball/vector/pull/76</li>\n<li>Corrected Live scores for Whirlwind by @paulmullin in https://github.com/warped-pinball/vector/pull/80</li>\n<li>Fixed ReadMe Shield links by @mullinmax in https://github.com/warped-pinball/vector/pull/81</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.8...1.3.9</p>",
     "published_at": "2025-05-21T02:08:23+00:00",
     "type": "production"
@@ -107,6 +133,8 @@
     "version": "1.3.10",
     "tag": "1.3.10",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.3.10/update.json",
+    "sha256": "5ca1e3c0fc7c97b89334b0f00dcb85adc0d8447ec6258340f043594c4c4dbe8a",
+    "signature": "DwrOise7zBDMAmteicIt+GOmfsN82qNLABSs78Lh7hfIkb/RZfopfqNOINdMJMvw+z8vd6LCHqD0wIBy7Q0NSnX59EqaVWUhBKS4HIFKYKm/hRP3ByD5dWDM5bc0khEWTV8slyp917kBcnYsN/D7L4BwUuf0I5yGiBpes4Xjj+CQF/moMH0rpJRGsB0/JOod+6vXPKSW2gQ3nI0zdeqR2snsGSZJuwwJfVoTV49PBEHScDp4uokx4xtEr2H5ysjSoP+L/REArfN7wU7rfGJT+a16oC/vdoUuF6ESKBUgT78jgvSM/5mC/T9+DGAC4xfGmMmIGXG12/D+Zsk5PqXmYw==",
     "notes": "<h2>What's Changed</h2>\n<ul>\n<li>move leader reset function by @paulmullin in https://github.com/warped-pinball/vector/pull/82</li>\n<li>Fire inplay score address by @paulmullin in https://github.com/warped-pinball/vector/pull/84</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.9...1.3.10</p>",
     "published_at": "2025-06-19T00:22:28+00:00",
     "type": "production"
@@ -115,6 +143,8 @@
     "version": "1.4.1",
     "tag": "1.4.1",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.4.1/update.json",
+    "sha256": "7ea6a050dddfd4505304ff15e054bda248901d18bb20a8e96ee6cee475578cce",
+    "signature": "ndH1dgtaAJRnBstbgBJfm8RSLHTzjEr2HQx3gH40gCsEvfNybKnNyfq1M1KjlPKcKrDI2xyEPsF0CWLUwpb10unR15AaJBTWxZlGew4RtGJPPsPOEIc9dNB1Hjp3K35DZ/s3O1XtN54neSap1YC+prsfcEe40MJvMWqowPlq7KeGOtdE3sU1pblolGFF6/9DXoZILvO/T4Mab6m7BmS2xjsgmIgAhfUc0LL4u3JIcJhRPW6hCO7eTdr0DyaSqAx1RQ3N8FDPGc2kEp963bvtYN1D4zWJTXQ9OY5JLPw6zrGCXzNVt0Z/bncHTWJH5A/BkINUdiVBU/UlHIOQdKkRGw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.4.1</code><br>\n<strong>Sys11</strong>: <code>1.4.1</code></p>\n\n\n<h2>What's Changed</h2>\n<p>This is a big one! We've been working hard this summer to bring you some new functionality, fix and tweak some existing functions and we've been working on our new hardware. Expect new things from us at the Chicago Expo!</p>\n<h3>Web UI</h3>\n<ul>\n<li>New personal bests leaderboard by @mullinmax in https://github.com/warped-pinball/vector/pull/97</li>\n<li>Now when you click on the \"personal\" scores section you can see all personal bests in addition to your normal individual scores</li>\n<li>Thanks to <a href=\"https://pinside.com/pinball/forum/topic/williams-11a-nv-ram-and-wifi-connectivity-project#post-8783526\">@romines on pinside for the idea</a></li>\n<li>Improved discovery by @mullinmax in https://github.com/warped-pinball/vector/pull/106</li>\n<li>boards will discover each other on the network much more rapidly and \"remember\" many more boards than before</li>\n<li>Added commas to scores @mullinmax in https://github.com/warped-pinball/vector/pull/93</li>\n<li>Show release notes next to update button UI @mullinmax in https://github.com/warped-pinball/vector/pull/99</li>\n<li>Stream-lined serving of compressed files by @mullinmax in https://github.com/warped-pinball/vector/pull/112</li>\n</ul>\n<h3>WPC support</h3>\n<ul>\n<li>Midnight Madness control on WPC by @paulmullin in https://github.com/warped-pinball/vector/pull/102</li>\n<li>Support for additional games on WPC by @paulmullin in https://github.com/warped-pinball/vector/pull/92</li>\n<li>Add update checks for WPC hardware compatibility by @mullinmax in https://github.com/warped-pinball/vector/pull/115</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Fix browser cache after updates by @mullinmax in https://github.com/warped-pinball/vector/pull/94</li>\n<li>Handle web page load race conditions by @mullinmax in https://github.com/warped-pinball/vector/pull/108</li>\n</ul>\n<h3>Development</h3>\n<ul>\n<li>multi-system-build support by @mullinmax in https://github.com/warped-pinball/vector/pull/83</li>\n<li>Fix update check JS and backend by @mullinmax in https://github.com/warped-pinball/vector/pull/89</li>\n<li>Add auto board detection and flashing by @mullinmax in https://github.com/warped-pinball/vector/pull/122</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.3.10...1.4.1</p>",
     "published_at": "2025-08-28T01:11:40+00:00",
     "type": "production"
@@ -123,6 +153,8 @@
     "version": "1.5.0",
     "tag": "1.5.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.5.0/update.json",
+    "sha256": "bcc30501eba8292670192204cd30bc0915baf1cc4f9dbb726a030bb212ca7a56",
+    "signature": "XZ9EHJVwKadK1V0tibi136shuViEO8dMRsZGg6smh5BrfIPSEeV0+EHYcs4GHmtjQwuY9Q51s5QLrb/7fJ2A3R68YPOirNtlqKYKD34HFZKkg2JLx7RVmTGXkaQBZkE5x93iHHQVC6wfV0rS6H1FbUr9BJoQY+kekHDccTaYyh/dGVrzsXXMFgmEgB6m7eJKE0EJaCQcxcYRVinrV98VkfjtLfv0JRMlZbdoQl7ufOFxDp/o1u1AeoPPvrIs5zhtzGo6Y4YqXl/hm7W0XCoORhV3HKMFdF0wic8jR3EkmKUPzL/k5926yQGsl5HOZ3k3PX2sF3wNqV6YY0nCXvMx7A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.5.0</code><br>\n<strong>Sys11</strong>: <code>1.5.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Additional WPC game configurations by @paulmullin in https://github.com/warped-pinball/vector/pull/137</li>\n<li>Initial EM release by @paulmullin in https://github.com/warped-pinball/vector/pull/133</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>WPC high score correction by @paulmullin in https://github.com/warped-pinball/vector/pull/131</li>\n<li>Corrected WPC bus check by @paulmullin in https://github.com/warped-pinball/vector/pull/125</li>\n<li>Added request timeouts by @mullinmax in https://github.com/warped-pinball/vector/pull/130</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.4.1...1.5.0</p>",
     "published_at": "2025-10-13T19:28:09+00:00",
     "type": "production"
@@ -131,6 +163,8 @@
     "version": "1.6.0",
     "tag": "1.6.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.6.0/update.json",
+    "sha256": "a7aaa32608645902f7d44fb229dd753c2f91239394935e43569d980e26d5cc13",
+    "signature": "A3ciHHrl/aidunZbV4RT1KIHEzKBEKGvDctFA51sy2sikZ9KtRAQmyJP+wSm//dKdGGlo6mb758JRB1b1W8+F1Pv8mEo2h+CFX0I/VaWoprbflUTHdS6P4d9XPh7O8+bcI28JEG9n8MH0lgueT706GdV3njkL3xtxylXJLUbDK+Sn4Wqq5berRE3GStf4hQsiPZu31BZEyW8i3WFLEzoqDGeuxK3qpewLP7hlfSSe40do3cJxfzrbSTbAdmK7XBgZBdz4sGsDk38f4SB/gpxAMyECYbUzpo0qejbsKcBgE5SOg/N4lvhFTTnpPy605Gif+Td6wr0v5pGOn3DkzSWiA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.6.0</code><br>\n<strong>Sys11</strong>: <code>1.6.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>New about page with list of supported titles by @mullinmax in https://github.com/warped-pinball/vector/pull/153</li>\n</ul>\n<h2>Development changes</h2>\n<ul>\n<li>System Specific Configs by @JakeSiegers in https://github.com/warped-pinball/vector/pull/152</li>\n<li>New pr development build workflow by @mullinmax in https://github.com/warped-pinball/vector/pull/154</li>\n<li>Skip signature validation for developer builds by @mullinmax in https://github.com/warped-pinball/vector/pull/157</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.5.7...1.6.0</p>",
     "published_at": "2025-11-08T02:31:23+00:00",
     "type": "production"
@@ -139,6 +173,8 @@
     "version": "1.6.1",
     "tag": "1.6.1",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.6.1/update.json",
+    "sha256": "6a3b266c0370c0f80fdb81d6eef620b7018b00bbc58187474186a4022a19037e",
+    "signature": "sQ48Q0uusGWne4IYZ/2Ucop+bBJYtV+GZwWKvGdfKK1B+LM9R0q6hpnA6ENYg8mre37aT5TKvPJAJASV0Kr74iU0djFnair2aaPcXJ/wMF+3C6U+B/AEsBciRRUMzzQl8iSCcm+tNABbFutE1/S/aJYwEhprQUkXWt/dQjVVmWkNGz5I8rMO+thZi7iYg+sqKDBQ8nq7B8/uW95XXpQiOjf2rNJbQqSoAnOP1ozozNlUouljyOiSAsLKBVJGoH/FVhV4+9QXmVqXr6vBTby08DYlNox2ISjgpKhzKzx9ZYjmDwmCWvYhAtugGNRcjR+EjqwaBEeqfiZxdvK8pxnM7g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.6.1</code><br>\n<strong>Sys11</strong>: <code>1.6.1</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>New support for FunHouse ROM PA1 by @paulmullin in https://github.com/warped-pinball/vector/pull/160</li>\n<li>Live scores remain on screen for 15 seconds after game by @paulmullin in https://github.com/warped-pinball/vector/pull/156</li>\n</ul>\n<h2>Bug fixes</h2>\n<ul>\n<li>Wait for wifi connection to update clock by @mullinmax in https://github.com/warped-pinball/vector/pull/161</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.6.0...1.6.1</p>",
     "published_at": "2025-11-11T00:39:58+00:00",
     "type": "production"
@@ -147,6 +183,8 @@
     "version": "1.7.0",
     "tag": "1.7.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.7.0/update.json",
+    "sha256": "9c70d4abb1e6cb87a10d68863aa5d87781094cfe5d6e52a915321d5fdad49104",
+    "signature": "DdExp80I03RxEaD220JT0lZBJSL0Cx/a5PEO8kOAJWs87Dz2Ga0lZL3kzOWhOAIAn2trR75/wsPFDMUZiJ0ZGzu1eml+6l38zjg4uyoEcG87Y1f0l7Ut/Oj39opb/iMV1KyLpTsfpTu+0k/2m9sBvLThEo3yzCQYtzprlX/FBDZln6td0XmyT98w08Ti5JClZgrt3g3/yfJf+LWUefA1CAEl9FJdzIdgQ2mJt8kUWuZlVSFKqiq20D5a1wwk+lAfctEFy4UoaI/TxAusZaSCehpgA8cy2TPVDeVXqzlMZqzXmnn0LJWoMbzIAvgMBDWZm/mCF3qbsuv8dpeWzm6rnw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.7.0</code><br>\n<strong>Sys11</strong>: <code>1.7.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added Terminator 2 L84 Rom by @paulmullin in https://github.com/warped-pinball/vector/pull/174</li>\n<li>Added stubs for whitestar and data_east :eyes: by @mullinmax in https://github.com/warped-pinball/vector/pull/162</li>\n<li>\n<p>New update build logic and better compatibility checking by @mullinmax in https://github.com/warped-pinball/vector/pull/162</p>\n</li>\n<li>\n<p>1.7.0 by @mullinmax in https://github.com/warped-pinball/vector/pull/178</p>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.6.1...1.7.0</p>",
     "published_at": "2025-11-16T02:48:32+00:00",
     "type": "production"
@@ -155,6 +193,8 @@
     "version": "1.8.0",
     "tag": "1.9.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.0/update.json",
+    "sha256": "003b5a6492a45044ee818d35a4ee003ec14b241305f8b96f3bdc128ffd70524c",
+    "signature": "GoPTm85CK+dWO0DPKVzf1E5aASIVTjEuUGcCRw1HwjcFX7sEX1v6csscaV2ITb7TEoUiXBkc2nq7JK2IcdPXi8c/he6bkDi/xR32wImlFVRaUM/Nyhkx7ziulX5I5R6jR9GnccWljELTVYhVZxw/jx/4VIniLL6SyVp1WYdJLsxO7G5HqrX/bay7wf0peuTeDXr2wIxJgKC/qQsqkjofYu4ByhRkWMV0Yqva4UrZ0DJ6dp5ORX3OXFGinUE+LoymBybLloABDBgS58GUTi+NFO6lgopG+hx4ufo5wcentzEDaVza5pOSZissSwVtnavvVDhkqEB5aN/emrvRaoEDcA==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.0</code><br>\n<strong>Sys11</strong>: <code>1.8.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Improved Setup UI for ios devices by @JakeSiegers in https://github.com/warped-pinball/vector/pull/185</li>\n<li>Delete scores / Import Scores by @JakeSiegers in https://github.com/warped-pinball/vector/pull/151</li>\n<li>Improved storage read and write speeds by @paulmullin in https://github.com/warped-pinball/vector/pull/199</li>\n</ul>\n<h2>Bug Fixes</h2>\n<ul>\n<li>Star Trek checksum correction by @paulmullin in https://github.com/warped-pinball/vector/pull/198</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.8.1...1.9.0</p>",
     "published_at": "2025-11-25T23:17:39+00:00",
     "type": "production"
@@ -163,6 +203,8 @@
     "version": "1.8.1",
     "tag": "1.9.3",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.3/update.json",
+    "sha256": "7206d718a83d54c502d9940be8145ad83cf6c0041ce36f34c02b71badfff38af",
+    "signature": "ZEE11ULNfK8Aa8rOy/18HNO2uGJHaZ5FvTfemMKVuy3zPSqmTgPEivTH/KTUCKuJR6gI45sZsXWtEGOm8ToJFUDlZgaDiTef8oL67KTUUkpLuX+V5QKwg4lj8DbVmmjwX02JIH12YfpsrrhlhQRrSbO73ye3ajBwREyK2PVyWpwdeEf3YBb5xE8XTR/EUKPOmMmvuwsyADFGYAlkirsOQanCUMdKcwyXTIlgagG5DMekJr2DRH8ty31wbRxAHwinylVCUMrtmrRyU2Lgv2pcI0UfCHFHsV061FAhp72Jb7NhHeIYxzo70J0+clX6gGoz+kRRDeIvip92YSIBTruN+g==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.3</code><br>\n<strong>Sys11</strong>: <code>1.8.1</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>About page corrections by @mullinmax in https://github.com/warped-pinball/vector/pull/214</li>\n<li>New Riverboat Gambler ROM support &amp; adjusted config by @paulmullin in https://github.com/warped-pinball/vector/pull/213</li>\n<li>Adjusted some sys11 configs by @paulmullin in https://github.com/warped-pinball/vector/pull/211</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.2...1.9.3</p>",
     "published_at": "2025-12-16T01:43:19+00:00",
     "type": "production"
@@ -171,6 +213,8 @@
     "version": "1.8.2",
     "tag": "1.9.4",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.9.4/update.json",
+    "sha256": "ed6436a29edb584d685b3ab8080e6da030e49be7fe405078443dcd2b879e1191",
+    "signature": "su1ejstm3QfBCC1B64DhTCipyhjIK2ANzqbgrx77iPfxVlYfrD02b0CByvX3WhJjs29gWwd/p0n2WQEPb+qvrcaJZCORzbqzRL9ehz7gw8rlIR/r8fLuECWzc5Rcl3LGZ3jazPXsZG+39NlQNSSnAXwN07+6UKyRCSxS//Ol8m4nn7PwlwgRCOiDam/e0HUDvf48Yt43NmJLdt32C+B6NBkh83StK6iBUNicKT+JShbQUBpsc7JGBaUzrF8xTF/KoHX9sHMHI7+owZ/kbfvnVA/lBgvD+kP6MUSh3N/c58qP9v6u8SLPsfJfLdkWva8HIbAAIco6tyYUR7tLGgWQOQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.9.4</code><br>\n<strong>Sys11</strong>: <code>1.8.2</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>ball in play fix - riverboat gambler by @paulmullin in https://github.com/warped-pinball/vector/pull/217</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.3...1.9.4</p>",
     "published_at": "2025-12-16T23:13:04+00:00",
     "type": "production"
@@ -179,6 +223,8 @@
     "version": "1.9.0",
     "tag": "1.10.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.10.0/update.json",
+    "sha256": "018d80460f3ac8e5966e1ee30c14bd6eee3a1366f73cb0c3dc9c173e589bec0a",
+    "signature": "KN7n0ydCdjZWs6Xo8wd0B0C7oeCk0SzZSqXggr+bgYSku+IJCPgMZdUIPchhppbf/nFz8ZKNUkSSTT+W/giSMYe9AETsvFyep4br9vfROnsxfrQ0If+e/KJUw/ehv/NpcgSj+lmp0ReQ+BimwMmHcGHe+82iihmLtAIrwbzkPvHNCNbeqU4iQjawMJD10CLsdMjjJhmQSWI8RCMG/2Y8OiRuBKKCbMp1mAQM67ajd6eSce4OD7ZEwJaTFEoLn5pljQYeFCXCOESa5sID89owu1HST2rl3tey9BBbKPdWKEQIf4NltHLZX77Xj4n2QFr/n1yNgHpAhK2ei7SZGvaptQ==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.10.0</code><br>\n<strong>Sys11</strong>: <code>1.9.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Demo Man Home ROM H6 by @paulmullin in https://github.com/warped-pinball/vector/pull/219</li>\n<li>Adjusted PlayerUp in configs by @paulmullin in https://github.com/warped-pinball/vector/pull/218</li>\n<li>Added additional guard rails on logger by @paulmullin in https://github.com/warped-pinball/vector/pull/216</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.9.4...1.10.0</p>",
     "published_at": "2025-12-30T17:54:49+00:00",
     "type": "production"
@@ -187,6 +233,8 @@
     "version": "1.10.0",
     "tag": "1.11.0",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.0/update.json",
+    "sha256": "77df245cfa3eb8dc1c2fdac3fde227af28a7b69c8838d96da38a6c2910cc6f1a",
+    "signature": "ObgDV/WbpMDwj5maWXVe9U8Zbb4w4d9DSUaJjveMmcioHZy49kw2UtQbb4moP1k/kebqwIuwH63ouqFKXUl96kvPDvtWsR2PzF9LMXYQIHeh4rY3x9Iz3pJqO94JnI3q2YmjGNh+z6JD0JSTU1WOGC9m6zsk7Mqfjv6kG7zvQNhBQtjbIicMhQsHUJ9JPJ+jenmbKX4ce/qjGeJJewPsieuWvp8a+ePOCn4OHjw0K3c+MdDs05+WuaqJUvPz/OVxVI/LhyneqWOl1BADG406VkOV+ZuIPwaiY2vzUGv+ztDY3YdltMBUsqZ2buqkh6FzBvD2zeOmex2Esy7DO3bK3w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.0</code><br>\n<strong>Sys11</strong>: <code>1.10.0</code></p>\n\n\n<h2>What's Changed</h2>\n<h4>New features</h4>\n<ul>\n<li>Switch Diagnostics see out video about them here: https://www.youtube.com/watch?v=FLIX7n9jNf4</li>\n<li>Wi\u2011Fi signal strength shows up in admin page by @mullinmax in https://github.com/warped-pinball/vector/pull/271</li>\n<li>Special play formats by @paulmullin in https://github.com/warped-pinball/vector/pull/276</li>\n<li>Onboard led driver (for WS2812) by @paulmullin in https://github.com/warped-pinball/vector/pull/232</li>\n</ul>\n<h4>Data East support:</h4>\n<p><a href=\"https://warped-pinball.square.site/product/vector-for-data-east/UVTORN3KL75ORNK2JWEKGGH5?cp=true&amp;sa=false&amp;sbp=false&amp;q=false&amp;category_id=BUHGWE2M4555MYLVC2ABLCQX\">The first Data East Boards are now available for purchase!</a></p>\n<ul>\n<li>Add Data East Game support by @paulmullin in https://github.com/warped-pinball/vector/pull/212</li>\n<li>Config file cleanup for Data East games by @paulmullin in https://github.com/warped-pinball/vector/pull/287</li>\n<li>Onboard Rgb led support for data east by @paulmullin in https://github.com/warped-pinball/vector/pull/265</li>\n</ul>\n<h4>Documentation</h4>\n<ul>\n<li>Added new documentation site with reworked manuals and details https://docs.warpedpinball.com/</li>\n<li>Enable dark mode in documentation site by @mullinmax in https://github.com/warped-pinball/vector/pull/250</li>\n<li>Add automatic API docs generation for backend routes by @mullinmax in https://github.com/warped-pinball/vector/pull/227</li>\n<li>Add Data east manual by @paulmullin in https://github.com/warped-pinball/vector/pull/282</li>\n</ul>\n<h4>Bug fixes and Tweaks</h4>\n<ul>\n<li>WPC Initials Capture by @paulmullin in https://github.com/warped-pinball/vector/pull/286</li>\n<li>Move game-end hold handling to web UI by @mullinmax in https://github.com/warped-pinball/vector/pull/251</li>\n<li>saved 10Kb of storage with hand-cleaned logo by @mullinmax in https://github.com/warped-pinball/vector/pull/226</li>\n<li>Fix race condition in scores page initialization by @Copilot in https://github.com/warped-pinball/vector/pull/280</li>\n<li>Rename tournament column \"Rank\" to \"Order\" by @Copilot in https://github.com/warped-pinball/vector/pull/292</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.10.0...1.11.0</p>",
     "published_at": "2026-02-18T22:49:12+00:00",
     "type": "production"
@@ -195,6 +243,8 @@
     "version": "1.10.2",
     "tag": "1.11.10",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.10/update.json",
+    "sha256": "20bbc29c202e0bb8acba6aa7053d5be70f168a8963acbec4463623994db82fda",
+    "signature": "frULFAdylLqMuSE9/8Q98h+pROy15/f2csnk0BEgc7Wdr3HYLuXUnvShPo9hJE60An4MAMsXXjgrX8GPOTJagm+JRQ9trkC8cmGTGZhPVMzd6TrILvyMPPfiIh5Z7q3Tzd+7yr61XDke55E61AjYYkl6lXqrZ/p8nbtvpRxZN1AN5zEYdFtAmTWeYi9LoaOoAOKyTHAjTsGnqa7YCbJKTyU5NOVQbFO0Jv/wk/R6R4fRkOPT/hYFMgCl1W6jyYyk+Ny39/ikvB6RSS/rvjRGJx6pfgCi/3qgNcq/V5wg6eArEn+Dv+SrKY7JBqQ7UV1AfnOlNb4219oKyQMk5qLAPg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.10</code><br>\n<strong>Sys11</strong>: <code>1.10.2</code></p>\n\n\n<p>This release focuses on reliability, performance improvements, and expanded game support. Several internal improvements were also made to make configuration updates safer and easier to maintain.</p>\n<h2>Improvements</h2>\n<ul>\n<li>Reduced update memory usage. <a href=\"https://github.com/warped-pinball/vector/pull/307\">#307</a></li>\n<li>Improved flash storage efficiency. <a href=\"https://github.com/warped-pinball/vector/pull/312\">#312</a></li>\n<li>Config bundles are now distributed as deflate-compressed .z files to reduce download and storage size. <a href=\"https://github.com/warped-pinball/vector/pull/310\">#310</a></li>\n<li>Cleanup and improvements to origin support. <a href=\"https://github.com/warped-pinball/vector/pull/301\">#301</a></li>\n</ul>\n<h2>Game Support &amp; Configuration Updates</h2>\n<ul>\n<li>Added configuration for Fish Tales (L5 ROM). <a href=\"https://github.com/warped-pinball/vector/pull/299\">#299</a></li>\n<li>Adjustments support for several Data East and Williams System 11 games. <a href=\"https://github.com/warped-pinball/vector/pull/298\">#298</a></li>\n<li>Added System 11 frame mapping support. <a href=\"https://github.com/warped-pinball/vector/pull/313\">#313</a></li>\n<li>Added OneBall format and fixes for initials collection. <a href=\"https://github.com/warped-pinball/vector/pull/306\">#306</a></li>\n<li>Improved ID to name conversion for score format selection. <a href=\"https://github.com/warped-pinball/vector/pull/305\">#305</a></li>\n</ul>\n<h2>Documentation &amp; User Resources</h2>\n<ul>\n<li>Updated README badges and documentation links. <a href=\"https://github.com/warped-pinball/vector/pull/297\">#297</a></li>\n<li>Added documentation reference for the API over USB feature. <a href=\"https://github.com/warped-pinball/vector/pull/297\">#297</a></li>\n<li>Updated <a href=\"https://www.youtube.com/@warpedpinball\">Warped Pinball YouTube link</a> on the About page. <a href=\"https://github.com/warped-pinball/vector/pull/294\">#294</a></li>\n<li>Added updated phone screen capture images to the docs. <a href=\"https://github.com/warped-pinball/vector/pull/320\">#320</a></li>\n</ul>\n<h2>Build &amp; Developer Tooling</h2>\n<ul>\n<li>Modularized and documented the game feature CSV exporter. <a href=\"https://github.com/warped-pinball/vector/pull/289\">#289</a></li>\n<li>Automated regeneration of special feature CSV data. <a href=\"https://github.com/warped-pinball/vector/pull/296\">#296</a></li>\n<li>CI validation for JSON configuration files. <a href=\"https://github.com/warped-pinball/vector/pull/281\">#281</a></li>\n<li>Added PR guard for required version bumps. <a href=\"https://github.com/warped-pinball/vector/pull/295\">#295</a></li>\n<li>Automatic patch version bumps in CI workflows. <a href=\"https://github.com/warped-pinball/vector/pull/300\">#300</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.8...1.11.10</p>",
     "published_at": "2026-03-11T21:56:13+00:00",
     "type": "production"
@@ -203,6 +253,8 @@
     "version": "1.10.6",
     "tag": "1.11.27",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.11.27/update.json",
+    "sha256": "96d3eaf7356aa1a83e8aa455c23693bdeefee9f015677fcd66fad15634dc9c6f",
+    "signature": "O0+PwozbJV2CYbCpSgi2mPBGqjCth03rZdFBnSlGuz45dZfSVYAME8A6X2892CUhngEEFPr8cl2x0qEI0O9ChHtF8dnCsga1vkQIFKzrgkthkyABzlU8V4LZo8qdy6Srrz5Rzp1kw12XbK6prCZcRrvtvBZ3ypm6JptUWHbPuMxtv0be0v1EL/wYVbWxI9cC4IEvmGs9qEjTEjf961ErWaZYHmBXgcMXxuytxU/Y8YFzvVmizlNFF7yzVI4w2J6pyPEgE8ZkOSC/Wvpb8DrqtjUeQJxpVetUnXvaQSaQRMFHACDXZgDsriKf1QXdrpVver5f1G751hkBMYzf+kW5vg==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.11.27</code><br>\n<strong>Sys11</strong>: <code>1.10.6</code></p>\n\n\n<h2>What's Changed</h2>\n<h3>New Features</h3>\n<ul>\n<li>Switch Percents UI  by @JakeSiegers in https://github.com/warped-pinball/vector/pull/330<blockquote>\n<p>easily see the health of every switch in the web UI at a glance, no more clicking around to find the bad switch</p>\n</blockquote>\n</li>\n<li>Wpc configs add by @paulmullin in https://github.com/warped-pinball/vector/pull/335<blockquote>\n<p>We've added even more configs for less common ROMs. Check your machine's compatibility here: <a href=\"https://warpedpinball.com/compatibility.html\">https://warpedpinball.com/compatibility.html</a></p>\n</blockquote>\n</li>\n<li>Add memory mapper support by @mullinmax in https://github.com/warped-pinball/vector/pull/327<blockquote>\n<p>We've built a memory mapping tool to help mod-makers, tinkerers and nerds like us see what's happening in your pinball machine <em>in real time</em>. Use this to locate values you want to read or write to via the API. Check it out here: <a href=\"https://github.com/warped-pinball/memory-mapper\">https://github.com/warped-pinball/memory-mapper</a></p>\n</blockquote>\n</li>\n</ul>\n<h3>Documentation</h3>\n<ul>\n<li>Special features by @paulmullin in https://github.com/warped-pinball/vector/pull/346</li>\n<li>Regenerate special features csv by @paulmullin in https://github.com/warped-pinball/vector/pull/348</li>\n<li>Config updates for web site list by @paulmullin in https://github.com/warped-pinball/vector/pull/339</li>\n</ul>\n<h3>Bug fixes</h3>\n<ul>\n<li>Disable wifi power-save mode to fix dropped packets and unreachable web UI by @kneissl in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>This should improve the reliability of the web interface</p>\n</blockquote>\n</li>\n<li>Bride of Pinbot Calibration Issue - RamFill by @paulmullin in https://github.com/warped-pinball/vector/pull/341</li>\n<li>Improvements to CSS style loading consistency by @paulmullin in https://github.com/warped-pinball/vector/pull/364</li>\n<li>Print() override to non-blocking by @paulmullin in https://github.com/warped-pinball/vector/pull/367</li>\n</ul>\n<h3>Developer QOL</h3>\n<ul>\n<li>Support fork prs by @paulmullin in https://github.com/warped-pinball/vector/pull/352</li>\n<li>Add interactive target and port selection to sync.py by @mullinmax in https://github.com/warped-pinball/vector/pull/333</li>\n<li>Add --test-data flag to sync.py by @JakeSiegers in https://github.com/warped-pinball/vector/pull/358</li>\n</ul>\n<h3>New Contributors</h3>\n<ul>\n<li>@kneissl made their first contribution in https://github.com/warped-pinball/vector/pull/363<blockquote>\n<p>Thank you! and welcome to the project! </p>\n</blockquote>\n</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.10...1.11.27</p>",
     "published_at": "2026-07-14T21:21:18+00:00",
     "type": "production"
@@ -211,6 +263,8 @@
     "version": "1.10.7",
     "tag": "1.12.5",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.5/update.json",
+    "sha256": "56d941dd7aad5d3b8fc7f58c437b03446596d3535cd43e3931ac3af401d711a0",
+    "signature": "g785Ov/KeRpA93Tcuf+tEerZ/MWG0Qpcpuz3E7PDqj+S6E+wLbTDCuCqPpwHk6J26T1GJeCV2jT5Y8vLuFMwQrEIJqPawVS1HGo6lZsdSAiC6Qg5LBiGJJIINV3i9BOOp9FxL/GkjjLo2ERqWFsemwRXXtccswLUzD/QC0+6S4V4ET0psTDc/ZnU62xMUOv580ObzitP6xyB2NgGPEFsegIo7DggO/6IjNTq0Qp6Nf9LvDjwvbhUBYqpx5ZZN61sAz4KVKPf5MjxX1nsYKwG9IyLZxcNMqoneMuVMun+ZXnlcnTXYo2l0WLs76Nd9TZ6DWiHZMftaob2CKGHNVOp6w==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.5</code><br>\n<strong>Sys11</strong>: <code>1.10.7</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Manuals (all) updates with extra screen shots by @paulmullin in https://github.com/warped-pinball/vector/pull/372</li>\n<li>Data East scores off by factor of 10 by @paulmullin in https://github.com/warped-pinball/vector/pull/375</li>\n<li>WPC Ball in play config corrections by @paulmullin in https://github.com/warped-pinball/vector/pull/374</li>\n<li>Stream memory snapshots to one client IP instead of network broadcast by @mullinmax in https://github.com/warped-pinball/vector/pull/369</li>\n<li>Config name corrections by @paulmullin in https://github.com/warped-pinball/vector/pull/380</li>\n<li>wifi fault to log by @paulmullin in https://github.com/warped-pinball/vector/pull/378</li>\n<li>Led off at exit by @paulmullin in https://github.com/warped-pinball/vector/pull/381</li>\n<li>Fault LED driver update by @paulmullin in https://github.com/warped-pinball/vector/pull/383</li>\n<li>Send Origin messages to one registered listener, signed, instead of broadcasting by @mullinmax in https://github.com/warped-pinball/vector/pull/377</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.11.28...1.12.5</p>",
     "published_at": "2026-09-07T21:06:08+00:00",
     "type": "production"
@@ -219,6 +273,8 @@
     "version": "1.10.10",
     "tag": "1.12.15",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.15/update.json",
+    "sha256": "48b2982f3afafe38720ba2ca475241a9d6edd1ed218c8e17508a44fd27acadcf",
+    "signature": "ofbShh+PAoIyogAZPdM8ez7MQ4e4jOYiyKOnlCtT7Fzb9foKCIufb78V8WnTWGBELTKXEKeEvpqoN98MC0iBKBsu3qwiyDA8hlBVLB7nqIyqiqxGCwPh9RNqyJLhhiuGh0lavyXiQZ1fHmeQ9+jBw0ZaXApT1k136j7O03DwJmZI5qp0NaPhEuZP1cHhadcn1vfQq2RAmGL+7iWxJ0areQFyqzGCJYtWnuQY9SgoPDVbchXCHbtq7XcoU5J3TILoOS6oT5pCku86mD/IIodA5u9QuO475u+lcbuYhSUdlzsQTfio29iRk9eUIFZ9ZoBuoA811uwi1MpmcHJO+DTXBw==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.15</code><br>\n<strong>Sys11</strong>: <code>1.10.10</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added support for Classics by @paulmullin in https://github.com/warped-pinball/vector/pull/388</li>\n<li>Updated information on the vector about page by @paulmullin in https://github.com/warped-pinball/vector/pull/392</li>\n<li>Added support for 4-player EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/391</li>\n<li>Player up reporting for EMs by @paulmullin in https://github.com/warped-pinball/vector/pull/402</li>\n<li>added more configs for classics by @paulmullin in https://github.com/warped-pinball/vector/pull/404</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>F14 Switch Matrix fix by @paulmullin in https://github.com/warped-pinball/vector/pull/399</li>\n<li>system 11 game end dither clean up by @paulmullin in https://github.com/warped-pinball/vector/pull/398</li>\n<li>Admin page load harden by @paulmullin in https://github.com/warped-pinball/vector/pull/403</li>\n<li>classics ip display fix by @paulmullin in https://github.com/warped-pinball/vector/pull/406</li>\n</ul>\n<h2>Docs</h2>\n<ul>\n<li>classics board documentation by @paulmullin in https://github.com/warped-pinball/vector/pull/389</li>\n<li>images for rottendog system11 installation instructions by @paulmullin in https://github.com/warped-pinball/vector/pull/387</li>\n</ul>\n<h2>Development:</h2>\n<ul>\n<li>HIL: stop the post-flash reset race, bound every mpremote step, un-deprecate the runner by @mullinmax in https://github.com/warped-pinball/vector/pull/390</li>\n<li>Enable classic boards in HIL bench target resolution by @mullinmax with @Copilot in https://github.com/warped-pinball/vector/pull/393</li>\n</ul>",
     "published_at": "2026-10-09T21:50:37+00:00",
     "type": "production"
@@ -227,6 +283,8 @@
     "version": "1.10.11",
     "tag": "1.12.20",
     "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20/update.json",
+    "sha256": "16d43312ec16a68708c2ec2caf7a58f7739679ffa29e2462b57fe62b9f00e007",
+    "signature": "kC8IDIIbhMwioXdDeLo0r3Ma+rDEoTmvxMjHM+4BZ4gvLb+VqJd2JyvdsOKTVE2hpgsPBUUGJowb/W/wt07SfsrOduAJu34ZN2F1LMO9WRF9oBH7yyuMdhGa3LJW7/3nL8I2xy4mS7k4PjMzRH2YcwKG/H/eH+GFKYF4zUexFINroDjRhnmed+8eWQc3PQmTzeeo1JbcxwRBwKj6gqMtWuIqOegFThG/c7z3EifFaZwZsMZhrax9/JnKl/5S3TQYB/cc3NVqVm+RNFbHHqVrZmpV9eqpq0ZI+LK4tQ8xVqRjdKEPvWhLRTFlxp5BZrZOKVmOXvahrcN31SPuZ9tI8A==",
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20</code><br>\n<strong>Sys11</strong>: <code>1.10.11</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added 77 new configs for classics of  by @paulmullin in https://github.com/warped-pinball/vector/pull/419</li>\n</ul>\n<h2>Bug fixes:</h2>\n<ul>\n<li>Fix World Cup Soccer LX-2 game-active address (158 to 141) by @edgiardina in https://github.com/warped-pinball/vector/pull/417</li>\n<li>Fixed spelling of Sorcerer by @mullinmax in https://github.com/warped-pinball/vector/pull/420</li>\n</ul>\n<h2>Documentation:</h2>\n<ul>\n<li>Doc updates (Classic and Origin) by @paulmullin in https://github.com/warped-pinball/vector/pull/411</li>\n<li>Docs update 2, picture and link by @paulmullin in https://github.com/warped-pinball/vector/pull/412</li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li>@edgiardina made their first contribution in https://github.com/warped-pinball/vector/pull/417</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.12.13...1.12.20</p>",
     "published_at": "2026-10-25T14:47:14+00:00",
     "type": "production"

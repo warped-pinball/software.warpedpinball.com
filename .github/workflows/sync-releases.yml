@@ -10,6 +10,10 @@ on:
         description: 'Branch to run the sync on'
         required: true
         default: main
+      full_rebuild:
+        description: 'Rebuild every release from scratch (slow; use after adding a field, editing old notes, or deleting a release)'
+        type: boolean
+        default: false
 
 # Grant write permissions so we can commit updated JSON files
 permissions:
@@ -22,6 +26,7 @@ jobs:
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      WARPED_PINBALL_PRIVATE_KEY: ${{ secrets.WARPED_PINBALL_PRIVATE_KEY }}
 
     steps:
       - name: Check out site repo
@@ -45,7 +50,8 @@ jobs:
           python scripts/generate.py \
             --owner warped-pinball \
             --repo vector \
-            --out-dir docs
+            --out-dir docs \
+            ${{ github.event.inputs.full_rebuild == 'true' && '--full' || '' }}
 
       - name: Commit and push updated JSON
         run: |
