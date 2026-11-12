@@ -2,6 +2,7 @@ import base64
 import hashlib
 import json
 import os
+import shutil
 import sys
 from datetime import datetime, timezone
 
@@ -513,7 +514,7 @@ def run_generator(monkeypatch, out_dir, releases, *extra_args):
     fetched = []
 
     class NotFound:
-        def __init__(self, url):
+        def __init__(self, url, **kwargs):
             self.content = None
             self.status_code = 404
 
@@ -564,7 +565,7 @@ def mirror_sync(monkeypatch, out_dir, tags):
     fetched = []
 
     class Response:
-        def __init__(self, url):
+        def __init__(self, url, **kwargs):
             fetched.append(url)
             self.content = by_url.get(url)
             self.status_code = 200 if url in by_url else 404
@@ -632,6 +633,56 @@ def test_latest_json_keeps_the_github_url_when_the_mirror_fails(monkeypatch, tmp
     assert not (tmp_path / "vector" / "sys11" / "updates").exists()
     latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
     assert latest["url"] == FakeAsset("1.0.0").browser_download_url
+
+
+def test_a_network_failure_while_mirroring_does_not_stop_the_sync(
+    monkeypatch, tmp_path
+):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    mirror_sync(monkeypatch, tmp_path, ["1.0.0"])
+    # lose the copy, then lose the network: the sync has to fetch it again
+    shutil.rmtree(tmp_path / "vector" / "sys11" / "updates")
+
+    def unreachable(url, **kwargs):
+        raise generate.requests.ConnectionError("connection reset")
+
+    monkeypatch.setattr(generate.requests, "get", unreachable)
+    generate.main()
+
+    assert not (tmp_path / "vector" / "sys11" / "updates").exists()
+    latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
+    assert latest["url"] == FakeAsset("1.0.0").browser_download_url
+
+
+def test_the_signed_record_names_the_mirrored_url(monkeypatch, tmp_path):
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import padding, rsa
+
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+    pem = key.private_bytes(
+        serialization.Encoding.PEM,
+        serialization.PrivateFormat.PKCS8,
+        serialization.NoEncryption(),
+    ).decode()
+    monkeypatch.setenv(generate.SIGNING_KEY_ENV, pem)
+
+    mirror_sync(monkeypatch, tmp_path, ["1.0.0"])
+    latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
+
+    signed = latest["signed"]
+    # raises if the payload is not what the key signed
+    key.public_key().verify(
+        base64.b64decode(signed["signature"]),
+        signed["payload"].encode(),
+        padding.PKCS1v15(),
+        hashes.SHA256(),
+    )
+    mirrored_url = (
+        "http://software.warpedpinball.com/vector/sys11/updates/1.0.0/update.json"
+    )
+    # current boards only trust the payload, so the URL has to be in there too
+    assert json.loads(signed["payload"])["url"] == mirrored_url
+    assert latest["url"] == mirrored_url
 
 
 def test_a_tampered_update_file_is_not_mirrored(tmp_path):

@@ -91,8 +91,14 @@ def mirror_update_file(out_dir, product, release_entry):
         with open(path, "rb") as f:
             content = f.read()
     if content is None or not update_file_matches(content, sha256):
-        response = requests.get(release_entry["url"])
-        content = response.content if response.status_code == 200 else None
+        # A network failure raises instead of returning a status. The mirror
+        # is optional, so it must not take the whole sync down with it.
+        try:
+            response = requests.get(release_entry["url"], timeout=60)
+            content = response.content if response.status_code == 200 else None
+        except requests.RequestException as error:
+            print(f"⚠️ Download failed: {error}", file=sys.stderr)
+            content = None
         if content is None or not update_file_matches(content, sha256):
             print(
                 f"⚠️ Could not mirror the {product} update file for {tag}; "
