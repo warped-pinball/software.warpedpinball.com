@@ -210,6 +210,20 @@ One site-wide file sits alongside them:
 https://software.warpedpinball.com/builds.json  every update file, with its sha256 and signature
 ```
 
+The latest production update file for each product is also copied onto this
+site, and `latest.json` points its `url` at that copy:
+
+```
+http://software.warpedpinball.com/vector/<product>/updates/<tag>/update.json
+```
+
+That URL is plain HTTP on purpose, and "Enforce HTTPS" must stay off in the
+repository's Pages settings. A Pico W does not have the memory for a TLS
+handshake once Vector is running, so it cannot download the file from GitHub.
+The board checks the file's sha256 and signature before applying it, so the
+transport does not need to be trusted. Only the latest release's file is kept.
+If the copy cannot be made, `latest.json` keeps the GitHub URL.
+
 Every release entry, `latest.json` and `builds.json` carry `sha256` and
 `signature`, copied from the last line of the update file itself
 (`{"sha256": ..., "signature": ...}`). That signature is vector's release key

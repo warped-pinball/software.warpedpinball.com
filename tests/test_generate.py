@@ -504,9 +504,20 @@ class FakeRelease:
 
 
 def run_generator(monkeypatch, out_dir, releases, *extra_args):
-    """Run main() against ``releases`` and return the URLs it downloaded."""
+    """Run main() against ``releases`` and return the URLs it downloaded.
+
+    The update files here are stand-ins with made up checksums, so mirroring
+    the latest one is switched off by serving it as a 404; see mirror_sync.
+    """
 
     fetched = []
+
+    class NotFound:
+        def __init__(self, url):
+            self.content = None
+            self.status_code = 404
+
+    monkeypatch.setattr(generate.requests, "get", NotFound)
 
     def fake_fetch(url):
         fetched.append(url)
@@ -534,10 +545,101 @@ def run_generator(monkeypatch, out_dir, releases, *extra_args):
 
 
 def read_outputs(out_dir):
+    # mirrored update files are not single JSON documents, so leave them out
     return {
-        str(path.relative_to(out_dir)): json.loads(path.read_text())
+        path.relative_to(out_dir).as_posix(): json.loads(path.read_text())
         for path in sorted(out_dir.rglob("*.json"))
+        if "updates" not in path.relative_to(out_dir).parts
     }
+
+
+def mirror_sync(monkeypatch, out_dir, tags):
+    """Sync ``tags`` with update files whose checksums are real."""
+
+    releases = [FakeRelease(tag, day) for day, tag in enumerate(tags, start=1)]
+    by_url = {
+        FakeAsset(tag).browser_download_url: make_update_file({"version": tag})[0]
+        for tag in tags
+    }
+    fetched = []
+
+    class Response:
+        def __init__(self, url):
+            fetched.append(url)
+            self.content = by_url.get(url)
+            self.status_code = 200 if url in by_url else 404
+
+    newest_first = sorted(releases, key=lambda r: r.created_at, reverse=True)
+    repository = type("Repo", (), {"get_releases": lambda self: newest_first})()
+    monkeypatch.setenv("GITHUB_TOKEN", "token")
+    monkeypatch.setattr(generate.requests, "get", Response)
+    monkeypatch.setattr(
+        generate,
+        "Github",
+        lambda token: type("Gh", (), {"get_repo": lambda self, _: repository})(),
+    )
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        ["generate.py", "--owner", "warped-pinball", "--repo", "vector"]
+        + ["--out-dir", str(out_dir)],
+    )
+    generate.main()
+    return by_url, fetched
+
+
+def test_latest_update_file_is_mirrored_and_served_over_http(monkeypatch, tmp_path):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    by_url, _ = mirror_sync(monkeypatch, tmp_path, ["1.0.0"])
+
+    mirrored = tmp_path / "vector" / "sys11" / "updates" / "1.0.0" / "update.json"
+    github_url = FakeAsset("1.0.0").browser_download_url
+    # byte for byte, or the board's checksum would not match
+    assert mirrored.read_bytes() == by_url[github_url]
+
+    outputs = read_outputs(tmp_path)
+    assert outputs["vector/sys11/latest.json"]["url"] == (
+        "http://software.warpedpinball.com/vector/sys11/updates/1.0.0/update.json"
+    )
+    # the release history still points at GitHub, the sync reads tags from it
+    assert outputs["vector/sys11/all.json"][0]["url"] == github_url
+    assert outputs["builds.json"][0]["url"] == github_url
+
+
+def test_only_the_latest_update_file_is_kept(monkeypatch, tmp_path):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    mirror_sync(monkeypatch, tmp_path, ["1.0.0"])
+    mirror_sync(monkeypatch, tmp_path, ["1.0.0", "1.1.0"])
+
+    updates = tmp_path / "vector" / "sys11" / "updates"
+    assert [p.name for p in updates.iterdir()] == ["1.1.0"]
+    latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
+    assert latest["url"].endswith("/updates/1.1.0/update.json")
+
+
+def test_an_unchanged_mirror_is_not_downloaded_again(monkeypatch, tmp_path):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    mirror_sync(monkeypatch, tmp_path, ["1.0.0"])
+    _, fetched = mirror_sync(monkeypatch, tmp_path, ["1.0.0"])
+    assert fetched == []
+
+
+def test_latest_json_keeps_the_github_url_when_the_mirror_fails(monkeypatch, tmp_path):
+    monkeypatch.delenv(generate.SIGNING_KEY_ENV, raising=False)
+    # run_generator serves no update files, so the mirror download is a 404
+    run_generator(monkeypatch, tmp_path, [FakeRelease("1.0.0", 1)])
+
+    assert not (tmp_path / "vector" / "sys11" / "updates").exists()
+    latest = read_outputs(tmp_path)["vector/sys11/latest.json"]
+    assert latest["url"] == FakeAsset("1.0.0").browser_download_url
+
+
+def test_a_tampered_update_file_is_not_mirrored(tmp_path):
+    content, sha256 = make_update_file({"version": "1.0.0"})
+    assert generate.update_file_matches(content, sha256)
+    assert not generate.update_file_matches(content.replace(b"one", b"two"), sha256)
+    assert not generate.update_file_matches(content, "0" * 64)
+    assert not generate.update_file_matches(content, None)
 
 
 def test_sync_only_fetches_releases_newer_than_the_site(monkeypatch, tmp_path):

@@ -53,6 +53,64 @@ def parse_update_file(content):
     return metadata, sha256, signature
 
 
+# Where boards fetch the mirrored update file from. Plain HTTP on purpose: a
+# Pico W cannot spare the RAM for a TLS handshake once Vector is running, so
+# it cannot download from GitHub. The file is still safe to fetch this way,
+# boards check its sha256 and RSA signature before applying it.
+SITE_HTTP_URL = "http://software.warpedpinball.com"
+
+
+def update_file_matches(content, sha256):
+    """True when ``content`` is the update file its ``sha256`` line promises."""
+
+    body, _, last_line = content.rstrip(b"\r\n").rpartition(b"\n")
+    try:
+        claimed = json.loads(last_line).get("sha256")
+    except (ValueError, AttributeError):
+        return False
+    return bool(sha256) and claimed == sha256 == hashlib.sha256(body).hexdigest()
+
+
+def mirror_update_file(out_dir, product, release_entry):
+    """Copy a release's update file onto this site and return its HTTP URL.
+
+    The copy lives at ``vector/<product>/updates/<tag>/update.json``. The tag
+    is in the path so a cached copy of an older release can never be served
+    under the new one's URL. Only one release is kept per product. Returns
+    ``None``, leaving nothing behind, when the file cannot be fetched or does
+    not match the checksum recorded for the release.
+    """
+
+    sha256 = release_entry.get("sha256")
+    tag = release_entry["tag"]
+    updates_dir = os.path.join(out_dir, "vector", product, "updates")
+    path = os.path.join(updates_dir, tag, "update.json")
+
+    content = None
+    if os.path.exists(path):
+        with open(path, "rb") as f:
+            content = f.read()
+    if content is None or not update_file_matches(content, sha256):
+        response = requests.get(release_entry["url"])
+        content = response.content if response.status_code == 200 else None
+        if content is None or not update_file_matches(content, sha256):
+            print(
+                f"⚠️ Could not mirror the {product} update file for {tag}; "
+                "latest.json keeps the GitHub URL",
+                file=sys.stderr,
+            )
+            return None
+
+    if os.path.exists(updates_dir):
+        shutil.rmtree(updates_dir)
+    os.makedirs(os.path.dirname(path))
+    # bytes in, bytes out: the checksum covers the file exactly as released
+    with open(path, "wb") as f:
+        f.write(content)
+    print(f"✅ Mirrored {path}")
+    return f"{SITE_HTTP_URL}/vector/{product}/updates/{tag}/update.json"
+
+
 def fetch_update_file(url):
     """Download an update file and return ``(metadata, sha256, signature)``, or ``None``."""
 
@@ -150,6 +208,7 @@ def parse_release_versions(text):
 
     start_index, header_span, footer_index = bounds
     lines = text.splitlines(keepends=True)
+
     section = "".join(lines[start_index + header_span : footer_index])
     versions = {}
     for m in re.finditer(r"\*\*([^*]+)\*\*\s*:\s*`([^`]+)`", section):
@@ -206,7 +265,6 @@ def release_notes_to_html(text):
         attributes=bleach.sanitizer.ALLOWED_ATTRIBUTES,
         strip=True,
     )
-
 
 
 # Environment variable holding the PEM private key that signs latest.json:
@@ -471,9 +529,13 @@ def write_outputs(state, out_dir, owner, repo, signing_key=None):
             else:
                 latest_release = max(groups["all"], key=lambda r: r["published_at"])
 
-            latest_release_data = build_latest_release_data(
-                owner, repo, latest_release
-            )
+            latest_release_data = build_latest_release_data(owner, repo, latest_release)
+            # Boards download from this site instead of GitHub when the file
+            # could be mirrored. Set before signing, so the signed record
+            # names the same URL.
+            mirrored_url = mirror_update_file(out_dir, product, latest_release)
+            if mirrored_url:
+                latest_release_data["url"] = mirrored_url
             # The plain fields stay for boards from before signed releases;
             # newer boards only trust what is inside ``signed``
             if signing_key is not None:
