@@ -1878,5 +1878,55 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>WPC</strong>: <code>1.7.19-beta2040</code></p>\n",
     "published_at": "2026-10-22T17:05:44+00:00",
     "type": "beta"
+  },
+  {
+    "version": "1.7.19-beta2092",
+    "tag": "1.12.20-beta2092",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_wpc.json",
+    "sha256": "5a32daef3582d858c93d0cffc3786faa8d5ddbf31217650bf5242a649b34e66d",
+    "signature": "nM7b9KNjcB9aq71hMA6l7GTBDO3vj0wj3SkB1XyEzQLzNVeuQ4nu92IaeoRm78duI6eXLzAbFuUo6n6kPxZL46EDkgyYmqx5TUBVJBBbIpu5q1O1e8J1ZXR2pTVADzimsILVs+MEmoPNTY0sVcfmxv1anqsS2mATo7bvnNR02F020aD1PoTZ8GA3R4WpHL9q3p67PSm+vRmNH3UujILjNBflwosm9BxnIWPXg+ssni2jha/JOUUIER6v+5qy63vJ+DT9RU0xUNqlPHFpoAst7FEWbqeIiWpRsKg52F/seepMBbzdSdOwTFQ6SeDZx0OXOmL4ZkMoKSNlOBdAVuyD6w==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20-beta2092</code><br>\n<strong>WPC</strong>: <code>1.7.19-beta2092</code></p>\n",
+    "published_at": "2026-10-29T14:59:43+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.7.20-beta2111",
+    "tag": "1.12.21-beta2111",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_wpc.json",
+    "sha256": "77574b99f412b5bd36aa7bab82e892ee27bd700586d3928b7dfeddb3038b5bb1",
+    "signature": "UZbo1bFGaELI+rr5pyx36pQSfhq0TFlI4l6ozR0/xmbOSB24T8o3j3v2tQaTIe4MHQ+JONPHMpw9RFKzQTEz89SKsdmswwiZkMC3DlRwPCiClEvZOJkFJan9zQrOdGzGjRKbyW0Qpx0U5GVh9jqEWkZ3YcAEWu1ieajTSPm7bC+M8ywSt16OQsikKPmiuQQcKC4GRG+lU0acwna35XcjEDacQCXt9omoX7JHsvsvtljX4KU8PlY4lM9Ykp4ajJqw5YS25YoaWjhJIg/lLQzLlx/vnNsO+kS88pto3wTWl4uA8cI5BIRVDL/AeChsunU2k4gOmo+D+DPPEUqvNkqFdg==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.21-beta2111</code><br>\n<strong>WPC</strong>: <code>1.7.20-beta2111</code></p>\n",
+    "published_at": "2026-10-30T02:01:57+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2135",
+    "tag": "2.0.0-beta2135",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_wpc.json",
+    "sha256": "42d20904d32005fcb131447fd87f3af4488ff267df17db380086e1c90ab3bdd1",
+    "signature": "FgJB+J7QA+iUhQWiQ07MJjr3Ye9kzps7XkMOkydEcYBcH6CyWFM/AomA/bLhue+EySDu4SYQcbpV8V9LB3nUSYUDjEB8z5nbcoyiiJTHO2gTPoQ0383At2M50omuj+LPHHNpgb1TucD9PBE9ywKrlU2FQOE21vKcy3s6Zn53iHcHQMn68ahqUsO0iFNvTtemlwu6zs2jy/XTERYy9Lq2cvLWNt8wgxbsmvkielk62FIP7kbqNejRxOrWT0KT08272lJPnqACrb+gewZEyWn/MGlpH++qMBBJYO5jkNr6DmMBweFev5EAOfDA0R/e7lnd45ouHCYUTHFvRHeu0kVYZQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.0-beta2135</code><br>\n<strong>WPC</strong>: <code>2.0.0-beta2135</code></p>\n",
+    "published_at": "2026-10-30T20:23:42+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.1-beta2147",
+    "tag": "2.0.3-beta2147",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_wpc.json",
+    "sha256": "1f1204496ccf5c35f175e2519aedfca8044957bb02680a7a23aa1c329563698f",
+    "signature": "rbPfkOSY128kyJ4lywcsPVwRUVmE/q/z6JvVPqRoSGIbIi5yYtPyYxMlKf/KvkNSwoXNM11G/UuyitMprZSxWc1yqkb9cszzpZKLEOUNuo+n6tWTajHXxR7SJPh9YiBRTTPr01kSuQad3B9bVwbLIuKzv87t/1/31IgsipUd+ZlZUoeXeUy0Af2+9oweup6igYE5+V1sMYyr1vOFz0X8TrMmu5BzWYM2OOSuXUPYaG9SJama4M/LFS3AtYn4E4lMNHv4b731frF9SEbmLkv2GJExlEgC73pLwyeRZxKBZ63dkVmijStBjIC+ShmyiyTUMO3FFIGnDvsr+CSe0cfBdQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.3-beta2147</code><br>\n<strong>WPC</strong>: <code>2.0.1-beta2147</code></p>\n",
+    "published_at": "2026-10-31T20:23:03+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.2-beta2150",
+    "tag": "2.0.4-beta2150",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_wpc.json",
+    "sha256": "5d07555b301c5db45ae0cd33adc7288563d4c9e49038c747b0261247c1cc4f98",
+    "signature": "n86A56e4ZQVpLcEH04xXLmldqpJ2+YpUVAWyM70QbrB96j1NlqTiCG0ID0CQ36fAayezXsoD6sxaNKcQkUYOKIkCziyl2kU3WooNpJjZ3GjSSap2BlTqApdVAaw1iaYTuODcdz6LXFKcGNGmK86zgSjUWLr1rj/9/OJ5FiGK4Xo5aK4gs64aSeHTW3tn80ijZbUa+61IakS/duTcMmUE3wfK/MS2xXv3htDAsCOiUvXnt7mTxXnIXkPmH3gg7UCIdaa6GFtQHendKDeJe2j3BxxnQls6ANqFdn9YClyfXoR2KVbNI22G1AEj+GuCwBdWHcdZo9lsLl72jtfHge5okQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.4-beta2150</code><br>\n<strong>WPC</strong>: <code>2.0.2-beta2150</code></p>\n",
+    "published_at": "2026-10-31T23:03:00+00:00",
+    "type": "beta"
   }
 ]

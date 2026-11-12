@@ -1878,5 +1878,55 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>EM</strong>: <code>1.6.8-beta2040</code></p>\n",
     "published_at": "2026-10-22T17:05:44+00:00",
     "type": "beta"
+  },
+  {
+    "version": "1.6.8-beta2092",
+    "tag": "1.12.20-beta2092",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_em.json",
+    "sha256": "aec592ee0839927c08d9fd308ccae65feaac6f412360ae39ecf1f57825f1222f",
+    "signature": "bzsyGMyUO4wwvqgRS2bKVoQ7fXdf+JRpYeKyDvljIsjnHLQHP409VKJWh6c/7QATeFg/ujvhO/rPlnA84cTv/yLUE3asQqkaCHKLttfAQaD8R2IGkUIn2i8fPfH1zsQKsjx4CJGMeSLafyFkAD+oirdhIKYxl4AFWNrDugD7n/HFtrX3OoBKZuIh/mm8OmNX9LxI+/Hw5KBRnbIiDWJDeaNbTC144CGkV9d5MOXvEmXY634aRLV9QeQHwV5XjFf50sXqUFz084Cw6ot7FlmYwANDgJkus+sqaNMVOIv/knQ9GsUBgCpcaYLk4FS+l5PjsWf7cc51Hds0z0LKUUM8Hw==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20-beta2092</code><br>\n<strong>EM</strong>: <code>1.6.8-beta2092</code></p>\n",
+    "published_at": "2026-10-29T14:59:43+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.6.8-beta2111",
+    "tag": "1.12.21-beta2111",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_em.json",
+    "sha256": "27ce96bf9134e0da84dbe71f56b679f2258509dcaace24048ea6e0776ee671ca",
+    "signature": "IIM0L098dIjwk9kIwaRDl1CLJ4B4S+hbfzDgo/n0Wdoxjo6FP55TOtHZ9Zhe9V3l4zFbAZbD8D9PD/efU9piSHbb/njcW8+Suu11iuxFJrieRLoL5r9a4zyHF4ZeNHfYPiZZFZ33fVxBnzcFvcbs18EhOKBJhbSwwagBCrfatYrW9tM0lsGZLk5YZbFT2dreNxUtmjicakuj5axAdV7qvO4n4Kavac4+tNeq4qxMBjl+Ug6Co4bb+1aNcTJ0phYGlbrm/IYLNErpS03glPx36ECKqU2WgtIBbJkNuMmwzS9UgLjNCMq2H3T+w/2Tf/wR410yTH/jNwMLb5YVJ9aDfA==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.21-beta2111</code><br>\n<strong>EM</strong>: <code>1.6.8-beta2111</code></p>\n",
+    "published_at": "2026-10-30T02:01:57+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2135",
+    "tag": "2.0.0-beta2135",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_em.json",
+    "sha256": "385e7f0e9eada2ccefc99520bf7ecebda27ed568a3ff8a425b59351ee1b7cf7f",
+    "signature": "EQGXWlhQ860MGKrbXc4gRPYBZprYElABtEk3wDB45VQOEVdVuxKBqoSQVwoBnZtlb8NQhg/jioABRBkvaXJYtSRvkVVMX1uSX/r1DQf6J8ypZuziIo8NAAr25H/jEGta36s2BlW2vQo9I0/QUSng6IfQ25m6KmZqfjvPZTvtpl2xoJf/1OpYaw+TPpsWoTsyKIKjt79lz+KJReOoJoDQniNesWaCmth+dPNQGsEnCkqwS5GBHMFVauECWtdIA3qm942Tg16lRV0KymKjURCazZjhlj4FtFknvRLwK03kteiGy9kmGpBSNUIkq1JZ3k+Lp83CO7Z5B3hzpLZOi2GTPQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.0-beta2135</code><br>\n<strong>EM</strong>: <code>2.0.0-beta2135</code></p>\n",
+    "published_at": "2026-10-30T20:23:42+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2147",
+    "tag": "2.0.3-beta2147",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_em.json",
+    "sha256": "09e5590651b5aa2de892e9d159963466904c86307f3e33b7ea742eaed0ebf5dc",
+    "signature": "YpiJ9pKnLrJuIYdPFaP7UAQ4Henh5KvqmrgOoLWSb/u46I/fzNREcybrof13E6O3CPIBkSp1ES5KnVB2CuJLZdqG6H350/jetlADfkIWQ/fNQo+LukGXcgxKTRp6LFXsqGkTyAHUnQz/5LuoQS3nteKH4j8nMxEmBVvMkBxWs109GxaPI8nfpV2X/BdC06QnN2TbFV4F1WuzPpVF5emEdb/YY6e9HngOdIzHg0eVGq1z+Qb6J4/eak1+RPh7Q9NhUa802UW7YR/Vr/xCJhzGF0XDMahJw6gaZm0xaU4ze2nuXpIswta3foUw9/GDEkEqXxp9h7gc2I5eh8L3dyhGaQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.3-beta2147</code><br>\n<strong>EM</strong>: <code>2.0.0-beta2147</code></p>\n",
+    "published_at": "2026-10-31T20:23:03+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2150",
+    "tag": "2.0.4-beta2150",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_em.json",
+    "sha256": "9e5907a8f8e4a7cc103c5f1e6d60d135243d0e53a2050e7df27450bbdb7514b8",
+    "signature": "G+PjvCdFTkar/iiXPreIWhrgS+VzkJrcpeuShZgwwb7kg6p9H8khVl6XADBwoeQFQFKEdG1zKEHXUo9H9HteukkHJlN+0+UHDfqV0tAq3SwwxvNRn2IJCQkOv7RvCqM+1Bgn6RAqtCn4EbKeCNzIJLQh12cEJWowqURtTfytpK2ERWp2EZf9C9aXa6ulK5QuWUcm3EbsfgRHeVShsD9dcaEG+lBNu4BI+Izzzw90ATEvBVHNmahumHTPcoQ19wD+bxaeCVck0W635nVWg/aRue3g5eA7XRC5rNjX0VjLy1Jv4aIhDf6et/TTMzYuf1G1l9XSU9NrTvvyXDQ700+OCg==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.4-beta2150</code><br>\n<strong>EM</strong>: <code>2.0.0-beta2150</code></p>\n",
+    "published_at": "2026-10-31T23:03:00+00:00",
+    "type": "beta"
   }
 ]
