@@ -1408,5 +1408,55 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.18-beta2040</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2040</code></p>\n",
     "published_at": "2026-10-22T17:05:44+00:00",
     "type": "beta"
+  },
+  {
+    "version": "1.0.16-beta2092",
+    "tag": "1.12.20-beta2092",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_data_east.json",
+    "sha256": "a577462c66c1d38ad3413553120e910999d740da078564475c605fdb7fe796b5",
+    "signature": "bSSyGHsaY8NSwe723xCfuo5jGbPxC1GNRYWzlgZzUt8XWFFFNbGrr9/tyrFdSPuLSdAwshxv2LOKjnBSU/YlTyCn9Jh6lxZCrNCJWGdIljdo+vRfmQcj6ZwNaeHKZfFFCgYpD4+yKLoISH1NAkJTCs9SNutE27HQc4aRD6ha5stie7t0azGaI15MQXaqiVVOcND9+hZN9pIJ5xVl1wLQmlBIYPOlnHa3/wcREJVDJ1medeg0QdUNWyBOaOfudSX4H6VXdukXZcOk5g0IbwuZ+faH1YkTXuX8w15Cqj1KJh9r5ERsCH8rg8A8M4wWrzlEEFGod/wUzfFbnS2bg0xxdQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20-beta2092</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2092</code></p>\n",
+    "published_at": "2026-10-29T14:59:43+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "1.0.16-beta2111",
+    "tag": "1.12.21-beta2111",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_data_east.json",
+    "sha256": "0081921dece85f700e1f785d227c9df2fa8da64af98be528ea8d88eae880f451",
+    "signature": "psK24UhuNfdNr7KxqzZ8oqk+8A1iz4+jL8EnqdOrJ4ZwvS3bE4Z/1hucaWolBeJRCi382BGSPr4xj7bTeYCi5wHl4Ej28WKlJ0gL4Yw4oeHwfpcgHCxwvzqGodVVgV6C/ajOYfmJ5Tq9gE0FUgUdDWYreQWLZqbavVSgiDj9dmN9dOe7TropuwB6VgB3eQ7VD3L47tTQ0qWkCDav8JWaHP7tCHJ2CJl9SDtDuMqCEF+7AAP1DHXH7Fg3S7cHJTnSmAsB47o5wFz3nD97fh4W2q70w+RK2i7pqlaESmsqLGosVnTYxa1Yvk/5OPi2cPdpxCS6IC/JhyVsRc9iKFx6Zg==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.21-beta2111</code><br>\n<strong>DataEast</strong>: <code>1.0.16-beta2111</code></p>\n",
+    "published_at": "2026-10-30T02:01:57+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2135",
+    "tag": "2.0.0-beta2135",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_data_east.json",
+    "sha256": "f860bcc15dd41a8f4ad31e278eef5f7cadbb3745491ac87dae89296cc8364c97",
+    "signature": "OmRjNS7ufhditE8GfYtM9Z8y5JHBDY++D3SH1DU8z7dh3COEikFyYj6ntRdMfBXJYCIKrmtOIZudXDFwcYz000GUy1lyLLhrgojK9n1OWoFIVyaYRo5/qwMOUpH+tPXnbs4xP/PZZu5C/NMcw/SbHz2mu8c7pptZDWooZ3h1JYwhl41dckBwoO4aXJIWK0NwB+U8CD8XKLTOYgu+G/egAsKzqJAcu2D3ytpy/MP2KBTqhvHxOxbOpD9X73MDHvW1IMgBHf6LR/wU/ER0174Fn5i/8oeuy75ZNCLxnCBxNrGFjLOFmA39xiQzL+CtkT9Kc7XoNOHaJ3W3I8O7esKj+g==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.0-beta2135</code><br>\n<strong>DataEast</strong>: <code>2.0.0-beta2135</code></p>\n",
+    "published_at": "2026-10-30T20:23:42+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.2-beta2147",
+    "tag": "2.0.3-beta2147",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_data_east.json",
+    "sha256": "e7a9e0bb7a543a86ebfbe02dd581fe6d01e4813f5b09c465fc76f1669db7b7a6",
+    "signature": "nAXxszOoNA+Sc8t3f3biIbqgxkOsbwONjD1/djfoqVmXDJlsCehdtdHiQW20R/EBo5vruIZco1r42H8wYcXMK+nHtBR0SS58duiQ0WvEZ/QFWe2dOjqFYcM3mED0c2Gv5KQBVv6y32LmtoQdlu+ESgojPm7UtJ9uZA7HVAUNKIJTXE0MrCWLLqWx4Toj9Ja+y5ZecPG6pCvObW5+FS32+A+wcS1v+CAQEElR17VJooNAZOr/HRpAKCjjMFHQNYef0FaK1N6zQoWI/tzQf7n96FH6t4AGSz0wiGTL9t5w7xkEBPNCb9TvtKXc89IxsCtiZN4KD2vhoswwNmvYlkVfsQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.3-beta2147</code><br>\n<strong>DataEast</strong>: <code>2.0.2-beta2147</code></p>\n",
+    "published_at": "2026-10-31T20:23:03+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.2-beta2150",
+    "tag": "2.0.4-beta2150",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_data_east.json",
+    "sha256": "a157f8c83cd96131c39d1044b89b881027fdd167b0d8101a8f8cd869f0f0a223",
+    "signature": "jR+1IIfjTzLH3ShBADX96xkA6ZdwK8JRYBF2PMTDmREsiIefEU2QHR+tO713CfKXM+yxN36L9qTu/F0TixgFM/SnEVz+oKlwhTEjJIugVaPrpzVlgQ5UOX8SzxouytJkgMZK9ny90roTc6iz2EllEFX8df61CHoTjV24gsSHT67KlJNbty/Nk+PTxJlV/ONIkfAnQ5r+f99PfIVl5+94UPYTkybJTmZB+SXTXRsLLUQ4hja8IaDGHv8AHWjGdveQnnSSwsZYkGiooOeS1WcQVpZte+HAKLBukgDsKETBRmhphhmOtyzoM9d8fVvZ9Pf/J1Z5h5ZHWOnJ74Gc5B7qMw==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.4-beta2150</code><br>\n<strong>DataEast</strong>: <code>2.0.2-beta2150</code></p>\n",
+    "published_at": "2026-10-31T23:03:00+00:00",
+    "type": "beta"
   }
 ]

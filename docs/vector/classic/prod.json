@@ -28,5 +28,15 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20</code><br>\n<strong>Classic</strong>: <code>0.1.7</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added 77 new configs for classics of  by @paulmullin in https://github.com/warped-pinball/vector/pull/419</li>\n</ul>\n<h2>Bug fixes:</h2>\n<ul>\n<li>Fix World Cup Soccer LX-2 game-active address (158 to 141) by @edgiardina in https://github.com/warped-pinball/vector/pull/417</li>\n<li>Fixed spelling of Sorcerer by @mullinmax in https://github.com/warped-pinball/vector/pull/420</li>\n</ul>\n<h2>Documentation:</h2>\n<ul>\n<li>Doc updates (Classic and Origin) by @paulmullin in https://github.com/warped-pinball/vector/pull/411</li>\n<li>Docs update 2, picture and link by @paulmullin in https://github.com/warped-pinball/vector/pull/412</li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li>@edgiardina made their first contribution in https://github.com/warped-pinball/vector/pull/417</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.12.13...1.12.20</p>",
     "published_at": "2026-10-25T14:47:14+00:00",
     "type": "production"
+  },
+  {
+    "version": "2.0.0",
+    "tag": "2.0.4",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_classic.json",
+    "sha256": "6bc74cb24fa1d5e69a0880309c33279aabbd9e48fb7ca69423c49f1dc47bef22",
+    "signature": "mNfRLhsd6Ol/kcHElkOlXONAgv32MtHtoTNpzugno67Fi7PUGrRHXRzqpe5ynmwa71VlUm9bMKQKrX6bU3sLTSwkheqI5lo36KiY0/yOsCrPqEblYuHOfL9Q5J+IQ2AiDH0Z1soOidf+A7s6Kg2oQogWm7j7fLlA1189lw/4pD3Qny0A/LesIFajRRCDK4D0bHu0bMp7qoKe+91qazi1s60/T43YoIX2CLp8K73k0UGixWOZIXBkgoklIZRgSFcdbWvuGbQlxw1WDMR4/6CuwF23JJFSdHHxi64SbAc2WWuPTAuvYt9er0Gvw+5HADfjU2Z3qHkar4d6uhCx9EmwwQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.4</code><br>\n<strong>Classic</strong>: <code>2.0.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added Switch Health for Data East by @paulmullin in https://github.com/warped-pinball/vector/pull/439</li>\n<li>Decay format bug fixes by @paulmullin in https://github.com/warped-pinball/vector/pull/410</li>\n<li>Wpc config  tweaks by @paulmullin in https://github.com/warped-pinball/vector/pull/426</li>\n<li>system 11 and system9 configs tweaks by @paulmullin in https://github.com/warped-pinball/vector/pull/428</li>\n</ul>\n<h2>Bug fixes</h2>\n<ul>\n<li>Various security upgrades / patches by @mullinmax in https://github.com/warped-pinball/vector/pull/434</li>\n<li>Fix streamed USB API responses and the hang after a failed update by @mullinmax in https://github.com/warped-pinball/vector/pull/437</li>\n</ul>\n<h2>Development</h2>\n<ul>\n<li>Added classic boards to HIL testing by @mullinmax in https://github.com/warped-pinball/vector/pull/441</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.12.20...2.0.4</p>",
+    "published_at": "2026-11-11T02:47:01+00:00",
+    "type": "production"
   }
 ]

@@ -378,5 +378,65 @@
     "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20</code><br>\n<strong>Classic</strong>: <code>0.1.7</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added 77 new configs for classics of  by @paulmullin in https://github.com/warped-pinball/vector/pull/419</li>\n</ul>\n<h2>Bug fixes:</h2>\n<ul>\n<li>Fix World Cup Soccer LX-2 game-active address (158 to 141) by @edgiardina in https://github.com/warped-pinball/vector/pull/417</li>\n<li>Fixed spelling of Sorcerer by @mullinmax in https://github.com/warped-pinball/vector/pull/420</li>\n</ul>\n<h2>Documentation:</h2>\n<ul>\n<li>Doc updates (Classic and Origin) by @paulmullin in https://github.com/warped-pinball/vector/pull/411</li>\n<li>Docs update 2, picture and link by @paulmullin in https://github.com/warped-pinball/vector/pull/412</li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li>@edgiardina made their first contribution in https://github.com/warped-pinball/vector/pull/417</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.12.13...1.12.20</p>",
     "published_at": "2026-10-25T14:47:14+00:00",
     "type": "production"
+  },
+  {
+    "version": "0.1.7-beta2092",
+    "tag": "1.12.20-beta2092",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_classic.json",
+    "sha256": "7676b38fd48a9ee5a089ecb85dda4f0f3242c3a7d98fa5f845184a5e990f1b4c",
+    "signature": "QevG6dJzjZWVNJYC0nfyo0mDub5qa5nLjeatj9cr8O26ktBJ746JvVb3R+o9LR8up84vqTEQxir/1CEdhq03oe3AVd1mzOgvAcVDnqpxlQLq6z3q5LibD2RVkjErYmt1H1+feYE00U77YsBOB52MmdnUynS6Ap4MSzvfngYE5vTJx7cxt1z5C383g1M1Xw3pV56Ppovb0LfAW4FMgfWCw65593bWKV4pe3vAAITYsX0CeCIjLotUJEMhlMotR8XK/jtc8Ir4aS40QG5EVQTqYrJ9rCmUagbRpz1T2IcDa2ZDjkQwbHQKH9zK26rvsI5AOn5J2coLd+xU2UXAf79cRA==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.20-beta2092</code><br>\n<strong>Classic</strong>: <code>0.1.7-beta2092</code></p>\n",
+    "published_at": "2026-10-29T14:59:43+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "0.1.7-beta2111",
+    "tag": "1.12.21-beta2111",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_classic.json",
+    "sha256": "af439a12126c094b83c799da66517205f6b6e81747f2259155003539ae3bba06",
+    "signature": "HU1FARQg37ZXJrhK8YS3Q+FoYL49/YAQvb0fQeGWJDsz9KBOkW/NCJh35tgGUqkkD7waKDWcwHMCpYJfTI3pr6WRTn8TCNcmtIh/qtJYRJOrAgisRWOOTdFpeYbi+hJczPUlILzy4esWC5z17Jw6N6nGcQZXczHQvcAxGa4I9jbhZuQ8btg273lOrz7SQXEwrmO88jOaywan+cGdejm05bvE/qen4Azn6B1+XQdVM2MFi85kYQKIh95oaIcVO4M2FrO8N4TYNd6YAvmjhqya/FkuSpg6ifLNQQQSKsqg+Ez2Vp0hhZmJuGilDNq17N3L5S0LTXazeW81VnL7UOVEOA==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>1.12.21-beta2111</code><br>\n<strong>Classic</strong>: <code>0.1.7-beta2111</code></p>\n",
+    "published_at": "2026-10-30T02:01:57+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2135",
+    "tag": "2.0.0-beta2135",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_classic.json",
+    "sha256": "2ae722508adb5c943c8f031d543dafcd2e13116b50296d3967ecee44f03fabca",
+    "signature": "MjlL0QNfvVnsm1nWsk03zvOZFxfTKA/2EzM74000R9jvMJh2cRWC9Rwvctno9Zl4nkkqcbKbYpeH945JNK3GCpD723LwgUZwltLGb6i7no3VYtQxwtI0FOJwiVBI6SK87/F8BMMb92oEzcEmvaKc2KjPMr/QGTjtm2eUfsiqyexVHEfeL9QX3cQVnMe9rzRZzhsr/g3p5/u3bfkEPcv2LrGarx7bvyEv7EKlP9cGdxtOT7PKvvur5A2WdHHzIcMkclUfj8+4McKjyuMoKjLQh2B5Fh5D74qydD03M/qGeKFn7r0NBL9oJJwbqvPU/XnWJqlNObFHCgOkVTvc0cGsUQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.0-beta2135</code><br>\n<strong>Classic</strong>: <code>2.0.0-beta2135</code></p>\n",
+    "published_at": "2026-10-30T20:23:42+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0-beta2147",
+    "tag": "2.0.3-beta2147",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_classic.json",
+    "sha256": "63943320d692e839d74afb3e235ad08d8de52ac9eaefdd729835e55045e92417",
+    "signature": "R9wbHabLorPArbRLu6WK5fjXscSNXHuPqHZ8VXmHGvm2EkSYvYvJThWi0sR8AmMrw5L6cpkKn1npZN1HzFjRkjnKSPUFeA22HfFgBNO8ZZucZS36HaZjyDdMWkIw8LWYJbspxtsT+9Jn3WSI4HDNWZR01/9jRs4gIkPFXP6nKb/YR1VNFB8XDVV3jud+BCguIhy27/Q7NOux/1tN5+2XSvEccTwwRG/RZWejcjSWxQ/UwCEc1HplloaOwOBpE4JQ7kiVFwUJK9sBpDzqib6KaGepHclvY8mNOnJEVAM027ZztD1ZpG4ryIvkPZzZLP/Sr1PyhatrntoVQNhX+CDUZQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.3-beta2147</code><br>\n<strong>Classic</strong>: <code>2.0.0-beta2147</code></p>\n",
+    "published_at": "2026-10-31T20:23:03+00:00",
+    "type": "beta"
+  },
+  {
+    "version": "2.0.0",
+    "tag": "2.0.4",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_classic.json",
+    "sha256": "6bc74cb24fa1d5e69a0880309c33279aabbd9e48fb7ca69423c49f1dc47bef22",
+    "signature": "mNfRLhsd6Ol/kcHElkOlXONAgv32MtHtoTNpzugno67Fi7PUGrRHXRzqpe5ynmwa71VlUm9bMKQKrX6bU3sLTSwkheqI5lo36KiY0/yOsCrPqEblYuHOfL9Q5J+IQ2AiDH0Z1soOidf+A7s6Kg2oQogWm7j7fLlA1189lw/4pD3Qny0A/LesIFajRRCDK4D0bHu0bMp7qoKe+91qazi1s60/T43YoIX2CLp8K73k0UGixWOZIXBkgoklIZRgSFcdbWvuGbQlxw1WDMR4/6CuwF23JJFSdHHxi64SbAc2WWuPTAuvYt9er0Gvw+5HADfjU2Z3qHkar4d6uhCx9EmwwQ==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.4</code><br>\n<strong>Classic</strong>: <code>2.0.0</code></p>\n\n\n<h2>What's Changed</h2>\n<ul>\n<li>Added Switch Health for Data East by @paulmullin in https://github.com/warped-pinball/vector/pull/439</li>\n<li>Decay format bug fixes by @paulmullin in https://github.com/warped-pinball/vector/pull/410</li>\n<li>Wpc config  tweaks by @paulmullin in https://github.com/warped-pinball/vector/pull/426</li>\n<li>system 11 and system9 configs tweaks by @paulmullin in https://github.com/warped-pinball/vector/pull/428</li>\n</ul>\n<h2>Bug fixes</h2>\n<ul>\n<li>Various security upgrades / patches by @mullinmax in https://github.com/warped-pinball/vector/pull/434</li>\n<li>Fix streamed USB API responses and the hang after a failed update by @mullinmax in https://github.com/warped-pinball/vector/pull/437</li>\n</ul>\n<h2>Development</h2>\n<ul>\n<li>Added classic boards to HIL testing by @mullinmax in https://github.com/warped-pinball/vector/pull/441</li>\n</ul>\n<p><strong>Full Changelog</strong>: https://github.com/warped-pinball/vector/compare/1.12.20...2.0.4</p>",
+    "published_at": "2026-11-11T02:47:01+00:00",
+    "type": "production"
+  },
+  {
+    "version": "2.0.0-beta2150",
+    "tag": "2.0.4-beta2150",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_classic.json",
+    "sha256": "c5dad11b489bd126ea1d8daaa3a3ffc7f6ec8aa8e0193b380e7af3a51875d055",
+    "signature": "dR1PyvC5DdN3DsiKy6xgWD5MvuiyOs2CX3BRere7+IJDbqGr+zdonzKGWg3M8eIzj2dYWVBlC9lX0hhRo9hhOBJ9swX0RmRmZEbVVKTFEjqgxMvwWwJxlhtvdCPv075MExW2a730yX+pZkwPeJK81kW9qdErNFkhixbFugYnztvlA5m+FJgaUSvaNfOzetRTgScLVuXm3lTezD0z0irmz0ttBb1fZ+5Z5GhesK4bvSmEH//xn3PKnVjBZvOEsH9L2FCedtqa7ZL6knIfF3bl8ZW8YyrIC8f28ZPyFVt3S2B0xvloTIJHYP9CDozoVVD68AOH/2WsSexiv1+NF4VINA==",
+    "notes": "<h2>Versions</h2>\n<p><strong>Vector</strong>: <code>2.0.4-beta2150</code><br>\n<strong>Classic</strong>: <code>2.0.0-beta2150</code></p>\n",
+    "published_at": "2026-10-31T23:03:00+00:00",
+    "type": "beta"
   }
 ]

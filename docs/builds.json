@@ -11824,5 +11824,329 @@
     "sha256": "728090a2843c9e336610cd3f6126ce27428fb6885acb22275ff483a836db8a94",
     "signature": "kYcwhlRc10EkGVk9VC2n+zKkQFwSomJAlRZGS10RT560q7x92RTcA+DKwuhpkRaeDuXKKhcwll4fywlXlcviJDmBIgSDySthgnXBrY7O4xP/991ltmll3XTzmSctVxQT0sVYXw/3KuGcmGvL1rb8C+oX1QB2V+nMQdbS6DFMehgkSY70Yd5qmOQDYkEQ0qMC/MJZg6Esys6fDFmlp+jU+hmGQa8UYiV+wANjEgkEda5BAjj4mhrlJriN0G5k0b/bS1bOMVjVxfIj1grCD4HLNyojzE++ux7wBuG01RS/JXIOYCcdNJjEYRRNNjkgswyvISVZmq/g/0tZb1zUyYzZJw==",
     "metadata_sha256": "cfab18f4df3682fac8ff574580b0745576ead609985dc160e1c4afdbe156a6e4"
+  },
+  {
+    "product": "sys11",
+    "version": "1.10.11-beta2092",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update.json",
+    "sha256": "fb111d0a0c96dea0150d51ef156940dbf44499373c0a492b27433651c7649113",
+    "signature": "kkGMz59MzQD2ojAaKEKQoFwE7TbeQ9MF6lwIQ01nrOMLzqCPO6ZciVTW56V+7ADWjDopbYQexOx4oilb8LdmDvBYZfimjkduqdLb6cqnHBjLyPui9Z4gGznqVfJamqdj++Y5+ijzOw01N050JbYYgrHJA+XUrELHa/Z+zgpKYSNiL60RiJc3HDx7Vh+IgT7xIseeA5ydUxJvblzcVWLAtLe567Rq4s884SxUk51G/zycjHaiRB129NGkOCfRvbIHCR37tjAk86nz+q95tS0pc/ITfmIqIIpglrpJnHcdK2RIInpiMIZg0PNBBPivT8mJMd5g5jDPX2MBB+CEzXoD/Q==",
+    "metadata_sha256": "33249a2bc0324f35966c252a10d5ceeabb7e1a2785b7620c922ebb30d3382cb0"
+  },
+  {
+    "product": "wpc",
+    "version": "1.7.19-beta2092",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_wpc.json",
+    "sha256": "5a32daef3582d858c93d0cffc3786faa8d5ddbf31217650bf5242a649b34e66d",
+    "signature": "nM7b9KNjcB9aq71hMA6l7GTBDO3vj0wj3SkB1XyEzQLzNVeuQ4nu92IaeoRm78duI6eXLzAbFuUo6n6kPxZL46EDkgyYmqx5TUBVJBBbIpu5q1O1e8J1ZXR2pTVADzimsILVs+MEmoPNTY0sVcfmxv1anqsS2mATo7bvnNR02F020aD1PoTZ8GA3R4WpHL9q3p67PSm+vRmNH3UujILjNBflwosm9BxnIWPXg+ssni2jha/JOUUIER6v+5qy63vJ+DT9RU0xUNqlPHFpoAst7FEWbqeIiWpRsKg52F/seepMBbzdSdOwTFQ6SeDZx0OXOmL4ZkMoKSNlOBdAVuyD6w==",
+    "metadata_sha256": "639d8c12171475bb631a6486d609b85e884b7b659c17ede882bd4c59d6bafc86"
+  },
+  {
+    "product": "em",
+    "version": "1.6.8-beta2092",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_em.json",
+    "sha256": "aec592ee0839927c08d9fd308ccae65feaac6f412360ae39ecf1f57825f1222f",
+    "signature": "bzsyGMyUO4wwvqgRS2bKVoQ7fXdf+JRpYeKyDvljIsjnHLQHP409VKJWh6c/7QATeFg/ujvhO/rPlnA84cTv/yLUE3asQqkaCHKLttfAQaD8R2IGkUIn2i8fPfH1zsQKsjx4CJGMeSLafyFkAD+oirdhIKYxl4AFWNrDugD7n/HFtrX3OoBKZuIh/mm8OmNX9LxI+/Hw5KBRnbIiDWJDeaNbTC144CGkV9d5MOXvEmXY634aRLV9QeQHwV5XjFf50sXqUFz084Cw6ot7FlmYwANDgJkus+sqaNMVOIv/knQ9GsUBgCpcaYLk4FS+l5PjsWf7cc51Hds0z0LKUUM8Hw==",
+    "metadata_sha256": "2632d217a0a2778963d066a8bce6088f08e4f776750bec7fd04af73a0e6d0c65"
+  },
+  {
+    "product": "data_east",
+    "version": "1.0.16-beta2092",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_data_east.json",
+    "sha256": "a577462c66c1d38ad3413553120e910999d740da078564475c605fdb7fe796b5",
+    "signature": "bSSyGHsaY8NSwe723xCfuo5jGbPxC1GNRYWzlgZzUt8XWFFFNbGrr9/tyrFdSPuLSdAwshxv2LOKjnBSU/YlTyCn9Jh6lxZCrNCJWGdIljdo+vRfmQcj6ZwNaeHKZfFFCgYpD4+yKLoISH1NAkJTCs9SNutE27HQc4aRD6ha5stie7t0azGaI15MQXaqiVVOcND9+hZN9pIJ5xVl1wLQmlBIYPOlnHa3/wcREJVDJ1medeg0QdUNWyBOaOfudSX4H6VXdukXZcOk5g0IbwuZ+faH1YkTXuX8w15Cqj1KJh9r5ERsCH8rg8A8M4wWrzlEEFGod/wUzfFbnS2bg0xxdQ==",
+    "metadata_sha256": "60c5983aa650109196799c0e2fe4f611b6260a67dc5f04e1a1589e6e88e5e20c"
+  },
+  {
+    "product": "whitestar",
+    "version": "0.5.2-beta2092",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_whitestar.json",
+    "sha256": "68afd3df4a54a7cc87c4d63982661bf5660ebea832e063bdbb26cbe5fc081eaf",
+    "signature": "rUUFyswn6W9BYxclZLeCDs/5mUvqUbrP1b/QH1PKZv+4OLYRGr/zoccxRjWLQrRRe9yDvT5LPcrlWQCL/T70x2yj/nRuJwAosgzziW7okAvxNd4+p0LGIaAEv+su+sPBrtfNpdIXfWE1zSNuRSgmSBkp0WOr7CW1u5egWgx5FncuZne8WiErJiwFF3bX2fZj8WtkryHOhUsYAvQwiSeD8g7CfD2ngT0euSDxFjeE4qzUQT78XG5lYl600eFImOXz2RQMyAzv5NxKC2ktcHfZ4/LtwT+vYTchnTbFJxS4iAb517rcI9t9pVE+rlEStVNMQ8C2RUI5fGSD1K+A7Uk5Mg==",
+    "metadata_sha256": "63d968e5b30b8501c8b89f56a5993787754a6aab397a1b5cc7623888c8d52d56"
+  },
+  {
+    "product": "classic",
+    "version": "0.1.7-beta2092",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.20-beta2092/update_classic.json",
+    "sha256": "7676b38fd48a9ee5a089ecb85dda4f0f3242c3a7d98fa5f845184a5e990f1b4c",
+    "signature": "QevG6dJzjZWVNJYC0nfyo0mDub5qa5nLjeatj9cr8O26ktBJ746JvVb3R+o9LR8up84vqTEQxir/1CEdhq03oe3AVd1mzOgvAcVDnqpxlQLq6z3q5LibD2RVkjErYmt1H1+feYE00U77YsBOB52MmdnUynS6Ap4MSzvfngYE5vTJx7cxt1z5C383g1M1Xw3pV56Ppovb0LfAW4FMgfWCw65593bWKV4pe3vAAITYsX0CeCIjLotUJEMhlMotR8XK/jtc8Ir4aS40QG5EVQTqYrJ9rCmUagbRpz1T2IcDa2ZDjkQwbHQKH9zK26rvsI5AOn5J2coLd+xU2UXAf79cRA==",
+    "metadata_sha256": "028da8542e66fe3f202ea087ab32266988cfbd430fd0d7410f8a831b93825277"
+  },
+  {
+    "product": "sys11",
+    "version": "1.10.12-beta2111",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update.json",
+    "sha256": "8c044dcddb71969011974c3e16dc8ac32d0d7cdf21b5a9452ec0b966bb441302",
+    "signature": "NxYIOEomioTpnClVXrwAEsPC0uahtg9v48BUXPdmyyR70vp1kzhXSDXZEShUnhhhKihuqfuBBSN7wcO0NxSOSFNiEWmhE8y0kae6oPoJu3h7LunBBawtrkOhtOw/OeSP8h493HP5yW1ZGwldln4CeN7FMmKPxZC0z0TBAHfzlHbXsPWXlcPY3vBae4iiB+Pz1lqHZDiVimcK4Ys77h028yMfREOLgvcAVH2WlyUfVD3jd3b30v7oZxpDGZjXR9GmJezhsHCWZJm+rMD9YHIjIC9TIFatZpmn8CY3dn2RMa4n/hsHenLXrgJp3vQhG0sWr9hBwNqlw+vlLtearioUeA==",
+    "metadata_sha256": "ec188da14f0b24571a39117ee9fe5790f4fed74c5ef5610efc7d7795e40d1ae9"
+  },
+  {
+    "product": "wpc",
+    "version": "1.7.20-beta2111",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_wpc.json",
+    "sha256": "77574b99f412b5bd36aa7bab82e892ee27bd700586d3928b7dfeddb3038b5bb1",
+    "signature": "UZbo1bFGaELI+rr5pyx36pQSfhq0TFlI4l6ozR0/xmbOSB24T8o3j3v2tQaTIe4MHQ+JONPHMpw9RFKzQTEz89SKsdmswwiZkMC3DlRwPCiClEvZOJkFJan9zQrOdGzGjRKbyW0Qpx0U5GVh9jqEWkZ3YcAEWu1ieajTSPm7bC+M8ywSt16OQsikKPmiuQQcKC4GRG+lU0acwna35XcjEDacQCXt9omoX7JHsvsvtljX4KU8PlY4lM9Ykp4ajJqw5YS25YoaWjhJIg/lLQzLlx/vnNsO+kS88pto3wTWl4uA8cI5BIRVDL/AeChsunU2k4gOmo+D+DPPEUqvNkqFdg==",
+    "metadata_sha256": "e79658b8f11055fa8ec19df9391ee796f9709d1d7647e14c1fe87ae965ac0aff"
+  },
+  {
+    "product": "em",
+    "version": "1.6.8-beta2111",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_em.json",
+    "sha256": "27ce96bf9134e0da84dbe71f56b679f2258509dcaace24048ea6e0776ee671ca",
+    "signature": "IIM0L098dIjwk9kIwaRDl1CLJ4B4S+hbfzDgo/n0Wdoxjo6FP55TOtHZ9Zhe9V3l4zFbAZbD8D9PD/efU9piSHbb/njcW8+Suu11iuxFJrieRLoL5r9a4zyHF4ZeNHfYPiZZFZ33fVxBnzcFvcbs18EhOKBJhbSwwagBCrfatYrW9tM0lsGZLk5YZbFT2dreNxUtmjicakuj5axAdV7qvO4n4Kavac4+tNeq4qxMBjl+Ug6Co4bb+1aNcTJ0phYGlbrm/IYLNErpS03glPx36ECKqU2WgtIBbJkNuMmwzS9UgLjNCMq2H3T+w/2Tf/wR410yTH/jNwMLb5YVJ9aDfA==",
+    "metadata_sha256": "44e80423b906eff32533e623bbd13cbc4a19038519ef62f7949823a20e785694"
+  },
+  {
+    "product": "data_east",
+    "version": "1.0.16-beta2111",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_data_east.json",
+    "sha256": "0081921dece85f700e1f785d227c9df2fa8da64af98be528ea8d88eae880f451",
+    "signature": "psK24UhuNfdNr7KxqzZ8oqk+8A1iz4+jL8EnqdOrJ4ZwvS3bE4Z/1hucaWolBeJRCi382BGSPr4xj7bTeYCi5wHl4Ej28WKlJ0gL4Yw4oeHwfpcgHCxwvzqGodVVgV6C/ajOYfmJ5Tq9gE0FUgUdDWYreQWLZqbavVSgiDj9dmN9dOe7TropuwB6VgB3eQ7VD3L47tTQ0qWkCDav8JWaHP7tCHJ2CJl9SDtDuMqCEF+7AAP1DHXH7Fg3S7cHJTnSmAsB47o5wFz3nD97fh4W2q70w+RK2i7pqlaESmsqLGosVnTYxa1Yvk/5OPi2cPdpxCS6IC/JhyVsRc9iKFx6Zg==",
+    "metadata_sha256": "80e680318ffd35514883dfbfde4e909051bd7da3f60b24fcd919697bfc3ac755"
+  },
+  {
+    "product": "whitestar",
+    "version": "0.5.2-beta2111",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_whitestar.json",
+    "sha256": "b9f63a8d68f2ff92edf0891a130f039f43092630c78afc7ffc5509770359d4a3",
+    "signature": "WEvhWkX3G4u9Lb8BvW6biWFydbJqdB9B/PC4vjJuHAZ4Fc4L2cIxR/rUlJMII5clVUEWziMWcLWEy2sszHpR5tqa+5GpVLhMZUeDXwnYZr/uXRK+DlF53YQ9vcZsnxN7zrnV7hcCAlpGG8Dsf3cOipNwsrJCBJoMCsTQ3HtZ6Q99g6w24WKyxJoAb1HTTIkimbywwWV4rMpzkNf3da5hbOr1MRAdrsTa5Drs1yyYT97qiy+WFOZ/1tDfk3LmbBHf9aZkNmfpcSBT8UBZBYaRleQ5RhVtWrMq/sEdFuVwUr0PksiY3ubqcwiYkTEL/BpwZenvcXsyneQNQKmu97A5zg==",
+    "metadata_sha256": "cc91ecf1d026f573e2629e7c2fac141906e55f9cbe7efb45df6c4fd0b970e296"
+  },
+  {
+    "product": "classic",
+    "version": "0.1.7-beta2111",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/1.12.21-beta2111/update_classic.json",
+    "sha256": "af439a12126c094b83c799da66517205f6b6e81747f2259155003539ae3bba06",
+    "signature": "HU1FARQg37ZXJrhK8YS3Q+FoYL49/YAQvb0fQeGWJDsz9KBOkW/NCJh35tgGUqkkD7waKDWcwHMCpYJfTI3pr6WRTn8TCNcmtIh/qtJYRJOrAgisRWOOTdFpeYbi+hJczPUlILzy4esWC5z17Jw6N6nGcQZXczHQvcAxGa4I9jbhZuQ8btg273lOrz7SQXEwrmO88jOaywan+cGdejm05bvE/qen4Azn6B1+XQdVM2MFi85kYQKIh95oaIcVO4M2FrO8N4TYNd6YAvmjhqya/FkuSpg6ifLNQQQSKsqg+Ez2Vp0hhZmJuGilDNq17N3L5S0LTXazeW81VnL7UOVEOA==",
+    "metadata_sha256": "7c300844f5cf8d8be3a98396df0305a188e25da8ff39d426fd09a4a9702896fc"
+  },
+  {
+    "product": "sys11",
+    "version": "2.0.0-beta2135",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update.json",
+    "sha256": "55897b7387509df91d1949f844cdb40342bc0861b1c9813745534020025e4b1e",
+    "signature": "InxEvGEU6JJ01OV1MfDkDb1MnXRLmQOEGn0MyyOBCYI4Czv99YPoH9OnVKasMwa6Xmy9gTEzTJ2srJwhaG7uY1k94fNTd6FMDtAZ/zQ55b3igoo3oLQ0JubXC2BRh3cmaltP3KEdhfxJRe2btnVbCbgaeqTWPqhLfgAc0hvqmIvpJpQTb3FNPH83JslGOQAOd8OAEumTT5gaN4g+US+LyDq/iVlseBE/0BADGm1JtJmiREu7Iys0n6rlz17l5G/PaTHLFWXparF/bOPoE77iMoK9w6VpW+7RrKD9uqZ5OnS5090qyuLK19z63v8WxD4fIwfwjInL6Q8K60J0VVKr2A==",
+    "metadata_sha256": "618390c0c917e762bcbc1d344760900010f377e80883b0261b83709faea84e34"
+  },
+  {
+    "product": "wpc",
+    "version": "2.0.0-beta2135",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_wpc.json",
+    "sha256": "42d20904d32005fcb131447fd87f3af4488ff267df17db380086e1c90ab3bdd1",
+    "signature": "FgJB+J7QA+iUhQWiQ07MJjr3Ye9kzps7XkMOkydEcYBcH6CyWFM/AomA/bLhue+EySDu4SYQcbpV8V9LB3nUSYUDjEB8z5nbcoyiiJTHO2gTPoQ0383At2M50omuj+LPHHNpgb1TucD9PBE9ywKrlU2FQOE21vKcy3s6Zn53iHcHQMn68ahqUsO0iFNvTtemlwu6zs2jy/XTERYy9Lq2cvLWNt8wgxbsmvkielk62FIP7kbqNejRxOrWT0KT08272lJPnqACrb+gewZEyWn/MGlpH++qMBBJYO5jkNr6DmMBweFev5EAOfDA0R/e7lnd45ouHCYUTHFvRHeu0kVYZQ==",
+    "metadata_sha256": "7d6e710f86452a0fe43a6eb64158235732850b2c3246d1900470dce6236bf68c"
+  },
+  {
+    "product": "em",
+    "version": "2.0.0-beta2135",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_em.json",
+    "sha256": "385e7f0e9eada2ccefc99520bf7ecebda27ed568a3ff8a425b59351ee1b7cf7f",
+    "signature": "EQGXWlhQ860MGKrbXc4gRPYBZprYElABtEk3wDB45VQOEVdVuxKBqoSQVwoBnZtlb8NQhg/jioABRBkvaXJYtSRvkVVMX1uSX/r1DQf6J8ypZuziIo8NAAr25H/jEGta36s2BlW2vQo9I0/QUSng6IfQ25m6KmZqfjvPZTvtpl2xoJf/1OpYaw+TPpsWoTsyKIKjt79lz+KJReOoJoDQniNesWaCmth+dPNQGsEnCkqwS5GBHMFVauECWtdIA3qm942Tg16lRV0KymKjURCazZjhlj4FtFknvRLwK03kteiGy9kmGpBSNUIkq1JZ3k+Lp83CO7Z5B3hzpLZOi2GTPQ==",
+    "metadata_sha256": "25006d1cf3d948025f4cefdd8100a18bd3dc87d8c783a73451b8461e7f5dca37"
+  },
+  {
+    "product": "data_east",
+    "version": "2.0.0-beta2135",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_data_east.json",
+    "sha256": "f860bcc15dd41a8f4ad31e278eef5f7cadbb3745491ac87dae89296cc8364c97",
+    "signature": "OmRjNS7ufhditE8GfYtM9Z8y5JHBDY++D3SH1DU8z7dh3COEikFyYj6ntRdMfBXJYCIKrmtOIZudXDFwcYz000GUy1lyLLhrgojK9n1OWoFIVyaYRo5/qwMOUpH+tPXnbs4xP/PZZu5C/NMcw/SbHz2mu8c7pptZDWooZ3h1JYwhl41dckBwoO4aXJIWK0NwB+U8CD8XKLTOYgu+G/egAsKzqJAcu2D3ytpy/MP2KBTqhvHxOxbOpD9X73MDHvW1IMgBHf6LR/wU/ER0174Fn5i/8oeuy75ZNCLxnCBxNrGFjLOFmA39xiQzL+CtkT9Kc7XoNOHaJ3W3I8O7esKj+g==",
+    "metadata_sha256": "7d6e710f86452a0fe43a6eb64158235732850b2c3246d1900470dce6236bf68c"
+  },
+  {
+    "product": "whitestar",
+    "version": "2.0.0-beta2135",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_whitestar.json",
+    "sha256": "c5aa091a81aa01d1a71c3c093f64eb361d836c8745831784f589c83c899d4f01",
+    "signature": "mJIVTqhUYqJHYxdKWXa/aSPxprsH6iOJ29dmoZ6cRfXuCyGhZz7ona8Ti8QZ8VMdwjZq1EJGVi/nq/pLgdhcZevgB50WL5dvmx4Fz48I+4Ajf+8aAQGDc3ciOjmn5y5VDVmjBuAB9BOmP1RF2tzUUZWUxl8BupAlHGdfQ5EaebegNKj5p9hmd03Y6i0kz96omSrEW0/pi1lGoLuZYI2UyoYMjHqEX2Xuo14wGtjpajk20ICEmOzyj2vO9cKgfyHjLeyOBlJk+BChtbJ81KYEBGYwwdeq7oLhszgNCR3Slzh1Pkc8NQueLDLz7yihfT7VLHnCdNNsY98A/n1Q2tJ8gg==",
+    "metadata_sha256": "1313979640c960e764957f9b1691c5d6dda580d17c0aaeb586297832f1435082"
+  },
+  {
+    "product": "classic",
+    "version": "2.0.0-beta2135",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.0-beta2135/update_classic.json",
+    "sha256": "2ae722508adb5c943c8f031d543dafcd2e13116b50296d3967ecee44f03fabca",
+    "signature": "MjlL0QNfvVnsm1nWsk03zvOZFxfTKA/2EzM74000R9jvMJh2cRWC9Rwvctno9Zl4nkkqcbKbYpeH945JNK3GCpD723LwgUZwltLGb6i7no3VYtQxwtI0FOJwiVBI6SK87/F8BMMb92oEzcEmvaKc2KjPMr/QGTjtm2eUfsiqyexVHEfeL9QX3cQVnMe9rzRZzhsr/g3p5/u3bfkEPcv2LrGarx7bvyEv7EKlP9cGdxtOT7PKvvur5A2WdHHzIcMkclUfj8+4McKjyuMoKjLQh2B5Fh5D74qydD03M/qGeKFn7r0NBL9oJJwbqvPU/XnWJqlNObFHCgOkVTvc0cGsUQ==",
+    "metadata_sha256": "7d6e710f86452a0fe43a6eb64158235732850b2c3246d1900470dce6236bf68c"
+  },
+  {
+    "product": "sys11",
+    "version": "2.0.1-beta2147",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update.json",
+    "sha256": "0b9c2b3ccf063cf3045e95b01a6592a28c8aa3a7d453304fd7ba792f2dc35613",
+    "signature": "RmcLUTGfnwfqU5+4OwLESf/RUAdjJqH4/VsjgxicX313fA76VvBGEFMe7N7VatNggA/AFhSRd4Z2XSe8fFjhc9yNRAmn6658X6/7UpHLrcH+zFhPscstKzRz4FaKNU9jnLurUrf4FNfkr3Ml7VAmiB1kOOZ6ej6h9AiYTNq/hEMVYleywSUVdph4ptYSiT0vc79p2S+RLl0BSObuBCVbx8P/cbro22wb3JYk2eIPbUGfIouGNa8DSECR/iTdcCfbPMw5a1fxdjqpfyqdc5Keg+XCsDyr4c/qQ0qqcoClvCNrU/+cVNdXr8v76Yid+VeRjPlhldqHXTgAmFUlm9cBfg==",
+    "metadata_sha256": "eb331eace1d9c5e65e8cb9b2e817d45dd67425169e10a8bc272a939de95e26b5"
+  },
+  {
+    "product": "wpc",
+    "version": "2.0.1-beta2147",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_wpc.json",
+    "sha256": "1f1204496ccf5c35f175e2519aedfca8044957bb02680a7a23aa1c329563698f",
+    "signature": "rbPfkOSY128kyJ4lywcsPVwRUVmE/q/z6JvVPqRoSGIbIi5yYtPyYxMlKf/KvkNSwoXNM11G/UuyitMprZSxWc1yqkb9cszzpZKLEOUNuo+n6tWTajHXxR7SJPh9YiBRTTPr01kSuQad3B9bVwbLIuKzv87t/1/31IgsipUd+ZlZUoeXeUy0Af2+9oweup6igYE5+V1sMYyr1vOFz0X8TrMmu5BzWYM2OOSuXUPYaG9SJama4M/LFS3AtYn4E4lMNHv4b731frF9SEbmLkv2GJExlEgC73pLwyeRZxKBZ63dkVmijStBjIC+ShmyiyTUMO3FFIGnDvsr+CSe0cfBdQ==",
+    "metadata_sha256": "26d6fb5f90bf541939a3ad35bf305f814f3c4ca9162c3687c0f4ba75afd2e56f"
+  },
+  {
+    "product": "em",
+    "version": "2.0.0-beta2147",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_em.json",
+    "sha256": "09e5590651b5aa2de892e9d159963466904c86307f3e33b7ea742eaed0ebf5dc",
+    "signature": "YpiJ9pKnLrJuIYdPFaP7UAQ4Henh5KvqmrgOoLWSb/u46I/fzNREcybrof13E6O3CPIBkSp1ES5KnVB2CuJLZdqG6H350/jetlADfkIWQ/fNQo+LukGXcgxKTRp6LFXsqGkTyAHUnQz/5LuoQS3nteKH4j8nMxEmBVvMkBxWs109GxaPI8nfpV2X/BdC06QnN2TbFV4F1WuzPpVF5emEdb/YY6e9HngOdIzHg0eVGq1z+Qb6J4/eak1+RPh7Q9NhUa802UW7YR/Vr/xCJhzGF0XDMahJw6gaZm0xaU4ze2nuXpIswta3foUw9/GDEkEqXxp9h7gc2I5eh8L3dyhGaQ==",
+    "metadata_sha256": "a3b5615169509bd622e768c3ad0ce2ab99ea4e3c3a6f9a639e9819e78658adcb"
+  },
+  {
+    "product": "data_east",
+    "version": "2.0.2-beta2147",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_data_east.json",
+    "sha256": "e7a9e0bb7a543a86ebfbe02dd581fe6d01e4813f5b09c465fc76f1669db7b7a6",
+    "signature": "nAXxszOoNA+Sc8t3f3biIbqgxkOsbwONjD1/djfoqVmXDJlsCehdtdHiQW20R/EBo5vruIZco1r42H8wYcXMK+nHtBR0SS58duiQ0WvEZ/QFWe2dOjqFYcM3mED0c2Gv5KQBVv6y32LmtoQdlu+ESgojPm7UtJ9uZA7HVAUNKIJTXE0MrCWLLqWx4Toj9Ja+y5ZecPG6pCvObW5+FS32+A+wcS1v+CAQEElR17VJooNAZOr/HRpAKCjjMFHQNYef0FaK1N6zQoWI/tzQf7n96FH6t4AGSz0wiGTL9t5w7xkEBPNCb9TvtKXc89IxsCtiZN4KD2vhoswwNmvYlkVfsQ==",
+    "metadata_sha256": "4d4758c049d55d16e327148b55baa6835d11325761d6a5dfcdb3db81894e9f2d"
+  },
+  {
+    "product": "whitestar",
+    "version": "2.0.0-beta2147",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_whitestar.json",
+    "sha256": "fd37640d4db13f5a093553f6eff0dc81f420a544f6027e88b8098abe643678ba",
+    "signature": "AwYbZsPNqniAsyoWEShqwGChdE2JOMZ+wgAW5BVl5UbH1NzoRNnWhtQgLFyCCSfS8M37MAMsz9yYZmsedgJ8/O5U31vRKXoItoVL98dWihqEu6WmQEHyxw6aJN+0Hj4BMHwpIWALqDpH+H3TpQcMkla7VmX4oAJgFhnEgMLs6Tkog5u3m+U3FWBzuMcdZupxpHZ9uTFCu6m/nyp1ytNPFO99e5eZF07ouF9MCEff3sQcCTBX0wFsizuppE6wgvFygAK9mqrzkydd5tCYNzwdYlE1n7vhiudgJtTACJqa2f5QW2XbIm29/iwnCfnZmioVgig14E2o0Hw/gZ6rZ/ZPEA==",
+    "metadata_sha256": "1999b50820a7e1514197db9890c4f2bfca550ad12a2545da327c1d9f286e0429"
+  },
+  {
+    "product": "classic",
+    "version": "2.0.0-beta2147",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.3-beta2147/update_classic.json",
+    "sha256": "63943320d692e839d74afb3e235ad08d8de52ac9eaefdd729835e55045e92417",
+    "signature": "R9wbHabLorPArbRLu6WK5fjXscSNXHuPqHZ8VXmHGvm2EkSYvYvJThWi0sR8AmMrw5L6cpkKn1npZN1HzFjRkjnKSPUFeA22HfFgBNO8ZZucZS36HaZjyDdMWkIw8LWYJbspxtsT+9Jn3WSI4HDNWZR01/9jRs4gIkPFXP6nKb/YR1VNFB8XDVV3jud+BCguIhy27/Q7NOux/1tN5+2XSvEccTwwRG/RZWejcjSWxQ/UwCEc1HplloaOwOBpE4JQ7kiVFwUJK9sBpDzqib6KaGepHclvY8mNOnJEVAM027ZztD1ZpG4ryIvkPZzZLP/Sr1PyhatrntoVQNhX+CDUZQ==",
+    "metadata_sha256": "c29f2d0ead3077946af5d866534f52272214203a664dc60b01a7c174854b8f44"
+  },
+  {
+    "product": "sys11",
+    "version": "2.0.1",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update.json",
+    "sha256": "04bc0d02c8d69f419ef36347f19c925e42bf766b3a01878c34461b6332e402a1",
+    "signature": "syUJxXX7e6ZV1ELmWkBQ4DjTzhjeOxOYEMSxZOQs/v0jkyic2ZkGcdUvVj4787xe4eUfjYfJ8T/Vmnb5+zfRGwRQyHkLOsE+jOhNmiuchjyXp2rxDTNcD9mUNLx7UXMMJT0mZVutS2cb3yGUl625q6pNWNkuk9w5SwD+Mlw2h4ar8uw+pHQGqPXlCaNduKIB1QpB9uP2eLse/l2u0Ri1awNVBFo8gD4lRG/BecQy+DsivDwNfQ9lTyH16s51HrdqYm6cLCqnHBSMZzumLYbA8AcaUgjPq/Lo7YOtnBoFga1PBRza+2rU/qLkfuYR7PKgDgw36l9c+fR6ftygKz+XOQ==",
+    "metadata_sha256": "dcc8eb580c996cd59d7d42f48ddb502d6d0c5071d9fd870f474a3ba4a410e23d"
+  },
+  {
+    "product": "wpc",
+    "version": "2.0.2",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_wpc.json",
+    "sha256": "ab6b323171ed638caf15b18537c999d87bf7a24b41e6a8eee4acc1dbed099dcb",
+    "signature": "rmWpApS+HGB9yf2URsWYA03fqev1JIe3sx24cW7gfASKZ7upIcvyvI6tx+6Aae9he0c0q5h4Ue6XQylDhWYGnwcsZi78GmzoymAexOe+5pzDB2V3yYg2ihAb3zF6DUgnWmZG8vV3w0GSU5dwh1J7LIEuMTGFFujNUAP/cKckjbe/4oy344nTFBR6ceRMQnbcgMDxvXZ4n2X/pVgb4AjDrkwRdtMqkIclpmDs95mi46gDYlzfJbWT1F1DZK4NDHLCjrsozgGG4+88GMK5hOTa3iphWF+44/9xFgg2JCKIB/gtlfxI5Oetf4yM2A55SNwDJyaHLATo1QMAIUxTINFGAA==",
+    "metadata_sha256": "70cdfacb55a84c9358e4432191e8c52407991223206a40e7cbccfd7b0a59eead"
+  },
+  {
+    "product": "em",
+    "version": "2.0.0",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_em.json",
+    "sha256": "c2c14ef50aba3337f8786211b2e06e43c1e330c02a9dfcdbfa8cb82fd2574efc",
+    "signature": "KKkE6P9QQc5hqFkdsmhmPLE7xTXjptta6RUeR9jobicmoWUFPWpUtuWgT18oSVsv8akmCUyQzGtZ0bC19wH2wsueJA1WGyavWWlMJ1IZFNPQUWl7wgsGbwug963Abo+WNbuoRa99yq7X1vt3NXBzmAHUonVlRCOvgXK6pg+rSC8FE2s39hA+vAWn1raSEr+PeXa53zeSK7mJrrsJ0ouOod6tiyW07fwIzhqOdyHGStyKR4IyqvMLdgJvxhVo37ldwrrK8K5WGlE+mugVy8ANnH4XaBFzHgnHs5h/2v2z2SPYr/mnMqopNSK7wMJSzNrF+lFAyrqOcfjUdq2HH2haRQ==",
+    "metadata_sha256": "31b0b65b4c8bd132bf09e6acc91069a7b2a0f0485fc40bb8f10cb80c08f92019"
+  },
+  {
+    "product": "data_east",
+    "version": "2.0.2",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_data_east.json",
+    "sha256": "6af967ab3272fc93f0d1097648901b6553b7d61e8291f330667b05a8f20bb01d",
+    "signature": "XOeQCb1fpW5ZXar40cLGZZfWMvOtppq8RHlDgNHUbkaGhhEFIMtxpSySk4yrVYWFTceJF+5Mjf4CFzn+eUj+lwOWu/I2Mnj7V/qQsw+//+3BAXzie2+cScgZhUKVNHaonFHAE9/B0RECDm1QuGNcYLf1hkEr91Xmq2xe6RoDm7U3a3JRoAdUWYBv3VL/sjz3Fl80ZSpF7L1Mg9rSmuo5wDNDCGj0aLvHZSpCI8PCNRbcGM7aaal5XiLxs4qK3EwaFMUQ9ntX0eH05EZemSpsOXtLVsUmwbxJ/ilYz2n60Knrh3GfRoTsb5we/x6wUk9mPsP/uGFm6msevrTwgDvBEw==",
+    "metadata_sha256": "70cdfacb55a84c9358e4432191e8c52407991223206a40e7cbccfd7b0a59eead"
+  },
+  {
+    "product": "whitestar",
+    "version": "2.0.0",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_whitestar.json",
+    "sha256": "97c1e8c087c167fb23a351e6f097218f4974364a3fc2a27bd415870fa5efcac6",
+    "signature": "PXNNvaXydQaICeyYukZoiUH8oa0yjZN+UwckqXPPcHl3SdcKCP2Kcn+NLEtWNHAM/Pvtv8G+A+SpRJgPddFxHgK3eQRICTevyBSoOziuxur6ugga9xosbhbvyZcTGxlMcO/8Z7CZGKcREPSgG9wmn2P9GM24o7tz+4HCQfkrrf9RdZ7Eq/D+qmNkgrksshGmOt66LohIN9YQ0V+r5z4sKRbfu/hDzXDjX+iPpmGIoQ/soALLD5q+usJkSQUl61JiPbRcx5YD0AJf86Cszuatk7dVflL+K/9C8BPCLHZy56QEz52zfWUVLCpSSS3nt0UZuk2C6dWDm5JmSvKd3umoew==",
+    "metadata_sha256": "e8aa60ba0d8fd094ab57901de96bad8c71f7c09afff88ee97d74170b850b6653"
+  },
+  {
+    "product": "classic",
+    "version": "2.0.0",
+    "type": "production",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4/update_classic.json",
+    "sha256": "6bc74cb24fa1d5e69a0880309c33279aabbd9e48fb7ca69423c49f1dc47bef22",
+    "signature": "mNfRLhsd6Ol/kcHElkOlXONAgv32MtHtoTNpzugno67Fi7PUGrRHXRzqpe5ynmwa71VlUm9bMKQKrX6bU3sLTSwkheqI5lo36KiY0/yOsCrPqEblYuHOfL9Q5J+IQ2AiDH0Z1soOidf+A7s6Kg2oQogWm7j7fLlA1189lw/4pD3Qny0A/LesIFajRRCDK4D0bHu0bMp7qoKe+91qazi1s60/T43YoIX2CLp8K73k0UGixWOZIXBkgoklIZRgSFcdbWvuGbQlxw1WDMR4/6CuwF23JJFSdHHxi64SbAc2WWuPTAuvYt9er0Gvw+5HADfjU2Z3qHkar4d6uhCx9EmwwQ==",
+    "metadata_sha256": "574a1d83a0802272717c377cad3bf9e39d1a0084e0b1d2b7a326b78acb67c059"
+  },
+  {
+    "product": "sys11",
+    "version": "2.0.1-beta2150",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update.json",
+    "sha256": "03ac8460b0c887d8e6c521df2253ca5c142d55ea1be60670b4c3c309c619bf38",
+    "signature": "zGRgYFcbHSb/e3oGH5mEq7ga7/HsUnecj6s8sR8m/sEGLyKQHf5SsfxlC9g0TlLV2bAILYqZ4m+Jqglloabi8XENGNs5s4U+3QURrN29UUKxHi0BvEO7Mzd8lsSp9z9assVZS1R8kC1fighSgubvZtUYWGZ1fjo2TjXasTUEO9h91DZwF+zI52FD6gRgHc7uKg4sKl8adKRMhtfJ687MUmtuCwEwduqlMfID44tQHuoKtwWAzhsOoNAP+WcCAwQFMmeJxz8zPXyk4BRNUeU9W1rQNhhl9+Mm4caRgWsJaWQTzCWIQKETmXB+yRAkN0HpwrbSdDmj7ZcqdWvUttH0CA==",
+    "metadata_sha256": "bd401bc5f5769f52c885b0bc61694d05dd72ee15fbf0b064052b49867a950857"
+  },
+  {
+    "product": "wpc",
+    "version": "2.0.2-beta2150",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_wpc.json",
+    "sha256": "5d07555b301c5db45ae0cd33adc7288563d4c9e49038c747b0261247c1cc4f98",
+    "signature": "n86A56e4ZQVpLcEH04xXLmldqpJ2+YpUVAWyM70QbrB96j1NlqTiCG0ID0CQ36fAayezXsoD6sxaNKcQkUYOKIkCziyl2kU3WooNpJjZ3GjSSap2BlTqApdVAaw1iaYTuODcdz6LXFKcGNGmK86zgSjUWLr1rj/9/OJ5FiGK4Xo5aK4gs64aSeHTW3tn80ijZbUa+61IakS/duTcMmUE3wfK/MS2xXv3htDAsCOiUvXnt7mTxXnIXkPmH3gg7UCIdaa6GFtQHendKDeJe2j3BxxnQls6ANqFdn9YClyfXoR2KVbNI22G1AEj+GuCwBdWHcdZo9lsLl72jtfHge5okQ==",
+    "metadata_sha256": "ea389693e715ae0d95a8598b5b207f5c7a8c26ad857c44239b2e5049e83bc6d5"
+  },
+  {
+    "product": "em",
+    "version": "2.0.0-beta2150",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_em.json",
+    "sha256": "9e5907a8f8e4a7cc103c5f1e6d60d135243d0e53a2050e7df27450bbdb7514b8",
+    "signature": "G+PjvCdFTkar/iiXPreIWhrgS+VzkJrcpeuShZgwwb7kg6p9H8khVl6XADBwoeQFQFKEdG1zKEHXUo9H9HteukkHJlN+0+UHDfqV0tAq3SwwxvNRn2IJCQkOv7RvCqM+1Bgn6RAqtCn4EbKeCNzIJLQh12cEJWowqURtTfytpK2ERWp2EZf9C9aXa6ulK5QuWUcm3EbsfgRHeVShsD9dcaEG+lBNu4BI+Izzzw90ATEvBVHNmahumHTPcoQ19wD+bxaeCVck0W635nVWg/aRue3g5eA7XRC5rNjX0VjLy1Jv4aIhDf6et/TTMzYuf1G1l9XSU9NrTvvyXDQ700+OCg==",
+    "metadata_sha256": "d548509b50184c2667c405ff65d53eb059bf3cbe4374c0b51dcdca365a6e28de"
+  },
+  {
+    "product": "data_east",
+    "version": "2.0.2-beta2150",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_data_east.json",
+    "sha256": "a157f8c83cd96131c39d1044b89b881027fdd167b0d8101a8f8cd869f0f0a223",
+    "signature": "jR+1IIfjTzLH3ShBADX96xkA6ZdwK8JRYBF2PMTDmREsiIefEU2QHR+tO713CfKXM+yxN36L9qTu/F0TixgFM/SnEVz+oKlwhTEjJIugVaPrpzVlgQ5UOX8SzxouytJkgMZK9ny90roTc6iz2EllEFX8df61CHoTjV24gsSHT67KlJNbty/Nk+PTxJlV/ONIkfAnQ5r+f99PfIVl5+94UPYTkybJTmZB+SXTXRsLLUQ4hja8IaDGHv8AHWjGdveQnnSSwsZYkGiooOeS1WcQVpZte+HAKLBukgDsKETBRmhphhmOtyzoM9d8fVvZ9Pf/J1Z5h5ZHWOnJ74Gc5B7qMw==",
+    "metadata_sha256": "ea389693e715ae0d95a8598b5b207f5c7a8c26ad857c44239b2e5049e83bc6d5"
+  },
+  {
+    "product": "whitestar",
+    "version": "2.0.0-beta2150",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_whitestar.json",
+    "sha256": "a6986dfc27b3d8fc47bd52393b7f4e3e042a621f7cea5b1bf00787134139dc22",
+    "signature": "qTaFZ8am02c37v3IWMgKzMtnsyHtWb/SHsZStVBjEDhJ9yGtS91dWIPMwqxGGpnLgrPpEjzTwF+U2WXuO+uvYeDKJDFuBmd78DKRdW+8458a3oUS4JhMz6/v67P8Dg/KnLJbAN5kERg/MIM2bg8YOSduwIujoUHEjwISWOpXOWgJa5SXRCb3RSJjCMMugvAr72CPZKFLB6eIQ7S89JM22GgrZ/MMxYJZJXZe+A6yhcsYWFs8AKLX+nKyvQEq0AXk39jVF0fKfCtf7Skn/hrNEf+52O0+bpHFUsrLJnSZ8q3J5pJ7md7Ti+PjImBlMFU3FH/lrRaPmr2lu0JNT1q7oA==",
+    "metadata_sha256": "1c7581c4011910f4e0a9451a27f8bd0d624061b8188455314744e71d8790bc94"
+  },
+  {
+    "product": "classic",
+    "version": "2.0.0-beta2150",
+    "type": "beta",
+    "url": "https://github.com/warped-pinball/vector/releases/download/2.0.4-beta2150/update_classic.json",
+    "sha256": "c5dad11b489bd126ea1d8daaa3a3ffc7f6ec8aa8e0193b380e7af3a51875d055",
+    "signature": "dR1PyvC5DdN3DsiKy6xgWD5MvuiyOs2CX3BRere7+IJDbqGr+zdonzKGWg3M8eIzj2dYWVBlC9lX0hhRo9hhOBJ9swX0RmRmZEbVVKTFEjqgxMvwWwJxlhtvdCPv075MExW2a730yX+pZkwPeJK81kW9qdErNFkhixbFugYnztvlA5m+FJgaUSvaNfOzetRTgScLVuXm3lTezD0z0irmz0ttBb1fZ+5Z5GhesK4bvSmEH//xn3PKnVjBZvOEsH9L2FCedtqa7ZL6knIfF3bl8ZW8YyrIC8f28ZPyFVt3S2B0xvloTIJHYP9CDozoVVD68AOH/2WsSexiv1+NF4VINA==",
+    "metadata_sha256": "3ca4f3c6f83550d77f960c1a421613668d7c80d5fa7cc1e9c7ed59c7b0319a4e"
   }
 ]
